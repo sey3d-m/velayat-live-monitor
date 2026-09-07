@@ -19,12 +19,24 @@ def fail(message: str):
 
 
 def resolve_stream_url(url: str) -> str:
+    """
+    For YouTube URLs, resolve a playable audio URL using yt-dlp.
+    For direct HLS/m3u8/stream URLs, return the URL unchanged.
+    """
     lower = url.lower()
 
     if "youtube.com" in lower or "youtu.be" in lower:
         print("YouTube URL detected; resolving live audio with yt-dlp...")
+
         result = subprocess.run(
-            ["yt-dlp", "--no-playlist", "-f", "bestaudio/best", "-g", url],
+            [
+                "yt-dlp",
+                "--no-playlist",
+                "-f",
+                "bestaudio/best",
+                "-g",
+                url,
+            ],
             capture_output=True,
             text=True,
             check=False,
@@ -35,7 +47,12 @@ def resolve_stream_url(url: str) -> str:
             print(result.stderr, file=sys.stderr)
             fail("yt-dlp could not resolve the YouTube live stream.")
 
-        urls = [line.strip() for line in result.stdout.splitlines() if line.strip()]
+        urls = [
+            line.strip()
+            for line in result.stdout.splitlines()
+            if line.strip()
+        ]
+
         if not urls:
             fail("yt-dlp returned no playable stream URL.")
 
@@ -75,17 +92,28 @@ def capture_audio(media_url: str):
     if result.returncode != 0:
         fail("FFmpeg could not capture audio from the stream.")
 
-    if not AUDIO_FILE.exists() or AUDIO_FILE.stat().st_size < 1000:
+    if (
+        not AUDIO_FILE.exists()
+        or AUDIO_FILE.stat().st_size < 1000
+    ):
         fail("Audio file was not created or is unexpectedly small.")
 
-    print(f"Audio captured successfully: {AUDIO_FILE.stat().st_size} bytes")
+    print(
+        f"Audio captured successfully: "
+        f"{AUDIO_FILE.stat().st_size} bytes"
+    )
 
 
 def transcribe_audio():
     print("Uploading audio to Gemini 3.5 Transcribe...")
 
-    client = genai.Client(api_key=GEMINI_API_KEY)
-    uploaded = client.files.upload(file=str(AUDIO_FILE))
+    client = genai.Client(
+        api_key=GEMINI_API_KEY
+    )
+
+    uploaded = client.files.upload(
+        file=str(AUDIO_FILE)
+    )
 
     interaction = client.interactions.create(
         model="gemini-3.5-transcribe",
@@ -99,22 +127,36 @@ def transcribe_audio():
         generation_config={
             "transcription_config": {
                 "language_codes": ["fa-IR"],
-                "mode": "SMART",
+                "mode": "smart",
             }
         },
     )
 
-    transcript = (interaction.output_text or "").strip()
+    transcript = (
+        interaction.output_text or ""
+    ).strip()
 
     if not transcript:
         fail("Gemini returned an empty transcription.")
 
-    TRANSCRIPT_FILE.write_text(transcript, encoding="utf-8")
+    TRANSCRIPT_FILE.write_text(
+        transcript,
+        encoding="utf-8"
+    )
 
-    print("\n========== TRANSCRIPT ==========\n")
+    print(
+        "\n========== TRANSCRIPT ==========\n"
+    )
+
     print(transcript)
-    print("\n===============================\n")
-    print("Transcript saved to transcript.txt")
+
+    print(
+        "\n===============================\n"
+    )
+
+    print(
+        "Transcript saved to transcript.txt"
+    )
 
 
 def main():
@@ -124,8 +166,14 @@ def main():
     if not GEMINI_API_KEY:
         fail("GEMINI_API_KEY secret is missing.")
 
-    media_url = resolve_stream_url(STREAM_URL)
-    capture_audio(media_url)
+    media_url = resolve_stream_url(
+        STREAM_URL
+    )
+
+    capture_audio(
+        media_url
+    )
+
     transcribe_audio()
 
 
