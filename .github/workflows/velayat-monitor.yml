@@ -1,0 +1,78 @@
+name: Velayat Live Monitor
+
+on:
+  schedule:
+    # Exact official program times in Tehran.
+    - cron: "0 18 * * 0-4,6"
+      timezone: "Asia/Tehran"
+    - cron: "30 19 * * 0-4,6"
+      timezone: "Asia/Tehran"
+    - cron: "0 21 * * 0-4,6"
+      timezone: "Asia/Tehran"
+
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "Program slot for manual run"
+        required: true
+        default: "auto"
+        type: choice
+        options:
+          - auto
+          - "18:00"
+          - "19:30"
+          - "21:00"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: velayat-live-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 85
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Install Python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Monitor live program
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          STREAM_URL: ${{ secrets.STREAM_URL }}
+          SHEETS_WEBHOOK_URL: ${{ secrets.SHEETS_WEBHOOK_URL }}
+          WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}
+          BALE_BOT_TOKEN: ${{ secrets.BALE_BOT_TOKEN }}
+          BALE_CHAT_ID: ${{ secrets.BALE_CHAT_ID }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          REQUESTED_SLOT: ${{ github.event.inputs.slot || 'auto' }}
+        run: python velayat_monitor.py
+
+      - name: Upload diagnostic text files
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: velayat-monitor-${{ github.run_id }}
+          path: |
+            program_transcript.txt
+            program_report.json
+          if-no-files-found: ignore
+          retention-days: 3
