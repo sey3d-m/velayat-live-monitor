@@ -2,7 +2,7 @@ name: Velayat Live Monitor
 
 on:
   schedule:
-    # Exact official program times in Tehran.
+    # Official program start times in Tehran.
     - cron: "0 18 * * 0-4,6"
       timezone: "Asia/Tehran"
     - cron: "30 19 * * 0-4,6"
@@ -15,10 +15,8 @@ on:
       slot:
         description: "Program slot for manual run"
         required: true
-        default: "auto"
         type: choice
         options:
-          - auto
           - "18:00"
           - "19:30"
           - "21:00"
@@ -36,6 +34,37 @@ jobs:
     timeout-minutes: 85
 
     steps:
+      - name: Resolve fixed program slot
+        id: slot
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          MANUAL_SLOT: ${{ inputs.slot }}
+          SCHEDULE_CRON: ${{ github.event.schedule }}
+        run: |
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            SLOT="$MANUAL_SLOT"
+          else
+            case "$SCHEDULE_CRON" in
+              "0 18 * * 0-4,6")
+                SLOT="18:00"
+                ;;
+              "30 19 * * 0-4,6")
+                SLOT="19:30"
+                ;;
+              "0 21 * * 0-4,6")
+                SLOT="21:00"
+                ;;
+              *)
+                echo "Unknown schedule: $SCHEDULE_CRON"
+                exit 1
+                ;;
+            esac
+          fi
+
+          echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
+          echo "Resolved PROGRAM_SLOT=$SLOT"
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -56,17 +85,20 @@ jobs:
 
       - name: Monitor live program
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           STREAM_URL: ${{ secrets.STREAM_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SHEETS_WEBHOOK_URL: ${{ secrets.SHEETS_WEBHOOK_URL }}
           WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}
           BALE_BOT_TOKEN: ${{ secrets.BALE_BOT_TOKEN }}
           BALE_CHAT_ID: ${{ secrets.BALE_CHAT_ID }}
           GITHUB_RUN_ID: ${{ github.run_id }}
-          REQUESTED_SLOT: ${{ github.event.inputs.slot || 'auto' }}
+          PROGRAM_SLOT: ${{ steps.slot.outputs.slot }}
         run: python velayat_monitor.py
 
-      - name: Upload diagnostic text files
+      # IMPORTANT:
+      # This runs even when Gemini analysis fails.
+      # Therefore program_transcript.txt survives as an Artifact after a failure.
+      - name: Upload transcript and diagnostic report
         if: always()
         uses: actions/upload-artifact@v4
         with:
