@@ -2,12 +2,13 @@ name: Velayat Live Monitor
 
 on:
   schedule:
-    # Official program start times in Tehran.
-    - cron: "0 18 * * 0-4,6"
+    # Runner starts 10 minutes before each official slot.
+    # Python waits until the exact start time before recording.
+    - cron: "50 17 * * 0-4,6"
       timezone: "Asia/Tehran"
-    - cron: "30 19 * * 0-4,6"
+    - cron: "20 19 * * 0-4,6"
       timezone: "Asia/Tehran"
-    - cron: "0 21 * * 0-4,6"
+    - cron: "50 20 * * 0-4,6"
       timezone: "Asia/Tehran"
 
   workflow_dispatch:
@@ -46,13 +47,13 @@ jobs:
             SLOT="$MANUAL_SLOT"
           else
             case "$SCHEDULE_CRON" in
-              "0 18 * * 0-4,6")
+              "50 17 * * 0-4,6")
                 SLOT="18:00"
                 ;;
-              "30 19 * * 0-4,6")
+              "20 19 * * 0-4,6")
                 SLOT="19:30"
                 ;;
-              "0 21 * * 0-4,6")
+              "50 20 * * 0-4,6")
                 SLOT="21:00"
                 ;;
               *)
@@ -95,9 +96,6 @@ jobs:
           PROGRAM_SLOT: ${{ steps.slot.outputs.slot }}
         run: python velayat_monitor.py
 
-      # IMPORTANT:
-      # This runs even when Gemini analysis fails.
-      # Therefore program_transcript.txt survives as an Artifact after a failure.
       - name: Upload transcript and diagnostic report
         if: always()
         uses: actions/upload-artifact@v4
