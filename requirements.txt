@@ -2,3 +2,4 @@ google-genai
 pydantic
 yt-dlp
 jdatetime
+requests

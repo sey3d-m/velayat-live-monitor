@@ -5,6 +5,8 @@ import sys
 import time
 import urllib.error
 import urllib.request
+
+import requests
 from datetime import datetime
 from pathlib import Path
 from typing import Literal
@@ -621,13 +623,14 @@ def source_label(source_type: str) -> str:
 
 
 def format_bale_message(info, analysis: ProgramAnalysis, stats) -> str:
+    # v3.2: نام برنامه صریحاً از جدول رسمی می‌آید و آمار در انتهای پیام است.
     lines = [
         "📺 گزارش محتوایی برنامه زنده شبکه جهانی ولایت",
         "",
         f"🗓 تاریخ: {jalali_date_for_today()}",
-        f"📌 برنامه: {info['program']}",
+        f"📺 نام برنامه: {info['program']}",
         f"👤 کارشناس: {analysis.expert}",
-        f"🕒 زمان: {info['start']} تا {info['end']} به وقت تهران",
+        f"🕒 زمان برنامه: {info['start']} تا {info['end']} به وقت تهران",
         f"🎯 موضوع: {analysis.topic}",
         "",
         "📝 خلاصه محتوایی برنامه:",
@@ -639,9 +642,34 @@ def format_bale_message(info, analysis: ProgramAnalysis, stats) -> str:
         for index, item in enumerate(analysis.key_points, 1):
             lines.append(f"{index}. {item}")
 
+    if analysis.audience_questions:
+        lines.extend([
+            "",
+            "❓ سؤالات مخاطبان و چکیده پاسخ کارشناس:"
+        ])
+
+        for index, item in enumerate(analysis.audience_questions, 1):
+            audience = (
+                f" – {item.audience_name}"
+                if item.audience_name != "نامشخص"
+                else ""
+            )
+            lines.append(
+                f"{index}. [{source_label(item.source_type)}{audience}] "
+                f"{item.question}"
+            )
+            lines.append(f"   ↳ پاسخ: {item.answer_summary}")
+    else:
+        lines.extend([
+            "",
+            "❓ سؤالات مخاطبان:",
+            "در این برنامه سؤال پاسخ‌داده‌شده‌ای از مخاطبان شناسایی نشد."
+        ])
+
+    # آمار مخاطبان باید آخرین بخش پیام باشد.
     lines.extend([
         "",
-        "📊 آمار پاسخ‌گویی به مخاطبان:",
+        "📊 آمار مخاطبان:",
         f"☎️ سؤالات تلفنی پاسخ‌داده‌شده: {stats['phone_count']}",
         f"💬 سؤالات پیام/پیامکی پاسخ‌داده‌شده: {stats['message_count']}",
     ])
@@ -657,39 +685,7 @@ def format_bale_message(info, analysis: ProgramAnalysis, stats) -> str:
         f"{stats['total_count']}"
     )
 
-    if stats["audience_names"]:
-        lines.extend([
-            "",
-            "👥 نام مخاطبان شناسایی‌شده:",
-            "، ".join(stats["audience_names"][:12]),
-        ])
-
-    if analysis.audience_questions:
-        lines.extend([
-            "",
-            "❓ سؤالات مخاطبان و چکیده پاسخ کارشناس:"
-        ])
-
-        for index, item in enumerate(analysis.audience_questions, 1):
-            audience = (
-                f" – {item.audience_name}"
-                if item.audience_name != "نامشخص"
-                else ""
-            )
-
-            lines.append(
-                f"{index}. [{source_label(item.source_type)}{audience}] "
-                f"{item.question}"
-            )
-            lines.append(f"   ↳ پاسخ: {item.answer_summary}")
-
-    lines.extend([
-        "",
-        "🤖 رصد و تحلیل خودکار برنامه زنده"
-    ])
-
     return "\n".join(lines)
-
 
 def split_message(text: str, limit: int = 3900):
     if len(text) <= limit:
@@ -758,6 +754,54 @@ def send_bale_message(text: str):
 
     print("Report sent to Bale successfully.")
 
+
+
+def send_bale_transcript_file(info):
+    """ارسال فایل TXT متن کامل پیاده‌شده به همان کانال بله."""
+    if not TRANSCRIPT_FILE.exists():
+        fail("Transcript TXT file does not exist for Bale upload.")
+
+    url = f"https://tapi.bale.ai/bot{BALE_BOT_TOKEN}/sendDocument"
+    caption = (
+        f"📄 متن کامل پیاده‌شده برنامه «{info['program']}»\n"
+        f"🗓 {jalali_date_for_today()} | "
+        f"🕒 {info['start']} تا {info['end']}"
+    )
+    upload_name = (
+        f"velayat_transcript_"
+        f"{jalali_date_for_today().replace('/', '-')}_"
+        f"{info['start'].replace(':', '-')}.txt"
+    )
+
+    with TRANSCRIPT_FILE.open("rb") as handle:
+        response = requests.post(
+            url,
+            data={"chat_id": BALE_CHAT_ID, "caption": caption},
+            files={
+                "document": (
+                    upload_name,
+                    handle,
+                    "text/plain; charset=utf-8",
+                )
+            },
+            timeout=180,
+        )
+
+    try:
+        result = response.json()
+    except Exception:
+        fail(
+            f"Bale sendDocument returned non-JSON response. "
+            f"HTTP {response.status_code}: {response.text[:500]}"
+        )
+
+    if response.status_code != 200 or result.get("ok") is not True:
+        fail(
+            "Bale API rejected transcript file: "
+            + json.dumps(result, ensure_ascii=False)
+        )
+
+    print("Transcript TXT sent to Bale successfully.")
 
 def update_bot_status(report_id: str, status: str):
     try:
@@ -879,15 +923,21 @@ def main():
     report_id = pending_payload["report_id"]
 
     try:
+        # ابتدا گزارش متنی به بله ارسال می‌شود.
         send_bale_message(
             format_bale_message(info, analysis, stats)
         )
+
+        # سپس فایل TXT کامل پیاده‌شده به همان کانال ارسال می‌شود.
+        send_bale_transcript_file(info)
+
+        # SENT یعنی هر دو خروجی با موفقیت ارسال شده‌اند.
         update_bot_status(report_id, "SENT")
     except Exception:
         update_bot_status(report_id, "FAILED")
         raise
 
-    print("VELAYAT LIVE MONITOR v3.1: SUCCESS")
+    print("VELAYAT LIVE MONITOR v3.2: SUCCESS")
 
 
 if __name__ == "__main__":
