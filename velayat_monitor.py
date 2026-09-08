@@ -1,21 +1,22 @@
+# Velayat Live Monitor v3.4 Timestamp
+# Replace the repository root file: velayat_monitor.py
+
 import json
 import os
+import shutil
 import subprocess
 import sys
 import time
-import urllib.error
 import urllib.request
-
-import requests
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Literal
 from zoneinfo import ZoneInfo
 
 import jdatetime
+import requests
 from google import genai
 from pydantic import BaseModel, Field
-
 
 TEHRAN = ZoneInfo("Asia/Tehran")
 
@@ -25,20 +26,19 @@ SHEETS_WEBHOOK_URL = os.environ.get("SHEETS_WEBHOOK_URL", "").strip()
 WEBHOOK_SECRET = os.environ.get("WEBHOOK_SECRET", "").strip()
 BALE_BOT_TOKEN = os.environ.get("BALE_BOT_TOKEN", "").strip()
 BALE_CHAT_ID = os.environ.get("BALE_CHAT_ID", "").strip()
-
-# IMPORTANT: Workflow always sends an explicit slot.
 PROGRAM_SLOT = os.environ.get("PROGRAM_SLOT", "").strip()
 GITHUB_RUN_ID = os.environ.get("GITHUB_RUN_ID", "manual")
 
 AUDIO_FILE = Path("program_audio.mp3")
 TRANSCRIPT_FILE = Path("program_transcript.txt")
+SMART_TRANSCRIPT_FILE = Path("program_transcript_smart.txt")
 REPORT_FILE = Path("program_report.json")
+CHUNK_DIR = Path("timestamp_chunks")
 
-# Slightly below one hour, to stay safely inside a 60-minute transcription request.
 MAX_CAPTURE_SECONDS = 3595
+TIMESTAMP_CHUNK_SECONDS = 1500
+RESOLVE_BEFORE_START_SECONDS = 90
 
-# Analysis model: retry the primary model and then move to fallbacks.
-# If Google changes model availability later, only this list needs editing.
 ANALYSIS_MODELS = [
     "gemini-3.7-flash",
     "gemini-3.6-flash",
@@ -53,122 +53,52 @@ SLOTS = {
 }
 
 PROGRAMS = {
-    "شنبه": {
-        "18:00": "زمزم احکام",
-        "19:30": "آفتاب و سایه ها",
-        "21:00": "پرسمان اعتقادی",
-    },
-    "یکشنبه": {
-        "18:00": "امت اسلام",
-        "19:30": "بیان امیر",
-        "21:00": "فائزون",
-    },
-    "دوشنبه": {
-        "18:00": "زمزم احکام",
-        "19:30": "فرکانس تاریکی",
-        "21:00": "پرسمان مذاهب",
-    },
-    "سه شنبه": {
-        "18:00": "کانون مهر",
-        "19:30": "پیام تاریخ",
-        "21:00": "پرسمان قرآنی",
-    },
-    "چهارشنبه": {
-        "18:00": "زمزم احکام",
-        "19:30": "چراغ",
-        "21:00": "پرسمان اعتقادی",
-    },
-    "پنجشنبه": {
-        "18:00": "پرسمان تاریخی",
-        "19:30": "گامی به سوی ظهور",
-        "21:00": "حیات قرآنی",
-    },
+    "شنبه": {"18:00": "زمزم احکام", "19:30": "آفتاب و سایه ها", "21:00": "پرسمان اعتقادی"},
+    "یکشنبه": {"18:00": "امت اسلام", "19:30": "بیان امیر", "21:00": "فائزون"},
+    "دوشنبه": {"18:00": "زمزم احکام", "19:30": "فرکانس تاریکی", "21:00": "پرسمان مذاهب"},
+    "سه شنبه": {"18:00": "کانون مهر", "19:30": "پیام تاریخ", "21:00": "پرسمان قرآنی"},
+    "چهارشنبه": {"18:00": "زمزم احکام", "19:30": "چراغ", "21:00": "پرسمان اعتقادی"},
+    "پنجشنبه": {"18:00": "پرسمان تاریخی", "19:30": "گامی به سوی ظهور", "21:00": "حیات قرآنی"},
 }
 
 CUSTOM_VOCABULARY = [
-    "شبکه جهانی ولایت",
-    "زمزم احکام",
-    "آفتاب و سایه ها",
-    "آفتاب و سایه‌ها",
-    "پرسمان اعتقادی",
-    "امت اسلام",
-    "بیان امیر",
-    "فائزون",
-    "فرکانس تاریکی",
-    "پرسمان مذاهب",
-    "کانون مهر",
-    "پیام تاریخ",
-    "پرسمان قرآنی",
-    "چراغ",
-    "پرسمان تاریخی",
-    "گامی به سوی ظهور",
-    "حیات قرآنی",
-    "اهل بیت",
-    "اهل‌بیت",
-    "امیرالمؤمنین",
-    "حضرت زهرا",
-    "امام زمان",
-    "حضرت مهدی",
-    "مهدویت",
-    "شیعه",
-    "اهل سنت",
-    "اهل‌سنت",
-    "قرآن کریم",
-    "نهج البلاغه",
-    "نهج‌البلاغه",
+    "شبکه جهانی ولایت", "زمزم احکام", "آفتاب و سایه ها", "آفتاب و سایه‌ها",
+    "پرسمان اعتقادی", "امت اسلام", "بیان امیر", "فائزون",
+    "فرکانس تاریکی", "پرسمان مذاهب", "کانون مهر", "پیام تاریخ",
+    "پرسمان قرآنی", "چراغ", "پرسمان تاریخی", "گامی به سوی ظهور",
+    "حیات قرآنی", "اهل‌بیت", "امیرالمؤمنین", "حضرت زهرا",
+    "امام زمان", "حضرت مهدی", "مهدویت", "شیعه", "اهل‌سنت",
+    "قرآن کریم", "نهج‌البلاغه",
 ]
 
 
+class TimedKeyPoint(BaseModel):
+    start_offset_seconds: float
+    end_offset_seconds: float
+    text: str
+
+
 class AudienceQuestion(BaseModel):
-    source_type: Literal["phone", "message", "unknown"] = Field(
-        description=(
-            "phone فقط وقتی تماس تلفنی/پشت خط بودن روشن است؛ "
-            "message فقط وقتی پیام/پیامک روشن است؛ "
-            "در غیر این صورت unknown"
-        )
-    )
-    audience_name: str = Field(
-        description=(
-            "نام مخاطب فقط اگر در متن صریحاً گفته شده؛ "
-            "در غیر این صورت «نامشخص»"
-        )
-    )
-    question: str = Field(
-        description="صورت کوتاه و دقیق سؤال مخاطب که کارشناس به آن پاسخ داده است"
-    )
-    answer_summary: str = Field(
-        description="خلاصه 1 تا 3 جمله‌ای از پاسخ کارشناس به همان سؤال"
-    )
+    source_type: Literal["phone", "message", "unknown"]
+    audience_name: str
+    start_offset_seconds: float
+    end_offset_seconds: float
+    question: str
+    answer_summary: str
 
 
 class ProgramAnalysis(BaseModel):
-    expert: str = Field(
-        description=(
-            "نام کارشناس یا کارشناسان فقط بر اساس معرفی روشن متن؛ "
-            "در غیر این صورت «نامشخص»"
-        )
-    )
-    topic: str = Field(
-        description="عنوان کوتاه و دقیق موضوع اصلی برنامه"
-    )
-    summary: str = Field(
-        description=(
-            "خلاصه محتوایی جامع از کل برنامه با تمرکز بر استدلال‌ها، "
-            "توضیحات و پاسخ‌های علمی؛ حدود 1000 تا 1800 نویسه"
-        )
-    )
-    key_points: list[str] = Field(
-        description="5 تا 8 محور اصلی محتوایی و غیرتکراری برنامه"
-    )
-    audience_questions: list[AudienceQuestion] = Field(
-        description=(
-            "تمام سؤال‌های مخاطبان که واقعاً در برنامه مطرح شده "
-            "و کارشناس به آن‌ها پاسخ داده است"
-        )
-    )
+    program_start_detected: bool
+    program_start_offset_seconds: float
+    program_start_evidence: str
+    expert: str
+    topic: str
+    summary: str
+    key_points: list[TimedKeyPoint]
+    audience_questions: list[AudienceQuestion]
 
 
-def fail(message: str):
+def fail(message):
     print(f"ERROR: {message}", file=sys.stderr)
     raise RuntimeError(message)
 
@@ -186,79 +116,43 @@ def check_required_settings():
     ]:
         if not value:
             missing.append(name)
-
     if missing:
         fail("Missing required settings/secrets: " + ", ".join(missing))
-
     if PROGRAM_SLOT not in SLOTS:
-        fail(
-            f"Invalid PROGRAM_SLOT={PROGRAM_SLOT}. "
-            "Allowed values: 18:00, 19:30, 21:00"
-        )
+        fail(f"Invalid PROGRAM_SLOT={PROGRAM_SLOT}")
 
 
-def persian_day_name(dt: datetime) -> str:
-    # Monday=0 ... Sunday=6
-    names = {
-        0: "دوشنبه",
-        1: "سه شنبه",
-        2: "چهارشنبه",
-        3: "پنجشنبه",
-        4: "جمعه",
-        5: "شنبه",
-        6: "یکشنبه",
-    }
-    return names[dt.weekday()]
+def persian_day_name(dt):
+    return {
+        0: "دوشنبه", 1: "سه شنبه", 2: "چهارشنبه",
+        3: "پنجشنبه", 4: "جمعه", 5: "شنبه", 6: "یکشنبه",
+    }[dt.weekday()]
 
 
-def today_at(now: datetime, hhmm: str) -> datetime:
-    hour, minute = map(int, hhmm.split(":"))
-    return now.replace(
-        hour=hour,
-        minute=minute,
-        second=0,
-        microsecond=0,
-    )
+def today_at(now, hhmm):
+    h, m = map(int, hhmm.split(":"))
+    return now.replace(hour=h, minute=m, second=0, microsecond=0)
+
+
+def wait_until(target):
+    while True:
+        seconds = (target - datetime.now(TEHRAN)).total_seconds()
+        if seconds <= 0:
+            return
+        print(f"Waiting {int(seconds)} seconds until {target.strftime('%H:%M:%S')} Tehran...")
+        time.sleep(min(seconds, 30))
 
 
 def get_program_info():
-    """
-    FIX #1:
-    Never guess the slot from current time.
-    The Workflow gives PROGRAM_SLOT explicitly.
-
-    If GitHub starts a scheduled run a few minutes late, we still know exactly
-    which program this run belongs to and record the remaining portion until
-    the official end time.
-    """
     now = datetime.now(TEHRAN)
     day = persian_day_name(now)
-
     if day == "جمعه":
         fail("جمعه برنامه‌ای در کنداکتور رصد تعریف نشده است.")
-
-    if day not in PROGRAMS:
-        fail(f"No program schedule configured for {day}.")
-
     start_s, end_s = SLOTS[PROGRAM_SLOT]
     start_dt = today_at(now, start_s)
     end_dt = today_at(now, end_s)
-
     if now >= end_dt:
-        fail(
-            f"نوبت {PROGRAM_SLOT} مربوط به «{PROGRAMS[day][PROGRAM_SLOT]}» "
-            f"است، اما GitHub بعد از پایان رسمی برنامه ({end_s}) اجرا شده است."
-        )
-
-    if now < start_dt:
-        # This can happen on a manual run before the selected slot.
-        wait_seconds = int((start_dt - now).total_seconds())
-        print(
-            f"Manual run started early. Waiting {wait_seconds} seconds "
-            f"until {start_s} Tehran..."
-        )
-        time.sleep(wait_seconds)
-
+        fail(f"Run بعد از پایان برنامه {PROGRAMS[day][PROGRAM_SLOT]} اجرا شده است.")
     return {
         "day": day,
         "slot": PROGRAM_SLOT,
@@ -270,198 +164,322 @@ def get_program_info():
     }
 
 
-def resolve_stream_url(url: str) -> str:
-    lower = url.lower()
+def jalali_date_for_today():
+    now = datetime.now(TEHRAN)
+    j = jdatetime.date.fromgregorian(date=now.date())
+    return f"{j.year:04d}/{j.month:02d}/{j.day:02d}"
 
-    if "youtube.com" not in lower and "youtu.be" not in lower:
+
+def parse_offset(value):
+    if isinstance(value, (int, float)):
+        return float(value)
+    text = str(value or "").strip()
+    if text.endswith("s"):
+        text = text[:-1]
+    try:
+        return float(text)
+    except Exception:
+        return 0.0
+
+
+def fmt_clock(dt, seconds=False):
+    return dt.strftime("%H:%M:%S" if seconds else "%H:%M")
+
+
+def fmt_elapsed(value):
+    value = max(0, int(round(value)))
+    h = value // 3600
+    m = (value % 3600) // 60
+    s = value % 60
+    return f"{h:02d}:{m:02d}:{s:02d}"
+
+
+def absolute_time(recording_start, offset):
+    return recording_start + timedelta(seconds=max(0.0, offset))
+
+
+def timed_label(recording_start, start_offset, end_offset, program_start_offset, detected):
+    start_offset = max(0.0, start_offset)
+    end_offset = max(start_offset, end_offset)
+    a = absolute_time(recording_start, start_offset)
+    b = absolute_time(recording_start, end_offset)
+    clock = f"{fmt_clock(a)}–{fmt_clock(b)}"
+    if not detected:
+        return clock
+    if end_offset < program_start_offset:
+        return f"{clock} | پیش از شروع واقعی برنامه"
+    rs = max(0.0, start_offset - program_start_offset)
+    re = max(0.0, end_offset - program_start_offset)
+    return f"{clock} | {fmt_elapsed(rs)}–{fmt_elapsed(re)}"
+
+
+def resolve_stream_url(url):
+    if "youtube.com" not in url.lower() and "youtu.be" not in url.lower():
         return url
-
     last_error = ""
-
     for attempt in range(1, 6):
-        print(f"Resolving YouTube live stream (attempt {attempt}/5)...")
-
         result = subprocess.run(
-            [
-                "yt-dlp",
-                "--no-playlist",
-                "-f",
-                "bestaudio/best",
-                "-g",
-                url,
-            ],
-            capture_output=True,
-            text=True,
-            check=False,
+            ["yt-dlp", "--no-playlist", "-f", "bestaudio/best", "-g", url],
+            capture_output=True, text=True, check=False,
         )
-
         if result.returncode == 0:
-            urls = [
-                line.strip()
-                for line in result.stdout.splitlines()
-                if line.strip()
-            ]
+            urls = [x.strip() for x in result.stdout.splitlines() if x.strip()]
             if urls:
                 return urls[0]
-
         last_error = result.stderr.strip()
-        print(last_error, file=sys.stderr)
-
         if attempt < 5:
             time.sleep(15)
-
     fail("Could not resolve live stream. " + last_error)
 
 
-def capture_audio(media_url: str, info):
+def prepare_stream(info):
     now = datetime.now(TEHRAN)
-    remaining = int((info["end_dt"] - now).total_seconds())
+    if now < info["start_dt"]:
+        resolve_at = info["start_dt"] - timedelta(seconds=RESOLVE_BEFORE_START_SECONDS)
+        if now < resolve_at:
+            wait_until(resolve_at)
+    media_url = resolve_stream_url(STREAM_URL)
+    if datetime.now(TEHRAN) < info["start_dt"]:
+        wait_until(info["start_dt"])
+    return media_url
 
+
+def capture_audio(media_url, info):
+    recording_start = datetime.now(TEHRAN)
+    remaining = int((info["end_dt"] - recording_start).total_seconds())
     if remaining <= 0:
-        fail("No recording time remains for this program.")
-
+        fail("No recording time remains.")
     capture_seconds = min(remaining, MAX_CAPTURE_SECONDS)
-
-    print(
-        f"Recording «{info['program']}» from now until {info['end']} Tehran "
-        f"({capture_seconds} seconds)..."
-    )
-
     result = subprocess.run(
         [
-            "ffmpeg",
-            "-y",
-            "-hide_banner",
-            "-loglevel",
-            "warning",
-            "-reconnect",
-            "1",
-            "-reconnect_streamed",
-            "1",
-            "-reconnect_delay_max",
-            "5",
-            "-i",
-            media_url,
-            "-t",
-            str(capture_seconds),
-            "-vn",
-            "-ac",
-            "1",
-            "-ar",
-            "16000",
-            "-c:a",
-            "libmp3lame",
-            "-b:a",
-            "32k",
-            str(AUDIO_FILE),
+            "ffmpeg", "-y", "-hide_banner", "-loglevel", "warning",
+            "-reconnect", "1", "-reconnect_streamed", "1",
+            "-reconnect_delay_max", "5", "-i", media_url,
+            "-t", str(capture_seconds), "-vn", "-ac", "1", "-ar", "16000",
+            "-c:a", "libmp3lame", "-b:a", "32k", str(AUDIO_FILE),
         ],
         check=False,
     )
-
-    if result.returncode != 0:
-        fail("FFmpeg failed to capture the live audio.")
-
-    if not AUDIO_FILE.exists() or AUDIO_FILE.stat().st_size < 5000:
-        fail("Captured audio file is missing or unexpectedly small.")
-
-    print(f"Audio saved: {AUDIO_FILE.stat().st_size} bytes")
+    if result.returncode != 0 or not AUDIO_FILE.exists() or AUDIO_FILE.stat().st_size < 5000:
+        fail("FFmpeg failed to capture valid audio.")
+    return recording_start
 
 
-def transcribe_audio(client: genai.Client) -> str:
-    print("Uploading audio to Gemini Transcribe...")
-
+def transcribe_smart(client):
     uploaded = client.files.upload(file=str(AUDIO_FILE))
+    try:
+        interaction = client.interactions.create(
+            model="gemini-3.5-transcribe",
+            input=[{"type": "audio", "uri": uploaded.uri, "mime_type": uploaded.mime_type}],
+            generation_config={
+                "transcription_config": {
+                    "language_codes": ["fa-IR"],
+                    "custom_vocabulary": CUSTOM_VOCABULARY,
+                    "mode": "smart",
+                }
+            },
+        )
+        text = (interaction.output_text or "").strip()
+        if not text:
+            fail("Empty smart transcript.")
+        SMART_TRANSCRIPT_FILE.write_text(text, encoding="utf-8")
+        return text
+    finally:
+        try:
+            client.files.delete(name=uploaded.name)
+        except Exception as exc:
+            print(f"Gemini file cleanup warning: {exc}", file=sys.stderr)
 
-    interaction = client.interactions.create(
-        model="gemini-3.5-transcribe",
-        input=[
-            {
-                "type": "audio",
-                "uri": uploaded.uri,
-                "mime_type": uploaded.mime_type,
-            }
+
+def split_audio():
+    if CHUNK_DIR.exists():
+        shutil.rmtree(CHUNK_DIR)
+    CHUNK_DIR.mkdir(parents=True, exist_ok=True)
+    result = subprocess.run(
+        [
+            "ffmpeg", "-y", "-hide_banner", "-loglevel", "warning",
+            "-i", str(AUDIO_FILE), "-f", "segment",
+            "-segment_time", str(TIMESTAMP_CHUNK_SECONDS),
+            "-reset_timestamps", "1", "-c", "copy",
+            str(CHUNK_DIR / "chunk_%03d.mp3"),
         ],
-        generation_config={
-            "transcription_config": {
-                "language_codes": ["fa-IR"],
-                "custom_vocabulary": CUSTOM_VOCABULARY,
-                "mode": "smart",
+        check=False,
+    )
+    if result.returncode != 0:
+        fail("Could not split audio.")
+    chunks = sorted(CHUNK_DIR.glob("chunk_*.mp3"))
+    if not chunks:
+        fail("No timestamp chunks created.")
+    return chunks
+
+
+def duration(path):
+    result = subprocess.run(
+        [
+            "ffprobe", "-v", "error", "-show_entries", "format=duration",
+            "-of", "default=noprint_wrappers=1:nokey=1", str(path),
+        ],
+        capture_output=True, text=True, check=False,
+    )
+    return float(result.stdout.strip())
+
+
+def extract_words(interaction):
+    words = []
+    for step in getattr(interaction, "steps", []) or []:
+        for content in getattr(step, "content", []) or []:
+            for a in getattr(content, "annotations", []) or []:
+                if getattr(a, "type", None) == "word_info":
+                    text = str(getattr(a, "text", "") or "").strip()
+                    if text:
+                        words.append({
+                            "text": text,
+                            "speaker": str(getattr(a, "speaker", "") or "").strip(),
+                            "start": parse_offset(getattr(a, "start_offset", 0)),
+                            "end": parse_offset(getattr(a, "end_offset", 0)),
+                        })
+    return words
+
+
+def transcribe_timestamp_chunk(client, chunk, base_offset):
+    uploaded = client.files.upload(file=str(chunk))
+    try:
+        interaction = client.interactions.create(
+            model="gemini-3.5-transcribe",
+            input=[{"type": "audio", "uri": uploaded.uri, "mime_type": uploaded.mime_type}],
+            generation_config={
+                "transcription_config": {
+                    "language_codes": ["fa-IR"],
+                    "mode": {
+                        "type": "verbatim",
+                        "diarization_mode": "speaker",
+                        "timestamp_granularities": ["word"],
+                    },
+                }
+            },
+        )
+        words = extract_words(interaction)
+        if not words:
+            fail(f"No timestamps for {chunk.name}")
+        for w in words:
+            w["start"] += base_offset
+            w["end"] += base_offset
+        return words
+    finally:
+        try:
+            client.files.delete(name=uploaded.name)
+        except Exception as exc:
+            print(f"Gemini file cleanup warning: {exc}", file=sys.stderr)
+
+
+def transcribe_timestamps(client):
+    all_words = []
+    base = 0.0
+    for chunk in split_audio():
+        all_words.extend(transcribe_timestamp_chunk(client, chunk, base))
+        base += duration(chunk)
+    return all_words
+
+
+def words_to_segments(words, max_seconds=24.0):
+    segments = []
+    current = None
+    for w in words:
+        if current is None:
+            current = {
+                "start": w["start"], "end": w["end"],
+                "speaker": w["speaker"], "parts": [w["text"]],
             }
-        },
+            continue
+        speaker_changed = w["speaker"] and current["speaker"] and w["speaker"] != current["speaker"]
+        too_long = w["end"] - current["start"] >= max_seconds
+        long_pause = w["start"] - current["end"] >= 2.5
+        if speaker_changed or too_long or long_pause:
+            segments.append({
+                "start": current["start"], "end": current["end"],
+                "speaker": current["speaker"], "text": " ".join(current["parts"]),
+            })
+            current = {
+                "start": w["start"], "end": w["end"],
+                "speaker": w["speaker"], "parts": [w["text"]],
+            }
+        else:
+            current["parts"].append(w["text"])
+            current["end"] = w["end"]
+    if current:
+        segments.append({
+            "start": current["start"], "end": current["end"],
+            "speaker": current["speaker"], "text": " ".join(current["parts"]),
+        })
+    return segments
+
+
+def timestamp_text_for_analysis(segments):
+    return "\n".join(
+        f"[{s['start']:.1f}s-{s['end']:.1f}s {s['speaker']}] {s['text']}"
+        for s in segments
     )
 
-    transcript = (interaction.output_text or "").strip()
 
-    if not transcript:
-        fail("Gemini Transcribe returned an empty transcript.")
+def save_initial_transcript(info, recording_start, segments):
+    lines = [
+        "شبکه جهانی ولایت",
+        f"نام برنامه: {info['program']}",
+        f"تاریخ: {jalali_date_for_today()}",
+        f"زمان رسمی: {info['start']} تا {info['end']}",
+        f"شروع ضبط: {fmt_clock(recording_start, True)}",
+        "شروع واقعی برنامه: در مرحله تحلیل تعیین می‌شود",
+        "",
+    ]
+    for s in segments:
+        a = absolute_time(recording_start, s["start"])
+        b = absolute_time(recording_start, s["end"])
+        lines += [
+            f"[{fmt_clock(a, True)}–{fmt_clock(b, True)} | +{fmt_elapsed(s['start'])}–+{fmt_elapsed(s['end'])}] [{s['speaker']}]",
+            s["text"],
+            "",
+        ]
+    TRANSCRIPT_FILE.write_text("\n".join(lines), encoding="utf-8")
 
-    # IMPORTANT:
-    # Save transcript BEFORE analysis. If analysis fails later, this file still
-    # exists and GitHub uploads it as an artifact because the upload step is
-    # configured with if: always().
-    TRANSCRIPT_FILE.write_text(transcript, encoding="utf-8")
-    print(f"Transcription complete: {len(transcript)} characters")
 
-    return transcript
-
-
-def analysis_prompt(transcript: str, info) -> str:
+def make_analysis_prompt(smart, timestamped, info):
     return f"""
-نقش شما: تحلیل‌گر محتوای برنامه‌های زنده شبکه جهانی ولایت.
+نام برنامه رسمی: {info['program']}
+زمان رسمی: {info['start']} تا {info['end']}
 
-نام برنامه طبق کنداکتور: {info["program"]}
-روز: {info["day"]}
-زمان رسمی برنامه: {info["start"]} تا {info["end"]} به وقت تهران
+START DETECTION:
+شروع واقعی برنامه را از روی آغاز واقعی مجری پیدا کن؛ مانند بسم الله، سلام و خوشامدگویی،
+معرفی همین برنامه، موضوع یا کارشناس. تیزر، آگهی، قرآن، صدای شبکه و برنامه قبلی شروع برنامه نیست.
+اگر آغاز واقعی در فایل دیده نمی‌شود، program_start_detected=false و offset=0؛ زمان ساختگی نساز.
 
-وظیفه:
-از متن کامل پیاده‌شده، گزارش محتوایی دقیق برنامه و سؤال‌های مخاطبان را استخراج کن.
+TIMING:
+تمام start_offset_seconds/end_offset_seconds باید از timestampهای متن زمان‌دار گرفته شوند
+و بر حسب ثانیه از ابتدای فایل ضبط‌شده باشند.
+برای هر محور اصلی بازه زمانی واقعی آن را بده.
+برای هر سؤال مخاطب، بازه سؤال + پاسخ کارشناس را بده.
+سؤال مجری را سؤال مخاطب محسوب نکن.
 
-قواعد:
-1. فقط از همین متن استفاده کن؛ هیچ اطلاعاتی را حدس نزن.
-2. تمرکز اصلی روی محتوای برنامه باشد.
-3. summary باید مهم‌ترین استدلال‌ها، توضیحات، پاسخ‌ها و نتیجه‌گیری‌ها را پوشش دهد.
-4. key_points محورهای اصلی محتوا باشند.
-5. در audience_questions فقط سؤال مخاطبانی را ثبت کن که واقعاً مطرح شده و کارشناس پاسخ داده است.
-6. سؤال‌های خود مجری را به عنوان سؤال مخاطب ثبت نکن.
-7. source_type:
-   - phone: تماس تلفنی یا پشت خط بودن مخاطب روشن است.
-   - message: پیام/پیامک مخاطب روشن است.
-   - unknown: مخاطب بودن روشن است ولی نوع ارتباط روشن نیست.
-8. audience_name را فقط اگر نام مخاطب در متن گفته شده ثبت کن؛ وگرنه «نامشخص».
-9. answer_summary خلاصه دقیق پاسخ کارشناس به همان سؤال باشد.
-10. هیچ بخش مستقلی با عنوان «شبهات» تولید نکن.
-11. اگر مخاطب چند سؤال مستقل پرسیده و هرکدام پاسخ گرفته، جدا ثبت کن.
-12. همه خروجی‌ها فارسی باشند.
+source_type:
+phone تماس تلفنی؛ message پیام/پیامک؛ unknown اگر نوع ارتباط روشن نیست.
+نام مخاطب فقط اگر صریحاً گفته شده است.
+نام کارشناس را حدس نزن.
+خلاصه علمی، محتوایی و جامع باشد.
+بخش جداگانه «شبهات» تولید نکن.
 
-متن برنامه:
---------------------
-{transcript}
---------------------
+SMART TRANSCRIPT:
+{smart}
+
+TIMESTAMPED VERBATIM:
+{timestamped}
 """
 
 
-def analyze_transcript_with_retry(
-    client: genai.Client,
-    transcript: str,
-    info,
-) -> tuple[ProgramAnalysis, str]:
-    """
-    FIX #2:
-    Retry temporary Gemini errors and then move to fallback Flash models.
-    A temporary 500/503/high-demand error no longer immediately kills the run.
-    """
-
-    prompt = analysis_prompt(transcript, info)
+def analyze(client, smart, timestamped, info):
+    prompt = make_analysis_prompt(smart, timestamped, info)
     errors = []
-
     for model in ANALYSIS_MODELS:
-        for attempt, delay in enumerate(ANALYSIS_RETRY_DELAYS, start=1):
+        for attempt, delay in enumerate(ANALYSIS_RETRY_DELAYS, 1):
             try:
-                print(
-                    f"Analyzing with {model} "
-                    f"(attempt {attempt}/{len(ANALYSIS_RETRY_DELAYS)})..."
-                )
-
                 interaction = client.interactions.create(
                     model=model,
                     input=prompt,
@@ -471,94 +489,100 @@ def analyze_transcript_with_retry(
                         "schema": ProgramAnalysis.model_json_schema(),
                     },
                 )
-
                 raw = (interaction.output_text or "").strip()
-
-                if not raw:
-                    raise RuntimeError("empty analysis response")
-
-                analysis = ProgramAnalysis.model_validate_json(raw)
-
-                print(f"Analysis succeeded with model: {model}")
-                return analysis, model
-
+                return ProgramAnalysis.model_validate_json(raw), model
             except Exception as exc:
-                error_text = f"{model} attempt {attempt}: {exc}"
-                errors.append(error_text)
-                print(error_text, file=sys.stderr)
-
-                # Last attempt for this model -> immediately move to fallback.
+                errors.append(f"{model}/{attempt}: {exc}")
                 if attempt < len(ANALYSIS_RETRY_DELAYS):
-                    print(f"Waiting {delay} seconds before retry...")
                     time.sleep(delay)
-
-        print(f"Moving to fallback model after failures on {model}...")
-
-    fail(
-        "همه مدل‌های تحلیل Gemini پس از Retry ناموفق بودند. "
-        "متن کامل برنامه در Artifact حفظ شده است.\n"
-        + "\n".join(errors[-6:])
-    )
+    fail("Analysis failed after retries.\n" + "\n".join(errors[-6:]))
 
 
-def jalali_date_for_today() -> str:
-    now = datetime.now(TEHRAN)
-    j = jdatetime.date.fromgregorian(date=now.date())
-    return f"{j.year:04d}/{j.month:02d}/{j.day:02d}"
+def save_final_transcript(info, recording_start, segments, analysis):
+    detected = analysis.program_start_detected
+    start0 = max(0.0, analysis.program_start_offset_seconds)
+
+    if detected:
+        actual = absolute_time(recording_start, start0)
+        actual_text = f"{fmt_clock(actual, True)} (مبدأ تایمر 00:00:00)"
+    else:
+        actual_text = "شناسایی نشد؛ تایمر نسبی اعمال نشده است"
+
+    lines = [
+        "شبکه جهانی ولایت",
+        f"نام برنامه: {info['program']}",
+        f"تاریخ: {jalali_date_for_today()}",
+        f"زمان رسمی: {info['start']} تا {info['end']}",
+        f"شروع ضبط: {fmt_clock(recording_start, True)}",
+        f"شروع واقعی برنامه: {actual_text}",
+        f"نشانه شروع: {analysis.program_start_evidence}",
+        f"کارشناس: {analysis.expert}",
+        f"موضوع: {analysis.topic}",
+        "",
+        "متن کامل زمان‌دار",
+        "زمان اول = ساعت واقعی | زمان دوم = تایمر از شروع واقعی برنامه",
+        "",
+    ]
+    for s in segments:
+        label = timed_label(recording_start, s["start"], s["end"], start0, detected)
+        lines += [f"[{label}] [{s['speaker']}]", s["text"], ""]
+    TRANSCRIPT_FILE.write_text("\n".join(lines), encoding="utf-8")
 
 
-def build_stats(analysis: ProgramAnalysis):
-    phone = 0
-    message = 0
-    unknown = 0
+def build_stats(analysis):
+    phone = sum(q.source_type == "phone" for q in analysis.audience_questions)
+    message = sum(q.source_type == "message" for q in analysis.audience_questions)
+    unknown = sum(q.source_type == "unknown" for q in analysis.audience_questions)
     names = []
-
-    for item in analysis.audience_questions:
-        if item.source_type == "phone":
-            phone += 1
-        elif item.source_type == "message":
-            message += 1
-        else:
-            unknown += 1
-
-        name = item.audience_name.strip()
-        if name and name != "نامشخص" and name not in names:
-            names.append(name)
-
+    for q in analysis.audience_questions:
+        if q.audience_name != "نامشخص" and q.audience_name not in names:
+            names.append(q.audience_name)
     return {
-        "phone_count": phone,
-        "message_count": message,
-        "unknown_count": unknown,
-        "total_count": len(analysis.audience_questions),
+        "phone_count": phone, "message_count": message,
+        "unknown_count": unknown, "total_count": len(analysis.audience_questions),
         "audience_names": names,
     }
 
 
-def answered_questions_payload(analysis: ProgramAnalysis):
+def question_payload(analysis, recording_start):
     return [
         {
-            "source_type": item.source_type,
-            "audience_name": item.audience_name,
-            "question": item.question,
-            "answer_summary": item.answer_summary,
+            "source_type": q.source_type,
+            "audience_name": q.audience_name,
+            "time_range": timed_label(
+                recording_start, q.start_offset_seconds, q.end_offset_seconds,
+                analysis.program_start_offset_seconds, analysis.program_start_detected,
+            ),
+            "question": q.question,
+            "answer_summary": q.answer_summary,
         }
-        for item in analysis.audience_questions
+        for q in analysis.audience_questions
     ]
 
 
-def make_report_payload(
-    info,
-    analysis: ProgramAnalysis,
-    stats,
-    analysis_model: str,
-    bot_status: str,
-):
-    gregorian = datetime.now(TEHRAN).strftime("%Y-%m-%d")
-    report_id = (
-        f"{gregorian}_{info['start'].replace(':', '')}_"
-        f"{info['program'].replace(' ', '_')}"
+def post_to_sheet(payload):
+    body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+    request = urllib.request.Request(
+        SHEETS_WEBHOOK_URL, data=body,
+        headers={"Content-Type": "application/json; charset=utf-8"},
+        method="POST",
     )
+    with urllib.request.urlopen(request, timeout=45) as response:
+        result = json.loads(response.read().decode("utf-8"))
+    if result.get("ok") is not True:
+        fail("Google Sheet rejected report: " + str(result))
+    return result
 
+
+def make_sheet_payload(info, analysis, stats, model, recording_start, bot_status):
+    report_id = (
+        f"{datetime.now(TEHRAN).strftime('%Y-%m-%d')}_"
+        f"{info['start'].replace(':', '')}_{info['program'].replace(' ', '_')}"
+    )
+    actual_start = (
+        fmt_clock(absolute_time(recording_start, analysis.program_start_offset_seconds), True)
+        if analysis.program_start_detected else "شناسایی نشد"
+    )
     return {
         "secret": WEBHOOK_SECRET,
         "report_id": report_id,
@@ -567,243 +591,138 @@ def make_report_payload(
         "start": info["start"],
         "end": info["end"],
         "program": info["program"],
+        "actual_program_start": actual_start,
         "expert": analysis.expert,
         "topic": analysis.topic,
         "summary": analysis.summary,
-        "key_points": analysis.key_points,
+        "key_points": [
+            {
+                "time_range": timed_label(
+                    recording_start, k.start_offset_seconds, k.end_offset_seconds,
+                    analysis.program_start_offset_seconds, analysis.program_start_detected,
+                ),
+                "text": k.text,
+            }
+            for k in analysis.key_points
+        ],
         "phone_question_count": stats["phone_count"],
         "message_question_count": stats["message_count"],
         "unknown_question_count": stats["unknown_count"],
         "total_question_count": stats["total_count"],
         "audience_names": stats["audience_names"],
-        "answered_questions": answered_questions_payload(analysis),
-        "questions": [
-            item.question
-            for item in analysis.audience_questions
-        ],
-        "analysis_model": analysis_model,
+        "questions": [q.question for q in analysis.audience_questions],
+        "answered_questions": question_payload(analysis, recording_start),
+        "analysis_model": model,
         "status": "COMPLETED",
         "bot_status": bot_status,
     }
 
 
-def post_to_sheet(payload):
-    body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+def source_label(value):
+    return {"phone": "تلفنی", "message": "پیام/پیامک", "unknown": "نوع ارتباط نامشخص"}.get(value, "نامشخص")
 
-    request = urllib.request.Request(
-        SHEETS_WEBHOOK_URL,
-        data=body,
-        headers={
-            "Content-Type": "application/json; charset=utf-8"
-        },
-        method="POST",
+
+def format_bale_message(info, analysis, stats, recording_start):
+    start0 = analysis.program_start_offset_seconds
+    detected = analysis.program_start_detected
+    actual = (
+        f"{fmt_clock(absolute_time(recording_start, start0), True)} (مبدأ 00:00:00)"
+        if detected else "شناسایی نشد"
     )
-
-    with urllib.request.urlopen(request, timeout=45) as response:
-        response_text = response.read().decode("utf-8")
-
-    result = json.loads(response_text)
-
-    if result.get("ok") is not True:
-        fail(
-            "Google Sheet webhook rejected report: "
-            + json.dumps(result, ensure_ascii=False)
-        )
-
-    print("Google Sheet response:", result)
-    return result
-
-
-def source_label(source_type: str) -> str:
-    return {
-        "phone": "تلفنی",
-        "message": "پیام/پیامک",
-        "unknown": "نوع ارتباط نامشخص",
-    }.get(source_type, "نامشخص")
-
-
-def format_bale_message(info, analysis: ProgramAnalysis, stats) -> str:
-    # v3.2: نام برنامه صریحاً از جدول رسمی می‌آید و آمار در انتهای پیام است.
     lines = [
         "📺 گزارش محتوایی برنامه زنده شبکه جهانی ولایت",
         "",
         f"🗓 تاریخ: {jalali_date_for_today()}",
         f"📺 نام برنامه: {info['program']}",
         f"👤 کارشناس: {analysis.expert}",
-        f"🕒 زمان برنامه: {info['start']} تا {info['end']} به وقت تهران",
+        f"🕒 زمان رسمی: {info['start']} تا {info['end']}",
+        f"▶️ شروع واقعی برنامه: {actual}",
         f"🎯 موضوع: {analysis.topic}",
         "",
         "📝 خلاصه محتوایی برنامه:",
         analysis.summary,
+        "",
+        "🔹 محورهای اصلی محتوا:",
     ]
-
-    if analysis.key_points:
-        lines.extend(["", "🔹 محورهای اصلی محتوا:"])
-        for index, item in enumerate(analysis.key_points, 1):
-            lines.append(f"{index}. {item}")
+    for i, k in enumerate(analysis.key_points, 1):
+        label = timed_label(recording_start, k.start_offset_seconds, k.end_offset_seconds, start0, detected)
+        lines.append(f"{i}. [{label}] {k.text}")
 
     if analysis.audience_questions:
-        lines.extend([
-            "",
-            "❓ سؤالات مخاطبان و چکیده پاسخ کارشناس:"
-        ])
+        lines += ["", "❓ سؤالات مخاطبان و چکیده پاسخ کارشناس:"]
+        for i, q in enumerate(analysis.audience_questions, 1):
+            label = timed_label(recording_start, q.start_offset_seconds, q.end_offset_seconds, start0, detected)
+            name = f" – {q.audience_name}" if q.audience_name != "نامشخص" else ""
+            lines.append(f"{i}. [{source_label(q.source_type)}{name} | {label}] {q.question}")
+            lines.append(f"   ↳ پاسخ: {q.answer_summary}")
 
-        for index, item in enumerate(analysis.audience_questions, 1):
-            audience = (
-                f" – {item.audience_name}"
-                if item.audience_name != "نامشخص"
-                else ""
-            )
-            lines.append(
-                f"{index}. [{source_label(item.source_type)}{audience}] "
-                f"{item.question}"
-            )
-            lines.append(f"   ↳ پاسخ: {item.answer_summary}")
-    else:
-        lines.extend([
-            "",
-            "❓ سؤالات مخاطبان:",
-            "در این برنامه سؤال پاسخ‌داده‌شده‌ای از مخاطبان شناسایی نشد."
-        ])
-
-    # آمار مخاطبان باید آخرین بخش پیام باشد.
-    lines.extend([
+    lines += [
         "",
         "📊 آمار مخاطبان:",
         f"☎️ سؤالات تلفنی پاسخ‌داده‌شده: {stats['phone_count']}",
         f"💬 سؤالات پیام/پیامکی پاسخ‌داده‌شده: {stats['message_count']}",
-    ])
-
+    ]
     if stats["unknown_count"]:
-        lines.append(
-            f"❔ سؤالات مخاطبان با نوع ارتباط نامشخص: "
-            f"{stats['unknown_count']}"
-        )
-
-    lines.append(
-        f"✅ مجموع سؤالات مخاطبان که پاسخ داده شد: "
-        f"{stats['total_count']}"
-    )
-
+        lines.append(f"❔ نوع ارتباط نامشخص: {stats['unknown_count']}")
+    lines.append(f"✅ مجموع سؤالات پاسخ‌داده‌شده: {stats['total_count']}")
     return "\n".join(lines)
 
-def split_message(text: str, limit: int = 3900):
-    if len(text) <= limit:
-        return [text]
 
-    chunks = []
-    current = ""
-
+def split_message(text, limit=3900):
+    chunks, current = [], ""
     for line in text.split("\n"):
         candidate = current + "\n" + line if current else line
-
         if len(candidate) <= limit:
             current = candidate
-            continue
-
-        if current:
-            chunks.append(current)
-
-        if len(line) <= limit:
-            current = line
         else:
-            for i in range(0, len(line), limit):
-                part = line[i:i + limit]
-                if len(part) == limit:
-                    chunks.append(part)
-                else:
-                    current = part
-
+            if current:
+                chunks.append(current)
+            current = line
     if current:
         chunks.append(current)
-
     return chunks
 
 
-def send_bale_message(text: str):
+def send_bale_message(text):
     url = f"https://tapi.bale.ai/bot{BALE_BOT_TOKEN}/sendMessage"
-
-    for index, chunk in enumerate(split_message(text), 1):
-        body = json.dumps(
-            {
-                "chat_id": BALE_CHAT_ID,
-                "text": chunk,
-            },
-            ensure_ascii=False,
-        ).encode("utf-8")
-
-        request = urllib.request.Request(
-            url,
-            data=body,
-            headers={
-                "Content-Type": "application/json; charset=utf-8"
-            },
+    for chunk in split_message(text):
+        body = json.dumps({"chat_id": BALE_CHAT_ID, "text": chunk}, ensure_ascii=False).encode("utf-8")
+        req = urllib.request.Request(
+            url, data=body,
+            headers={"Content-Type": "application/json; charset=utf-8"},
             method="POST",
         )
-
-        with urllib.request.urlopen(request, timeout=30) as response:
+        with urllib.request.urlopen(req, timeout=30) as response:
             result = json.loads(response.read().decode("utf-8"))
-
         if result.get("ok") is not True:
-            fail(
-                "Bale API rejected message: "
-                + json.dumps(result, ensure_ascii=False)
-            )
-
+            fail("Bale rejected message: " + str(result))
         time.sleep(1)
 
-    print("Report sent to Bale successfully.")
 
-
-
-def send_bale_transcript_file(info):
-    """ارسال فایل TXT متن کامل پیاده‌شده به همان کانال بله."""
-    if not TRANSCRIPT_FILE.exists():
-        fail("Transcript TXT file does not exist for Bale upload.")
-
+def send_bale_transcript(info):
     url = f"https://tapi.bale.ai/bot{BALE_BOT_TOKEN}/sendDocument"
     caption = (
-        f"📄 متن کامل پیاده‌شده برنامه «{info['program']}»\n"
-        f"🗓 {jalali_date_for_today()} | "
-        f"🕒 {info['start']} تا {info['end']}"
+        f"📄 متن کامل زمان‌دار برنامه «{info['program']}»\n"
+        f"🗓 {jalali_date_for_today()} | 🕒 {info['start']} تا {info['end']}"
     )
-    upload_name = (
-        f"velayat_transcript_"
+    filename = (
+        f"velayat_timestamped_transcript_"
         f"{jalali_date_for_today().replace('/', '-')}_"
         f"{info['start'].replace(':', '-')}.txt"
     )
-
     with TRANSCRIPT_FILE.open("rb") as handle:
         response = requests.post(
             url,
             data={"chat_id": BALE_CHAT_ID, "caption": caption},
-            files={
-                "document": (
-                    upload_name,
-                    handle,
-                    "text/plain; charset=utf-8",
-                )
-            },
+            files={"document": (filename, handle, "text/plain; charset=utf-8")},
             timeout=180,
         )
-
-    try:
-        result = response.json()
-    except Exception:
-        fail(
-            f"Bale sendDocument returned non-JSON response. "
-            f"HTTP {response.status_code}: {response.text[:500]}"
-        )
-
+    result = response.json()
     if response.status_code != 200 or result.get("ok") is not True:
-        fail(
-            "Bale API rejected transcript file: "
-            + json.dumps(result, ensure_ascii=False)
-        )
+        fail("Bale rejected transcript file: " + str(result))
 
-    print("Transcript TXT sent to Bale successfully.")
 
-def update_bot_status(report_id: str, status: str):
+def update_bot_status(report_id, status):
     try:
         post_to_sheet({
             "secret": WEBHOOK_SECRET,
@@ -812,132 +731,99 @@ def update_bot_status(report_id: str, status: str):
             "bot_status": status,
         })
     except Exception as exc:
-        print(
-            f"Could not update BOT_STATUS in Google Sheet: {exc}",
-            file=sys.stderr,
-        )
+        print(f"BOT_STATUS update warning: {exc}", file=sys.stderr)
 
 
-def send_bale_error(message: str):
+def send_bale_error(message):
     if not BALE_BOT_TOKEN or not BALE_CHAT_ID:
         return
-
     try:
         url = f"https://tapi.bale.ai/bot{BALE_BOT_TOKEN}/sendMessage"
-        text = (
-            "⚠️ خطای سامانه رصد شبکه ولایت\n\n"
-            f"{message}\n\n"
-            f"Run ID: {GITHUB_RUN_ID}"
-        )
-
-        body = json.dumps(
-            {
-                "chat_id": BALE_CHAT_ID,
-                "text": text[:3900],
-            },
-            ensure_ascii=False,
-        ).encode("utf-8")
-
-        request = urllib.request.Request(
-            url,
-            data=body,
-            headers={
-                "Content-Type": "application/json; charset=utf-8"
-            },
+        text = f"⚠️ خطای سامانه رصد شبکه ولایت\n\n{message}\n\nRun ID: {GITHUB_RUN_ID}"
+        body = json.dumps({"chat_id": BALE_CHAT_ID, "text": text[:3900]}, ensure_ascii=False).encode("utf-8")
+        req = urllib.request.Request(
+            url, data=body,
+            headers={"Content-Type": "application/json; charset=utf-8"},
             method="POST",
         )
-
-        urllib.request.urlopen(request, timeout=20).read()
-
-    except Exception as exc:
-        print(
-            f"Could not send Bale error notification: {exc}",
-            file=sys.stderr,
-        )
+        urllib.request.urlopen(req, timeout=20).read()
+    except Exception:
+        pass
 
 
 def main():
     check_required_settings()
     info = get_program_info()
 
-    print(
-        json.dumps(
-            {
-                "day": info["day"],
-                "program": info["program"],
-                "start": info["start"],
-                "end": info["end"],
-                "slot": info["slot"],
-            },
-            ensure_ascii=False,
-            indent=2,
-        )
-    )
+    # در Workflow v3.3 runner زودتر بالا می‌آید.
+    # URL حدود 90 ثانیه قبل آماده می‌شود و ضبط از ساعت رسمی شروع می‌شود.
+    media_url = prepare_stream(info)
+    recording_start = capture_audio(media_url, info)
 
     client = genai.Client(api_key=GEMINI_API_KEY)
 
-    media_url = resolve_stream_url(STREAM_URL)
-    capture_audio(media_url, info)
+    # خروجی اول: متن دقیق Smart
+    smart = transcribe_smart(client)
 
-    transcript = transcribe_audio(client)
+    # خروجی دوم: کلمات زمان‌دار، در قطعات زیر 30 دقیقه
+    words = transcribe_timestamps(client)
+    segments = words_to_segments(words)
 
-    analysis, used_model = analyze_transcript_with_retry(
-        client,
-        transcript,
-        info,
-    )
+    # حتی اگر Analysis شکست بخورد، یک TXT زمان‌دار اولیه باقی می‌ماند.
+    save_initial_transcript(info, recording_start, segments)
+
+    timestamped = timestamp_text_for_analysis(segments)
+    analysis, model = analyze(client, smart, timestamped, info)
+
+    # بازنویسی TXT با مبدأ واقعی برنامه
+    save_final_transcript(info, recording_start, segments, analysis)
 
     stats = build_stats(analysis)
 
-    report_preview = {
-        "date": jalali_date_for_today(),
-        "day": info["day"],
-        "program": info["program"],
-        "expert": analysis.expert,
-        "topic": analysis.topic,
-        "summary": analysis.summary,
-        "key_points": analysis.key_points,
-        "statistics": stats,
-        "analysis_model": used_model,
-        "audience_questions": answered_questions_payload(analysis),
-    }
-
     REPORT_FILE.write_text(
         json.dumps(
-            report_preview,
+            {
+                "program": info["program"],
+                "expert": analysis.expert,
+                "topic": analysis.topic,
+                "actual_program_start": (
+                    fmt_clock(
+                        absolute_time(recording_start, analysis.program_start_offset_seconds), True
+                    )
+                    if analysis.program_start_detected else "شناسایی نشد"
+                ),
+                "key_points": [
+                    {
+                        "time_range": timed_label(
+                            recording_start, k.start_offset_seconds, k.end_offset_seconds,
+                            analysis.program_start_offset_seconds, analysis.program_start_detected,
+                        ),
+                        "text": k.text,
+                    }
+                    for k in analysis.key_points
+                ],
+                "audience_questions": question_payload(analysis, recording_start),
+            },
             ensure_ascii=False,
             indent=2,
         ),
         encoding="utf-8",
     )
 
-    pending_payload = make_report_payload(
-        info,
-        analysis,
-        stats,
-        used_model,
-        bot_status="PENDING",
+    payload = make_sheet_payload(
+        info, analysis, stats, model, recording_start, "PENDING"
     )
-
-    post_to_sheet(pending_payload)
-    report_id = pending_payload["report_id"]
+    post_to_sheet(payload)
 
     try:
-        # ابتدا گزارش متنی به بله ارسال می‌شود.
-        send_bale_message(
-            format_bale_message(info, analysis, stats)
-        )
-
-        # سپس فایل TXT کامل پیاده‌شده به همان کانال ارسال می‌شود.
-        send_bale_transcript_file(info)
-
-        # SENT یعنی هر دو خروجی با موفقیت ارسال شده‌اند.
-        update_bot_status(report_id, "SENT")
+        send_bale_message(format_bale_message(info, analysis, stats, recording_start))
+        send_bale_transcript(info)
+        update_bot_status(payload["report_id"], "SENT")
     except Exception:
-        update_bot_status(report_id, "FAILED")
+        update_bot_status(payload["report_id"], "FAILED")
         raise
 
-    print("VELAYAT LIVE MONITOR v3.2: SUCCESS")
+    print("VELAYAT LIVE MONITOR v3.4 TIMESTAMP: SUCCESS")
 
 
 if __name__ == "__main__":
