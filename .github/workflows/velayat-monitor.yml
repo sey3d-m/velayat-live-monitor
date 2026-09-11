@@ -1,20 +1,10 @@
 name: Velayat Live Monitor
 
 on:
-  schedule:
-    # Runner starts 10 minutes before each official slot.
-    # Python waits until the exact start time before recording.
-    - cron: "50 17 * * 0-4,6"
-      timezone: "Asia/Tehran"
-    - cron: "20 19 * * 0-4,6"
-      timezone: "Asia/Tehran"
-    - cron: "50 20 * * 0-4,6"
-      timezone: "Asia/Tehran"
-
   workflow_dispatch:
     inputs:
       slot:
-        description: "Program slot for manual run"
+        description: "Program slot"
         required: true
         type: choice
         options:
@@ -26,45 +16,24 @@ permissions:
   contents: read
 
 concurrency:
-  group: velayat-live-monitor
+  group: velayat-live-monitor-${{ inputs.slot }}
   cancel-in-progress: false
 
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 110
+    timeout-minutes: 150
 
     steps:
-      - name: Resolve fixed program slot
-        id: slot
+      - name: Validate slot
         shell: bash
         env:
-          EVENT_NAME: ${{ github.event_name }}
-          MANUAL_SLOT: ${{ inputs.slot }}
-          SCHEDULE_CRON: ${{ github.event.schedule }}
+          SLOT: ${{ inputs.slot }}
         run: |
-          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
-            SLOT="$MANUAL_SLOT"
-          else
-            case "$SCHEDULE_CRON" in
-              "50 17 * * 0-4,6")
-                SLOT="18:00"
-                ;;
-              "20 19 * * 0-4,6")
-                SLOT="19:30"
-                ;;
-              "50 20 * * 0-4,6")
-                SLOT="21:00"
-                ;;
-              *)
-                echo "Unknown schedule: $SCHEDULE_CRON"
-                exit 1
-                ;;
-            esac
-          fi
-
-          echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
-          echo "Resolved PROGRAM_SLOT=$SLOT"
+          case "$SLOT" in
+            "18:00"|"19:30"|"21:00") echo "PROGRAM_SLOT=$SLOT" ;;
+            *) echo "Invalid slot: $SLOT"; exit 1 ;;
+          esac
 
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -93,7 +62,7 @@ jobs:
           BALE_BOT_TOKEN: ${{ secrets.BALE_BOT_TOKEN }}
           BALE_CHAT_ID: ${{ secrets.BALE_CHAT_ID }}
           GITHUB_RUN_ID: ${{ github.run_id }}
-          PROGRAM_SLOT: ${{ steps.slot.outputs.slot }}
+          PROGRAM_SLOT: ${{ inputs.slot }}
         run: python velayat_monitor.py
 
       - name: Upload transcript and diagnostic report
