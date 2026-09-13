@@ -3,3 +3,4 @@ pydantic
 yt-dlp
 jdatetime
 requests
+faster-whisper
