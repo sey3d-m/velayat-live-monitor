@@ -1,6 +1,6 @@
-google-genai>=2.0.0
-pydantic
-yt-dlp
-jdatetime
-requests
-faster-whisper
+google-genai==2.24.0
+pydantic>=2.7,<3.0
+requests>=2.31,<3.0
+jdatetime>=5.0,<6.0
+faster-whisper==1.2.1
+yt-dlp>=2025.1.1
