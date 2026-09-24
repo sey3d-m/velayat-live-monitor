@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Velayat Live Monitor v4.1
+Velayat Live Monitor v4.1.1
 
 Shared engine for Persian, Azeri, Arabic and Hausa channels.
 Key design goals:
@@ -37,7 +37,7 @@ from pydantic import BaseModel, Field
 # Runtime constants / environment
 # -----------------------------------------------------------------------------
 
-VERSION = "4.1"
+VERSION = "4.1.1"
 TEHRAN = ZoneInfo("Asia/Tehran")
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
@@ -85,15 +85,18 @@ PCM_CHUNK_BYTES = int(
 # allow a blocked network consumer to stall FFmpeg and the backup recording.
 LIVE_QUEUE_MAX_CHUNKS = 3600  # about 6 minutes of 100 ms chunks (~11.5 MB)
 
-# Current stable/fallback analysis sequence. Transcription and analysis quotas
-# are intentionally decoupled; a report degrades gracefully if analysis fails.
+# Analysis hotfix v4.1.1:
+# Use high-throughput Flash-Lite models and at most one request per model.
+# This preserves the existing report schemas/prompts while preventing a single
+# program from generating up to 12 full-transcript analysis requests.
+# The two model quotas are separate enough that the second can act as a light
+# fallback, but we never loop aggressively when the project is rate-limited.
 ANALYSIS_MODELS = [
-    "gemini-3.8-flash",
-    "gemini-3.7-flash",
-    "gemini-3.6-flash",
-    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite",
 ]
-ANALYSIS_RETRY_DELAYS = [15, 30, 60]
+ANALYSIS_ATTEMPTS_PER_MODEL = 1
+ANALYSIS_FALLBACK_DELAY_SECONDS = 8
 
 # Local emergency STT. Small multilingual is chosen for CPU practicality on a
 # standard GitHub-hosted runner. Override with WHISPER_MODEL if desired.
@@ -1134,10 +1137,42 @@ def international_analysis_prompt(
 """
 
 
+def _analysis_error_kind(exc: Exception) -> str:
+    """Return a compact diagnostic category without changing report behavior."""
+    text = f"{type(exc).__name__}: {exc}".lower()
+    if (
+        "429" in text
+        or "resource_exhausted" in text
+        or "resource has been exhausted" in text
+        or "quota" in text
+        or "rate limit" in text
+        or "rate_limit" in text
+    ):
+        return "RATE_LIMIT"
+    if "503" in text or "unavailable" in text or "high demand" in text:
+        return "SERVICE_UNAVAILABLE"
+    if "500" in text or "internal" in text:
+        return "SERVER_ERROR"
+    if "validationerror" in text or "validation error" in text:
+        return "VALIDATION_ERROR"
+    if "typeerror" in text:
+        return "TYPE_ERROR"
+    return "OTHER"
+
+
 def structured_analysis_with_retry(client, prompt: str, schema_model):
+    """
+    Run the existing structured analysis with a quota-safe retry policy.
+
+    v4.1 used four Flash models and retried each model up to three times, so a
+    single long program could resend the full transcript as many as 12 times.
+    v4.1.1 keeps the same prompt, schema and fallback report, but makes at most
+    one request to each of two Flash-Lite models (2 requests total).
+    """
     errors: list[str] = []
-    for model in ANALYSIS_MODELS:
-        for attempt, delay in enumerate(ANALYSIS_RETRY_DELAYS, start=1):
+
+    for model_index, model in enumerate(ANALYSIS_MODELS):
+        for attempt in range(1, ANALYSIS_ATTEMPTS_PER_MODEL + 1):
             try:
                 interaction = client.interactions.create(
                     model=model,
@@ -1153,11 +1188,19 @@ def structured_analysis_with_retry(client, prompt: str, schema_model):
                     raise RuntimeError("empty analysis response")
                 return schema_model.model_validate_json(raw), model, errors
             except Exception as exc:
-                message = f"{model} attempt {attempt}: {type(exc).__name__}: {exc}"
+                kind = _analysis_error_kind(exc)
+                message = (
+                    f"{model} attempt {attempt} [{kind}]: "
+                    f"{type(exc).__name__}: {exc}"
+                )
                 errors.append(message)
                 print(message, file=sys.stderr)
-                if attempt < len(ANALYSIS_RETRY_DELAYS):
-                    time.sleep(delay)
+
+        # Do not hammer the API. Wait briefly before trying the one fallback
+        # model. There is no repeated retry loop on the same model.
+        if model_index < len(ANALYSIS_MODELS) - 1:
+            time.sleep(ANALYSIS_FALLBACK_DELAY_SECONDS)
+
     return None, "UNAVAILABLE", errors
 
 
