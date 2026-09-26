@@ -109,7 +109,11 @@ jobs:
           SHEETS_WEBHOOK_URL: ${{ secrets.SHEETS_WEBHOOK_URL }}
           WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}
           BALE_BOT_TOKEN: ${{ secrets.BALE_BOT_TOKEN }}
-          BALE_CHAT_ID: ${{ secrets.BALE_CHAT_ID }}
+
+          # Persian reports remain in the existing Bale channel.
+          # Azeri / Arabic / Hausa reports go to the new non-Persian channel.
+          BALE_CHAT_ID: ${{ inputs.network == 'persian' && secrets.BALE_CHAT_ID || secrets.BALE_CHAT_ID_NONPERSIAN }}
+
           GITHUB_RUN_ID: ${{ github.run_id }}
 
           # Optional repository variables. Built-in defaults are used when empty.
