@@ -1,0 +1,91 @@
+name: Publish Q&A Dashboard
+
+on:
+  workflow_run:
+    workflows: ["Velayat Live Monitor"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: publish-qa-dashboard
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    # Only runs from the same trusted repository and a completed successful monitor.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_repository.full_name == github.repository)
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Download existing monitor report artifact
+        if: github.event_name == 'workflow_run'
+        uses: actions/download-artifact@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: ${{ github.event.workflow_run.id }}
+          pattern: velayat-persian-*
+          path: _dashboard_artifacts
+          merge-multiple: true
+
+      - name: Merge sanitized Q&A into public feed
+        shell: bash
+        run: |
+          if test -f _dashboard_artifacts/program_report.json; then
+            python publish_site_data.py \
+              --report _dashboard_artifacts/program_report.json \
+              --output docs/data/feed.json
+          else
+            echo 'No new Persian report; retain existing public feed.'
+          fi
+
+      - name: Save updated public JSON in repository
+        shell: bash
+        env:
+          TARGET_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/data/feed.json
+          if ! git diff --staged --quiet; then
+            git commit -m 'Update public question and answer feed'
+            # Monitor jobs for different networks may finish close together.
+            for n in 1 2 3; do
+              git pull --rebase origin "$TARGET_BRANCH"
+              if git push origin "HEAD:$TARGET_BRANCH"; then
+                break
+              fi
+              if [ "$n" = 3 ]; then
+                echo 'Could not update dashboard feed' >&2
+                exit 1
+              fi
+              sleep 3
+            done
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Deploy static site
+        id: deployment
+        uses: actions/deploy-pages@v4
