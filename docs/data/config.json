@@ -1,17 +1,16 @@
 {
-  "schema_version": 4,
-  "refresh_seconds": 90,
-  "tv_card_count": 5,
+  "refresh_seconds": 60,
+  "tv_card_count": 4,
   "tv_max_chars": 150,
   "tv_position": "right",
-  "tv_width_px": 560,
+  "tv_width_px": 450,
   "tv_font_px": 19,
-  "brand_color": "#caad74",
+  "brand_color": "#bc8e29",
   "logo_url": "",
-  "stale_minutes": 120,
+  "stale_minutes": 117,
   "question_priority": 1.2,
   "show_timecode": true,
-  "show_audience": false,
+  "show_audience": true,
   "enable_questions": true,
   "enable_expert_content": true
 }
