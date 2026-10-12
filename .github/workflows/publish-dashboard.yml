@@ -37,7 +37,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           run-id: ${{ github.event.workflow_run.id }}
-          pattern: velayat-persian-*
+          pattern: velayat-monitor-*
           path: _dashboard_artifacts
           merge-multiple: true
       - name: Optional additional scientific extraction from existing transcript
