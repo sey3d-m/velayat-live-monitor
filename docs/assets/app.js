@@ -1,206 +1,83 @@
-/* Pasokhnama: public-only, read-only view of sanitized Velayat Monitor results.
-   No secrets or Gemini keys in this script. */
+/* Pasokhnama V4 — static frontend; reads ONLY sanitized JSON, no API secrets. */
 (() => {
-  'use strict';
-  const page = document.body.dataset.page;
-  const url = new URL(location.href);
-  const isDemo = url.searchParams.get('demo') === '1' || location.protocol === 'file:';
-  const feedUrl = isDemo ? 'data/demo.json' : 'data/feed.json';
-  const REFRESH_MS = 60_000;
-  const OVERLAY_ROTATE_MS = 14_000;
-  const OVERLAY_MAX_AGE_HOURS = 4;
-  const fa = n => String(n ?? '').replace(/\d/g, x => '۰۱۲۳۴۵۶۷۸۹'[x]);
-  const normalize = str => String(str ?? '').replace(/[\u064A\u0649]/g, 'ی').replace(/\u0643/g,'ک').replace(/[\u064B-\u065F]/g,'').trim().toLowerCase();
-  const sourceName = s => ({ phone: 'تماس تلفنی', message: 'پیام مخاطب', unknown: 'پرسش مخاطب' })[s] || 'پرسش مخاطب';
-  const byId = id => document.getElementById(id);
-  const newEl = (tag, className, content) => {
-    const el = document.createElement(tag);
-    if (className) el.className = className;
-    if (content !== undefined) el.textContent = content;
-    return el;
-  };
-  const secs = n => {
-    n = Math.max(0, Number(n) || 0);
-    return fa(`${Math.floor(n/60).toString().padStart(2,'0')}:${Math.floor(n%60).toString().padStart(2,'0')}`);
-  };
-  const timestamp = iso => {
-    if (!iso) return 'هنوز منتشر نشده است';
-    try { return new Intl.DateTimeFormat('fa-IR',{timeZone:'Asia/Tehran',month:'long',day:'numeric',hour:'2-digit',minute:'2-digit'}).format(new Date(iso)) + ' به وقت تهران'; }
-    catch (_) { return 'زمان انتشار نامشخص'; }
-  };
-  const demoFallback = {
-    updated_at:'2026-10-11T17:35:00+00:00',source:'DEMO',programs:[{
-      id:'demo-1',date:'۱۴۰۵/۰۷/۱۹',date_iso:'2026-10-11',day:'یکشنبه',start:'21:00',end:'22:00',program:'فائزون',expert:'کارشناس برنامه',host:'مجری برنامه',topic:'گفت‌وگوی اعتقادی',quality:'complete',questions:[
-        {id:'demo-q1',question:'منظور از واژه مولا در حدیث غدیر چیست؟',answer:'در این پاسخ نمونه، به کاربرد واژه مولا و قرائن مرتبط با حدیث غدیر اشاره می‌شود.',start_sec:1164,end_sec:1298,source:'phone',status:'answered'},
-        {id:'demo-q2',question:'چگونه اعتبار روایت‌های تاریخی را بررسی کنیم؟',answer:'در این نمونه آزمایشی، مراجعه به منابع اولیه و بررسی سند و قرائن توصیه می‌شود.',start_sec:1620,end_sec:1750,source:'message',status:'answered'}
-      ]
-    }]
-  };
-  let feed = { programs: [] };
-  let allEntries = [];
-  let listLimit = 8;
-  let currentItem = null;
-  let overlayIndex = 0;
-  let overlaySignature = '';
-
-  async function loadFeed() {
-    try {
-      const res = await fetch(feedUrl + '?t=' + Date.now(), {cache:'no-store'});
-      if (!res.ok) throw Error('HTTP ' + res.status);
-      const data = await res.json();
-      if (!data || !Array.isArray(data.programs)) throw Error('ساختار داده نامعتبر');
-      feed = data;
-      if (page === 'audience') audienceRender();
-      if (page === 'overlay') overlayRender(true);
-    } catch (err) {
-      if (isDemo) {
-        feed = demoFallback;
-        if (page === 'audience') audienceRender();
-        if (page === 'overlay') overlayRender(true);
-      } else if (page === 'audience') {
-        byId('feed-status').textContent = 'ارتباط با خروجی عمومی دیدبان برقرار نشد. داده‌های قبلی در صورت وجود همچنان قابل مشاهده‌اند.';
-      } else if (!feed.programs.length) {
-        showOverlayWaiting('ارتباط با آرشیو برقرار نیست');
-      }
-      console.warn('Pasokhnama feed fetch:', err);
-    }
-  }
-
-  function flatten() {
-    return (feed.programs || []).flatMap(p => (p.questions || [])
-      .filter(q => q && q.question && q.answer && q.status === 'answered')
-      .map(q => ({ ...q, programInfo:p })));
-  }
-
-  function audienceRender() {
-    allEntries = flatten();
-    const dataPrograms = feed.programs || [];
-    byId('total-questions').textContent = fa(allEntries.length);
-    byId('total-programs').textContent = fa(dataPrograms.length);
-    byId('updated-at').textContent = timestamp(feed.updated_at);
-    const status = byId('feed-status');
-    if (isDemo) {
-      status.classList.add('demo-notice');
-      status.textContent = 'حالت نمایشی فعال است: تمامی پرسش‌ها، پاسخ‌ها و آمار این صفحه ساختگی و صرفاً برای بررسی طراحی هستند.';
-    } else if (!feed.updated_at) {
-      status.textContent = 'صفحه متصل است؛ هنوز گزارشی برای انتشار دریافت نشده است. پس از پایان نخستین برنامه، داده‌ها خودکار ظاهر می‌شوند.';
-    } else {
-      status.textContent = '';
-    }
-    const newest = dataPrograms[0];
-    byId('latest-program-name').textContent = newest?.program || 'هنوز گزارشی منتشر نشده است';
-    byId('latest-program-meta').textContent = newest ? [newest.day,newest.date,fa(newest.start)].filter(Boolean).join(' · ') : '—';
-    byId('latest-program-expert').textContent = newest && newest.expert && newest.expert !== 'نامشخص' ? 'کارشناس: ' + newest.expert : 'پاسخ‌ها پس از پایان تحلیل ثبت می‌شوند';
-    const select = byId('program-select');
-    const previous = select.value;
-    select.replaceChildren(new Option('همه برنامه‌ها','all'));
-    [...new Set(dataPrograms.map(p=>p.program).filter(Boolean))].forEach(name => select.add(new Option(name,name)));
-    select.value = [...select.options].some(o=>o.value === previous) ? previous : 'all';
-    renderList();
-  }
-
-  function renderList() {
-    const search = normalize(byId('search-input').value);
-    const targetProgram = byId('program-select').value;
-    const items = allEntries.filter(item => {
-      const p = item.programInfo;
-      return (targetProgram === 'all' || p.program === targetProgram) &&
-        (!search || normalize([item.question,item.answer,p.program,p.topic,p.expert].join(' ')).includes(search));
-    });
-    byId('result-count').textContent = fa(items.length) + ' نتیجه';
-    const list = byId('question-list');
-    list.replaceChildren();
-    if (!items.length) {
-      const empty = newEl('div','empty-state');
-      empty.append(newEl('div','empty-icon','؟'),newEl('h3','',search ? 'پرسشی با این عبارت پیدا نشد' : 'پرسشی برای نمایش وجود ندارد'),
-        newEl('p','',search ? 'عبارت دیگری جست‌وجو کنید یا فیلتر برنامه را تغییر دهید.' : 'با انتشار گزارش جدید دیدبان، پرسش‌های پاسخ‌داده‌شده اینجا قرار می‌گیرند.'));
-      list.append(empty);
-    }
-    items.slice(0,listLimit).forEach(item => {
-      const card = newEl('article','question-card');
-      const top = newEl('div','question-top');
-      top.append(newEl('span','program-tag',item.programInfo.program || 'برنامه شبکه ولایت'),newEl('span','answered-tag','✓ پاسخ استخراج شد'));
-      const headline = newEl('h3','',item.question);
-      const preview = newEl('p','answer-preview',item.answer);
-      const bottom = newEl('div','question-bottom');
-      const meta = newEl('div','question-meta');
-      meta.append(newEl('span','',item.programInfo.date || ''),newEl('span','',sourceName(item.source)),newEl('span','',secs(item.start_sec)));
-      const open = newEl('button','open-answer','مشاهده پاسخ ←');
-      open.type = 'button';
-      open.addEventListener('click',()=>openDetail(item));
-      bottom.append(meta,open);
-      card.append(top,headline,preview,bottom);
-      list.append(card);
-    });
-    byId('load-more').hidden = items.length <= listLimit;
-  }
-
-  function openDetail(item) {
-    currentItem = item;
-    const p = item.programInfo;
-    byId('modal-program').textContent = [p.program,p.date,p.expert && p.expert !== 'نامشخص' ? 'کارشناس: '+p.expert : ''].filter(Boolean).join(' · ');
-    byId('modal-title').textContent = item.question;
-    byId('modal-answer').textContent = item.answer;
-    byId('modal-timestamp').textContent = 'زمان تقریبی در برنامه: ' + secs(item.start_sec) + ' تا ' + secs(item.end_sec);
-    byId('detail-modal').hidden = false;
-    byId('detail-modal').setAttribute('aria-hidden','false');
-    document.body.style.overflow = 'hidden';
-    byId('modal-close').focus();
-  }
-  function closeDetail() {
-    byId('detail-modal').hidden = true;
-    byId('detail-modal').setAttribute('aria-hidden','true');
-    document.body.style.overflow = '';
-  }
-  function setupAudience() {
-    byId('search-input').addEventListener('input',()=>{listLimit=8;renderList();});
-    byId('program-select').addEventListener('change',()=>{listLimit=8;renderList();});
-    byId('load-more').addEventListener('click',()=>{listLimit+=8;renderList();});
-    byId('modal-close').addEventListener('click',closeDetail);
-    byId('detail-modal').addEventListener('click',e=>{if(e.target.dataset.close) closeDetail();});
-    document.addEventListener('keydown',e=>{if(e.key === 'Escape' && !byId('detail-modal').hidden) closeDetail();});
-    byId('copy-answer').addEventListener('click', async () => {
-      if (!currentItem) return;
-      const text = 'پرسش: '+currentItem.question+'\nپاسخ (خلاصه خودکار): '+currentItem.answer+'\nبرنامه: '+currentItem.programInfo.program;
-      try { await navigator.clipboard.writeText(text); byId('copy-answer').textContent='رونوشت تهیه شد ✓'; }
-      catch (_) { byId('copy-answer').textContent='رونوشت در این مرورگر ممکن نیست'; }
-      setTimeout(()=>byId('copy-answer').textContent='رونوشت پرسش و پاسخ',2500);
-    });
-  }
-
-  function showOverlayWaiting(phrase='در انتظار انتشار پاسخ تازه ...') {
-    byId('tv-question-tag').textContent = 'وضعیت سامانه';
-    byId('tv-answer-label').textContent = 'آخرین وضعیت';
-    byId('tv-question').textContent = phrase;
-    byId('tv-answer-text').textContent = 'پاسخ‌ها پس از تکمیل پردازش برنامه به‌طور خودکار منتشر می‌شوند.';
-    byId('tv-program').textContent = 'شبکه جهانی ولایت فارسی';
-    byId('tv-counter').textContent = 'آرشیو خودکار دیدبان';
-  }
-  function overlayRender(reset) {
-    const items = flatten();
-    if (isDemo) byId('tv-demo').hidden = false;
-    const published = feed.updated_at ? new Date(feed.updated_at).getTime() : NaN;
-    const fresh = isDemo || (Number.isFinite(published) && (Date.now() - published) < OVERLAY_MAX_AGE_HOURS * 3_600_000 && (Date.now() - published) > -3_600_000);
-    if (!items.length || !fresh) {
-      showOverlayWaiting(!items.length ? 'در انتظار نخستین پاسخ ثبت‌شده ...' : 'در انتظار پاسخ تازه از برنامه‌ها ...');
-      return;
-    }
-    const signature = String(feed.updated_at);
-    if (reset && signature !== overlaySignature) {
-      overlayIndex = 0;
-      overlaySignature = signature;
-    }
-    const item = items[overlayIndex % Math.min(items.length,6)];
-    byId('tv-question-tag').textContent = '●  پرسش مخاطب';
-    byId('tv-answer-label').textContent = 'خلاصه پاسخ کارشناس ✓';
-    byId('tv-question').textContent = item.question;
-    byId('tv-answer-text').textContent = item.answer;
-    byId('tv-program').textContent = [item.programInfo.program,item.programInfo.date].filter(Boolean).join(' | ');
-    byId('tv-counter').textContent = fa(overlayIndex % Math.min(items.length,6) + 1) + ' / ' + fa(Math.min(items.length,6));
-  }
-
-  if (page === 'audience') setupAudience();
-  loadFeed();
-  setInterval(loadFeed, REFRESH_MS);
-  if (page === 'overlay') setInterval(()=>{overlayIndex += 1;overlayRender(false);},OVERLAY_ROTATE_MS);
+'use strict';
+const $=id=>document.getElementById(id), page=document.body.dataset.page;
+const params=new URL(location.href).searchParams;
+const demo=params.get('demo')==='1'||location.protocol==='file:';
+const defaultConfig={refresh_seconds:90,tv_card_count:5,tv_max_chars:150,tv_position:'right',tv_width_px:560,tv_font_px:19,brand_color:'#c9ad74',logo_url:'',stale_minutes:120,question_priority:1.2,show_timecode:true,show_audience:false,enable_questions:true,enable_expert_content:true};
+const labels={question_answer:'پرسش و پاسخ',audience_question:'پرسش مخاطب',expert_point:'نکته علمی',expert_topic:'محور بحث کارشناس',expert_reference:'مستندات بحث',expert_summary:'جمع‌بندی کارشناس'};
+const icons={question_answer:'؟',audience_question:'؟',expert_point:'✦',expert_topic:'▤',expert_reference:'◈',expert_summary:'◎'};
+const fa=v=>String(v??'').replace(/\d/g,d=>'۰۱۲۳۴۵۶۷۸۹'[d]);
+const norm=v=>String(v??'').replace(/[يى]/g,'ی').replace(/ك/g,'ک').replace(/[\u064B-\u065F]/g,'').toLowerCase().trim();
+const clip=(s,n)=>{let v=String(s??'');return v.length>n?v.slice(0,n).trim()+'…':v};
+const secs=t=>t===null||t===undefined?'':fa(`${String(Math.floor(Number(t)/60)).padStart(2,'0')}:${String(Math.floor(Number(t)%60)).padStart(2,'0')}`);
+const dateText=iso=>iso?fa(iso.replace(/-/g,'/')):'—';
+const prettyDate=date=>{if(!date)return 'ثبت نشده';try{return new Intl.DateTimeFormat('fa-IR',{timeZone:'Asia/Tehran',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}).format(new Date(date))}catch(_){return 'نامشخص'}};
+const el=(tag,cls='',text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e};
+const qs=(sel)=>document.querySelector(sel);
+const demoProgram={id:'DEMO-PRG',date_iso:'2026-10-12',program:'برنامه آزمایشی',expert:'کارشناس فرضی',start:'20:00',summary:'تمام موارد زیر کاملاً ساختگی و صرفاً برای آزمایش ظاهر صفحه هستند.'};
+const demoTypes=['question_answer','expert_point','expert_topic','expert_reference','expert_summary','question_answer'];
+const demoHeads=['نمونه پرسش درباره روش بررسی یک روایت تاریخی','تفاوت نقل مستقیم و برداشت پژوهشگر از روایت','بررسی جایگاه منابع حدیثی در یک بحث فرضی','نمونه ارجاع ساختگی برای نمایش نوع کارت مستند','جمع‌بندی نمونه از یک گفت‌وگوی آموزشی','نمونه دوم پرسش و پاسخ در برنامه'];
+const demoItems=demoTypes.map((type,i)=>({id:'DEMO-'+(i+1),network:'velayat_farsi',program_id:'DEMO-PRG',program_title:'برنامه آزمایشی',expert_name:'کارشناس فرضی',content_type:type,title:demoHeads[i],summary:'این متن و این استدلال از هیچ برنامه واقعی استخراج نشده و فقط برای بررسی طراحی چندکارت تلویزیونی ساخته شده است.',question:type==='question_answer'?demoHeads[i]:null,answer:type==='question_answer'?'پاسخ فرضی در این نمونه فقط برای تست رابط کاربری نوشته شده است.':null,program_date:'2026-10-12',program_start_time:'20:00',start_timecode:i*190,end_timecode:(i+1)*190,verification_status:'approved',broadcast_eligible:true,estimated_answer_time:'20:'+String(i*3).padStart(2,'0'),audience_name:null,audience_city:null,confidence:1,evidence_excerpt:'',created_at:new Date().toISOString()}));
+let config={...defaultConfig},programs=[],items=[],live=null,index=null,shown=12,mode='content',modalId=null,loading=false,good=false;
+function clamp(v,min,max,fallback){if(v===null||v===undefined||v==='')return fallback;const n=Number(v);return Number.isFinite(n)?Math.min(max,Math.max(min,n)):fallback}
+function validated(raw){const c={...defaultConfig,...raw};c.refresh_seconds=clamp(c.refresh_seconds,60,120,90);c.tv_card_count=clamp(c.tv_card_count,4,6,5);c.tv_max_chars=clamp(c.tv_max_chars,70,300,150);c.stale_minutes=clamp(c.stale_minutes,10,240,120);c.tv_font_px=clamp(c.tv_font_px,14,36,19);c.tv_width_px=clamp(c.tv_width_px,350,900,560);c.question_priority=clamp(c.question_priority,.1,3,1.2);if(!['right','left','bottom'].includes(c.tv_position))c.tv_position='right';if(!/^#[0-9a-f]{6}$/i.test(c.brand_color))c.brand_color=defaultConfig.brand_color;return c}
+async function fetchData(path){const res=await fetch(path+'?_='+Date.now(),{cache:'no-store'});if(!res.ok)throw Error('HTTP '+res.status+' '+path);return res.json()}
+async function getConfig(){let local={};try{local=JSON.parse(localStorage.getItem('pasokhnama-v4-settings')||'{}')}catch(_){}let remote={};if(location.protocol!=='file:'){try{remote=await fetchData('data/config.json')}catch(e){console.warn('config:',e.message)}}return validated({...remote,...local})}
+async function loadData(){config=await getConfig();if(demo){programs=[demoProgram];items=demoItems;live={...demoProgram,program_id:'DEMO-PRG',program_title:demoProgram.program,program_date:new Date().toISOString().slice(0,10),expert_name:'کارشناس فرضی',last_analysis_at:new Date().toISOString(),items:demoItems};index={updated_at:new Date().toISOString()};return}
+const [pindex,cindex,liveData]=await Promise.all([fetchData('data/index.json'),fetchData('data/content-index.json'),fetchData('data/live.json')]);
+if(!Array.isArray(pindex.years)||!Array.isArray(cindex.years))throw Error('bad index');
+const validName=(file,prefix)=>new RegExp('^'+prefix+'-20\\d\\d\\.json$').test(file);
+const archives=await Promise.all(pindex.years.filter(x=>validName(x.path,'archive')).map(x=>fetchData('data/'+x.path)));
+const content=await Promise.all(cindex.years.filter(x=>validName(x.path,'content')).map(x=>fetchData('data/'+x.path)));
+programs=archives.flatMap(a=>Array.isArray(a.programs)?a.programs:[]).filter(p=>p.id&&p.date_iso);
+items=content.flatMap(a=>Array.isArray(a.items)?a.items:[]).filter(i=>i.network==='velayat_farsi'&&i.program_id&&i.content_type&&i.title);
+programs.sort((a,b)=>`${b.date_iso} ${b.start}`.localeCompare(`${a.date_iso} ${a.start}`));
+items.sort((a,b)=> (`${b.program_date||''} ${b.program_start_time||''}`).localeCompare(`${a.program_date||''} ${a.program_start_time||''}`) || (Number(b.start_timecode||0)-Number(a.start_timecode||0)));
+live=liveData;index=pindex}
+function programOf(item){return programs.find(p=>p.id===item.program_id)}
+function toast(text){const n=$('notice');if(!n)return;n.textContent=text;n.hidden=false;setTimeout(()=>n.hidden=true,2500)}
+function visibleText(text){return String(text??'')}
+function status(item){return ['approved','evidence_based'].includes(item.verification_status)?'دارای تأیید منبع':'خلاصه گزارش خودکار · نیازمند بررسی'}
+function fillSelect(id,values,preserve=true){const node=$(id),previous=preserve?node.value:'all';const options=[...new Set(values.filter(Boolean))].sort((a,b)=>a.localeCompare(b,'fa'));node.replaceChildren(new Option('همه '+({ 'program-filter':'برنامه‌ها','expert-filter':'کارشناسان','year-filter':'سال‌ها'}[id]||'موارد'),'all'));for(const x of options)node.append(new Option(x,x));node.value=[...node.options].some(o=>o.value===previous)?previous:'all'}
+function filtered(){const search=norm($('query').value),type=$('type-filter').value,pName=$('program-filter').value,expert=$('expert-filter').value,year=$('year-filter').value;
+if(mode==='programs')return programs.filter(p=>(pName==='all'||p.program===pName)&&(expert==='all'||p.expert===expert)&&(year==='all'||p.date_iso?.startsWith(year))&&(!search||norm([p.program,p.program_title,p.summary,p.topic,p.expert,...(p.key_points||[]).map(x=>x.title)].join(' ')).includes(search)));
+return items.filter(i=>(type==='all'||i.content_type===type)&&(pName==='all'||i.program_title===pName)&&(expert==='all'||i.expert_name===expert)&&(year==='all'||i.program_date?.startsWith(year))&&(!search||norm([i.title,i.summary,i.question,i.answer,i.expert_name,i.program_title,i.audience_name,i.audience_city].join(' ')).includes(search)))}
+function card(item){const c=el('article','content-card');c.dataset.kind=item.content_type;
+const top=el('div','content-meta-top'),kind=el('span','kind-chip '+item.content_type,`${icons[item.content_type]||'✦'} ${labels[item.content_type]||'مطلب علمی'}`),st=el('span','status-chip '+(item.broadcast_eligible?'approved':''),status(item));top.append(kind,st,el('time','content-date',dateText(item.program_date)));
+const title=el('h3','',item.title),desc=el('p','',item.summary||'—'),foot=el('div','content-footer');foot.append(el('span','',item.program_title||'شبکه ولایت'),el('span','',item.expert_name?'کارشناس: '+item.expert_name:'گوینده تأیید نشده'));
+if(item.start_timecode!==null&&item.start_timecode!==undefined)foot.append(el('span','',secs(item.start_timecode)));
+const b=el('button','','جزئیات و اشتراک‌گذاری ←');b.type='button';b.onclick=()=>openDetails(item);foot.append(b);c.append(top,title,desc,foot);return c}
+function programCard(p){const c=el('article','content-card');const top=el('div','content-meta-top');top.append(el('span','kind-chip','پرونده برنامه'),el('time','content-date',dateText(p.date_iso)));const title=el('h3','',p.program_title||p.program||'برنامه شبکه ولایت');const desc=el('p','',p.summary||'برای این برنامه خلاصه‌ای در آرشیو ثبت نشده است.');const foot=el('div','content-footer');foot.append(el('span','',p.program||'—'),el('span','',p.expert||'کارشناس ثبت نشده'));const btn=el('button','','مشاهده مباحث این برنامه ←');btn.onclick=()=>{mode='content';document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.mode==='content'));$('program-filter').value=p.program;shown=12;renderCards();document.getElementById('archive').scrollIntoView({block:'start',behavior:'smooth'})};foot.append(btn);c.append(top,title,desc,foot);return c}
+function renderCards(){const result=filtered(),target=$('cards');target.replaceChildren();$('found-count').textContent=fa(result.length)+' '+(mode==='programs'?'برنامه':'مطلب');if(!result.length)target.append(el('div','empty-list','موردی با این شرایط وجود ندارد. برای نمایش داده‌های ساختگی، آدرس را با ?demo=1 باز کنید.'));
+for(const item of result.slice(0,shown))target.append(mode==='programs'?programCard(item):card(item));$('more').hidden=result.length<=shown}
+function renderAudience(){ $('metric-content').textContent=fa(items.length);$('metric-programs').textContent=fa(programs.length);$('metric-questions').textContent=fa(items.filter(i=>i.content_type==='question_answer').length);$('last-update').textContent=prettyDate(index?.updated_at);
+fillSelect('program-filter',programs.map(p=>p.program));fillSelect('expert-filter',programs.map(p=>p.expert).concat(items.map(i=>i.expert_name)));fillSelect('year-filter',programs.map(p=>(p.date_iso||'').slice(0,4)));
+const active=live?.program_id?programs.find(p=>p.id===live.program_id):null;const p=active||programs[0];$('side-program').textContent=p?.program||'هنوز برنامه‌ای ثبت نشده';$('side-summary').textContent=clip(p?.summary||'در انتظار ورود اطلاعات معتبر برنامه‌ها ...',185);$('side-expert').textContent=p?.expert||'نامشخص';$('side-time').textContent=prettyDate(live?.last_analysis_at||live?.last_report_published_at);
+$('side-status').textContent=fresh(live)?'گزارش تازه دریافت شده':'آخرین مطالب ثبت‌شده';
+renderCards();if(demo){$('last-update').textContent='آزمایشی';$('side-status').textContent='تمام موارد ساختگی هستند'}const direct=params.get('item');if(direct&&!modalId){const i=items.find(x=>x.id===direct);if(i)openDetails(i,false)}}
+function openDetails(item,update=true){modalId=item.id;$('modal-category').textContent=labels[item.content_type]||'مطلب علمی';$('modal-title').textContent=item.title;$('modal-body').textContent=item.summary||item.answer||'—';const evidence=$('modal-evidence');evidence.hidden=!item.evidence_excerpt;evidence.textContent=item.evidence_excerpt?'شاهد ثبت‌شده: '+item.evidence_excerpt:'';const meta=$('modal-meta');meta.replaceChildren();for(const s of [item.program_title,item.expert_name&&'کارشناس: '+item.expert_name,dateText(item.program_date),item.estimated_answer_time&&'حدود ساعت '+fa(item.estimated_answer_time),status(item),item.start_timecode!==null&&item.start_timecode!==undefined&&'زمان در برنامه: '+secs(item.start_timecode)])if(s)meta.append(el('span','',s));$('modal').hidden=false;document.body.style.overflow='hidden';if(update){const u=new URL(location.href);u.searchParams.set('item',item.id);history.replaceState(null,'',u)}$('modal-close').focus()}
+function closeDetails(){modalId=null;$('modal').hidden=true;document.body.style.overflow='';const u=new URL(location.href);u.searchParams.delete('item');history.replaceState(null,'',u)}
+function fresh(l){if(demo)return true;if(!(l?.last_analysis_at||l?.last_report_published_at)||!l?.program_date||!l?.program_start_time)return false;
+const checked=Date.parse(l.last_analysis_at||l.last_report_published_at);const started=Date.parse(`${l.program_date}T${l.program_start_time}:00+03:30`);const now=Date.now();return Number.isFinite(checked)&&Number.isFinite(started)&&now-checked>=-600000&&now-checked<config.stale_minutes*60000&&now-started>=-7200000&&now-started<8*3600000}
+function tvItem(item){const kind=item.content_type;const c=el('article','tv-card kind-'+kind);c.dataset.id=item.id;const top=el('div','tv-card-top');top.append(el('span','',`${icons[kind]||'✦'} ${labels[kind]||'مطلب علمی'}`));if(config.show_timecode&&item.start_timecode!==null&&item.start_timecode!==undefined)top.append(el('time','',secs(item.start_timecode)));c.append(top,el('h2','',clip(item.title,110)));if(item.summary&&item.summary!==item.title)c.append(el('p','',clip(item.summary,config.tv_max_chars)));
+if(config.show_audience&&(item.audience_name||item.audience_city)){c.append(el('span','tv-card-top','مخاطب: '+[item.audience_name,item.audience_city].filter(Boolean).join(' · ')))}return c}
+function renderOverlay(){const stage=qs('.overlay-stage'),panel=$('tv-panel');const pos=params.get('pos')||config.tv_position;stage.classList.remove('position-left','position-bottom');if(pos==='left'||pos==='bottom')stage.classList.add('position-'+pos);
+panel.style.setProperty('--tv-width',clamp(params.get('width'),350,900,config.tv_width_px)+'px');panel.style.setProperty('--tv-font',config.tv_font_px+'px');panel.style.setProperty('--tv-accent',config.brand_color);
+const icon=$('tv-panel').querySelector('.tv-logo');if(config.logo_url&&/^(https:\/\/|assets\/)[a-z\d_./-]+$/i.test(config.logo_url)){const im=el('img');im.src=config.logo_url;im.alt='نشان شبکه';icon.replaceChildren(im);icon.classList.add('has-image')}
+const isFresh=fresh(live);const latest=live?.items||[];let matching=latest.filter(i=>i.broadcast_eligible&&i.network==='velayat_farsi');
+matching=matching.filter(i=>i.content_type.startsWith('question')||i.content_type==='audience_question'?config.enable_questions:config.enable_expert_content);
+matching.sort((a,b)=>Number(b.start_timecode||0)-Number(a.start_timecode||0));const count=clamp(params.get('count'),4,6,config.tv_card_count);
+const ranked=matching.slice().sort((a,b)=>{const aw=a.content_type==='question_answer'?config.question_priority:1,bw=b.content_type==='question_answer'?config.question_priority:1;return bw-aw||Number(b.start_timecode||0)-Number(a.start_timecode||0)});
+const chosen=ranked.slice(0,count).sort((a,b)=>Number(b.start_timecode||0)-Number(a.start_timecode||0));
+$('tv-program').textContent=live?.program_title||'شبکه ولایت فارسی';$('tv-expert').textContent=live?.expert_name?'کارشناس: '+live.expert_name:'محورهای علمی برنامه';$('tv-live-tag').textContent=isFresh?'گزارش تازه ثبت‌شده':'آخرین مطالب ثبت‌شده';$('tv-live-tag').classList.toggle('fresh',isFresh);$('tv-updated').textContent=(live?.last_analysis_at?'آخرین تحلیل: ':'آخرین انتشار گزارش: ')+prettyDate(live?.last_analysis_at||live?.last_report_published_at);$('tv-count').textContent=fa(chosen.length)+' مطلب';$('demo-label').hidden=!demo;
+const target=$('tv-cards'),prev=[...target.children].map(x=>x.dataset?.id).filter(Boolean);target.replaceChildren();if(!chosen.length){target.append(el('div','tv-empty',live?.program_id?'محتوای دارای تأیید کافی برای نمایش کارشناسی هنوز ثبت نشده است.':'در انتظار نخستین گزارش معتبر دیدبان …'));return}for(const item of chosen){const c=tvItem(item);if(!prev.includes(item.id)&&prev.length)c.classList.add('new-card');target.append(c)}}
+function wireAudience(){for(const id of ['query','type-filter','program-filter','expert-filter','year-filter'])$(id).addEventListener(id==='query'?'input':'change',()=>{shown=12;renderCards()});document.querySelectorAll('.tab').forEach(btn=>btn.onclick=()=>{mode=btn.dataset.mode;shown=12;document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t===btn));renderCards()});$('more').onclick=()=>{shown+=12;renderCards()};$('modal-close').onclick=closeDetails;qs('.modal-shade').onclick=closeDetails;document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modalId)closeDetails()});$('copy-link').onclick=async()=>{try{await navigator.clipboard.writeText(location.href);toast('لینک مستقیم کپی شد')}catch(_){toast('مرورگر اجازه کپی نداد')}};$('share').onclick=async()=>{if(navigator.share){try{await navigator.share({url:location.href,title:$('modal-title').textContent})}catch(_){}}else{$('copy-link').click()}}}
+const fields={'s-refresh':'refresh_seconds','s-count':'tv_card_count','s-length':'tv_max_chars','s-position':'tv_position','s-color':'brand_color','s-font':'tv_font_px','s-stale':'stale_minutes','s-width':'tv_width_px','s-priority':'question_priority','s-logo':'logo_url','s-timecodes':'show_timecode','s-audience':'show_audience','s-qa':'enable_questions','s-topics':'enable_expert_content'};
+function valuesFromSettings(){const raw={};for(const [id,name]of Object.entries(fields)){const node=$(id);raw[name]=node.type==='checkbox'?node.checked:node.type==='number'?Number(node.value):node.value}return validated(raw)}
+function wireSettings(){for(const [id,key]of Object.entries(fields)){const e=$(id);e[e.type==='checkbox'?'checked':'value']=config[key]??''}
+$('save-settings').onclick=()=>{config=valuesFromSettings();localStorage.setItem('pasokhnama-v4-settings',JSON.stringify(config));$('settings-feedback').textContent='تنظیمات برای همین مرورگر ذخیره شد. برای نصب سراسری از دکمه دریافت JSON استفاده کنید.'};
+$('export-settings').onclick=()=>{const data=JSON.stringify(valuesFromSettings(),null,2);const b=new Blob([data],{type:'application/json'}),url=URL.createObjectURL(b),a=el('a');a.href=url;a.download='config.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),3000);$('settings-feedback').textContent='فایل JSON تهیه شد. پس از بررسی، آن را در docs/data/config.json مخزن جایگزین کنید.'}}
+async function loop(){if(loading)return;loading=true;try{await loadData();good=true;if(page==='audience')renderAudience();else if(page==='overlay')renderOverlay();else if(page==='settings'&&!document.body.dataset.ready){wireSettings();document.body.dataset.ready='1'}}catch(error){console.warn('Pasokhnama:',error);if(!good){if(page==='audience')$('cards').replaceChildren(el('div','empty-list','ارتباط با داده‌های آرشیو برقرار نشد. صفحه را بعداً دوباره بررسی کنید.'));if(page==='overlay')$('tv-cards').replaceChildren(el('div','tv-empty','اتصال به خروجی دیدبان برقرار نیست.'))}}finally{loading=false;if(page!=='settings')setTimeout(loop,config.refresh_seconds*1000)}}
+if(page==='audience')wireAudience();loop();
 })();
