@@ -1,0 +1,24 @@
+{
+  "SCHEMA_EXAMPLE_DO_NOT_PUBLISH": true,
+  "network": "EXAMPLE_NOT_REAL",
+  "scheduled_date": "2026-01-01",
+  "start": "20:00",
+  "program": "مثال ساختگی — انتشار ممنوع",
+  "analysis": {
+    "expert": "کارشناس فرضی",
+    "expert_segments": [
+      {
+        "content_type": "expert_point",
+        "title": "موضوع کاملاً ساختگی",
+        "summary": "این شرح برای نمایش قرارداد داده است و گزارش هیچ برنامه واقعی نیست.",
+        "speaker_role": "expert",
+        "evidence_excerpt": "این جمله در صوت واقعی وجود ندارد.",
+        "speaker_verified": false,
+        "confidence": 0,
+        "verification_status": "pending",
+        "start_sec": 180,
+        "end_sec": 240
+      }
+    ]
+  }
+}
