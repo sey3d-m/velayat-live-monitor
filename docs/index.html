@@ -1,105 +1,33 @@
 <!doctype html>
-<html lang="fa" dir="rtl">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07132a">
-  <meta name="description" content="پرسش‌ها و پاسخ‌های استخراج‌شده از برنامه‌های شبکه جهانی ولایت فارسی">
-  <title>پاسخ‌نما | پرسش و پاسخ برنامه‌های شبکه ولایت</title>
-  <link rel="stylesheet" href="assets/styles.css">
-</head>
+<html lang="fa" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07172c"><meta name="description" content="پاسخ‌نما — آرشیو علمی و پرسش‌وپاسخ شبکه جهانی ولایت فارسی">
+<title>پاسخ‌نما ۴ | محتوای علمی شبکه ولایت فارسی</title>
+<link rel="stylesheet" href="assets/styles.css"></head>
 <body class="audience-page" data-page="audience">
-  <div class="ambient" aria-hidden="true"></div>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="./" aria-label="صفحه اصلی پاسخ‌نما">
-        <div class="brand-emblem"><span>و</span><i></i></div>
-        <span class="brand-copy"><strong>پاسخ‌نما</strong><small>شبکه جهانی ولایت فارسی</small></span>
-      </a>
-      <nav class="header-actions" aria-label="پیوندهای اصلی">
-        <a href="#questions" class="nav-link">پرسش‌ها</a>
-        <a href="#about" class="nav-link nav-desktop">درباره سامانه</a>
-        <a href="overlay.html" class="outline-link" target="_blank" rel="noopener">نمای تلویزیون <span aria-hidden="true">↗</span></a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="pulse-dot"></span> استخراج خودکار با هوش مصنوعی <span class="eyebrow-rule"></span> آرشیو برنامه‌ها</div>
-        <h1 id="hero-title">پاسخ پرسشت را <em>اینجا</em><span class="hero-line"> پیدا کن.</span></h1>
-        <p class="hero-desc">پرسش‌های مطرح‌شده از سوی مخاطبان و خلاصه پاسخ کارشناسان، به‌صورت خودکار از برنامه‌های شبکه ولایت استخراج و در این صفحه منتشر می‌شوند.</p>
-        <div class="hero-actions">
-          <a href="#questions" class="primary-link">مشاهده پرسش‌ها <span>←</span></a>
-          <span class="hero-hint">بدون ثبت‌نام · دسترسی عمومی</span>
-        </div>
-      </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="visual-halo"></div>
-        <div class="quote-symbol">؟</div>
-        <div class="float-pill pill-one"><span class="tiny-dot gold"></span> پرسش شناسایی شد</div>
-        <div class="float-pill pill-two"><span class="tiny-dot green"></span> خلاصه پاسخ آماده شد <span>✓</span></div>
-        <div class="visual-tag">پرسش و پاسخ هوشمند</div>
-      </div>
-    </section>
-
-    <section class="dashboard-summary" aria-label="آخرین وضعیت">
-      <div class="stat-card stats-primary"><span class="stat-icon">✦</span><div><span class="stat-value" id="total-questions">—</span><span class="stat-label">پرسش پاسخ‌داده‌شده</span></div></div>
-      <div class="stat-card"><span class="stat-icon">▦</span><div><span class="stat-value" id="total-programs">—</span><span class="stat-label">برنامه ثبت‌شده</span></div></div>
-      <div class="stat-card status-card"><span class="stat-icon">◷</span><div><span class="status-small">آخرین انتشار</span><span class="stat-label updated-text" id="updated-at">در انتظار اولین گزارش</span></div></div>
-    </section>
-
-    <section class="content-grid" id="questions">
-      <div class="content-main">
-        <div class="section-top">
-          <div><span class="section-kicker">آرشیو هوشمند</span><h2>پرسش‌ها و پاسخ‌ها <span class="heading-gold">/</span></h2></div>
-          <span class="little-chip" id="result-count">— نتیجه</span>
-        </div>
-        <div class="filter-panel">
-          <label class="search-field"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="جست‌وجو در پرسش‌ها و پاسخ‌ها ..." autocomplete="off" aria-label="جست‌وجو"></label>
-          <label class="select-wrap"><span class="sr-only">برنامه</span><select id="program-select" aria-label="فیلتر برنامه"><option value="all">همه برنامه‌ها</option></select><span class="chevron">⌄</span></label>
-        </div>
-        <div class="feed-status" id="feed-status" role="status" aria-live="polite">در حال دریافت تازه‌ترین گزارش‌ها ...</div>
-        <div id="question-list" class="question-list" aria-live="polite"></div>
-        <div class="show-more-wrap"><button type="button" id="load-more" class="more-button" hidden>نمایش پرسش‌های بیشتر <span>↓</span></button></div>
-      </div>
-      <aside class="sidebar">
-        <div class="broadcast-card">
-          <div class="small-label"><span class="small-red-dot"></span> از شبکه ولایت</div>
-          <div class="broadcast-illustration"><span class="cast-ring ring1"></span><span class="cast-ring ring2"></span><span class="tower">◉</span></div>
-          <h3>از گفت‌وگوی زنده<br>تا پاسخ ماندگار</h3>
-          <p>پاسخ‌های استخراج‌شده از گفت‌وگوهای تلویزیونی، در آرشیو قابل جست‌وجو باقی می‌مانند.</p>
-          <a href="https://nl.livekadeh.com/hls2/velayattv.m3u8" target="_blank" rel="noopener" class="broadcast-link">لینک پخش شبکه <span>↗</span></a>
-        </div>
-        <div class="info-card" id="about">
-          <span class="info-icon">i</span><h3>این پاسخ‌ها چگونه تهیه می‌شوند؟</h3>
-          <p>سامانه دیدبان، صوت برنامه را تحلیل می‌کند و پرسش‌های واقعی مخاطبان را همراه با خلاصه پاسخ کارشناس استخراج می‌کند.</p>
-          <p class="note-line">انتشار پس از پایان تحلیل برنامه انجام می‌شود؛ خلاصه‌ها توسط هوش مصنوعی تهیه شده‌اند و ممکن است نیازمند بازبینی باشند.</p>
-        </div>
-        <div class="today-card" id="latest-program">
-          <span class="section-kicker">آخرین برنامه ثبت‌شده</span>
-          <strong id="latest-program-name">هنوز گزارشی منتشر نشده است</strong>
-          <span id="latest-program-meta">—</span>
-          <span class="gold-line"></span>
-          <span id="latest-program-expert">—</span>
-        </div>
-      </aside>
-    </section>
-  </main>
-  <footer class="site-footer"><div class="container footer-content"><span>پاسخ‌نما <span class="footer-separator">/</span> شبکه جهانی ولایت فارسی</span><span>طراحی برای نمایش آنلاین و تلویزیونی <span class="footer-gold">✦</span></span></div></footer>
-  <div id="detail-modal" class="modal" hidden aria-hidden="true">
-    <div class="modal-backdrop" data-close="true"></div>
-    <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-      <div class="modal-head"><span class="modal-eyebrow">شرح پرسش و پاسخ</span><button class="modal-close" id="modal-close" type="button" aria-label="بستن">×</button></div>
-      <div class="modal-program" id="modal-program"></div>
-      <h2 id="modal-title"></h2>
-      <div class="answer-block"><div class="answer-top"><span>خلاصه پاسخ کارشناس</span><span class="answered-badge">✓ پاسخ استخراج شد</span></div><p id="modal-answer"></p></div>
-      <div class="modal-bottom"><span id="modal-timestamp"></span><button type="button" id="copy-answer" class="copy-button">رونوشت پرسش و پاسخ</button></div>
-      <p class="modal-disclaimer">متن پاسخ، خلاصه خودکارِ گفتار کارشناس است؛ برای استناد قطعی باید به برنامه اصلی مراجعه شود.</p>
-    </section>
-  </div>
-  <script src="assets/app.js" defer></script>
-</body>
-</html>
+<div class="topline"></div>
+<header class="main-header"><div class="container header-row">
+<a class="brand" href="./"><span class="brand-mark">و</span><span><b>پاسخ‌نما</b><small>مرجع محتوای شبکه جهانی ولایت فارسی</small></span></a>
+<nav class="nav-links"><a href="#live">آخرین مطالب</a><a href="#archive">آرشیو علمی</a><a href="#about">درباره</a></nav>
+<a class="outline-button" href="overlay.html" target="_blank" rel="noopener">نمای تلویزیونی <span>↗</span></a>
+</div></header>
+<main class="container">
+<section class="hero-panel" id="live"><div class="hero-copy"><div class="eyebrow"><span class="signal-dot"></span> نمایش هوشمند محتوای برنامه‌ها <span class="dot-separator">✦</span> نسخه ۴</div>
+<h1>هر گفت‌وگو، <span>یک گنجینه علمی.</span></h1><p>گزیده مباحث کارشناسان، استنادهای علمی و پرسش‌وپاسخ مخاطبان شبکه ولایت فارسی؛ از برنامه‌های تازه تا آرشیو قابل جست‌وجو.</p>
+<div class="hero-cta"><a href="#archive" class="solid-button">جست‌وجو در آرشیو <span>←</span></a><a href="overlay.html?demo=1" target="_blank" rel="noopener" class="ghost-button">مشاهده نمونه تلویزیونی ↗</a></div></div>
+<div class="hero-art" aria-hidden="true"><div class="art-ring a"></div><div class="art-ring b"></div><div class="art-icon">و</div><div class="art-card art-card-1"><span>✦ نکته علمی</span><i></i><i></i></div><div class="art-card art-card-2"><span>❖ محور بحث</span><i></i></div></div></section>
+<section class="insight-row" aria-label="آمار آرشیو"><div class="metric"><span class="metric-icon">◈</span><div><strong id="metric-content">—</strong><small>مطلب علمی و پرسش</small></div></div><div class="metric"><span class="metric-icon">▣</span><div><strong id="metric-programs">—</strong><small>برنامه ثبت‌شده</small></div></div><div class="metric"><span class="metric-icon">◷</span><div><strong id="metric-questions">—</strong><small>پرسش دارای پاسخ</small></div></div><div class="metric metric-status"><span class="metric-icon">●</span><div><strong class="small-value" id="last-update">در انتظار نخستین انتشار</strong><small>آخرین انتشار داده</small></div></div></section>
+<section class="archive-section" id="archive"><div class="section-heading"><div><span class="kicker">کتابخانه محتوای شبکه</span><h2>آرشیو علمی و پرسش‌وپاسخ <span>✦</span></h2></div><p>مطالب به‌صورت خودکار استخراج شده‌اند؛ وضعیت اعتبار هر محتوا مشخص است.</p></div>
+<div class="content-layout"><div class="primary-column">
+<div class="search-panel"><label class="search-box"><span>⌕</span><input id="query" type="search" placeholder="جست‌وجو در پرسش‌ها، نکات علمی، نام کارشناس و موضوع ..." aria-label="جست‌وجو"></label>
+<div class="filters"><label>نوع مطلب<select id="type-filter"><option value="all">همه موضوعات</option><option value="question_answer">پرسش و پاسخ</option><option value="audience_question">پرسش مخاطب</option><option value="expert_point">نکته علمی</option><option value="expert_topic">محور بحث کارشناس</option><option value="expert_reference">مستندات بحث</option><option value="expert_summary">جمع‌بندی کارشناس</option></select></label><label>نام برنامه<select id="program-filter"><option value="all">همه برنامه‌ها</option></select></label><label>کارشناس<select id="expert-filter"><option value="all">همه کارشناسان</option></select></label><label>سال<select id="year-filter"><option value="all">همه سال‌ها</option></select></label></div></div>
+<div class="tabs"><button class="tab active" type="button" data-mode="content">مباحث و پرسش‌ها</button><button class="tab" type="button" data-mode="programs">پرونده برنامه‌ها</button><span id="found-count" class="found-count">— نتیجه</span></div>
+<div id="cards" class="cards" aria-live="polite"></div><button id="more" class="more-button" type="button" hidden>نمایش موارد بیشتر ↓</button></div>
+<aside class="secondary-column"><div class="side-card side-live"><div class="side-label"><span class="signal-dot"></span> وضعیت آخرین برنامه</div><h3 id="side-program">شبکه ولایت فارسی</h3><p id="side-summary">داده‌های واقعی پس از دریافت گزارش معتبر نمایش داده می‌شوند.</p><div class="side-divider"></div><div class="info-line"><span>کارشناس</span><strong id="side-expert">—</strong></div><div class="info-line"><span>آخرین تحلیل / انتشار</span><strong id="side-time">—</strong></div><div class="status-pill" id="side-status">آخرین مطالب ثبت‌شده</div></div>
+<div class="side-card"><span class="side-label">دسته‌بندی‌ها</span><div class="category-list"><span>❖ پرسش و پاسخ</span><span>✦ نکته علمی</span><span>▤ محور بحث کارشناس</span><span>◈ مستندات بحث</span><span>◎ جمع‌بندی کارشناس</span></div></div>
+<div class="side-card help-card"><b>دقت محتوایی</b><p>گزارش‌های قدیمی لزوماً گوینده‌سنجی نشده‌اند. مطالب تأییدنشده به‌عنوان گزارش خودکار معرفی می‌شوند و مجوز نمایش زنده کارشناسی ندارند.</p></div></aside></div></section>
+<section class="about-panel" id="about"><span>شبکه جهانی ولایت فارسی</span><p>پاسخ‌نما نمایه‌ای از محتوای واقعی ثبت‌شده است؛ این سامانه متن یا منبع علمی جدیدی به گفتار کارشناسان اضافه نمی‌کند. برای بررسی استنادها، مشاهده برنامه اصلی ضروری است.</p><a href="settings.html">تنظیمات صفحه و خروجی تلویزیون ←</a></section>
+</main><footer class="footer"><div class="container footer-inner"><span>پاسخ‌نما V4.0 · شبکه ولایت فارسی</span><span>آرشیو محتوای علمی، نه جایگزین ویدئوی اصلی</span></div></footer>
+<div id="modal" class="modal" hidden><div class="modal-shade" data-close="1"></div><article class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-top"><span id="modal-category">جزئیات مطلب</span><button id="modal-close" type="button" aria-label="بستن">×</button></div><h2 id="modal-title"></h2><p id="modal-body"></p><div id="modal-evidence" class="evidence" hidden></div><div class="modal-meta" id="modal-meta"></div><div class="modal-actions"><button id="copy-link" type="button">کپی لینک مستقیم</button><button id="share" type="button">اشتراک‌گذاری</button></div><small class="modal-warning">خلاصه‌های ماشینی را پیش از استناد علمی مستقل بررسی کنید.</small></article></div>
+<div id="notice" class="toast" role="status" hidden></div>
+<script src="assets/app.js" defer></script></body></html>
