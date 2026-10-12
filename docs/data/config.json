@@ -1,0 +1,17 @@
+{
+  "schema_version": 4,
+  "refresh_seconds": 90,
+  "tv_card_count": 5,
+  "tv_max_chars": 150,
+  "tv_position": "right",
+  "tv_width_px": 560,
+  "tv_font_px": 19,
+  "brand_color": "#caad74",
+  "logo_url": "",
+  "stale_minutes": 120,
+  "question_priority": 1.2,
+  "show_timecode": true,
+  "show_audience": false,
+  "enable_questions": true,
+  "enable_expert_content": true
+}
