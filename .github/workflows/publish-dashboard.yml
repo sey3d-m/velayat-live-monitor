@@ -18,7 +18,6 @@ concurrency:
 
 jobs:
   publish:
-    # Only runs from the same trusted repository and a completed successful monitor.
     if: >-
       github.event_name == 'workflow_dispatch' ||
       (github.event.workflow_run.conclusion == 'success' &&
@@ -30,9 +29,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.repository.default_branch }}
           persist-credentials: true
-
-      - name: Download existing monitor report artifact
+      - name: Download existing Persian Monitor artifact
         if: github.event_name == 'workflow_run'
         uses: actions/download-artifact@v4
         with:
@@ -41,19 +40,53 @@ jobs:
           pattern: velayat-persian-*
           path: _dashboard_artifacts
           merge-multiple: true
-
-      - name: Merge sanitized Q&A into public feed
+      - name: Optional additional scientific extraction from existing transcript
+        shell: bash
+        env:
+          ENABLE_SMART_ANALYSIS: ${{ vars.PASOKHNAMA_SMART_ANALYSIS }}
+          GEMINI_API_KEY: ${{ secrets.PASOKHNAMA_GEMINI_API_KEY }}
+        run: |
+          set -euo pipefail
+          transcript=''
+          for candidate in \
+            _dashboard_artifacts/program_transcript_timed.txt \
+            _dashboard_artifacts/program_transcript.txt \
+            _dashboard_artifacts/transcript.txt; do
+            if test -s "$candidate"; then
+              transcript="$candidate"
+              break
+            fi
+          done
+          if test "$ENABLE_SMART_ANALYSIS" = 'true' && test -n "$GEMINI_API_KEY" && \
+            test -s _dashboard_artifacts/program_report.json && test -n "$transcript"; then
+            python analyze_transcript_v4.py \
+              --report _dashboard_artifacts/program_report.json \
+              --transcript "$transcript" \
+              --out /tmp/pasokhnama-v4-structured.json || \
+              echo 'V4 optional analysis failed; original successful Didban report will be used.'
+          else
+            echo 'Extra AI analysis disabled or transcript unavailable; Didban unchanged.'
+          fi
+      - name: Append new data, V4 scientific index and guarded television feed
         shell: bash
         run: |
-          if test -f _dashboard_artifacts/program_report.json; then
-            python publish_site_data.py \
-              --report _dashboard_artifacts/program_report.json \
-              --output docs/data/feed.json
+          set -euo pipefail
+          if test -s _dashboard_artifacts/program_report.json; then
+            if test -s /tmp/pasokhnama-v4-structured.json; then
+              python publish_site_data.py --report _dashboard_artifacts/program_report.json \
+                --expert-file /tmp/pasokhnama-v4-structured.json \
+                --migrate-feed docs/data/feed.json --out-dir docs/data
+            else
+              python publish_site_data.py --report _dashboard_artifacts/program_report.json \
+                --migrate-feed docs/data/feed.json --out-dir docs/data
+            fi
           else
-            echo 'No new Persian report; retain existing public feed.'
+            python publish_site_data.py --migrate-feed docs/data/feed.json --out-dir docs/data
+            echo 'No new Persian report. Archive remains preserved.'
           fi
-
-      - name: Save updated public JSON in repository
+      - name: Test V4 evidence-based publication safeguards
+        run: python -m unittest discover -s tests -p 'test_v4.py' -v
+      - name: Commit public archive only
         shell: bash
         env:
           TARGET_BRANCH: ${{ github.event.repository.default_branch }}
@@ -61,31 +94,19 @@ jobs:
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add docs/data/feed.json
-          if ! git diff --staged --quiet; then
-            git commit -m 'Update public question and answer feed'
-            # Monitor jobs for different networks may finish close together.
+          git add -A docs/data
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update Velayat public content archive'
             for n in 1 2 3; do
               git pull --rebase origin "$TARGET_BRANCH"
-              if git push origin "HEAD:$TARGET_BRANCH"; then
-                break
-              fi
-              if [ "$n" = 3 ]; then
-                echo 'Could not update dashboard feed' >&2
-                exit 1
-              fi
-              sleep 3
+              if git push origin "HEAD:$TARGET_BRANCH"; then break; fi
+              if [ "$n" = 3 ]; then exit 1; fi
+              sleep 5
             done
           fi
-
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload static site
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
-
-      - name: Deploy static site
+      - uses: actions/deploy-pages@v4
         id: deployment
-        uses: actions/deploy-pages@v4

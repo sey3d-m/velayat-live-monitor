@@ -1,0 +1,77 @@
+name: Import Historical Archive
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: publish-qa-dashboard
+  cancel-in-progress: false
+
+jobs:
+  import-history:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - name: Download private history export (Bale TXT/JSON or Monitor Sheets JSON)
+        shell: bash
+        env:
+          EXPORT_URL: ${{ secrets.HISTORY_EXPORT_URL }}
+          EXPORT_TOKEN: ${{ secrets.HISTORY_EXPORT_TOKEN }}
+        run: |
+          set -euo pipefail
+          if test -z "$EXPORT_URL"; then
+            echo 'Set repository secret HISTORY_EXPORT_URL to a secure HTTPS location containing exported messages or reports.' >&2
+            exit 1
+          fi
+          case "$EXPORT_URL" in https://*) ;; *) echo 'Only HTTPS export URLs are supported.' >&2; exit 1;; esac
+          if test -n "$EXPORT_TOKEN"; then
+            curl --fail --show-error --silent --location --max-time 120 --retry 2 \
+              -H "Authorization: Bearer $EXPORT_TOKEN" "$EXPORT_URL" -o /tmp/history-export
+          else
+            curl --fail --show-error --silent --location --max-time 120 --retry 2 \
+              "$EXPORT_URL" -o /tmp/history-export
+          fi
+          test -s /tmp/history-export
+      - name: Convert report messages without exposing original channel data
+        shell: bash
+        run: |
+          set -euo pipefail
+          if python import_bale_history.py --input /tmp/history-export --output /tmp/parsed-persian-bale.json; then
+            echo 'Recognized historical Bale Persian Part1/Part2 reports.'
+            python publish_site_data.py --import-file /tmp/parsed-persian-bale.json --out-dir docs/data
+          else
+            echo 'Not a recognized Bale export; attempting existing Sheets/Monitor export.'
+            cp /tmp/history-export /tmp/history-export.json
+            python publish_site_data.py --import-file /tmp/history-export.json --out-dir docs/data
+          fi
+          # Do NOT upload or commit /tmp/history-export or raw messages.
+      - name: Commit public archive only
+        shell: bash
+        env:
+          TARGET_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A docs/data
+          if ! git diff --cached --quiet; then
+            git commit -m 'Import historical Persian Velayat archive'
+            git pull --rebase origin "$TARGET_BRANCH"
+            git push origin "HEAD:$TARGET_BRANCH"
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - uses: actions/deploy-pages@v4
+        id: deployment
