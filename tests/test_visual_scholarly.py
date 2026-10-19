@@ -54,6 +54,7 @@ class ScholarlyReviewTests(unittest.TestCase):
     def test_grounding_google_redirect_is_resolved_only_to_allowed_site(self):
         response=MagicMock()
         response.headers={"Location":"https://al-islam.org/a"}
+        response.__enter__.return_value=response
         with patch.object(s.requests,"get",return_value=response) as get:
             url=s.resolve_grounding_source("https://vertexaisearch.cloud.google.com/grounding-api-redirect/example")
         self.assertEqual(url,"https://al-islam.org/a")
