@@ -6,6 +6,7 @@ on:
       - "visual_review.py"
       - "scholarly_review.py"
       - "tests/test_visual_scholarly.py"
+      - ".github/workflows/velayat-monitor.yml"
       - ".github/workflows/validate-visual-scholarly.yml"
   workflow_dispatch:
 
