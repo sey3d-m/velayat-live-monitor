@@ -153,7 +153,7 @@ def assess_single_claim(client, issue, timed):
 def research_claims(client, timed, issues):
     if not enabled():
         return {"status":"disabled","items":[]}
-    limit=min(4,max(1,int(os.getenv("MAX_SCHOLARLY_CLAIMS","3"))))
+    limit=min(4,max(1,int(os.getenv("MAX_SCHOLARLY_CLAIMS") or "3")))
     concrete=[x for x in issues if getattr(x,"start_sec",None) is not None
               and "تحلیل خودکار" not in str(getattr(x,"issue",getattr(x,"claim","")))][:limit]
     results=[assess_single_claim(client,issue,timed) for issue in concrete]
