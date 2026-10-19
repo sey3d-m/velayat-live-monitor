@@ -144,7 +144,7 @@ def send_bale_photos(result, token, chat_id, program):
             f"🧥 ارزیابی: {frame['assessment'] or 'نامشخص'}\n"
             f"💡 پیشنهاد: {frame['recommendation'] or 'مورد مشخصی ثبت نشد'}\n"
             f"⚠️ تشخیص گوینده از یک تصویر ثابت قطعی نیست."
-        )[:3500]
+        )[:900]
         err=None
         for attempt in range(2):
             try:
