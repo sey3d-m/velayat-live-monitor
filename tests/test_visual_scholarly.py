@@ -51,6 +51,15 @@ class ScholarlyReviewTests(unittest.TestCase):
         response=SimpleNamespace(candidates=[SimpleNamespace(grounding_metadata=meta)])
         self.assertEqual(s.grounding_urls(response),{"https://al-islam.org/a"})
 
+    def test_grounding_google_redirect_is_resolved_only_to_allowed_site(self):
+        response=MagicMock()
+        response.headers={"Location":"https://al-islam.org/a"}
+        with patch.object(s.requests,"get",return_value=response) as get:
+            url=s.resolve_grounding_source("https://vertexaisearch.cloud.google.com/grounding-api-redirect/example")
+        self.assertEqual(url,"https://al-islam.org/a")
+        self.assertFalse(s.resolve_grounding_source("https://untrusted.test/redirect"))
+        get.assert_called_once()
+
     def test_only_matching_quote_is_verified(self):
         body="<html><body>قال رسول الله في هذا الحديث: النص المطلوب موجود هنا بتمامه.</body></html>"
         fake=MagicMock()
