@@ -148,12 +148,18 @@ def assess_single_claim(client, issue, timed):
     except Exception as exc:
         output["verification_note"]=f"جست‌وجوی علمی خودکار ناموفق بود ({type(exc).__name__})؛ ادعا همچنان نیازمند داوری مستند است."
         print(f"Scholarly verification failed: {type(exc).__name__}: {exc}",file=sys.stderr)
+    if output["status"] != "retrieved_evidence":
+        # Never present the model's confidence as evidentiary verification.
+        output["confidence"] = "low"
     return output
 
 def research_claims(client, timed, issues):
     if not enabled():
         return {"status":"disabled","items":[]}
-    limit=min(4,max(1,int(os.getenv("MAX_SCHOLARLY_CLAIMS") or "3")))
+    try:
+        limit=min(4,max(1,int(os.getenv("MAX_SCHOLARLY_CLAIMS") or "3")))
+    except ValueError:
+        limit=3
     concrete=[x for x in issues if getattr(x,"start_sec",None) is not None
               and "تحلیل خودکار" not in str(getattr(x,"issue",getattr(x,"claim","")))][:limit]
     results=[assess_single_claim(client,issue,timed) for issue in concrete]
@@ -169,7 +175,7 @@ def format_bale_scholarly(result, program):
         lines.append("مورد مشخصی برای پژوهش دومرحله‌ای استخراج نشد.")
     for i,x in enumerate(result.get("items",[]),1):
         lines.extend(["",f"{i}) ⏱ {x['start_sec']} ثانیه | ادعا: {x['claim']}",
-          f"🔍 نظر تحلیلی: {x['assessment'] or 'تحلیل پژوهشی ناموفق بود.'}",
+          f"🔍 داوری اولیه مدل (نیازمند بازبینی): {x['assessment'] or 'تحلیل پژوهشی ناموفق بود.'}",
           f"📝 اصلاح پیشنهادی: {x['recommended_correction'] or 'اصلاحی مستند احراز نشد.'}"])
         if x["status"]=="retrieved_evidence":
             lines.extend([f"📖 منبع بازیابی‌شده: {x['source_title']}",
