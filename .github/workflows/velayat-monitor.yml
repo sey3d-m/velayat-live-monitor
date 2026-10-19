@@ -121,6 +121,14 @@ jobs:
           ARABIC_STREAM_URL: ${{ vars.ARABIC_STREAM_URL }}
           HAUSA_STREAM_URL: ${{ vars.HAUSA_STREAM_URL }}
           WHISPER_MODEL: ${{ vars.WHISPER_MODEL }}
+
+          # Optional V4.2 live image and Shi'a-source verification settings.
+          # Defaults are ON for snapshots and Persian scholarly research.
+          ENABLE_VISUAL_REVIEW: ${{ vars.ENABLE_VISUAL_REVIEW }}
+          VISUAL_REVIEW_MODEL: ${{ vars.VISUAL_REVIEW_MODEL }}
+          ENABLE_SCHOLARLY_REVIEW: ${{ vars.ENABLE_SCHOLARLY_REVIEW }}
+          SCHOLARLY_REVIEW_MODEL: ${{ vars.SCHOLARLY_REVIEW_MODEL }}
+          MAX_SCHOLARLY_CLAIMS: ${{ vars.MAX_SCHOLARLY_CLAIMS }}
         run: python velayat_monitor.py
 
       - name: Upload transcript and diagnostic report
