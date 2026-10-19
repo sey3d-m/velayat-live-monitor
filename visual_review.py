@@ -128,3 +128,38 @@ def visual_review(client, frames, timed):
 def report_metadata(result):
     return {"status":result.get("status","unavailable"),"note":result.get("note",""),
       "frames":[{k:v for k,v in f.items() if k!="path"} for f in result.get("frames",[])]}
+
+
+def send_bale_photos(result, token, chat_id, program):
+    """Upload both the original snapshot and its associated visual judgement."""
+    import requests
+    errors=[]
+    for idx,frame in enumerate(result.get("frames",[]),1):
+        path=frame["path"]
+        caption=(
+            f"📸 دیدبان | ارزیابی تصویر {idx} | {program}\n"
+            f"⏱ حدود {frame['offset_sec']} ثانیه از شروع ضبط (تقریبی)\n"
+            f"👤 نقشِ قابل مشاهده: {frame['visible_role']}\n"
+            f"🔎 مشاهده: {frame['observation']}\n"
+            f"🧥 ارزیابی: {frame['assessment'] or 'نامشخص'}\n"
+            f"💡 پیشنهاد: {frame['recommendation'] or 'مورد مشخصی ثبت نشد'}\n"
+            f"⚠️ تشخیص گوینده از یک تصویر ثابت قطعی نیست."
+        )[:3500]
+        err=None
+        for attempt in range(2):
+            try:
+                with path.open("rb") as photo:
+                    response=requests.post(
+                        f"https://tapi.bale.ai/bot{token}/sendPhoto",
+                        data={"chat_id":chat_id,"caption":caption},
+                        files={"photo":(path.name,photo,"image/jpeg")},timeout=45)
+                if response.status_code!=200 or response.json().get("ok") is not True:
+                    raise RuntimeError("Bale rejected screenshot")
+                err=None
+                break
+            except Exception as exc:
+                err=exc
+                print(f"Bale photo {idx} attempt {attempt+1}: {exc}",file=sys.stderr)
+        if err:
+            errors.append(f"photo_{idx}: {type(err).__name__}: {err}")
+    return errors
