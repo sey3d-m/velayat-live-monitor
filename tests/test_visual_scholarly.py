@@ -3,7 +3,7 @@ import asyncio
 import tempfile
 import unittest
 from pathlib import Path
-from unittest.mock import patch, Mock
+from unittest.mock import patch, Mock, MagicMock
 from types import SimpleNamespace
 
 import visual_review as v
@@ -53,7 +53,7 @@ class ScholarlyReviewTests(unittest.TestCase):
 
     def test_only_matching_quote_is_verified(self):
         body="<html><body>قال رسول الله في هذا الحديث: النص المطلوب موجود هنا بتمامه.</body></html>"
-        fake=Mock()
+        fake=MagicMock()
         fake.status_code=200
         fake.headers={"Content-Type":"text/html; charset=utf-8"}
         fake.encoding="utf-8"
