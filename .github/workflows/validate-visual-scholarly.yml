@@ -1,0 +1,29 @@
+name: Validate visual and scholarly enhancements
+on:
+  pull_request:
+    paths:
+      - "velayat_monitor.py"
+      - "visual_review.py"
+      - "scholarly_review.py"
+      - "tests/test_visual_scholarly.py"
+      - ".github/workflows/validate-visual-scholarly.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install test dependencies
+        run: python -m pip install "google-genai==2.24.0" "requests>=2.31,<3" "pydantic>=2.7,<3" "jdatetime>=5,<6"
+      - name: Python syntax check
+        run: python -m py_compile velayat_monitor.py visual_review.py scholarly_review.py
+      - name: No-network unit tests
+        run: python -m unittest discover -s tests -p "test_visual_scholarly.py" -v
