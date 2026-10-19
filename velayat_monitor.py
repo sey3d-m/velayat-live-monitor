@@ -297,6 +297,13 @@ class HostIssue(BaseModel):
     end_sec: int
 
 
+class SourceCheckClaim(BaseModel):
+    claim: str
+    start_sec: int
+    end_sec: int
+    why_check: str = ""
+
+
 class PersianProgramAnalysis(BaseModel):
     host: str = "نامشخص"
     expert: str = "نامشخص"
@@ -309,6 +316,7 @@ class PersianProgramAnalysis(BaseModel):
     viral_clips: list[ViralClip]
     expert_content_review: list[PersianContentIssue]
     host_review: list[HostIssue]
+    source_check_claims: list[SourceCheckClaim] = Field(default_factory=list)
 
 
 ReviewCategory = Literal[
@@ -1077,7 +1085,11 @@ def persian_analysis_prompt(timed_transcript: str, info: dict) -> str:
      و «نیازمند بررسی» برای ادعای بیرونیِ راستی‌آزمایی‌نشده است.
    - هیچ سند یا حدیث ساختگی نساز. مرحله پژوهش مستقل منبع را جست‌وجو خواهد کرد.
    - زمان ادعا ضروری است؛ اگر موردی یافت نشد آرایه خالی.
-11. host_review: فقط موارد واقعی و قابل استناد مانند ورود بیش از حد، سؤال نابجا، قطع سخن، طولانی‌گویی، القای پاسخ یا تکرار غیرضروری؛ هر مورد تایم داشته باشد.
+11. source_check_claims: سه تا پنج ادعای صریحِ قابل تحقیق از سخنان برنامه
+    درباره حدیث، سند، تاریخ، آیه یا نسبت به منابع را استخراج کن؛ حتی اگر آن ادعا
+    هنوز خطا شناخته نشده است. claim باید نقل یا بازگویی دقیق ادعای مشخص باشد،
+    start_sec/end_sec و why_check را بده. از محورهای مبهم موضوعی پرهیز کن.
+12. host_review: فقط موارد واقعی و قابل استناد مانند ورود بیش از حد، سؤال نابجا، قطع سخن، طولانی‌گویی، القای پاسخ یا تکرار غیرضروری؛ هر مورد تایم داشته باشد.
 12. ادعاهای سیاسی، تاریخی یا مذهبی تأییدنشده را به عنوان واقعیت قطعی بازنویسی نکن.
 13. همه خروجی‌ها فارسی باشند.
 
@@ -1828,7 +1840,8 @@ def main() -> None:
 
     # Optional second-stage research and visual review do not overwrite base reports.
     scientific_verification = (
-        research_claims(client, timed_transcript, analysis.expert_content_review)
+        research_claims(client, timed_transcript,
+                        [*analysis.expert_content_review, *analysis.source_check_claims])
         if cfg.report_mode == "persian_full" and analysis_available
         else {"status": "not_applicable", "items": []}
     )
