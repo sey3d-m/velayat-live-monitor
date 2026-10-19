@@ -109,7 +109,7 @@ def transcript_window(timed, seconds):
     return "\n".join(matches)[:4000] if matches else timed[:4000]
 
 def assess_single_claim(client, issue, timed):
-    statement=str(getattr(issue,"issue",issue))[:750]
+    statement=str(getattr(issue,"issue",getattr(issue,"claim",issue)))[:750]
     offset=int(getattr(issue,"start_sec",0) or 0)
     prompt=source_prompt(statement,transcript_window(timed,offset))
     output={"claim":statement,"start_sec":offset,"status":"unverified",
@@ -155,7 +155,7 @@ def research_claims(client, timed, issues):
         return {"status":"disabled","items":[]}
     limit=min(4,max(1,int(os.getenv("MAX_SCHOLARLY_CLAIMS","3"))))
     concrete=[x for x in issues if getattr(x,"start_sec",None) is not None
-              and "تحلیل خودکار" not in str(getattr(x,"issue",""))][:limit]
+              and "تحلیل خودکار" not in str(getattr(x,"issue",getattr(x,"claim","")))][:limit]
     results=[assess_single_claim(client,issue,timed) for issue in concrete]
     return {"status":"researched" if results else "no_specific_claims",
             "items":results, "checked_count":len(results),
