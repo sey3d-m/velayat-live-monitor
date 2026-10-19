@@ -31,13 +31,15 @@ import requests
 from google import genai
 from google.genai import types
 from pydantic import BaseModel, Field
+from visual_review import capture_audio_and_frames, enabled as visuals_enabled, visual_review, report_metadata, send_bale_photos
+from scholarly_review import research_claims, format_bale_scholarly
 
 
 # -----------------------------------------------------------------------------
 # Runtime constants / environment
 # -----------------------------------------------------------------------------
 
-VERSION = "4.1.1"
+VERSION = "4.2.0-beta"
 TEHRAN = ZoneInfo("Asia/Tehran")
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
@@ -1068,10 +1070,13 @@ def persian_analysis_prompt(timed_transcript: str, info: dict) -> str:
    - start_sec از شروع سؤال تا end_sec پایان پاسخ کارشناس.
 9. viral_clips: ۲ تا ۵ بخش مناسب تقطیع، با تیتر جذاب ولی غیرتحریف‌آمیز و بازه زمانی.
 10. expert_content_review:
-   - «اشکال روشن» فقط وقتی خطا/تناقض از خود متن روشن است.
-   - اگر داوری به منبع بیرونی نیاز دارد، «نیازمند بررسی».
-   - اگر پاسخ ناقص یا مبهم است، «ضعف در پاسخ».
-   - هر مورد تایم داشته باشد؛ اگر مورد معناداری نیست آرایه خالی.
+   - ادعاهای صریح مهم تاریخی، حدیثی، قرآنی یا اعتقادی را که سند آنها مشکوک است
+     با صورت دقیقِ گزاره و زمان آن ثبت کن تا در مرحله دوم با جست‌وجوی منابع شیعی بررسی شود.
+   - تنها ننویس «نیازمند سند»؛ کدام گزاره، نسبت یا استدلال را مشخص کن.
+   - «اشکال روشن» فقط برای خطای آشکار در خود متن، «ضعف در پاسخ» برای نقص استدلال
+     و «نیازمند بررسی» برای ادعای بیرونیِ راستی‌آزمایی‌نشده است.
+   - هیچ سند یا حدیث ساختگی نساز. مرحله پژوهش مستقل منبع را جست‌وجو خواهد کرد.
+   - زمان ادعا ضروری است؛ اگر موردی یافت نشد آرایه خالی.
 11. host_review: فقط موارد واقعی و قابل استناد مانند ورود بیش از حد، سؤال نابجا، قطع سخن، طولانی‌گویی، القای پاسخ یا تکرار غیرضروری؛ هر مورد تایم داشته باشد.
 12. ادعاهای سیاسی، تاریخی یا مذهبی تأییدنشده را به عنوان واقعیت قطعی بازنویسی نکن.
 13. همه خروجی‌ها فارسی باشند.
@@ -1783,8 +1788,11 @@ def main() -> None:
     client = genai.Client(api_key=GEMINI_API_KEY)
     media_url = resolve_stream_url(get_stream_url(cfg))
 
-    transcript, timed_transcript, tmeta = asyncio.run(
-        capture_and_transcribe(client, cfg, media_url, capture_seconds)
+    transcript, timed_transcript, tmeta, visual_frames = asyncio.run(
+        capture_audio_and_frames(
+            lambda: capture_and_transcribe(client, cfg, media_url, capture_seconds),
+            media_url, capture_seconds,
+        )
     )
 
     analysis_available = True
@@ -1817,6 +1825,18 @@ def main() -> None:
         analysis.host = normalize_name(analysis.host)
         analysis.expert = normalize_name(analysis.expert)
         stats = None
+
+    # Optional second-stage research and visual review do not overwrite base reports.
+    scientific_verification = (
+        research_claims(client, timed_transcript, analysis.expert_content_review)
+        if cfg.report_mode == "persian_full" and analysis_available
+        else {"status": "not_applicable", "items": []}
+    )
+    image_review = (
+        visual_review(client, visual_frames, timed_transcript)
+        if visuals_enabled()
+        else {"status": "disabled", "note": "تحلیل تصویری غیرفعال است.", "frames": []}
+    )
 
     status = (
         "PARTIAL"
@@ -1856,6 +1876,8 @@ def main() -> None:
         },
         "status": status,
         "analysis": analysis.model_dump(),
+        "scientific_verification": scientific_verification,
+        "visual_review": report_metadata(image_review),
     }
     write_report_file(diagnostic)
 
@@ -1881,10 +1903,15 @@ def main() -> None:
             "PENDING",
         )
 
+    payload["scientific_verification"] = scientific_verification
+    payload["visual_review"] = report_metadata(image_review)
+
     delivery = {
         "sheet": "PENDING",
         "bale_report": "PENDING",
         "bale_transcript": "PENDING",
+        "bale_science": "PENDING" if cfg.report_mode == "persian_full" else "SKIPPED",
+        "bale_visual": "PENDING" if image_review.get("frames") else "UNAVAILABLE",
         "errors": [],
     }
 
@@ -1913,6 +1940,32 @@ def main() -> None:
         delivery["errors"].append(f"bale_report: {type(exc).__name__}: {exc}")
         print(delivery["errors"][-1], file=sys.stderr)
 
+    if cfg.report_mode == "persian_full":
+        try:
+            send_bale_message(format_bale_scholarly(scientific_verification, info["program"]))
+            delivery["bale_science"] = "SENT"
+        except Exception as exc:
+            delivery["bale_science"] = "FAILED"
+            delivery["errors"].append(f"bale_science: {type(exc).__name__}: {exc}")
+            print(delivery["errors"][-1], file=sys.stderr)
+
+    if image_review.get("frames"):
+        try:
+            photo_errors = send_bale_photos(image_review, BALE_BOT_TOKEN, BALE_CHAT_ID, info["program"])
+            if photo_errors:
+                delivery["bale_visual"] = "FAILED"
+                delivery["errors"].extend(photo_errors)
+            else:
+                delivery["bale_visual"] = "SENT"
+        except Exception as exc:
+            delivery["bale_visual"] = "FAILED"
+            delivery["errors"].append(f"bale_visual: {type(exc).__name__}: {exc}")
+    elif visuals_enabled():
+        try:
+            send_bale_message("⚠️ دیدبان | تصویر پخش زنده ضبط نشد؛ ارزیابی پوشش و ارسال عکس ممکن نبود.")
+        except Exception as exc:
+            delivery["errors"].append(f"bale_visual_status: {type(exc).__name__}: {exc}")
+
     try:
         # TXT is attempted independently even if the formatted Bale message failed.
         send_bale_transcript_file(info, cfg)
@@ -1939,7 +1992,10 @@ def main() -> None:
 
     # Bale is the primary operator-facing output. If either Bale channel fails,
     # mark the workflow failed after preserving transcript/report artifacts.
-    if delivery["bale_report"] != "SENT" or delivery["bale_transcript"] != "SENT":
+    if (delivery["bale_report"] != "SENT"
+        or delivery["bale_transcript"] != "SENT"
+        or delivery["bale_science"] == "FAILED"
+        or delivery["bale_visual"] == "FAILED"):
         raise RuntimeError("; ".join(delivery["errors"]) or "Bale delivery failed")
 
     print(
