@@ -156,3 +156,21 @@ def research_claims(client, timed, issues):
     return {"status":"researched" if results else "no_specific_claims",
             "items":results, "checked_count":len(results),
             "method":"Google Search grounding + allowlisted Shi'a page + exact quote check"}
+
+
+def format_bale_scholarly(result, program):
+    lines=[f"📚 دیدبان | راستی‌آزمایی علمی محتوای {program}",
+           "ادعاها با جست‌وجوی منبع شیعی بررسی شده‌اند؛ یافتن متن، تصحیح سند یا تأیید استنباط نیست."]
+    if not result.get("items"):
+        lines.append("مورد مشخصی برای پژوهش دومرحله‌ای استخراج نشد.")
+    for i,x in enumerate(result.get("items",[]),1):
+        lines.extend(["",f"{i}) ⏱ {x['start_sec']} ثانیه | ادعا: {x['claim']}",
+          f"🔍 نظر تحلیلی: {x['assessment'] or 'تحلیل پژوهشی ناموفق بود.'}",
+          f"📝 اصلاح پیشنهادی: {x['recommended_correction'] or 'اصلاحی مستند احراز نشد.'}"])
+        if x["status"]=="retrieved_evidence":
+            lines.extend([f"📖 منبع بازیابی‌شده: {x['source_title']}",
+                          f"🔗 {x['source_url']}",f"📜 عبارت منبع: {x['source_quote']}"])
+        else:
+            lines.append("⚠️ هیچ شاهد متنی از منابع شیعی در این بررسی به‌طور مستقل تأیید نشد.")
+        lines.append("ℹ️ "+x["verification_note"])
+    return "\n".join(lines)
