@@ -9,7 +9,7 @@ import json
 import os
 import re
 import sys
-from urllib.parse import urlsplit
+from urllib.parse import urlsplit, urljoin
 import requests
 from google.genai import types
 
@@ -64,6 +64,26 @@ def retrieve_exact_quote(url, quote):
     except requests.RequestException:
         return False
 
+def resolve_grounding_source(uri):
+    """Google may return a Google-hosted citation redirect, not a publisher URL.
+    Resolve only the trusted grounding endpoint; never crawl arbitrary redirects.
+    """
+    if safe_url(uri):
+        return uri.rstrip("/")
+    try:
+        p=urlsplit(uri)
+        if (p.scheme!="https" or p.hostname!="vertexaisearch.cloud.google.com"
+            or not p.path.startswith("/grounding-api-redirect/")):
+            return None
+        with requests.get(uri,timeout=6,stream=True,allow_redirects=False) as r:
+            location=r.headers.get("Location","")
+        target=urljoin(uri,location)
+        if safe_url(target):
+            return target.rstrip("/")
+    except (ValueError,requests.RequestException):
+        pass
+    return None
+
 def grounding_urls(response):
     urls=set()
     for candidate in (getattr(response,"candidates",None) or []):
@@ -73,8 +93,9 @@ def grounding_urls(response):
         for item in (getattr(meta,"grounding_chunks",None) or []):
             web=getattr(item,"web",None)
             url=getattr(web,"uri",None)
-            if safe_url(url):
-                urls.add(url.rstrip("/"))
+            resolved=resolve_grounding_source(url)
+            if resolved:
+                urls.add(resolved)
     return urls
 
 def source_prompt(issue, transcript):
