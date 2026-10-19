@@ -124,11 +124,11 @@ jobs:
 
           # Optional V4.2 live image and Shi'a-source verification settings.
           # Defaults are ON for snapshots and Persian scholarly research.
-          ENABLE_VISUAL_REVIEW: ${{ vars.ENABLE_VISUAL_REVIEW }}
-          VISUAL_REVIEW_MODEL: ${{ vars.VISUAL_REVIEW_MODEL }}
-          ENABLE_SCHOLARLY_REVIEW: ${{ vars.ENABLE_SCHOLARLY_REVIEW }}
-          SCHOLARLY_REVIEW_MODEL: ${{ vars.SCHOLARLY_REVIEW_MODEL }}
-          MAX_SCHOLARLY_CLAIMS: ${{ vars.MAX_SCHOLARLY_CLAIMS }}
+          ENABLE_VISUAL_REVIEW: ${{ vars.ENABLE_VISUAL_REVIEW || 'true' }}
+          VISUAL_REVIEW_MODEL: ${{ vars.VISUAL_REVIEW_MODEL || 'gemini-3.8-flash' }}
+          ENABLE_SCHOLARLY_REVIEW: ${{ vars.ENABLE_SCHOLARLY_REVIEW || 'true' }}
+          SCHOLARLY_REVIEW_MODEL: ${{ vars.SCHOLARLY_REVIEW_MODEL || 'gemini-3.8-flash' }}
+          MAX_SCHOLARLY_CLAIMS: ${{ vars.MAX_SCHOLARLY_CLAIMS || '3' }}
         run: python velayat_monitor.py
 
       - name: Upload transcript and diagnostic report
