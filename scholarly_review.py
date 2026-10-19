@@ -13,7 +13,7 @@ from urllib.parse import urlsplit
 import requests
 from google.genai import types
 
-RESEARCH_MODEL = os.getenv("SCHOLARLY_REVIEW_MODEL","gemini-3.8-flash").strip()
+RESEARCH_MODEL = os.getenv("SCHOLARLY_REVIEW_MODEL","").strip() or "gemini-3.8-flash"
 SHIA_DOMAINS = (
     "al-islam.org", "hadith.inoor.ir", "noorlib.ir", "lib.eshia.ir",
     "shiaonlinelibrary.com", "makarem.ir", "sistani.org",
@@ -125,10 +125,14 @@ def assess_single_claim(client, issue, timed):
             ))
         raw=(response.text or "").strip()
         raw=raw.removeprefix(chr(96)*3+"json").removesuffix(chr(96)*3).strip()
-        values=json.loads(raw)
+        values=json.JSONDecoder().raw_decode(raw[raw.index("{"):])[0]
         if not isinstance(values,dict):
             raise ValueError("research response is not a JSON object")
-        output["claim"]=str(values.get("claim_quote") or statement)[:700]
+        candidate_claim=str(values.get("claim_quote") or "").strip()
+        context=transcript_window(timed,offset)
+        output["claim"]=(candidate_claim if len(normalize(candidate_claim)) >= 14
+                         and normalize(candidate_claim) in normalize(context)
+                         else statement)[:700]
         output["assessment"]=str(values.get("assessment") or "")[:1500]
         output["recommended_correction"]=str(values.get("recommended_correction") or "")[:900]
         output["confidence"]=values.get("confidence") if values.get("confidence") in ("low","medium","high") else "low"
