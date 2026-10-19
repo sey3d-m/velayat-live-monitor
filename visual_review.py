@@ -8,13 +8,13 @@ from pathlib import Path
 from google.genai import types
 
 FRAME_DIR = Path("private_live_frames")
-VISUAL_MODEL = os.getenv("VISUAL_REVIEW_MODEL", "gemini-3.8-flash").strip()
+VISUAL_MODEL = os.getenv("VISUAL_REVIEW_MODEL", "").strip() or "gemini-3.8-flash"
 
 def enabled():
     return os.getenv("ENABLE_VISUAL_REVIEW", "true").lower() not in ("0", "false", "off")
 
 def interval_for(duration):
-    return max(90, (max(1, duration) + 17) // 18)
+    return max(65, (max(1, duration) + 99) // 100)
 
 async def capture_frames(media_url, duration):
     FRAME_DIR.mkdir(exist_ok=True)
@@ -25,7 +25,7 @@ async def capture_frames(media_url, duration):
            "-reconnect", "1", "-reconnect_streamed", "1", "-reconnect_delay_max", "5",
            "-i", media_url, "-map", "0:v:0", "-an", "-t", str(duration),
            "-vf", f"fps=1/{interval},scale=960:-2", "-q:v", "5",
-           "-frames:v", "18", "-y", str(FRAME_DIR / "frame_%05d.jpg")]
+           "-frames:v", "100", "-y", str(FRAME_DIR / "frame_%05d.jpg")]
     proc = None
     try:
         proc = await asyncio.create_subprocess_exec(
@@ -79,7 +79,7 @@ def select_frames(frames, timed):
     n = len(frames)
     if not n:
         return []
-    indices = list(dict.fromkeys([round((n-1)*t) for t in (0.15,0.5,0.85)]))
+    indices = list(dict.fromkeys([round((n-1)*t) for t in (0.08,0.26,0.43,0.60,0.77,0.94)]))
     return [{**frames[i], "context":nearby_transcript(timed,frames[i]["offset_sec"])} for i in indices]
 
 def visual_review(client, frames, timed):
