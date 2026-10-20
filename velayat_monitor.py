@@ -32,14 +32,13 @@ from google import genai
 from google.genai import types
 from pydantic import BaseModel, Field
 from visual_review import capture_audio_and_frames, enabled as visuals_enabled, visual_review, report_metadata, send_bale_photos
-from scholarly_review import research_claims, format_bale_scholarly
 
 
 # -----------------------------------------------------------------------------
 # Runtime constants / environment
 # -----------------------------------------------------------------------------
 
-VERSION = "4.2.0-beta"
+VERSION = "4.2.1"
 TEHRAN = ZoneInfo("Asia/Tehran")
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
@@ -297,13 +296,6 @@ class HostIssue(BaseModel):
     end_sec: int
 
 
-class SourceCheckClaim(BaseModel):
-    claim: str
-    start_sec: int
-    end_sec: int
-    why_check: str = ""
-
-
 class PersianProgramAnalysis(BaseModel):
     host: str = "نامشخص"
     expert: str = "نامشخص"
@@ -316,7 +308,6 @@ class PersianProgramAnalysis(BaseModel):
     viral_clips: list[ViralClip]
     expert_content_review: list[PersianContentIssue]
     host_review: list[HostIssue]
-    source_check_claims: list[SourceCheckClaim] = Field(default_factory=list)
 
 
 ReviewCategory = Literal[
@@ -1078,18 +1069,12 @@ def persian_analysis_prompt(timed_transcript: str, info: dict) -> str:
    - start_sec از شروع سؤال تا end_sec پایان پاسخ کارشناس.
 9. viral_clips: ۲ تا ۵ بخش مناسب تقطیع، با تیتر جذاب ولی غیرتحریف‌آمیز و بازه زمانی.
 10. expert_content_review:
-   - ادعاهای صریح مهم تاریخی، حدیثی، قرآنی یا اعتقادی را که سند آنها مشکوک است
-     با صورت دقیقِ گزاره و زمان آن ثبت کن تا در مرحله دوم با جست‌وجوی منابع شیعی بررسی شود.
-   - تنها ننویس «نیازمند سند»؛ کدام گزاره، نسبت یا استدلال را مشخص کن.
-   - «اشکال روشن» فقط برای خطای آشکار در خود متن، «ضعف در پاسخ» برای نقص استدلال
-     و «نیازمند بررسی» برای ادعای بیرونیِ راستی‌آزمایی‌نشده است.
-   - هیچ سند یا حدیث ساختگی نساز. مرحله پژوهش مستقل منبع را جست‌وجو خواهد کرد.
-   - زمان ادعا ضروری است؛ اگر موردی یافت نشد آرایه خالی.
-11. source_check_claims: سه تا پنج ادعای صریحِ قابل تحقیق از سخنان برنامه
-    درباره حدیث، سند، تاریخ، آیه یا نسبت به منابع را استخراج کن؛ حتی اگر آن ادعا
-    هنوز خطا شناخته نشده است. claim باید نقل یا بازگویی دقیق ادعای مشخص باشد،
-    start_sec/end_sec و why_check را بده. از محورهای مبهم موضوعی پرهیز کن.
-12. host_review: فقط موارد واقعی و قابل استناد مانند ورود بیش از حد، سؤال نابجا، قطع سخن، طولانی‌گویی، القای پاسخ یا تکرار غیرضروری؛ هر مورد تایم داشته باشد.
+   - فقط اشکالات مشخص و قابل توضیح علمی در متن برنامه را با زمان ثبت کن.
+   - «اشکال روشن» فقط برای خطای واضح از خود متن و «ضعف در پاسخ» برای پاسخ ناقص.
+   - اگر موضوع بدون بررسی بیرونی قابل داوری نیست، آن را حکم قطعی یا خطای اثبات‌شده معرفی نکن.
+   - سند، نام کتاب، حدیث، یا نقل‌قول ساختگی تولید نکن.
+   - اگر مورد معناداری نیافتی آرایه خالی بده.
+11. host_review: فقط موارد واقعی و قابل استناد مانند ورود بیش از حد، سؤال نابجا، قطع سخن، طولانی‌گویی، القای پاسخ یا تکرار غیرضروری؛ هر مورد تایم داشته باشد.
 12. ادعاهای سیاسی، تاریخی یا مذهبی تأییدنشده را به عنوان واقعیت قطعی بازنویسی نکن.
 13. همه خروجی‌ها فارسی باشند.
 
@@ -1838,13 +1823,7 @@ def main() -> None:
         analysis.expert = normalize_name(analysis.expert)
         stats = None
 
-    # Optional second-stage research and visual review do not overwrite base reports.
-    scientific_verification = (
-        research_claims(client, timed_transcript,
-                        [*analysis.expert_content_review, *analysis.source_check_claims])
-        if cfg.report_mode == "persian_full" and analysis_available
-        else {"status": "not_applicable", "items": []}
-    )
+    # Optional visual review does not overwrite the base transcript or reports.
     image_review = (
         visual_review(client, visual_frames, timed_transcript)
         if visuals_enabled()
@@ -1889,7 +1868,6 @@ def main() -> None:
         },
         "status": status,
         "analysis": analysis.model_dump(),
-        "scientific_verification": scientific_verification,
         "visual_review": report_metadata(image_review),
     }
     write_report_file(diagnostic)
@@ -1916,14 +1894,12 @@ def main() -> None:
             "PENDING",
         )
 
-    payload["scientific_verification"] = scientific_verification
     payload["visual_review"] = report_metadata(image_review)
 
     delivery = {
         "sheet": "PENDING",
         "bale_report": "PENDING",
         "bale_transcript": "PENDING",
-        "bale_science": "PENDING" if cfg.report_mode == "persian_full" else "SKIPPED",
         "bale_visual": "PENDING" if image_review.get("frames") else "UNAVAILABLE",
         "errors": [],
     }
@@ -1952,15 +1928,6 @@ def main() -> None:
         delivery["bale_report"] = "FAILED"
         delivery["errors"].append(f"bale_report: {type(exc).__name__}: {exc}")
         print(delivery["errors"][-1], file=sys.stderr)
-
-    if cfg.report_mode == "persian_full":
-        try:
-            send_bale_message(format_bale_scholarly(scientific_verification, info["program"]))
-            delivery["bale_science"] = "SENT"
-        except Exception as exc:
-            delivery["bale_science"] = "FAILED"
-            delivery["errors"].append(f"bale_science: {type(exc).__name__}: {exc}")
-            print(delivery["errors"][-1], file=sys.stderr)
 
     if image_review.get("frames"):
         try:
@@ -2007,7 +1974,6 @@ def main() -> None:
     # mark the workflow failed after preserving transcript/report artifacts.
     if (delivery["bale_report"] != "SENT"
         or delivery["bale_transcript"] != "SENT"
-        or delivery["bale_science"] == "FAILED"
         or delivery["bale_visual"] == "FAILED"):
         raise RuntimeError("; ".join(delivery["errors"]) or "Bale delivery failed")
 

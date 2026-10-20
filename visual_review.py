@@ -16,6 +16,21 @@ def enabled():
 def interval_for(duration):
     return max(65, (max(1, duration) + 99) // 100)
 
+
+def report_image_count():
+    """Two pictures by default; allow a third through GitHub Actions variables."""
+    try:
+        count = int(os.getenv("VISUAL_REPORT_IMAGE_COUNT") or "2")
+    except ValueError:
+        return 2
+    return count if count in (2, 3) else 2
+
+
+def format_offset_minutes(offset_sec):
+    """Nearest elapsed minute, never an absolute on-air clock time."""
+    seconds = max(0, int(float(offset_sec or 0)))
+    return f"{(seconds + 30) // 60} دقیقه"
+
 async def capture_frames(media_url, duration):
     FRAME_DIR.mkdir(exist_ok=True)
     for old in FRAME_DIR.glob("frame_*.jpg"):
@@ -76,11 +91,23 @@ def nearby_transcript(timed, offset):
     return near[0][1][:280] if near else ""
 
 def select_frames(frames, timed):
+    """Pick 2 (or optionally 3) well-spaced frames across the whole programme."""
     n = len(frames)
     if not n:
         return []
-    indices = list(dict.fromkeys([round((n-1)*t) for t in (0.08,0.26,0.43,0.60,0.77,0.94)]))
-    return [{**frames[i], "context":nearby_transcript(timed,frames[i]["offset_sec"])} for i in indices]
+    count = min(report_image_count(), n)
+    positions = ((0.5,) if count == 1 else
+                 (0.30, 0.70) if count == 2 else
+                 (0.18, 0.50, 0.82))
+    indices = []
+    for fraction in positions:
+        idx = round((n - 1) * fraction)
+        if idx in indices:
+            idx = min((i for i in range(n) if i not in indices),
+                      key=lambda i: (abs(i - round((n - 1) * fraction)), i))
+        indices.append(idx)
+    return [{**frames[i], "context": nearby_transcript(timed, frames[i]["offset_sec"])}
+            for i in sorted(indices)]
 
 def visual_review(client, frames, timed):
     selected = select_frames(frames,timed)
@@ -89,11 +116,10 @@ def visual_review(client, frames, timed):
     instruction = """تصاویر اسکرین‌شات پخش زنده هستند. فقط پوشش و کیفیت ارائه بصری را از موارد قابل رؤیت بررسی کن:
 آراستگی لباس، هماهنگی رنگ پوشش با دکور، مرتب‌بودن یقه و لباس، نور، کادربندی و موانع تصویری.
 نکات مناسب را نیز توضیح بده. از یک فریم نمی‌توان گفت چه کسی همان لحظه صحبت می‌کند.
-فقط وقتی زیرنویس یا قرینهٔ تصویری قطعی داری visible_role را مجری یا کارشناس بگذار؛
-در بقیه موارد «نامشخص». درباره جنسیت، مذهب، قومیت، جذابیت یا وضعیت بدنی داوری نکن.
-متن نزدیک فریم فقط کمک زمینه‌ای است؛ دلیل انتساب فرد نیست. زمان تصاویر تقریبی است.
+درباره جنسیت، مذهب، قومیت، جذابیت یا وضعیت بدنی داوری نکن.
+متن نزدیک فریم فقط کمک زمینه‌ای است؛ زمان تصاویر تقریبی است.
 برای هر تصویر JSON فارسی در ساختار زیر تولید کن:
-{"frames":[{"frame_index":1,"visible_role":"نامشخص","observation":"مشاهدهٔ عینی","assessment":"ارزیابی حرفه‌ای","recommendation":"پیشنهاد عملی","confidence":"medium"}]}
+{"frames":[{"frame_index":1,"observation":"مشاهدهٔ عینی","assessment":"ارزیابی حرفه‌ای","recommendation":"پیشنهاد عملی","confidence":"medium"}]}
 مقادیر confidence فقط low/medium/high باشند و فراتر از آنچه می‌بینی ادعا نکن.
 """
     parts = [instruction]
@@ -118,7 +144,6 @@ def visual_review(client, frames, timed):
     for idx,f in enumerate(selected,1):
         x=proposed.get(idx,{})
         data.append({"path":f["path"],"offset_sec":f["offset_sec"],"offset_approximate":True,
-          "visible_role":str(x.get("visible_role","نامشخص"))[:50],
           "observation":str(x.get("observation","تصویر دریافت شد؛ تحلیل در دسترس نیست."))[:500],
           "assessment":str(x.get("assessment",""))[:450],
           "recommendation":str(x.get("recommendation",""))[:450],
@@ -134,16 +159,15 @@ def send_bale_photos(result, token, chat_id, program):
     """Upload both the original snapshot and its associated visual judgement."""
     import requests
     errors=[]
-    for idx,frame in enumerate(result.get("frames",[]),1):
+    selected=result.get("frames", [])[:report_image_count()]
+    for idx,frame in enumerate(selected,1):
         path=frame["path"]
         caption=(
-            f"📸 دیدبان | ارزیابی تصویر {idx} | {program}\n"
-            f"⏱ حدود {frame['offset_sec']} ثانیه از شروع ضبط (تقریبی)\n"
-            f"👤 نقشِ قابل مشاهده: {frame['visible_role']}\n"
+            f"📸 دیدبان | ارزیابی تصویر {idx} از {len(selected)} | {program}\n"
+            f"⏱ حدود {format_offset_minutes(frame['offset_sec'])} از شروع ضبط\n"
             f"🔎 مشاهده: {frame['observation']}\n"
             f"🧥 ارزیابی: {frame['assessment'] or 'نامشخص'}\n"
-            f"💡 پیشنهاد: {frame['recommendation'] or 'مورد مشخصی ثبت نشد'}\n"
-            f"⚠️ تشخیص گوینده از یک تصویر ثابت قطعی نیست."
+            f"💡 پیشنهاد: {frame['recommendation'] or 'مورد مشخصی ثبت نشد'}"
         )[:900]
         err=None
         for attempt in range(2):
