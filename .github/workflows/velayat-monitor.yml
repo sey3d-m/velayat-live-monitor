@@ -122,13 +122,11 @@ jobs:
           HAUSA_STREAM_URL: ${{ vars.HAUSA_STREAM_URL }}
           WHISPER_MODEL: ${{ vars.WHISPER_MODEL }}
 
-          # Optional V4.2 live image and Shi'a-source verification settings.
-          # Defaults are ON for snapshots and Persian scholarly research.
+          # Compact visual report: two images by default, optionally three.
+          # Existing Gemini and Bale secrets are reused, with no added credentials.
           ENABLE_VISUAL_REVIEW: ${{ vars.ENABLE_VISUAL_REVIEW || 'true' }}
           VISUAL_REVIEW_MODEL: ${{ vars.VISUAL_REVIEW_MODEL || 'gemini-3.8-flash' }}
-          ENABLE_SCHOLARLY_REVIEW: ${{ vars.ENABLE_SCHOLARLY_REVIEW || 'true' }}
-          SCHOLARLY_REVIEW_MODEL: ${{ vars.SCHOLARLY_REVIEW_MODEL || 'gemini-3.8-flash' }}
-          MAX_SCHOLARLY_CLAIMS: ${{ vars.MAX_SCHOLARLY_CLAIMS || '3' }}
+          VISUAL_REPORT_IMAGE_COUNT: ${{ vars.VISUAL_REPORT_IMAGE_COUNT || '2' }}
         run: python velayat_monitor.py
 
       - name: Upload transcript and diagnostic report
