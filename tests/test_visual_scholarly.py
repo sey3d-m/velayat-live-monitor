@@ -16,11 +16,68 @@ class VisualReviewTests(unittest.TestCase):
         self.assertGreaterEqual(v.interval_for(7200),65)
         self.assertLessEqual((7200 // v.interval_for(7200)),100)
 
-    def test_select_six_diverse_frames(self):
+    def test_default_two_diverse_frames(self):
         frames=[{"offset_sec":i*80,"path":Path(f"frame{i}.jpg")} for i in range(60)]
-        selected=v.select_frames(frames,"[00:02:00 - 00:03:00] گفت‌وگوی محتوایی در مورد حدیث")
-        self.assertEqual(len(selected),6)
-        self.assertLess(selected[0]["offset_sec"],selected[-1]["offset_sec"])
+        with patch.dict("os.environ", {"VISUAL_REPORT_IMAGE_COUNT": ""}):
+            selected=v.select_frames(frames,"[00:02:00 - 00:03:00] گفت‌وگوی محتوایی")
+        self.assertEqual(len(selected),2)
+        self.assertGreater(selected[1]["offset_sec"]-selected[0]["offset_sec"],1200)
+
+    def test_optional_three_frames_and_invalid_setting(self):
+        frames=[{"offset_sec":i*80,"path":Path(f"frame{i}.jpg")} for i in range(60)]
+        with patch.dict("os.environ", {"VISUAL_REPORT_IMAGE_COUNT": "3"}):
+            selected=v.select_frames(frames,"")
+        self.assertEqual(len(selected),3)
+        self.assertEqual(len({x["offset_sec"] for x in selected}),3)
+        with patch.dict("os.environ", {"VISUAL_REPORT_IMAGE_COUNT": "20"}):
+            self.assertEqual(v.report_image_count(),2)
+
+    def test_short_recording_limits_to_available_unique_frames(self):
+        frame={"offset_sec":0,"path":Path("frame.jpg")}
+        with patch.dict("os.environ", {"VISUAL_REPORT_IMAGE_COUNT": "3"}):
+            self.assertEqual(len(v.select_frames([frame],"")),1)
+            self.assertEqual(len(v.select_frames([frame,frame],"")),2)
+
+    def test_minutes_display_in_photo_caption(self):
+        self.assertEqual(v.format_offset_minutes(910),"15 دقیقه")
+        self.assertEqual(v.format_offset_minutes(3445),"57 دقیقه")
+        self.assertEqual(v.format_offset_minutes(0),"0 دقیقه")
+
+        with tempfile.TemporaryDirectory() as tmp:
+            frame_path=Path(tmp)/"frame.jpg"
+            frame_path.write_bytes(b"test-image")
+            frames=[{"path":frame_path,"offset_sec":910,"observation":"پوشش مرتب",
+                     "assessment":"کادر مناسب","recommendation":"کنترل نور"}]
+            reply=Mock(status_code=200)
+            reply.json.return_value={"ok":True}
+            with patch.dict("os.environ", {"VISUAL_REPORT_IMAGE_COUNT": "2"}), \
+                 patch("requests.post", return_value=reply) as post:
+                errors=v.send_bale_photos({"frames":frames},"test-token","test-chat","فرکانس تاریکی")
+            self.assertEqual(errors,[])
+            self.assertEqual(post.call_count,1)
+            caption=post.call_args.kwargs["data"]["caption"]
+            self.assertIn("15 دقیقه",caption)
+            self.assertIn("پوشش مرتب",caption)
+            self.assertIn("کنترل نور",caption)
+            self.assertNotIn("نقشِ قابل مشاهده",caption)
+            self.assertNotIn("تشخیص گوینده",caption)
+            self.assertNotIn("ثانیه",caption)
+
+    def test_bale_does_not_send_more_than_configured_frames(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            frames=[]
+            for i in range(5):
+                f=Path(tmp)/f"frame{i}.jpg"
+                f.write_bytes(b"image")
+                frames.append({"path":f,"offset_sec":i*60,"observation":"مشاهده",
+                               "assessment":"مناسب","recommendation":"حفظ وضعیت"})
+            reply=Mock(status_code=200)
+            reply.json.return_value={"ok":True}
+            with patch.dict("os.environ", {"VISUAL_REPORT_IMAGE_COUNT": "2"}), \
+                 patch("requests.post", return_value=reply) as post:
+                errors=v.send_bale_photos({"frames":frames},"token","chat","برنامه")
+            self.assertEqual(errors,[])
+            self.assertEqual(post.call_count,2)
 
     def test_no_raw_file_paths_in_report(self):
         val={"status":"reviewed","frames":[{"path":Path("secret.jpg"),"offset_sec":25,"visible_role":"نامشخص"}]}
