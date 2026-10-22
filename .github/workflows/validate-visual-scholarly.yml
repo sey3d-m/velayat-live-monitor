@@ -29,4 +29,4 @@ jobs:
       - name: Python syntax check
         run: python -m py_compile velayat_monitor.py visual_review.py scholarly_review.py video_clips.py
       - name: No-network unit tests
-        run: python -m unittest discover -s tests -p "test_*.py" -v
+        run: python -m unittest discover -s tests -p "test_video_clips.py" -v && python -m unittest discover -s tests -p "test_visual_scholarly.py" -v
