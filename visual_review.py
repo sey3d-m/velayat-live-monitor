@@ -60,25 +60,33 @@ async def capture_frames(media_url, duration):
             for i,p in enumerate(sorted(FRAME_DIR.glob("frame_*.jpg")), 1)]
 
 async def capture_audio_and_frames(audio_capture, media_url, duration):
-    if not enabled():
-        plain, timed, meta = await audio_capture()
-        return plain, timed, meta, []
-    task = asyncio.create_task(capture_frames(media_url, duration))
+    from video_clips import capture_video, enabled as clips_enabled
+    image_task = asyncio.create_task(capture_frames(media_url, duration)) if enabled() else None
+    video_task = asyncio.create_task(capture_video(media_url, duration)) if clips_enabled() else None
+    tasks = [task for task in (image_task, video_task) if task is not None]
     try:
         plain, timed, meta = await audio_capture()
-        try:
-            frames = await task
-        except Exception as exc:
-            print(f"Video capture problem: {exc}", file=sys.stderr)
-            frames = []
-        return plain, timed, meta, frames
-    finally:
-        if not task.done():
-            task.cancel()
+        frames, video = [], None
+        for task, kind in ((image_task, "image"), (video_task, "video")):
+            if task is None:
+                continue
             try:
-                await task
-            except asyncio.CancelledError:
-                pass
+                value = await task
+                if kind == "image":
+                    frames = value
+                else:
+                    video = value
+            except Exception as exc:
+                print(f"Visual {kind} capture problem: {exc}", file=sys.stderr)
+        return plain, timed, meta, frames, video
+    finally:
+        for task in tasks:
+            if not task.done():
+                task.cancel()
+                try:
+                    await task
+                except asyncio.CancelledError:
+                    pass
 
 def timestamp_seconds(stamp):
     parts = [int(x) for x in stamp.split(":")]

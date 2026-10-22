@@ -87,9 +87,9 @@ class VisualReviewTests(unittest.TestCase):
     def test_base_audio_not_blocked_when_visual_disabled(self):
         async def audio():
             return "speech","timed","metadata"
-        with patch.dict("os.environ",{"ENABLE_VISUAL_REVIEW":"false"}):
+        with patch.dict("os.environ",{"ENABLE_VISUAL_REVIEW":"false", "ENABLE_BALE_VIDEO_CLIPS":"false"}):
             got=asyncio.run(v.capture_audio_and_frames(audio,"unused",60))
-        self.assertEqual(got,("speech","timed","metadata",[]))
+        self.assertEqual(got,("speech","timed","metadata",[],None))
 
 
 class ScholarlyReviewTests(unittest.TestCase):
