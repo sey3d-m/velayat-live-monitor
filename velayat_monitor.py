@@ -270,6 +270,7 @@ class ViralClip(BaseModel):
     media_title: str
     angle: str
     why_viral: str
+    caption: str = ""  # Two factual, clip-specific sentences ready for the Bale caption.
     start_sec: int
     end_sec: int
     priority: Literal["high", "medium", "low"]
@@ -1068,7 +1069,7 @@ def persian_analysis_prompt(timed_transcript: str, info: dict) -> str:
    - source_type = phone/message/unknown.
    - نام مخاطب فقط اگر صریحاً گفته شده؛ وگرنه «نامشخص».
    - start_sec از شروع سؤال تا end_sec پایان پاسخ کارشناس.
-9. viral_clips: ۲ تا ۵ بخش مناسب تقطیع، با تیتر جذاب ولی غیرتحریف‌آمیز و بازه زمانی.
+9. viral_clips: ۲ تا ۵ بخش مناسب تقطیع، با تیتر جذاب ولی غیرتحریف‌آمیز و بازه زمانی. برای هر بخش فیلد caption را به صورت دو یا سه جمله فارسیِ روان و رسانه‌ای درباره محتوای دقیق همان بازه بنویس؛ آماده انتشار در شبکه اجتماعی، بدون حدس، متن ساختگی، توضیح درباره وایرال‌شدن یا ذکر عبارت «در این کلیپ». نام کارشناس فقط در فیلد expert و اگر از متن قطعی است درج شود.
 10. expert_content_review:
    - فقط اشکالات مشخص و قابل توضیح علمی در متن برنامه را با زمان ثبت کن.
    - «اشکال روشن» فقط برای خطای واضح از خود متن و «ضعف در پاسخ» برای پاسخ ناقص.
@@ -1953,7 +1954,9 @@ def main() -> None:
         if video_clips_enabled() and cfg.report_mode == "persian_full":
             clips_result = send_bale_clips(
                 clip_recording, analysis.viral_clips, tmeta.audio_capture_seconds,
-                BALE_BOT_TOKEN, BALE_CHAT_ID, info["program"])
+                BALE_BOT_TOKEN, BALE_CHAT_ID, info["program"],
+                expert=normalize_name(analysis.expert),
+                date=jalali_date_for_info(info), hashtags=analysis.hashtags)
             diagnostic["video_clips"] = clips_result
             delivery["bale_clips"] = clips_result["status"].upper()
             delivery["errors"].extend(clips_result["errors"])
