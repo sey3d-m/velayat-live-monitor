@@ -32,6 +32,7 @@ from google import genai
 from google.genai import types
 from pydantic import BaseModel, Field
 from visual_review import capture_audio_and_frames, enabled as visuals_enabled, visual_review, report_metadata, send_bale_photos
+from video_clips import send_bale_clips, enabled as video_clips_enabled, cleanup as cleanup_video_clips
 
 
 # -----------------------------------------------------------------------------
@@ -1785,7 +1786,7 @@ def main() -> None:
     client = genai.Client(api_key=GEMINI_API_KEY)
     media_url = resolve_stream_url(get_stream_url(cfg))
 
-    transcript, timed_transcript, tmeta, visual_frames = asyncio.run(
+    transcript, timed_transcript, tmeta, visual_frames, clip_recording = asyncio.run(
         capture_audio_and_frames(
             lambda: capture_and_transcribe(client, cfg, media_url, capture_seconds),
             media_url, capture_seconds,
@@ -1869,6 +1870,7 @@ def main() -> None:
         "status": status,
         "analysis": analysis.model_dump(),
         "visual_review": report_metadata(image_review),
+        "video_clips": {"status": "pending" if video_clips_enabled() else "disabled"},
     }
     write_report_file(diagnostic)
 
@@ -1901,6 +1903,7 @@ def main() -> None:
         "bale_report": "PENDING",
         "bale_transcript": "PENDING",
         "bale_visual": "PENDING" if image_review.get("frames") else "UNAVAILABLE",
+        "bale_clips": "PENDING" if video_clips_enabled() else "DISABLED",
         "errors": [],
     }
 
@@ -1947,6 +1950,20 @@ def main() -> None:
             delivery["errors"].append(f"bale_visual_status: {type(exc).__name__}: {exc}")
 
     try:
+        if video_clips_enabled() and cfg.report_mode == "persian_full":
+            clips_result = send_bale_clips(
+                clip_recording, analysis.viral_clips, tmeta.audio_capture_seconds,
+                BALE_BOT_TOKEN, BALE_CHAT_ID, info["program"])
+            diagnostic["video_clips"] = clips_result
+            delivery["bale_clips"] = clips_result["status"].upper()
+            delivery["errors"].extend(clips_result["errors"])
+        elif video_clips_enabled():
+            delivery["bale_clips"] = "NOT_APPLICABLE"
+    except Exception as exc:
+        delivery["bale_clips"] = "FAILED"
+        delivery["errors"].append(f"bale_clips: {type(exc).__name__}: {exc}")
+
+    try:
         # TXT is attempted independently even if the formatted Bale message failed.
         send_bale_transcript_file(info, cfg)
         delivery["bale_transcript"] = "SENT"
@@ -1988,8 +2005,10 @@ if __name__ == "__main__":
     try:
         main()
         AUDIO_BACKUP_FILE.unlink(missing_ok=True)
+        cleanup_video_clips()
     except Exception as exc:
         print(f"FATAL ERROR: {exc}", file=sys.stderr)
         send_bale_error(str(exc))
         AUDIO_BACKUP_FILE.unlink(missing_ok=True)
+        cleanup_video_clips()
         raise
