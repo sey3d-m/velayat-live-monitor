@@ -187,18 +187,23 @@ def select_segments(clips, duration, limit=2):
         title = compact_text(getattr(item, "media_title", ""), 100)
         if not title:
             continue
-        ranked.append((-_viral_score(item, start, end), start, end, title))
+        # A longer coherent excerpt wins an exact quality tie.
+        ranked.append((-_viral_score(item, start, end), -(end - start),
+                       start, end, title))
     ranked.sort()
     chosen = []
-    for _negative_score, start, end, title in ranked:
-        # Distinct scenes, no repetitive overlapping cuts or identical headings.
-        if any(start < b + 4 and end + 4 > a for a, b, _ in chosen):
-            continue
-        if any(title == existing_title for _, _, existing_title in chosen):
-            continue
-        chosen.append((start, end, title))
-        if len(chosen) >= limit:
-            break
+    # First seek distinct headings, then permit different nonoverlapping
+    # scenes with the same generic heading if that is all the model supplied.
+    for distinct_titles in (True, False):
+        for _negative_score, _negative_length, start, end, title in ranked:
+            if any(start < b + 4 and end + 4 > a for a, b, _ in chosen):
+                continue
+            if distinct_titles and any(title == existing_title
+                                       for _, _, existing_title in chosen):
+                continue
+            chosen.append((start, end, title))
+            if len(chosen) >= limit:
+                return chosen
     return chosen
 
 
@@ -362,8 +367,11 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
     # Recovered failures that were followed by another successful candidate
     # should stay in diagnostics, but they must not turn two delivered clips into
     # a failed session.
-    return {"status": "sent" if len(sent) == 2 else
-            "partial" if sent else "failed", "sent": sent, "errors": errors,
+    delivered_both = len(sent) == 2
+    return {"status": "sent" if delivered_both else
+            "partial" if sent else "failed", "sent": sent,
+            "errors": [] if delivered_both else errors,
+            "warnings": errors if delivered_both else [],
             "target": 2, "selected_count": len(selections)}
 
 
