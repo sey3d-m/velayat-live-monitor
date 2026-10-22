@@ -26,6 +26,8 @@ jobs:
           python-version: "3.12"
       - name: Install test dependencies
         run: python -m pip install "google-genai==2.24.0" "requests>=2.31,<3" "pydantic>=2.7,<3" "jdatetime>=5,<6"
+      - name: Install FFmpeg for real video decode and timing regression
+        run: sudo apt-get update -qq && sudo apt-get install -y ffmpeg
       - name: Python syntax check
         run: python -m py_compile velayat_monitor.py visual_review.py scholarly_review.py video_clips.py
       - name: No-network unit tests
