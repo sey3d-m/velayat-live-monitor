@@ -111,7 +111,7 @@ def make_clip(source, start, end, index):
     speed = playback_speed()
     cmd = [
         "ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error",
-        "-ss", str(start), "-i", str(source), "-t", str(end - start),
+        "-ss", str(start), "-t", str(end - start), "-i", str(source),
         "-map", "0:v:0", "-map", "0:a:0?",
         "-vf", f"setpts=(PTS-STARTPTS)/{speed},fps=24,setsar=1",
         "-af", f"atempo={speed},asetpts=PTS-STARTPTS",
