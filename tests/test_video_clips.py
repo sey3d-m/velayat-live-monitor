@@ -137,5 +137,79 @@ class ClipTests(unittest.TestCase):
             self.assertLess(float(first["best_effort_timestamp_time"]), 0.1)
 
 
+
+    def test_candidate_ranking_picks_two_different_high_impact_topics(self):
+        first = clip(25, 85, "high", "چرا ظهور به تأخیر می‌افتد؟")
+        first.why_viral = "پرسش عمومی و پاسخ روشنگر"
+        duplicate = clip(30, 80, "high", "چرا ظهور به تأخیر می‌افتد؟")
+        third = clip(180, 250, "high", "پاسخ به یک شبهه مهم")
+        fourth = clip(300, 370, "low", "مرور کلی برنامه")
+        chosen = video_clips.select_segments(
+            [fourth, duplicate, third, first], 500, limit=2)
+        self.assertEqual(len(chosen), 2)
+        self.assertEqual({chosen[0][0], chosen[1][0]}, {25, 180})
+
+    def test_from_keypoints_when_only_one_viral_suggestion(self):
+        viral = clip(20, 75, "high", "آیا این سخن درست است؟")
+        viral.why_viral = "تبیین یک مسئله"
+        keypoint = SimpleNamespace(
+            start_sec=170, end_sec=235, title="بررسی پاسخ کارشناسی درباره مهدویت")
+        analysis = SimpleNamespace(
+            viral_clips=[viral], key_points=[keypoint], audience_questions=[])
+        candidates = video_clips.build_clip_candidates(analysis, "", 300)
+        self.assertEqual(len(video_clips.select_segments(candidates, 300)), 2)
+
+    def test_transcript_only_fallback_yields_two_actual_nonfiction_clips(self):
+        timed = (
+            "[00:00 - 00:30] چرا در روایات از این موضوع سخن گفته می‌شود و دلیل آن چیست؟\n"
+            "[00:31 - 01:02] در این بحث توضیح کارشناسی مطرح می‌شود و پاسخ ادامه می‌یابد.\n"
+            "[02:20 - 02:45] آیا این اختلاف در تفسیر متون وجود دارد و چگونه باید بررسی کرد؟\n"
+            "[02:46 - 03:18] برای روشن شدن این مسئله چند نکته به عنوان توضیح آمده است."
+        )
+        analysis = SimpleNamespace(
+            viral_clips=[], key_points=[], audience_questions=[])
+        candidates = video_clips.build_clip_candidates(analysis, timed, 250)
+        chosen = video_clips.select_segments(candidates, 250)
+        self.assertEqual(len(chosen), 2)
+        self.assertTrue(all(any(
+            candidate.start_sec == start and candidate.media_title == title
+            for candidate in candidates) for start, _end, title in chosen))
+        self.assertTrue(all(start < end for start, end, _ in chosen))
+
+    def test_bale_uploads_exactly_two_and_uses_alternative_after_failure(self):
+        import tempfile
+        from pathlib import Path
+        candidates = [
+            clip(0, 60, "high", "موضوع اول؟"),
+            clip(90, 150, "high", "موضوع دوم؟"),
+            clip(180, 240, "medium", "موضوع سوم؟"),
+            clip(275, 335, "low", "موضوع چهارم؟"),
+        ]
+        with tempfile.TemporaryDirectory() as d:
+            source = Path(d) / "src.mp4"
+            source.write_bytes(b"x" * 5000)
+            output = Path(d) / "clip.mp4"
+            output.write_bytes(b"x" * 6000)
+            def encoder(_src, start, end, index):
+                if start == 0:
+                    raise RuntimeError("first candidate cannot be encoded")
+                return output
+            reply = SimpleNamespace(status_code=200, json=lambda: {"ok": True})
+            with patch.object(video_clips, "make_clip", side_effect=encoder), \
+                 patch("video_clips.requests.post", return_value=reply) as sent:
+                result = video_clips.send_bale_clips(
+                    source, candidates, 400, "token", "chat", "برنامه",
+                    expert="کارشناس", date="۱۴۰۵/۰۸/۰۱", hashtags=["#مهدویت"])
+            self.assertEqual(result["status"], "sent")
+            self.assertEqual(len(result["sent"]), 2)
+            self.assertEqual(sent.call_count, 2)
+            self.assertEqual({x["start_sec"] for x in result["sent"]}, {90, 180})
+
+    def test_no_transcript_no_ai_does_not_fabricate_viral_speech(self):
+        empty = SimpleNamespace(
+            viral_clips=[], key_points=[], audience_questions=[])
+        self.assertEqual(video_clips.build_clip_candidates(empty, "", 3600), [])
+
+
 if __name__ == "__main__":
     unittest.main()

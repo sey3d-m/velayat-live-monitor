@@ -73,13 +73,109 @@ async def capture_video(media_url, duration):
     return RECORDING if RECORDING.exists() and RECORDING.stat().st_size > 10000 else None
 
 
+def _seconds(timestamp):
+    parts = [int(part) for part in timestamp.split(":")]
+    return parts[0] * 3600 + parts[1] * 60 + parts[2] if len(parts) == 3 else parts[0] * 60 + parts[1]
+
+
+def _clip_candidate(start, end, title, description="", priority="low", *,
+                    origin="transcript", why=""):
+    from types import SimpleNamespace
+    return SimpleNamespace(
+        start_sec=start, end_sec=end, media_title=title,
+        caption=description, angle=description, priority=priority,
+        why_viral=why, origin=origin,
+    )
+
+
+def transcript_candidates(timed_transcript, duration):
+    """Find real, timed speech excerpts; never synthesize a claim or quotation."""
+    rows = []
+    pattern = r"\[(\d{2}:\d{2}(?::\d{2})?)\s*-\s*(\d{2}:\d{2}(?::\d{2})?)\]\s*([^\n]+)"
+    for match in re.finditer(pattern, timed_transcript or ""):
+        start, end = _seconds(match.group(1)), _seconds(match.group(2))
+        speech = compact_text(match.group(3), 420)
+        if end <= start or start >= duration or len(speech) < 18:
+            continue
+        rows.append((start, min(end, duration), speech))
+    candidates = []
+    for pos, (start, end, speech) in enumerate(rows):
+        # Group successive transcription lines into a coherent 35-80 second scene.
+        parts = [speech]
+        stop = end
+        for nxt_start, nxt_end, nxt_text in rows[pos + 1:]:
+            if nxt_start > stop + 10 or nxt_start - start >= 75:
+                break
+            parts.append(nxt_text)
+            stop = min(nxt_end, start + 80, duration)
+            if stop - start >= 50:
+                break
+        if stop - start < 18:
+            continue
+        whole = compact_text(" ".join(parts), 370)
+        # The title is an *actual spoken excerpt*, not a claim invented by AI.
+        question = re.search(r"[^.!؟?]{12,100}[؟?]", whole)
+        title = compact_text(question.group(0) if question else speech, 90)
+        cue = any(k in whole for k in (
+            "چرا", "آیا", "چگونه", "شبهه", "پاسخ", "پرسش",
+            "حقیقت", "اشتباه", "مهم", "سؤال", "دلیل"))
+        candidates.append(_clip_candidate(
+            start, stop, title,
+            "بخشی از گفت‌وگوی برنامه درباره: " + title,
+            "medium" if cue else "low", origin="transcript",
+            why="پرسش یا پاسخ مستقیم" if cue else "گزیده متن زمان‌دار",
+        ))
+    return candidates
+
+
+def build_clip_candidates(analysis, timed_transcript, duration):
+    """Best AI highlights first; recover from missing/overlapping AI suggestions.
+
+    Audience questions and key points are derived from existing structured
+    analysis. Actual timestamped speech provides the last fallback.
+    """
+    candidates = list(getattr(analysis, "viral_clips", []) or [])
+    for question in getattr(analysis, "audience_questions", []) or []:
+        title = compact_text(getattr(question, "question", ""), 100)
+        answer = compact_text(getattr(question, "answer_summary", ""), 350)
+        if len(title) >= 10:
+            candidates.append(_clip_candidate(
+                question.start_sec, question.end_sec, title, answer,
+                "medium", origin="audience_question",
+                why="سؤال واقعی مخاطب و پاسخ کارشناسی",
+            ))
+    for point in getattr(analysis, "key_points", []) or []:
+        title = compact_text(getattr(point, "title", ""), 100)
+        if len(title) >= 12:
+            candidates.append(_clip_candidate(
+                point.start_sec, point.end_sec, title,
+                "بررسی محور «" + title + "» در گفت‌وگوی برنامه",
+                "low", origin="key_point",
+            ))
+    # These candidates are only based on words that occurred in the transcript.
+    # AI-quality candidates naturally outrank generic transcript excerpts.
+    candidates.extend(transcript_candidates(timed_transcript, duration))
+    return candidates
+
+
+def _viral_score(item, start, end):
+    priority = str(getattr(item, "priority", "low"))
+    points = {"high": 100, "medium": 65, "low": 25}.get(priority, 25)
+    title = compact_text(getattr(item, "media_title", ""), 110)
+    explanation = compact_text(getattr(item, "why_viral", ""), 160)
+    if any(cue in title for cue in ("؟", "?", "چرا", "آیا", "چگونه", "حقیقت", "اشتباه", "شبهه", "پاسخ")):
+        points += 14
+    if len(explanation) >= 14:
+        points += 8
+    if 35 <= end - start <= 95:
+        points += 7
+    return points
+
+
 def select_segments(clips, duration, limit=2):
-    """Select two nonoverlapping coherent excerpts, capped at 100 source seconds."""
-    ranked = sorted(clips, key=lambda c: {
-        "high": 0, "medium": 1, "low": 2
-    }.get(str(getattr(c, "priority", "medium")), 2))
-    chosen = []
-    for item in ranked:
+    """Editorial ranking; preserve two distinct, useful non-overlapping scenes."""
+    ranked = []
+    for item in clips:
         try:
             start = max(0, int(getattr(item, "start_sec")))
             end = min(int(duration), int(getattr(item, "end_sec")))
@@ -88,13 +184,26 @@ def select_segments(clips, duration, limit=2):
         if end - start < 15:
             continue
         end = min(end, start + 100)
-        if any(start < b and end > a for a, b, _ in chosen):
+        title = compact_text(getattr(item, "media_title", ""), 100)
+        if not title:
             continue
-        title = re.sub(r"\s+", " ", str(getattr(item, "media_title",
-                                                "برشی از برنامه"))).strip()[:100]
-        chosen.append((start, end, title or "برشی از برنامه"))
-        if len(chosen) >= limit:
-            break
+        # A longer coherent excerpt wins an exact quality tie.
+        ranked.append((-_viral_score(item, start, end), -(end - start),
+                       start, end, title))
+    ranked.sort()
+    chosen = []
+    # First seek distinct headings, then permit different nonoverlapping
+    # scenes with the same generic heading if that is all the model supplied.
+    for distinct_titles in (True, False):
+        for _negative_score, _negative_length, start, end, title in ranked:
+            if any(start < b + 4 and end + 4 > a for a, b, _ in chosen):
+                continue
+            if distinct_titles and any(title == existing_title
+                                       for _, _, existing_title in chosen):
+                continue
+            chosen.append((start, end, title))
+            if len(chosen) >= limit:
+                return chosen
     return chosen
 
 
@@ -205,12 +314,15 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
     if not source or not Path(source).exists():
         return {"status": "unavailable", "sent": sent,
                 "errors": ["live_video_unavailable"]}
-    selections = select_segments(suggestions, duration)
+    selections = select_segments(suggestions, duration, limit=8)
     if not selections:
         return {"status": "unavailable", "sent": sent,
                 "errors": ["no_valid_editorial_clips"]}
 
-    for idx, (start, end, title) in enumerate(selections, 1):
+    for start, end, title in selections:
+        if len(sent) >= 2:
+            break
+        idx = len(sent) + 1
         try:
             path = make_clip(source, start, end, idx)
             if path.stat().st_size > 45 * 1024 * 1024:
@@ -221,7 +333,7 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
                 hashtags=hashtags, start=start, end=end,
             )
             last_error = None
-            for attempt in range(2):
+            for attempt in range(3):
                 try:
                     with path.open("rb") as handle:
                         response = requests.post(
@@ -240,7 +352,7 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
                     last_error = exc
                     print(f"Bale clip {idx} attempt {attempt+1} failed: {exc}",
                           file=sys.stderr)
-                    if attempt == 0:
+                    if attempt < 2:
                         time.sleep(2)
             if last_error:
                 raise last_error
@@ -252,8 +364,15 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
             errors.append(f"clip_{idx}: {type(exc).__name__}: {exc}")
             print(errors[-1], file=sys.stderr)
 
-    return {"status": "sent" if sent and not errors else
-            "partial" if sent else "failed", "sent": sent, "errors": errors}
+    # Recovered failures that were followed by another successful candidate
+    # should stay in diagnostics, but they must not turn two delivered clips into
+    # a failed session.
+    delivered_both = len(sent) == 2
+    return {"status": "sent" if delivered_both else
+            "partial" if sent else "failed", "sent": sent,
+            "errors": [] if delivered_both else errors,
+            "warnings": errors if delivered_both else [],
+            "target": 2, "selected_count": len(selections)}
 
 
 def cleanup():

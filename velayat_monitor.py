@@ -32,7 +32,10 @@ from google import genai
 from google.genai import types
 from pydantic import BaseModel, Field
 from visual_review import capture_audio_and_frames, enabled as visuals_enabled, visual_review, report_metadata, send_bale_photos
-from video_clips import send_bale_clips, enabled as video_clips_enabled, cleanup as cleanup_video_clips
+from video_clips import (
+    send_bale_clips, enabled as video_clips_enabled,
+    cleanup as cleanup_video_clips, build_clip_candidates,
+)
 
 
 # -----------------------------------------------------------------------------
@@ -1069,7 +1072,12 @@ def persian_analysis_prompt(timed_transcript: str, info: dict) -> str:
    - source_type = phone/message/unknown.
    - نام مخاطب فقط اگر صریحاً گفته شده؛ وگرنه «نامشخص».
    - start_sec از شروع سؤال تا end_sec پایان پاسخ کارشناس.
-9. viral_clips: ۲ تا ۵ بخش مناسب تقطیع، با تیتر جذاب ولی غیرتحریف‌آمیز و بازه زمانی. برای هر بخش فیلد caption را به صورت دو یا سه جمله فارسیِ روان و رسانه‌ای درباره محتوای دقیق همان بازه بنویس؛ آماده انتشار در شبکه اجتماعی، بدون حدس، متن ساختگی، توضیح درباره وایرال‌شدن یا ذکر عبارت «در این کلیپ». نام کارشناس فقط در فیلد expert و اگر از متن قطعی است درج شود.
+9. viral_clips: حداقل ۴ و ترجیحاً ۶ نامزد مستقل برای تقطیع پیشنهاد بده تا سامانه بتواند دقیقاً ۲ بخش برتر را منتشر کند. هر نامزد باید واقعاً در متن زمان‌دار وجود داشته باشد و ۳۰ تا ۱۰۰ ثانیه پیوسته از گفت‌وگو باشد.
+   - اولویت با بخش‌هایی است که سؤال چالش‌برانگیز و پاسخ روشن دارند، نکته غیرمنتظره و آموزنده ارائه می‌کنند، یا پاسخی کوتاه و مستقل به پرسش مهم مخاطب می‌دهند؛ معیار، ظرفیت واقعی جلب توجه مخاطب است نه لحن اغراق‌آمیز.
+   - start_sec و end_sec باید بخش کامل پرسش و پاسخ را، حتی‌الامکان بدون قطع جمله از ابتدا یا انتها، در بر بگیرند. دو نامزد کاملاً هم‌پوشان یا صرفاً مقدمه، احوال‌پرسی، تعارف، میان‌برنامه و گفتار پراکنده پیشنهاد نکن.
+   - برای هر نامزد priority، why_viral (توضیح کوتاه علت جذابیت واقعی)، media_title (تیتر جذاب ولی دقیق)، angle و caption (دو یا سه جمله روان درباره محتوای دقیق همان بازه) بنویس.
+   - از عنوان تحریف‌آمیز، ادعای اثبات‌نشده به‌عنوان واقعیت، جعل نقل‌قول یا وعده انتشار وایرال اجتناب کن. نام کارشناس فقط در expert و در صورت شناسایی روشن درج شود.
+   - اگر در متن تعداد بخش‌های واقعاً مناسب کمتر است، چیزی نساز؛ سایر بخش‌ها را با عنوان و محتوای واقعی ثبت کن.
 10. expert_content_review:
    - فقط اشکالات مشخص و قابل توضیح علمی در متن برنامه را با زمان ثبت کن.
    - «اشکال روشن» فقط برای خطای واضح از خود متن و «ضعف در پاسخ» برای پاسخ ناقص.
@@ -1953,13 +1961,29 @@ def main() -> None:
     try:
         if video_clips_enabled() and cfg.report_mode == "persian_full":
             clips_result = send_bale_clips(
-                clip_recording, analysis.viral_clips, tmeta.audio_capture_seconds,
+                clip_recording,
+                build_clip_candidates(analysis, timed_transcript, tmeta.audio_capture_seconds),
+                tmeta.audio_capture_seconds,
                 BALE_BOT_TOKEN, BALE_CHAT_ID, info["program"],
                 expert=normalize_name(analysis.expert),
                 date=jalali_date_for_info(info), hashtags=analysis.hashtags)
             diagnostic["video_clips"] = clips_result
             delivery["bale_clips"] = clips_result["status"].upper()
             delivery["errors"].extend(clips_result["errors"])
+            if len(clips_result["sent"]) != 2:
+                # Operators should see that the two-clip target was not met.
+                try:
+                    send_bale_message(
+                        "⚠️ تقطیع دیدبان | "
+                        f"برای برنامه «{info['program']}» "
+                        f"{len(clips_result['sent'])} از ۲ کلیپ ارسال شد. "
+                        "ضبط تصویر، اعتبار بازه‌های محتوایی یا ارسال ویدئو را "
+                        "در گزارش اجرای گیت‌هاب بررسی کنید."
+                    )
+                except Exception as notify_error:
+                    delivery["errors"].append(
+                        f"bale_clips_notice: {type(notify_error).__name__}: {notify_error}"
+                    )
         elif video_clips_enabled():
             delivery["bale_clips"] = "NOT_APPLICABLE"
     except Exception as exc:
