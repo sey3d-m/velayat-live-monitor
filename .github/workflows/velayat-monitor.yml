@@ -126,6 +126,8 @@ jobs:
           # Existing Gemini and Bale secrets are reused, with no added credentials.
           # Produce two low-bitrate MP4 highlights, using existing Bale credentials.
           ENABLE_BALE_VIDEO_CLIPS: ${{ vars.ENABLE_BALE_VIDEO_CLIPS || 'true' }}
+          # 1.5x synchronized speed on both video and speech; set 1.0 to disable.
+          BALE_CLIP_PLAYBACK_SPEED: ${{ vars.BALE_CLIP_PLAYBACK_SPEED || '1.5' }}
           ENABLE_VISUAL_REVIEW: ${{ vars.ENABLE_VISUAL_REVIEW || 'true' }}
           VISUAL_REVIEW_MODEL: ${{ vars.VISUAL_REVIEW_MODEL || 'gemini-3.8-flash' }}
           VISUAL_REPORT_IMAGE_COUNT: ${{ vars.VISUAL_REPORT_IMAGE_COUNT || '2' }}
