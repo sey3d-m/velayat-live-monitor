@@ -17,7 +17,7 @@ OUTPUT_DIR = Path("bengali_dub_output")
 TARGET = "@double_vtv"
 MODEL_MT = "facebook/m2m100_418M"
 MODEL_TTS = "bangla-speech-processing/bangla_tts_male"
-BENGALI = re.compile(r"[\\u0980-\\u09ff]")
+BENGALI = re.compile(r"[\u0980-\u09ff]")
 
 
 def run_ffmpeg(*args):
@@ -45,7 +45,7 @@ def validate_manifest(manifest):
     if expected_run and str(manifest.get("run_id")) != expected_run:
         raise ValueError("Origin workflow run mismatch")
     for item in manifest["clips"]:
-        if not re.fullmatch(r"source_\\d{2}\\.mp4", item.get("filename", "")):
+        if not re.fullmatch(r"source_\d{2}\.mp4", item.get("filename", "")):
             raise ValueError("Unexpected source clip filename")
         src = SOURCE_DIR / item["filename"]
         if not src.is_file() or src.stat().st_size < 10_000:
@@ -67,7 +67,7 @@ def get_segments(model, path):
     )
     rows = []
     for s in segments:
-        text = re.sub(r"\\s+", " ", s.text).strip()
+        text = re.sub(r"\s+", " ", s.text).strip()
         if text and s.end > s.start:
             rows.append({"start": float(s.start), "end": float(s.end), "fa": text})
     if not rows:
@@ -96,7 +96,7 @@ class Translator:
 
     def translate(self, value):
         import torch
-        text = re.sub(r"\\s+", " ", value).strip()
+        text = re.sub(r"\s+", " ", value).strip()
         if not text:
             return ""
         tokens = self.tok(text, return_tensors="pt", truncation=True, max_length=220)
@@ -249,10 +249,10 @@ def main():
     # Do not transmit Farsi report messages or change their routing.
     results = []
     for index, (video, title) in enumerate(output, 1):
-        caption = (f"🎬 {title}\\n"
-                   f"📺 মিডিয়া মিহির | দিদবান বাংলা\\n"
-                   f"🎙️ বাংলা পুরুষ কণ্ঠে ডাবিং\\n"
-                   f"📅 {manifest.get('date', '')}\\n"
+        caption = (f"🎬 {title}\n"
+                   f"📺 মিডিয়া মিহির | দিদবান বাংলা\n"
+                   f"🎙️ বাংলা পুরুষ কণ্ঠে ডাবিং\n"
+                   f"📅 {manifest.get('date', '')}\n"
                    f"#{'দিদবান'} #বাংলা_ডাবিং #মিহির_টিভি")
         ident = send_video(token, video, caption)
         results.append({"clip": index, "message_id": ident, "size": video.stat().st_size})
