@@ -144,10 +144,21 @@ jobs:
           # Clip-only route, count, speed, and encoding are read from
           # config/didban_clips.json. Old variable speed overrides are removed.
           ENABLE_BALE_VIDEO_CLIPS: ${{ vars.ENABLE_BALE_VIDEO_CLIPS || 'true' }}
+          # Only prepares a separate 2-clip artifact, never changes the Persian channel.
+          ENABLE_BN_DUB_EXPORT: 'true'
           ENABLE_VISUAL_REVIEW: ${{ vars.ENABLE_VISUAL_REVIEW || 'true' }}
           VISUAL_REVIEW_MODEL: ${{ vars.VISUAL_REVIEW_MODEL || 'gemini-3.8-flash' }}
           VISUAL_REPORT_IMAGE_COUNT: ${{ vars.VISUAL_REPORT_IMAGE_COUNT || '2' }}
         run: python velayat_monitor.py
+
+      - name: Upload two Persian clip sources for independent Bengali dubbing
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bengali-source-${{ github.run_id }}
+          path: bengali_dub_input/
+          if-no-files-found: ignore
+          retention-days: 1
 
       - name: Upload transcript and diagnostic report
         if: always()
