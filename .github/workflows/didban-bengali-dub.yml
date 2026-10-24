@@ -1,117 +1,102 @@
 name: Didban Bengali Auto Dubbing
 
 on:
-  workflow_run:
-    workflows:
-      - Velayat Live Monitor
-    types:
-      - completed
-  workflow_dispatch:
-    inputs:
-      origin_run_id:
-        description: "Successful Velayat Live Monitor run ID containing Bengali source artifact"
-        required: true
-        type: string
+  repository_dispatch:
+    types: [didban_bengali_clip_ready]
 
 permissions:
   contents: read
   actions: read
 
 concurrency:
-  group: didban-bengali-${{ github.event.workflow_run.id || inputs.origin_run_id }}
+  group: didban-bengali-${{ github.event.client_payload.run_id }}-${{ github.event.client_payload.clip_index }}
   cancel-in-progress: false
 
 jobs:
-  bengali-dub:
-    if: >-
-      (github.event_name == 'workflow_dispatch') ||
-      (github.event.workflow_run.conclusion == 'success' &&
-       github.event.workflow_run.event == 'workflow_dispatch' &&
-       github.event.workflow_run.head_branch == 'main')
+  dub-single-clip:
     runs-on: ubuntu-latest
     timeout-minutes: 170
     env:
-      ORIGIN_RUN_ID: ${{ github.event.workflow_run.id || inputs.origin_run_id }}
+      ORIGIN_RUN_ID: ${{ github.event.client_payload.run_id }}
+      CLIP_INDEX: ${{ github.event.client_payload.clip_index }}
+      BN_EXPECT_COUNT: '1'
       BALE_BOT_TOKEN: ${{ secrets.BALE_BOT_TOKEN }}
-      HF_HUB_DISABLE_TELEMETRY: "1"
-      TOKENIZERS_PARALLELISM: "false"
-      OMP_NUM_THREADS: "3"
-
+      HF_HUB_DISABLE_TELEMETRY: '1'
+      TOKENIZERS_PARALLELISM: 'false'
+      OMP_NUM_THREADS: '3'
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check source artifact exists
-        id: source
+      - name: Validate origin run and its individual clip artifact
         uses: actions/github-script@v7
         with:
           script: |
-            const runId = Number(process.env.ORIGIN_RUN_ID);
-            if (!Number.isSafeInteger(runId) || runId < 1) {
-              core.setFailed('Invalid source run ID');
+            const id = Number(process.env.ORIGIN_RUN_ID);
+            const idx = Number(process.env.CLIP_INDEX);
+            if (!Number.isSafeInteger(id) || id < 1 || ![1, 2].includes(idx)) {
+              core.setFailed('Invalid source run or clip index');
               return;
             }
             const {owner, repo} = context.repo;
-            const run = await github.rest.actions.getWorkflowRun({
-              owner, repo, run_id: runId
-            });
+            const run = await github.rest.actions.getWorkflowRun({owner, repo, run_id: id});
             if (run.data.name !== 'Velayat Live Monitor' ||
-                run.data.conclusion !== 'success' ||
-                run.data.head_branch !== 'main') {
-              core.setFailed('Origin run must be a successful main-branch Didban monitor run');
+                run.data.head_branch !== 'main' ||
+                run.data.event !== 'workflow_dispatch' ||
+                !['queued', 'in_progress', 'completed'].includes(run.data.status) ||
+                run.data.conclusion === 'cancelled') {
+              core.setFailed('Untrusted origin run');
               return;
             }
-            const artifacts = await github.paginate(
-              github.rest.actions.listWorkflowRunArtifacts,
-              {owner, repo, run_id: runId, per_page: 100}
-            );
-            const name = 'bengali-source-' + runId;
-            const exists = artifacts.some(a => a.name === name && !a.expired);
-            core.setOutput('exists', String(exists));
-            if (!exists) core.info('No two-clip package: skip without publishing');
+            const target = 'bengali-clip-' + id + '-' + idx;
+            let found = false;
+            for (let attempt = 0; attempt < 8; attempt++) {
+              const artifacts = await github.paginate(
+                github.rest.actions.listWorkflowRunArtifacts,
+                {owner, repo, run_id: id, per_page: 100}
+              );
+              found = artifacts.some(a => a.name === target && !a.expired);
+              if (found) break;
+              await new Promise(resolve => setTimeout(resolve, 5000));
+            }
+            if (!found) core.setFailed('Source clip artifact missing');
 
-      - name: Download verified two-clip artifact
-        if: steps.source.outputs.exists == 'true'
+      - name: Download single confirmed Persian clip
         uses: actions/download-artifact@v4
         with:
           repository: ${{ github.repository }}
           run-id: ${{ env.ORIGIN_RUN_ID }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          name: bengali-source-${{ env.ORIGIN_RUN_ID }}
+          name: bengali-clip-${{ env.ORIGIN_RUN_ID }}-${{ env.CLIP_INDEX }}
           path: bengali_dub_input/
 
-      - name: Set up CPU Python
-        if: steps.source.outputs.exists == 'true'
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
-      - name: Cache open-source models
-        if: steps.source.outputs.exists == 'true'
+      - name: Cache local free-license speech models
         uses: actions/cache@v4
         with:
           path: ~/.cache/huggingface
           key: didban-bengali-models-fa-bn-male-v1
 
-      - name: Install CPU audio and ML dependencies
-        if: steps.source.outputs.exists == 'true'
+      - name: Install CPU speech dependencies
         shell: bash
         run: |
           set -euo pipefail
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg libsndfile1 espeak-ng libespeak-ng1
-          python -m pip install -U pip
+          python -m pip install --upgrade pip
           python -m pip install --index-url https://download.pytorch.org/whl/cpu torch torchaudio
           python -m pip install -r requirements-bengali.txt
 
-      - name: Translate, dub, verify and send two Bengali clips
-        if: steps.source.outputs.exists == 'true'
+      - name: Dub and publish this clip to @double_vtv
         run: python bengali_dubbing.py
 
-      - name: Upload delivery diagnostics (no video)
-        if: always() && steps.source.outputs.exists == 'true'
+      - name: Upload delivery status only
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: bengali-dub-status-${{ env.ORIGIN_RUN_ID }}
+          name: bengali-result-${{ env.ORIGIN_RUN_ID }}-${{ env.CLIP_INDEX }}
           path: bengali_dub_output/delivery.json
           if-no-files-found: ignore
           retention-days: 3
