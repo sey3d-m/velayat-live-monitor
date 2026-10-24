@@ -246,14 +246,29 @@ def main():
         title = translator.translate(item.get("title_fa", "") or "گزیده برنامه")
         output.append((video, title))
         print(f"Bengali clip {num} prepared ({duration:.1f}s); not yet published")
-    # Do not transmit Farsi report messages or change their routing.
+    # Keep proper names traceable to the original source.
+    # Transliteration quality is not guaranteed; never invent the expert's name.
+    def safe_name(value, fallback):
+        if not value:
+            return fallback
+        try:
+            return translator.translate(value)
+        except Exception:
+            return value
+
+    expert = safe_name(manifest.get("expert_fa", ""), "নাম উল্লেখ করা হয়নি")
+    program = safe_name(manifest.get("program_fa", ""), "বেলায়াত অনুষ্ঠান")
     results = []
     for index, (video, title) in enumerate(output, 1):
-        caption = (f"🎬 {title}\n"
-                   f"📺 মিডিয়া মিহির | দিদবান বাংলা\n"
-                   f"🎙️ বাংলা পুরুষ কণ্ঠে ডাবিং\n"
-                   f"📅 {manifest.get('date', '')}\n"
-                   f"#{'দিদবান'} #বাংলা_ডাবিং #মিহির_টিভি")
+        caption = (
+            f"🎬 শিরোনাম: {title}\n"
+            f"🎙️ আলোচক: {expert}\n"
+            f"📺 অনুষ্ঠান: {program}\n"
+            f"📅 তারিখ: {manifest.get('date', '')}\n"
+            f"📝 বিষয়: {title} সম্পর্কে গুরুত্বপূর্ণ আলোচনা।\n"
+            f"🎧 বাংলা পুরুষ কণ্ঠে ডাবিং\n"
+            f"#দিদবান #বাংলা_ডাবিং #মিহির_টিভি"
+        )
         ident = send_video(token, video, caption)
         results.append({"clip": index, "message_id": ident, "size": video.stat().st_size})
         print(f"Bengali clip {index} posted to {TARGET}")
