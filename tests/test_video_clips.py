@@ -99,6 +99,31 @@ class ClipTests(unittest.TestCase):
                     self.assertIn(expected, caption)
                 self.assertNotIn("\\n", caption)
 
+    def test_rejects_coarse_or_unrelated_ai_highlights(self):
+        from types import SimpleNamespace
+        timed = (
+            "[00:00-01:20] کارشناس درباره چرایی استناد به حدیث غدیر توضیح می‌دهد و ولایت را بررسی می‌کند.\\n"
+            "[01:20-07:00] متن طولانی و نامرتبط دیگری بیان می‌شود.\\n"
+            "[07:00-08:20] درباره روایت‌های تاریخی و بررسی سند حدیث غدیر توضیح داده می‌شود.\\n"
+        )
+        good = clip(0, 80, "high", "استناد به حدیث غدیر")
+        unrelated = clip(0, 80, "high", "روش زندگی سالم و آشپزی")
+        coarse = clip(90, 160, "high", "متن طولانی و نامرتبط")
+        also_good = clip(420, 500, "high", "بررسی سند حدیث غدیر")
+        chosen = video_clips.grounded_clip_candidates(
+            [good, unrelated, coarse, also_good], timed, 520,
+            min_seconds=30, max_seconds=105,
+        )
+        self.assertEqual(chosen, [good, also_good])
+
+    def test_transcript_fallback_never_trims_six_minute_row(self):
+        timed = "[00:00-06:00] آیا این یک گفتگوی طولانی درباره پرسش و پاسخ است؟"
+        self.assertEqual(
+            video_clips.transcript_candidates(timed, 360,
+                                              min_seconds=30, max_seconds=105),
+            [],
+        )
+
     def test_clip_specific_description(self):
         row = clip(10, 40, title="عنوان")
         row.caption = "توضیح اختصاصی این بخش"
