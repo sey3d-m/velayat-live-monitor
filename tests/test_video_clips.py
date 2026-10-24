@@ -251,6 +251,38 @@ class ClipTests(unittest.TestCase):
             self.assertEqual({x["start_sec"] for x in result["sent"]}, {90, 180, 275})
             self.assertEqual(sent.call_args.kwargs["data"]["chat_id"], "@live_vtv")
 
+    def test_minimum_60_seconds_forms_four_genuine_transcript_clips(self):
+        # Each scene is composed of real, time-stamped consecutive statements.
+        from types import SimpleNamespace
+        transcript = ""
+        for base in (0, 180, 360, 540):
+            mm = lambda n: f"{n//60:02}:{n%60:02}"
+            transcript += (
+                f"[{mm(base)} - {mm(base + 27)}] آیا پاسخ مستند برای پرسش تاریخی مشخص وجود دارد؟\\n"
+                f"[{mm(base + 28)} - {mm(base + 55)}] در منابع تاریخی درباره این مسئله توضیح کارشناسی آمده است.\\n"
+                f"[{mm(base + 56)} - {mm(base + 92)}] پاسخ این پرسش را با توضیحات واقعی تکمیل می‌کنیم.\\n"
+            )
+        analysis = SimpleNamespace(viral_clips=[], audience_questions=[], key_points=[])
+        candidates = video_clips.build_clip_candidates(
+            analysis, transcript, 900, transcript_min_seconds=60,
+            transcript_max_seconds=300,
+        )
+        chosen = video_clips.select_segments(
+            candidates, 900, limit=4, min_seconds=60, max_seconds=300,
+        )
+        self.assertEqual(len(chosen), 4)
+        self.assertTrue(all(end - start >= 60 for start, end, _ in chosen))
+        self.assertEqual({start for start, end, title in chosen},
+                         {0, 180, 360, 540})
+
+    def test_speech_gaps_are_not_fabricated_as_long_clips(self):
+        transcript = (
+            "[00:00 - 00:25] آیا این سؤال واقعاً در گفت‌وگوی برنامه مطرح شده است؟\\n"
+            "[02:00 - 02:25] یک پاسخ دیگر با فاصله زمانی از سؤال قبل مطرح می‌شود.\\n"
+        )
+        self.assertEqual(video_clips.transcript_candidates(
+            transcript, 400, min_seconds=60, max_seconds=300), [])
+
     def test_no_transcript_no_ai_does_not_fabricate_viral_speech(self):
         empty = SimpleNamespace(
             viral_clips=[], key_points=[], audience_questions=[])
