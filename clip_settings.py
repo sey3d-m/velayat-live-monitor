@@ -21,7 +21,7 @@ def load_clip_settings():
         raise ValueError("Invalid quality or speed")
     if not (type(c["crf"]) is int and 18 <= c["crf"] <= 28):
         raise ValueError("Invalid CRF")
-    if c["audio_bitrate_kbps"] not in (128, 160, 192):
+    if c["audio_bitrate_kbps"] not in (96, 128, 160, 192):
         raise ValueError("Invalid audio bitrate")
     if not (type(c["max_upload_mb"]) is int and 10 <= c["max_upload_mb"] <= 49):
         raise ValueError("Invalid upload limit")
