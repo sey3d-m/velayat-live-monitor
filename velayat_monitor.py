@@ -1974,7 +1974,8 @@ def main() -> None:
                 tmeta.audio_capture_seconds,
                 BALE_BOT_TOKEN, "@live_vtv", info["program"],
                 expert=normalize_name(analysis.expert),
-                date=jalali_date_for_info(info), hashtags=analysis.hashtags)
+                date=jalali_date_for_info(info), hashtags=analysis.hashtags,
+                timed_transcript=timed_transcript)
             diagnostic["video_clips"] = clips_result
             delivery["bale_clips"] = clips_result["status"].upper()
             delivery["errors"].extend(clips_result["errors"])
