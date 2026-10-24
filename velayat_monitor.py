@@ -36,6 +36,7 @@ from video_clips import (
     send_bale_clips, enabled as video_clips_enabled,
     cleanup as cleanup_video_clips, build_clip_candidates,
 )
+from clip_settings import load_clip_settings
 
 
 # -----------------------------------------------------------------------------
@@ -1962,9 +1963,14 @@ def main() -> None:
         if video_clips_enabled(NETWORK):
             # Reports and transcript remain on their existing routes.
             # No clip media or clip-status messages go to the report channel.
+            clip_rules = load_clip_settings()
             clips_result = send_bale_clips(
                 clip_recording,
-                build_clip_candidates(analysis, timed_transcript, tmeta.audio_capture_seconds),
+                build_clip_candidates(
+                    analysis, timed_transcript, tmeta.audio_capture_seconds,
+                    transcript_min_seconds=clip_rules["min_seconds"],
+                    transcript_max_seconds=clip_rules["max_seconds"],
+                ),
                 tmeta.audio_capture_seconds,
                 BALE_BOT_TOKEN, "@live_vtv", info["program"],
                 expert=normalize_name(analysis.expert),
