@@ -85,6 +85,13 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Cache open-source models
+        if: steps.source.outputs.exists == 'true'
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: didban-bengali-models-fa-bn-male-v1
+
       - name: Install CPU audio and ML dependencies
         if: steps.source.outputs.exists == 'true'
         shell: bash
