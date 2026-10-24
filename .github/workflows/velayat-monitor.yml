@@ -70,6 +70,25 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.txt
 
+      - name: Identify checked-out release and clip-only destination
+        env:
+          NETWORK: ${{ inputs.network }}
+        shell: bash
+        run: |
+          echo "Checked-out revision: $(git rev-parse --short HEAD)"
+          python - <<'PY'
+          import os
+          from clip_settings import load_clip_settings
+          cfg = load_clip_settings()
+          network = os.environ.get("NETWORK", "persian")
+          print("Clip destination:", cfg["destination"])
+          print("Clips for network:", network, cfg["enabled"] and cfg["networks"].get(network, False))
+          print("Clip count:", cfg["count_per_program"])
+          print("Clip duration:", cfg["min_seconds"], "to", cfg["max_seconds"], "seconds")
+          print("Speed:", cfg["speed"], "Quality:", cfg["quality"])
+          print("Report destination: existing BALE_CHAT_ID, unchanged")
+          PY
+
       - name: Ensure FFmpeg
         shell: bash
         run: |
