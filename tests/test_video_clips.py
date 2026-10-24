@@ -99,6 +99,31 @@ class ClipTests(unittest.TestCase):
                     self.assertIn(expected, caption)
                 self.assertNotIn("\\n", caption)
 
+    def test_rejects_coarse_or_unrelated_ai_highlights(self):
+        from types import SimpleNamespace
+        timed = (
+            "[00:00-01:20] کارشناس درباره چرایی استناد به حدیث غدیر توضیح می‌دهد و ولایت را بررسی می‌کند.\n"
+            "[01:20-07:00] متن طولانی و نامرتبط دیگری بیان می‌شود.\n"
+            "[07:00-08:20] درباره روایت‌های تاریخی و بررسی سند حدیث غدیر توضیح داده می‌شود.\n"
+        )
+        good = clip(0, 80, "high", "استناد به حدیث غدیر")
+        unrelated = clip(0, 80, "high", "روش زندگی سالم و آشپزی")
+        coarse = clip(90, 160, "high", "متن طولانی و نامرتبط")
+        also_good = clip(420, 500, "high", "بررسی سند حدیث غدیر")
+        chosen = video_clips.grounded_clip_candidates(
+            [good, unrelated, coarse, also_good], timed, 520,
+            min_seconds=30, max_seconds=105,
+        )
+        self.assertEqual(chosen, [good, also_good])
+
+    def test_transcript_fallback_never_trims_six_minute_row(self):
+        timed = "[00:00-06:00] آیا این یک گفتگوی طولانی درباره پرسش و پاسخ است؟"
+        self.assertEqual(
+            video_clips.transcript_candidates(timed, 360,
+                                              min_seconds=30, max_seconds=105),
+            [],
+        )
+
     def test_clip_specific_description(self):
         row = clip(10, 40, title="عنوان")
         row.caption = "توضیح اختصاصی این بخش"
@@ -194,7 +219,7 @@ class ClipTests(unittest.TestCase):
         self.assertEqual(len(chosen), 2)
         self.assertEqual({chosen[0][0], chosen[1][0]}, {25, 180})
 
-    def test_from_keypoints_when_only_one_viral_suggestion(self):
+    def test_does_not_invent_video_boundaries_from_general_keypoints(self):
         viral = clip(20, 75, "high", "آیا این سخن درست است؟")
         viral.why_viral = "تبیین یک مسئله"
         keypoint = SimpleNamespace(
@@ -202,7 +227,7 @@ class ClipTests(unittest.TestCase):
         analysis = SimpleNamespace(
             viral_clips=[viral], key_points=[keypoint], audience_questions=[])
         candidates = video_clips.build_clip_candidates(analysis, "", 300)
-        self.assertEqual(len(video_clips.select_segments(candidates, 300)), 2)
+        self.assertEqual(len(video_clips.select_segments(candidates, 300)), 1)
 
     def test_transcript_only_fallback_yields_two_actual_nonfiction_clips(self):
         timed = (
