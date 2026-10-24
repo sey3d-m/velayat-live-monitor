@@ -28,7 +28,7 @@ on:
         type: string
 
 permissions:
-  contents: read
+  contents: write
 
 # Same-time programs on different networks run independently. Accidental duplicate
 # dispatches for the same network/slot/date are serialized, never allowed to cancel
@@ -115,6 +115,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Install per-clip artifact uploader
+        if: ${{ inputs.network == 'persian' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm install --no-audit --no-fund --no-save --prefix .bengali-tools @actions/artifact@2.3.2
+
       - name: Monitor live program
         env:
           NETWORK: ${{ inputs.network }}
@@ -128,6 +135,8 @@ jobs:
           SHEETS_WEBHOOK_URL: ${{ secrets.SHEETS_WEBHOOK_URL }}
           WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}
           BALE_BOT_TOKEN: ${{ secrets.BALE_BOT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ENABLE_BN_DUB_INSTANT: 'true'
 
           # Persian reports remain in the existing Bale channel.
           # Azeri / Arabic / Hausa reports go to the new non-Persian channel.
@@ -145,20 +154,10 @@ jobs:
           # config/didban_clips.json. Old variable speed overrides are removed.
           ENABLE_BALE_VIDEO_CLIPS: ${{ vars.ENABLE_BALE_VIDEO_CLIPS || 'true' }}
           # Only prepares a separate 2-clip artifact, never changes the Persian channel.
-          ENABLE_BN_DUB_EXPORT: 'true'
           ENABLE_VISUAL_REVIEW: ${{ vars.ENABLE_VISUAL_REVIEW || 'true' }}
           VISUAL_REVIEW_MODEL: ${{ vars.VISUAL_REVIEW_MODEL || 'gemini-3.8-flash' }}
           VISUAL_REPORT_IMAGE_COUNT: ${{ vars.VISUAL_REPORT_IMAGE_COUNT || '2' }}
         run: python velayat_monitor.py
-
-      - name: Upload two Persian clip sources for independent Bengali dubbing
-        if: success()
-        uses: actions/upload-artifact@v4
-        with:
-          name: bengali-source-${{ github.run_id }}
-          path: bengali_dub_input/
-          if-no-files-found: ignore
-          retention-days: 1
 
       - name: Upload transcript and diagnostic report
         if: always()
