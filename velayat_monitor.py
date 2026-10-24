@@ -2029,6 +2029,12 @@ def main() -> None:
 if __name__ == "__main__":
     try:
         main()
+        # Per-clip handoff already started after each successful Bale send.
+        try:
+            from bengali_instant_dispatch import drain_pending
+            drain_pending()
+        except Exception as bn_exc:
+            print(f"Bengali handoff drain failed: {bn_exc}", file=sys.stderr)
         AUDIO_BACKUP_FILE.unlink(missing_ok=True)
         cleanup_video_clips()
     except Exception as exc:
