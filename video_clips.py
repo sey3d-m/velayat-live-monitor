@@ -387,6 +387,14 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
                 "size_bytes": path.stat().st_size, "speed": playback_speed(),
                 "filename": path.name,
             })
+            # Dispatch Bengali dubbing immediately after Bale confirmed this MP4.
+            try:
+                from bengali_instant_dispatch import enqueue_after_sent
+                enqueue_after_sent(path, index=len(sent), program=program,
+                                   expert=expert, date=date, title=title,
+                                   start=start, end=end)
+            except Exception as bn_exc:
+                print(f"Bengali handoff skipped: {bn_exc}", file=sys.stderr)
         except Exception as exc:
             errors.append(f"clip_{idx}: {type(exc).__name__}: {exc}")
             print(errors[-1], file=sys.stderr)
