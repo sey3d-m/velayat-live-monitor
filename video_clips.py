@@ -12,23 +12,30 @@ import time
 from pathlib import Path
 
 import requests
+from clip_settings import load_clip_settings
 
 PRIVATE_DIR = Path("private_live_video")
 RECORDING = PRIVATE_DIR / "programme_preview.mp4"
 CAPTION_LIMIT = 900
 
 
-def enabled():
-    return os.getenv("ENABLE_BALE_VIDEO_CLIPS", "true").lower() not in ("false", "off", "0")
+def enabled(network=None):
+    """Clip enablement is independent of all existing report channels."""
+    c = load_clip_settings()
+    network = network or os.getenv("NETWORK", "persian").lower()
+    return (c["enabled"] and c["networks"].get(network, False)
+            and os.getenv("ENABLE_BALE_VIDEO_CLIPS", "true").lower() not in ("false", "off", "0"))
 
 
 def playback_speed():
-    """Apply the same playback rate to picture and speech to preserve A/V sync."""
+    """Honor panel setting. Explicit environment override is for diagnostics only."""
+    c = load_clip_settings()
+    raw = os.getenv("BALE_CLIP_PLAYBACK_SPEED", "").strip()
     try:
-        value = float(os.getenv("BALE_CLIP_PLAYBACK_SPEED", "1.5"))
+        speed = float(raw) if raw else float(c["speed"])
     except ValueError:
-        return 1.5
-    return value if value in (1.0, 1.5) else 1.5
+        speed = float(c["speed"])
+    return speed if speed in (0.75, 1.0, 1.25, 1.5) else float(c["speed"])
 
 
 async def capture_video(media_url, duration):
@@ -37,21 +44,23 @@ async def capture_video(media_url, duration):
         return None
     PRIVATE_DIR.mkdir(exist_ok=True)
     RECORDING.unlink(missing_ok=True)
+    settings = load_clip_settings()
+    width = 1920 if settings["quality"] == "1080p" else 1280
+    # Improve the actual recording, not just the exported MP4. Preserve 25 fps.
+    rate = "4200k" if width == 1920 else "2300k"
+    buffer = "8400k" if width == 1920 else "4600k"
     cmd = [
         "ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error",
         "-reconnect", "1", "-reconnect_streamed", "1",
         "-reconnect_delay_max", "5",
         "-i", media_url, "-map", "0:v:0", "-map", "0:a:0?",
         "-t", str(duration),
-        # 12 fps produced visibly jerky movement; 24 fps is a compromise
-        # between natural motion, runner CPU, and small files.
-        "-vf", "fps=24,scale=w=640:h=-2:force_original_aspect_ratio=decrease,setsar=1",
+        "-vf", f"fps=25,scale=w={width}:h=-2:force_original_aspect_ratio=decrease,setsar=1",
         "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p",
-        "-crf", "31", "-maxrate", "650k", "-bufsize", "1300k",
-        "-g", "48", "-keyint_min", "48", "-sc_threshold", "0",
-        # Resynchronize audio when the live input timestamps are discontinuous.
+        "-crf", "24", "-maxrate", rate, "-bufsize", buffer,
+        "-g", "50", "-keyint_min", "50", "-sc_threshold", "0",
         "-af", "aresample=async=1:first_pts=0",
-        "-c:a", "aac", "-b:a", "48k", "-ac", "1", "-ar", "24000",
+        "-c:a", "aac", "-b:a", "96k", "-ac", "2", "-ar", "44100",
         "-movflags", "+faststart", "-y", str(RECORDING),
     ]
     proc = None
@@ -172,8 +181,8 @@ def _viral_score(item, start, end):
     return points
 
 
-def select_segments(clips, duration, limit=2):
-    """Editorial ranking; preserve two distinct, useful non-overlapping scenes."""
+def select_segments(clips, duration, limit=2, min_seconds=15, max_seconds=100):
+    """Editorial ranking; preserve distinct, useful non-overlapping scenes."""
     ranked = []
     for item in clips:
         try:
@@ -181,9 +190,9 @@ def select_segments(clips, duration, limit=2):
             end = min(int(duration), int(getattr(item, "end_sec")))
         except (ValueError, TypeError, AttributeError):
             continue
-        if end - start < 15:
+        if end - start < min_seconds:
             continue
-        end = min(end, start + 100)
+        end = min(end, start + max_seconds)
         title = compact_text(getattr(item, "media_title", ""), 100)
         if not title:
             continue
@@ -212,26 +221,36 @@ def make_clip(source, start, end, index):
 
     Copying encoded streams at an arbitrary start can yield silent/unplayable
     B/P pictures until the next keyframe, while the audio plays normally.
-    Both tracks are sped up by the same amount; atempo retains speech pitch.
+    Both tracks use the same configurable playback rate; default is natural 1x.
     """
     PRIVATE_DIR.mkdir(exist_ok=True)
     dest = PRIVATE_DIR / f"clip_{index:02}.mp4"
     dest.unlink(missing_ok=True)
+    settings = load_clip_settings()
     speed = playback_speed()
+    width = 1920 if settings["quality"] == "1080p" else 1280
+    # Allow longer selections, but aim below Bale's configured upload budget.
+    seconds = max(1, end - start)
+    total_bits = settings["max_upload_mb"] * 1024 * 1024 * 8 * 0.93
+    audio_bps = settings["audio_bitrate_kbps"] * 1000
+    video_bps = max(350_000, int(total_bits / seconds - audio_bps))
+    video_bps = min(video_bps, 4_000_000 if width == 1920 else 2_600_000)
     cmd = [
         "ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error",
-        "-ss", str(start), "-t", str(end - start), "-i", str(source),
+        "-ss", str(start), "-t", str(seconds), "-i", str(source),
         "-map", "0:v:0", "-map", "0:a:0?",
-        "-vf", f"setpts=(PTS-STARTPTS)/{speed},fps=24,setsar=1",
+        "-vf", f"setpts=(PTS-STARTPTS)/{speed},fps=25,scale=w={width}:h=-2:force_original_aspect_ratio=decrease,setsar=1",
         "-af", f"atempo={speed},asetpts=PTS-STARTPTS",
-        "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p",
-        "-crf", "31", "-maxrate", "650k", "-bufsize", "1300k",
-        "-g", "48", "-c:a", "aac", "-b:a", "48k",
-        "-ar", "24000", "-ac", "1",
+        "-c:v", "libx264", "-preset", "fast", "-pix_fmt", "yuv420p",
+        "-crf", str(settings["crf"]), "-maxrate", str(video_bps),
+        "-bufsize", str(video_bps * 2),
+        "-g", "50", "-c:a", "aac",
+        "-b:a", f"{settings['audio_bitrate_kbps']}k",
+        "-ar", "44100", "-ac", "2",
         "-movflags", "+faststart", "-avoid_negative_ts", "make_zero",
         "-y", str(dest),
     ]
-    run = subprocess.run(cmd, capture_output=True, timeout=180)
+    run = subprocess.run(cmd, capture_output=True, timeout=max(180, seconds * 5))
     if run.returncode != 0 or not dest.exists() or dest.stat().st_size < 5000:
         raise RuntimeError("Clip encoding failed: " +
                            run.stderr.decode("utf8", "replace")[-250:])
@@ -307,26 +326,33 @@ def description_for(suggestions, start, title):
 
 def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
                     expert="نامشخص", date="", hashtags=None):
-    """Send two synchronized MP4 clips with title, expert, program, date and caption."""
+    """Send clips ONLY to the configured clip-only Bale channel."""
     errors, sent = [], []
+    settings = load_clip_settings()
+    target_count = settings["count_per_program"]
+    # Do not use the legacy BALE_CHAT_ID argument: that is for report delivery.
+    clip_chat_id = settings["destination"]
     if not enabled():
         return {"status": "disabled", "sent": sent, "errors": errors}
     if not source or not Path(source).exists():
         return {"status": "unavailable", "sent": sent,
                 "errors": ["live_video_unavailable"]}
-    selections = select_segments(suggestions, duration, limit=8)
+    selections = select_segments(
+        suggestions, duration, limit=max(12, target_count * 3),
+        min_seconds=settings["min_seconds"], max_seconds=settings["max_seconds"],
+    )
     if not selections:
         return {"status": "unavailable", "sent": sent,
                 "errors": ["no_valid_editorial_clips"]}
 
     for start, end, title in selections:
-        if len(sent) >= 2:
+        if len(sent) >= target_count:
             break
-        idx = len(sent) + 1
+        idx = len(sent) + len(errors) + 1
         try:
             path = make_clip(source, start, end, idx)
-            if path.stat().st_size > 45 * 1024 * 1024:
-                raise RuntimeError("Clip exceeds safety upload size cap")
+            if path.stat().st_size > settings["max_upload_mb"] * 1024 * 1024:
+                raise RuntimeError("Clip exceeds configured upload size cap")
             caption = format_bale_caption(
                 title=title, expert=expert, program=program, date=date,
                 description=description_for(suggestions, start, title),
@@ -338,7 +364,7 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
                     with path.open("rb") as handle:
                         response = requests.post(
                             f"https://tapi.bale.ai/bot{token}/sendVideo",
-                            data={"chat_id": chat_id, "caption": caption,
+                            data={"chat_id": clip_chat_id, "caption": caption,
                                   "supports_streaming": "true"},
                             files={"video": (path.name, handle, "video/mp4")},
                             timeout=120,
@@ -364,17 +390,16 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
             errors.append(f"clip_{idx}: {type(exc).__name__}: {exc}")
             print(errors[-1], file=sys.stderr)
 
-    # Recovered failures that were followed by another successful candidate
-    # should stay in diagnostics, but they must not turn two delivered clips into
-    # a failed session.
-    delivered_both = len(sent) == 2
-    return {"status": "sent" if delivered_both else
+    complete = len(sent) == target_count
+    return {"status": "sent" if complete else
             "partial" if sent else "failed", "sent": sent,
-            "errors": [] if delivered_both else errors,
-            "warnings": errors if delivered_both else [],
-            "target": 2, "selected_count": len(selections)}
+            "errors": [] if complete else errors,
+            "warnings": errors if complete else [],
+            "target": target_count, "selected_count": len(selections),
+            "destination": clip_chat_id}
 
 
 def cleanup():
-    for path in (PRIVATE_DIR / "clip_01.mp4", PRIVATE_DIR / "clip_02.mp4", RECORDING):
+    for path in PRIVATE_DIR.glob("clip_*.mp4"):
         path.unlink(missing_ok=True)
+    RECORDING.unlink(missing_ok=True)

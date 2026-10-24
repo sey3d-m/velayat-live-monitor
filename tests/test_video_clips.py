@@ -69,9 +69,9 @@ class ClipTests(unittest.TestCase):
         self.assertIn("در این بخش از برنامه", caption)
         self.assertIn("#گامی_به_سوی_ظهور", caption)
 
-    def test_speed_defaults_to_1_5(self):
+    def test_speed_defaults_to_1_0(self):
         with patch.dict("os.environ", {"BALE_CLIP_PLAYBACK_SPEED": ""}):
-            self.assertEqual(video_clips.playback_speed(), 1.5)
+            self.assertEqual(video_clips.playback_speed(), 1.0)
 
     def test_precise_trim_reencodes_video_and_audio_together(self):
         import tempfile
@@ -88,7 +88,7 @@ class ClipTests(unittest.TestCase):
         self.assertNotIn("copy", cmd)
         self.assertIn("libx264", cmd)
         self.assertIn("atempo=1.5,asetpts=PTS-STARTPTS", cmd)
-        self.assertIn("setpts=(PTS-STARTPTS)/1.5,fps=24,setsar=1", cmd)
+        self.assertTrue(any("setpts=(PTS-STARTPTS)/1.5,fps=25,scale=" in arg for arg in cmd))
         self.assertLess(cmd.index("-t"), cmd.index("-i"))
         self.assertEqual(cmd[cmd.index("-t") + 1], "60")
 
@@ -176,7 +176,7 @@ class ClipTests(unittest.TestCase):
             for candidate in candidates) for start, _end, title in chosen))
         self.assertTrue(all(start < end for start, end, _ in chosen))
 
-    def test_bale_uploads_exactly_two_and_uses_alternative_after_failure(self):
+    def test_bale_uses_alternative_after_failure_and_clip_only_channel(self):
         import tempfile
         from pathlib import Path
         candidates = [
@@ -200,10 +200,11 @@ class ClipTests(unittest.TestCase):
                 result = video_clips.send_bale_clips(
                     source, candidates, 400, "token", "chat", "برنامه",
                     expert="کارشناس", date="۱۴۰۵/۰۸/۰۱", hashtags=["#مهدویت"])
-            self.assertEqual(result["status"], "sent")
-            self.assertEqual(len(result["sent"]), 2)
-            self.assertEqual(sent.call_count, 2)
-            self.assertEqual({x["start_sec"] for x in result["sent"]}, {90, 180})
+            self.assertEqual(result["status"], "partial")
+            self.assertEqual(len(result["sent"]), 3)
+            self.assertEqual(sent.call_count, 3)
+            self.assertEqual({x["start_sec"] for x in result["sent"]}, {90, 180, 275})
+            self.assertEqual(sent.call_args.kwargs["data"]["chat_id"], "@live_vtv")
 
     def test_no_transcript_no_ai_does_not_fabricate_viral_speech(self):
         empty = SimpleNamespace(
