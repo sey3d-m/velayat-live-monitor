@@ -402,6 +402,14 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
                 "start_sec": start, "end_sec": end, "title": title,
                 "size_bytes": path.stat().st_size, "speed": playback_speed(),
             })
+            # Never wait for the second clip or for program completion.
+            try:
+                from bengali_instant_dispatch import enqueue_after_sent
+                enqueue_after_sent(path, index=len(sent), program=program,
+                                   expert=expert, date=date, title=title,
+                                   start=start, end=end)
+            except Exception as bn_exc:
+                print(f"Bengali handoff skipped: {bn_exc}", file=sys.stderr)
             print(f"Clip sent {len(sent)}/{target_count} to {clip_chat_id}: "
                   f"{start}-{end} seconds, {path.stat().st_size} bytes",
                   flush=True)
