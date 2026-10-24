@@ -258,9 +258,9 @@ class ClipTests(unittest.TestCase):
         for base in (0, 180, 360, 540):
             mm = lambda n: f"{n//60:02}:{n%60:02}"
             transcript += (
-                f"[{mm(base)} - {mm(base + 27)}] آیا پاسخ مستند برای پرسش تاریخی مشخص وجود دارد؟\\n"
-                f"[{mm(base + 28)} - {mm(base + 55)}] در منابع تاریخی درباره این مسئله توضیح کارشناسی آمده است.\\n"
-                f"[{mm(base + 56)} - {mm(base + 92)}] پاسخ این پرسش را با توضیحات واقعی تکمیل می‌کنیم.\\n"
+                f"[{mm(base)} - {mm(base + 27)}] آیا پاسخ مستند برای پرسش تاریخی مشخص وجود دارد؟\n"
+                f"[{mm(base + 28)} - {mm(base + 55)}] در منابع تاریخی درباره این مسئله توضیح کارشناسی آمده است.\n"
+                f"[{mm(base + 56)} - {mm(base + 92)}] پاسخ این پرسش را با توضیحات واقعی تکمیل می‌کنیم.\n"
             )
         analysis = SimpleNamespace(viral_clips=[], audience_questions=[], key_points=[])
         candidates = video_clips.build_clip_candidates(
@@ -277,8 +277,8 @@ class ClipTests(unittest.TestCase):
 
     def test_speech_gaps_are_not_fabricated_as_long_clips(self):
         transcript = (
-            "[00:00 - 00:25] آیا این سؤال واقعاً در گفت‌وگوی برنامه مطرح شده است؟\\n"
-            "[02:00 - 02:25] یک پاسخ دیگر با فاصله زمانی از سؤال قبل مطرح می‌شود.\\n"
+            "[00:00 - 00:25] آیا این سؤال واقعاً در گفت‌وگوی برنامه مطرح شده است؟\n"
+            "[02:00 - 02:25] یک پاسخ دیگر با فاصله زمانی از سؤال قبل مطرح می‌شود.\n"
         )
         self.assertEqual(video_clips.transcript_candidates(
             transcript, 400, min_seconds=60, max_seconds=300), [])
