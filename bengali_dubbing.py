@@ -39,8 +39,13 @@ def validate_manifest(manifest):
         raise ValueError("Unexpected source manifest")
     if manifest.get("source") != "@live_vtv" or manifest.get("destination") != TARGET:
         raise ValueError("Channel route validation failed")
-    if manifest.get("count") != 2 or len(manifest.get("clips", [])) != 2:
-        raise ValueError("Exactly two clips are required")
+    expected = int(os.environ.get("BN_EXPECT_COUNT", "2"))
+    if expected not in (1, 2):
+        raise ValueError("Unexpected expected count")
+    if manifest.get("count") != expected or len(manifest.get("clips", [])) != expected:
+        raise ValueError(f"Expected {expected} clips")
+    if expected == 1 and manifest.get("clip_index") not in (1, 2):
+        raise ValueError("Invalid clip index")
     expected_run = os.environ.get("ORIGIN_RUN_ID", "").strip()
     if expected_run and str(manifest.get("run_id")) != expected_run:
         raise ValueError("Origin workflow run mismatch")
@@ -276,7 +281,7 @@ def main():
         {"run_id": manifest.get("run_id"), "destination": TARGET,
          "status": "sent", "sent": results}, ensure_ascii=False, indent=2),
         encoding="utf-8")
-    print("Bengali dubbed clips: 2/2 delivered")
+    print(f"Bengali dubbed clips: {len(results)}/{len(output)} delivered")
 
 
 if __name__ == "__main__":
