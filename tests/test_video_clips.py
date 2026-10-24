@@ -272,8 +272,10 @@ class ClipTests(unittest.TestCase):
         )
         self.assertEqual(len(chosen), 4)
         self.assertTrue(all(end - start >= 60 for start, end, _ in chosen))
-        self.assertEqual({start for start, end, title in chosen},
-                         {0, 180, 360, 540})
+        # Ranking favors distinct authentic titles, not necessarily the first
+        # subtitle within each scene; coverage is one clip per real section.
+        self.assertEqual({start // 180 for start, end, title in chosen},
+                         {0, 1, 2, 3})
 
     def test_speech_gaps_are_not_fabricated_as_long_clips(self):
         transcript = (
