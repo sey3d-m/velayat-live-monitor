@@ -47,12 +47,57 @@ class ClipTests(unittest.TestCase):
             date="۱۴۰۵/۰۷/۳۰", description="دیدگاه‌های مختلف درباره این موضوع بررسی می‌شود.",
             hashtags=["#مهدویت", "#ظهور"], start=660, end=760,
         )
-        for part in ("🎬 تیتر:", "🎙 کارشناس:", "📺 برنامه:",
+        for part in ("🎬 تیتر:", "🎙 نام کارشناس:", "📺 نام برنامه:",
                      "📅 تاریخ:", "📝 کپشن:", "#مهدویت", "11:00", "12:40"):
             self.assertIn(part, caption)
         self.assertIn("\n", caption)
         self.assertNotIn("\\n", caption)
         self.assertLessEqual(len(caption), 900)
+
+    def test_video_and_complete_caption_sent_together_not_separate_text(self):
+        """Each MP4 and its factual metadata must be in a single Bale sendVideo request."""
+        import tempfile
+        from pathlib import Path
+        candidates = [
+            clip(10, 85, "high", "تیتر کلیپ اول؟"),
+            clip(100, 175, "high", "تیتر کلیپ دوم؟"),
+            clip(190, 265, "medium", "تیتر کلیپ سوم؟"),
+            clip(280, 355, "medium", "تیتر کلیپ چهارم؟"),
+        ]
+        for i, candidate in enumerate(candidates, 1):
+            candidate.caption = f"توضیح اختصاصی کلیپ شماره {i} درباره پاسخ کارشناس."
+        with tempfile.TemporaryDirectory() as d:
+            source = Path(d) / "input.mp4"
+            output = Path(d) / "clip.mp4"
+            source.write_bytes(b"v" * 6000)
+            output.write_bytes(b"c" * 6000)
+            answer = SimpleNamespace(status_code=200, json=lambda: {"ok": True})
+            with (
+                patch.object(video_clips, "make_clip", return_value=output),
+                patch("video_clips.requests.post", return_value=answer) as requests_post,
+            ):
+                response = video_clips.send_bale_clips(
+                    source, candidates, 500, "dummy-token", "old-report-channel",
+                    "گامی به سوی ظهور",
+                    expert="حجت‌الاسلام نمونه",
+                    date="۱۴۰۵/۰۸/۰۲",
+                    hashtags=["#مهدویت", "#ظهور"],
+                )
+            self.assertEqual(response["status"], "sent")
+            self.assertEqual(len(response["sent"]), 4)
+            self.assertEqual(requests_post.call_count, 4)
+            for i, call in enumerate(requests_post.call_args_list, 1):
+                self.assertTrue(call.args[0].endswith("/sendVideo"))
+                self.assertEqual(call.kwargs["data"]["chat_id"], "@live_vtv")
+                self.assertIn("video", call.kwargs["files"])
+                caption = call.kwargs["data"]["caption"]
+                for expected in (
+                    "🎬 تیتر:", "🎙 نام کارشناس: حجت‌الاسلام نمونه",
+                    "📺 نام برنامه: گامی به سوی ظهور", "📅 تاریخ: ۱۴۰۵/۰۸/۰۲",
+                    f"توضیح اختصاصی کلیپ شماره {i}", "#مهدویت", "#ظهور",
+                ):
+                    self.assertIn(expected, caption)
+                self.assertNotIn("\\n", caption)
 
     def test_clip_specific_description(self):
         row = clip(10, 40, title="عنوان")

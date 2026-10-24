@@ -292,8 +292,8 @@ def format_bale_caption(*, title, expert, program, date, description,
 
     head = [
         f"🎬 تیتر: {title}",
-        f"🎙 کارشناس: {expert}",
-        f"📺 برنامه: {program}",
+        f"🎙 نام کارشناس: {expert}",
+        f"📺 نام برنامه: {program}",
         f"📅 تاریخ: {date}",
         "",
         f"📝 کپشن: {description}",
