@@ -47,8 +47,8 @@ async def capture_video(media_url, duration):
     settings = load_clip_settings()
     width = 1920 if settings["quality"] == "1080p" else 1280
     # Improve the actual recording, not just the exported MP4. Preserve 25 fps.
-    rate = "4200k" if width == 1920 else "2300k"
-    buffer = "8400k" if width == 1920 else "4600k"
+    rate = "4200k" if width == 1920 else "1350k"
+    buffer = "8400k" if width == 1920 else "2700k"
     cmd = [
         "ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error",
         "-reconnect", "1", "-reconnect_streamed", "1",
@@ -57,7 +57,7 @@ async def capture_video(media_url, duration):
         "-t", str(duration),
         "-vf", f"fps=25,scale=w={width}:h=-2:force_original_aspect_ratio=decrease,setsar=1",
         "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p",
-        "-crf", "24", "-maxrate", rate, "-bufsize", buffer,
+        "-crf", "27", "-maxrate", rate, "-bufsize", buffer,
         "-g", "50", "-keyint_min", "50", "-sc_threshold", "0",
         "-af", "aresample=async=1:first_pts=0",
         "-c:a", "aac", "-b:a", "96k", "-ac", "2", "-ar", "44100",
@@ -118,6 +118,10 @@ def transcript_candidates(timed_transcript, duration, *, min_seconds=18, max_sec
     desired = min(max_seconds, max(min_seconds, 55))
     candidates = []
     for pos, (start, end, speech) in enumerate(rows):
+        # A coarse transcript row may cover several minutes. Cutting its
+        # first 105 seconds would assign unrelated text to the resulting video.
+        if end - start > max_seconds:
+            continue
         parts = [speech]
         stop = min(end, start + max_seconds, duration)
         for nxt_start, nxt_end, nxt_text in rows[pos + 1:]:
@@ -163,7 +167,7 @@ def build_clip_candidates(analysis, timed_transcript, duration, *,
                 "medium", origin="audience_question",
                 why="سؤال واقعی مخاطب و پاسخ کارشناسی",
             ))
-    for point in getattr(analysis, "key_points", []) or []:
+    for point in []:  # Generic key points cannot prove accurate video boundaries.
         title = compact_text(getattr(point, "title", ""), 100)
         if len(title) >= 12:
             candidates.append(_clip_candidate(
@@ -246,8 +250,8 @@ def make_clip(source, start, end, index):
     seconds = max(1, end - start)
     total_bits = settings["max_upload_mb"] * 1024 * 1024 * 8 * 0.93
     audio_bps = settings["audio_bitrate_kbps"] * 1000
-    video_bps = max(350_000, int(total_bits / seconds - audio_bps))
-    video_bps = min(video_bps, 4_000_000 if width == 1920 else 2_600_000)
+    video_bps = max(180_000, int(total_bits / seconds - audio_bps))
+    video_bps = min(video_bps, 4_000_000 if width == 1920 else 650_000)
     cmd = [
         "ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error",
         "-ss", str(start), "-t", str(seconds), "-i", str(source),
