@@ -97,8 +97,13 @@ def _clip_candidate(start, end, title, description="", priority="low", *,
     )
 
 
-def transcript_candidates(timed_transcript, duration):
-    """Find real, timed speech excerpts; never synthesize a claim or quotation."""
+def transcript_candidates(timed_transcript, duration, *, min_seconds=18, max_seconds=100):
+    """Group actually transcribed adjacent speech into complete eligible scenes.
+
+    Prior versions stopped assembling speech at 50 seconds, then the delivery
+    filter rejected every selection shorter than the operator's 60-second
+    minimum. A long programme could therefore yield only one usable clip.
+    """
     rows = []
     pattern = r"\[(\d{2}:\d{2}(?::\d{2})?)\s*-\s*(\d{2}:\d{2}(?::\d{2})?)\]\s*([^\n]+)"
     for match in re.finditer(pattern, timed_transcript or ""):
@@ -107,22 +112,26 @@ def transcript_candidates(timed_transcript, duration):
         if end <= start or start >= duration or len(speech) < 18:
             continue
         rows.append((start, min(end, duration), speech))
+    rows.sort(key=lambda row: (row[0], row[1]))
+    # Keep a coherent 55+ sec excerpt under legacy defaults, or respect the
+    # configured minimum for actual published clips. Never invent missing speech.
+    desired = min(max_seconds, max(min_seconds, 55))
     candidates = []
     for pos, (start, end, speech) in enumerate(rows):
-        # Group successive transcription lines into a coherent 35-80 second scene.
         parts = [speech]
-        stop = end
+        stop = min(end, start + max_seconds, duration)
         for nxt_start, nxt_end, nxt_text in rows[pos + 1:]:
-            if nxt_start > stop + 10 or nxt_start - start >= 75:
+            if stop - start >= desired:
                 break
+            if nxt_start > stop + 10 or nxt_start - start >= max_seconds:
+                break
+            if nxt_end <= stop:
+                continue
             parts.append(nxt_text)
-            stop = min(nxt_end, start + 80, duration)
-            if stop - start >= 50:
-                break
-        if stop - start < 18:
+            stop = min(nxt_end, start + max_seconds, duration)
+        if stop - start < min_seconds:
             continue
         whole = compact_text(" ".join(parts), 370)
-        # The title is an *actual spoken excerpt*, not a claim invented by AI.
         question = re.search(r"[^.!؟?]{12,100}[؟?]", whole)
         title = compact_text(question.group(0) if question else speech, 90)
         cue = any(k in whole for k in (
@@ -137,7 +146,8 @@ def transcript_candidates(timed_transcript, duration):
     return candidates
 
 
-def build_clip_candidates(analysis, timed_transcript, duration):
+def build_clip_candidates(analysis, timed_transcript, duration, *,
+                          transcript_min_seconds=18, transcript_max_seconds=100):
     """Best AI highlights first; recover from missing/overlapping AI suggestions.
 
     Audience questions and key points are derived from existing structured
@@ -163,7 +173,10 @@ def build_clip_candidates(analysis, timed_transcript, duration):
             ))
     # These candidates are only based on words that occurred in the transcript.
     # AI-quality candidates naturally outrank generic transcript excerpts.
-    candidates.extend(transcript_candidates(timed_transcript, duration))
+    candidates.extend(transcript_candidates(
+        timed_transcript, duration, min_seconds=transcript_min_seconds,
+        max_seconds=transcript_max_seconds,
+    ))
     return candidates
 
 
@@ -241,7 +254,7 @@ def make_clip(source, start, end, index):
         "-map", "0:v:0", "-map", "0:a:0?",
         "-vf", f"setpts=(PTS-STARTPTS)/{speed},fps=25,scale=w={width}:h=-2:force_original_aspect_ratio=decrease,setsar=1",
         "-af", f"atempo={speed},asetpts=PTS-STARTPTS",
-        "-c:v", "libx264", "-preset", "fast", "-pix_fmt", "yuv420p",
+        "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p",
         "-crf", str(settings["crf"]), "-maxrate", str(video_bps),
         "-bufsize", str(video_bps * 2),
         "-g", "50", "-c:a", "aac",
@@ -341,9 +354,12 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
         suggestions, duration, limit=max(12, target_count * 3),
         min_seconds=settings["min_seconds"], max_seconds=settings["max_seconds"],
     )
+    print(f"Clip plan: {len(selections)} eligible excerpts, target={target_count}, "
+          f"destination={clip_chat_id}, available={len(suggestions)}", flush=True)
     if not selections:
         return {"status": "unavailable", "sent": sent,
-                "errors": ["no_valid_editorial_clips"]}
+                "errors": ["no_valid_editorial_clips"], "target": target_count,
+                "selected_count": 0, "candidate_count": len(suggestions)}
 
     for start, end, title in selections:
         if len(sent) >= target_count:
@@ -386,6 +402,9 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
                 "start_sec": start, "end_sec": end, "title": title,
                 "size_bytes": path.stat().st_size, "speed": playback_speed(),
             })
+            print(f"Clip sent {len(sent)}/{target_count} to {clip_chat_id}: "
+                  f"{start}-{end} seconds, {path.stat().st_size} bytes",
+                  flush=True)
         except Exception as exc:
             errors.append(f"clip_{idx}: {type(exc).__name__}: {exc}")
             print(errors[-1], file=sys.stderr)
@@ -396,7 +415,7 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
             "errors": [] if complete else errors,
             "warnings": errors if complete else [],
             "target": target_count, "selected_count": len(selections),
-            "destination": clip_chat_id}
+            "candidate_count": len(suggestions), "destination": clip_chat_id}
 
 
 def cleanup():
