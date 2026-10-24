@@ -35,7 +35,7 @@ jobs:
       - name: Verify per-clip artifact uploader dependency
         run: |
           npm install --no-audit --no-fund --no-save --prefix .bengali-tools @actions/artifact@2.3.2
-          node -e "const a=require('./.bengali-tools/node_modules/@actions/artifact'); if(typeof a.uploadArtifact !== 'function') process.exit(1)"
+          node -e "const a=require('./.bengali-tools/node_modules/@actions/artifact'); if(typeof a.DefaultArtifactClient !== 'function') process.exit(1)"
       - name: Validate YAML syntax
         run: |
           python -m pip install 'PyYAML>=6,<7'
