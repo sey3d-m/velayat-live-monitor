@@ -1,0 +1,39 @@
+name: Verify Didban Clip Management
+
+on:
+  pull_request:
+    paths:
+      - 'video_clips.py'
+      - 'clip_settings.py'
+      - 'velayat_monitor.py'
+      - '.github/workflows/didban-clip-settings.yml'
+      - 'config/didban_clips.json'
+      - 'tests/test_video_clips.py'
+      - 'tests/test_clip_panel.py'
+      - '.github/workflows/test-clip-management.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  no-network-unit-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install tests dependency
+        run: python -m pip install requests
+      - name: Enable actual FFmpeg integration tests
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+      - name: Compile changed Python
+        run: python -m py_compile video_clips.py clip_settings.py velayat_monitor.py
+      - name: Verify configuration and clip safety
+        run: python -m unittest discover -s tests -p 'test_video_clips.py' -v
+      - name: Verify panel settings
+        run: python -m unittest discover -s tests -p 'test_clip_panel.py' -v

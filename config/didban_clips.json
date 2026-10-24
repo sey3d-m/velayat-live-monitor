@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "reports": {
+    "route": "existing_unchanged"
+  },
+  "clips": {
+    "enabled": true,
+    "destination": "@live_vtv",
+    "count_per_program": 4,
+    "min_seconds": 60,
+    "max_seconds": 300,
+    "quality": "1080p",
+    "speed": 1,
+    "crf": 20,
+    "audio_bitrate_kbps": 160,
+    "max_upload_mb": 45,
+    "networks": {
+      "persian": true,
+      "azeri": false,
+      "arabic": false,
+      "hausa": false
+    }
+  }
+}

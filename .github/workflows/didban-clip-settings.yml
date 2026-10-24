@@ -1,0 +1,115 @@
+name: Didban Clip Management Panel
+
+on:
+  workflow_dispatch:
+    inputs:
+      clip_count:
+        description: 'تعداد کلیپ هر برنامه (1 تا 12)'
+        required: true
+        type: choice
+        default: '4'
+        options: ['1','2','3','4','5','6','7','8','9','10','11','12']
+      min_seconds:
+        description: 'حداقل طول کلیپ (ثانیه)'
+        required: true
+        type: string
+        default: '60'
+      max_seconds:
+        description: 'حداکثر طول کلیپ (ثانیه)'
+        required: true
+        type: string
+        default: '300'
+      quality:
+        description: 'کیفیت تصویر'
+        required: true
+        type: choice
+        default: '1080p'
+        options: ['1080p','720p']
+      speed:
+        description: 'سرعت ویدئو (1.0 طبیعی)'
+        required: true
+        type: choice
+        default: '1.0'
+        options: ['1.0','0.75','1.25','1.5']
+      persian:
+        description: 'تقطیع شبکه فارسی فعال باشد؟'
+        type: boolean
+        default: true
+      azeri:
+        description: 'تقطیع شبکه آذری فعال باشد؟'
+        type: boolean
+        default: false
+      arabic:
+        description: 'تقطیع شبکه عربی فعال باشد؟'
+        type: boolean
+        default: false
+      hausa:
+        description: 'تقطیع شبکه هوسا فعال باشد؟'
+        type: boolean
+        default: false
+      max_upload_mb:
+        description: 'حداکثر حجم هر کلیپ، مگابایت (10 تا 49)'
+        required: true
+        type: string
+        default: '45'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: didban-clip-panel-save
+  cancel-in-progress: false
+
+jobs:
+  save-settings:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Validate and save production settings
+        env:
+          CLIP_COUNT: ${{ inputs.clip_count }}
+          MIN_SECONDS: ${{ inputs.min_seconds }}
+          MAX_SECONDS: ${{ inputs.max_seconds }}
+          QUALITY: ${{ inputs.quality }}
+          SPEED: ${{ inputs.speed }}
+          PERSIAN: ${{ inputs.persian }}
+          AZERI: ${{ inputs.azeri }}
+          ARABIC: ${{ inputs.arabic }}
+          HAUSA: ${{ inputs.hausa }}
+          MAX_UPLOAD_MB: ${{ inputs.max_upload_mb }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          from clip_settings import load_clip_settings, CONFIG_PATH
+          root = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
+          clips = root["clips"]
+          clips["count_per_program"] = int(os.environ["CLIP_COUNT"])
+          clips["min_seconds"] = int(os.environ["MIN_SECONDS"])
+          clips["max_seconds"] = int(os.environ["MAX_SECONDS"])
+          clips["quality"] = os.environ["QUALITY"]
+          clips["speed"] = float(os.environ["SPEED"])
+          clips["max_upload_mb"] = int(os.environ["MAX_UPLOAD_MB"])
+          for n in ("persian","azeri","arabic","hausa"):
+              clips["networks"][n] = os.environ[n.upper()].lower() == "true"
+          # Write once, validate actual file, then publish to site mirror.
+          CONFIG_PATH.write_text(json.dumps(root, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
+          load_clip_settings()
+          mirror = Path("docs/data/clip-settings.json")
+          mirror.parent.mkdir(parents=True, exist_ok=True)
+          mirror.write_text(CONFIG_PATH.read_text(encoding="utf-8"), encoding="utf-8")
+          print("Saved clip configuration; report routing unchanged; Bale target @live_vtv")
+          PY
+      - name: Commit settings for next program
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add config/didban_clips.json docs/data/clip-settings.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update live Didban clip panel settings"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
