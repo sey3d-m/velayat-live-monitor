@@ -32,6 +32,10 @@ jobs:
         run: python -m pip install 'requests>=2.31,<3'
       - name: Unit tests (no secrets, ML downloads or Bale messages)
         run: python -m unittest discover -s tests -p 'test_bengali*.py' -v
+      - name: Verify per-clip artifact uploader dependency
+        run: |
+          npm install --no-audit --no-fund --no-save --prefix .bengali-tools @actions/artifact@2.3.2
+          node -e "const a=require('./.bengali-tools/node_modules/@actions/artifact'); if(typeof a.uploadArtifact !== 'function') process.exit(1)"
       - name: Validate YAML syntax
         run: |
           python -m pip install 'PyYAML>=6,<7'
