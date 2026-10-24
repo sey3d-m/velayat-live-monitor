@@ -219,7 +219,7 @@ class ClipTests(unittest.TestCase):
         self.assertEqual(len(chosen), 2)
         self.assertEqual({chosen[0][0], chosen[1][0]}, {25, 180})
 
-    def test_from_keypoints_when_only_one_viral_suggestion(self):
+    def test_does_not_invent_video_boundaries_from_general_keypoints(self):
         viral = clip(20, 75, "high", "آیا این سخن درست است؟")
         viral.why_viral = "تبیین یک مسئله"
         keypoint = SimpleNamespace(
@@ -227,7 +227,7 @@ class ClipTests(unittest.TestCase):
         analysis = SimpleNamespace(
             viral_clips=[viral], key_points=[keypoint], audience_questions=[])
         candidates = video_clips.build_clip_candidates(analysis, "", 300)
-        self.assertEqual(len(video_clips.select_segments(candidates, 300)), 2)
+        self.assertEqual(len(video_clips.select_segments(candidates, 300)), 1)
 
     def test_transcript_only_fallback_yields_two_actual_nonfiction_clips(self):
         timed = (
