@@ -28,7 +28,7 @@ on:
         type: string
 
 permissions:
-  contents: read
+  contents: write
 
 # Same-time programs on different networks run independently. Accidental duplicate
 # dispatches for the same network/slot/date are serialized, never allowed to cancel
@@ -115,6 +115,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Prepare immediate Bengali clip transfer
+        if: ${{ inputs.network == 'persian' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm install --no-audit --no-fund --no-save --prefix .bengali-tools @actions/artifact@2.3.2
+
       - name: Monitor live program
         env:
           NETWORK: ${{ inputs.network }}
@@ -128,6 +135,8 @@ jobs:
           SHEETS_WEBHOOK_URL: ${{ secrets.SHEETS_WEBHOOK_URL }}
           WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}
           BALE_BOT_TOKEN: ${{ secrets.BALE_BOT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ENABLE_BN_DUB_INSTANT: 'true'
 
           # Persian reports remain in the existing Bale channel.
           # Azeri / Arabic / Hausa reports go to the new non-Persian channel.
