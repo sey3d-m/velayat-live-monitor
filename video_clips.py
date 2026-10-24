@@ -141,6 +141,8 @@ def transcript_candidates(timed_transcript, duration, *, min_seconds=18, max_sec
         cue = any(k in whole for k in (
             "چرا", "آیا", "چگونه", "شبهه", "پاسخ", "پرسش",
             "حقیقت", "اشتباه", "مهم", "سؤال", "دلیل"))
+        if not cue:
+            continue  # Routine text is not automatically a publishable clip.
         candidates.append(_clip_candidate(
             start, stop, title,
             "بخشی از گفت‌وگوی برنامه درباره: " + title,
@@ -167,14 +169,8 @@ def build_clip_candidates(analysis, timed_transcript, duration, *,
                 "medium", origin="audience_question",
                 why="سؤال واقعی مخاطب و پاسخ کارشناسی",
             ))
-    for point in []:  # Generic key points cannot prove accurate video boundaries.
-        title = compact_text(getattr(point, "title", ""), 100)
-        if len(title) >= 12:
-            candidates.append(_clip_candidate(
-                point.start_sec, point.end_sec, title,
-                "بررسی محور «" + title + "» در گفت‌وگوی برنامه",
-                "low", origin="key_point",
-            ))
+    # Do not manufacture clips from generic key-point summaries. They
+    # lack sufficiently specific boundaries for editorial publication.
     # These candidates are only based on words that occurred in the transcript.
     # AI-quality candidates naturally outrank generic transcript excerpts.
     candidates.extend(transcript_candidates(
@@ -196,6 +192,72 @@ def _viral_score(item, start, end):
     if 35 <= end - start <= 95:
         points += 7
     return points
+
+
+def _topic_words(text):
+    """Conservative Persian topic words, excluding generic editorial boilerplate."""
+    normal = (text or "").replace("ي", "ی").replace("ك", "ک").replace("‌", " ")
+    stop = {
+        "درباره", "بررسی", "بخشی", "برنامه", "گفتگو", "گفتگوی", "کارشناس",
+        "موضوع", "پاسخ", "پرسش", "چگونه", "چرایی", "مهم", "چرا",
+        "این", "آن", "است", "هست", "های", "برای", "اما", "آیا",
+        "در", "به", "از", "که", "با", "را", "یک", "چه", "هم",
+        "می", "شود", "کرد", "دارد", "دارند", "دربارۀ",
+    }
+    return {w for w in re.findall(r"[\wآ-ی]{4,}", normal)
+            if len(w) >= 4 and w not in stop and not w.isdigit()}
+
+
+def grounded_clip_candidates(suggestions, timed_transcript, duration, *,
+                             min_seconds, max_seconds):
+    """Do not publish AI-proposed cuts when timed speech cannot corroborate them.
+
+    Reject coarse transcript blocks as false precision: a topic somewhere in
+    a six-minute block does not prove that the suggested 90-second video
+    actually discusses it.
+    """
+    pattern = r"\[(\d{2}:\d{2}(?::\d{2})?)\s*-\s*(\d{2}:\d{2}(?::\d{2})?)\]\s*([^\n]+)"
+    rows = []
+    for m in re.finditer(pattern, timed_transcript or ""):
+        start, end = _seconds(m.group(1)), _seconds(m.group(2))
+        if 0 <= start < end <= duration + 10:
+            rows.append((start, end, _topic_words(m.group(3))))
+    if not rows:
+        print("Clip verification: no timestamped speech; skip uncertain clips",
+              file=sys.stderr)
+        return []
+    safe = []
+    for item in suggestions:
+        try:
+            start = int(item.start_sec)
+            end = int(item.end_sec)
+        except (AttributeError, TypeError, ValueError):
+            continue
+        if start < 0 or end > duration or not min_seconds <= end - start <= max_seconds:
+            continue
+        terms = _topic_words(compact_text(getattr(item, "media_title", ""), 140))
+        if not terms:
+            continue
+        # A clip within one enormous transcription paragraph cannot be tied
+        # to a precise sentence, even when its topic appears in that paragraph.
+        corroborated = False
+        for row_start, row_end, source_words in rows:
+            intersection = min(end, row_end) - max(start, row_start)
+            if intersection < min(12, (end - start) // 3):
+                continue
+            if row_end - row_start > max(165, max_seconds * 1.5):
+                continue
+            common = terms & source_words
+            if len(common) >= (2 if len(terms) >= 4 else 1):
+                corroborated = True
+                break
+        if corroborated:
+            safe.append(item)
+        else:
+            print("Clip rejected: transcript does not substantiate title or timing "
+                  f"({start}-{end}s)", file=sys.stderr)
+    print(f"Clip evidence: {len(safe)}/{len(suggestions)} verified", flush=True)
+    return safe
 
 
 def select_segments(clips, duration, limit=2, min_seconds=15, max_seconds=100):
@@ -342,7 +404,7 @@ def description_for(suggestions, start, title):
 
 
 def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
-                    expert="نامشخص", date="", hashtags=None):
+                    expert="نامشخص", date="", hashtags=None, timed_transcript=None):
     """Send clips ONLY to the configured clip-only Bale channel."""
     errors, sent = [], []
     settings = load_clip_settings()
@@ -354,6 +416,20 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
     if not source or not Path(source).exists():
         return {"status": "unavailable", "sent": sent,
                 "errors": ["live_video_unavailable"]}
+    if timed_transcript is not None:
+        suggestions = grounded_clip_candidates(
+            suggestions, timed_transcript, duration,
+            min_seconds=settings["min_seconds"],
+            max_seconds=settings["max_seconds"],
+        )
+    else:
+        # Preserve existing direct/test usage but never trim an overlong
+        # suggestion to an arbitrary unrelated sub-interval.
+        suggestions = [
+            item for item in suggestions
+            if 0 < int(getattr(item, "end_sec", 0)) -
+            int(getattr(item, "start_sec", 0)) <= settings["max_seconds"]
+        ]
     selections = select_segments(
         suggestions, duration, limit=max(12, target_count * 3),
         min_seconds=settings["min_seconds"], max_seconds=settings["max_seconds"],
