@@ -2023,13 +2023,13 @@ def main() -> None:
 if __name__ == "__main__":
     try:
         main()
-        # Optional export for a separate Bengali dubbing workflow.
-        # Never interfere with existing monitoring, reports or Persian clips.
+        # Finish already-launched per-clip artifact uploads before cleaning up.
+        # No waiting between Persian clip sends.
         try:
-            from bengali_dubbing_export import export_for_dubbing
-            export_for_dubbing()
-        except Exception as export_exc:
-            print(f"Bengali dubbing export skipped: {export_exc}", file=sys.stderr)
+            from bengali_instant_dispatch import drain_pending
+            drain_pending()
+        except Exception as bn_exc:
+            print(f"Bengali handoff drain failed: {bn_exc}", file=sys.stderr)
         AUDIO_BACKUP_FILE.unlink(missing_ok=True)
         cleanup_video_clips()
     except Exception as exc:
