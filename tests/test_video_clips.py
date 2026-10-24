@@ -88,7 +88,7 @@ class ClipTests(unittest.TestCase):
         self.assertNotIn("copy", cmd)
         self.assertIn("libx264", cmd)
         self.assertIn("atempo=1.0,asetpts=PTS-STARTPTS", cmd)
-        self.assertTrue(any("setpts=(PTS-STARTPTS)/1.5,fps=25,scale=" in arg for arg in cmd))
+        self.assertTrue(any("setpts=(PTS-STARTPTS)/1.0,fps=25,scale=" in arg for arg in cmd))
         self.assertLess(cmd.index("-t"), cmd.index("-i"))
         self.assertEqual(cmd[cmd.index("-t") + 1], "60")
 
