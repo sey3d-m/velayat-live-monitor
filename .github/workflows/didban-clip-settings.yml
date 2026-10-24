@@ -13,17 +13,17 @@ on:
         description: 'حداقل طول کلیپ (ثانیه)'
         required: true
         type: string
-        default: '60'
+        default: '30'
       max_seconds:
         description: 'حداکثر طول کلیپ (ثانیه)'
         required: true
         type: string
-        default: '300'
+        default: '105'
       quality:
         description: 'کیفیت تصویر'
         required: true
         type: choice
-        default: '1080p'
+        default: '720p'
         options: ['1080p','720p']
       speed:
         description: 'سرعت ویدئو (1.0 طبیعی)'
@@ -51,7 +51,7 @@ on:
         description: 'حداکثر حجم هر کلیپ، مگابایت (10 تا 49)'
         required: true
         type: string
-        default: '45'
+        default: '12'
 
 permissions:
   contents: write
