@@ -72,8 +72,10 @@ class ClipTests(unittest.TestCase):
             source.write_bytes(b"v" * 6000)
             output.write_bytes(b"c" * 6000)
             answer = SimpleNamespace(status_code=200, json=lambda: {"ok": True})
-            with patch.object(video_clips, "make_clip", return_value=output), \\
-                 patch("video_clips.requests.post", return_value=answer) as requests_post:
+            with (
+                patch.object(video_clips, "make_clip", return_value=output),
+                patch("video_clips.requests.post", return_value=answer) as requests_post,
+            ):
                 response = video_clips.send_bale_clips(
                     source, candidates, 500, "dummy-token", "old-report-channel",
                     "گامی به سوی ظهور",
@@ -95,7 +97,7 @@ class ClipTests(unittest.TestCase):
                     f"توضیح اختصاصی کلیپ شماره {i}", "#مهدویت", "#ظهور",
                 ):
                     self.assertIn(expected, caption)
-                self.assertNotIn("\\\\n", caption)
+                self.assertNotIn("\\n", caption)
 
     def test_clip_specific_description(self):
         row = clip(10, 40, title="عنوان")
