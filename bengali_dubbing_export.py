@@ -32,7 +32,7 @@ def export_for_dubbing():
     prepared = []
     for item in selected:
         name = item.get("filename", "")
-        if not re.fullmatch(r"clip_\\d{2}\\.mp4", name):
+        if not re.fullmatch(r"clip_\d{2}\.mp4", name):
             raise ValueError("Unsafe or missing Persian clip file name")
         src = SOURCE / name
         if not src.is_file() or src.stat().st_size < 10_000:
