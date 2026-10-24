@@ -1,0 +1,11 @@
+# Installed only inside the standalone Bengali workflow.
+# Do not add these heavy ML packages to the live-monitor requirements.txt.
+faster-whisper>=1.2.1,<2
+transformers>=4.45,<5
+sentencepiece>=0.2,<1
+sacremoses>=0.1,<1
+coqui-tts[bn]>=0.27.0,<0.30
+huggingface-hub>=0.26,<2
+numpy>=1.26,<3
+soundfile>=0.12,<1
+requests>=2.31,<3
