@@ -385,6 +385,7 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
             sent.append({
                 "start_sec": start, "end_sec": end, "title": title,
                 "size_bytes": path.stat().st_size, "speed": playback_speed(),
+                "filename": path.name,
             })
         except Exception as exc:
             errors.append(f"clip_{idx}: {type(exc).__name__}: {exc}")
