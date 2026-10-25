@@ -4,6 +4,8 @@ on:
   pull_request:
     paths:
       - 'video_clips.py'
+      - 'clip_sync.py'
+      - 'tests/test_strict_viral_clips.py'
       - 'clip_settings.py'
       - 'velayat_monitor.py'
       - '.github/workflows/didban-clip-settings.yml'
@@ -26,14 +28,16 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install tests dependency
-        run: python -m pip install requests
+        run: python -m pip install requests numpy
       - name: Enable actual FFmpeg integration tests
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y ffmpeg
       - name: Compile changed Python
-        run: python -m py_compile video_clips.py clip_settings.py velayat_monitor.py
+        run: python -m py_compile video_clips.py clip_sync.py clip_settings.py velayat_monitor.py
       - name: Verify configuration and clip safety
         run: python -m unittest discover -s tests -p 'test_video_clips.py' -v
       - name: Verify panel settings
         run: python -m unittest discover -s tests -p 'test_clip_panel.py' -v
+      - name: Validate exact report intervals and synchronized edits
+        run: python -m unittest discover -s tests -p 'test_strict_viral_clips.py' -v
