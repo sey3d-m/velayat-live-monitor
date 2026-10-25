@@ -36,6 +36,25 @@ jobs:
         run: |
           npm install --no-audit --no-fund --no-save --prefix .bengali-tools @actions/artifact@2.3.2
           node -e "const a=require('./.bengali-tools/node_modules/@actions/artifact'); if(typeof a.DefaultArtifactClient !== 'function') process.exit(1)"
+      - name: Smoke-test real in-run artifact upload (no dispatch, no Bale)
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          folder = Path('/tmp/bengali-ci-upload')
+          folder.mkdir(exist_ok=True)
+          (folder / 'source_01.mp4').write_bytes(b'V' * 20000)
+          (folder / 'manifest.json').write_text(json.dumps({
+            'schema': 1, 'network': 'persian',
+            'source': '@live_vtv', 'destination': '@double_vtv',
+            'run_id': '123', 'count': 1, 'clip_index': 1,
+            'clips': [{'filename': 'source_01.mp4', 'title_fa': 'smoke',
+                       'start_sec': 0, 'end_sec': 60}]
+          }))
+          PY
+          node upload_bengali_artifact.cjs bengali-clip-123-1 /tmp/bengali-ci-upload
       - name: Validate YAML syntax
         run: |
           python -m pip install 'PyYAML>=6,<7'
