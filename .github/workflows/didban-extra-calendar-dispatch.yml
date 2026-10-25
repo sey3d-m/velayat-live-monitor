@@ -39,7 +39,7 @@ jobs:
               github.rest.actions.listWorkflowRuns,
               {owner, repo, workflow_id: 'velayat-monitor.yml',
                event: 'workflow_dispatch', per_page: 100},
-              response => response.data
+              response => response.data.workflow_runs
             );
             for (const item of due) {
               // The run-name identity is stable for one program on one Tehran day.
