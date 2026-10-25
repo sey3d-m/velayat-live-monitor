@@ -37,6 +37,7 @@ from video_clips import (
     cleanup as cleanup_video_clips, build_clip_candidates,
 )
 from clip_settings import load_clip_settings
+from extra_schedule import get_extra
 
 
 # -----------------------------------------------------------------------------
@@ -55,6 +56,7 @@ GITHUB_RUN_ID = os.environ.get("GITHUB_RUN_ID", "manual").strip() or "manual"
 
 NETWORK = os.environ.get("NETWORK", "persian").strip().lower()
 PROGRAM_SLOT = os.environ.get("PROGRAM_SLOT", "").strip()
+EXTRA_PROGRAM_ID = os.environ.get("EXTRA_PROGRAM_ID", "").strip()
 SCHEDULED_DATE = os.environ.get("SCHEDULED_DATE", "").strip()  # YYYY-MM-DD, Tehran date
 
 # Keep backward compatibility with the existing Persian STREAM_URL secret.
@@ -443,7 +445,14 @@ def check_required_settings() -> NetworkConfig:
     if missing:
         fail("Missing required settings/secrets: " + ", ".join(missing))
 
-    if PROGRAM_SLOT not in cfg.slots:
+    if EXTRA_PROGRAM_ID:
+        if cfg.key != "persian":
+            fail("Additional program windows are supported only for the Persian network.")
+        # Ensure a paused, expired or spoofed extra slot cannot run.
+        extra = get_extra(EXTRA_PROGRAM_ID, parse_scheduled_start_date())
+        if PROGRAM_SLOT != extra["start"]:
+            fail("Extra slot start does not match the saved schedule.")
+    elif PROGRAM_SLOT not in cfg.slots:
         fail(
             f"Invalid PROGRAM_SLOT={PROGRAM_SLOT} for {NETWORK}. "
             f"Allowed: {', '.join(cfg.slots)}"
@@ -454,11 +463,13 @@ def check_required_settings() -> NetworkConfig:
 
 def get_program_info(cfg: NetworkConfig) -> dict:
     start_date = parse_scheduled_start_date()
-    start_s, end_s = cfg.slots[PROGRAM_SLOT]
+    extra = get_extra(EXTRA_PROGRAM_ID, start_date) if EXTRA_PROGRAM_ID else None
+    start_s, end_s = ((extra["start"], extra["end"]) if extra
+                      else cfg.slots[PROGRAM_SLOT])
     start_dt = local_datetime_for(start_date, start_s)
 
     # Midnight-ending shows (Hausa 22:30-24:00) use 00:00 next day.
-    if end_s == "00:00":
+    if end_s == "00:00" or (extra and end_s <= start_s):
         end_dt = local_datetime_for(start_date + timedelta(days=1), end_s)
         display_end = "24:00"
     else:
@@ -466,7 +477,7 @@ def get_program_info(cfg: NetworkConfig) -> dict:
         display_end = end_s
 
     day = persian_day_name(start_dt)
-    if day == "جمعه":
+    if day == "جمعه" and not extra:
         fail("جمعه هیچ برنامه‌ای برای رصد تعریف نشده است.")
 
     now = datetime.now(TEHRAN)
@@ -484,7 +495,9 @@ def get_program_info(cfg: NetworkConfig) -> dict:
         )
         time.sleep(wait_seconds)
 
-    if cfg.key == "persian":
+    if extra:
+        program = extra["title"]
+    elif cfg.key == "persian":
         program = PERSIAN_PROGRAMS.get(day, {}).get(PROGRAM_SLOT, "نامشخص")
     else:
         program = "نامشخص"
