@@ -1,0 +1,88 @@
+name: Didban Extra Program Calendar - Manage
+
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: 'عملیات: add افزودن / pause توقف / resume فعال / delete حذف'
+        type: choice
+        required: true
+        default: add
+        options: [add, pause, resume, delete]
+      program_id:
+        description: 'شناسه یکتا با حروف لاتین مانند special1؛ برای لغو همین شناسه کافی است'
+        type: string
+        required: true
+      title:
+        description: 'نام برنامه (فقط هنگام add)'
+        type: string
+        required: false
+      start_time:
+        description: 'ساعت شروع به وقت تهران HH:MM مانند 14:00'
+        type: string
+        required: false
+      end_time:
+        description: 'ساعت پایان به وقت تهران HH:MM مانند 15:00'
+        type: string
+        required: false
+      frequency:
+        description: 'نوع تکرار (once فقط یک‌بار)'
+        type: choice
+        required: true
+        default: once
+        options: [once, daily, weekly, monthly]
+      from_date:
+        description: 'تاریخ شروع، شمسی یا میلادی، مثال 1405-08-05'
+        type: string
+        required: false
+      until_date:
+        description: 'تاریخ پایان، شمسی یا میلادی؛ برای تکرارشونده الزامی'
+        type: string
+        required: false
+      weekdays:
+        description: 'فقط هفتگی؛ مثال شنبه,دوشنبه (خالی = روز تاریخ شروع)'
+        type: string
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: didban-extra-calendar-write
+  cancel-in-progress: false
+
+jobs:
+  save-calendar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Iranian calendar support
+        run: python -m pip install 'jdatetime>=5,<6'
+      - name: Validate addition or cancellation and sync calendar
+        env:
+          EXTRA_ACTION: ${{ inputs.operation }}
+          EXTRA_ID: ${{ inputs.program_id }}
+          EXTRA_TITLE: ${{ inputs.title }}
+          EXTRA_START: ${{ inputs.start_time }}
+          EXTRA_END: ${{ inputs.end_time }}
+          EXTRA_FREQUENCY: ${{ inputs.frequency }}
+          EXTRA_FROM_DATE: ${{ inputs.from_date }}
+          EXTRA_UNTIL_DATE: ${{ inputs.until_date }}
+          EXTRA_WEEKDAYS: ${{ inputs.weekdays }}
+        run: python extra_schedule.py manage
+      - name: Commit for next scheduled dispatch
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add config/didban_extra_programs.json docs/data/extra-programs.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Manage Didban extra program calendar"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

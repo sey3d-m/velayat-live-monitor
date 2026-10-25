@@ -1,4 +1,5 @@
 name: Velayat Live Monitor
+run-name: "Didban ${{ inputs.network }} ${{ inputs.extra_program_id != '' && format('[extra:{0}:{1}]', inputs.extra_program_id, inputs.scheduled_date) || inputs.slot }}"
 
 on:
   workflow_dispatch:
@@ -13,17 +14,15 @@ on:
           - arabic
           - hausa
       slot:
-        description: "Program slot (Tehran time)"
+        description: "Program slot HH:MM (Tehran time)"
         required: true
-        type: choice
-        options:
-          - "16:30"
-          - "18:00"
-          - "19:30"
-          - "21:00"
-          - "22:30"
+        type: string
       scheduled_date:
         description: "Scheduled Tehran date YYYY-MM-DD (normally filled by Apps Script)"
+        required: false
+        type: string
+      extra_program_id:
+        description: "Optional registered extra Persian program ID; blank for fixed slots"
         required: false
         type: string
 
@@ -48,11 +47,20 @@ jobs:
         env:
           NETWORK: ${{ inputs.network }}
           SLOT: ${{ inputs.slot }}
+          EXTRA_ID: ${{ inputs.extra_program_id }}
         run: |
           set -euo pipefail
           case "${NETWORK}:${SLOT}" in
             persian:18:00|persian:19:30|persian:21:00|azeri:16:30|azeri:18:00|arabic:21:00|hausa:22:30)
               echo "Valid schedule: ${NETWORK} ${SLOT}"
+              ;;
+            persian:*)
+              if [[ -n "${EXTRA_ID}" && "${SLOT}" =~ ^([01][0-9]|2[0-3]):[0-5][0-9]$ ]]; then
+                echo "Additional Persian program requested; authenticated calendar validation follows in Python"
+              else
+                echo "Invalid unregistered Persian slot: ${SLOT}" >&2
+                exit 1
+              fi
               ;;
             *)
               echo "Invalid network/slot pair: ${NETWORK} ${SLOT}" >&2
@@ -120,6 +128,7 @@ jobs:
           NETWORK: ${{ inputs.network }}
           PROGRAM_SLOT: ${{ inputs.slot }}
           SCHEDULED_DATE: ${{ inputs.scheduled_date }}
+          EXTRA_PROGRAM_ID: ${{ inputs.extra_program_id }}
 
           # Existing Persian stream secret; no change required.
           STREAM_URL: ${{ secrets.STREAM_URL }}
