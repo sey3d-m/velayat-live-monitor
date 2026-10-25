@@ -382,6 +382,13 @@ def normalize_hashtag(value):
     return "#" + tag if tag else ""
 
 
+def _report_clock(seconds):
+    seconds = int(seconds)
+    if seconds >= 3600:
+        return f"{seconds // 3600:02}:{seconds % 3600 // 60:02}:{seconds % 60:02}"
+    return f"{seconds // 60:02}:{seconds % 60:02}"
+
+
 def format_bale_caption(*, title, expert, program, date, description,
                         hashtags, start, end):
     """Human-readable editorial metadata, with genuine newlines for Bale."""
@@ -410,7 +417,7 @@ def format_bale_caption(*, title, expert, program, date, description,
         "",
         f"📝 کپشن: {description}",
         "",
-        f"⏱ بازه برنامه: {start//60:02}:{start%60:02} تا {end//60:02}:{end%60:02}",
+        f"⏱ بازه برنامه: {_report_clock(start)} تا {_report_clock(end)}",
         " ".join(tags),
     ]
     result = "\n".join(head)
@@ -449,7 +456,7 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
         return {"status": "disabled", "sent": sent, "errors": errors}
     if not source or not Path(source).exists():
         return {"status": "unavailable", "sent": sent,
-                "errors": ["live_video_unavailable"]}
+                "errors": ["live_video_unavailable"], "target": target_count}
     verified_offset = None
     recorded_duration = None
     if strict_report:
