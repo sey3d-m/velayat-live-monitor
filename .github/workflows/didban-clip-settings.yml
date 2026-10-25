@@ -18,7 +18,7 @@ on:
         description: 'حداکثر طول کلیپ (ثانیه)'
         required: true
         type: string
-        default: '105'
+        default: '1800'
       quality:
         description: 'کیفیت تصویر'
         required: true
@@ -51,7 +51,7 @@ on:
         description: 'حداکثر حجم هر کلیپ، مگابایت (10 تا 49)'
         required: true
         type: string
-        default: '12'
+        default: '49'
 
 permissions:
   contents: write
