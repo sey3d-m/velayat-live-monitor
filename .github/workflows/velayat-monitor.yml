@@ -115,13 +115,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Prepare immediate Bengali clip transfer
-        if: ${{ inputs.network == 'persian' }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          npm install --no-audit --no-fund --no-save --prefix .bengali-tools @actions/artifact@2.3.2
-
       - name: Monitor live program
         env:
           NETWORK: ${{ inputs.network }}
@@ -157,6 +150,56 @@ jobs:
           VISUAL_REVIEW_MODEL: ${{ vars.VISUAL_REVIEW_MODEL || 'gemini-3.8-flash' }}
           VISUAL_REPORT_IMAGE_COUNT: ${{ vars.VISUAL_REPORT_IMAGE_COUNT || '2' }}
         run: python velayat_monitor.py
+
+      # Official action receives the runner's private artifact runtime token.
+      # A Python/Node child process does not, which caused failed uploads.
+      - name: Upload first confirmed viral clip for Bengali dubbing
+        id: bengali_upload_1
+        if: ${{ always() && inputs.network == 'persian' && hashFiles('bengali_stage/clip_01/manifest.json') != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: bengali-clip-${{ github.run_id }}-1
+          path: bengali_stage/clip_01/
+          compression-level: 0
+          retention-days: 1
+          if-no-files-found: error
+
+      - name: Start Bengali dubbing of first clip
+        if: ${{ always() && steps.bengali_upload_1.outcome == 'success' }}
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const {owner, repo} = context.repo;
+            await github.rest.repos.createDispatchEvent({
+              owner, repo,
+              event_type: 'didban_bengali_clip_ready',
+              client_payload: {run_id: Number(context.runId), clip_index: 1},
+            });
+            core.info('Bengali dubbing dispatched for confirmed viral clip 1');
+
+      - name: Upload second confirmed viral clip for Bengali dubbing
+        id: bengali_upload_2
+        if: ${{ always() && inputs.network == 'persian' && hashFiles('bengali_stage/clip_02/manifest.json') != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: bengali-clip-${{ github.run_id }}-2
+          path: bengali_stage/clip_02/
+          compression-level: 0
+          retention-days: 1
+          if-no-files-found: error
+
+      - name: Start Bengali dubbing of second clip
+        if: ${{ always() && steps.bengali_upload_2.outcome == 'success' }}
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const {owner, repo} = context.repo;
+            await github.rest.repos.createDispatchEvent({
+              owner, repo,
+              event_type: 'didban_bengali_clip_ready',
+              client_payload: {run_id: Number(context.runId), clip_index: 2},
+            });
+            core.info('Bengali dubbing dispatched for confirmed viral clip 2');
 
       - name: Upload transcript and diagnostic report
         if: always()
