@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fa" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>تقویم نوبت‌های اضافی دیدبان ولایت</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f1f5fa;color:#172b48;font:15px/2 Tahoma,Arial,sans-serif}
+header{background:linear-gradient(120deg,#11284e,#167392);color:#fff;padding:35px 6%}
+main{max-width:1100px;margin:26px auto;padding:0 20px}.card{background:#fff;border:1px solid #d7e3ef;border-radius:16px;padding:22px;margin-bottom:20px;box-shadow:0 2px 10px #10324b0b}
+h1{margin:0 0 7px;font-size:25px}h2{font-size:19px;margin:0 0 12px}p{margin:9px 0}
+.btn{display:inline-block;background:#066a8d;color:white;padding:9px 18px;text-decoration:none;border-radius:10px;font-weight:bold}
+.muted{color:#526880}code{direction:ltr;display:inline-block;background:#eef3fa;padding:0 5px;border-radius:5px}
+table{width:100%;border-collapse:collapse;min-width:650px;text-align:right}th,td{border-bottom:1px solid #dce5ee;padding:10px 8px}th{background:#e9f4fa}
+.scroller{overflow-x:auto}.tag{padding:3px 8px;border-radius:8px;background:#e7f7ef;color:#1b6650}.inactive{background:#f7ecec;color:#9b2929}
+.notice{padding:12px;background:#f0f7fe;border-right:4px solid #087aa3;border-radius:8px}
+@media(max-width:640px){header{padding:26px 22px}h1{font-size:21px}.card{padding:16px}}
+</style></head><body>
+<header><div style="max-width:1060px;margin:auto"><h1>تقویم برنامه‌های تولیدی دیدبان ولایت</h1><div>افزودن و لغو نوبت‌های اضافی در کنار سه نوبت ثابت شبکه فارسی</div></div></header>
+<main>
+<section class="card"><h2>افزودن، توقف یا فعال‌سازی نوبت</h2>
+<p>فرم امن GitHub را باز کنید و عملیات <code>add</code>، <code>pause</code>، <code>resume</code> یا <code>delete</code> را انتخاب کنید. برای توقف، فقط شناسهٔ برنامه و عملیات کافی است؛ سایر گزینه‌ها صرفاً هنگام افزودن استفاده می‌شوند.</p>
+<a class="btn" href="https://github.com/sey3d-m/velayat-live-monitor/actions/workflows/didban-extra-calendar-manage.yml">باز کردن فرم ثبت و لغو برنامه</a>
+<p class="notice">زمان‌ها به وقت تهران هستند؛ تاریخ را می‌توانید شمسی مانند <code>1405-08-05</code> وارد کنید. برای برنامه‌های تکراری تاریخ پایان الزامی است. ماهانه بر اساس روز ماه <b>شمسی</b> اجرا می‌شود.</p>
+</section>
+<section class="card"><h2>نوبت‌های ثابت (بدون تغییر)</h2><p>۱۸:۰۰ تا ۱۹:۰۰ ــ ۱۹:۳۰ تا ۲۰:۳۰ ــ ۲۱:۰۰ تا ۲۲:۰۰</p>
+<p class="muted">تمام نوبت‌های اضافی از همان پیاده‌سازی رصد، تحلیل علمی، دو گزارش، تقطیع وایرال و دوبله بنگالی استفاده می‌کنند. فایل برنامه باید در این بازه واقعاً از پخش زنده شبکه فارسی پخش شود.</p></section>
+<section class="card"><h2>برنامه‌های اضافی ثبت‌شده</h2>
+<p class="muted" id="status">در حال خواندن تقویم...</p><div class="scroller"><table><thead><tr><th>شناسه</th><th>برنامه</th><th>ساعت تهران</th><th>تکرار</th><th>شروع</th><th>پایان</th><th>وضعیت</th></tr></thead><tbody id="records"></tbody></table></div>
+</section>
+<section class="card"><h2>نحوه لغو</h2><p><b>pause:</b> توقف نوبت‌های آینده با حفظ تنظیمات برای فعال‌سازی مجدد. <b>resume:</b> فعال‌سازی مجدد تا تاریخ انقضا. <b>delete:</b> حذف کامل از تقویم آینده. اجرای برنامه‌ای که قبلاً شروع شده است با توقف برنامه در تقویم قطع نمی‌شود.</p>
+<p class="muted">بررسی خودکار هر پنج دقیقه انجام می‌شود؛ به دلیل احتمال تأخیر GitHub Actions شروع دقیق در ثانیهٔ تعیین‌شده تضمین نمی‌شود. در تاریخ‌هایی که پخش برنامه تغییر می‌کند یا برنامه لغو شده، پیش از شروع نوبت را غیرفعال کنید.</p></section>
+</main>
+<script>
+const repeat={once:'یک‌باره',daily:'روزانه',weekly:'هفتگی',monthly:'ماهانه'};
+const tbody=document.getElementById('records');
+fetch('./data/extra-programs.json',{cache:'no-store'})
+.then(r=>{if(!r.ok)throw Error('خطا در دریافت تقویم');return r.json()})
+.then(d=>{
+ const arr=d.programs||[];
+ document.getElementById('status').textContent=arr.length?'تعداد برنامه‌ها: '+arr.length:'فعلاً برنامه اضافی ثبت نشده است.';
+ for(const p of arr){
+ const tr=document.createElement('tr');
+ const cells=[p.id,p.title,p.start+' تا '+p.end,repeat[p.frequency]||p.frequency,p.from_date,p.until_date||'—',p.enabled?'فعال':'متوقف'];
+ for(const v of cells){const td=document.createElement('td');td.textContent=v;tr.appendChild(td)}
+ tr.lastChild.innerHTML='<span class="tag '+(p.enabled?'':'inactive')+'">'+(p.enabled?'فعال':'متوقف')+'</span>';
+ tbody.appendChild(tr);
+ }
+}).catch(()=>{document.getElementById('status').textContent='خواندن تقویم ممکن نشد.'});
+</script></body></html>
