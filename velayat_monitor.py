@@ -471,7 +471,7 @@ def get_program_info(cfg: NetworkConfig) -> dict:
     # Midnight-ending shows (Hausa 22:30-24:00) use 00:00 next day.
     if end_s == "00:00" or (extra and end_s <= start_s):
         end_dt = local_datetime_for(start_date + timedelta(days=1), end_s)
-        display_end = "24:00"
+        display_end = end_s if extra else "24:00"
     else:
         end_dt = local_datetime_for(start_date, end_s)
         display_end = end_s
