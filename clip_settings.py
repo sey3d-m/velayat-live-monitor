@@ -15,7 +15,7 @@ def load_clip_settings():
     count, lower, upper = c["count_per_program"], c["min_seconds"], c["max_seconds"]
     if not (type(count) is int and 1 <= count <= 12):
         raise ValueError("Clip count out of range")
-    if not (type(lower) is int and type(upper) is int and 15 <= lower <= upper <= 600):
+    if not (type(lower) is int and type(upper) is int and 15 <= lower <= upper <= 1800):
         raise ValueError("Invalid clip duration")
     if c["quality"] not in ("720p", "1080p") or float(c["speed"]) not in (0.75, 1.0, 1.25, 1.5):
         raise ValueError("Invalid quality or speed")

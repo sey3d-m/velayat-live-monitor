@@ -13,6 +13,7 @@ from pathlib import Path
 
 import requests
 from clip_settings import load_clip_settings
+from clip_sync import align_video_to_audio, probe_duration
 
 PRIVATE_DIR = Path("private_live_video")
 RECORDING = PRIVATE_DIR / "programme_preview.mp4"
@@ -295,6 +296,33 @@ def select_segments(clips, duration, limit=2, min_seconds=15, max_seconds=100):
     return chosen
 
 
+def select_report_segments(suggestions, duration, *, limit, min_seconds, max_seconds):
+    """Only the numbered viral suggestions printed in the Bale report.
+
+    Preserve their exact editorial intervals and order, including touching
+    boundaries. Do not shorten, re-rank, or replace with transcript excerpts.
+    """
+    result, seen = [], set()
+    for item in suggestions or []:
+        try:
+            start, end = int(item.start_sec), int(item.end_sec)
+            title = compact_text(item.media_title, 100)
+        except (AttributeError, TypeError, ValueError):
+            continue
+        if not title or start < 0 or end > duration + 2 or not (
+                min_seconds <= end - start <= max_seconds):
+            print(f"Report clip not eligible: {start}-{end} / {title}", file=sys.stderr)
+            continue
+        key = (start, end, title)
+        if key in seen:
+            continue
+        seen.add(key)
+        result.append((start, end, title))
+        if len(result) >= limit:
+            break
+    return result
+
+
 def make_clip(source, start, end, index):
     """Decode from accurate seek, then re-encode from timestamp zero.
 
@@ -313,7 +341,12 @@ def make_clip(source, start, end, index):
     total_bits = settings["max_upload_mb"] * 1024 * 1024 * 8 * 0.93
     audio_bps = settings["audio_bitrate_kbps"] * 1000
     video_bps = max(180_000, int(total_bits / seconds - audio_bps))
-    video_bps = min(video_bps, 4_000_000 if width == 1920 else 650_000)
+    video_bps = min(video_bps, 4_000_000 if width == 1920 else 1_150_000)
+    # For a long answer lower the resolution, never shorten the content.
+    if video_bps < 550_000:
+        width = min(width, 854)
+    elif video_bps < 1_300_000:
+        width = min(width, 1280)
     cmd = [
         "ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error",
         "-ss", str(start), "-t", str(seconds), "-i", str(source),
@@ -321,7 +354,7 @@ def make_clip(source, start, end, index):
         "-vf", f"setpts=(PTS-STARTPTS)/{speed},fps=25,scale=w={width}:h=-2:force_original_aspect_ratio=decrease,setsar=1",
         "-af", f"atempo={speed},asetpts=PTS-STARTPTS",
         "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p",
-        "-crf", str(settings["crf"]), "-maxrate", str(video_bps),
+        "-b:v", str(video_bps), "-maxrate", str(video_bps),
         "-bufsize", str(video_bps * 2),
         "-g", "50", "-c:a", "aac",
         "-b:a", f"{settings['audio_bitrate_kbps']}k",
@@ -347,6 +380,13 @@ def normalize_hashtag(value):
     tag = compact_text(value, 85).lstrip("#").replace(" ", "_")
     tag = re.sub(r"[^\w\u200c]", "", tag, flags=re.UNICODE)
     return "#" + tag if tag else ""
+
+
+def _report_clock(seconds):
+    seconds = int(seconds)
+    if seconds >= 3600:
+        return f"{seconds // 3600:02}:{seconds % 3600 // 60:02}:{seconds % 60:02}"
+    return f"{seconds // 60:02}:{seconds % 60:02}"
 
 
 def format_bale_caption(*, title, expert, program, date, description,
@@ -377,7 +417,7 @@ def format_bale_caption(*, title, expert, program, date, description,
         "",
         f"📝 کپشن: {description}",
         "",
-        f"⏱ بازه برنامه: {start//60:02}:{start%60:02} تا {end//60:02}:{end%60:02} (تقریبی)",
+        f"⏱ بازه برنامه: {_report_clock(start)} تا {_report_clock(end)}",
         " ".join(tags),
     ]
     result = "\n".join(head)
@@ -404,8 +444,9 @@ def description_for(suggestions, start, title):
 
 
 def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
-                    expert="نامشخص", date="", hashtags=None, timed_transcript=None):
-    """Send clips ONLY to the configured clip-only Bale channel."""
+                    expert="نامشخص", date="", hashtags=None, timed_transcript=None,
+                    strict_report=False, audio_reference=None):
+    """Send only to clip channel; strict mode honors the reported viral cuts."""
     errors, sent = [], []
     settings = load_clip_settings()
     target_count = settings["count_per_program"]
@@ -415,25 +456,53 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
         return {"status": "disabled", "sent": sent, "errors": errors}
     if not source or not Path(source).exists():
         return {"status": "unavailable", "sent": sent,
-                "errors": ["live_video_unavailable"]}
-    if timed_transcript is not None:
-        suggestions = grounded_clip_candidates(
-            suggestions, timed_transcript, duration,
+                "errors": ["live_video_unavailable"], "target": target_count}
+    verified_offset = None
+    recorded_duration = None
+    if strict_report:
+        suggestions = list(suggestions or [])
+        selections = select_report_segments(
+            suggestions, duration, limit=target_count,
             min_seconds=settings["min_seconds"],
             max_seconds=settings["max_seconds"],
         )
+        if not selections:
+            return {"status": "unavailable", "sent": sent,
+                    "errors": ["no_valid_report_viral_clips"],
+                    "target": target_count, "selected_count": 0,
+                    "candidate_count": len(suggestions)}
+        if not audio_reference or not Path(audio_reference).exists():
+            return {"status": "unavailable", "sent": sent,
+                    "errors": ["reference_audio_unavailable"],
+                    "target": target_count, "selected_count": len(selections)}
+        verified_offset = align_video_to_audio(source, audio_reference)
+        if verified_offset is None:
+            return {"status": "unavailable", "sent": sent,
+                    "errors": ["unverified_audio_video_timeline"],
+                    "target": target_count, "selected_count": len(selections)}
+        try:
+            recorded_duration = probe_duration(source)
+        except Exception as exc:
+            return {"status": "unavailable", "sent": sent,
+                    "errors": [f"video_duration_unknown: {exc}"],
+                    "target": target_count, "selected_count": len(selections)}
     else:
-        # Preserve existing direct/test usage but never trim an overlong
-        # suggestion to an arbitrary unrelated sub-interval.
-        suggestions = [
-            item for item in suggestions
-            if 0 < int(getattr(item, "end_sec", 0)) -
-            int(getattr(item, "start_sec", 0)) <= settings["max_seconds"]
-        ]
-    selections = select_segments(
-        suggestions, duration, limit=max(12, target_count * 3),
-        min_seconds=settings["min_seconds"], max_seconds=settings["max_seconds"],
-    )
+        if timed_transcript is not None:
+            suggestions = grounded_clip_candidates(
+                suggestions, timed_transcript, duration,
+                min_seconds=settings["min_seconds"],
+                max_seconds=settings["max_seconds"],
+            )
+        else:
+            suggestions = [
+                item for item in suggestions
+                if 0 < int(getattr(item, "end_sec", 0)) -
+                int(getattr(item, "start_sec", 0)) <= settings["max_seconds"]
+            ]
+        selections = select_segments(
+            suggestions, duration, limit=max(12, target_count * 3),
+            min_seconds=settings["min_seconds"], max_seconds=settings["max_seconds"],
+        )
     print(f"Clip plan: {len(selections)} eligible excerpts, target={target_count}, "
           f"destination={clip_chat_id}, available={len(suggestions)}", flush=True)
     if not selections:
@@ -446,7 +515,15 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
             break
         idx = len(sent) + len(errors) + 1
         try:
-            path = make_clip(source, start, end, idx)
+            # Convert report timeline to the verified video's timeline.
+            physical_start = start + (verified_offset or 0.)
+            physical_end = end + (verified_offset or 0.)
+            if strict_report and (physical_start < 0 or
+                                  physical_end > recorded_duration + 0.1):
+                raise RuntimeError(
+                    f"Report interval {start}-{end}s outside verified "
+                    f"video coverage after {verified_offset:+.2f}s offset")
+            path = make_clip(source, physical_start, physical_end, idx)
             if path.stat().st_size > settings["max_upload_mb"] * 1024 * 1024:
                 raise RuntimeError("Clip exceeds configured upload size cap")
             caption = format_bale_caption(
@@ -503,7 +580,9 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
             "errors": [] if complete else errors,
             "warnings": errors if complete else [],
             "target": target_count, "selected_count": len(selections),
-            "candidate_count": len(suggestions), "destination": clip_chat_id}
+            "candidate_count": len(suggestions), "destination": clip_chat_id,
+            "report_timecodes_only": bool(strict_report),
+            "av_offset_seconds": verified_offset}
 
 
 def cleanup():
