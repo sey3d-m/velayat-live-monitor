@@ -32,10 +32,6 @@ jobs:
         run: python -m pip install 'requests>=2.31,<3'
       - name: Unit tests (no secrets, ML downloads or Bale messages)
         run: python -m unittest discover -s tests -p 'test_bengali*.py' -v
-      - name: Verify per-clip artifact uploader dependency
-        run: |
-          npm install --no-audit --no-fund --no-save --prefix .bengali-tools @actions/artifact@2.3.2
-          node -e "const a=require('./.bengali-tools/node_modules/@actions/artifact'); if(typeof a.DefaultArtifactClient !== 'function') process.exit(1)"
       - name: Smoke-test real in-run artifact upload (no dispatch, no Bale)
         shell: bash
         run: |
@@ -54,7 +50,14 @@ jobs:
                        'start_sec': 0, 'end_sec': 60}]
           }))
           PY
-          node upload_bengali_artifact.cjs bengali-clip-123-1 /tmp/bengali-ci-upload
+      - name: Test native GitHub artifact upload (without dispatch or Bale)
+        uses: actions/upload-artifact@v4
+        with:
+          name: bengali-ci-smoke-${{ github.run_id }}
+          path: /tmp/bengali-ci-upload/
+          retention-days: 1
+          compression-level: 0
+          if-no-files-found: error
       - name: Validate YAML syntax
         run: |
           python -m pip install 'PyYAML>=6,<7'
