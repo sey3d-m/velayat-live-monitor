@@ -95,6 +95,28 @@ class BengaliDubbingSafetyTests(unittest.TestCase):
             self.assertEqual(
                 bengali_dubbing.validate_manifest(self.manifest)["count"], 2)
 
+    def test_single_report_viral_clip_can_be_dubbed(self):
+        self.manifest["count"] = 1
+        self.manifest["clip_index"] = 1
+        self.manifest["clips"] = [{"filename": "source_01.mp4",
+            "start_sec": 947, "end_sec": 1330,
+            "title_fa": "استناد به غدیر"}]
+        with patch.dict(os.environ, {"BN_EXPECT_COUNT": "1", "ORIGIN_RUN_ID": "321"}):
+            self.assertEqual(bengali_dubbing.validate_manifest(self.manifest)["clips"][0]["end_sec"], 1330)
+
+    def test_second_long_viral_clip_can_be_dubbed(self):
+        self.manifest["count"] = 1
+        self.manifest["clip_index"] = 2
+        self.manifest["clips"] = [{"filename": "source_02.mp4",
+            "start_sec": 1330, "end_sec": 2229, "title_fa": "روایت ابن عباس"}]
+        with patch.dict(os.environ, {"BN_EXPECT_COUNT": "1"}):
+            self.assertEqual(bengali_dubbing.validate_manifest(self.manifest)["clips"][0]["end_sec"], 2229)
+
+    def test_duplicate_manifest_file_is_rejected(self):
+        self.manifest["clips"][1]["filename"] = "source_01.mp4"
+        with self.assertRaisesRegex(ValueError, "Duplicate"):
+            bengali_dubbing.validate_manifest(self.manifest)
+
     def test_reject_incorrect_channel(self):
         self.manifest["destination"] = "@live_vtv"
         with self.assertRaises(ValueError):
