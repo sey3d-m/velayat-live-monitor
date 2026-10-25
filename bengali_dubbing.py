@@ -44,8 +44,12 @@ def validate_manifest(manifest):
         raise ValueError("Unexpected expected count")
     if manifest.get("count") != expected or len(manifest.get("clips", [])) != expected:
         raise ValueError(f"Expected {expected} clips")
-    if expected == 1 and manifest.get("clip_index") not in (1, 2):
-        raise ValueError("Invalid clip index")
+    if expected == 1:
+        if manifest.get("clip_index") not in (1, 2):
+            raise ValueError("Invalid clip index")
+        expected_filename = f"source_{manifest['clip_index']:02}.mp4"
+        if manifest["clips"][0].get("filename") != expected_filename:
+            raise ValueError("Clip index does not match confirmed source filename")
     expected_run = os.environ.get("ORIGIN_RUN_ID", "").strip()
     if expected_run and str(manifest.get("run_id")) != expected_run:
         raise ValueError("Origin workflow run mismatch")
