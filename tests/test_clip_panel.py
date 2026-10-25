@@ -10,7 +10,7 @@ class PanelTests(unittest.TestCase):
         self.assertEqual(c["count_per_program"], 4)
         self.assertEqual(c["destination"], "@live_vtv")
         self.assertEqual(c["speed"], 1.0)
-        self.assertEqual(c["max_seconds"], 105)
+        self.assertEqual(c["max_seconds"], 1800)
     def test_other_networks_disabled(self):
         self.assertTrue(video_clips.enabled("persian"))
         for n in ("azeri","arabic","hausa"):
