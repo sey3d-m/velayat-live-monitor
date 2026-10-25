@@ -1966,16 +1966,14 @@ def main() -> None:
             clip_rules = load_clip_settings()
             clips_result = send_bale_clips(
                 clip_recording,
-                build_clip_candidates(
-                    analysis, timed_transcript, tmeta.audio_capture_seconds,
-                    transcript_min_seconds=clip_rules["min_seconds"],
-                    transcript_max_seconds=clip_rules["max_seconds"],
-                ),
+                # Exactly the source array used in format_bale_persian_part2:
+                # no generated fallback and no independent viral re-selection.
+                analysis.viral_clips,
                 tmeta.audio_capture_seconds,
                 BALE_BOT_TOKEN, "@live_vtv", info["program"],
                 expert=normalize_name(analysis.expert),
                 date=jalali_date_for_info(info), hashtags=analysis.hashtags,
-                timed_transcript=timed_transcript)
+                strict_report=True, audio_reference=AUDIO_BACKUP_FILE)
             diagnostic["video_clips"] = clips_result
             delivery["bale_clips"] = clips_result["status"].upper()
             delivery["errors"].extend(clips_result["errors"])
