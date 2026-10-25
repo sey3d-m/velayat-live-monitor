@@ -26,11 +26,22 @@ def enabled() -> bool:
 def _transfer_and_trigger(directory: Path, name: str, run_id: int, idx: int):
     try:
         tool = Path(__file__).resolve().with_name("upload_bengali_artifact.cjs")
-        completed = subprocess.run(
-            ["node", str(tool), name, str(directory)],
-            check=True, timeout=240, capture_output=True, text=True,
-        )
-        print(completed.stdout[-400:], flush=True)
+        # Preserve uploader stderr, retry only failed artifact uploads.
+        for attempt in range(1, 4):
+            completed = subprocess.run(
+                ["node", str(tool), name, str(directory)],
+                timeout=240, capture_output=True, text=True,
+            )
+            if completed.returncode == 0:
+                print(completed.stdout[-1200:], flush=True)
+                break
+            detail = (completed.stderr or completed.stdout or "").strip()[-2400:]
+            print(f"Bengali artifact upload attempt {attempt}/3 failed: "
+                  f"{detail}", file=sys.stderr, flush=True)
+            if attempt == 3:
+                raise RuntimeError(f"Artifact upload failed after 3 attempts: {detail}")
+            import time
+            time.sleep(attempt * 3)
         token = os.getenv("GITHUB_TOKEN", "").strip()
         repository = os.getenv("GITHUB_REPOSITORY", "").strip()
         if not token or not repository or "/" not in repository:
