@@ -10,7 +10,8 @@ on:
       - 'didban_calendar_bot.py'
       - 'didban_bot_keyboards.py'
   schedule:
-    - cron: '*/5 * * * *'
+    # Avoid UTC minute zero, where GitHub cron load can cause missed runs.
+    - cron: '2-59/5 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -88,6 +89,15 @@ jobs:
         env:
           DIDBAN_CONTROL_BOT_TOKEN: ${{ secrets.DIDBAN_CONTROL_BOT_TOKEN }}
         run: python didban_calendar_bot.py reply
+
+      - name: Refresh private admin button menu on code deployment
+        # Deploy-triggered menu push is independent of message polling intervals.
+        if: ${{ github.event_name == 'push' && steps.bale_control.outcome == 'success' }}
+        continue-on-error: true
+        env:
+          DIDBAN_CONTROL_BOT_TOKEN: ${{ secrets.DIDBAN_CONTROL_BOT_TOKEN }}
+          DIDBAN_CONTROL_ADMIN_IDS: ${{ secrets.DIDBAN_CONTROL_ADMIN_IDS }}
+        run: python didban_calendar_bot.py welcome
 
       - name: Find scheduled additional broadcast slots in Tehran time
         run: python extra_schedule.py due > /tmp/didban-extra-due.json
