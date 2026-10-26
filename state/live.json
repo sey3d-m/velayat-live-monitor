@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:17:45.654888+00:00",
+  "updated_at": "2026-10-26T18:18:26.418730+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره تربیت و اخلاق",
-      "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40366703147-64",
-      "sequence": 64,
-      "updated_at": "2026-10-26T18:07:58.894775+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی مبانی ازدواج و الگوهای زندگی از منظر دینی",
       "summary": "در این بخش به موضوع ازدواج‌های مبتنی بر مادیات و ظاهر پرداخته شده و دیدگاه حضرت فاطمه زهرا سلام‌الله‌علیها در این زمینه مطرح می‌گردد.",
@@ -68,16 +55,28 @@
       "sequence": 80,
       "updated_at": "2026-10-26T18:17:21.781127+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی فضائل و سبک زندگی اهل‌بیت",
+      "summary": "در این بخش درباره برخی ویژگی‌ها و نحوه رفتار معصومان علیهم‌السلام و فضائل اخلاقی آنان مطالبی بیان شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40366703147-82",
+      "sequence": 82,
+      "updated_at": "2026-10-26T18:18:26.418713+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 82,
-    "segments_transcribed": 81,
-    "editor_attempts": 40,
+    "segments_captured": 83,
+    "segments_transcribed": 82,
+    "editor_attempts": 41,
     "editor_withheld": 19,
-    "topics_published": 23,
+    "topics_published": 24,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:17:41.144552+00:00"
+    "last_audio_at": "2026-10-26T18:18:17.432925+00:00"
   }
 }
