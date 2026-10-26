@@ -58,7 +58,7 @@ class ClipTests(unittest.TestCase):
             hashtags=["#حدیث_غدیر", "#ولایت"], start=51, end=121)
         self.assertIn("سند و دلالت روایت غدیر", caption)
         self.assertIn("#حدیث_غدیر", caption)
-        self.assertIn("01:01", caption)
+        self.assertIn("00:51", caption)
         self.assertLessEqual(len(caption), 900)
 
     def test_prioritizes_high(self):
