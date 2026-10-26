@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:08:26.343754+00:00",
+  "updated_at": "2026-10-26T18:09:06.374791+00:00",
   "items": [
-    {
-      "title": "بررسی نقل‌قول‌های تاریخی درباره فدک و حضرت زهرا (س)",
-      "summary": "در این بخش، به نقل‌قول‌های موجود در منابع اهل سنت درباره مطالبه فدک توسط حضرت زهرا (سلام‌الله‌علیها) و ماجرای پاسخ ابوبکر به ایشان پرداخته می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40366703147-50",
-      "sequence": 50,
-      "updated_at": "2026-10-26T17:59:48.391569+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی روایت ارث و حضرت فاطمه",
       "summary": "در این بخش به موضوع روایات مربوط به ارث و ماجرای حضرت فاطمه (س) و ابوبکر پرداخته می‌شود.",
@@ -68,16 +56,28 @@
       "sequence": 64,
       "updated_at": "2026-10-26T18:07:58.894775+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی مبانی ازدواج و الگوهای زندگی از منظر دینی",
+      "summary": "در این بخش به موضوع ازدواج‌های مبتنی بر مادیات و ظاهر پرداخته شده و دیدگاه حضرت فاطمه زهرا سلام‌الله‌علیها در این زمینه مطرح می‌گردد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40366703147-66",
+      "sequence": 66,
+      "updated_at": "2026-10-26T18:09:06.374772+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 66,
-    "segments_transcribed": 65,
-    "editor_attempts": 32,
+    "segments_captured": 67,
+    "segments_transcribed": 66,
+    "editor_attempts": 33,
     "editor_withheld": 15,
-    "topics_published": 19,
+    "topics_published": 20,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:08:21.544111+00:00"
+    "last_audio_at": "2026-10-26T18:08:52.216534+00:00"
   }
 }
