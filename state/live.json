@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:07:11.222359+00:00",
+  "updated_at": "2026-10-26T18:07:58.894807+00:00",
   "items": [
-    {
-      "title": "بررسی رویداد تاریخی و پرسش درباره منابع اهل سنت",
-      "summary": "در این بخش درباره نزول آیات مربوط به ذی‌القربی و ماجرای فدک و همچنین پرسش دوم درباره دیدگاه منابع اهل سنت پیرامون ناراحتی حضرت زهرا سلام‌الله‌علیها گفت‌وگو می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40366703147-48",
-      "sequence": 48,
-      "updated_at": "2026-10-26T17:58:41.917477+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی نقل‌قول‌های تاریخی درباره فدک و حضرت زهرا (س)",
       "summary": "در این بخش، به نقل‌قول‌های موجود در منابع اهل سنت درباره مطالبه فدک توسط حضرت زهرا (سلام‌الله‌علیها) و ماجرای پاسخ ابوبکر به ایشان پرداخته می‌شود.",
@@ -67,16 +55,29 @@
       "sequence": 60,
       "updated_at": "2026-10-26T18:05:34.921919+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره تربیت و اخلاق",
+      "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40366703147-64",
+      "sequence": 64,
+      "updated_at": "2026-10-26T18:07:58.894775+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 64,
-    "segments_transcribed": 63,
-    "editor_attempts": 31,
-    "editor_withheld": 14,
-    "topics_published": 18,
+    "segments_captured": 65,
+    "segments_transcribed": 64,
+    "editor_attempts": 32,
+    "editor_withheld": 15,
+    "topics_published": 19,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:07:07.022860+00:00"
+    "last_audio_at": "2026-10-26T18:07:45.992863+00:00"
   }
 }
