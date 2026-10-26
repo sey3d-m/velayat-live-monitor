@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:18:26.418730+00:00",
+  "updated_at": "2026-10-26T18:18:59.256677+00:00",
   "items": [
     {
       "title": "بررسی مبانی ازدواج و الگوهای زندگی از منظر دینی",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 83,
-    "segments_transcribed": 82,
+    "segments_captured": 84,
+    "segments_transcribed": 83,
     "editor_attempts": 41,
     "editor_withheld": 19,
     "topics_published": 24,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:18:17.432925+00:00"
+    "last_audio_at": "2026-10-26T18:18:54.751053+00:00"
   }
 }
