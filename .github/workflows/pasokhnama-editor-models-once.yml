@@ -1,0 +1,37 @@
+# One-time model capability detection; prints public model names only, never keys.
+name: Discover authorized Gemini models for Persian Pasokhnama
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/pasokhnama-editor-models-once.yml']
+permissions:
+  contents: read
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Query supported public generation model names with existing key
+        shell: bash
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python -u - <<'PY'
+          import json, os, urllib.request, urllib.error
+          req=urllib.request.Request(
+              "https://generativelanguage.googleapis.com/v1beta/models?pageSize=100",
+              headers={"x-goog-api-key":os.environ["GEMINI_API_KEY"]})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as r:
+                  data=json.load(r)
+          except urllib.error.HTTPError as e:
+              print("MODEL_CHECK: listing failed HTTP "+str(e.code))
+              raise SystemExit(1)
+          models=[]
+          for m in data.get("models",[]):
+              if "generateContent" in m.get("supportedGenerationMethods",[]):
+                  models.append(m.get("name",""))
+          print("MODEL_CHECK: available generateContent models:")
+          for model in models[:45]: print(" - "+model)
+          if not models:raise SystemExit("No suitable models found")
+          PY
