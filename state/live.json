@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:24:40.676520+00:00",
+  "updated_at": "2026-10-26T18:25:22.738169+00:00",
   "items": [
-    {
-      "title": "بررسی معیارهای ازدواج و ارزش‌های مادی و معنوی",
-      "summary": "در این بخش درباره ارزش‌گذاری دنیا و معیارهای ازدواج در صدر اسلام و سیره اهل‌بیت علیهم‌السلام گفت‌وگو می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40366703147-70",
-      "sequence": 70,
-      "updated_at": "2026-10-26T18:11:24.809321+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی روایت‌های زندگی خانوادگی و معنوی حضرت زهرا (س)",
       "summary": "در این بخش به بررسی مباحث مطرح‌شده درباره ابعاد گوناگون زندگی نورانی و معنوی خاندان اهل‌بیت (ع) و لزوم بهره‌گیری از روایت‌های مرتبط با آن پرداخته می‌شود.",
@@ -67,16 +55,28 @@
       "sequence": 90,
       "updated_at": "2026-10-26T18:23:04.230375+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی فضائل حضرت زهرا و معرفی برنامه‌های شبکه جهانی ولایت",
+      "summary": "در این بخش به ذکر فضائل و مناقب حضرت زهرا سلام‌الله‌علیها و الگو بودن ایشان برای بشریت پرداخته شد و در ادامه، زمان پخش برنامه‌ها و دعوت از بینندگان برای مشارکت در تأمین هزینه‌های تولید برنامه در شبکه جهانی ولایت مطرح گردید.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "id": "40366703147-94",
+      "sequence": 94,
+      "updated_at": "2026-10-26T18:25:22.738152+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 94,
-    "segments_transcribed": 93,
-    "editor_attempts": 46,
+    "segments_captured": 95,
+    "segments_transcribed": 94,
+    "editor_attempts": 47,
     "editor_withheld": 22,
-    "topics_published": 26,
+    "topics_published": 27,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:24:38.692841+00:00"
+    "last_audio_at": "2026-10-26T18:25:15.203537+00:00"
   }
 }
