@@ -1,0 +1,50 @@
+name: Probe AI audio transcription for reliable Persian broadcast captions
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/pasokhnama-audio-ai-probe-once.yml']
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - name: Verify existing Gemini key can transcribe live audio without raw transcript logging
+        shell: bash
+        env:
+          STREAM_URL: ${{ secrets.STREAM_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          set -euo pipefail
+          if ! command -v ffmpeg >/dev/null 2>&1; then
+            sudo apt-get update -qq && sudo apt-get install -y ffmpeg >/dev/null
+          fi
+          timeout 95s ffmpeg -nostdin -hide_banner -loglevel quiet -i "$STREAM_URL" \
+            -map 0:a:0 -t 25 -vn -ac 1 -ar 16000 -c:a libmp3lame -b:a 32k \
+            -y "$RUNNER_TEMP/persian.mp3"
+          export PROBE_PATH="$RUNNER_TEMP/persian.mp3"
+          python -u - <<'PY'
+          import base64,json,os,urllib.request,urllib.error
+          path=os.environ['PROBE_PATH']
+          raw=open(path,'rb').read()
+          print('AUDIO_AI: audio_bytes=%d'%len(raw),flush=True)
+          body={"contents":[{"role":"user","parts":[
+            {"text":"Only transcribe what is audibly intelligible in this Persian broadcast in correct written Persian. Do not invent phrases, religious interpretations, speakers or quotations. If there is only music, return empty text."},
+            {"inlineData":{"mimeType":"audio/mpeg","data":base64.b64encode(raw).decode('ascii')}}
+          ]}],"generationConfig":{"temperature":0}}
+          url="https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent"
+          req=urllib.request.Request(url,data=json.dumps(body).encode('utf8'),method='POST',
+                                     headers={'Content-Type':'application/json','x-goog-api-key':os.environ['GEMINI_API_KEY']})
+          try:
+            with urllib.request.urlopen(req,timeout=75) as res:
+              obj=json.loads(res.read(100000).decode('utf8'))
+            parts=obj.get('candidates',[{}])[0].get('content',{}).get('parts',[])
+            transcript=" ".join(p.get('text','') for p in parts)
+            print('AUDIO_AI: successfully_transcribed=%s chars=%d persian_chars=%d'%(len(transcript)>55,len(transcript),sum('\u0600'<=c<='\u06ff' for c in transcript)),flush=True)
+            terms=('نماز','اذان','اقامه','امام','قرآن','حدیث','ولایت','غدیر','احکام','روزه','طهارت','وهابیت','اهل بیت','خانواده','ظهور','شبهه','مذاهب')
+            print('AUDIO_AI: topics_recognized='+','.join(x for x in terms if x in transcript),flush=True)
+          except urllib.error.HTTPError as err:
+            print('AUDIO_AI: provider_http='+str(err.code),flush=True)
+            raise SystemExit(1)
+          PY
