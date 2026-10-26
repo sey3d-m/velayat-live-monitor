@@ -84,6 +84,16 @@ def validate_records(records: list[dict]) -> list[dict]:
             raise ValueError("End date precedes start")
         if p["frequency"] == "once" and p.get("until_date") and parse_day(p["until_date"]) != start_d:
             raise ValueError("One-time schedule has one date")
+        skipped = p.get("skip_dates", [])
+        if not isinstance(skipped, list) or len(skipped) > 60:
+            raise ValueError("Invalid skipped dates")
+        if len(set(skipped)) != len(skipped):
+            raise ValueError("Duplicate skipped date")
+        for skip in skipped:
+            if not isinstance(skip, str) or skip != parse_day(skip).isoformat():
+                raise ValueError("Skipped dates must be Gregorian YYYY-MM-DD")
+            if not start_d <= parse_day(skip) <= parse_day(p.get("until_date") or p["from_date"]):
+                raise ValueError("Skipped date is outside program range")
         if p["frequency"] == "monthly":
             day = int(p.get("month_day", 0))
             if day not in range(1, 32):
@@ -137,7 +147,7 @@ def load() -> list[dict]:
 
 
 def is_due_on(p: dict, day: date) -> bool:
-    if not p["enabled"]:
+    if not p["enabled"] or day.isoformat() in p.get("skip_dates", []):
         return False
     start = parse_day(p["from_date"])
     if day < start or (p.get("until_date") and day > parse_day(p["until_date"])):
