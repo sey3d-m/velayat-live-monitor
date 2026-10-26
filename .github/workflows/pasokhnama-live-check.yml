@@ -46,6 +46,24 @@ jobs:
           test -f state/live.json && exit 1 || true
           echo 'Isolated live page and Python worker syntax OK.'
       - uses: actions/configure-pages@v5
+      - name: Stage same-origin public snapshot for restricted OBS browsers
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, pathlib, urllib.request
+          uri='https://raw.githubusercontent.com/sey3d-m/velayat-live-monitor/pasokhnama-live-data/state/live.json'
+          with urllib.request.urlopen(urllib.request.Request(
+              uri,headers={'User-Agent':'pasokhnama-public-pages-snapshot'}),timeout=30) as response:
+              state=json.load(response)
+          assert state.get('network')=='velayat_farsi'
+          assert isinstance(state.get('items'),list)
+          target=pathlib.Path('docs/data/pasokhnama-snapshot.json')
+          target.parent.mkdir(parents=True,exist_ok=True)
+          target.write_text(json.dumps(state,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+          print('Same-origin OBS fallback staged, items=',len(state['items']),
+                'source_updated=',state.get('updated_at'))
+          PY
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
