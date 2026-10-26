@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T16:56:25.869601+00:00",
+  "updated_at": "2026-10-26T17:01:55.935933+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره زیارت",
-      "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40357909904-23",
-      "sequence": 23,
-      "updated_at": "2026-10-26T16:34:53.507562+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی موضوع توسل و دعا در قرآن و روایات",
       "summary": "در این بخش به موضوع توسل در قرآن کریم، دعاهایی مانند جوشن کبیر و دعای توسل و نحوه توسل به اهل بیت علیهم السلام پرداخته می‌شود.",
@@ -68,14 +55,26 @@
       "sequence": 60,
       "updated_at": "2026-10-26T16:56:25.869551+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی حمد و سپاس الهی در سخنان مطرح‌شده",
+      "summary": "در این بخش، موضوع شکرگزاری و حمد الهی بر اساس نعمت‌های بی‌شمار و دعوت بندگان به سپاسگزاری مطرح شد، بدون اینکه حکم قطعی یا نتیجه‌گیری خاصی ارائه گردد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40357909904-69",
+      "sequence": 69,
+      "updated_at": "2026-10-26T17:01:55.935909+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 61,
-    "segments_transcribed": 60,
-    "editor_attempts": 30,
-    "editor_withheld": 21,
-    "topics_published": 11,
-    "last_audio_at": "2026-10-26T16:56:08.887279+00:00"
+    "segments_captured": 70,
+    "segments_transcribed": 68,
+    "editor_attempts": 34,
+    "editor_withheld": 24,
+    "topics_published": 12,
+    "last_audio_at": "2026-10-26T17:01:21.849165+00:00"
   }
 }
