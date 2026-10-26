@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T16:40:52.035466+00:00",
+  "updated_at": "2026-10-26T16:43:09.168922+00:00",
   "items": [
-    {
-      "title": "بررسی اعتقادات و مرزهای توحید در امامت",
-      "summary": "در این بخش درباره تفاوت مقام امامت با الوهیت و پرهیز از انحرافات مشابه مسیحیت در شناخت ائمه گفتگو می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40357909904-17",
-      "sequence": 17,
-      "updated_at": "2026-10-26T16:31:23.345446+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی اعتقادات و برداشت‌های نادرست",
       "summary": "در این بخش درباره مسائل اعتقادی و فهم نادرست از برخی مفاهیم و مطالعات دینی گفت‌وگو شد.",
@@ -68,14 +56,26 @@
       "sequence": 33,
       "updated_at": "2026-10-26T16:40:52.035440+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی داستان طالوت و جالوت و موضوع توکل",
+      "summary": "در این بخش به موضوعات مرتبط با داستان طالوت و جالوت، تابوت عهد و آثار انبیای الهی و همچنین اهمیت و جایگاه توکل در روایات و مباحث دینی پرداخته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.8,
+      "id": "40357909904-37",
+      "sequence": 37,
+      "updated_at": "2026-10-26T16:43:09.168896+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 34,
-    "segments_transcribed": 34,
-    "editor_attempts": 17,
-    "editor_withheld": 11,
-    "topics_published": 8,
-    "last_audio_at": "2026-10-26T16:40:22.534250+00:00"
+    "segments_captured": 38,
+    "segments_transcribed": 38,
+    "editor_attempts": 19,
+    "editor_withheld": 12,
+    "topics_published": 9,
+    "last_audio_at": "2026-10-26T16:42:43.652159+00:00"
   }
 }
