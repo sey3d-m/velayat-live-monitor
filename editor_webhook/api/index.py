@@ -191,15 +191,21 @@ def consume(raw):
             ).fetchone()
             calendar_content = cached[0] if cached else EMPTY_CALENDAR
             github_ready = False
-            try:
-                calendar_content = remote_calendar()
-                github_ready = True
-                db.execute(
-                    "INSERT INTO didban_editor_cache(singleton,content) VALUES(TRUE,%s) "
-                    "ON CONFLICT(singleton) DO UPDATE SET content=EXCLUDED.content",
-                    (calendar_content,))
-            except ServiceError:
-                pass  # Menu, help and cancel must stay independent from GitHub.
+            # Navigation must not wait for the GitHub API.
+            quick = bot.normal(message.get("text", "")) in (
+                "/start", "start", "Start", "شروع", "/help", "راهنما",
+                "ℹ️ راهنما", "شناسه من", "🆔 شناسه من", "/id",
+                "❌ انصراف", "انصراف", "🏠 منوی اصلی", "/menu")
+            if not quick:
+                try:
+                    calendar_content = remote_calendar()
+                    github_ready = True
+                    db.execute(
+                        "INSERT INTO didban_editor_cache(singleton,content) VALUES(TRUE,%s) "
+                        "ON CONFLICT(singleton) DO UPDATE SET content=EXCLUDED.content",
+                        (calendar_content,))
+                except ServiceError:
+                    pass  # Cached menus remain available; mutations fail closed.
             before = copy.deepcopy(state)
 
             def save(original, changed, ident):
@@ -216,6 +222,7 @@ def consume(raw):
                     text in ("📋 برنامه‌ها", "📅 تقویم هفته", "⏸ توقف برنامه",
                              "▶️ فعال‌سازی برنامه", "🗑 حذف برنامه",
                              "📆 لغو یک نوبت", "🔄 بازگرداندن نوبت")):
+                    state = before  # Do not lose an in-progress selection.
                     reply = [chat_id, "⚠️ تقویم فعلاً قابل بازیابی نیست؛ دوباره تلاش کنید.",
                              kb.keyboard_for(state, key, uid in admins)]
             except ServiceError as error:
@@ -296,7 +303,7 @@ class handler(BaseHTTPRequestHandler):
                 return
             deliver(consume(update))
             self.output(200, {"ok": True})
-        except Exception:
-            # 503 requests redelivery. Do not expose URL, token, payload or
-            # exception details in client responses or diagnostic logs.
+        except Exception as exc:
+            # Record only exception TYPE, never credentials or token-bearing URLs.
+            print("didban-editor webhook retry:", type(exc).__name__, flush=True)
             self.output(503, {"ok": False, "retry": True})
