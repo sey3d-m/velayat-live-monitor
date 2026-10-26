@@ -11,6 +11,56 @@ def clip(start, end, priority="high", title="نمونه"):
 
 
 class ClipTests(unittest.TestCase):
+
+    def test_speech_pause_alignment_expands_to_whole_utterance(self):
+        """Trim must not begin mid-speech when real pauses are available."""
+        import clip_editorial
+        with patch.object(clip_editorial, "_silences",
+                          side_effect=[([], [7.0]), ([4.0], [])]) as detector:
+            start, end = clip_editorial.snap_to_pauses(
+                "recording.mp4", 50.0, 100.0, 200.0, 1800)
+        self.assertEqual((start, end), (45.0, 103.0))
+        self.assertEqual(detector.call_count, 2)
+
+    def test_missing_pause_keeps_proven_original_times(self):
+        import clip_editorial
+        with patch.object(clip_editorial, "_silences",
+                          side_effect=[([], []), ([], [])]):
+            self.assertEqual(
+                clip_editorial.snap_to_pauses("clip.mp4", 50, 110, 200, 1800),
+                (50, 110))
+
+    def test_max_duration_never_exceeded_by_boundary_refinement(self):
+        import clip_editorial
+        with patch.object(clip_editorial, "_silences",
+                          side_effect=[([], [7.0]), ([4.0], [])]):
+            self.assertEqual(
+                clip_editorial.snap_to_pauses("clip.mp4", 50, 110, 200, 60),
+                (50, 110))
+
+    def test_clip_specific_topics_do_not_inherit_unrelated_program_tags(self):
+        from clip_editorial import polish_title, topic_hashtags
+        self.assertEqual(polish_title("بررسی موضوع حدیث غدیر و ولایت"), "حدیث غدیر و ولایت")
+        tags = topic_hashtags(
+            "آیا در حدیث غدیر به ولایت امام علی تصریح شده؟",
+            "نقد دلالت حدیث غدیر و معنای ولایت",
+            ["#مهدویت", "#غدیر", "#قرآن"])
+        self.assertIn("#حدیث_غدیر", tags)
+        self.assertIn("#امام_علی", tags)
+        self.assertNotIn("#مهدویت", tags)
+        self.assertNotIn("#قرآن", tags)
+
+    def test_caption_packs_richer_factual_description_within_bale_limit(self):
+        material = "کارشناس به سند و دلالت روایت غدیر و پرسش تاریخی مطرح‌شده پاسخ می‌دهد. " * 9
+        caption = video_clips.format_bale_caption(
+            title="حدیث غدیر و ولایت", expert="کارشناس", program="بیان امیر",
+            date="۱۴۰۵/۰۸/۰۴", description=material,
+            hashtags=["#حدیث_غدیر", "#ولایت"], start=51, end=121)
+        self.assertIn("سند و دلالت روایت غدیر", caption)
+        self.assertIn("#حدیث_غدیر", caption)
+        self.assertIn("01:01", caption)
+        self.assertLessEqual(len(caption), 900)
+
     def test_prioritizes_high(self):
         rows = [clip(180, 225, "low"), clip(20, 60, "high")]
         self.assertEqual(video_clips.select_segments(rows, 300)[0][:2], (20, 60))
