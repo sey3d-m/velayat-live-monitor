@@ -1,0 +1,43 @@
+# One-time integration probe of EXISTING Gemini API: no user reports altered.
+name: Check Persian headline editor with existing Gemini API
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/pasokhnama-editor-smoke-once.yml']
+permissions:
+  contents: read
+jobs:
+  editorial-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test live-copy editorial API on a known non-private text
+        shell: bash
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PASOKHNAMA_EDIT_MODEL: gemini-2.5-flash
+        run: |
+          set -euo pipefail
+          python -u - <<'PY'
+          import os
+          from pasokhnama_live_editor import rewrite
+          from runpy import run_path
+          source=run_path("tests/test_pasokhnama_live_editor.py")["SPEECH"]
+          key=os.environ.get("GEMINI_API_KEY","")
+          if not key:
+              print("EDITOR_SMOKE: missing existing Gemini key.")
+              raise SystemExit(2)
+          print("EDITOR_SMOKE: existing provider key available; testing one grounded rewrite.")
+          try:
+              result=rewrite(source+" "+source,key,timeout=55)
+          except RuntimeError as error:
+              print("EDITOR_SMOKE: provider call failed: "+str(error))
+              raise SystemExit(3)
+          if result is None:
+              print("EDITOR_SMOKE: editor withheld uncertain caption (safe but no title).")
+              raise SystemExit(4)
+          print("EDITOR_SMOKE: PASS, headline="+result["title"])
+          print("EDITOR_SMOKE: PASS, chars="+str(len(result["summary"])))
+          print("EDITOR_SMOKE: PASS, verification="+result["verification_status"])
+          PY
