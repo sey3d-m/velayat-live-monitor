@@ -1,0 +1,11 @@
+name = "didban-bale-editor-free"
+main = "worker.mjs"
+compatibility_date = "2026-10-01"
+workers_dev = true
+
+# Create one D1 database on the Cloudflare Free plan in the dashboard,
+# then replace the placeholder ID below. Do NOT commit real secrets.
+[[d1_databases]]
+binding = "DB"
+database_name = "didban-editor-state"
+database_id = "REPLACE_WITH_CLOUDFLARE_D1_DATABASE_ID"
