@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T17:54:26.660298+00:00",
+  "updated_at": "2026-10-26T17:55:01.378524+00:00",
   "items": [
-    {
-      "title": "بررسی کرامات اولیاء خدا و اهل‌بیت",
-      "summary": "در این بخش درباره پذیرش کرامات اولیاء خدا و معجزات پیامبران در میان شیعه و اهل سنت و نیز نقل کرامات از حضرت فاطمه زهرا سلام‌الله‌علیها گفتگو شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40366703147-26",
-      "sequence": 26,
-      "updated_at": "2026-10-26T17:45:47.232314+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی سیره و صبر حضرت زهرا (س)",
       "summary": "در این بخش به بررسی روحیه انسانی و صبر حضرت زهرا (سلام‌الله‌علیها) در برابر سختی‌ها و شکرگزاری ایشان در شرایط دشوار پرداخته می‌شود.",
@@ -67,16 +55,28 @@
       "sequence": 38,
       "updated_at": "2026-10-26T17:52:48.417761+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره ماجرای فدک و منابع اهل سنت",
+      "summary": "در این بخش درباره پیگیری ماجرای فدک توسط حضرت فاطمه (س) و نقل این موضوع در برخی منابع اهل سنت گفتگو شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.92,
+      "id": "40366703147-42",
+      "sequence": 42,
+      "updated_at": "2026-10-26T17:55:01.378506+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 42,
-    "segments_transcribed": 41,
-    "editor_attempts": 20,
+    "segments_captured": 43,
+    "segments_transcribed": 42,
+    "editor_attempts": 21,
     "editor_withheld": 10,
-    "topics_published": 11,
+    "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T17:54:18.414043+00:00"
+    "last_audio_at": "2026-10-26T17:54:52.100168+00:00"
   }
 }
