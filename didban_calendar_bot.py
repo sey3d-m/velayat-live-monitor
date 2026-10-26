@@ -75,9 +75,13 @@ def allowed_ids() -> set[int]:
 
 
 def bale_api(token: str, method: str, body: dict) -> dict:
-    response = requests.post(
-        f"https://tapi.bale.ai/bot{token}/{method}", data=body, timeout=25,
-    )
+    try:
+        response = requests.post(
+            f"https://tapi.bale.ai/bot{token}/{method}", data=body, timeout=25,
+        )
+    except requests.RequestException:
+        # The transport exception can embed the URL containing the bot token.
+        raise RuntimeError(f"Bale {method} connection failed (credentials redacted)") from None
     # Don't reveal token-containing URLs in raised exceptions or logs.
     if response.status_code != 200:
         raise RuntimeError(f"Bale method {method} returned HTTP {response.status_code}")
