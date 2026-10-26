@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T17:22:05.932109+00:00",
+  "updated_at": "2026-10-26T17:23:14.808219+00:00",
   "items": [
-    {
-      "title": "بررسی معارف دینی و احکام الهی",
-      "summary": "در این بخش درباره روشنی راه هدایت، پیروان و همچنین واجبات، محرمات و دلایل و براهین الهی سخن به میان آمده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40357909904-91",
-      "sequence": 91,
-      "updated_at": "2026-10-26T17:14:43.886524+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی فرازهایی از سخنان دینی و معارف اسلامی",
       "summary": "در این بخش به اواخر فرازهای منسوب به متون دینی و معارف اسلامی درباره نماز، زکات، روزه، عدل و امامت اشاره شده است.",
@@ -67,14 +55,27 @@
       "sequence": 104,
       "updated_at": "2026-10-26T17:22:05.932083+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز",
+      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40357909904-106",
+      "sequence": 106,
+      "updated_at": "2026-10-26T17:23:14.808184+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 105,
-    "segments_transcribed": 100,
-    "editor_attempts": 50,
-    "editor_withheld": 30,
-    "topics_published": 22,
-    "last_audio_at": "2026-10-26T17:21:47.092939+00:00"
+    "segments_captured": 107,
+    "segments_transcribed": 102,
+    "editor_attempts": 51,
+    "editor_withheld": 31,
+    "topics_published": 23,
+    "last_audio_at": "2026-10-26T17:22:59.260922+00:00"
   }
 }
