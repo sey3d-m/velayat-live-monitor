@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:16:33.041039+00:00",
+  "updated_at": "2026-10-26T18:17:21.781144+00:00",
   "items": [
-    {
-      "title": "بررسی تسبیحات حضرت زهرا",
-      "summary": "در این بخش به ذکر تسبیحات حضرت زهرا و فضایل آن پرداخته شد و اشاراتی به عظمت این بانو و بیان ابیاتی در این خصوص صورت گرفت.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40366703147-60",
-      "sequence": 60,
-      "updated_at": "2026-10-26T18:05:34.921919+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره تربیت و اخلاق",
       "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -68,16 +56,28 @@
       "sequence": 70,
       "updated_at": "2026-10-26T18:11:24.809321+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی روایت‌های زندگی خانوادگی و معنوی حضرت زهرا (س)",
+      "summary": "در این بخش به بررسی مباحث مطرح‌شده درباره ابعاد گوناگون زندگی نورانی و معنوی خاندان اهل‌بیت (ع) و لزوم بهره‌گیری از روایت‌های مرتبط با آن پرداخته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40366703147-80",
+      "sequence": 80,
+      "updated_at": "2026-10-26T18:17:21.781127+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 80,
-    "segments_transcribed": 79,
-    "editor_attempts": 39,
+    "segments_captured": 81,
+    "segments_transcribed": 80,
+    "editor_attempts": 40,
     "editor_withheld": 19,
-    "topics_published": 22,
+    "topics_published": 23,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:16:28.397820+00:00"
+    "last_audio_at": "2026-10-26T18:17:04.459281+00:00"
   }
 }
