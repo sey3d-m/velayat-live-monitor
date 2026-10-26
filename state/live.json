@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T17:58:41.917494+00:00",
+  "updated_at": "2026-10-26T17:59:02.589912+00:00",
   "items": [
     {
       "title": "بررسی الگوگیری از زندگی اهل بیت در خانواده",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 49,
-    "segments_transcribed": 48,
+    "segments_captured": 50,
+    "segments_transcribed": 49,
     "editor_attempts": 24,
     "editor_withheld": 11,
     "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T17:58:21.738853+00:00"
+    "last_audio_at": "2026-10-26T17:58:58.415805+00:00"
   }
 }
