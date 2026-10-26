@@ -1,10 +1,11 @@
 {
   "version": 1,
-  "status": "waiting",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "",
-  "program": "",
-  "started_at": null,
-  "updated_at": null,
+  "session": "40343661227",
+  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "program_date": "2026-10-26",
+  "started_at": "2026-10-26T14:52:37.590768+00:00",
+  "updated_at": "2026-10-26T14:52:37.599736+00:00",
   "items": []
 }
