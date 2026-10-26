@@ -20,10 +20,12 @@ PROMPT = """نقش: ویراستار حرفه‌ای فارسی برای نما�
 احکام، نام‌ها، اعداد و نقل‌قول‌ها بسیار زیاد است.
 
 وظیفه:
-- اگر حکم، نتیجه یا توضیح دقیق از رونوشت روشن است، scope=explanation و یک تیتر
-  دقیق و پاراگراف روان بنویس. اگر فقط موضوع واحد گفت‌وگو روشن است ولی حکم
-  یا نتیجه نامفهوم است، scope=topic_only بگذار و فقط موضوع طرح‌شده را با
-  تیتر «بررسی ...» یا «پرسش درباره ...» توصیف کن؛ هیچ پاسخ یا حکم نساز.
+- هرگاه سخن درباره فقه، اعتقادات، قرآن، حدیث، تاریخ دین، امامان، احکام و
+  مناسک است، همیشه scope=topic_only انتخاب کن: فقط موضوع قابل‌فهم بحث را
+  با تیتر «بررسی ...» یا «پرسش درباره ...» و خلاصه فارسی گزارش کن.
+  حتی اگر حکم ظاهراً روشن است، آن را به‌صورت پاسخ یا فتوا بازنویسی نکن؛
+  زیرا رونوشت صوتی بدون بازبینی انسانی معتبر نیست.
+- فقط برای مطالب غیرعلمی/غیردینیِ کاملاً روشن scope=explanation مجاز است.
 - غلط‌های واضح تبدیل گفتار، جمله‌بندی، دستور زبان و نیم‌فاصله را اصلاح کن؛
   پرسش‌ها را به حکم شرعی قطعی تبدیل نکن.
 - متن نهایی ۱ تا ۳ جمله و ترجیحاً ۱۰۰ تا ۳۰۰ نویسه باشد؛ تیتر ۱۲ تا ۸۰ نویسه.
@@ -71,6 +73,14 @@ def validate(source: str, result: object) -> dict | None:
     scope = result.get("scope", "explanation")
     if scope not in ("explanation", "topic_only"):
         return None
+    # Religious rulings or attributed scholarly claims need verification,
+    # not merely linguistic rewriting of noisy speech recognition.
+    religious_topic = re.search(
+        r"نماز|اذان|اقامه|غسل|وضو|خمس|روزه|زکات|احکام|فقه|حرام|حلال|"
+        r"روایت|حدیث|قرآن|آیه|سوره|امام|اهل\s*بیت|شیعه|سنی|ولایت|غدیر|"
+        r"پیامبر|رسول|مهدی|زیارت|دعا|عاشورا|فاطمه|توحید|شرک", source)
+    if religious_topic and scope != "topic_only":
+        return None
     if not (0.78 if scope == "topic_only" else 0.85) <= confidence <= 1.0:
         return None
     if not (12 <= len(title) <= 80 and (70 if scope == "topic_only" else 85) <= len(summary) <= 390):
@@ -80,7 +90,12 @@ def validate(source: str, result: object) -> dict | None:
             return None
         if not summary.startswith(("در این بخش", "در گفت‌وگو")):
             return None
-        if any(claim in summary for claim in ("واجب است", "حرام است", "جایز است", "لازم نیست", "اشکالی ندارد", "باید انجام", "ضروری است")):
+        if any(claim in summary for claim in (
+            "واجب است", "واجب‌اند", "حرام است", "حلال است", "جایز است",
+            "مستحب است", "مستحب‌اند", "لازم نیست", "اشکالی ندارد",
+            "باید انجام", "ضروری است", "می‌توان", "می‌شود انجام داد",
+            "صحیح است", "باطل است", "نجس است", "پاک است", "نیاز نیست",
+        )):
             return None
     if len(evidence) < 20 or evidence not in source:
         return None
