@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:06:03.867591+00:00",
+  "updated_at": "2026-10-26T18:07:11.222359+00:00",
   "items": [
     {
       "title": "بررسی رویداد تاریخی و پرسش درباره منابع اهل سنت",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 62,
-    "segments_transcribed": 61,
-    "editor_attempts": 30,
-    "editor_withheld": 13,
+    "segments_captured": 64,
+    "segments_transcribed": 63,
+    "editor_attempts": 31,
+    "editor_withheld": 14,
     "topics_published": 18,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:06:00.375788+00:00"
+    "last_audio_at": "2026-10-26T18:07:07.022860+00:00"
   }
 }
