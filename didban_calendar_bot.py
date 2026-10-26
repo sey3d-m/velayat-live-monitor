@@ -389,9 +389,15 @@ def poll() -> None:
         return
     admin_ids = allowed_ids()
     state = load_state()
+    bot_info = bale_api(token, "getMe", {}).get("result", {})
+    print("Bale calendar bot authenticated: "
+          + ("@" + str(bot_info.get("username")) if bot_info.get("username")
+             else "yes (no public username returned)"), flush=True)
     webhook = bale_api(token, "getWebhookInfo", {}).get("result", {})
     if isinstance(webhook, dict) and webhook.get("url"):
         raise RuntimeError("Calendar bot has active webhook; refusing getUpdates or webhook removal")
+    print("Bale calendar bot webhook: clear; admin allowlist: "
+          + ("configured" if admin_ids else "not configured"), flush=True)
     data = bale_api(token, "getUpdates",
                     {"offset": str(int(state["last_update_id"]) + 1), "limit": "100", "timeout": "0"})
     replies = []
