@@ -578,6 +578,10 @@ def welcome() -> None:
     if not admins:
         print("Bale menu refresh skipped: no configured administrator")
         return
+    info = bale_api(token, "getWebhookInfo", {}).get("result", {})
+    if isinstance(info, dict) and info.get("url"):
+        print("Bale menu refresh skipped: a webhook is registered")
+        return
     success = 0
     for chat_id in sorted(admins):
         bale_api(token, "sendMessage", {
