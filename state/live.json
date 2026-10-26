@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:11:54.336066+00:00",
+  "updated_at": "2026-10-26T18:13:03.013653+00:00",
   "items": [
     {
       "title": "بررسی تسبیحات حضرت زهرا",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 72,
-    "segments_transcribed": 71,
-    "editor_attempts": 35,
-    "editor_withheld": 15,
+    "segments_captured": 74,
+    "segments_transcribed": 73,
+    "editor_attempts": 36,
+    "editor_withheld": 16,
     "topics_published": 22,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:11:50.286442+00:00"
+    "last_audio_at": "2026-10-26T18:12:58.365199+00:00"
   }
 }
