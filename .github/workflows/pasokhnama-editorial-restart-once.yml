@@ -1,6 +1,6 @@
 # One-time independent Pasokhnama hot-restart for the still-running 18:00 Persian show.
 # Does not stop or modify Velayat Live Monitor, Bengali dubbing, Bale or clipping.
-name: Align independent Pasokhnama with 19:30 Persian program
+name: Recover current Persian Pasokhnama live content
 on:
   push:
     branches: [main]
@@ -9,11 +9,11 @@ permissions:
   contents: write
 jobs:
   restart:
-    if: ${{ github.event.head_commit.message == 'Restart isolated 19:30 Persian response-nama with safe timing' }}
+    if: ${{ github.event.head_commit.message == 'Recover missing current Persian live headlines with grounded fallback' }}
     runs-on: ubuntu-latest
     timeout-minutes: 4
     steps:
-      - name: Dispatch aligned safe captions for forthcoming 19:30 Persian program
+      - name: Re-run isolated current 19:30 transcriber with reliable editorial fallback
         uses: actions/github-script@v7
         with:
           script: |
@@ -22,7 +22,7 @@ jobs:
               timeZone: 'Asia/Tehran', hour: '2-digit', minute: '2-digit', hourCycle: 'h23'
             }).format(now);
             const [hour, minute] = clock.split(':').map(Number);
-            if (hour !== 19 || minute >= 29) {
+            if (hour !== 19 || minute >= 55) {
               core.notice('Broadcast recovery window closed; no dispatch.');
               return;
             }
