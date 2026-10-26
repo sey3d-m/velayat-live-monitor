@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T17:48:35.784438+00:00",
+  "updated_at": "2026-10-26T17:49:24.004471+00:00",
   "items": [
-    {
-      "title": "بررسی ابعاد زندگانی حضرت فاطمه زهرا (س)",
-      "summary": "در این بخش درباره ابعاد زندگانی حضرت فاطمه زهرا سلام‌الله‌علیها و الگو بودن ایشان برای بانوان و جامعه امروز گفتگو شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40366703147-8",
-      "sequence": 8,
-      "updated_at": "2026-10-26T17:35:24.016996+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی الگوگیری از شخصیت حضرت زهرا (س)",
       "summary": "در این بخش درباره جایگاه و مقام حضرت زهرا (سلام‌الله‌علیها) و الگو بودن ایشان برای جامعه و زندگی امروز بر اساس سیره پیامبر گرامی اسلام (ص) گفتگو می‌شود.",
@@ -68,16 +56,28 @@
       "sequence": 26,
       "updated_at": "2026-10-26T17:45:47.232314+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی سیره و صبر حضرت زهرا (س)",
+      "summary": "در این بخش به بررسی روحیه انسانی و صبر حضرت زهرا (سلام‌الله‌علیها) در برابر سختی‌ها و شکرگزاری ایشان در شرایط دشوار پرداخته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "id": "40366703147-32",
+      "sequence": 32,
+      "updated_at": "2026-10-26T17:49:24.004450+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 32,
-    "segments_transcribed": 31,
-    "editor_attempts": 15,
+    "segments_captured": 33,
+    "segments_transcribed": 32,
+    "editor_attempts": 16,
     "editor_withheld": 9,
-    "topics_published": 7,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T17:48:31.370920+00:00"
+    "last_audio_at": "2026-10-26T17:49:07.480188+00:00"
   }
 }
