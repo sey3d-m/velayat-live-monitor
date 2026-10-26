@@ -1,0 +1,30 @@
+name: Pasokhnama isolated branch smoke (temporary)
+on:
+  push:
+    branches:
+      - fix/pasokhnama-latency-detail-20261026
+    paths:
+      - 'pasokhnama_live_capture.py'
+      - 'pasokhnama_live_editor.py'
+      - 'tests/test_pasokhnama_live_editor.py'
+      - 'docs/assets/pasokhnama-live.js'
+      - '.github/workflows/pasokhnama-branch-smoke.yml'
+permissions:
+  contents: read
+jobs:
+  offline-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify isolated script and regression tests
+        run: |
+          set -euo pipefail
+          python -m py_compile pasokhnama_live_capture.py pasokhnama_live_editor.py pasokhnama_live_audio.py
+          python -m unittest discover -s tests -p 'test_pasokhnama_live_editor.py' -v
+          node --check docs/assets/pasokhnama-live.js
+          test -s docs/overlay-live.html
+          test ! -e state/live.json
