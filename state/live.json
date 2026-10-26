@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:21:08.210812+00:00",
+  "updated_at": "2026-10-26T18:21:13.651864+00:00",
   "items": [
     {
       "title": "بررسی شخصیت و ساده‌زیستی حضرت فاطمه (س)",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 87,
-    "segments_transcribed": 86,
+    "segments_captured": 88,
+    "segments_transcribed": 87,
     "editor_attempts": 43,
     "editor_withheld": 20,
     "topics_published": 25,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:20:33.627303+00:00"
+    "last_audio_at": "2026-10-26T18:21:09.599842+00:00"
   }
 }
