@@ -1,6 +1,12 @@
 name: Didban Extra Program Calendar - Dispatch
 
 on:
+  # Kick off a diagnostic bot poll as soon as this workflow is updated.
+  # Routine calendar-state commits do not match this path, so no push loop.
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/didban-extra-calendar-dispatch.yml'
   schedule:
     - cron: '*/5 * * * *'
   workflow_dispatch:
@@ -22,8 +28,25 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install Iranian-calendar support
-        run: python -m pip install 'jdatetime>=5,<6'
+      - name: Install calendar and Bale API dependencies
+        run: python -m pip install 'jdatetime>=5,<6' 'requests>=2.31,<3'
+      - name: Check private Bale bot configuration (safe diagnostics)
+        shell: bash
+        env:
+          DIDBAN_CONTROL_BOT_TOKEN: ${{ secrets.DIDBAN_CONTROL_BOT_TOKEN }}
+          DIDBAN_CONTROL_ADMIN_IDS: ${{ secrets.DIDBAN_CONTROL_ADMIN_IDS }}
+        run: |
+          if [[ -n "${DIDBAN_CONTROL_BOT_TOKEN}" ]]; then
+            echo "Calendar control bot token: configured"
+          else
+            echo "::warning::Calendar control bot token missing: DIDBAN_CONTROL_BOT_TOKEN"
+          fi
+          if [[ -n "${DIDBAN_CONTROL_ADMIN_IDS}" ]]; then
+            echo "Calendar admin allowlist: configured"
+          else
+            echo "::notice::Admin allowlist not configured; 'شناسه من' still works in private chat."
+          fi
+
       - name: Read private Bale calendar commands (optional dedicated bot)
         id: bale_control
         continue-on-error: true
@@ -31,6 +54,11 @@ jobs:
           DIDBAN_CONTROL_BOT_TOKEN: ${{ secrets.DIDBAN_CONTROL_BOT_TOKEN }}
           DIDBAN_CONTROL_ADMIN_IDS: ${{ secrets.DIDBAN_CONTROL_ADMIN_IDS }}
         run: python didban_calendar_bot.py poll
+
+      - name: Report private Bale bot failure without stopping program dispatch
+        if: ${{ steps.bale_control.outcome == 'failure' }}
+        shell: bash
+        run: echo "::error::Calendar bot polling failed. Check the previous step for a credential, webhook, API or Python error. Program dispatch remains independent."
 
       - name: Discard partial bot changes if polling fails
         if: ${{ steps.bale_control.outcome == 'failure' }}

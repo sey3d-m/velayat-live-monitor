@@ -50,6 +50,10 @@ jobs:
                            '"19:30": ("19:30", "20:30")',
                            '"21:00": ("21:00", "22:00")'):
               assert original in source, original
+          dispatch = Path('.github/workflows/didban-extra-calendar-dispatch.yml').read_text()
+          assert "'requests>=2.31,<3'" in dispatch, 'Bale control requires requests on the runner'
+          assert "didban_calendar_bot.py poll" in dispatch, 'Bale poll step missing'
+          assert "workflow_dispatch:" in dispatch, 'Manual bot diagnosis trigger missing'
           assert 'structured_analysis_with_retry' in source
           assert 'send_bale_clips' in source
           PY
