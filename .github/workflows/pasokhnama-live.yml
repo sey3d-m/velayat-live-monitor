@@ -73,5 +73,5 @@ jobs:
           # Reuse Didban's EXISTING Gemini key; no new provider or paid add-on.
           # If quota is exhausted, raw ASR is NOT published on television.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          PASOKHNAMA_EDIT_MODEL: 'gemini-2.5-flash'
+          PASOKHNAMA_EDIT_MODEL: 'gemini-3.5-flash-lite'
         run: python -u pasokhnama_live_capture.py
