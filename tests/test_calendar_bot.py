@@ -102,6 +102,92 @@ class CalendarBotTests(unittest.TestCase):
         self.assertEqual(cal.load(), [])
         self.assertEqual(json.loads(self.cfg.read_text())["programs"], [])
 
+    def test_button_main_menu_and_private_security(self):
+        menu = bot.kb.keyboard_for(self.state, self.key, True)
+        labels = [c["text"] for row in menu["keyboard"] for c in row]
+        for label in ("➕ افزودن برنامه", "📋 برنامه‌ها", "📅 تقویم هفته",
+                      "⏸ توقف برنامه", "▶️ فعال‌سازی برنامه",
+                      "🗑 حذف برنامه", "📆 لغو یک نوبت",
+                      "🔄 بازگرداندن نوبت"):
+            self.assertIn(label, labels)
+        unauthorized = bot.kb.keyboard_for(self.state, None, False)
+        noaccess = [c["text"] for row in unauthorized["keyboard"] for c in row]
+        self.assertNotIn("🗑 حذف برنامه", noaccess)
+        self.assertIn("🆔 شناسه من", noaccess)
+
+    def test_tap_only_registration_and_no_mutation_before_confirm(self):
+        self.assertIn("نام", self.command("➕ افزودن برنامه"))
+        keyboard = bot.kb.keyboard_for(self.state, self.key, True)
+        self.assertIn("📺 برنامه تولیدی", str(keyboard))
+        self.assertIn("ساعت", self.command("📺 برنامه تولیدی"))
+        self.assertIn("دقیقه", self.command("🕘 06"))
+        self.assertIn("پایان", self.command("⏱ 00"))
+        self.assertIn("دقیقه", self.command("🕘 07"))
+        self.assertIn("تکرار", self.command("⏱ 00"))
+        self.assertIn("تاریخ", self.command("🔁 روزانه"))
+        self.assertIn("تاریخ", self.command("📅 ۳ روز بعد"))
+        self.assertIn("پیش‌نمایش", self.command("🗓 ۳۰ روز"))
+        self.assertEqual(cal.load(), [])
+        self.assertIn("ثبت شد", self.command("✅ تأیید نهایی"))
+        registered = cal.load()[0]
+        self.assertEqual(registered["start"], "06:00")
+        self.assertEqual(registered["end"], "07:00")
+        self.assertEqual(registered["frequency"], "daily")
+        self.assertTrue(bot.kb.keyboard_for(self.state, self.key, True)["keyboard"])
+
+    def test_picker_buttons_pause_resume_and_cancel(self):
+        ident, _ = self.add_once()
+        response = self.command("⏸ توقف برنامه")
+        self.assertIn("انتخاب", response)
+        button = bot.kb.program_label(cal.load()[0])
+        self.assertIn("تایید", self.command(button))
+        self.assertTrue(cal.load()[0]["enabled"])
+        self.assertIn("لغو", self.command("❌ انصراف"))
+        self.assertTrue(cal.load()[0]["enabled"])
+        self.command("⏸ توقف برنامه")
+        self.command(button)
+        self.assertIn("ثبت شد", self.command("✅ تأیید نهایی"))
+        self.assertFalse(cal.load()[0]["enabled"])
+        self.command("▶️ فعال‌سازی برنامه")
+        self.command(button)
+        self.command("✅ تأیید نهایی")
+        self.assertTrue(cal.load()[0]["enabled"])
+        self.command("🗑 حذف برنامه")
+        self.command(button)
+        self.command("✅ تأیید نهایی")
+        self.assertEqual(cal.load(), [])
+
+    def test_button_cancel_single_occurrence_and_restore(self):
+        ident, day = self.add_once()
+        self.assertIn("انتخاب", self.command("📆 لغو یک نوبت"))
+        self.assertIn("تاریخ", self.command(bot.kb.program_label(cal.load()[0])))
+        self.assertIn("تایید", self.command("📆 " + day))
+        self.assertTrue(cal.is_due_on(cal.load()[0], date.fromisoformat(day)))
+        self.command("✅ تأیید نهایی")
+        self.assertFalse(cal.is_due_on(cal.load()[0], date.fromisoformat(day)))
+        self.command("🔄 بازگرداندن نوبت")
+        self.command(bot.kb.program_label(cal.load()[0]))
+        self.command("📆 " + day)
+        self.command("✅ تأیید نهایی")
+        self.assertTrue(cal.is_due_on(cal.load()[0], date.fromisoformat(day)))
+
+    def test_weekly_weekdays_toggle_buttons_and_home(self):
+        self.command("➕ افزودن برنامه")
+        for step in ("📺 گفت‌وگوی علمی", "🕘 06", "⏱ 00",
+                     "🕘 07", "⏱ 00", "📅 هفتگی", "📅 ۷ روز بعد"):
+            self.command(step)
+        out = self.command("▫️ شنبه")
+        self.assertIn("روز", out)
+        self.assertIn("شنبه", self.state["sessions"][self.key]["data"]["weekdays"])
+        self.command("▫️ دوشنبه")
+        selected = self.state["sessions"][self.key]["data"]["weekdays"]
+        self.assertIn("دوشنبه", selected)
+        self.command("✅ پایان انتخاب روزها")
+        self.assertIn("پیش‌نمایش", self.command("🗓 ۳۰ روز"))
+        self.assertEqual(cal.load(), [])
+        self.assertIn("لغو", self.command("🏠 منوی اصلی"))
+        self.assertEqual(cal.load(), [])
+
     def test_disabled_registry_and_no_secret_storage(self):
         ident, _ = self.add_once()
         bot.save_state(self.state)
