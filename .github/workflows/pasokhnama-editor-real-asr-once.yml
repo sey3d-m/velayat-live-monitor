@@ -26,6 +26,19 @@ jobs:
               data=json.load(response)
           clips=[item["summary"] for item in data["items"] if item.get("sequence") in (21,22)]
           assert len(clips)==2, "Historical audio-caption sample unavailable"
+          import pasokhnama_live_editor as ed, re
+          original=ed.validate
+          def traced(source,proposal):
+              print("REAL_ASR_AUDIT: publish="+str(proposal.get("publish"))+
+                    " confidence="+str(proposal.get("confidence"))+
+                    " title_length="+str(len(proposal.get("title","")))+
+                    " summary_length="+str(len(proposal.get("summary","")))+
+                    " evidence_exact="+str(str(proposal.get("evidence_excerpt","")).strip() in source)+
+                    " evidence_length="+str(len(str(proposal.get("evidence_excerpt","")).strip()))+
+                    " numbers_created="+str(set(re.findall(r"\d+",str(proposal.get("summary",""))))-
+                                            set(re.findall(r"\d+",source))))
+              return original(source,proposal)
+          ed.validate=traced
           try:
               result=rewrite("\n".join(clips),os.environ["GEMINI_API_KEY"],timeout=55)
           except RuntimeError as e:
