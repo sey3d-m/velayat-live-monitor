@@ -262,7 +262,7 @@ def process_admin_command(state: dict, key: str, message_id: int, text: str) -> 
         return short_list()
     if msg in ("تقویم", "تقویم هفته", "این هفته", "/week"):
         return week_list()
-    if msg in ("راهنما", "/help", "/start"):
+    if msg.casefold() in ("راهنما", "/help", "/start", "start", "شروع", "منو", "/menu"):
         return PROMPT
     if msg in ("افزودن", "ثبت برنامه", "برنامه جدید", "/add"):
         return start_add(state, key, message_id)
@@ -530,6 +530,31 @@ def poll() -> None:
     print(f"Calendar bot processed {len(data.get('result', []))} updates; {len(replies)} replies")
 
 
+def welcome() -> None:
+    """One-time safe menu refresh after an administrator requested Start.
+
+    Only deploy workflow code pushes may invoke this action. Never print
+    allowlisted IDs or tokens into the GitHub job log.
+    """
+    token = os.getenv("DIDBAN_CONTROL_BOT_TOKEN", "").strip()
+    if not token:
+        print("Bale menu refresh skipped: control bot token missing")
+        return
+    admins = allowed_ids()
+    if not admins:
+        print("Bale menu refresh skipped: no configured administrator")
+        return
+    success = 0
+    for chat_id in sorted(admins):
+        bale_api(token, "sendMessage", {
+            "chat_id": str(chat_id),
+            "text": "✅ منوی دکمه‌ای مدیر دیدبان فعال است. یکی از گزینه‌های زیر را انتخاب کنید.",
+            "reply_markup": json.dumps(kb.keyboard_for({"sessions": {}}, None, True), ensure_ascii=False),
+        })
+        success += 1
+    print(f"Bale menu refreshed for {success} authorized administrator(s)")
+
+
 def reply() -> None:
     token = os.getenv("DIDBAN_CONTROL_BOT_TOKEN", "").strip()
     if not token or not REPLIES.exists():
@@ -543,6 +568,6 @@ def reply() -> None:
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2 or sys.argv[1] not in ("poll", "reply"):
-        raise SystemExit("usage: didban_calendar_bot.py poll|reply")
-    {"poll": poll, "reply": reply}[sys.argv[1]]()
+    if len(sys.argv) != 2 or sys.argv[1] not in ("poll", "reply", "welcome"):
+        raise SystemExit("usage: didban_calendar_bot.py poll|reply|welcome")
+    {"poll": poll, "reply": reply, "welcome": welcome}[sys.argv[1]]()
