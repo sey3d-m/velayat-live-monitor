@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T16:24:26.975421+00:00",
+  "updated_at": "2026-10-26T16:27:58.279933+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
@@ -20,14 +20,26 @@
       "sequence": 5,
       "updated_at": "2026-10-26T16:24:26.975385+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ترجمه‌های قرآن کریم و زبان فارسی",
+      "summary": "در این بخش درباره زبان فارسی و مقایسه ترجمه‌های مختلف قرآن کریم از جمله ترجمه‌های مراجع تقلید و مفسران شیعه و اهل سنت گفتگو می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "id": "40357909904-11",
+      "sequence": 11,
+      "updated_at": "2026-10-26T16:27:58.279908+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 6,
-    "segments_transcribed": 6,
-    "editor_attempts": 3,
-    "editor_withheld": 3,
-    "topics_published": 1,
-    "last_audio_at": "2026-10-26T16:24:04.145229+00:00"
+    "segments_captured": 12,
+    "segments_transcribed": 12,
+    "editor_attempts": 6,
+    "editor_withheld": 5,
+    "topics_published": 2,
+    "last_audio_at": "2026-10-26T16:27:33.737212+00:00"
   }
 }
