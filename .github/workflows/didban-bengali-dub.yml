@@ -39,7 +39,9 @@ jobs:
             }
             const {owner, repo} = context.repo;
             const run = await github.rest.actions.getWorkflowRun({owner, repo, run_id: id});
-            if (run.data.name !== 'Velayat Live Monitor' ||
+            // The source workflow uses a dynamic run-name ("Didban persian HH:MM").
+            // Validate its stable workflow path, never its presentation name.
+            if (run.data.path !== '.github/workflows/velayat-monitor.yml' ||
                 run.data.head_branch !== 'main' ||
                 run.data.event !== 'workflow_dispatch' ||
                 !['queued', 'in_progress', 'completed'].includes(run.data.status) ||
@@ -58,7 +60,7 @@ jobs:
               if (found) break;
               await new Promise(resolve => setTimeout(resolve, 5000));
             }
-            if (!found) core.setFailed('Source clip artifact missing');
+            if (!found) { core.setFailed('Source clip artifact missing'); return; }
 
       - name: Download single confirmed Persian clip
         uses: actions/download-artifact@v4
