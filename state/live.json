@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T17:55:01.378524+00:00",
+  "updated_at": "2026-10-26T17:55:30.701889+00:00",
   "items": [
     {
       "title": "بررسی سیره و صبر حضرت زهرا (س)",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 43,
-    "segments_transcribed": 42,
+    "segments_captured": 44,
+    "segments_transcribed": 43,
     "editor_attempts": 21,
     "editor_withheld": 10,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T17:54:52.100168+00:00"
+    "last_audio_at": "2026-10-26T17:55:26.868840+00:00"
   }
 }
