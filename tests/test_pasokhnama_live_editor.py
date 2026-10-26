@@ -33,6 +33,22 @@ class EditorialTests(unittest.TestCase):
         self.assertIsNone(validate(SPEECH, {**VALID, "confidence": 0.5}))
         self.assertIsNone(validate(SPEECH, {**VALID, "summary": VALID["summary"] + " 12345"}))
 
+    def test_topic_only_preserves_subject_without_invented_rulings(self):
+        topic = {
+            "publish": True,
+            "scope": "topic_only",
+            "title": "بررسی اذان و اقامه هنگام خواندن نمازهای روزانه",
+            "summary": "در این بخش موضوع اذان و اقامه در نمازهای روزانه و نحوه خواندن نماز ظهر و عصر در کنار هم مطرح شده و درباره آن گفت‌وگو صورت گرفته است.",
+            "evidence_excerpt": EVIDENCE,
+            "confidence": 0.86,
+        }
+        edited = validate(SPEECH, topic)
+        self.assertIsNotNone(edited)
+        self.assertEqual(edited["scope"], "topic_only")
+        self.assertIsNone(validate(SPEECH, {
+            **topic, "summary": "در این بخش گفته شد که این نماز واجب است و هرگز نباید تغییر کند."
+        }))
+
     def test_does_not_publish_raw_text_without_key(self):
         self.assertIsNone(rewrite(SPEECH * 2, ""))
 
