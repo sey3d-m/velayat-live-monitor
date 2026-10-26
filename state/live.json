@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:01:27.563905+00:00",
+  "updated_at": "2026-10-26T18:02:21.484367+00:00",
   "items": [
-    {
-      "title": "پرسش درباره ماجرای فدک و منابع اهل سنت",
-      "summary": "در این بخش درباره پیگیری ماجرای فدک توسط حضرت فاطمه (س) و نقل این موضوع در برخی منابع اهل سنت گفتگو شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.92,
-      "id": "40366703147-42",
-      "sequence": 42,
-      "updated_at": "2026-10-26T17:55:01.378506+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی نقل‌قول تاریخی درباره فدک",
       "summary": "در این بخش به بررسی مباحث مطرح‌شده پیرامون تاریخچه فدک و نقل‌قول‌های تاریخی مندرج در متون پرداخته می‌شود و از هرگونه صدور حکم قطعی پرهیز شده است.",
@@ -67,16 +55,28 @@
       "sequence": 52,
       "updated_at": "2026-10-26T18:01:06.055915+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی تاریخ وفات حضرت فاطمه و مطالباتی درباره آن",
+      "summary": "در این بخش به مدت زمان حیات حضرت فاطمه پس از پیامبر و پاره‌ای از مطالبات ایشان اشاره شده و در ادامه توصیه‌هایی مذهبی به مخاطبان برای شرکت در مجالس و دعا مطرح می‌گردد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40366703147-54",
+      "sequence": 54,
+      "updated_at": "2026-10-26T18:02:21.484348+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 54,
-    "segments_transcribed": 53,
-    "editor_attempts": 26,
+    "segments_captured": 55,
+    "segments_transcribed": 54,
+    "editor_attempts": 27,
     "editor_withheld": 11,
-    "topics_published": 16,
+    "topics_published": 17,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:01:23.134732+00:00"
+    "last_audio_at": "2026-10-26T18:01:55.976127+00:00"
   }
 }
