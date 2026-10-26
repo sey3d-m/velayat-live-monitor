@@ -214,10 +214,13 @@ def main():
                                 pending_speech.clear()
                         # Even if nothing is safe for on-air use, expose honest
                         # progress counts instead of a permanently stale "starting".
-                        if number % 2 == 1 and not ITEMS:
-                            if not publish("reviewing"):
+                        if number % 2 == 1:
+                            # The on-air source remains fresh even between
+                            # valid headlines; the feed conveys actual progress.
+                            if not publish("live" if ITEMS else "reviewing"):
                                 break
-                            print("Pasokhnama: received audio, awaiting confident topic, segments=", PROGRESS["segments_captured"], flush=True)
+                            print("Pasokhnama: segments=", PROGRESS["segments_captured"],
+                                  "titles=", PROGRESS["topics_published"], flush=True)
                     except Exception as ex:
                         print(f"Chunk {number} skipped: {type(ex).__name__}: {str(ex)[:100]}")
                     part.unlink(missing_ok=True)
