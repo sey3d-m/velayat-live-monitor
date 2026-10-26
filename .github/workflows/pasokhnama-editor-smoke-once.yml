@@ -16,7 +16,7 @@ jobs:
         shell: bash
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          PASOKHNAMA_EDIT_MODEL: gemini-2.5-flash
+          PASOKHNAMA_EDIT_MODEL: gemini-3.5-flash-lite
         run: |
           set -euo pipefail
           python -u - <<'PY'
