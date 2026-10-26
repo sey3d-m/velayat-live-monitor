@@ -84,6 +84,18 @@ class EditorialTests(unittest.TestCase):
         self.assertIsNone(grounded_topic("آ اوم اوم نامشخص متن " * 12))
         self.assertIsNone(grounded_topic("نماز"))
 
+    def test_audio_fallback_fails_closed_without_api_or_valid_model(self):
+        from pathlib import Path
+        import tempfile
+        from pasokhnama_live_audio import transcribe_audio
+        self.assertEqual(transcribe_audio(Path("/not/a/real/speech.wav"), ""), "")
+        with tempfile.TemporaryDirectory() as temp:
+            wav = Path(temp) / "audio.wav"
+            wav.write_bytes(b"x" * 80000)
+            with self.assertRaises(ValueError):
+                transcribe_audio(wav, "test-key", model="../unsafe")
+            self.assertEqual(transcribe_audio(wav, ""), "")
+
     def test_does_not_publish_raw_text_without_key(self):
         self.assertIsNone(rewrite(SPEECH * 2, ""))
 
