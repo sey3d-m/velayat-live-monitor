@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T17:14:43.886549+00:00",
+  "updated_at": "2026-10-26T17:15:53.948121+00:00",
   "items": [
-    {
-      "title": "بررسی متن تاریخی و روایی درباره رسالت پیامبر",
-      "summary": "در این بخش به بررسی عبارات نقل‌شده درباره دوران جاهلیت و بعثت پیامبر اسلام پرداخته می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40357909904-79",
-      "sequence": 79,
-      "updated_at": "2026-10-26T17:07:40.967547+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی تاریخ دین و بعثت پیامبر",
       "summary": "در این بخش به موضوع بعثت پیامبر اسلام و نقش آن در روشن ساختن تاریکی‌های زمانه و هدایت مردم از گمراهی پرداخته می‌شود.",
@@ -67,14 +55,26 @@
       "sequence": 91,
       "updated_at": "2026-10-26T17:14:43.886524+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی فرازهایی از سخنان دینی و معارف اسلامی",
+      "summary": "در این بخش به اواخر فرازهای منسوب به متون دینی و معارف اسلامی درباره نماز، زکات، روزه، عدل و امامت اشاره شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.8,
+      "id": "40357909904-93",
+      "sequence": 93,
+      "updated_at": "2026-10-26T17:15:53.948094+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 92,
-    "segments_transcribed": 90,
-    "editor_attempts": 45,
+    "segments_captured": 94,
+    "segments_transcribed": 92,
+    "editor_attempts": 46,
     "editor_withheld": 29,
-    "topics_published": 18,
-    "last_audio_at": "2026-10-26T17:14:10.469364+00:00"
+    "topics_published": 19,
+    "last_audio_at": "2026-10-26T17:15:24.530727+00:00"
   }
 }
