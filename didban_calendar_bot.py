@@ -241,7 +241,7 @@ def process_admin_command(state: dict, key: str, message_id: int, text: str) -> 
         sess = None
     msg = normal(text)
     msg = kb.MENU_COMMANDS.get(msg, msg)
-    if msg == "__home":
+    if msg in ("__home", "منو", "/menu"):
         sessions.pop(key, None)
         return PROMPT
     if msg.startswith("__choose_"):
