@@ -96,6 +96,39 @@ class ExtraCalendarTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "15–180"):
             self.add(EXTRA_START="14:00", EXTRA_END="19:00")
 
+    def test_reject_overlap_with_fixed_persian_program_without_writing(self):
+        future = date.today() + timedelta(days=2)
+        while future.weekday() == 4:
+            future += timedelta(days=1)
+        with self.assertRaisesRegex(ValueError, "conflict"):
+            self.add(EXTRA_FREQUENCY="once",
+                     EXTRA_FROM_DATE=future.isoformat(), EXTRA_UNTIL_DATE="",
+                     EXTRA_START="18:10", EXTRA_END="19:00")
+        self.assertEqual(es.load(), [])
+        self.assertEqual(json.loads(self.cfg.read_text())["programs"], [])
+
+    def test_reject_overlap_between_two_extra_programs_without_writing(self):
+        future = date.today() + timedelta(days=3)
+        self.add(EXTRA_FREQUENCY="once",
+                 EXTRA_FROM_DATE=future.isoformat(), EXTRA_UNTIL_DATE="")
+        env = {"EXTRA_ACTION": "add", "EXTRA_ID": "secondshow",
+               "EXTRA_TITLE": "برنامه دوم", "EXTRA_FROM_DATE": future.isoformat(),
+               "EXTRA_UNTIL_DATE": "", "EXTRA_FREQUENCY": "once",
+               "EXTRA_START": "14:30", "EXTRA_END": "15:30",
+               "EXTRA_WEEKDAYS": ""}
+        with patch.dict(os.environ, env):
+            with self.assertRaisesRegex(ValueError, "conflict"):
+                es.manage_from_env()
+        self.assertEqual(len(es.load()), 1)
+
+    def test_skip_one_day_does_not_disable_other_dates(self):
+        p = self.add()
+        skipped_day = date(2026, 10, 27)
+        p["skip_dates"] = [skipped_day.isoformat()]
+        self.assertEqual(es.validate_records([p]), [p])
+        self.assertFalse(es.is_due_on(p, skipped_day))
+        self.assertTrue(es.is_due_on(p, skipped_day + timedelta(days=1)))
+
     def test_disallow_unregistered_or_duplicate_id(self):
         self.add()
         with self.assertRaises(ValueError):

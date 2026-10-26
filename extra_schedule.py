@@ -55,12 +55,12 @@ def duration_minutes(start: str, end: str) -> int:
     return length
 
 
-def load() -> list[dict]:
-    raw = json.loads(CONFIG.read_text(encoding="utf-8"))
-    if raw.get("version") != 1 or not isinstance(raw.get("programs"), list):
-        raise ValueError("Invalid extra schedule file")
+def validate_records(records: list[dict]) -> list[dict]:
+    """Validate everything before writing the calendar; reject conflicts."""
+    if len(records) > 150:
+        raise ValueError("Calendar has too many extra programs")
     seen = set()
-    for p in raw["programs"]:
+    for p in records:
         if not re.fullmatch(r"[a-zA-Z][a-zA-Z0-9_-]{1,39}", p["id"]):
             raise ValueError("Bad program ID")
         if p["id"] in seen:
@@ -84,15 +84,70 @@ def load() -> list[dict]:
             raise ValueError("End date precedes start")
         if p["frequency"] == "once" and p.get("until_date") and parse_day(p["until_date"]) != start_d:
             raise ValueError("One-time schedule has one date")
+        skipped = p.get("skip_dates", [])
+        if not isinstance(skipped, list) or len(skipped) > 60:
+            raise ValueError("Invalid skipped dates")
+        if len(set(skipped)) != len(skipped):
+            raise ValueError("Duplicate skipped date")
+        for skip in skipped:
+            if not isinstance(skip, str) or skip != parse_day(skip).isoformat():
+                raise ValueError("Skipped dates must be Gregorian YYYY-MM-DD")
+            if not start_d <= parse_day(skip) <= parse_day(p.get("until_date") or p["from_date"]):
+                raise ValueError("Skipped date is outside program range")
         if p["frequency"] == "monthly":
             day = int(p.get("month_day", 0))
             if day not in range(1, 32):
                 raise ValueError("Invalid Jalali month day")
-    return raw["programs"]
+        # Finite recurrence bounds keep conflict verification exact and
+        # prevent stale permanent entries if a production show is cancelled.
+        last = parse_day(p.get("until_date") or p["from_date"])
+        if (last - start_d).days > 370:
+            raise ValueError("Maximum calendar horizon is 370 days")
+    # Check ALL occurrences, including adjacent-day overnight programs.
+    # Nonoverlap with the three original Persian windows is a hard invariant.
+    active = [p for p in records if p["enabled"]]
+    if active:
+        earliest = min(parse_day(p["from_date"]) for p in active)
+        latest = max(parse_day(p.get("until_date") or p["from_date"]) for p in active)
+        fixed = (("18:00", "19:00"), ("19:30", "20:30"), ("21:00", "22:00"))
+        entries: list[tuple[datetime, datetime, str]] = []
+        for day_index in range((latest - earliest).days + 1):
+            day = earliest + timedelta(days=day_index)
+            if day.weekday() != 4:  # Fixed broadcasts do not run Friday.
+                for start_time, end_time in fixed:
+                    h, m = parse_hhmm(start_time)
+                    eh, em = parse_hhmm(end_time)
+                    entries.append((datetime.combine(day, datetime.min.time()).replace(
+                        hour=h, minute=m),
+                        datetime.combine(day, datetime.min.time()).replace(
+                        hour=eh, minute=em), "fixed Persian schedule"))
+            for p in active:
+                if not is_due_on(p, day):
+                    continue
+                sh, sm = parse_hhmm(p["start"])
+                start_time = datetime.combine(day, datetime.min.time()).replace(
+                    hour=sh, minute=sm)
+                finish = start_time + timedelta(minutes=duration_minutes(p["start"], p["end"]))
+                entries.append((start_time, finish, p["id"]))
+        entries.sort(key=lambda entry: (entry[0], entry[1], entry[2]))
+        for previous, current in zip(entries, entries[1:]):
+            if current[0] < previous[1]:
+                raise ValueError(
+                    f"Broadcast time conflict: {previous[2]} and {current[2]} "
+                    f"on {current[0].date()} at {current[0].strftime('%H:%M')}"
+                )
+    return records
+
+
+def load() -> list[dict]:
+    raw = json.loads(CONFIG.read_text(encoding="utf-8"))
+    if raw.get("version") != 1 or not isinstance(raw.get("programs"), list):
+        raise ValueError("Invalid extra schedule file")
+    return validate_records(raw["programs"])
 
 
 def is_due_on(p: dict, day: date) -> bool:
-    if not p["enabled"]:
+    if not p["enabled"] or day.isoformat() in p.get("skip_dates", []):
         return False
     start = parse_day(p["from_date"])
     if day < start or (p.get("until_date") and day > parse_day(p["until_date"])):
@@ -191,10 +246,10 @@ def manage_from_env() -> None:
             match["enabled"] = action == "resume"
     else:
         raise ValueError("Unsupported operation")
+    validate_records(records)  # Reject collisions before touching any file.
     raw["programs"] = records
     new_text = json.dumps(raw, ensure_ascii=False, indent=2) + "\n"
     CONFIG.write_text(new_text, encoding="utf-8")
-    load()  # validate before publishing
     MIRROR.parent.mkdir(parents=True, exist_ok=True)
     MIRROR.write_text(new_text, encoding="utf-8")
     print(f"Extra schedule updated: {action} {ident}")
