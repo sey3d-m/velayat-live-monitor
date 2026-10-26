@@ -205,6 +205,34 @@ class CalendarBotTests(unittest.TestCase):
         self.assertTrue(markup["resize_keyboard"])
         self.assertFalse(replies.exists())
 
+    def test_start_variants_show_main_menu(self):
+        for command in ("Start", "start", "/start", "منو", "شروع"):
+            self.assertIn("مدیریت تقویم دیدبان", self.command(command))
+            self.assertEqual(self.state["sessions"], {})
+
+    def test_welcome_pushes_menu_only_to_allowlisted_admins(self):
+        with patch.dict(os.environ, {
+            "DIDBAN_CONTROL_BOT_TOKEN": "dummy-secure-token",
+            "DIDBAN_CONTROL_ADMIN_IDS": "12345",
+        }), patch.object(bot, "bale_api", return_value={"ok": True}) as api:
+            bot.welcome()
+        self.assertEqual(api.call_count, 1)
+        token, method, params = api.call_args.args
+        self.assertEqual(token, "dummy-secure-token")
+        self.assertEqual(method, "sendMessage")
+        self.assertEqual(params["chat_id"], "12345")
+        board = json.loads(params["reply_markup"])
+        self.assertIn("keyboard", board)
+        self.assertTrue(board["resize_keyboard"])
+
+    def test_welcome_without_admins_never_sends_menu(self):
+        with patch.dict(os.environ, {
+            "DIDBAN_CONTROL_BOT_TOKEN": "dummy-secure-token",
+            "DIDBAN_CONTROL_ADMIN_IDS": "",
+        }), patch.object(bot, "bale_api") as api:
+            bot.welcome()
+        api.assert_not_called()
+
     def test_disabled_registry_and_no_secret_storage(self):
         ident, _ = self.add_once()
         bot.save_state(self.state)
