@@ -1,11 +1,24 @@
 {
   "version": 1,
-  "status": "starting",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "40352228702",
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T15:44:43.537063+00:00",
-  "updated_at": "2026-10-26T15:44:43.537168+00:00",
-  "items": []
+  "updated_at": "2026-10-26T15:47:16.926032+00:00",
+  "items": [
+    {
+      "title": "بررسی ویژگی‌های منتظران واقعی امام",
+      "summary": "در این بخش به ویژگی‌های منتظران واقعی و لزوم توجه به مسئولیت‌های خانوادگی و اجتماعی در کنار ادعای یاری امام پرداخته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40352228702-3",
+      "sequence": 3,
+      "updated_at": "2026-10-26T15:47:16.926015+00:00",
+      "speaker": null
+    }
+  ]
 }
