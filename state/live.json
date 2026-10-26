@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:04:56.811614+00:00",
+  "updated_at": "2026-10-26T18:05:34.921937+00:00",
   "items": [
-    {
-      "title": "بررسی نقل‌قول تاریخی درباره فدک",
-      "summary": "در این بخش به بررسی مباحث مطرح‌شده پیرامون تاریخچه فدک و نقل‌قول‌های تاریخی مندرج در متون پرداخته می‌شود و از هرگونه صدور حکم قطعی پرهیز شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40366703147-44",
-      "sequence": 44,
-      "updated_at": "2026-10-26T17:56:16.313313+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی رویداد تاریخی و پرسش درباره منابع اهل سنت",
       "summary": "در این بخش درباره نزول آیات مربوط به ذی‌القربی و ماجرای فدک و همچنین پرسش دوم درباره دیدگاه منابع اهل سنت پیرامون ناراحتی حضرت زهرا سلام‌الله‌علیها گفت‌وگو می‌شود.",
@@ -67,16 +55,28 @@
       "sequence": 54,
       "updated_at": "2026-10-26T18:02:21.484348+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی تسبیحات حضرت زهرا",
+      "summary": "در این بخش به ذکر تسبیحات حضرت زهرا و فضایل آن پرداخته شد و اشاراتی به عظمت این بانو و بیان ابیاتی در این خصوص صورت گرفت.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40366703147-60",
+      "sequence": 60,
+      "updated_at": "2026-10-26T18:05:34.921919+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 60,
-    "segments_transcribed": 59,
-    "editor_attempts": 29,
+    "segments_captured": 61,
+    "segments_transcribed": 60,
+    "editor_attempts": 30,
     "editor_withheld": 13,
-    "topics_published": 17,
+    "topics_published": 18,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:04:53.896859+00:00"
+    "last_audio_at": "2026-10-26T18:05:25.307058+00:00"
   }
 }
