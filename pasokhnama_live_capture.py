@@ -95,22 +95,39 @@ def caption(model, path, sequence):
     # Never publish uncorrected speech-recognition text to the live feed.
     return text[:1800]
 
+def seconds_until_program(now=None):
+    """Align the independent feed with the Tehran program clock, not early dispatch."""
+    tehran = ZoneInfo("Asia/Tehran")
+    local = now or datetime.now(tehran)
+    on_date = DATE if re.fullmatch(r"\d{4}-\d{2}-\d{2}", DATE) else local.date().isoformat()
+    slot_clock = datetime.fromisoformat(on_date + "T" + SLOT + ":00").replace(tzinfo=tehran)
+    return (slot_clock - local).total_seconds()
+
 def main():
     if not SESSION.isdigit() or not TOKEN or not STREAM or not re.fullmatch(r"\d\d:\d\d", SLOT):
         raise SystemExit("Missing or invalid isolated-run configuration")
-    print('Pasokhnama: local Persian speech capture process launching', flush=True)
-    # Publish a new session only when the input is validated.
-    if not publish("starting"):
-        return
+    print('Pasokhnama: independent Persian capture runner preparing model', flush=True)
     from faster_whisper import WhisperModel
     model = WhisperModel(os.environ.get("PASOKHNAMA_WHISPER_MODEL", "small"),
                          device="cpu", compute_type="int8", cpu_threads=2, num_workers=1)
     editor_key = os.environ.get("GEMINI_API_KEY", "")
     if not editor_key:
-        print("Pasokhnama: no existing editor key; captions will stay private instead of publishing inaccurate raw text.", flush=True)
+        print("Pasokhnama: no existing editor key; raw ASR will stay private.", flush=True)
     pending_speech = []
     published_titles = set()
-    print('Pasokhnama: Whisper model loaded; starting segmented FFmpeg capture', flush=True)
+    # Upstream scheduling dispatches about 15 minutes early. Do not mislabel
+    # the previous broadcast as the next Persian program.
+    delta = seconds_until_program()
+    if delta > 1800 or delta < -1500:
+        print(f"Pasokhnama: outside allowed broadcast window ({delta:.0f}s); skip to avoid wrong program.", flush=True)
+        return
+    if delta > 2:
+        print(f"Pasokhnama: model prewarmed, awaiting official Tehran slot ({delta:.0f}s).", flush=True)
+        time.sleep(delta)
+    # Publish status only after the target program has actually begun.
+    if not publish("starting"):
+        return
+    print('Pasokhnama: scheduled show started; segmented FFmpeg capture running', flush=True)
     with tempfile.TemporaryDirectory(prefix="pasokhnama_") as temp:
         root = Path(temp)
         cmd = [
