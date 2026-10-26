@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T17:15:53.948121+00:00",
+  "updated_at": "2026-10-26T17:17:58.516789+00:00",
   "items": [
-    {
-      "title": "بررسی تاریخ دین و بعثت پیامبر",
-      "summary": "در این بخش به موضوع بعثت پیامبر اسلام و نقش آن در روشن ساختن تاریکی‌های زمانه و هدایت مردم از گمراهی پرداخته می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40357909904-81",
-      "sequence": 81,
-      "updated_at": "2026-10-26T17:08:42.862209+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی عبارات عربی و فارسی در رحلت و فضائل",
       "summary": "در این بخش به بررسی عبارات منقول درباره رحلت و توصیفاتی پیرامون مقامات معنوی پرداخته شده است.",
@@ -67,14 +55,26 @@
       "sequence": 93,
       "updated_at": "2026-10-26T17:15:53.948094+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی فلسفه و حکمت احکام و فرائض دینی",
+      "summary": "در این بخش به بررسی و بازخوانی عباراتی درباره حکمت احکام دین، فلسفه تکالیف شرعی، امر به معروف و نیکی به والدین بر اساس متن ارائه‌شده پرداخته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "id": "40357909904-97",
+      "sequence": 97,
+      "updated_at": "2026-10-26T17:17:58.516764+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 94,
-    "segments_transcribed": 92,
-    "editor_attempts": 46,
-    "editor_withheld": 29,
-    "topics_published": 19,
-    "last_audio_at": "2026-10-26T17:15:24.530727+00:00"
+    "segments_captured": 98,
+    "segments_transcribed": 96,
+    "editor_attempts": 48,
+    "editor_withheld": 30,
+    "topics_published": 20,
+    "last_audio_at": "2026-10-26T17:17:38.739291+00:00"
   }
 }
