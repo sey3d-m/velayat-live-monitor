@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T17:36:52.973761+00:00",
+  "updated_at": "2026-10-26T17:37:36.873625+00:00",
   "items": [
     {
       "title": "بررسی فضائل و جایگاه حضرت زهرا سلام‌الله‌علیها",
@@ -55,16 +55,28 @@
       "sequence": 10,
       "updated_at": "2026-10-26T17:36:44.359996+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی جایگاه و الگو بودن حضرت زهرا (س)",
+      "summary": "در این بخش درباره الگو قرار دادن باورها، اخلاق و رفتار حضرت زهرا (س) برای رسیدن به کمال و سعادت جامعه و همچنین معیار شناخت حق در اختلافات گفت‌وگو می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40366703147-12",
+      "sequence": 12,
+      "updated_at": "2026-10-26T17:37:36.873605+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 12,
-    "segments_transcribed": 11,
-    "editor_attempts": 5,
+    "segments_captured": 13,
+    "segments_transcribed": 12,
+    "editor_attempts": 6,
     "editor_withheld": 1,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 0,
     "audio_ai_success": 0,
-    "last_audio_at": "2026-10-26T17:36:48.879094+00:00"
+    "last_audio_at": "2026-10-26T17:37:21.543636+00:00"
   }
 }
