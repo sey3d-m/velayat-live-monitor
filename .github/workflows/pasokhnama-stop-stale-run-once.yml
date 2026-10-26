@@ -1,0 +1,37 @@
+# Cancels ONLY the superseded Pasokhnama workflow, never Velayat Live Monitor.
+name: Release old isolated 19:30 Pasokhnama run
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/pasokhnama-stop-stale-run-once.yml']
+permissions:
+  actions: write
+  contents: read
+jobs:
+  release:
+    if: ${{ github.event.head_commit.message == 'Free queued live subtitle publisher without touching Didban' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Cancel obsolete isolated transcription attempt only
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const {owner,repo}=context.repo;
+            const oldId=40353089945;
+            const {data:run}=await github.rest.actions.getWorkflowRun({
+              owner,repo,run_id:oldId
+            });
+            if(run.name!=='Pasokhnama Live Persian (isolated)' ||
+               run.event!=='repository_dispatch') {
+              core.setFailed('Refusing to cancel unrelated run');
+              return;
+            }
+            if(run.status !== 'completed') {
+              await github.rest.actions.cancelWorkflowRun({
+                owner,repo,run_id:oldId
+              });
+              core.notice('Cancelled superseded isolated Pasokhnama only');
+            } else {
+              core.notice('Old Pasokhnama already completed');
+            }
