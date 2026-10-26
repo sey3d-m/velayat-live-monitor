@@ -11,7 +11,7 @@ import time
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 from urllib import request, error
-from pasokhnama_live_editor import rewrite
+from pasokhnama_live_editor import rewrite, grounded_topic
 
 REPO = "sey3d-m/velayat-live-monitor"
 DATA_BRANCH = "pasokhnama-live-data"
@@ -26,6 +26,7 @@ MAX_SECONDS = min(90, max(5, int(os.environ.get("PASOKHNAMA_MAX_MINUTES", "70"))
 STARTED = datetime.now(timezone.utc).isoformat()
 ITEMS = []
 MAX_ITEMS = 5
+PROGRESS = {"segments_captured": 0, "segments_transcribed": 0, "editor_attempts": 0, "editor_withheld": 0, "topics_published": 0, "last_audio_at": None}
 
 def utcnow():
     return datetime.now(timezone.utc).isoformat()
@@ -58,6 +59,7 @@ def publish(status):
         "started_at": STARTED,
         "updated_at": utcnow(),
         "items": ITEMS[-MAX_ITEMS:],
+        "progress": dict(PROGRESS),
     }
     for attempt in range(4):
         try:
@@ -147,28 +149,49 @@ def main():
                 next_part = root / f"segment-{number+1:04}.wav"
                 if next_part.exists() and part.exists() and part.stat().st_size > 60_000:
                     try:
+                        PROGRESS["segments_captured"] += 1
+                        PROGRESS["last_audio_at"] = utcnow()
                         transcript = caption(model, part, number)
                         if transcript:
+                            PROGRESS["segments_transcribed"] += 1
                             pending_speech.append(transcript)
-                        # Two consecutive chunks give enough context for a coherent,
-                        # accurate headline. At most one request per two chunks.
-                        if len(pending_speech) >= 2:
+                        # Try two contiguous segments first; if context is too
+                        # noisy, retry once with four. No invented religious rules.
+                        if len(pending_speech) in (2, 4):
                             source = "\n".join(pending_speech)
-                            pending_speech.clear()
+                            PROGRESS["editor_attempts"] += 1
                             try:
                                 edited = rewrite(source, editor_key)
                             except RuntimeError as ex:
-                                print("Pasokhnama editor skipped ambiguous/unavailable segment:", str(ex), flush=True)
+                                print("Pasokhnama editor unavailable:", str(ex), flush=True)
                                 edited = None
+                            # Public OBS only accepts subject-only descriptions.
+                            if edited and edited.get("scope") != "topic_only":
+                                edited = None
+                            if not edited:
+                                PROGRESS["editor_withheld"] += 1
+                                edited = grounded_topic(source)
+                                if edited:
+                                    print("Pasokhnama: used literal-keyword grounded headline, no claimed ruling.", flush=True)
                             if edited and edited["title"] not in published_titles:
                                 item = {**edited, "id": f"{SESSION}-{number}",
                                         "sequence": number, "updated_at": utcnow(),
                                         "speaker": None}
                                 published_titles.add(edited["title"])
                                 ITEMS.append(item)
+                                PROGRESS["topics_published"] += 1
                                 if not publish("live"):
                                     break
-                                print(f"Pasokhnama: published edited headline for segment {number}", flush=True)
+                                print(f"Pasokhnama: published safe Persian headline for segment {number}", flush=True)
+                                pending_speech.clear()
+                            elif len(pending_speech) >= 4:
+                                pending_speech.clear()
+                        # Even if nothing is safe for on-air use, expose honest
+                        # progress counts instead of a permanently stale "starting".
+                        if number % 2 == 1 and not ITEMS:
+                            if not publish("reviewing"):
+                                break
+                            print("Pasokhnama: received audio, awaiting confident topic, segments=", PROGRESS["segments_captured"], flush=True)
                     except Exception as ex:
                         print(f"Chunk {number} skipped: {type(ex).__name__}: {str(ex)[:100]}")
                     part.unlink(missing_ok=True)
