@@ -11,6 +11,7 @@ import time
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 from urllib import request, error
+from pasokhnama_live_editor import rewrite
 
 REPO = "sey3d-m/velayat-live-monitor"
 DATA_BRANCH = "pasokhnama-live-data"
@@ -90,21 +91,9 @@ def caption(model, path, sequence):
     persian = sum(1 for char in text if "\u0600" <= char <= "\u06ff")
     if persian < 25 or len(text) < 55:
         return None
-    # Not a verified quote, speaker identity or religious citation.
-    # Always visibly label as unverified automatic transcription.
-    excerpt = text[:295].rsplit(" ", 1)[0]
-    if len(excerpt) < 55:
-        return None
-    return {
-        "id": f"{SESSION}-{sequence}",
-        "title": "گزیده خودکار از گفت‌وگوی در حال پخش",
-        "summary": excerpt + ("…" if len(text) > len(excerpt) else ""),
-        "kind": "automatic_transcript",
-        "verification_status": "unverified",
-        "speaker": None,
-        "sequence": sequence,
-        "updated_at": utcnow(),
-    }
+    # Return only PRIVATE raw text for the grounded on-air editor.
+    # Never publish uncorrected speech-recognition text to the live feed.
+    return text[:1800]
 
 def main():
     if not SESSION.isdigit() or not TOKEN or not STREAM or not re.fullmatch(r"\d\d:\d\d", SLOT):
@@ -116,6 +105,11 @@ def main():
     from faster_whisper import WhisperModel
     model = WhisperModel(os.environ.get("PASOKHNAMA_WHISPER_MODEL", "small"),
                          device="cpu", compute_type="int8", cpu_threads=2, num_workers=1)
+    editor_key = os.environ.get("GEMINI_API_KEY", "")
+    if not editor_key:
+        print("Pasokhnama: no existing editor key; captions will stay private instead of publishing inaccurate raw text.", flush=True)
+    pending_speech = []
+    published_titles = set()
     print('Pasokhnama: Whisper model loaded; starting segmented FFmpeg capture', flush=True)
     with tempfile.TemporaryDirectory(prefix="pasokhnama_") as temp:
         root = Path(temp)
@@ -136,11 +130,28 @@ def main():
                 next_part = root / f"segment-{number+1:04}.wav"
                 if next_part.exists() and part.exists() and part.stat().st_size > 60_000:
                     try:
-                        item = caption(model, part, number)
-                        if item:
-                            ITEMS.append(item)
-                            if not publish("live"):
-                                break
+                        transcript = caption(model, part, number)
+                        if transcript:
+                            pending_speech.append(transcript)
+                        # Two consecutive chunks give enough context for a coherent,
+                        # accurate headline. At most one request per two chunks.
+                        if len(pending_speech) >= 2:
+                            source = "\n".join(pending_speech)
+                            pending_speech.clear()
+                            try:
+                                edited = rewrite(source, editor_key)
+                            except RuntimeError as ex:
+                                print("Pasokhnama editor skipped ambiguous/unavailable segment:", str(ex), flush=True)
+                                edited = None
+                            if edited and edited["title"] not in published_titles:
+                                item = {**edited, "id": f"{SESSION}-{number}",
+                                        "sequence": number, "updated_at": utcnow(),
+                                        "speaker": None}
+                                published_titles.add(edited["title"])
+                                ITEMS.append(item)
+                                if not publish("live"):
+                                    break
+                                print(f"Pasokhnama: published edited headline for segment {number}", flush=True)
                     except Exception as ex:
                         print(f"Chunk {number} skipped: {type(ex).__name__}: {str(ex)[:100]}")
                     part.unlink(missing_ok=True)
