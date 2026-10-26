@@ -1,0 +1,58 @@
+name: Pasokhnama Live Persian (isolated)
+run-name: "Pasokhnama live Persian ${{ github.event.client_payload.slot || inputs.slot }}"
+on:
+  repository_dispatch:
+    types: [pasokhnama_live_start]
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: 'Persian program time HH:MM Tehran'
+        type: choice
+        required: true
+        options: ['18:00', '19:30', '21:00']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pasokhnama-live-${{ github.event.client_payload.slot || inputs.slot }}
+  cancel-in-progress: false
+
+jobs:
+  live:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'repository_dispatch' &&
+       github.event.client_payload.network == 'persian' &&
+       github.event.client_payload.slot != '')
+    runs-on: ubuntu-latest
+    timeout-minutes: 105
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check isolated prerequisites
+        shell: bash
+        env:
+          STREAM_URL: ${{ secrets.STREAM_URL }}
+          PROGRAM_SLOT: ${{ github.event.client_payload.slot || inputs.slot }}
+        run: |
+          set -euo pipefail
+          test -n "$STREAM_URL" || { echo 'Stream secret unavailable'; exit 1; }
+          [[ "$PROGRAM_SLOT" =~ ^(18:00|19:30|21:00)$ ]] || { echo 'Invalid program slot'; exit 1; }
+          command -v ffmpeg
+      - name: Install free local Persian transcription engine
+        run: pip install faster-whisper==1.2.1
+      - name: Transcribe in parallel with the existing Didban workflow
+        env:
+          STREAM_URL: ${{ secrets.STREAM_URL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          PROGRAM_SLOT: ${{ github.event.client_payload.slot || inputs.slot }}
+          PROGRAM_DATE: ${{ github.event.client_payload.date || '' }}
+          PASOKHNAMA_WHISPER_MODEL: small
+          PASOKHNAMA_MAX_MINUTES: '70'
+        run: python pasokhnama_live_capture.py
