@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:20:04.330965+00:00",
+  "updated_at": "2026-10-26T18:21:08.210812+00:00",
   "items": [
-    {
-      "title": "بررسی مبانی ازدواج و الگوهای زندگی از منظر دینی",
-      "summary": "در این بخش به موضوع ازدواج‌های مبتنی بر مادیات و ظاهر پرداخته شده و دیدگاه حضرت فاطمه زهرا سلام‌الله‌علیها در این زمینه مطرح می‌گردد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40366703147-66",
-      "sequence": 66,
-      "updated_at": "2026-10-26T18:09:06.374772+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی شخصیت و ساده‌زیستی حضرت فاطمه (س)",
       "summary": "در این بخش درباره ویژگی‌های اخلاقی و معنوی حضرت فاطمه زهرا (س) و بی‌توجهی ایشان و پیامبر اکرم (ص) به تجملات و ارقام نجومی دنیا گفتگو می‌شود.",
@@ -67,16 +55,28 @@
       "sequence": 82,
       "updated_at": "2026-10-26T18:18:26.418713+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نقش رفتار والدین در تربیت فرزند",
+      "summary": "در این بخش به موضوع تربیت فرزند از طریق الگوبرداری از رفتار و دعا کردن والدین برای دیگران در نیمه شب پرداخته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40366703147-86",
+      "sequence": 86,
+      "updated_at": "2026-10-26T18:21:08.210795+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 86,
-    "segments_transcribed": 85,
-    "editor_attempts": 42,
+    "segments_captured": 87,
+    "segments_transcribed": 86,
+    "editor_attempts": 43,
     "editor_withheld": 20,
-    "topics_published": 24,
+    "topics_published": 25,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:19:59.694560+00:00"
+    "last_audio_at": "2026-10-26T18:20:33.627303+00:00"
   }
 }
