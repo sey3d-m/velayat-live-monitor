@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T17:09:54.747255+00:00",
+  "updated_at": "2026-10-26T17:11:01.041686+00:00",
   "items": [
-    {
-      "title": "بررسی حمد و سپاس الهی در سخنان مطرح‌شده",
-      "summary": "در این بخش، موضوع شکرگزاری و حمد الهی بر اساس نعمت‌های بی‌شمار و دعوت بندگان به سپاسگزاری مطرح شد، بدون اینکه حکم قطعی یا نتیجه‌گیری خاصی ارائه گردد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40357909904-69",
-      "sequence": 69,
-      "updated_at": "2026-10-26T17:01:55.935909+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی صفات آفریدگار و فلسفه آفرینش",
       "summary": "در این بخش درباره ناتوانی دیدگان و زبان‌ها در توصیف خداوند، چگونگی آفرینش اشیاء بدون نمونه پیشین و فلسفه آفرینش در راستای اثبات حکمت و بندگی گفتگو شده است.",
@@ -67,14 +55,26 @@
       "sequence": 83,
       "updated_at": "2026-10-26T17:09:54.747229+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی صلوات و درود بر پیامبر و اهل‌بیت",
+      "summary": "در این بخش به ذکر درود و رحمت الهی بر پیامبر اکرم و اهل‌بیت مطهر ایشان پرداخته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40357909904-85",
+      "sequence": 85,
+      "updated_at": "2026-10-26T17:11:01.041659+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 84,
-    "segments_transcribed": 82,
-    "editor_attempts": 41,
+    "segments_captured": 86,
+    "segments_transcribed": 84,
+    "editor_attempts": 42,
     "editor_withheld": 27,
-    "topics_published": 16,
-    "last_audio_at": "2026-10-26T17:09:32.457952+00:00"
+    "topics_published": 17,
+    "last_audio_at": "2026-10-26T17:10:41.213304+00:00"
   }
 }
