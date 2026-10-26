@@ -12,8 +12,9 @@ SPEECH = (
 EVIDENCE = "برای هر کدام از نماز ظهر و عصر یک اقامه جداگانه گفته می‌شود"
 VALID = {
     "publish": True,
-    "title": "نحوه گفتن اقامه برای نماز ظهر و عصر",
-    "summary": "در گفت‌وگو توضیح داده شد که هنگام خواندن نماز ظهر و عصر با هم، برای هر نماز اقامه جداگانه گفته می‌شود و موضوع اذان نیز مطرح شده است.",
+    "scope": "topic_only",
+    "title": "بررسی اذان و اقامه هنگام خواندن نماز ظهر و عصر",
+    "summary": "در این بخش موضوع گفتن اذان و اقامه هنگام خواندن نماز ظهر و عصر پشت سر هم مطرح شده است. گفت‌وگو به نحوه گفتن اذان و اقامه برای نمازهای روزانه مربوط است.",
     "evidence_excerpt": EVIDENCE,
     "confidence": 0.94,
 }
@@ -47,6 +48,15 @@ class EditorialTests(unittest.TestCase):
         self.assertEqual(edited["scope"], "topic_only")
         self.assertIsNone(validate(SPEECH, {
             **topic, "summary": "در این بخش گفته شد که این نماز واجب است و هرگز نباید تغییر کند."
+        }))
+
+    def test_religious_explanation_and_unsupported_fatwa_blocked(self):
+        self.assertIsNone(validate(SPEECH, {
+            **VALID, "scope": "explanation",
+            "title": "حکم قطعی اذان برای نماز ظهر و عصر",
+        }))
+        self.assertIsNone(validate(SPEECH, {
+            **VALID, "summary": "در این بخش گفته شد که برای تمام نمازهای نافله اذان و اقامه مستحب است و می‌توان این کار را به‌صورت همیشگی انجام داد.",
         }))
 
     def test_does_not_publish_raw_text_without_key(self):
