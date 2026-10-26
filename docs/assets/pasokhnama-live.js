@@ -11,6 +11,7 @@
     {name: "پشتیبان سایت (غیرزنده)", url: "data/pasokhnama-snapshot.json", format: "json"}
   ];
   let apiUnreachableUntil = 0;
+  let apiNextAllowedAt = 0;
   let lastSessionStarted = -Infinity;
   let lastFeedUpdated = -Infinity;
   let refreshing = false;
@@ -18,7 +19,7 @@
     const diagnostics = [];
     for (const source of sources) {
       // Rate-limit fallback API requests when source 1 is inaccessible.
-      if (source.format === "github" && Date.now() < apiUnreachableUntil) continue;
+      if (source.format === "github" && Date.now() < Math.max(apiUnreachableUntil, apiNextAllowedAt)) continue;
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), 6500);
       try {
@@ -40,6 +41,7 @@
         }
         if (!feed || feed.network !== "velayat_farsi" || !Array.isArray(feed.items))
           throw new Error("Feed data incomplete");
+        if (source.format === "github") apiNextAllowedAt = Date.now() + 60000;
         return {feed, source: source.name};
       } catch (err) {
         diagnostics.push(source.name + ": " + (err && err.message || "unavailable"));
