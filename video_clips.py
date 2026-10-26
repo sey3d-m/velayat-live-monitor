@@ -14,6 +14,7 @@ from pathlib import Path
 import requests
 from clip_settings import load_clip_settings
 from clip_sync import align_video_to_audio, probe_duration
+from clip_editorial import polish_title, snap_to_pauses, topic_hashtags
 
 PRIVATE_DIR = Path("private_live_video")
 RECORDING = PRIVATE_DIR / "programme_preview.mp4"
@@ -396,7 +397,7 @@ def format_bale_caption(*, title, expert, program, date, description,
     program = compact_text(program, 80) or "شبکه ولایت فارسی"
     expert = compact_text(expert, 95) or "نامشخص"
     date = compact_text(date, 24) or "نامشخص"
-    description = compact_text(description, 370)
+    description = compact_text(description, 600)
     if not description:
         description = f"در این بخش از برنامه «{program}»، موضوع «{title}» مطرح و بررسی می‌شود."
 
@@ -438,8 +439,13 @@ def description_for(suggestions, start, title):
         except (TypeError, ValueError, AttributeError):
             continue
         if match and compact_text(getattr(item, "media_title", ""), 100) == title:
-            return compact_text(getattr(item, "caption", ""), 370) or compact_text(
-                getattr(item, "angle", ""), 370)
+            specific = compact_text(getattr(item, "caption", ""), 480)
+            angle = compact_text(getattr(item, "angle", ""), 220)
+            # Add an informative, corroborating angle only if it adds details.
+            if specific and len(angle) >= 25 and angle not in specific and (
+                    _topic_words(angle) & _topic_words(specific + " " + title)):
+                return compact_text(specific + " " + angle, 600)
+            return specific or angle
     return ""
 
 
@@ -523,13 +529,26 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
                 raise RuntimeError(
                     f"Report interval {start}-{end}s outside verified "
                     f"video coverage after {verified_offset:+.2f}s offset")
+            if strict_report:
+                # Only this media-export boundary is changed. The report and
+                # its editorial selection remain exactly as published.
+                physical_start, physical_end = snap_to_pauses(
+                    source, physical_start, physical_end,
+                    recorded_duration, settings["max_seconds"])
             path = make_clip(source, physical_start, physical_end, idx)
             if path.stat().st_size > settings["max_upload_mb"] * 1024 * 1024:
                 raise RuntimeError("Clip exceeds configured upload size cap")
+            specific_description = description_for(suggestions, start, title)
+            effective_start = max(0, round(physical_start - (verified_offset or 0.)))
+            effective_end = max(effective_start + 1,
+                                round(physical_end - (verified_offset or 0.)))
             caption = format_bale_caption(
-                title=title, expert=expert, program=program, date=date,
-                description=description_for(suggestions, start, title),
-                hashtags=hashtags, start=start, end=end,
+                title=polish_title(title) if strict_report else title,
+                expert=expert, program=program, date=date,
+                description=specific_description,
+                hashtags=(topic_hashtags(title, specific_description, hashtags)
+                          if strict_report else hashtags),
+                start=effective_start, end=effective_end,
             )
             last_error = None
             for attempt in range(3):
@@ -558,13 +577,15 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
             sent.append({
                 "start_sec": start, "end_sec": end, "title": title,
                 "size_bytes": path.stat().st_size, "speed": playback_speed(),
+                "actual_start_sec": effective_start,
+                "actual_end_sec": effective_end,
             })
             # Never wait for the second clip or for program completion.
             try:
                 from bengali_instant_dispatch import enqueue_after_sent
                 enqueue_after_sent(path, index=len(sent), program=program,
                                    expert=expert, date=date, title=title,
-                                   start=start, end=end)
+                                   start=effective_start, end=effective_end)
             except Exception as bn_exc:
                 print(f"Bengali handoff skipped: {bn_exc}", file=sys.stderr)
             print(f"Clip sent {len(sent)}/{target_count} to {clip_chat_id}: "
