@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T17:49:41.862422+00:00",
+  "updated_at": "2026-10-26T17:50:26.068810+00:00",
   "items": [
-    {
-      "title": "بررسی الگوگیری از شخصیت حضرت زهرا (س)",
-      "summary": "در این بخش درباره جایگاه و مقام حضرت زهرا (سلام‌الله‌علیها) و الگو بودن ایشان برای جامعه و زندگی امروز بر اساس سیره پیامبر گرامی اسلام (ص) گفتگو می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40366703147-10",
-      "sequence": 10,
-      "updated_at": "2026-10-26T17:36:44.359996+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی جایگاه و الگو بودن حضرت زهرا (س)",
       "summary": "در این بخش درباره الگو قرار دادن باورها، اخلاق و رفتار حضرت زهرا (س) برای رسیدن به کمال و سعادت جامعه و همچنین معیار شناخت حق در اختلافات گفت‌وگو می‌شود.",
@@ -68,16 +56,28 @@
       "sequence": 32,
       "updated_at": "2026-10-26T17:49:24.004450+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی صبر و تحمل در برابر مشکلات زندگی",
+      "summary": "در این بخش به موضوع صبر در برابر مشکلات دنیوی با استناد به آیات قرآن کریم و الگوبرداری از سیره حضرت فاطمه زهرا (س) پرداخته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40366703147-34",
+      "sequence": 34,
+      "updated_at": "2026-10-26T17:50:26.068790+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 34,
-    "segments_transcribed": 33,
-    "editor_attempts": 16,
+    "segments_captured": 35,
+    "segments_transcribed": 34,
+    "editor_attempts": 17,
     "editor_withheld": 9,
-    "topics_published": 8,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T17:49:37.461872+00:00"
+    "last_audio_at": "2026-10-26T17:50:13.330576+00:00"
   }
 }
