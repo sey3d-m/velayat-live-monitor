@@ -1,7 +1,51 @@
 /* Isolated Pasokhnama live overlay: no Didban API calls, no secrets. */
 (function () {
   "use strict";
-  const origin = "https://raw.githubusercontent.com/sey3d-m/velayat-live-monitor/pasokhnama-live-data/state/live.json";
+  // Some studio networks load github.io but cannot reach raw.githubusercontent.com.
+  // Only PUBLIC, read-only mirrors of the isolated Pasokhnama data are used.
+  // No Didban endpoint, private token, or unrelated feed is accessed.
+  const sources = [
+    {name: "GitHub Raw", url: "https://raw.githubusercontent.com/sey3d-m/velayat-live-monitor/pasokhnama-live-data/state/live.json", format: "json"},
+    {name: "GitHub API", url: "https://api.github.com/repos/sey3d-m/velayat-live-monitor/contents/state/live.json?ref=pasokhnama-live-data", format: "github"},
+    {name: "jsDelivr", url: "https://cdn.jsdelivr.net/gh/sey3d-m/velayat-live-monitor@pasokhnama-live-data/state/live.json", format: "json"}
+  ];
+  let apiUnreachableUntil = 0;
+  const loadFeed = async () => {
+    const diagnostics = [];
+    for (const source of sources) {
+      // Rate-limit fallback API requests when source 1 is inaccessible.
+      if (source.format === "github" && Date.now() < apiUnreachableUntil) continue;
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 6500);
+      try {
+        const separator = source.url.includes("?") ? "&" : "?";
+        const response = await fetch(source.url + separator + "_=" + Date.now(), {
+          cache: "no-store", signal: controller.signal
+        });
+        if (!response.ok) throw new Error("HTTP " + response.status);
+        let feed;
+        if (source.format === "github") {
+          const envelope = await response.json();
+          if (envelope.encoding !== "base64" || typeof envelope.content !== "string")
+            throw new Error("GitHub content response malformed");
+          const decoded = atob(envelope.content.replace(/\s/g, ""));
+          const bytes = Uint8Array.from(decoded, ch => ch.charCodeAt(0));
+          feed = JSON.parse(new TextDecoder("utf-8").decode(bytes));
+        } else {
+          feed = await response.json();
+        }
+        if (!feed || feed.network !== "velayat_farsi" || !Array.isArray(feed.items))
+          throw new Error("Feed data incomplete");
+        return {feed, source: source.name};
+      } catch (err) {
+        diagnostics.push(source.name + ": " + (err && err.message || "unavailable"));
+        if (source.format === "github") apiUnreachableUntil = Date.now() + 600000;
+      } finally {
+        clearTimeout(timeout);
+      }
+    }
+    throw new Error("All isolated public feed sources unavailable: " + diagnostics.join("; "));
+  };
   const $ = id => document.getElementById(id);
   const append = (tag, cls, content) => {
     const node = document.createElement(tag);
@@ -35,10 +79,7 @@
   }
   async function refresh() {
     try {
-      const response = await fetch(origin + "?_=" + Date.now(), { cache: "no-store" });
-      if (!response.ok) throw new Error("Source unavailable");
-      const feed = await response.json();
-      if (!feed || feed.network !== "velayat_farsi" || !Array.isArray(feed.items)) throw new Error("Bad feed");
+      const {feed, source} = await loadFeed();
       const age = Date.now() - Date.parse(feed.updated_at || "");
       const fresh = Number.isFinite(age) && age > -120000 && age < 240000;
       const live = feed.status === "live" && fresh;
@@ -46,7 +87,7 @@
         (fresh && feed.status === "reviewing" ? "صوت دریافت شد؛ بررسی متن" :
         (fresh && feed.status === "starting" ? "تبدیل گفتار و ویراستاری" : "آخرین مطالب ثبت‌شده"));
       $("live-program").textContent = String(feed.program || "شبکه ولایت فارسی").slice(0, 100);
-      $("live-updated").textContent = "آخرین دریافت: " + dateLabel(feed.updated_at);
+      $("live-updated").textContent = "آخرین داده: " + dateLabel(feed.updated_at) + " | " + source;
       const wrap = $("live-content");
       wrap.replaceChildren();
       if (!programWindowOpen(feed)) {
@@ -81,13 +122,13 @@
         wrap.append(node);
       }
     } catch (err) {
-      $("live-status").textContent = "اختلال دریافت داده";
+      $("live-status").textContent = "اتصال داده برقرار نیست (۳ مسیر بررسی شد)";
       $("live-updated").textContent = "دریافت داده ناموفق؛ بررسی اتصال GitHub";
       const wrap = $("live-content");
       // If a browser occasionally fails to reach raw.githubusercontent.com,
       // preserve on-screen previously accepted material instead of erasing it.
       if (!wrap.children.length) {
-        wrap.append(append("div", "tv-empty", "اتصال صفحه به داده زنده برقرار نیست؛ آخرین مطالب حفظ می‌شوند."));
+        wrap.append(append("div", "tv-empty", "اتصال مرورگر به منابع داده GitHub برقرار نیست. این پیام مربوط به نمایش است، نه لزوماً توقف ضبط شبکه."));
       }
       console.warn("Pasokhnama isolated feed fetch failed:", err && err.message);
     }
