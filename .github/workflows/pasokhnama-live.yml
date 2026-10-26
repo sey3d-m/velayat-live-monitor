@@ -16,7 +16,7 @@ permissions:
 
 concurrency:
   group: pasokhnama-live-${{ github.event.client_payload.slot || inputs.slot }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   live:
@@ -60,7 +60,7 @@ jobs:
             faster-whisper-${{ runner.os }}-
             pasokhnama-whisper-small-${{ runner.os }}-
       - name: Install free local Persian transcription engine
-        run: pip install faster-whisper==1.2.1
+        run: pip install faster-whisper==1.2.1 'av==17.1.0'
       - name: Transcribe in parallel with the existing Didban workflow
         env:
           STREAM_URL: ${{ secrets.STREAM_URL }}
@@ -70,4 +70,4 @@ jobs:
           PROGRAM_DATE: ${{ github.event.client_payload.date || '' }}
           PASOKHNAMA_WHISPER_MODEL: small
           PASOKHNAMA_MAX_MINUTES: '70'
-        run: python pasokhnama_live_capture.py
+        run: python -u pasokhnama_live_capture.py
