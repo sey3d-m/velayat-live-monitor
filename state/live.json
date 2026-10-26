@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T16:30:18.477547+00:00",
+  "updated_at": "2026-10-26T16:31:23.345472+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
@@ -44,14 +44,26 @@
       "sequence": 15,
       "updated_at": "2026-10-26T16:30:18.477520+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی اعتقادات و مرزهای توحید در امامت",
+      "summary": "در این بخش درباره تفاوت مقام امامت با الوهیت و پرهیز از انحرافات مشابه مسیحیت در شناخت ائمه گفتگو می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40357909904-17",
+      "sequence": 17,
+      "updated_at": "2026-10-26T16:31:23.345446+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 16,
-    "segments_transcribed": 16,
-    "editor_attempts": 8,
+    "segments_captured": 18,
+    "segments_transcribed": 18,
+    "editor_attempts": 9,
     "editor_withheld": 6,
-    "topics_published": 3,
-    "last_audio_at": "2026-10-26T16:29:55.734825+00:00"
+    "topics_published": 4,
+    "last_audio_at": "2026-10-26T16:31:02.800012+00:00"
   }
 }
