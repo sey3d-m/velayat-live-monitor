@@ -53,6 +53,11 @@
         wrap.append(append("div", "tv-empty", "مطالب این برنامه از ساعت رسمی پخش نمایش داده می‌شوند."));
         return;
       }
+      if (!fresh) {
+        $("live-status").textContent = "در انتظار متن ویرایش‌شده جدید";
+        wrap.append(append("div", "tv-empty", "هنوز تیتر و متن تازه و قابل نمایش دریافت نشده است."));
+        return;
+      }
       const items = feed.items.filter(item => item && item.kind === "edited_transcript" &&
         item.verification_status === "machine_edited_unverified" &&
         item.scope === "topic_only" &&
