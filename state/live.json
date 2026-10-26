@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T17:52:03.766777+00:00",
+  "updated_at": "2026-10-26T17:52:48.417776+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره خانواده و ازدواج",
-      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40366703147-14",
-      "sequence": 14,
-      "updated_at": "2026-10-26T17:38:51.879371+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی کرامات اولیاء خدا و اهل‌بیت",
       "summary": "در این بخش درباره پذیرش کرامات اولیاء خدا و معجزات پیامبران در میان شیعه و اهل سنت و نیز نقل کرامات از حضرت فاطمه زهرا سلام‌الله‌علیها گفتگو شده است.",
@@ -68,16 +55,28 @@
       "sequence": 36,
       "updated_at": "2026-10-26T17:51:39.322734+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی آرامش و محبت در خانواده بر اساس آیات قرآن",
+      "summary": "در این بخش به موضوع آرامش در زندگی مشترک و وجود محبت و رحمت میان همسران بر اساس آیات قرآن کریم پرداخته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40366703147-38",
+      "sequence": 38,
+      "updated_at": "2026-10-26T17:52:48.417761+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 38,
-    "segments_transcribed": 37,
-    "editor_attempts": 18,
+    "segments_captured": 39,
+    "segments_transcribed": 38,
+    "editor_attempts": 19,
     "editor_withheld": 9,
-    "topics_published": 10,
+    "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T17:51:58.884525+00:00"
+    "last_audio_at": "2026-10-26T17:52:35.398623+00:00"
   }
 }
