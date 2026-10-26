@@ -54,24 +54,25 @@
         wrap.append(append("div", "tv-empty", "مطالب این برنامه از ساعت رسمی پخش نمایش داده می‌شوند."));
         return;
       }
+      // OBS must NOT turn blank merely because the upstream published
+      // fewer than four minutes ago. Previously accepted headlines stay
+      // visible as ARCHIVE with an explicit stale status, never as "live".
       if (!fresh) {
-        $("live-status").textContent = "در انتظار متن ویرایش‌شده جدید";
-        wrap.append(append("div", "tv-empty", "هنوز تیتر و متن تازه و قابل نمایش دریافت نشده است."));
-        return;
+        $("live-status").textContent = "آخرین مطالب ثبت‌شده (غیرزنده)";
       }
       const items = feed.items.filter(item => item && item.kind === "edited_transcript" &&
         item.verification_status === "machine_edited_unverified" &&
         item.scope === "topic_only" &&
         typeof item.title === "string" && item.title.length >= 12 &&
-        typeof item.summary === "string" && item.summary.length >= 85).slice(-3).reverse();
+        typeof item.summary === "string" && item.summary.trim().length >= 35).slice(-3).reverse();
       if (!items.length) {
         const progress = feed.progress || {};
         const audioChunks = Number(progress.segments_captured) || 0;
         const edits = Number(progress.editor_attempts) || 0;
         wrap.append(append("div", "tv-empty", audioChunks > 0
-          ? "صوت زنده دریافت شده (" + audioChunks + " قطعه)؛ " +
-            edits + " بخش بررسی شده و هنوز موضوع قابل انتشار تأیید نشده است."
-          : "در انتظار دریافت و بازنویسی صوت برنامه فارسی …"));
+          ? "صوت برنامه دریافت شده (" + audioChunks + " قطعه)؛ " +
+            edits + " بخش بررسی شده و هنوز موضوع قابل انتشار ثبت نشده است."
+          : "هنوز تیتر ثبت نشده؛ وضعیت اتصال و دریافت صوت در حال بررسی است."));
       }
       for (const item of items) {
         const node = append("article", "tv-card", "");
@@ -79,9 +80,16 @@
         node.append(append("p", "", item.summary.slice(0, 390)));
         wrap.append(node);
       }
-    } catch (_) {
-      $("live-status").textContent = "اتصال داده موقتاً قطع است";
-      $("live-updated").textContent = "در انتظار تازه‌سازی";
+    } catch (err) {
+      $("live-status").textContent = "اختلال دریافت داده";
+      $("live-updated").textContent = "دریافت داده ناموفق؛ بررسی اتصال GitHub";
+      const wrap = $("live-content");
+      // If a browser occasionally fails to reach raw.githubusercontent.com,
+      // preserve on-screen previously accepted material instead of erasing it.
+      if (!wrap.children.length) {
+        wrap.append(append("div", "tv-empty", "اتصال صفحه به داده زنده برقرار نیست؛ آخرین مطالب حفظ می‌شوند."));
+      }
+      console.warn("Pasokhnama isolated feed fetch failed:", err && err.message);
     }
   }
   refresh();
