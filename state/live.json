@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:23:32.135818+00:00",
+  "updated_at": "2026-10-26T18:24:40.676520+00:00",
   "items": [
     {
       "title": "بررسی معیارهای ازدواج و ارزش‌های مادی و معنوی",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 92,
-    "segments_transcribed": 91,
-    "editor_attempts": 45,
-    "editor_withheld": 21,
+    "segments_captured": 94,
+    "segments_transcribed": 93,
+    "editor_attempts": 46,
+    "editor_withheld": 22,
     "topics_published": 26,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:23:26.697332+00:00"
+    "last_audio_at": "2026-10-26T18:24:38.692841+00:00"
   }
 }
