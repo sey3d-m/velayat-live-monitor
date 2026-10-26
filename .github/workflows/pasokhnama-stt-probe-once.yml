@@ -1,0 +1,41 @@
+name: Validate Pasokhnama Persian transcription engine (isolated)
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/pasokhnama-stt-probe-once.yml']
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Install local transcription
+        run: pip install -q faster-whisper==1.2.1
+      - name: Test model startup and speech on real broadcast audio
+        shell: bash
+        env:
+          STREAM_URL: ${{ secrets.STREAM_URL }}
+          HF_HUB_DISABLE_TELEMETRY: '1'
+        run: |
+          set -euo pipefail
+          if ! command -v ffmpeg >/dev/null 2>&1; then
+            sudo apt-get update -qq && sudo apt-get install -y ffmpeg >/dev/null
+          fi
+          timeout 95s ffmpeg -nostdin -hide_banner -loglevel quiet -i "$STREAM_URL" \
+            -map 0:a:0 -t 20 -vn -ac 1 -ar 16000 -c:a pcm_s16le \
+            -y "$RUNNER_TEMP/audio.wav"
+          export TEST_AUDIO="$RUNNER_TEMP/audio.wav"
+          timeout 220s python -u - <<'PY'
+          from faster_whisper import WhisperModel
+          import os, time
+          t=time.monotonic()
+          print("PROBE: loading local Whisper base model",flush=True)
+          m=WhisperModel("base",device="cpu",compute_type="int8",cpu_threads=2,num_workers=1)
+          print(f"PROBE: model ready after {time.monotonic()-t:.2f}s",flush=True)
+          segments, info=m.transcribe(os.environ["TEST_AUDIO"],language="fa",beam_size=1,best_of=1,
+                                     vad_filter=False,condition_on_previous_text=False)
+          text=" ".join(s.text for s in segments)
+          print(f"PROBE: transcription complete after {time.monotonic()-t:.2f}s; characters={len(text)}, words={len(text.split())}",flush=True)
+          if len(text)<5: raise SystemExit("Speech sample yielded no captions; possible silent/musical segment.")
+          PY
