@@ -1,0 +1,40 @@
+# One-time safety probe with real archived noisy ASR; publishes nothing.
+name: Verify Persian headlines on actual recorded ASR
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/pasokhnama-editor-real-asr-once.yml']
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rewrite two real neighboring broadcast speech segments
+        shell: bash
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PASOKHNAMA_EDIT_MODEL: gemini-3.5-flash-lite
+        run: |
+          python -u - <<'PY'
+          import json,os,urllib.request
+          from pasokhnama_live_editor import rewrite
+          url="https://raw.githubusercontent.com/sey3d-m/velayat-live-monitor/b3343e4ab0ceebb93204c34c52ad4525aab63ba7/state/live.json"
+          with urllib.request.urlopen(url,timeout=20) as response:
+              data=json.load(response)
+          clips=[item["summary"] for item in data["items"] if item.get("sequence") in (21,22)]
+          assert len(clips)==2, "Historical audio-caption sample unavailable"
+          try:
+              result=rewrite("\n".join(clips),os.environ["GEMINI_API_KEY"],timeout=55)
+          except RuntimeError as e:
+              print("REAL_ASR_SMOKE: service error: "+str(e))
+              raise SystemExit(3)
+          if result is None:
+              print("REAL_ASR_SMOKE: uncertain noisy speech correctly withheld")
+          else:
+              print("REAL_ASR_SMOKE: ACCEPTED headline="+result["title"])
+              print("REAL_ASR_SMOKE: summary="+result["summary"])
+              print("REAL_ASR_SMOKE: verification="+result["verification_status"])
+          PY
