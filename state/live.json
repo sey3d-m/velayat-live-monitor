@@ -1,48 +1,11 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "40352228702",
+  "session": "40353089945",
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
-  "started_at": "2026-10-26T15:44:43.537063+00:00",
-  "updated_at": "2026-10-26T15:49:54.900031+00:00",
-  "items": [
-    {
-      "title": "بررسی ویژگی‌های منتظران واقعی امام",
-      "summary": "در این بخش به ویژگی‌های منتظران واقعی و لزوم توجه به مسئولیت‌های خانوادگی و اجتماعی در کنار ادعای یاری امام پرداخته می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40352228702-3",
-      "sequence": 3,
-      "updated_at": "2026-10-26T15:47:16.926015+00:00",
-      "speaker": null
-    },
-    {
-      "title": "تبیین مفهوم مهدویت و مهربانی در جامعه",
-      "summary": "در این بخش به تبیین مفهوم مهدویت پرداخته شده و تأکید می‌شود که انتظار واقعی با مهربانی، حمایت از یکدیگر در سختی‌ها و اتحاد مؤمنان معنا پیدا می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "explanation",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40352228702-5",
-      "sequence": 5,
-      "updated_at": "2026-10-26T15:48:35.271350+00:00",
-      "speaker": null
-    },
-    {
-      "title": "نقش یاری امام زمان در روابط خانوادگی",
-      "summary": "یاری امام زمان از درک خانواده، احترام به پدر و مادر و حفظ محبت میان اعضای خانواده آغاز می‌شود. توجه به این نکات صمیمانه موجب خشنودی و لبخند حضرت ولیعصر (عج) خواهد شد.",
-      "kind": "edited_transcript",
-      "scope": "explanation",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40352228702-7",
-      "sequence": 7,
-      "updated_at": "2026-10-26T15:49:54.900016+00:00",
-      "speaker": null
-    }
-  ]
+  "started_at": "2026-10-26T15:52:34.253681+00:00",
+  "updated_at": "2026-10-26T16:00:00.000365+00:00",
+  "items": []
 }
