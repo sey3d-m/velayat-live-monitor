@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T17:50:26.068810+00:00",
+  "updated_at": "2026-10-26T17:50:56.512537+00:00",
   "items": [
     {
       "title": "بررسی جایگاه و الگو بودن حضرت زهرا (س)",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 35,
-    "segments_transcribed": 34,
+    "segments_captured": 36,
+    "segments_transcribed": 35,
     "editor_attempts": 17,
     "editor_withheld": 9,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T17:50:13.330576+00:00"
+    "last_audio_at": "2026-10-26T17:50:51.789241+00:00"
   }
 }
