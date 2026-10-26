@@ -11,11 +11,15 @@
     {name: "پشتیبان سایت (غیرزنده)", url: "data/pasokhnama-snapshot.json", format: "json"}
   ];
   let apiUnreachableUntil = 0;
+  let apiNextAllowedAt = 0;
+  let lastSessionStarted = -Infinity;
+  let lastFeedUpdated = -Infinity;
+  let refreshing = false;
   const loadFeed = async () => {
     const diagnostics = [];
     for (const source of sources) {
       // Rate-limit fallback API requests when source 1 is inaccessible.
-      if (source.format === "github" && Date.now() < apiUnreachableUntil) continue;
+      if (source.format === "github" && Date.now() < Math.max(apiUnreachableUntil, apiNextAllowedAt)) continue;
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), 6500);
       try {
@@ -37,6 +41,7 @@
         }
         if (!feed || feed.network !== "velayat_farsi" || !Array.isArray(feed.items))
           throw new Error("Feed data incomplete");
+        if (source.format === "github") apiNextAllowedAt = Date.now() + 60000;
         return {feed, source: source.name};
       } catch (err) {
         diagnostics.push(source.name + ": " + (err && err.message || "unavailable"));
@@ -79,8 +84,21 @@
     return nowMinute >= slotMinute;
   }
   async function refresh() {
+    // A 5-second timer must never start overlapping network requests.
+    if (refreshing) return;
+    refreshing = true;
     try {
       const {feed, source} = await loadFeed();
+      // CDN/raw mirrors can lag behind the branch. Do not overwrite a
+      // newer caption/session with a cached older state.
+      const sessionStarted = Date.parse(feed.started_at || "");
+      const updated = Date.parse(feed.updated_at || "");
+      if (!Number.isFinite(sessionStarted) || !Number.isFinite(updated))
+        throw new Error("Feed timestamps invalid");
+      if (sessionStarted < lastSessionStarted ||
+          (sessionStarted === lastSessionStarted && updated < lastFeedUpdated)) return;
+      lastSessionStarted = sessionStarted;
+      lastFeedUpdated = updated;
       const age = Date.now() - Date.parse(feed.updated_at || "");
       const fresh = Number.isFinite(age) && age > -120000 && age < 240000;
       const live = feed.status === "live" && fresh;
@@ -132,8 +150,10 @@
         wrap.append(append("div", "tv-empty", "اتصال مرورگر به منابع داده GitHub برقرار نیست. این پیام مربوط به نمایش است، نه لزوماً توقف ضبط شبکه."));
       }
       console.warn("Pasokhnama isolated feed fetch failed:", err && err.message);
+    } finally {
+      refreshing = false;
     }
   }
   refresh();
-  setInterval(refresh, 25000);
+  setInterval(refresh, 5000);
 })();
