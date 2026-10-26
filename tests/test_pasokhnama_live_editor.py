@@ -59,6 +59,17 @@ class EditorialTests(unittest.TestCase):
             **VALID, "summary": "در این بخش گفته شد که برای تمام نمازهای نافله اذان و اقامه مستحب است و می‌توان این کار را به‌صورت همیشگی انجام داد.",
         }))
 
+    def test_early_dispatch_waits_for_tehran_program_clock(self):
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        import pasokhnama_live_capture as capture
+        local = ZoneInfo("Asia/Tehran")
+        with patch.object(capture, "SLOT", "19:30"), patch.object(capture, "DATE", "2026-10-26"):
+            self.assertEqual(capture.seconds_until_program(
+                datetime(2026, 10, 26, 19, 14, tzinfo=local)), 16 * 60)
+            self.assertEqual(capture.seconds_until_program(
+                datetime(2026, 10, 26, 19, 31, tzinfo=local)), -60)
+
     def test_does_not_publish_raw_text_without_key(self):
         self.assertIsNone(rewrite(SPEECH * 2, ""))
 
