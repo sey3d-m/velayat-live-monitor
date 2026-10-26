@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T17:44:59.822712+00:00",
+  "updated_at": "2026-10-26T17:45:47.232330+00:00",
   "items": [
-    {
-      "title": "بررسی شهادت حضرت صدیقه کبری",
-      "summary": "در این بخش به مناسبت ایام شهادت و تسلیت به بینندگان شبکه جهانی ولایت پرداخته شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40366703147-6",
-      "sequence": 6,
-      "updated_at": "2026-10-26T17:33:59.434657+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی ابعاد زندگانی حضرت فاطمه زهرا (س)",
       "summary": "در این بخش درباره ابعاد زندگانی حضرت فاطمه زهرا سلام‌الله‌علیها و الگو بودن ایشان برای بانوان و جامعه امروز گفتگو شد.",
@@ -68,16 +56,28 @@
       "sequence": 14,
       "updated_at": "2026-10-26T17:38:51.879371+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی کرامات اولیاء خدا و اهل‌بیت",
+      "summary": "در این بخش درباره پذیرش کرامات اولیاء خدا و معجزات پیامبران در میان شیعه و اهل سنت و نیز نقل کرامات از حضرت فاطمه زهرا سلام‌الله‌علیها گفتگو شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40366703147-26",
+      "sequence": 26,
+      "updated_at": "2026-10-26T17:45:47.232314+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 26,
-    "segments_transcribed": 25,
-    "editor_attempts": 12,
+    "segments_captured": 27,
+    "segments_transcribed": 26,
+    "editor_attempts": 13,
     "editor_withheld": 7,
-    "topics_published": 6,
+    "topics_published": 7,
     "audio_ai_calls": 2,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-26T17:44:56.123616+00:00"
+    "last_audio_at": "2026-10-26T17:45:31.193289+00:00"
   }
 }
