@@ -43,7 +43,13 @@ jobs:
           set -euo pipefail
           test -n "$STREAM_URL" || { echo 'Stream secret unavailable'; exit 1; }
           [[ "$PROGRAM_SLOT" =~ ^(18:00|19:30|21:00)$ ]] || { echo 'Invalid program slot'; exit 1; }
-          command -v ffmpeg
+          # Hosted Actions images may omit FFmpeg; install ONLY inside this independent job.
+          if ! command -v ffmpeg >/dev/null 2>&1; then
+            echo 'Installing FFmpeg on the isolated Pasokhnama runner.'
+            sudo apt-get update -qq
+            sudo apt-get install -y ffmpeg
+          fi
+          ffmpeg -hide_banner -version >/dev/null
       - name: Reuse local Whisper model cache
         uses: actions/cache@v4
         with:
