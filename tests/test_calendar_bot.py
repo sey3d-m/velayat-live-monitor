@@ -216,7 +216,8 @@ class CalendarBotTests(unittest.TestCase):
             "DIDBAN_CONTROL_ADMIN_IDS": "12345",
         }), patch.object(bot, "bale_api", return_value={"ok": True}) as api:
             bot.welcome()
-        self.assertEqual(api.call_count, 1)
+        self.assertEqual(api.call_count, 2)
+        self.assertEqual(api.call_args_list[0].args[1], "getWebhookInfo")
         token, method, params = api.call_args.args
         self.assertEqual(token, "dummy-secure-token")
         self.assertEqual(method, "sendMessage")
