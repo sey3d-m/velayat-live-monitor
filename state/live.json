@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T16:32:29.915470+00:00",
+  "updated_at": "2026-10-26T16:33:47.528288+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40357909904-5",
-      "sequence": 5,
-      "updated_at": "2026-10-26T16:24:26.975385+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی ترجمه‌های قرآن کریم و زبان فارسی",
       "summary": "در این بخش درباره زبان فارسی و مقایسه ترجمه‌های مختلف قرآن کریم از جمله ترجمه‌های مراجع تقلید و مفسران شیعه و اهل سنت گفتگو می‌شود.",
@@ -68,14 +55,26 @@
       "sequence": 19,
       "updated_at": "2026-10-26T16:32:29.915445+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ادعاها پیرامون تاریخ و تفکرات منافقین",
+      "summary": "در این بخش به موضوع ادعاها و اظهارات مطرح‌شده درباره عملکرد و تفکرات منافقین، از جمله وقایع تاریخی و تفسیر آیات، پرداخته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "id": "40357909904-21",
+      "sequence": 21,
+      "updated_at": "2026-10-26T16:33:47.528263+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 20,
-    "segments_transcribed": 20,
-    "editor_attempts": 10,
+    "segments_captured": 22,
+    "segments_transcribed": 22,
+    "editor_attempts": 11,
     "editor_withheld": 6,
-    "topics_published": 5,
-    "last_audio_at": "2026-10-26T16:32:10.880226+00:00"
+    "topics_published": 6,
+    "last_audio_at": "2026-10-26T16:33:23.833290+00:00"
   }
 }
