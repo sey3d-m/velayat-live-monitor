@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T17:52:48.417776+00:00",
+  "updated_at": "2026-10-26T17:53:17.923172+00:00",
   "items": [
     {
       "title": "بررسی کرامات اولیاء خدا و اهل‌بیت",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 39,
-    "segments_transcribed": 38,
+    "segments_captured": 40,
+    "segments_transcribed": 39,
     "editor_attempts": 19,
     "editor_withheld": 9,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T17:52:35.398623+00:00"
+    "last_audio_at": "2026-10-26T17:53:13.745644+00:00"
   }
 }
