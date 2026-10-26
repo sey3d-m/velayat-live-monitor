@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T17:50:56.512537+00:00",
+  "updated_at": "2026-10-26T17:51:39.322749+00:00",
   "items": [
-    {
-      "title": "بررسی جایگاه و الگو بودن حضرت زهرا (س)",
-      "summary": "در این بخش درباره الگو قرار دادن باورها، اخلاق و رفتار حضرت زهرا (س) برای رسیدن به کمال و سعادت جامعه و همچنین معیار شناخت حق در اختلافات گفت‌وگو می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40366703147-12",
-      "sequence": 12,
-      "updated_at": "2026-10-26T17:37:36.873605+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره خانواده و ازدواج",
       "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -68,16 +56,28 @@
       "sequence": 34,
       "updated_at": "2026-10-26T17:50:26.068790+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی الگوگیری از زندگی اهل بیت در خانواده",
+      "summary": "در این بخش درباره چگونگی الگوبرداری از زندگی امیرالمؤمنین و حضرت زهرا سلام‌الله‌علیهما در کانون خانواده و روابط زوجین گفت‌وگو می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40366703147-36",
+      "sequence": 36,
+      "updated_at": "2026-10-26T17:51:39.322734+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 36,
-    "segments_transcribed": 35,
-    "editor_attempts": 17,
+    "segments_captured": 37,
+    "segments_transcribed": 36,
+    "editor_attempts": 18,
     "editor_withheld": 9,
-    "topics_published": 9,
+    "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T17:50:51.789241+00:00"
+    "last_audio_at": "2026-10-26T17:51:22.105258+00:00"
   }
 }
