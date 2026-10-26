@@ -32,6 +32,12 @@ jobs:
           DIDBAN_CONTROL_ADMIN_IDS: ${{ secrets.DIDBAN_CONTROL_ADMIN_IDS }}
         run: python didban_calendar_bot.py poll
 
+      - name: Discard partial bot changes if polling fails
+        if: ${{ steps.bale_control.outcome == 'failure' }}
+        shell: bash
+        run: |
+          git restore -- config/didban_extra_programs.json docs/data/extra-programs.json config/didban_calendar_bot_state.json
+
       - name: Persist approved bot changes before responding
         if: ${{ steps.bale_control.outcome == 'success' }}
         shell: bash
@@ -48,6 +54,7 @@ jobs:
 
       - name: Reply to private calendar bot commands
         if: ${{ steps.bale_control.outcome == 'success' }}
+        continue-on-error: true
         env:
           DIDBAN_CONTROL_BOT_TOKEN: ${{ secrets.DIDBAN_CONTROL_BOT_TOKEN }}
         run: python didban_calendar_bot.py reply
