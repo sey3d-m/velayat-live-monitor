@@ -20,23 +20,29 @@ PROMPT = """نقش: ویراستار حرفه‌ای فارسی برای نما�
 احکام، نام‌ها، اعداد و نقل‌قول‌ها بسیار زیاد است.
 
 وظیفه:
-- فقط اگر یک موضوع واحد و معنای آن از رونوشت به قدر کافی روشن است،
-  یک تیتر دقیق، خبری و غیرهیجانی و یک پاراگراف فارسی روان و درست بنویس.
+- اگر حکم، نتیجه یا توضیح دقیق از رونوشت روشن است، scope=explanation و یک تیتر
+  دقیق و پاراگراف روان بنویس. اگر فقط موضوع واحد گفت‌وگو روشن است ولی حکم
+  یا نتیجه نامفهوم است، scope=topic_only بگذار و فقط موضوع طرح‌شده را با
+  تیتر «بررسی ...» یا «پرسش درباره ...» توصیف کن؛ هیچ پاسخ یا حکم نساز.
 - غلط‌های واضح تبدیل گفتار، جمله‌بندی، دستور زبان و نیم‌فاصله را اصلاح کن؛
   پرسش‌ها را به حکم شرعی قطعی تبدیل نکن.
 - متن نهایی ۱ تا ۳ جمله و ترجیحاً ۱۰۰ تا ۳۰۰ نویسه باشد؛ تیتر ۱۲ تا ۸۰ نویسه.
 - هیچ تفسیر فقهی جدید، تصحیح علمی حدسی، انتساب گوینده، حدیث، آیه،
   مرجع، سند، اسم، عدد، نتیجه، پاسخ یا ادعایی خارج از همین رونوشت نساز.
-- اگر واژه‌ای نامفهوم است و اصلاح قطعی نیست، آن ادعا را حذف کن؛
-  اگر موضوع اصلی مبهم است publish=false برگردان.
+- اگر واژه‌ای نامفهوم است و اصلاح قطعی نیست، آن ادعا را حذف کن.
+  موضوع قابل‌فهم را به‌جای حذف کامل، فقط در سطح معرفی موضوع بازنویسی کن.
+  اگر خود موضوع هم روشن نیست publish=false برگردان.
 - عبارت evidence_excerpt باید حداقل ۲۰ نویسه و عیناً یک بخش پیوسته
   از همین رونوشت خام باشد تا مشخص شود متن بر چه بخشی بنا شده است.
 - هیچ توصیه به مخاطب یا نتیجه‌گیری مستقل نیاور. بازنویسی نقل‌قول مستقیم نیست.
-- اگر محتوا حاوی سخن پراکنده یا سؤال بی‌پاسخ است، انتشار نده.
+- پرسش بی‌پاسخ را فقط با scope=topic_only معرفی کن، هرگز پاسخی نساز.
+- scope=topic_only: تیتر باید با «بررسی»، «پرسش درباره» یا «گفت‌وگو درباره»
+  آغاز شود. متن با «در این بخش» یا «در گفت‌وگو» آغاز شود و فاقد حکم قطعی باشد.
+- scope=explanation: فقط توضیحی را بده که از رونوشت به قدر کافی واضح است.
 فقط JSON بدون متن اضافه:
-{"publish":true,"title":"...","summary":"...","evidence_excerpt":"...","confidence":0.0}
+{"publish":true,"scope":"explanation","title":"...","summary":"...","evidence_excerpt":"...","confidence":0.0}
 اگر معنا روشن نیست:
-{"publish":false,"title":"","summary":"","evidence_excerpt":"","confidence":0.0}
+{"publish":false,"scope":"topic_only","title":"","summary":"","evidence_excerpt":"","confidence":0.0}
 
 رونوشت:
 """
@@ -62,10 +68,20 @@ def validate(source: str, result: object) -> dict | None:
         confidence = float(result.get("confidence", 0))
     except (ValueError, TypeError):
         return None
-    if not 0.85 <= confidence <= 1.0:
+    scope = result.get("scope", "explanation")
+    if scope not in ("explanation", "topic_only"):
         return None
-    if not (12 <= len(title) <= 80 and 85 <= len(summary) <= 390):
+    if not (0.78 if scope == "topic_only" else 0.85) <= confidence <= 1.0:
         return None
+    if not (12 <= len(title) <= 80 and (70 if scope == "topic_only" else 85) <= len(summary) <= 390):
+        return None
+    if scope == "topic_only":
+        if not title.startswith(("بررسی", "پرسش درباره", "گفت‌وگو درباره")):
+            return None
+        if not summary.startswith(("در این بخش", "در گفت‌وگو")):
+            return None
+        if any(claim in summary for claim in ("واجب است", "حرام است", "جایز است", "لازم نیست", "اشکالی ندارد", "باید انجام", "ضروری است")):
+            return None
     if len(evidence) < 20 or evidence not in source:
         return None
     if any(x in title + summary for x in ("<script", "</", "###", "http://", "https://")):
@@ -79,6 +95,7 @@ def validate(source: str, result: object) -> dict | None:
         "title": title,
         "summary": summary,
         "kind": "edited_transcript",
+        "scope": scope,
         "verification_status": "machine_edited_unverified",
         "editor_confidence": round(confidence, 3),
     }
