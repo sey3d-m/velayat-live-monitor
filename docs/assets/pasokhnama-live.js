@@ -26,20 +26,22 @@
       const fresh = Number.isFinite(age) && age > -120000 && age < 240000;
       const live = feed.status === "live" && fresh;
       $("live-status").textContent = live ? "دریافت زنده" :
-        (fresh && feed.status === "starting" ? "پردازش صوت" : "آخرین مطالب ثبت‌شده");
+        (fresh && feed.status === "starting" ? "تبدیل گفتار و ویراستاری" : "آخرین مطالب ثبت‌شده");
       $("live-program").textContent = String(feed.program || "شبکه ولایت فارسی").slice(0, 100);
       $("live-updated").textContent = "آخرین دریافت: " + dateLabel(feed.updated_at);
       const wrap = $("live-content");
       wrap.replaceChildren();
-      const items = feed.items.filter(item => item && item.kind === "automatic_transcript" &&
-        item.verification_status === "unverified" && typeof item.summary === "string").slice(-3).reverse();
+      const items = feed.items.filter(item => item && item.kind === "edited_transcript" &&
+        item.verification_status === "machine_edited_unverified" &&
+        typeof item.title === "string" && item.title.length >= 12 &&
+        typeof item.summary === "string" && item.summary.length >= 85).slice(-3).reverse();
       if (!items.length) {
-        wrap.append(append("div", "tv-empty", "در انتظار دریافت رونوشت واقعی برنامه فارسی …"));
+        wrap.append(append("div", "tv-empty", "در انتظار استخراج و بازنویسی دقیق مطالب برنامه فارسی …"));
       }
       for (const item of items) {
         const node = append("article", "tv-card", "");
-        node.append(append("h2", "", "گزیده خودکار از گفت‌وگوی در حال پخش"));
-        node.append(append("p", "", item.summary.slice(0, 290)));
+        node.append(append("h2", "", item.title.slice(0, 90)));
+        node.append(append("p", "", item.summary.slice(0, 390)));
         wrap.append(node);
       }
     } catch (_) {
