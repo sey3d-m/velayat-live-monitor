@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T17:46:14.343316+00:00",
+  "updated_at": "2026-10-26T17:47:38.543074+00:00",
   "items": [
     {
       "title": "بررسی ابعاد زندگانی حضرت فاطمه زهرا (س)",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 28,
-    "segments_transcribed": 27,
-    "editor_attempts": 13,
-    "editor_withheld": 7,
+    "segments_captured": 30,
+    "segments_transcribed": 29,
+    "editor_attempts": 14,
+    "editor_withheld": 8,
     "topics_published": 7,
     "audio_ai_calls": 2,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-26T17:46:09.750308+00:00"
+    "last_audio_at": "2026-10-26T17:47:22.746576+00:00"
   }
 }
