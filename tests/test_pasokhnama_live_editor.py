@@ -118,5 +118,52 @@ class EditorialTests(unittest.TestCase):
         with patch("pasokhnama_live_editor.urllib.request.urlopen", return_value=Reply()):
             self.assertEqual(rewrite(SPEECH * 2, "test-token")["title"], VALID["title"])
 
+
+    def test_precise_quotation_is_reported_not_issued_as_fatwa(self):
+        source = ("در آیه ۵۵ سوره مائده صحبت از ولی شماست. کارشناس گفت "
+                  "در این گفت‌وگو مصداق الذین آمنوا محل بحث است و درباره "
+                  "ارتباط آن با ولایت امیرالمؤمنین توضیح می‌دهد. ")
+        sample = {
+            "publish": True,
+            "scope": "topic_only",
+            "title": "بررسی مصداق الذین آمنوا در آیه ۵۵ سوره مائده",
+            "summary": "در این بخش کارشناس با اشاره به آیه ۵۵ سوره مائده، درباره مصداق تعبیر الذین آمنوا بحث می‌کند و ارتباط آن با ولایت امیرالمؤمنین را به عنوان موضوع استدلال خود مطرح می‌سازد.",
+            "evidence_excerpt": "در آیه ۵۵ سوره مائده صحبت از ولی شماست",
+            "confidence": 0.94,
+        }
+        self.assertIsNotNone(validate(source, sample))
+        self.assertIsNone(validate(source, {
+            **sample, "summary": sample["summary"] + " و حکم قطعی آیه ۹۹۹۹ اعلام شد."
+        }))
+
+    def test_nonblocking_editor_batch_does_not_publish_or_change_didban(self):
+        from pasokhnama_live_capture import edit_batch
+        with patch("pasokhnama_live_capture.rewrite", return_value={
+            "title": VALID["title"], "summary": VALID["summary"],
+            "scope": "topic_only", "kind": "edited_transcript",
+            "verification_status": "machine_edited_unverified",
+        }):
+            edited, withheld, called, success = edit_batch(SPEECH, "already-existing-key")
+        self.assertFalse(withheld)
+        self.assertFalse(called)
+        self.assertFalse(success)
+        self.assertEqual(edited["title"], VALID["title"])
+
+    def test_duplicate_filter_retains_different_claims(self):
+        from pasokhnama_live_capture import similar_previous
+        old = {"title": "بررسی اذان و اقامه هنگام نماز ظهر",
+               "summary": "در این بخش موضوع اذان نماز ظهر و اقامه جداگانه مطرح شد."}
+        self.assertTrue(similar_previous(old, [old]))
+        new = {"title": "بررسی انتخاب دوست و تأثیر آن بر تربیت فرزند",
+               "summary": "در این بخش نقش معاشرت با دوستان و الگوی رفتاری والدین مطرح شد."}
+        self.assertFalse(similar_previous(new, [old]))
+
+    def test_chunked_capture_contract_remains_independent(self):
+        import pasokhnama_live_capture as capture
+        self.assertEqual(capture.DATA_BRANCH, "pasokhnama-live-data")
+        self.assertEqual(capture.DATA_PATH, "state/live.json")
+        self.assertLess(capture.CHUNK_SECONDS, 35)
+        self.assertEqual(capture.MAX_ITEMS, 5)
+
 if __name__ == "__main__":
     unittest.main()
