@@ -12,7 +12,7 @@ import re
 import urllib.error
 import urllib.request
 
-MODEL = os.environ.get("PASOKHNAMA_EDIT_MODEL", "gemini-2.5-flash")
+MODEL = os.environ.get("PASOKHNAMA_EDIT_MODEL", "gemini-3.5-flash-lite")
 API_ROOT = "https://generativelanguage.googleapis.com/v1beta/models/"
 MAX_SOURCE = 2600
 PROMPT = """نقش: ویراستار حرفه‌ای فارسی برای نمایش زنده تلویزیونی شبکه ولایت.
