@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T17:08:42.862234+00:00",
+  "updated_at": "2026-10-26T17:09:54.747255+00:00",
   "items": [
-    {
-      "title": "بررسی مباحث اعتقادی و جریان‌شناسی",
-      "summary": "در این بخش به موضوع شناخت جریان‌ها و مباحث مرتبط با اعتقادات و مسائل دینی پرداخته می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40357909904-60",
-      "sequence": 60,
-      "updated_at": "2026-10-26T16:56:25.869551+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی حمد و سپاس الهی در سخنان مطرح‌شده",
       "summary": "در این بخش، موضوع شکرگزاری و حمد الهی بر اساس نعمت‌های بی‌شمار و دعوت بندگان به سپاسگزاری مطرح شد، بدون اینکه حکم قطعی یا نتیجه‌گیری خاصی ارائه گردد.",
@@ -67,14 +55,26 @@
       "sequence": 81,
       "updated_at": "2026-10-26T17:08:42.862209+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی عبارات عربی و فارسی در رحلت و فضائل",
+      "summary": "در این بخش به بررسی عبارات منقول درباره رحلت و توصیفاتی پیرامون مقامات معنوی پرداخته شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "id": "40357909904-83",
+      "sequence": 83,
+      "updated_at": "2026-10-26T17:09:54.747229+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 82,
-    "segments_transcribed": 80,
-    "editor_attempts": 40,
+    "segments_captured": 84,
+    "segments_transcribed": 82,
+    "editor_attempts": 41,
     "editor_withheld": 27,
-    "topics_published": 15,
-    "last_audio_at": "2026-10-26T17:08:24.932237+00:00"
+    "topics_published": 16,
+    "last_audio_at": "2026-10-26T17:09:32.457952+00:00"
   }
 }
