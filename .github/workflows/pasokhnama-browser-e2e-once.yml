@@ -30,17 +30,21 @@ jobs:
               headless:true,args:['--no-sandbox','--disable-dev-shm-usage']});
             let hasFailure=false;
             try {
-              for(const blockRaw of [false,true]) {
+              for(const blocked of [0,1,2]) {
                 const page=await browser.newPage({viewport:{width:1280,height:720}});
                 const errors=[];
                 page.on('pageerror',err=>errors.push(err.message));
-                if(blockRaw) {
+                if(blocked >= 1) {
                   await page.route('https://raw.githubusercontent.com/**', route=>route.abort());
                 }
+                if(blocked >= 2) {
+                  await page.route('https://api.github.com/**', route=>route.abort());
+                  await page.route('https://cdn.jsdelivr.net/**', route=>route.abort());
+                }
                 const res=await page.goto(
-                  'https://sey3d-m.github.io/velayat-live-monitor/overlay-live.html?browser_test='+Date.now()+'&block='+blockRaw,
+                  'https://sey3d-m.github.io/velayat-live-monitor/overlay-live.html?browser_test='+Date.now()+'&block='+blocked,
                   {waitUntil:'domcontentloaded',timeout:45000});
-                await page.waitForTimeout(blockRaw?15000:8000);
+                await page.waitForTimeout(blocked===0?8000:16000);
                 const state=await page.evaluate(()=>{
                   const cards=[...document.querySelectorAll('#live-content article.tv-card')];
                   return {
@@ -56,7 +60,7 @@ jobs:
                     source:document.querySelector('#live-updated')?.textContent
                   };
                 });
-                console.log('OBS_BROWSER_TEST: blocked_raw='+blockRaw+' HTTP='+res.status()+
+                console.log('OBS_BROWSER_TEST: blocked_level='+blocked+' HTTP='+res.status()+
                   ' state='+JSON.stringify(state)+' script_errors='+JSON.stringify(errors));
                 if(!res.ok()||state.visibleCards<1||errors.length) hasFailure=true;
                 await page.close();
