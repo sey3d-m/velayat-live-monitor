@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:00:15.345547+00:00",
+  "updated_at": "2026-10-26T18:01:06.055933+00:00",
   "items": [
-    {
-      "title": "بررسی آرامش و محبت در خانواده بر اساس آیات قرآن",
-      "summary": "در این بخش به موضوع آرامش در زندگی مشترک و وجود محبت و رحمت میان همسران بر اساس آیات قرآن کریم پرداخته می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40366703147-38",
-      "sequence": 38,
-      "updated_at": "2026-10-26T17:52:48.417761+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره ماجرای فدک و منابع اهل سنت",
       "summary": "در این بخش درباره پیگیری ماجرای فدک توسط حضرت فاطمه (س) و نقل این موضوع در برخی منابع اهل سنت گفتگو شده است.",
@@ -67,16 +55,28 @@
       "sequence": 50,
       "updated_at": "2026-10-26T17:59:48.391569+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی روایت ارث و حضرت فاطمه",
+      "summary": "در این بخش به موضوع روایات مربوط به ارث و ماجرای حضرت فاطمه (س) و ابوبکر پرداخته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40366703147-52",
+      "sequence": 52,
+      "updated_at": "2026-10-26T18:01:06.055915+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 52,
-    "segments_transcribed": 51,
-    "editor_attempts": 25,
+    "segments_captured": 53,
+    "segments_transcribed": 52,
+    "editor_attempts": 26,
     "editor_withheld": 11,
-    "topics_published": 15,
+    "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:00:10.858478+00:00"
+    "last_audio_at": "2026-10-26T18:00:46.960314+00:00"
   }
 }
