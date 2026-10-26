@@ -7,7 +7,8 @@
   const sources = [
     {name: "GitHub Raw", url: "https://raw.githubusercontent.com/sey3d-m/velayat-live-monitor/pasokhnama-live-data/state/live.json", format: "json"},
     {name: "GitHub API", url: "https://api.github.com/repos/sey3d-m/velayat-live-monitor/contents/state/live.json?ref=pasokhnama-live-data", format: "github"},
-    {name: "jsDelivr", url: "https://cdn.jsdelivr.net/gh/sey3d-m/velayat-live-monitor@pasokhnama-live-data/state/live.json", format: "json"}
+    {name: "jsDelivr", url: "https://cdn.jsdelivr.net/gh/sey3d-m/velayat-live-monitor@pasokhnama-live-data/state/live.json", format: "json"},
+    {name: "پشتیبان سایت (غیرزنده)", url: "data/pasokhnama-snapshot.json", format: "json"}
   ];
   let apiUnreachableUntil = 0;
   const loadFeed = async () => {
