@@ -233,6 +233,49 @@ class CalendarBotTests(unittest.TestCase):
             bot.welcome()
         api.assert_not_called()
 
+    def test_bale_read_methods_retry_transient_failure(self):
+        from unittest.mock import Mock
+        temporary_failure = bot.requests.exceptions.ConnectionError("token-inside-url")
+        good = Mock(status_code=200)
+        good.json.return_value = {"ok": True, "result": {"username": "calendarbot"}}
+        with patch.object(bot.requests, "post",
+                          side_effect=[temporary_failure, temporary_failure, good]) as post, \
+             patch.object(bot.time, "sleep") as sleep:
+            response = bot.bale_api("secret-not-for-logs", "getMe", {})
+        self.assertEqual(response["result"]["username"], "calendarbot")
+        self.assertEqual(post.call_count, 3)
+        self.assertEqual(sleep.call_count, 2)
+
+    def test_bale_get_fallback_and_token_redaction(self):
+        from unittest.mock import Mock
+        bad = bot.requests.exceptions.ProxyError("secret-test-token")
+        ok = Mock(status_code=200)
+        ok.json.return_value = {"ok": True, "result": []}
+        with patch.object(bot.requests, "post", side_effect=bad) as post, \
+             patch.object(bot.requests, "get", return_value=ok) as get, \
+             patch.object(bot.time, "sleep"):
+            result = bot.bale_api("secret-test-token", "getUpdates", {})
+        self.assertEqual(result["result"], [])
+        self.assertEqual(post.call_count, 3)
+        self.assertEqual(get.call_count, 1)
+        with patch.object(bot.requests, "post", side_effect=bad), \
+             patch.object(bot.requests, "get", side_effect=bad), \
+             patch.object(bot.time, "sleep"):
+            with self.assertRaises(RuntimeError) as caught:
+                bot.bale_api("secret-test-token", "getUpdates", {})
+        self.assertNotIn("secret-test-token", str(caught.exception))
+        self.assertIn("ProxyError", str(caught.exception))
+
+    def test_bale_sends_once_to_prevent_duplicate_mutation_feedback(self):
+        bad = bot.requests.exceptions.ConnectionError("secret-test-token")
+        with patch.object(bot.requests, "post", side_effect=bad) as post, \
+             patch.object(bot.requests, "get") as get:
+            with self.assertRaises(RuntimeError):
+                bot.bale_api("secret-test-token", "sendMessage",
+                             {"chat_id": "123", "text": "test"})
+        post.assert_called_once()
+        get.assert_not_called()
+
     def test_disabled_registry_and_no_secret_storage(self):
         ident, _ = self.add_once()
         bot.save_state(self.state)
