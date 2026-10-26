@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T16:34:53.507621+00:00",
+  "updated_at": "2026-10-26T16:40:52.035466+00:00",
   "items": [
-    {
-      "title": "بررسی برداشت‌های تفسیری و اعتقادی",
-      "summary": "در این بخش درباره اختلاف در ترجمه و تفسیر برخی عبارات قرآنی و برداشت‌های اعتقادی گفتگو می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40357909904-15",
-      "sequence": 15,
-      "updated_at": "2026-10-26T16:30:18.477520+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی اعتقادات و مرزهای توحید در امامت",
       "summary": "در این بخش درباره تفاوت مقام امامت با الوهیت و پرهیز از انحرافات مشابه مسیحیت در شناخت ائمه گفتگو می‌شود.",
@@ -68,14 +56,26 @@
       "sequence": 23,
       "updated_at": "2026-10-26T16:34:53.507562+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی موضوع توسل و دعا در قرآن و روایات",
+      "summary": "در این بخش به موضوع توسل در قرآن کریم، دعاهایی مانند جوشن کبیر و دعای توسل و نحوه توسل به اهل بیت علیهم السلام پرداخته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40357909904-33",
+      "sequence": 33,
+      "updated_at": "2026-10-26T16:40:52.035440+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 24,
-    "segments_transcribed": 24,
-    "editor_attempts": 12,
-    "editor_withheld": 7,
-    "topics_published": 7,
-    "last_audio_at": "2026-10-26T16:34:35.473522+00:00"
+    "segments_captured": 34,
+    "segments_transcribed": 34,
+    "editor_attempts": 17,
+    "editor_withheld": 11,
+    "topics_published": 8,
+    "last_audio_at": "2026-10-26T16:40:22.534250+00:00"
   }
 }
