@@ -11,7 +11,7 @@ jobs:
     timeout-minutes: 8
     steps:
       - name: Install local transcription
-        run: pip install -q faster-whisper==1.2.1
+        run: pip install -q faster-whisper==1.2.1 'av==17.1.0'
       - name: Test model startup and speech on real broadcast audio
         shell: bash
         env:
