@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T17:38:00.475411+00:00",
+  "updated_at": "2026-10-26T17:38:51.879438+00:00",
   "items": [
-    {
-      "title": "بررسی فضائل و جایگاه حضرت زهرا سلام‌الله‌علیها",
-      "summary": "در این بخش به ذکر فضائل، مناقب و جایگاه والای حضرت فاطمه زهرا سلام‌الله‌علیها و ابعاد گوناگون شخصیت آن حضرت پرداخته می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.95,
-      "id": "40366703147-4",
-      "sequence": 4,
-      "updated_at": "2026-10-26T17:32:58.834454+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی شهادت حضرت صدیقه کبری",
       "summary": "در این بخش به مناسبت ایام شهادت و تسلیت به بینندگان شبکه جهانی ولایت پرداخته شده است.",
@@ -67,16 +55,29 @@
       "sequence": 12,
       "updated_at": "2026-10-26T17:37:36.873605+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خانواده و ازدواج",
+      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40366703147-14",
+      "sequence": 14,
+      "updated_at": "2026-10-26T17:38:51.879371+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 14,
-    "segments_transcribed": 13,
-    "editor_attempts": 6,
-    "editor_withheld": 1,
-    "topics_published": 5,
+    "segments_captured": 15,
+    "segments_transcribed": 14,
+    "editor_attempts": 7,
+    "editor_withheld": 2,
+    "topics_published": 6,
     "audio_ai_calls": 0,
     "audio_ai_success": 0,
-    "last_audio_at": "2026-10-26T17:37:56.358596+00:00"
+    "last_audio_at": "2026-10-26T17:38:34.964882+00:00"
   }
 }
