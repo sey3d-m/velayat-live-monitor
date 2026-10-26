@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:25:22.738169+00:00",
+  "updated_at": "2026-10-26T18:25:58.837371+00:00",
   "items": [
     {
       "title": "بررسی روایت‌های زندگی خانوادگی و معنوی حضرت زهرا (س)",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 95,
-    "segments_transcribed": 94,
+    "segments_captured": 96,
+    "segments_transcribed": 95,
     "editor_attempts": 47,
     "editor_withheld": 22,
     "topics_published": 27,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:25:15.203537+00:00"
+    "last_audio_at": "2026-10-26T18:25:54.200488+00:00"
   }
 }
