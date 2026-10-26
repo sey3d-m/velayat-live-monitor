@@ -4,6 +4,8 @@ on:
     branches: [main]
     paths:
       - 'pasokhnama_live_capture.py'
+      - 'pasokhnama_live_editor.py'
+      - 'tests/test_pasokhnama_live_editor.py'
       - '.github/workflows/pasokhnama-live.yml'
       - '.github/workflows/pasokhnama-live-check.yml'
       - 'docs/overlay-live.html'
@@ -35,7 +37,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python -m py_compile pasokhnama_live_capture.py
+          python -m py_compile pasokhnama_live_capture.py pasokhnama_live_editor.py
+          python -m unittest discover -s tests -p 'test_pasokhnama_live_editor.py' -v
           node --check docs/assets/pasokhnama-live.js
           test -s docs/overlay-live.html
           test -s .github/workflows/pasokhnama-live.yml
