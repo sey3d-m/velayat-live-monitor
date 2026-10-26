@@ -1,0 +1,37 @@
+name: Diagnose Pasokhnama live audio input (isolated)
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/pasokhnama-audio-probe-once.yml'
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - name: Check stream and capture 12 seconds without exposing credentials
+        shell: bash
+        env:
+          STREAM_URL: ${{ secrets.STREAM_URL }}
+        run: |
+          set -euo pipefail
+          if [[ -z "$STREAM_URL" ]]; then echo 'DIAG: stream secret missing'; exit 1; fi
+          if ! command -v ffmpeg >/dev/null 2>&1; then
+            sudo apt-get update -qq && sudo apt-get install -y ffmpeg >/dev/null
+          fi
+          echo 'DIAG: stream secret available; testing live audio capture.'
+          set +e
+          timeout 110s ffmpeg -nostdin -hide_banner -loglevel error -i "$STREAM_URL" \
+            -map 0:a:0 -t 12 -vn -ac 1 -ar 16000 -c:a pcm_s16le \
+            -y "$RUNNER_TEMP/pasokhnama-probe.wav" >/dev/null 2>"$RUNNER_TEMP/pasokhnama-ffmpeg-private.log"
+          result=$?
+          set -e
+          size=$(stat -c '%s' "$RUNNER_TEMP/pasokhnama-probe.wav" 2>/dev/null || echo 0)
+          echo "DIAG: ffmpeg exit=$result output_bytes=$size stderr_bytes=$(wc -c <"$RUNNER_TEMP/pasokhnama-ffmpeg-private.log")"
+          if [[ "$result" -ne 0 || "$size" -lt 100000 ]]; then
+            echo 'DIAG: audio stream could not yield 12s of WAV on this runner. URL and diagnostic stderr withheld.'
+            exit 1
+          fi
+          echo 'DIAG: audio stream capture succeeded; investigate chunking/transcription instead.'
