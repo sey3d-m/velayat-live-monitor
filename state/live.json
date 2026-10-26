@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T17:11:01.041686+00:00",
+  "updated_at": "2026-10-26T17:14:43.886549+00:00",
   "items": [
-    {
-      "title": "بررسی صفات آفریدگار و فلسفه آفرینش",
-      "summary": "در این بخش درباره ناتوانی دیدگان و زبان‌ها در توصیف خداوند، چگونگی آفرینش اشیاء بدون نمونه پیشین و فلسفه آفرینش در راستای اثبات حکمت و بندگی گفتگو شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40357909904-73",
-      "sequence": 73,
-      "updated_at": "2026-10-26T17:03:55.657253+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی متن تاریخی و روایی درباره رسالت پیامبر",
       "summary": "در این بخش به بررسی عبارات نقل‌شده درباره دوران جاهلیت و بعثت پیامبر اسلام پرداخته می‌شود.",
@@ -67,14 +55,26 @@
       "sequence": 85,
       "updated_at": "2026-10-26T17:11:01.041659+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی معارف دینی و احکام الهی",
+      "summary": "در این بخش درباره روشنی راه هدایت، پیروان و همچنین واجبات، محرمات و دلایل و براهین الهی سخن به میان آمده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40357909904-91",
+      "sequence": 91,
+      "updated_at": "2026-10-26T17:14:43.886524+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 86,
-    "segments_transcribed": 84,
-    "editor_attempts": 42,
-    "editor_withheld": 27,
-    "topics_published": 17,
-    "last_audio_at": "2026-10-26T17:10:41.213304+00:00"
+    "segments_captured": 92,
+    "segments_transcribed": 90,
+    "editor_attempts": 45,
+    "editor_withheld": 29,
+    "topics_published": 18,
+    "last_audio_at": "2026-10-26T17:14:10.469364+00:00"
   }
 }
