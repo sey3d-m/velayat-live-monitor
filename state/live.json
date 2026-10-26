@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T17:17:58.516789+00:00",
+  "updated_at": "2026-10-26T17:20:28.239828+00:00",
   "items": [
-    {
-      "title": "بررسی عبارات عربی و فارسی در رحلت و فضائل",
-      "summary": "در این بخش به بررسی عبارات منقول درباره رحلت و توصیفاتی پیرامون مقامات معنوی پرداخته شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "id": "40357909904-83",
-      "sequence": 83,
-      "updated_at": "2026-10-26T17:09:54.747229+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی صلوات و درود بر پیامبر و اهل‌بیت",
       "summary": "در این بخش به ذکر درود و رحمت الهی بر پیامبر اکرم و اهل‌بیت مطهر ایشان پرداخته می‌شود.",
@@ -67,14 +55,26 @@
       "sequence": 97,
       "updated_at": "2026-10-26T17:17:58.516764+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی تفسیر آیات قرآن کریم",
+      "summary": "در این بخش، پیرامون تفسیر آیات قرآن کریم و نکات مرتبط با آن مطالبی بیان شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40357909904-101",
+      "sequence": 101,
+      "updated_at": "2026-10-26T17:20:28.239804+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 98,
-    "segments_transcribed": 96,
-    "editor_attempts": 48,
+    "segments_captured": 102,
+    "segments_transcribed": 98,
+    "editor_attempts": 49,
     "editor_withheld": 30,
-    "topics_published": 20,
-    "last_audio_at": "2026-10-26T17:17:38.739291+00:00"
+    "topics_published": 21,
+    "last_audio_at": "2026-10-26T17:20:07.404470+00:00"
   }
 }
