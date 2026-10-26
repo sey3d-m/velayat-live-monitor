@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T17:07:40.967600+00:00",
+  "updated_at": "2026-10-26T17:08:42.862234+00:00",
   "items": [
-    {
-      "title": "بررسی موضوع توسل و اعتقادات مرتبط با آن",
-      "summary": "در این بخش به موضوع توسل، تفاوت آن با توکل و دیدگاه‌های مختلف درباره این مسئله در میان فرق اسلامی و ادیان پرداخته می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40357909904-41",
-      "sequence": 41,
-      "updated_at": "2026-10-26T16:45:28.424745+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی مباحث اعتقادی و جریان‌شناسی",
       "summary": "در این بخش به موضوع شناخت جریان‌ها و مباحث مرتبط با اعتقادات و مسائل دینی پرداخته می‌شود.",
@@ -67,14 +55,26 @@
       "sequence": 79,
       "updated_at": "2026-10-26T17:07:40.967547+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی تاریخ دین و بعثت پیامبر",
+      "summary": "در این بخش به موضوع بعثت پیامبر اسلام و نقش آن در روشن ساختن تاریکی‌های زمانه و هدایت مردم از گمراهی پرداخته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40357909904-81",
+      "sequence": 81,
+      "updated_at": "2026-10-26T17:08:42.862209+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 80,
-    "segments_transcribed": 78,
-    "editor_attempts": 39,
+    "segments_captured": 82,
+    "segments_transcribed": 80,
+    "editor_attempts": 40,
     "editor_withheld": 27,
-    "topics_published": 14,
-    "last_audio_at": "2026-10-26T17:07:12.265927+00:00"
+    "topics_published": 15,
+    "last_audio_at": "2026-10-26T17:08:24.932237+00:00"
   }
 }
