@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T17:32:58.834475+00:00",
+  "updated_at": "2026-10-26T17:33:22.946699+00:00",
   "items": [
     {
       "title": "بررسی فضائل و جایگاه حضرت زهرا سلام‌الله‌علیها",
@@ -22,13 +22,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 5,
-    "segments_transcribed": 4,
+    "segments_captured": 6,
+    "segments_transcribed": 5,
     "editor_attempts": 2,
     "editor_withheld": 1,
     "topics_published": 1,
     "audio_ai_calls": 0,
     "audio_ai_success": 0,
-    "last_audio_at": "2026-10-26T17:32:44.803934+00:00"
+    "last_audio_at": "2026-10-26T17:33:21.219819+00:00"
   }
 }
