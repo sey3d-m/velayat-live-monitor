@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T17:01:55.935933+00:00",
+  "updated_at": "2026-10-26T17:03:55.657278+00:00",
   "items": [
-    {
-      "title": "بررسی موضوع توسل و دعا در قرآن و روایات",
-      "summary": "در این بخش به موضوع توسل در قرآن کریم، دعاهایی مانند جوشن کبیر و دعای توسل و نحوه توسل به اهل بیت علیهم السلام پرداخته می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40357909904-33",
-      "sequence": 33,
-      "updated_at": "2026-10-26T16:40:52.035440+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی داستان طالوت و جالوت و موضوع توکل",
       "summary": "در این بخش به موضوعات مرتبط با داستان طالوت و جالوت، تابوت عهد و آثار انبیای الهی و همچنین اهمیت و جایگاه توکل در روایات و مباحث دینی پرداخته می‌شود.",
@@ -67,14 +55,26 @@
       "sequence": 69,
       "updated_at": "2026-10-26T17:01:55.935909+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی صفات آفریدگار و فلسفه آفرینش",
+      "summary": "در این بخش درباره ناتوانی دیدگان و زبان‌ها در توصیف خداوند، چگونگی آفرینش اشیاء بدون نمونه پیشین و فلسفه آفرینش در راستای اثبات حکمت و بندگی گفتگو شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40357909904-73",
+      "sequence": 73,
+      "updated_at": "2026-10-26T17:03:55.657253+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 70,
-    "segments_transcribed": 68,
-    "editor_attempts": 34,
-    "editor_withheld": 24,
-    "topics_published": 12,
-    "last_audio_at": "2026-10-26T17:01:21.849165+00:00"
+    "segments_captured": 74,
+    "segments_transcribed": 72,
+    "editor_attempts": 36,
+    "editor_withheld": 25,
+    "topics_published": 13,
+    "last_audio_at": "2026-10-26T17:03:42.641554+00:00"
   }
 }
