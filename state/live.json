@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:09:06.374791+00:00",
+  "updated_at": "2026-10-26T18:09:36.029370+00:00",
   "items": [
     {
       "title": "بررسی روایت ارث و حضرت فاطمه",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 67,
-    "segments_transcribed": 66,
+    "segments_captured": 68,
+    "segments_transcribed": 67,
     "editor_attempts": 33,
     "editor_withheld": 15,
     "topics_published": 20,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:08:52.216534+00:00"
+    "last_audio_at": "2026-10-26T18:09:31.760105+00:00"
   }
 }
