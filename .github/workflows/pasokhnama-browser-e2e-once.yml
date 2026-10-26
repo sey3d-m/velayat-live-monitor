@@ -65,6 +65,17 @@ jobs:
                 if(!res.ok()||state.visibleCards<1||errors.length) hasFailure=true;
                 await page.close();
               }
+              // Same-origin HTML must show previously accepted headings
+              // immediately even in OBS browsers with JavaScript disabled.
+              const offline=await browser.newPage({javaScriptEnabled:false,viewport:{width:1280,height:720}});
+              const offlineResponse=await offline.goto(
+                'https://sey3d-m.github.io/velayat-live-monitor/overlay-live.html?js_off='+Date.now(),
+                {waitUntil:'domcontentloaded',timeout:30000});
+              const offlineHeads=await offline.locator('#live-content article.tv-card h2').allTextContents();
+              console.log('OBS_BROWSER_TEST: javascript_disabled HTTP='+offlineResponse.status()+
+                ' headings='+JSON.stringify(offlineHeads));
+              if(!offlineResponse.ok()||offlineHeads.length<1) hasFailure=true;
+              await offline.close();
               if(hasFailure) process.exitCode=1;
             } finally {await browser.close()}
           })().catch(err=>{console.error('OBS_BROWSER_TEST: fatal='+err.message);process.exitCode=1});
