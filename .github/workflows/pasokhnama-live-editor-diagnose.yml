@@ -1,0 +1,66 @@
+name: Diagnose real Pasokhnama speech and editorial gating
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/pasokhnama-live-editor-diagnose.yml']
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install the same isolated transcription stack
+        run: |
+          set -e
+          if ! command -v ffmpeg >/dev/null; then
+            sudo apt-get update -qq && sudo apt-get install -y ffmpeg >/dev/null
+          fi
+          pip install -q faster-whisper==1.2.1 'av==17.1.0'
+      - name: Test a fresh broadcast segment and why editor rejects it
+        shell: bash
+        env:
+          STREAM_URL: ${{ secrets.STREAM_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PASOKHNAMA_EDIT_MODEL: gemini-3.5-flash-lite
+        run: |
+          set -euo pipefail
+          timeout 75s ffmpeg -nostdin -hide_banner -loglevel quiet -i "$STREAM_URL" \
+            -map 0:a:0 -t 30 -vn -ac 1 -ar 16000 -c:a pcm_s16le \
+            -y "$RUNNER_TEMP/live.wav"
+          export PROBE_WAV="$RUNNER_TEMP/live.wav"
+          timeout 240s python -u - <<'PY'
+          import os, re, time
+          import pasokhnama_live_editor as e
+          from faster_whisper import WhisperModel
+          start=time.monotonic()
+          model=WhisperModel("small",device="cpu",compute_type="int8",cpu_threads=2,num_workers=1)
+          print("DIAG: small model loaded",flush=True)
+          segs,_=model.transcribe(os.environ["PROBE_WAV"],language="fa",
+                  beam_size=2,best_of=2,vad_filter=True,condition_on_previous_text=False)
+          transcript=" ".join(s.text.strip() for s in segs)
+          print("DIAG: transcript_len=%d persian_chars=%d time=%.1fs"%(len(transcript),sum('\u0600'<=c<='\u06ff' for c in transcript),time.monotonic()-start),flush=True)
+          if len(transcript)<55:
+              print("DIAG: ASR returned too little speech; cannot title accurately",flush=True)
+              raise SystemExit(0)
+          orig=e.validate
+          def checked(source,obj):
+              scope=obj.get("scope","missing") if isinstance(obj,dict) else "non-dict"
+              title=obj.get("title","") if isinstance(obj,dict) else ""
+              summary=obj.get("summary","") if isinstance(obj,dict) else ""
+              excerpt=obj.get("evidence_excerpt","") if isinstance(obj,dict) else ""
+              print("DIAG: proposal publish=%s scope=%s confidence=%s title_len=%d summary_len=%d evidence_exact=%s"%(obj.get("publish") if isinstance(obj,dict) else "?",scope,obj.get("confidence") if isinstance(obj,dict) else "?",len(title),len(summary),len(excerpt)>0 and excerpt in source),flush=True)
+              return orig(source,obj)
+          e.validate=checked
+          try:
+              result=e.rewrite(transcript,os.environ.get("GEMINI_API_KEY",""),timeout=75)
+              print("DIAG: edited_result=%s"%bool(result),flush=True)
+              if result:
+                  print("DIAG: accepted_title="+result["title"],flush=True)
+          except Exception as exc:
+              print("DIAG: provider_error="+str(exc)[:160],flush=True)
+          PY
