@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T17:33:22.946699+00:00",
+  "updated_at": "2026-10-26T17:33:59.434676+00:00",
   "items": [
     {
       "title": "بررسی فضائل و جایگاه حضرت زهرا سلام‌الله‌علیها",
@@ -19,16 +19,28 @@
       "sequence": 4,
       "updated_at": "2026-10-26T17:32:58.834454+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی شهادت حضرت صدیقه کبری",
+      "summary": "در این بخش به مناسبت ایام شهادت و تسلیت به بینندگان شبکه جهانی ولایت پرداخته شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40366703147-6",
+      "sequence": 6,
+      "updated_at": "2026-10-26T17:33:59.434657+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 6,
-    "segments_transcribed": 5,
-    "editor_attempts": 2,
+    "segments_captured": 7,
+    "segments_transcribed": 6,
+    "editor_attempts": 3,
     "editor_withheld": 1,
-    "topics_published": 1,
+    "topics_published": 2,
     "audio_ai_calls": 0,
     "audio_ai_success": 0,
-    "last_audio_at": "2026-10-26T17:33:21.219819+00:00"
+    "last_audio_at": "2026-10-26T17:33:51.439534+00:00"
   }
 }
