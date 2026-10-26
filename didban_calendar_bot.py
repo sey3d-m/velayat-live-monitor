@@ -28,6 +28,8 @@ PROMPT = (
     "«برنامه‌ها» — فهرست نوبت‌های اضافی\n"
     "«تقویم هفته» — نوبت‌های هفت روز آینده\n"
     "«لغو ID» — توقف برنامه، «فعال ID» — ادامه\n"
+    "«لغو نوبت ID تاریخ» — حذف فقط همان جلسه\n"
+    "«برگرداندن نوبت ID تاریخ» — بازگردانی همان جلسه\n"
     "«حذف ID» — حذف کامل، «انصراف» — لغو فرمان\n"
     "«شناسه من» — دریافت شناسه عددی مدیر\n"
     "ساعت‌ها به وقت تهران و تاریخ‌ها شمسی یا میلادی است.\n"
@@ -136,6 +138,23 @@ def write_calendar(action: str, ident: str, p: dict | None = None) -> None:
             records.remove(match)
         elif action in ("pause", "resume"):
             match["enabled"] = action == "resume"
+        elif action in ("skip", "unskip"):
+            if not p or "day" not in p:
+                raise ValueError("تاریخ نوبت مشخص نشده است.")
+            d = calendar.parse_day(p["day"]).isoformat()
+            if d not in {day.isoformat() for day in (
+                calendar.parse_day(match["from_date"]) + timedelta(days=n)
+                for n in range((calendar.parse_day(match.get("until_date") or match["from_date"]) -
+                                calendar.parse_day(match["from_date"])).days + 1)
+            )}:
+                raise ValueError("تاریخ خارج از بازه برنامه است.")
+            if action == "skip":
+                match.setdefault("skip_dates", [])
+                if d not in match["skip_dates"]:
+                    match["skip_dates"].append(d)
+                    match["skip_dates"].sort()
+            else:
+                match["skip_dates"] = [x for x in match.get("skip_dates", []) if x != d]
         else:
             raise ValueError("عملیات ناشناخته است.")
     calendar.validate_records(records)  # atomic validation before disk updates
@@ -195,7 +214,8 @@ def confirm_text(operation: str, data: dict) -> str:
                 f"شروع: {data['from_date']}\n"
                 f"پایان: {data.get('until_date') or 'همان روز'}\n"
                 "برای ثبت «تایید» و برای لغو «انصراف» را بفرستید.")
-    return (f"درخواست {operation} برای برنامه «{data['id']}».\n"
+    suffix = f" در تاریخ {data['day']}" if data.get("day") else ""
+    return (f"درخواست {operation} برای برنامه «{data['id']}»{suffix}.\n"
             "برای اجرای تغییر «تایید» و برای بازگشت «انصراف» را بفرستید.")
 
 
@@ -227,6 +247,24 @@ def process_admin_command(state: dict, key: str, message_id: int, text: str) -> 
     if msg in ("افزودن", "ثبت برنامه", "برنامه جدید", "/add"):
         return start_add(state, key, message_id)
 
+    match_once = re.fullmatch(
+        r"(لغو نوبت|حذف نوبت|برگرداندن نوبت|بازگرداندن نوبت)\s+([a-zA-Z][a-zA-Z0-9_-]{1,39})\s+(\d{4}[-/]\d{2}[-/]\d{2})",
+        msg,
+    )
+    if match_once:
+        action = ("skip" if match_once.group(1) in ("لغو نوبت", "حذف نوبت")
+                  else "unskip")
+        ident = match_once.group(2)
+        cal_date = calendar.parse_day(match_once.group(3)).isoformat()
+        if ident not in {p["id"] for p in calendar.load()}:
+            return "شناسه برنامه یافت نشد. «برنامه‌ها» را بفرستید."
+        sessions[key] = {
+            "mode": action, "step": "confirm",
+            "data": {"id": ident, "day": cal_date},
+            "updated_at": now,
+        }
+        return confirm_text(action, sessions[key]["data"])
+
     found = re.fullmatch(r"(لغو|توقف|فعال|فعال‌سازی|فعال سازی|حذف|/pause|/resume|/delete)\s+([a-zA-Z][a-zA-Z0-9_-]{1,39})", msg)
     if found:
         action = {"لغو": "pause", "توقف": "pause", "/pause": "pause",
@@ -253,7 +291,7 @@ def process_admin_command(state: dict, key: str, message_id: int, text: str) -> 
             p = validate_draft(data)  # re-check current schedule against conflicts
             write_calendar("add", p["id"], p)
         else:
-            write_calendar(action, data["id"])
+            write_calendar(action, data["id"], data)
         sessions.pop(key, None)
         return ("✅ تغییر تقویم ثبت شد؛ نوبت‌های ثابت، گزارش، تقطیع و دوبله بدون تغییرند.\n"
                 f"عملیات: {action} | شناسه: {data['id']}")
