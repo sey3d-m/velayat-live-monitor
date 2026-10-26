@@ -202,6 +202,7 @@ def main():
         editor_future = None
         editor_sequence = -1
         editor_audio = None
+        editor_submitted_at = None
         no_topic_batches = 0
         number = 0
         try:
@@ -223,6 +224,8 @@ def main():
                             no_topic_batches = 0
                             if not publish("live"):
                                 break
+                            if editor_submitted_at is not None:
+                                print(f"Pasokhnama: transcript-to-published-state {time.monotonic()-editor_submitted_at:.1f}s", flush=True)
                             print(f"Pasokhnama: published specific point for segment {editor_sequence}", flush=True)
                         else:
                             no_topic_batches += 1
@@ -261,6 +264,7 @@ def main():
                                 else:
                                     editor_audio = None
                                 PROGRESS["editor_attempts"] += 1
+                                editor_submitted_at = time.monotonic()
                                 editor_future = executor.submit(
                                     edit_batch, source, editor_key, editor_audio)
                                 pending_speech.clear()
