@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T17:55:30.701889+00:00",
+  "updated_at": "2026-10-26T17:56:16.313331+00:00",
   "items": [
-    {
-      "title": "بررسی سیره و صبر حضرت زهرا (س)",
-      "summary": "در این بخش به بررسی روحیه انسانی و صبر حضرت زهرا (سلام‌الله‌علیها) در برابر سختی‌ها و شکرگزاری ایشان در شرایط دشوار پرداخته می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "id": "40366703147-32",
-      "sequence": 32,
-      "updated_at": "2026-10-26T17:49:24.004450+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی صبر و تحمل در برابر مشکلات زندگی",
       "summary": "در این بخش به موضوع صبر در برابر مشکلات دنیوی با استناد به آیات قرآن کریم و الگوبرداری از سیره حضرت فاطمه زهرا (س) پرداخته می‌شود.",
@@ -67,16 +55,28 @@
       "sequence": 42,
       "updated_at": "2026-10-26T17:55:01.378506+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نقل‌قول تاریخی درباره فدک",
+      "summary": "در این بخش به بررسی مباحث مطرح‌شده پیرامون تاریخچه فدک و نقل‌قول‌های تاریخی مندرج در متون پرداخته می‌شود و از هرگونه صدور حکم قطعی پرهیز شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40366703147-44",
+      "sequence": 44,
+      "updated_at": "2026-10-26T17:56:16.313313+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 44,
-    "segments_transcribed": 43,
-    "editor_attempts": 21,
+    "segments_captured": 45,
+    "segments_transcribed": 44,
+    "editor_attempts": 22,
     "editor_withheld": 10,
-    "topics_published": 12,
+    "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T17:55:26.868840+00:00"
+    "last_audio_at": "2026-10-26T17:56:05.092593+00:00"
   }
 }
