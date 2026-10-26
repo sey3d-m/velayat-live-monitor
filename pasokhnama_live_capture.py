@@ -20,7 +20,7 @@ SESSION = os.environ.get("GITHUB_RUN_ID", "")
 SLOT = os.environ.get("PROGRAM_SLOT", "")
 STREAM = os.environ.get("STREAM_URL", "")
 DATE = os.environ.get("PROGRAM_DATE", "")
-CHUNK_SECONDS = 75
+CHUNK_SECONDS = 35
 MAX_SECONDS = min(90, max(5, int(os.environ.get("PASOKHNAMA_MAX_MINUTES", "70")))) * 60
 STARTED = datetime.now(timezone.utc).isoformat()
 ITEMS = []
@@ -109,12 +109,14 @@ def caption(model, path, sequence):
 def main():
     if not SESSION.isdigit() or not TOKEN or not STREAM or not re.fullmatch(r"\d\d:\d\d", SLOT):
         raise SystemExit("Missing or invalid isolated-run configuration")
+    print('Pasokhnama: local Persian speech capture process launching', flush=True)
     # Publish a new session only when the input is validated.
     if not publish("starting"):
         return
     from faster_whisper import WhisperModel
     model = WhisperModel(os.environ.get("PASOKHNAMA_WHISPER_MODEL", "small"),
                          device="cpu", compute_type="int8", cpu_threads=2, num_workers=1)
+    print('Pasokhnama: Whisper model loaded; starting segmented FFmpeg capture', flush=True)
     with tempfile.TemporaryDirectory(prefix="pasokhnama_") as temp:
         root = Path(temp)
         cmd = [
@@ -126,7 +128,7 @@ def main():
             str(root / "segment-%04d.wav"),
         ]
         started = time.monotonic()
-        proc = subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+        proc = subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         number = 0
         try:
             while time.monotonic() - started < MAX_SECONDS:
