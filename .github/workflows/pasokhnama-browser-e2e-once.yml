@@ -26,30 +26,42 @@ jobs:
           node <<'JS'
           const { chromium } = require(process.env.BROWSER_MODULE);
           (async () => {
-            const errors=[];
-            const browser = await chromium.launch({ executablePath:'/usr/bin/google-chrome',
-                headless:true, args:['--no-sandbox','--disable-dev-shm-usage']});
+            const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome',
+              headless:true,args:['--no-sandbox','--disable-dev-shm-usage']});
+            let hasFailure=false;
             try {
-              const page=await browser.newPage({viewport:{width:1280,height:720}});
-              page.on('pageerror',err=>errors.push(err.message));
-              page.on('console',msg=>{if(msg.type()==='error') errors.push(msg.text())});
-              const response=await page.goto('https://sey3d-m.github.io/velayat-live-monitor/overlay-live.html?ui-test='+Date.now(),
-                        {waitUntil:'domcontentloaded',timeout:45000});
-              await page.waitForTimeout(7000);
-              const state=await page.evaluate(()=>({
-                title:document.title,
-                status:document.getElementById('live-status')?.textContent,
-                program:document.getElementById('live-program')?.textContent,
-                headingCount:document.querySelectorAll('#live-content article.tv-card h2').length,
-                renderedHeads:Array.from(document.querySelectorAll('#live-content article.tv-card h2')).map(n=>n.textContent),
-                fallback:document.querySelector('#live-content .tv-empty')?.textContent,
-                lastReceived:document.getElementById('live-updated')?.textContent,
-                viewportWidth:innerWidth,
-              }));
-              console.log('OBS_BROWSER_TEST: HTTP='+response.status());
-              console.log('OBS_BROWSER_TEST: state='+JSON.stringify(state));
-              console.log('OBS_BROWSER_TEST: browser_errors='+JSON.stringify(errors.slice(0,6)));
-              if(!response.ok()||state.headingCount<1 || errors.length) process.exitCode=1;
+              for(const blockRaw of [false,true]) {
+                const page=await browser.newPage({viewport:{width:1280,height:720}});
+                const errors=[];
+                page.on('pageerror',err=>errors.push(err.message));
+                if(blockRaw) {
+                  await page.route('https://raw.githubusercontent.com/**', route=>route.abort());
+                }
+                const res=await page.goto(
+                  'https://sey3d-m.github.io/velayat-live-monitor/overlay-live.html?browser_test='+Date.now()+'&block='+blockRaw,
+                  {waitUntil:'domcontentloaded',timeout:45000});
+                await page.waitForTimeout(blockRaw?15000:8000);
+                const state=await page.evaluate(()=>{
+                  const cards=[...document.querySelectorAll('#live-content article.tv-card')];
+                  return {
+                    title:document.title,
+                    status:document.querySelector('#live-status')?.textContent,
+                    headings:cards.map(card=>card.querySelector('h2')?.textContent),
+                    visibleCards:cards.filter(card=>{
+                      const r=card.getBoundingClientRect();
+                      const st=getComputedStyle(card);
+                      return r.width>0&&r.height>0&&st.visibility!=='hidden'&&st.display!=='none'
+                    }).length,
+                    empty:document.querySelector('#live-content .tv-empty')?.textContent,
+                    source:document.querySelector('#live-updated')?.textContent
+                  };
+                });
+                console.log('OBS_BROWSER_TEST: blocked_raw='+blockRaw+' HTTP='+res.status()+
+                  ' state='+JSON.stringify(state)+' script_errors='+JSON.stringify(errors));
+                if(!res.ok()||state.visibleCards<1||errors.length) hasFailure=true;
+                await page.close();
+              }
+              if(hasFailure) process.exitCode=1;
             } finally {await browser.close()}
           })().catch(err=>{console.error('OBS_BROWSER_TEST: fatal='+err.message);process.exitCode=1});
           JS
