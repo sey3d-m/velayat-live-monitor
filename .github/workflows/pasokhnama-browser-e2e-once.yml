@@ -1,0 +1,55 @@
+# A one-shot browser-level verification of the ACTUAL OBS page, not only an HTTP 200.
+# This workflow never modifies Didban, other sites, or server state.
+name: Test actual Pasokhnama OBS card rendering in Chrome
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/pasokhnama-browser-e2e-once.yml']
+permissions:
+  contents: read
+jobs:
+  browser-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Install Chrome automation client
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm install --prefix "$RUNNER_TEMP/pasokhnama-browser" --no-audit --no-fund playwright-core@1.56.1 >/dev/null
+          command -v google-chrome
+      - name: Assert actual page renders real Persian cards
+        shell: bash
+        env:
+          BROWSER_MODULE: ${{ runner.temp }}/pasokhnama-browser/node_modules/playwright-core
+        run: |
+          node <<'JS'
+          const { chromium } = require(process.env.BROWSER_MODULE);
+          (async () => {
+            const errors=[];
+            const browser = await chromium.launch({ executablePath:'/usr/bin/google-chrome',
+                headless:true, args:['--no-sandbox','--disable-dev-shm-usage']});
+            try {
+              const page=await browser.newPage({viewport:{width:1280,height:720}});
+              page.on('pageerror',err=>errors.push(err.message));
+              page.on('console',msg=>{if(msg.type()==='error') errors.push(msg.text())});
+              const response=await page.goto('https://sey3d-m.github.io/velayat-live-monitor/overlay-live.html?ui-test='+Date.now(),
+                        {waitUntil:'domcontentloaded',timeout:45000});
+              await page.waitForTimeout(7000);
+              const state=await page.evaluate(()=>({
+                title:document.title,
+                status:document.getElementById('live-status')?.textContent,
+                program:document.getElementById('live-program')?.textContent,
+                headingCount:document.querySelectorAll('#live-content article.tv-card h2').length,
+                renderedHeads:Array.from(document.querySelectorAll('#live-content article.tv-card h2')).map(n=>n.textContent),
+                fallback:document.querySelector('#live-content .tv-empty')?.textContent,
+                lastReceived:document.getElementById('live-updated')?.textContent,
+                viewportWidth:innerWidth,
+              }));
+              console.log('OBS_BROWSER_TEST: HTTP='+response.status());
+              console.log('OBS_BROWSER_TEST: state='+JSON.stringify(state));
+              console.log('OBS_BROWSER_TEST: browser_errors='+JSON.stringify(errors.slice(0,6)));
+              if(!response.ok()||state.headingCount<1 || errors.length) process.exitCode=1;
+            } finally {await browser.close()}
+          })().catch(err=>{console.error('OBS_BROWSER_TEST: fatal='+err.message);process.exitCode=1});
+          JS
