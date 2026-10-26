@@ -1,21 +1,34 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "40366703147",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T17:32:16.425508+00:00",
-  "items": [],
+  "updated_at": "2026-10-26T17:32:58.834475+00:00",
+  "items": [
+    {
+      "title": "بررسی فضائل و جایگاه حضرت زهرا سلام‌الله‌علیها",
+      "summary": "در این بخش به ذکر فضائل، مناقب و جایگاه والای حضرت فاطمه زهرا سلام‌الله‌علیها و ابعاد گوناگون شخصیت آن حضرت پرداخته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.95,
+      "id": "40366703147-4",
+      "sequence": 4,
+      "updated_at": "2026-10-26T17:32:58.834454+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 4,
-    "segments_transcribed": 3,
-    "editor_attempts": 1,
+    "segments_captured": 5,
+    "segments_transcribed": 4,
+    "editor_attempts": 2,
     "editor_withheld": 1,
-    "topics_published": 0,
+    "topics_published": 1,
     "audio_ai_calls": 0,
     "audio_ai_success": 0,
-    "last_audio_at": "2026-10-26T17:32:13.303909+00:00"
+    "last_audio_at": "2026-10-26T17:32:44.803934+00:00"
   }
 }
