@@ -193,9 +193,9 @@ class CalendarBotTests(unittest.TestCase):
         data = [{"chat_id": 777, "message": "صفحه اصلی",
                  "reply_markup": bot.kb.keyboard_for(self.state, self.key, True)}]
         replies.write_text(json.dumps(data, ensure_ascii=False))
-        with patch.object(bot, "REPLIES", replies), \\
-             patch.dict(os.environ, {"DIDBAN_CONTROL_BOT_TOKEN": "fake-test-token"}), \\
-             patch.object(bot, "bale_api", return_value={"ok": True}) as api:
+        with (patch.object(bot, "REPLIES", replies),
+              patch.dict(os.environ, {"DIDBAN_CONTROL_BOT_TOKEN": "fake-test-token"}),
+              patch.object(bot, "bale_api", return_value={"ok": True}) as api):
             bot.reply()
         args = api.call_args.args
         self.assertEqual(args[1], "sendMessage")
