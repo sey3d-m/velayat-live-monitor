@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:03:43.130669+00:00",
+  "updated_at": "2026-10-26T18:04:56.811614+00:00",
   "items": [
     {
       "title": "بررسی نقل‌قول تاریخی درباره فدک",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 58,
-    "segments_transcribed": 57,
-    "editor_attempts": 28,
-    "editor_withheld": 12,
+    "segments_captured": 60,
+    "segments_transcribed": 59,
+    "editor_attempts": 29,
+    "editor_withheld": 13,
     "topics_published": 17,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:03:40.174579+00:00"
+    "last_audio_at": "2026-10-26T18:04:53.896859+00:00"
   }
 }
