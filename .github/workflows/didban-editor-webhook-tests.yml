@@ -1,0 +1,35 @@
+name: Didban Editor Webhook - Offline Tests
+
+on:
+  push:
+    branches: [fix/editor-webhook-isolation-20261026]
+    paths:
+      - editor_webhook/**
+      - .github/workflows/didban-editor-webhook-tests.yml
+  pull_request:
+    paths:
+      - editor_webhook/**
+      - .github/workflows/didban-editor-webhook-tests.yml
+
+permissions:
+  contents: read
+
+jobs:
+  editor-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install editor-only dependencies
+        run: pip install -r editor_webhook/requirements.txt
+      - name: Check Python syntax
+        run: python -m py_compile editor_webhook/api/index.py
+      - name: Test isolated webhook
+        run: python -m unittest discover -s editor_webhook/tests -v
+      - name: Guard original calendar behavior
+        run: python -m unittest discover -s tests -p test_calendar_bot.py -v
