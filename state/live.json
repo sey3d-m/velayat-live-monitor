@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T16:27:58.279933+00:00",
+  "updated_at": "2026-10-26T16:30:18.477547+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
@@ -32,14 +32,26 @@
       "sequence": 11,
       "updated_at": "2026-10-26T16:27:58.279908+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی برداشت‌های تفسیری و اعتقادی",
+      "summary": "در این بخش درباره اختلاف در ترجمه و تفسیر برخی عبارات قرآنی و برداشت‌های اعتقادی گفتگو می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40357909904-15",
+      "sequence": 15,
+      "updated_at": "2026-10-26T16:30:18.477520+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 12,
-    "segments_transcribed": 12,
-    "editor_attempts": 6,
-    "editor_withheld": 5,
-    "topics_published": 2,
-    "last_audio_at": "2026-10-26T16:27:33.737212+00:00"
+    "segments_captured": 16,
+    "segments_transcribed": 16,
+    "editor_attempts": 8,
+    "editor_withheld": 6,
+    "topics_published": 3,
+    "last_audio_at": "2026-10-26T16:29:55.734825+00:00"
   }
 }
