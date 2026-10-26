@@ -1,4 +1,4 @@
-# One-time safety probe with real archived noisy ASR; publishes nothing.
+# Second one-time safety probe: allow factual topic headlines from noisy ASR; publishes nothing.
 name: Verify Persian headlines on actual recorded ASR
 on:
   push:
