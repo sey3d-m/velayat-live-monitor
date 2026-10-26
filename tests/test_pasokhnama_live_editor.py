@@ -2,7 +2,7 @@
 import json
 import unittest
 from unittest.mock import patch
-from pasokhnama_live_editor import validate, rewrite
+from pasokhnama_live_editor import validate, rewrite, grounded_topic
 
 SPEECH = (
     "اگر نماز ظهر و عصر را با هم می‌خوانید برای نماز ظهر اذان می‌گویید "
@@ -69,6 +69,20 @@ class EditorialTests(unittest.TestCase):
                 datetime(2026, 10, 26, 19, 14, tzinfo=local)), 16 * 60)
             self.assertEqual(capture.seconds_until_program(
                 datetime(2026, 10, 26, 19, 31, tzinfo=local)), -60)
+
+    def test_literal_topic_fallback_without_invented_fatwa(self):
+        noisy = ("خب نماز امروز درباره نماز و نماز جماعت حرف میزنیم "
+                 "نماز خواندن و برنامه صحبت شده اما صوت ناواضح است ") * 3
+        result = grounded_topic(noisy)
+        self.assertIsNotNone(result)
+        self.assertEqual(result["scope"], "topic_only")
+        self.assertIn("نماز", result["title"])
+        self.assertNotIn("واجب است", result["summary"])
+        self.assertEqual(result["editor_mode"], "grounded_topic_fallback")
+
+    def test_no_fallback_for_noise_and_unrecognized_speech(self):
+        self.assertIsNone(grounded_topic("آ اوم اوم نامشخص متن " * 12))
+        self.assertIsNone(grounded_topic("نماز"))
 
     def test_does_not_publish_raw_text_without_key(self):
         self.assertIsNone(rewrite(SPEECH * 2, ""))
