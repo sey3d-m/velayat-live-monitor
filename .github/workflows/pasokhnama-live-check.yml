@@ -47,3 +47,39 @@ jobs:
           path: docs
       - uses: actions/deploy-pages@v4
         id: deployment
+      - name: Verify actual public OBS page and readable live JSON
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, time, urllib.request
+          urls = {
+            'overlay': 'https://sey3d-m.github.io/velayat-live-monitor/overlay-live.html',
+            'script': 'https://sey3d-m.github.io/velayat-live-monitor/assets/pasokhnama-live.js',
+            'feed': 'https://raw.githubusercontent.com/sey3d-m/velayat-live-monitor/pasokhnama-live-data/state/live.json',
+          }
+          results = {}
+          for name, url in urls.items():
+              for attempt in range(6):
+                  try:
+                      with urllib.request.urlopen(urllib.request.Request(
+                          url + '?test=' + str(int(time.time())),
+                          headers={'User-Agent':'pasokhnama-public-healthcheck'}
+                      ), timeout=18) as response:
+                          body = response.read(100000)
+                          cors = response.headers.get('Access-Control-Allow-Origin', '')
+                          results[name] = (body, cors)
+                          break
+                  except Exception as exc:
+                      if attempt == 5: raise
+                      time.sleep(4)
+          html = results['overlay'][0].decode('utf8')
+          script = results['script'][0].decode('utf8')
+          feed = json.loads(results['feed'][0])
+          assert 'live-content' in html and 'assets/pasokhnama-live.js' in html
+          assert 'state/live.json' in script
+          assert feed['network'] == 'velayat_farsi' and isinstance(feed['items'], list)
+          assert results['feed'][1] in ('*', 'https://sey3d-m.github.io'), 'Browser CORS missing for JSON feed'
+          print('Public page and JS accessible; live feed CORS OK; status=',feed['status'],
+                'items=',len(feed['items']))
+          PY
