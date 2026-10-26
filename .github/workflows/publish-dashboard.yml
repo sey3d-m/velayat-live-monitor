@@ -21,7 +21,8 @@ jobs:
     if: >-
       github.event_name == 'workflow_dispatch' ||
       (github.event.workflow_run.conclusion == 'success' &&
-       github.event.workflow_run.head_repository.full_name == github.repository)
+       github.event.workflow_run.head_repository.full_name == github.repository &&
+       startsWith(github.event.workflow_run.display_title, 'Didban persian '))
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -37,7 +38,8 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           run-id: ${{ github.event.workflow_run.id }}
-          pattern: velayat-monitor-*
+          # This matches the artifact uploaded by velayat-monitor.yml for the same run.
+          pattern: velayat-persian-${{ github.event.workflow_run.id }}
           path: _dashboard_artifacts
           merge-multiple: true
       - name: Optional additional scientific extraction from existing transcript
