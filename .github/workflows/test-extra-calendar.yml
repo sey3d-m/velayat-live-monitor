@@ -5,6 +5,7 @@ on:
     paths:
       - 'extra_schedule.py'
       - 'didban_calendar_bot.py'
+      - 'didban_bot_keyboards.py'
       - 'config/didban_calendar_bot_state.json'
       - 'tests/test_calendar_bot.py'
       - 'tests/test_extra_schedule.py'
@@ -31,7 +32,7 @@ jobs:
         run: python -m pip install 'jdatetime>=5,<6' 'PyYAML>=6,<7' 'requests>=2.31,<3'
       - name: Verify Python syntax and recurrence tests
         run: |
-          python -m compileall -q extra_schedule.py didban_calendar_bot.py velayat_monitor.py tests/test_extra_schedule.py tests/test_calendar_bot.py
+          python -m compileall -q extra_schedule.py didban_calendar_bot.py didban_bot_keyboards.py velayat_monitor.py tests/test_extra_schedule.py tests/test_calendar_bot.py
           python -m unittest discover -s tests -p 'test_calendar_bot.py' -v
           python -m unittest discover -s tests -p 'test_extra_schedule.py' -v
       - name: Verify YAML syntax and original fixed slots
