@@ -21,8 +21,7 @@ jobs:
     if: >-
       github.event_name == 'workflow_dispatch' ||
       (github.event.workflow_run.conclusion == 'success' &&
-       github.event.workflow_run.head_repository.full_name == github.repository &&
-       startsWith(github.event.workflow_run.display_title, 'Didban persian '))
+       github.event.workflow_run.head_repository.full_name == github.repository)
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -42,7 +41,18 @@ jobs:
           pattern: velayat-persian-${{ github.event.workflow_run.id }}
           path: _dashboard_artifacts
           merge-multiple: true
+      - name: Check for an actual Persian report
+        id: persian_report
+        shell: bash
+        run: |
+          if test -s _dashboard_artifacts/program_report.json; then
+            echo 'ready=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'ready=false' >> "$GITHUB_OUTPUT"
+            echo 'No Persian artifact from this run; keeping existing Pasokhnama data unchanged.'
+          fi
       - name: Optional additional scientific extraction from existing transcript
+        if: steps.persian_report.outputs.ready == 'true'
         shell: bash
         env:
           ENABLE_SMART_ANALYSIS: ${{ vars.PASOKHNAMA_SMART_ANALYSIS }}
@@ -70,6 +80,7 @@ jobs:
             echo 'Extra AI analysis disabled or transcript unavailable; Didban unchanged.'
           fi
       - name: Append new data, V4 scientific index and guarded television feed
+        if: steps.persian_report.outputs.ready == 'true'
         shell: bash
         run: |
           set -euo pipefail
@@ -87,8 +98,10 @@ jobs:
             echo 'No new Persian report. Archive remains preserved.'
           fi
       - name: Test V4 evidence-based publication safeguards
+        if: steps.persian_report.outputs.ready == 'true' || github.event_name == 'workflow_dispatch'
         run: python -m unittest discover -s tests -p 'test_v4.py' -v
       - name: Commit public archive only
+        if: steps.persian_report.outputs.ready == 'true'
         shell: bash
         env:
           TARGET_BRANCH: ${{ github.event.repository.default_branch }}
@@ -107,8 +120,11 @@ jobs:
             done
           fi
       - uses: actions/configure-pages@v5
+        if: steps.persian_report.outputs.ready == 'true' || github.event_name == 'workflow_dispatch'
       - uses: actions/upload-pages-artifact@v3
+        if: steps.persian_report.outputs.ready == 'true' || github.event_name == 'workflow_dispatch'
         with:
           path: docs
       - uses: actions/deploy-pages@v4
+        if: steps.persian_report.outputs.ready == 'true' || github.event_name == 'workflow_dispatch'
         id: deployment
