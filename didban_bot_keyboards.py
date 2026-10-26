@@ -174,14 +174,17 @@ def keyboard_for(state: dict, key: str | None, authorized: bool) -> dict:
 
 
 def preset_date(message: str, from_date: str | None = None) -> str | None:
+    # Input passes through didban_calendar_bot.normal(): Persian digits become ASCII.
+    # The keyboard itself still shows Persian digits for a natural Bale UX.
+    message = message.translate(str.maketrans("۰۱۲۳۴۵۶۷۸۹٠١٢٣٤٥٦٧٨٩", "01234567890123456789"))
     today = datetime.now(ZoneInfo("Asia/Tehran")).date()
     value = {
-        "📅 امروز": 0, "📅 فردا": 1, "📅 ۳ روز بعد": 3, "📅 ۷ روز بعد": 7
+        "📅 امروز": 0, "📅 فردا": 1, "📅 3 روز بعد": 3, "📅 7 روز بعد": 7
     }.get(message)
     if value is not None:
         return (today + timedelta(days=value)).isoformat()
-    days = {"🗓 ۷ روز": 7, "🗓 ۳۰ روز": 30,
-            "🗓 ۹۰ روز": 90, "🗓 ۱۸۰ روز": 180}.get(message)
+    days = {"🗓 7 روز": 7, "🗓 30 روز": 30,
+            "🗓 90 روز": 90, "🗓 180 روز": 180}.get(message)
     if days is not None and from_date:
         return (calendar.parse_day(from_date) + timedelta(days=days)).isoformat()
     return None
