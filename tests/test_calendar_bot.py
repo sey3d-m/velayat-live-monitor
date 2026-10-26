@@ -188,6 +188,23 @@ class CalendarBotTests(unittest.TestCase):
         self.assertIn("لغو", self.command("🏠 منوی اصلی"))
         self.assertEqual(cal.load(), [])
 
+    def test_bale_reply_sends_persistent_keyboard_payload(self):
+        replies = self.folder / "replies.json"
+        data = [{"chat_id": 777, "message": "صفحه اصلی",
+                 "reply_markup": bot.kb.keyboard_for(self.state, self.key, True)}]
+        replies.write_text(json.dumps(data, ensure_ascii=False))
+        with patch.object(bot, "REPLIES", replies), \\
+             patch.dict(os.environ, {"DIDBAN_CONTROL_BOT_TOKEN": "fake-test-token"}), \\
+             patch.object(bot, "bale_api", return_value={"ok": True}) as api:
+            bot.reply()
+        args = api.call_args.args
+        self.assertEqual(args[1], "sendMessage")
+        self.assertEqual(args[2]["chat_id"], "777")
+        markup = json.loads(args[2]["reply_markup"])
+        self.assertIn("keyboard", markup)
+        self.assertTrue(markup["resize_keyboard"])
+        self.assertFalse(replies.exists())
+
     def test_disabled_registry_and_no_secret_storage(self):
         ident, _ = self.add_once()
         bot.save_state(self.state)
