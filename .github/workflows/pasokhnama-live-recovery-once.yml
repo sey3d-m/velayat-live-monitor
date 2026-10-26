@@ -1,0 +1,37 @@
+# One-time recovery launcher; only activates on its original commit message.
+# No Didban engine, timing, Bale, clips or dubbing files are modified.
+name: Pasokhnama isolated recovery - 18:00 only
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/pasokhnama-live-recovery-once.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  recover:
+    if: ${{ github.event.head_commit.message == 'Replay active Persian 18:00 once after FFmpeg hotfix' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Dispatch isolated 18:00 transcriber only during active window
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const now = new Date();
+            const clock = new Intl.DateTimeFormat('en-GB', {
+              timeZone: 'Asia/Tehran', hour: '2-digit', minute: '2-digit', hourCycle: 'h23'
+            }).format(now);
+            const [hour, minute] = clock.split(':').map(Number);
+            if (hour !== 18 || minute >= 55) {
+              core.notice('Outside the 18:00 replay window; no action taken.');
+              return;
+            }
+            await github.rest.repos.createDispatchEvent({
+              ...context.repo,
+              event_type: 'pasokhnama_live_start',
+              client_payload: { network: 'persian', slot: '18:00' }
+            });
+            core.notice('Independent 18:00 Pasokhnama replay dispatched; Didban untouched.');
