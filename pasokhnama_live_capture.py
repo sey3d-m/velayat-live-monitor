@@ -12,6 +12,7 @@ from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 from urllib import request, error
 from pasokhnama_live_editor import rewrite, grounded_topic
+from pasokhnama_live_audio import transcribe_audio
 
 REPO = "sey3d-m/velayat-live-monitor"
 DATA_BRANCH = "pasokhnama-live-data"
@@ -26,7 +27,7 @@ MAX_SECONDS = min(90, max(5, int(os.environ.get("PASOKHNAMA_MAX_MINUTES", "70"))
 STARTED = datetime.now(timezone.utc).isoformat()
 ITEMS = []
 MAX_ITEMS = 5
-PROGRESS = {"segments_captured": 0, "segments_transcribed": 0, "editor_attempts": 0, "editor_withheld": 0, "topics_published": 0, "last_audio_at": None}
+PROGRESS = {"segments_captured": 0, "segments_transcribed": 0, "editor_attempts": 0, "editor_withheld": 0, "topics_published": 0, "audio_ai_calls": 0, "audio_ai_success": 0, "last_audio_at": None}
 
 def utcnow():
     return datetime.now(timezone.utc).isoformat()
@@ -173,6 +174,31 @@ def main():
                                 edited = grounded_topic(source)
                                 if edited:
                                     print("Pasokhnama: used literal-keyword grounded headline, no claimed ruling.", flush=True)
+                            # At most 3 calls per program, only if four ASR
+                            # segments remain insufficient for safe editorial.
+                            # The original audio is recognized DIRECTLY; no
+                            # guessed religious claims can appear on air.
+                            if (not edited and len(pending_speech) >= 4
+                                    and editor_key and PROGRESS["audio_ai_calls"] < 3):
+                                PROGRESS["audio_ai_calls"] += 1
+                                try:
+                                    clearer = transcribe_audio(part, editor_key)
+                                    if clearer:
+                                        PROGRESS["audio_ai_success"] += 1
+                                        try:
+                                            edited = rewrite(clearer, editor_key)
+                                        except RuntimeError as ex:
+                                            print("Audio-based editorial unavailable:", str(ex), flush=True)
+                                            edited = None
+                                        if edited and edited.get("scope") != "topic_only":
+                                            edited = None
+                                        if not edited:
+                                            edited = grounded_topic(clearer)
+                                        if edited:
+                                            edited["editor_mode"] = "audio_grounded_topic"
+                                            print("Pasokhnama: recovered topic from direct audio transcription.", flush=True)
+                                except (RuntimeError, OSError, ValueError, subprocess.SubprocessError) as ex:
+                                    print("Optional direct audio bypass unavailable:", type(ex).__name__, flush=True)
                             if edited and edited["title"] not in published_titles:
                                 item = {**edited, "id": f"{SESSION}-{number}",
                                         "sequence": number, "updated_at": utcnow(),
