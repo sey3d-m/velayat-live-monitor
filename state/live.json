@@ -1,81 +1,21 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "40357909904",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "40366703147",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
-  "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T17:23:14.808219+00:00",
-  "items": [
-    {
-      "title": "بررسی فرازهایی از سخنان دینی و معارف اسلامی",
-      "summary": "در این بخش به اواخر فرازهای منسوب به متون دینی و معارف اسلامی درباره نماز، زکات، روزه، عدل و امامت اشاره شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "40357909904-93",
-      "sequence": 93,
-      "updated_at": "2026-10-26T17:15:53.948094+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی فلسفه و حکمت احکام و فرائض دینی",
-      "summary": "در این بخش به بررسی و بازخوانی عباراتی درباره حکمت احکام دین، فلسفه تکالیف شرعی، امر به معروف و نیکی به والدین بر اساس متن ارائه‌شده پرداخته می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "id": "40357909904-97",
-      "sequence": 97,
-      "updated_at": "2026-10-26T17:17:58.516764+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی تفسیر آیات قرآن کریم",
-      "summary": "در این بخش، پیرامون تفسیر آیات قرآن کریم و نکات مرتبط با آن مطالبی بیان شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40357909904-101",
-      "sequence": 101,
-      "updated_at": "2026-10-26T17:20:28.239804+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی معمارى و شهرسازى اسلامى و توجه انبیا به مسکن مردم",
-      "summary": "در این بخش درباره معماری و شهرسازی اسلامی و لزوم توجه رهبران دینی و انبیا به مسکن و مسائل رفاهی مردم گفت‌وگو می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40357909904-104",
-      "sequence": 104,
-      "updated_at": "2026-10-26T17:22:05.932083+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره نماز",
-      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40357909904-106",
-      "sequence": 106,
-      "updated_at": "2026-10-26T17:23:14.808184+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-10-26T17:15:04.455812+00:00",
+  "updated_at": "2026-10-26T17:30:00.000318+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 107,
-    "segments_transcribed": 102,
-    "editor_attempts": 51,
-    "editor_withheld": 31,
-    "topics_published": 23,
-    "last_audio_at": "2026-10-26T17:22:59.260922+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
