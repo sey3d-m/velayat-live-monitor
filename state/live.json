@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:10:13.509526+00:00",
+  "updated_at": "2026-10-26T18:10:43.616517+00:00",
   "items": [
     {
       "title": "بررسی تاریخ وفات حضرت فاطمه و مطالباتی درباره آن",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 69,
-    "segments_transcribed": 68,
+    "segments_captured": 70,
+    "segments_transcribed": 69,
     "editor_attempts": 34,
     "editor_withheld": 15,
     "topics_published": 21,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:10:07.416738+00:00"
+    "last_audio_at": "2026-10-26T18:10:39.001437+00:00"
   }
 }
