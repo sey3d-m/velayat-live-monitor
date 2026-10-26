@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T17:03:55.657278+00:00",
+  "updated_at": "2026-10-26T17:07:40.967600+00:00",
   "items": [
-    {
-      "title": "بررسی داستان طالوت و جالوت و موضوع توکل",
-      "summary": "در این بخش به موضوعات مرتبط با داستان طالوت و جالوت، تابوت عهد و آثار انبیای الهی و همچنین اهمیت و جایگاه توکل در روایات و مباحث دینی پرداخته می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "40357909904-37",
-      "sequence": 37,
-      "updated_at": "2026-10-26T16:43:09.168896+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی موضوع توسل و اعتقادات مرتبط با آن",
       "summary": "در این بخش به موضوع توسل، تفاوت آن با توکل و دیدگاه‌های مختلف درباره این مسئله در میان فرق اسلامی و ادیان پرداخته می‌شود.",
@@ -67,14 +55,26 @@
       "sequence": 73,
       "updated_at": "2026-10-26T17:03:55.657253+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی متن تاریخی و روایی درباره رسالت پیامبر",
+      "summary": "در این بخش به بررسی عبارات نقل‌شده درباره دوران جاهلیت و بعثت پیامبر اسلام پرداخته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40357909904-79",
+      "sequence": 79,
+      "updated_at": "2026-10-26T17:07:40.967547+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 74,
-    "segments_transcribed": 72,
-    "editor_attempts": 36,
-    "editor_withheld": 25,
-    "topics_published": 13,
-    "last_audio_at": "2026-10-26T17:03:42.641554+00:00"
+    "segments_captured": 80,
+    "segments_transcribed": 78,
+    "editor_attempts": 39,
+    "editor_withheld": 27,
+    "topics_published": 14,
+    "last_audio_at": "2026-10-26T17:07:12.265927+00:00"
   }
 }
