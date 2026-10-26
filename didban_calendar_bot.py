@@ -18,12 +18,13 @@ from zoneinfo import ZoneInfo
 
 import requests
 import extra_schedule as calendar
+import didban_bot_keyboards as kb
 
 STATE = Path(__file__).resolve().parent / "config" / "didban_calendar_bot_state.json"
 REPLIES = Path("/tmp/didban-calendar-bot-replies.json")
 TEHRAN = ZoneInfo("Asia/Tehran")
 PROMPT = (
-    "مدیریت تقویم دیدبان:\n"
+    "مدیریت تقویم دیدبان — گزینه‌ها را از دکمه‌های پایین انتخاب کنید.\n"
     "«افزودن» — ثبت برنامه با گفت‌وگوی مرحله‌ای\n"
     "«برنامه‌ها» — فهرست نوبت‌های اضافی\n"
     "«تقویم هفته» — نوبت‌های هفت روز آینده\n"
@@ -239,6 +240,21 @@ def process_admin_command(state: dict, key: str, message_id: int, text: str) -> 
         sessions.pop(key, None)
         sess = None
     msg = normal(text)
+    msg = kb.MENU_COMMANDS.get(msg, msg)
+    if msg == "__home":
+        sessions.pop(key, None)
+        return PROMPT
+    if msg.startswith("__choose_"):
+        action = msg.removeprefix("__choose_")
+        records = kb.program_choices(action)
+        if not records:
+            sessions.pop(key, None)
+            return "در حال حاضر برنامه‌ای برای این عملیات وجود ندارد. از منوی اصلی استفاده کنید."
+        sessions[key] = {
+            "mode": "pick", "step": "select", "data": {"action": action},
+            "page": 0, "updated_at": now,
+        }
+        return "برنامه موردنظر را با دکمه انتخاب کنید:"
     if msg in ("انصراف", "/cancel", "لغو درخواست"):
         sessions.pop(key, None)
         return "درخواست نیمه‌کاره لغو شد؛ تقویم تغییر نکرد."
@@ -250,6 +266,52 @@ def process_admin_command(state: dict, key: str, message_id: int, text: str) -> 
         return PROMPT
     if msg in ("افزودن", "ثبت برنامه", "برنامه جدید", "/add"):
         return start_add(state, key, message_id)
+
+    # Program picker: only validated current calendar entries can be selected.
+    if sess and sess["mode"] == "pick" and sess["step"] == "select":
+        if msg in (kb.NEXT, kb.PREVIOUS):
+            delta = 1 if msg == kb.NEXT else -1
+            maximum = max(0, (len(kb.current_choices(sess)) - 1) // kb.PAGE_SIZE)
+            sess["page"] = max(0, min(maximum, int(sess.get("page", 0)) + delta))
+            sess["updated_at"] = now
+            return "برنامه را انتخاب کنید:"
+        chosen = next((p for p in kb.program_choices(sess["data"]["action"])
+                       if msg == kb.program_label(p)), None)
+        if not chosen:
+            return "یکی از دکمه‌های برنامه را انتخاب کنید."
+        action = sess["data"]["action"]
+        if action == "resume":
+            calendar.validate_records(
+                [dict(p, enabled=True) if p["id"] == chosen["id"] else p
+                 for p in calendar.load()]
+            )
+        if action in ("skip", "unskip"):
+            temp = {"mode": action, "step": "date", "page": 0,
+                    "data": {"id": chosen["id"]}, "updated_at": now}
+            available = kb.current_choices(temp)
+            if not available:
+                sessions.pop(key, None)
+                return "هیچ نوبت آینده‌ای برای این عملیات موجود نیست."
+            sessions[key] = temp
+            return "تاریخ جلسه را از دکمه‌های پایین انتخاب کنید:"
+        sessions[key] = {"mode": action, "step": "confirm",
+                         "data": {"id": chosen["id"]}, "updated_at": now}
+        return confirm_text(action, sessions[key]["data"])
+
+    if sess and sess["mode"] in ("skip", "unskip") and sess["step"] == "date":
+        if msg in (kb.NEXT, kb.PREVIOUS):
+            delta = 1 if msg == kb.NEXT else -1
+            maximum = max(0, (len(kb.current_choices(sess)) - 1)//kb.PAGE_SIZE)
+            sess["page"] = max(0, min(maximum, int(sess.get("page", 0)) + delta))
+            sess["updated_at"] = now
+            return "تاریخ جلسه را انتخاب کنید:"
+        day = msg.removeprefix("📆 ").strip()
+        if day not in kb.current_choices(sess):
+            return "یکی از تاریخ‌های نمایش داده‌شده را انتخاب کنید."
+        sess["data"]["day"] = day
+        sess["step"] = "confirm"
+        sess["updated_at"] = now
+        return confirm_text(sess["mode"], sess["data"])
 
     match_once = re.fullmatch(
         r"(لغو نوبت|حذف نوبت|برگرداندن نوبت|بازگرداندن نوبت)\s+([a-zA-Z][a-zA-Z0-9_-]{1,39})\s+(\d{4}[-/]\d{2}[-/]\d{2})",
@@ -307,17 +369,40 @@ def process_admin_command(state: dict, key: str, message_id: int, text: str) -> 
     step = sess["step"]
     try:
         if step == "title":
+            if msg == "✍️ عنوان دلخواه":
+                return ask_next(data, "title")
+            if msg.startswith("📺 "):
+                msg = msg[2:].strip()
             if not 3 <= len(msg) <= 120 or "|" in msg:
                 raise ValueError("عنوان باید ۳ تا ۱۲۰ کاراکتر باشد.")
             data["title"] = msg
             next_step = "start"
         elif step in ("start", "end"):
+            hour_key = f"{step}_hour"
+            if msg == "✍️ ساعت دلخواه":
+                data.pop(hour_key, None)
+                return ask_next(data, step)
+            hour_button = re.fullmatch(r"🕘 (\d{2})", msg)
+            if hour_button:
+                hour = int(hour_button.group(1))
+                if hour > 23:
+                    raise ValueError("ساعت نامعتبر است.")
+                data[hour_key] = hour
+                return "دقیقه را با دکمه انتخاب کنید:"
+            minute_button = re.fullmatch(r"⏱ (\d{2})", msg)
+            if minute_button and hour_key in data:
+                minute = int(minute_button.group(1))
+                if minute > 59 or minute % 5 != 0:
+                    raise ValueError("دقیقه نامعتبر است.")
+                msg = f"{data[hour_key]:02d}:{minute:02d}"
+            data.pop(hour_key, None)
             calendar.parse_hhmm(msg)
             data[step] = msg
             if step == "end":
                 calendar.duration_minutes(data["start"], data["end"])
             next_step = "end" if step == "start" else "frequency"
         elif step == "frequency":
+            msg = kb.FREQUENCY_TEXT.get(msg, msg)
             aliases = {"یک بار": "once", "یک‌بار": "once", "once": "once",
                        "روزانه": "daily", "daily": "daily",
                        "هفتگی": "weekly", "weekly": "weekly",
@@ -327,17 +412,39 @@ def process_admin_command(state: dict, key: str, message_id: int, text: str) -> 
             data["frequency"] = aliases[msg]
             next_step = "from_date"
         elif step == "from_date":
+            if msg == "✍️ تاریخ دلخواه":
+                return ask_next(data, step)
+            msg = kb.preset_date(msg) or msg
             calendar.parse_day(msg)
             data["from_date"] = msg.replace("/", "-")
             next_step = ("weekdays" if data["frequency"] == "weekly"
                          else "until_date" if data["frequency"] != "once" else "confirm")
         elif step == "until_date":
+            if msg == "✍️ تاریخ دلخواه":
+                return ask_next(data, step)
+            msg = kb.preset_date(msg, data["from_date"]) or msg
             calendar.parse_day(msg)
             data["until_date"] = msg.replace("/", "-")
             next_step = "confirm"
         elif step == "weekdays":
-            calendar.weekdays_from_text(msg, calendar.parse_day(data["from_date"]))
-            data["weekdays"] = msg
+            selected = set(data.get("weekday_selected", []))
+            if msg.startswith(("✅ ", "▫️ ")) and msg[2:].strip() in kb.WEEKDAYS:
+                name = msg[2:].strip()
+                if name in selected:
+                    selected.remove(name)
+                else:
+                    selected.add(name)
+                data["weekday_selected"] = [d for d in kb.WEEKDAYS if d in selected]
+                data["weekdays"] = "،".join(data["weekday_selected"])
+                sess["updated_at"] = now
+                return "روزهای موردنظر را انتخاب کنید و سپس «پایان انتخاب روزها» را بزنید."
+            if msg == kb.WEEKDAY_DONE:
+                if not selected:
+                    raise ValueError("حداقل یک روز را انتخاب کنید.")
+                data["weekdays"] = "،".join(d for d in kb.WEEKDAYS if d in selected)
+            else:
+                calendar.weekdays_from_text(msg, calendar.parse_day(data["from_date"]))
+                data["weekdays"] = msg
             next_step = "until_date"
         else:
             return PROMPT
@@ -367,7 +474,7 @@ def handle_message(state: dict, token: str, admin_ids: set[int], update: dict) -
     if not isinstance(text, str) or not text.strip():
         return None
     normalized = normal(text)
-    if normalized in ("شناسه من", "آیدی من", "/id"):
+    if normalized in ("شناسه من", "آیدی من", "/id", "🆔 شناسه من"):
         return chat_id, f"شناسه عددی حساب بله شما: {uid}"
     if uid not in admin_ids:
         if normalized in ("/start", "/help"):
@@ -407,7 +514,14 @@ def poll() -> None:
             continue
         answer = handle_message(state, token, admin_ids, update)
         if answer:
-            replies.append({"chat_id": answer[0], "message": answer[1]})
+            sender = (update.get("message") or {}).get("from") or {}
+            uid = sender.get("id")
+            admin = isinstance(uid, int) and uid in admin_ids
+            key = session_key(token, uid) if admin else None
+            replies.append({
+                "chat_id": answer[0], "message": answer[1],
+                "reply_markup": kb.keyboard_for(state, key, admin),
+            })
         state["last_update_id"] = ident
     if replies:
         REPLIES.write_text(json.dumps(replies, ensure_ascii=False), encoding="utf-8")
@@ -421,7 +535,10 @@ def reply() -> None:
     if not token or not REPLIES.exists():
         return
     for row in json.loads(REPLIES.read_text(encoding="utf-8")):
-        bale_api(token, "sendMessage", {"chat_id": str(row["chat_id"]), "text": row["message"][:4000]})
+        message = {"chat_id": str(row["chat_id"]), "text": row["message"][:4000]}
+        if row.get("reply_markup"):
+            message["reply_markup"] = json.dumps(row["reply_markup"], ensure_ascii=False)
+        bale_api(token, "sendMessage", message)
     REPLIES.unlink(missing_ok=True)
 
 
