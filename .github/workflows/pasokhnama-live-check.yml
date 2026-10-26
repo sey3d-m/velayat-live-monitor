@@ -61,6 +61,36 @@ jobs:
           target=pathlib.Path('docs/data/pasokhnama-snapshot.json')
           target.parent.mkdir(parents=True,exist_ok=True)
           target.write_text(json.dumps(state,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+          # Embed the latest public, previously accepted topics directly in
+          # this build's OBS HTML. Cards appear immediately even with JS OFF or
+          # all external GitHub data endpoints unreachable. Explicitly non-live.
+          from html import escape
+          accepted=[
+            item for item in state['items']
+            if isinstance(item,dict) and item.get('kind')=='edited_transcript'
+            and item.get('scope')=='topic_only'
+            and item.get('verification_status')=='machine_edited_unverified'
+            and len(str(item.get('title') or ''))>=12
+            and len(str(item.get('summary') or ''))>=35
+          ][-3:]
+          if accepted:
+              page=pathlib.Path('docs/overlay-live.html')
+              html=page.read_text(encoding='utf8')
+              placeholder='<div class="tv-cards" id="live-content">هنوز محتوایی دریافت نشده است.</div>'
+              cards=''.join(
+                '<article class="tv-card"><h2>'+escape(str(x['title'])[:90])+
+                '</h2><p>'+escape(str(x['summary'])[:390])+'</p></article>'
+                for x in reversed(accepted)
+              )
+              assert placeholder in html, 'Source OBS placeholder missing'
+              html=html.replace(placeholder,'<div class="tv-cards" id="live-content">'+cards+'</div>')
+              html=html.replace('<span id="live-status">در انتظار</span>',
+                                '<span id="live-status">آخرین مطالب ذخیره‌شده (غیرزنده)</span>')
+              html=html.replace('<div class="tv-program-info" id="live-program">در انتظار برنامه</div>',
+                                '<div class="tv-program-info" id="live-program">'+
+                                escape(str(state.get('program') or 'شبکه ولایت فارسی')[:95])+'</div>')
+              page.write_text(html,encoding='utf8')
+          print('OBS static initial headlines=',len(accepted))
           print('Same-origin OBS fallback staged, items=',len(state['items']),
                 'source_updated=',state.get('updated_at'))
           PY
