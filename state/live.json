@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T16:43:09.168922+00:00",
+  "updated_at": "2026-10-26T16:45:28.424771+00:00",
   "items": [
-    {
-      "title": "بررسی اعتقادات و برداشت‌های نادرست",
-      "summary": "در این بخش درباره مسائل اعتقادی و فهم نادرست از برخی مفاهیم و مطالعات دینی گفت‌وگو شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "40357909904-19",
-      "sequence": 19,
-      "updated_at": "2026-10-26T16:32:29.915445+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی ادعاها پیرامون تاریخ و تفکرات منافقین",
       "summary": "در این بخش به موضوع ادعاها و اظهارات مطرح‌شده درباره عملکرد و تفکرات منافقین، از جمله وقایع تاریخی و تفسیر آیات، پرداخته می‌شود.",
@@ -68,14 +56,26 @@
       "sequence": 37,
       "updated_at": "2026-10-26T16:43:09.168896+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی موضوع توسل و اعتقادات مرتبط با آن",
+      "summary": "در این بخش به موضوع توسل، تفاوت آن با توکل و دیدگاه‌های مختلف درباره این مسئله در میان فرق اسلامی و ادیان پرداخته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40357909904-41",
+      "sequence": 41,
+      "updated_at": "2026-10-26T16:45:28.424745+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 38,
-    "segments_transcribed": 38,
-    "editor_attempts": 19,
-    "editor_withheld": 12,
-    "topics_published": 9,
-    "last_audio_at": "2026-10-26T16:42:43.652159+00:00"
+    "segments_captured": 42,
+    "segments_transcribed": 42,
+    "editor_attempts": 21,
+    "editor_withheld": 13,
+    "topics_published": 10,
+    "last_audio_at": "2026-10-26T16:45:05.028833+00:00"
   }
 }
