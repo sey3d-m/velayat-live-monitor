@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T17:38:51.879438+00:00",
+  "updated_at": "2026-10-26T17:39:16.137115+00:00",
   "items": [
     {
       "title": "بررسی شهادت حضرت صدیقه کبری",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 15,
-    "segments_transcribed": 14,
+    "segments_captured": 16,
+    "segments_transcribed": 15,
     "editor_attempts": 7,
     "editor_withheld": 2,
     "topics_published": 6,
     "audio_ai_calls": 0,
     "audio_ai_success": 0,
-    "last_audio_at": "2026-10-26T17:38:34.964882+00:00"
+    "last_audio_at": "2026-10-26T17:39:11.464351+00:00"
   }
 }
