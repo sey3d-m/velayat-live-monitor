@@ -70,4 +70,8 @@ jobs:
           PROGRAM_DATE: ${{ github.event.client_payload.date || '' }}
           PASOKHNAMA_WHISPER_MODEL: small
           PASOKHNAMA_MAX_MINUTES: '70'
+          # Reuse Didban's EXISTING Gemini key; no new provider or paid add-on.
+          # If quota is exhausted, raw ASR is NOT published on television.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PASOKHNAMA_EDIT_MODEL: 'gemini-2.5-flash'
         run: python -u pasokhnama_live_capture.py
