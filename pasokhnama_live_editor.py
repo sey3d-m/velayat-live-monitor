@@ -116,6 +116,64 @@ def validate(source: str, result: object) -> dict | None:
     }
 
 
+# The deterministic safety net identifies ONLY literal topics in the ASR.
+# It never tries to derive religious rules, quotations or scholarly answers.
+KNOWN_TOPICS = (
+    ("اذان و اقامه", ("اذان", "اقامه")),
+    ("نماز شب", ("نماز شب",)),
+    ("نماز جماعت", ("نماز جماعت", "جماعت")),
+    ("نماز", ("نماز",)),
+    ("احکام طهارت", ("وضو", "غسل", "نجاست", "نجس", "پاکی")),
+    ("روزه", ("روزه", "روزه‌")),
+    ("خمس و زکات", ("خمس", "زکات")),
+    ("زیارت", ("زیارت", "زائر", "حرم")),
+    ("امام حسین و عاشورا", ("عاشورا", "امام حسین", "کربلا")),
+    ("حضرت عباس", ("حضرت عباس", "ابوالفضل", "عباس")),
+    ("امام زمان", ("امام زمان", "مهدوی", "ظهور")),
+    ("ولایت و غدیر", ("غدیر", "ولایت")),
+    ("قرآن و تفسیر", ("قرآن", "تفسیر")),
+    ("حدیث و روایت", ("حدیث", "روایت")),
+    ("اعتقادات اسلامی", ("توحید", "امامت", "نبوت", "معاد")),
+    ("گفت‌وگوی مذاهب اسلامی", ("مذاهب", "شیعه", "اهل سنت", "وهابیت")),
+    ("خانواده و ازدواج", ("ازدواج", "خانواده", "همسر", "طلاق")),
+    ("تربیت و اخلاق", ("اخلاق", "تربیت", "حجاب")),
+)
+
+
+def grounded_topic(source: str) -> dict | None:
+    """Last-resort, explicitly generic TV headline; requires repeated source terms.
+
+    Never claims religious/medical/legal correctness. Nothing guessed if speech
+    has no stable literal recognizable topic.
+    """
+    cleaned = clean(source)
+    if len(cleaned) < 150 or sum("\u0600" <= ch <= "\u06ff" for ch in cleaned) < 90:
+        return None
+    matches = []
+    for topic, terms in KNOWN_TOPICS:
+        count = sum(cleaned.count(term) for term in terms)
+        if count >= 2:
+            matches.append((count, topic))
+    if not matches:
+        return None
+    # Prefer more precise topics over the umbrella of "نماز" where possible.
+    matches.sort(key=lambda pair: (pair[0], len(pair[1])), reverse=True)
+    topic = matches[0][1]
+    title = "گفت‌وگو درباره " + topic
+    summary = (
+        "در این بخش از برنامه، موضوع «" + topic
+        + "» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده "
+          "از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست."
+    )
+    return {
+        "title": title, "summary": summary,
+        "kind": "edited_transcript", "scope": "topic_only",
+        "verification_status": "machine_edited_unverified",
+        "editor_mode": "grounded_topic_fallback",
+        "editor_confidence": 0.0,
+    }
+
+
 def rewrite(source: str, api_key: str, model: str = MODEL, timeout: int = 35) -> dict | None:
     """Return edited caption or None. Never publish a raw ASR fallback."""
     source = source.strip()[:MAX_SOURCE]
