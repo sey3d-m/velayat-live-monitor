@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:22:30.172305+00:00",
+  "updated_at": "2026-10-26T18:23:04.230440+00:00",
   "items": [
-    {
-      "title": "بررسی شخصیت و ساده‌زیستی حضرت فاطمه (س)",
-      "summary": "در این بخش درباره ویژگی‌های اخلاقی و معنوی حضرت فاطمه زهرا (س) و بی‌توجهی ایشان و پیامبر اکرم (ص) به تجملات و ارقام نجومی دنیا گفتگو می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40366703147-68",
-      "sequence": 68,
-      "updated_at": "2026-10-26T18:10:13.509508+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی معیارهای ازدواج و ارزش‌های مادی و معنوی",
       "summary": "در این بخش درباره ارزش‌گذاری دنیا و معیارهای ازدواج در صدر اسلام و سیره اهل‌بیت علیهم‌السلام گفت‌وگو می‌شود.",
@@ -67,16 +55,28 @@
       "sequence": 86,
       "updated_at": "2026-10-26T18:21:08.210795+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نکات تربیتی و اهمیت انتخاب دوست",
+      "summary": "در این بخش به توصیه‌های تربیتی درباره انتخاب دوست، پرهیز از دوستی با افراد کینه‌توز و نقش رفتار دوستان در شکل‌گیری شخصیت انسان پرداخته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40366703147-90",
+      "sequence": 90,
+      "updated_at": "2026-10-26T18:23:04.230375+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 90,
-    "segments_transcribed": 89,
-    "editor_attempts": 44,
+    "segments_captured": 91,
+    "segments_transcribed": 90,
+    "editor_attempts": 45,
     "editor_withheld": 21,
-    "topics_published": 25,
+    "topics_published": 26,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:22:25.665401+00:00"
+    "last_audio_at": "2026-10-26T18:22:55.571367+00:00"
   }
 }
