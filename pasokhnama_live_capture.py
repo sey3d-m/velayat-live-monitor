@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Isolated public live-caption producer. Never imports or modifies Didban."""
 import base64
+from concurrent.futures import ThreadPoolExecutor
+import shutil
 import json
 import os
 from pathlib import Path
@@ -22,7 +24,7 @@ SESSION = os.environ.get("GITHUB_RUN_ID", "")
 SLOT = os.environ.get("PROGRAM_SLOT", "")
 STREAM = os.environ.get("STREAM_URL", "")
 DATE = os.environ.get("PROGRAM_DATE", "")
-CHUNK_SECONDS = 35
+CHUNK_SECONDS = 24
 MAX_SECONDS = min(90, max(5, int(os.environ.get("PASOKHNAMA_MAX_MINUTES", "70")))) * 60
 STARTED = datetime.now(timezone.utc).isoformat()
 ITEMS = []
@@ -106,6 +108,62 @@ def seconds_until_program(now=None):
     slot_clock = datetime.fromisoformat(on_date + "T" + SLOT + ":00").replace(tzinfo=tehran)
     return (slot_clock - local).total_seconds()
 
+def edit_batch(source, editor_key, audio_path=None):
+    """Edit one NEW speech window off the capture loop; never publish raw ASR."""
+    try:
+        edited = rewrite(source, editor_key)
+    except (RuntimeError, ValueError) as exc:
+        print("Pasokhnama editor unavailable:", str(exc), flush=True)
+        edited = None
+    if edited and edited.get("scope") != "topic_only":
+        edited = None
+    withheld = edited is None
+    if not edited:
+        edited = grounded_topic(source)
+        if edited:
+            print("Pasokhnama: literal grounded headline fallback, no claimed ruling.", flush=True)
+    audio_called = False
+    audio_success = False
+    if not edited and audio_path is not None and editor_key:
+        audio_called = True
+        try:
+            clearer = transcribe_audio(audio_path, editor_key)
+            if clearer:
+                audio_success = True
+                try:
+                    edited = rewrite(clearer, editor_key)
+                except (RuntimeError, ValueError) as exc:
+                    print("Audio-based editorial unavailable:", str(exc), flush=True)
+                    edited = None
+                if edited and edited.get("scope") != "topic_only":
+                    edited = None
+                if not edited:
+                    edited = grounded_topic(clearer)
+                if edited:
+                    edited["editor_mode"] = "audio_grounded_topic"
+        except (RuntimeError, OSError, ValueError, subprocess.SubprocessError) as exc:
+            print("Optional direct audio bypass unavailable:", type(exc).__name__, flush=True)
+    return edited, withheld, audio_called, audio_success
+
+
+def similar_previous(item, previous):
+    """Avoid republishing equivalent points while allowing different arguments."""
+    def words(value):
+        return set(re.findall(r"[\u0600-\u06ff]{3,}", value))
+    title = words(item["title"])
+    summary = words(item["summary"])
+    for old in previous[-12:]:
+        other_title, other_summary = words(old["title"]), words(old["summary"])
+        if item["title"] == old["title"]:
+            return True
+        if title and other_title and summary and other_summary:
+            title_overlap = len(title & other_title) / len(title | other_title)
+            summary_overlap = len(summary & other_summary) / len(summary | other_summary)
+            if title_overlap >= 0.86 and summary_overlap >= 0.82:
+                return True
+    return False
+
+
 def main():
     if not SESSION.isdigit() or not TOKEN or not STREAM or not re.fullmatch(r"\d\d:\d\d", SLOT):
         raise SystemExit("Missing or invalid isolated-run configuration")
@@ -117,20 +175,17 @@ def main():
     if not editor_key:
         print("Pasokhnama: no existing editor key; raw ASR will stay private.", flush=True)
     pending_speech = []
-    published_titles = set()
-    # Upstream scheduling dispatches about 15 minutes early. Do not mislabel
-    # the previous broadcast as the next Persian program.
+    # Preserve Tehran program alignment; never mislabel the previous broadcast.
     delta = seconds_until_program()
     if delta > 1800 or delta < -1500:
-        print(f"Pasokhnama: outside allowed broadcast window ({delta:.0f}s); skip to avoid wrong program.", flush=True)
+        print(f"Pasokhnama: outside allowed broadcast window ({delta:.0f}s); skip.", flush=True)
         return
     if delta > 2:
-        print(f"Pasokhnama: model prewarmed, awaiting official Tehran slot ({delta:.0f}s).", flush=True)
+        print(f"Pasokhnama: prewarmed, awaiting official Tehran slot ({delta:.0f}s).", flush=True)
         time.sleep(delta)
-    # Publish status only after the target program has actually begun.
     if not publish("starting"):
         return
-    print('Pasokhnama: scheduled show started; segmented FFmpeg capture running', flush=True)
+    print('Pasokhnama: scheduled show started; incremental capture running', flush=True)
     with tempfile.TemporaryDirectory(prefix="pasokhnama_") as temp:
         root = Path(temp)
         cmd = [
@@ -143,9 +198,43 @@ def main():
         ]
         started = time.monotonic()
         proc = subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        executor = ThreadPoolExecutor(max_workers=1, thread_name_prefix="pasokhnama-editor")
+        editor_future = None
+        editor_sequence = -1
+        editor_audio = None
+        no_topic_batches = 0
         number = 0
         try:
             while time.monotonic() - started < MAX_SECONDS:
+                # Only the capture thread writes state/live.json. Gemini runs
+                # separately; no concurrent editor jobs and no racing commits.
+                if editor_future is not None and editor_future.done():
+                    try:
+                        edited, withheld, audio_called, audio_success = editor_future.result()
+                        PROGRESS["editor_withheld"] += int(withheld)
+                        PROGRESS["audio_ai_calls"] += int(audio_called)
+                        PROGRESS["audio_ai_success"] += int(audio_success)
+                        if edited and not similar_previous(edited, ITEMS):
+                            item = {**edited, "id": f"{SESSION}-{editor_sequence}",
+                                    "sequence": editor_sequence, "updated_at": utcnow(),
+                                    "speaker": None}
+                            ITEMS.append(item)
+                            PROGRESS["topics_published"] += 1
+                            no_topic_batches = 0
+                            if not publish("live"):
+                                break
+                            print(f"Pasokhnama: published specific point for segment {editor_sequence}", flush=True)
+                        else:
+                            no_topic_batches += 1
+                    except Exception as exc:
+                        no_topic_batches += 1
+                        PROGRESS["editor_withheld"] += 1
+                        print("Pasokhnama editorial result withheld:", type(exc).__name__, flush=True)
+                    finally:
+                        if editor_audio is not None:
+                            editor_audio.unlink(missing_ok=True)
+                        editor_future = None
+                        editor_audio = None
                 part = root / f"segment-{number:04}.wav"
                 next_part = root / f"segment-{number+1:04}.wav"
                 if next_part.exists() and part.exists() and part.stat().st_size > 60_000:
@@ -156,80 +245,43 @@ def main():
                         if transcript:
                             PROGRESS["segments_transcribed"] += 1
                             pending_speech.append(transcript)
-                        # Try two contiguous segments first; if context is too
-                        # noisy, retry once with four. No invented religious rules.
-                        if len(pending_speech) in (2, 4):
-                            source = "\n".join(pending_speech)
-                            PROGRESS["editor_attempts"] += 1
-                            try:
-                                edited = rewrite(source, editor_key)
-                            except RuntimeError as ex:
-                                print("Pasokhnama editor unavailable:", str(ex), flush=True)
-                                edited = None
-                            # Public OBS only accepts subject-only descriptions.
-                            if edited and edited.get("scope") != "topic_only":
-                                edited = None
-                            if not edited:
-                                PROGRESS["editor_withheld"] += 1
-                                edited = grounded_topic(source)
-                                if edited:
-                                    print("Pasokhnama: used literal-keyword grounded headline, no claimed ruling.", flush=True)
-                            # At most 3 calls per program, only if four ASR
-                            # segments remain insufficient for safe editorial.
-                            # The original audio is recognized DIRECTLY; no
-                            # guessed religious claims can appear on air.
-                            if (not edited and len(pending_speech) >= 4
-                                    and editor_key and PROGRESS["audio_ai_calls"] < 3):
-                                PROGRESS["audio_ai_calls"] += 1
-                                try:
-                                    clearer = transcribe_audio(part, editor_key)
-                                    if clearer:
-                                        PROGRESS["audio_ai_success"] += 1
-                                        try:
-                                            edited = rewrite(clearer, editor_key)
-                                        except RuntimeError as ex:
-                                            print("Audio-based editorial unavailable:", str(ex), flush=True)
-                                            edited = None
-                                        if edited and edited.get("scope") != "topic_only":
-                                            edited = None
-                                        if not edited:
-                                            edited = grounded_topic(clearer)
-                                        if edited:
-                                            edited["editor_mode"] = "audio_grounded_topic"
-                                            print("Pasokhnama: recovered topic from direct audio transcription.", flush=True)
-                                except (RuntimeError, OSError, ValueError, subprocess.SubprocessError) as ex:
-                                    print("Optional direct audio bypass unavailable:", type(ex).__name__, flush=True)
-                            if edited and edited["title"] not in published_titles:
-                                item = {**edited, "id": f"{SESSION}-{number}",
-                                        "sequence": number, "updated_at": utcnow(),
-                                        "speaker": None}
-                                published_titles.add(edited["title"])
-                                ITEMS.append(item)
-                                PROGRESS["topics_published"] += 1
-                                if not publish("live"):
-                                    break
-                                print(f"Pasokhnama: published safe Persian headline for segment {number}", flush=True)
+                        # Process the newest complete 24s window if speech is
+                        # sufficient; aggregate at most two when speech is short.
+                        # Never retranscribe the entire program.
+                        if editor_future is None and pending_speech:
+                            source = "\n".join(pending_speech[-2:])
+                            if len(source) >= 140:
+                                editor_sequence = number
+                                # Preserve the existing optional capped direct
+                                # audio recovery after repeated failed batches.
+                                if (no_topic_batches >= 2 and editor_key
+                                        and PROGRESS["audio_ai_calls"] < 3):
+                                    editor_audio = root / f"editor-audio-{number:04}.wav"
+                                    shutil.copyfile(part, editor_audio)
+                                else:
+                                    editor_audio = None
+                                PROGRESS["editor_attempts"] += 1
+                                editor_future = executor.submit(
+                                    edit_batch, source, editor_key, editor_audio)
                                 pending_speech.clear()
-                            elif len(pending_speech) >= 4:
-                                pending_speech.clear()
-                        # Even if nothing is safe for on-air use, expose honest
-                        # progress counts instead of a permanently stale "starting".
+                        # If the API is slower than speech, retain only the
+                        # newest small window instead of a growing stale queue.
+                        if len(pending_speech) > 2:
+                            pending_speech = pending_speech[-2:]
                         if number % 2 == 1:
-                            # The on-air source remains fresh even between
-                            # valid headlines; the feed conveys actual progress.
                             if not publish("live" if ITEMS else "reviewing"):
                                 break
                             print("Pasokhnama: segments=", PROGRESS["segments_captured"],
                                   "titles=", PROGRESS["topics_published"], flush=True)
-                    except Exception as ex:
-                        print(f"Chunk {number} skipped: {type(ex).__name__}: {str(ex)[:100]}")
+                    except Exception as exc:
+                        print(f"Chunk {number} skipped: {type(exc).__name__}: {str(exc)[:100]}", flush=True)
                     part.unlink(missing_ok=True)
                     number += 1
                     continue
                 if proc.poll() is not None:
-                    print(f"FFmpeg terminated unexpectedly: exit={proc.returncode}")
+                    print(f"FFmpeg terminated unexpectedly: exit={proc.returncode}", flush=True)
                     break
-                time.sleep(3)
+                time.sleep(1)
         finally:
             if proc.poll() is None:
                 proc.terminate()
@@ -238,11 +290,14 @@ def main():
                 except subprocess.TimeoutExpired:
                     proc.kill()
                     proc.communicate()
-            # Do not publish a truncated, unfinished final segment.
+            # No stale editor task may write after this run has ended.
+            executor.shutdown(wait=True, cancel_futures=True)
+            if editor_audio is not None:
+                editor_audio.unlink(missing_ok=True)
             try:
                 publish("ended")
-            except Exception as ex:
-                print(f"Final status could not be written: {type(ex).__name__}")
+            except Exception as exc:
+                print(f"Final status could not be written: {type(exc).__name__}", flush=True)
 
 if __name__ == "__main__":
     main()
