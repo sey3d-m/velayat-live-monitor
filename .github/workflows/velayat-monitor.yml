@@ -68,6 +68,28 @@ jobs:
               ;;
           esac
 
+      # Starts a separate free runner; this is not part of Didban's recording chain.
+      # A failed dispatch never interrupts the original broadcast monitor.
+      - name: Start isolated Pasokhnama live feed (nonblocking)
+        if: ${{ inputs.network == 'persian' && (inputs.slot == '18:00' || inputs.slot == '19:30' || inputs.slot == '21:00') }}
+        continue-on-error: true
+        uses: actions/github-script@v7
+        env:
+          PASOKHNAMA_SLOT: ${{ inputs.slot }}
+          PASOKHNAMA_DATE: ${{ inputs.scheduled_date }}
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            await github.rest.repos.createDispatchEvent({
+              owner, repo,
+              event_type: 'pasokhnama_live_start',
+              client_payload: {
+                network: 'persian',
+                slot: process.env.PASOKHNAMA_SLOT,
+                date: process.env.PASOKHNAMA_DATE
+              }
+            });
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
