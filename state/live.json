@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T16:20:41.276935+00:00",
-  "updated_at": "2026-10-26T17:20:28.239828+00:00",
+  "updated_at": "2026-10-26T17:22:05.932109+00:00",
   "items": [
-    {
-      "title": "بررسی صلوات و درود بر پیامبر و اهل‌بیت",
-      "summary": "در این بخش به ذکر درود و رحمت الهی بر پیامبر اکرم و اهل‌بیت مطهر ایشان پرداخته می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40357909904-85",
-      "sequence": 85,
-      "updated_at": "2026-10-26T17:11:01.041659+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی معارف دینی و احکام الهی",
       "summary": "در این بخش درباره روشنی راه هدایت، پیروان و همچنین واجبات، محرمات و دلایل و براهین الهی سخن به میان آمده است.",
@@ -67,14 +55,26 @@
       "sequence": 101,
       "updated_at": "2026-10-26T17:20:28.239804+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی معمارى و شهرسازى اسلامى و توجه انبیا به مسکن مردم",
+      "summary": "در این بخش درباره معماری و شهرسازی اسلامی و لزوم توجه رهبران دینی و انبیا به مسکن و مسائل رفاهی مردم گفت‌وگو می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40357909904-104",
+      "sequence": 104,
+      "updated_at": "2026-10-26T17:22:05.932083+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 102,
-    "segments_transcribed": 98,
-    "editor_attempts": 49,
+    "segments_captured": 105,
+    "segments_transcribed": 100,
+    "editor_attempts": 50,
     "editor_withheld": 30,
-    "topics_published": 21,
-    "last_audio_at": "2026-10-26T17:20:07.404470+00:00"
+    "topics_published": 22,
+    "last_audio_at": "2026-10-26T17:21:47.092939+00:00"
   }
 }
