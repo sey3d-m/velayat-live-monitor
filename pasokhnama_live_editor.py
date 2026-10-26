@@ -1,0 +1,116 @@
+#!/usr/bin/env python3
+"""Fail-closed Persian TV copy editor for isolated Pasokhnama captions.
+
+Uses EXISTING optional GEMINI_API_KEY. An edited caption is NOT a scholarly
+verification, verified speaker quote, or source citation. Ambiguous speech
+and missing API/quota yield no television item rather than invented facts.
+"""
+from __future__ import annotations
+import json
+import os
+import re
+import urllib.error
+import urllib.request
+
+MODEL = os.environ.get("PASOKHNAMA_EDIT_MODEL", "gemini-2.5-flash")
+API_ROOT = "https://generativelanguage.googleapis.com/v1beta/models/"
+MAX_SOURCE = 2600
+PROMPT = """نقش: ویراستار حرفه‌ای فارسی برای نمایش زنده تلویزیونی شبکه ولایت.
+رونوشت زیر با تشخیص خودکار گفتار تولید شده و احتمال خطا در اصطلاحات فقهی،
+احکام، نام‌ها، اعداد و نقل‌قول‌ها بسیار زیاد است.
+
+وظیفه:
+- فقط اگر یک موضوع واحد و معنای آن از رونوشت به قدر کافی روشن است،
+  یک تیتر دقیق، خبری و غیرهیجانی و یک پاراگراف فارسی روان و درست بنویس.
+- غلط‌های واضح تبدیل گفتار، جمله‌بندی، دستور زبان و نیم‌فاصله را اصلاح کن؛
+  پرسش‌ها را به حکم شرعی قطعی تبدیل نکن.
+- متن نهایی ۱ تا ۳ جمله و ترجیحاً ۱۰۰ تا ۳۰۰ نویسه باشد؛ تیتر ۱۲ تا ۸۰ نویسه.
+- هیچ تفسیر فقهی جدید، تصحیح علمی حدسی، انتساب گوینده، حدیث، آیه،
+  مرجع، سند، اسم، عدد، نتیجه، پاسخ یا ادعایی خارج از همین رونوشت نساز.
+- اگر واژه‌ای نامفهوم است و اصلاح قطعی نیست، آن ادعا را حذف کن؛
+  اگر موضوع اصلی مبهم است publish=false برگردان.
+- عبارت evidence_excerpt باید حداقل ۲۰ نویسه و عیناً یک بخش پیوسته
+  از همین رونوشت خام باشد تا مشخص شود متن بر چه بخشی بنا شده است.
+- هیچ توصیه به مخاطب یا نتیجه‌گیری مستقل نیاور. بازنویسی نقل‌قول مستقیم نیست.
+- اگر محتوا حاوی سخن پراکنده یا سؤال بی‌پاسخ است، انتشار نده.
+فقط JSON بدون متن اضافه:
+{"publish":true,"title":"...","summary":"...","evidence_excerpt":"...","confidence":0.0}
+اگر معنا روشن نیست:
+{"publish":false,"title":"","summary":"","evidence_excerpt":"","confidence":0.0}
+
+رونوشت:
+"""
+
+
+def clean(value: object) -> str:
+    if not isinstance(value, str):
+        return ""
+    value = re.sub(r"[\u200e\u200f\u202a-\u202e]", "", value)
+    value = re.sub(r"\s+", " ", value).strip()
+    value = value.replace("ي", "ی").replace("ك", "ک")
+    return value
+
+
+def validate(source: str, result: object) -> dict | None:
+    """Never present ungrounded or unstructured LLM output on television."""
+    if not isinstance(result, dict) or result.get("publish") is not True:
+        return None
+    title = clean(result.get("title"))
+    summary = clean(result.get("summary"))
+    evidence = str(result.get("evidence_excerpt") or "").strip()
+    try:
+        confidence = float(result.get("confidence", 0))
+    except (ValueError, TypeError):
+        return None
+    if not 0.85 <= confidence <= 1.0:
+        return None
+    if not (12 <= len(title) <= 80 and 85 <= len(summary) <= 390):
+        return None
+    if len(evidence) < 20 or evidence not in source:
+        return None
+    if any(x in title + summary for x in ("<script", "</", "###", "http://", "https://")):
+        return None
+    if set(re.findall(r"\d+", title + " " + summary)) - set(re.findall(r"\d+", source)):
+        return None
+    if re.search(r"(?:سوره\s+\S+|آیه\s+\d+|روایت\s+از\s+\S+)", title + " " + summary):
+        if not re.search(r"سوره|آیه|روایت", source):
+            return None
+    return {
+        "title": title,
+        "summary": summary,
+        "kind": "edited_transcript",
+        "verification_status": "machine_edited_unverified",
+        "editor_confidence": round(confidence, 3),
+    }
+
+
+def rewrite(source: str, api_key: str, model: str = MODEL, timeout: int = 35) -> dict | None:
+    """Return edited caption or None. Never publish a raw ASR fallback."""
+    source = source.strip()[:MAX_SOURCE]
+    if not api_key or len(source) < 140:
+        return None
+    if not re.fullmatch(r"[a-zA-Z0-9_.-]+", model):
+        raise ValueError("Invalid editor model name")
+    request_body = {
+        "contents": [{"role": "user", "parts": [{"text": PROMPT + source}]}],
+        "generationConfig": {"temperature": 0, "responseMimeType": "application/json"},
+    }
+    req = urllib.request.Request(
+        API_ROOT + model + ":generateContent",
+        data=json.dumps(request_body, ensure_ascii=False).encode("utf-8"),
+        method="POST",
+        headers={"Content-Type": "application/json", "x-goog-api-key": api_key},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as response:
+            data = json.loads(response.read(120000).decode("utf-8"))
+        candidates = data.get("candidates") or []
+        if not candidates:
+            return None
+        parts = candidates[0].get("content", {}).get("parts") or []
+        answer = "".join(part.get("text", "") for part in parts if isinstance(part, dict))
+        return validate(source, json.loads(answer))
+    except urllib.error.HTTPError as exc:
+        raise RuntimeError("Persian editor provider HTTP status " + str(exc.code)) from None
+    except (urllib.error.URLError, TimeoutError, ValueError, KeyError, TypeError) as exc:
+        raise RuntimeError("Persian editor output unavailable: " + type(exc).__name__) from None
