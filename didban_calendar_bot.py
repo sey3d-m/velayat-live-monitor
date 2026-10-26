@@ -76,20 +76,49 @@ def allowed_ids() -> set[int]:
 
 
 def bale_api(token: str, method: str, body: dict) -> dict:
-    try:
-        response = requests.post(
-            f"https://tapi.bale.ai/bot{token}/{method}", data=body, timeout=25,
-        )
-    except requests.RequestException:
-        # The transport exception can embed the URL containing the bot token.
-        raise RuntimeError(f"Bale {method} connection failed (credentials redacted)") from None
-    # Don't reveal token-containing URLs in raised exceptions or logs.
-    if response.status_code != 200:
-        raise RuntimeError(f"Bale method {method} returned HTTP {response.status_code}")
-    data = response.json()
-    if data.get("ok") is not True:
-        raise RuntimeError(f"Bale method {method} returned unsuccessful response")
-    return data
+    """Try safe read-only methods again when Bale transport is intermittent.
+
+    Never log the exception text: requests embeds the complete bot-token URL.
+    An alternate GET is used only for read-only Bot API methods.
+    """
+    read_only = method in {"getMe", "getWebhookInfo", "getUpdates"}
+    attempts = 4 if read_only else 1
+    url = f"https://tapi.bale.ai/bot{token}/{method}"
+    for attempt in range(attempts):
+        try:
+            if read_only and attempt == attempts - 1:
+                response = requests.get(url, params=body, timeout=20)
+            else:
+                response = requests.post(url, data=body, timeout=20)
+        except requests.RequestException as exc:
+            error_type = type(exc).__name__
+            if attempt + 1 == attempts:
+                raise RuntimeError(
+                    f"Bale {method} transport failed ({error_type}; credentials redacted)"
+                ) from None
+            print(
+                f"Bale {method} transient transport error ({error_type}); "
+                f"retry {attempt + 2}/{attempts}", flush=True
+            )
+            time.sleep(2 * (attempt + 1))
+            continue
+        # Retry only safe read-only methods. Never automatically duplicate
+        # sendMessage when the server might have accepted an earlier request.
+        if response.status_code in (429, 500, 502, 503, 504) and attempt + 1 < attempts:
+            print(f"Bale {method} temporarily returned HTTP {response.status_code}; retrying",
+                  flush=True)
+            time.sleep(2 * (attempt + 1))
+            continue
+        if response.status_code != 200:
+            raise RuntimeError(f"Bale method {method} returned HTTP {response.status_code}")
+        try:
+            data = response.json()
+        except ValueError:
+            raise RuntimeError(f"Bale method {method} returned invalid JSON") from None
+        if data.get("ok") is not True:
+            raise RuntimeError(f"Bale method {method} returned unsuccessful response")
+        return data
+    raise RuntimeError(f"Bale {method} retry limit reached")
 
 
 def validate_draft(data: dict) -> dict:
@@ -496,10 +525,15 @@ def poll() -> None:
         return
     admin_ids = allowed_ids()
     state = load_state()
-    bot_info = bale_api(token, "getMe", {}).get("result", {})
-    print("Bale calendar bot authenticated: "
-          + ("@" + str(bot_info.get("username")) if bot_info.get("username")
-             else "yes (no public username returned)"), flush=True)
+    try:
+        bot_info = bale_api(token, "getMe", {}).get("result", {})
+        print("Bale calendar bot authenticated: "
+              + ("@" + str(bot_info.get("username")) if bot_info.get("username")
+                 else "yes (no public username returned)"), flush=True)
+    except RuntimeError as exc:
+        # Identity is only diagnostic; fail closed later if webhook safety
+        # and real update retrieval cannot be validated.
+        print(f"Calendar bot identity diagnostic unavailable: {exc}", flush=True)
     webhook = bale_api(token, "getWebhookInfo", {}).get("result", {})
     if isinstance(webhook, dict) and webhook.get("url"):
         raise RuntimeError("Calendar bot has active webhook; refusing getUpdates or webhook removal")
@@ -543,6 +577,10 @@ def welcome() -> None:
     admins = allowed_ids()
     if not admins:
         print("Bale menu refresh skipped: no configured administrator")
+        return
+    info = bale_api(token, "getWebhookInfo", {}).get("result", {})
+    if isinstance(info, dict) and info.get("url"):
+        print("Bale menu refresh skipped: a webhook is registered")
         return
     success = 0
     for chat_id in sorted(admins):

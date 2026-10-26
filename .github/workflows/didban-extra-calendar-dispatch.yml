@@ -92,7 +92,7 @@ jobs:
 
       - name: Refresh private admin button menu on code deployment
         # Deploy-triggered menu push is independent of message polling intervals.
-        if: ${{ github.event_name == 'push' && steps.bale_control.outcome == 'success' }}
+        if: ${{ github.event_name == 'push' }}
         continue-on-error: true
         env:
           DIDBAN_CONTROL_BOT_TOKEN: ${{ secrets.DIDBAN_CONTROL_BOT_TOKEN }}
