@@ -16,6 +16,23 @@
       timeZone: "Asia/Tehran", dateStyle: "short", timeStyle: "medium"
     }).format(new Date(n));
   };
+  function programWindowOpen(feed) {
+    // Didban's job dispatch happens ~15 minutes early. Never show captions
+    // under the new program name before that program's Tehran start time.
+    const match = String(feed.program || "").match(/\|\s*(\d{2}):(\d{2})/);
+    if (!match || !/^\d{4}-\d{2}-\d{2}$/.test(String(feed.program_date || ""))) return false;
+    const parts = Object.fromEntries(new Intl.DateTimeFormat("en-GB", {
+      timeZone: "Asia/Tehran", year: "numeric", month: "2-digit", day: "2-digit",
+      hour: "2-digit", minute: "2-digit", hourCycle: "h23"
+    }).formatToParts(new Date()).filter(p => p.type !== "literal")
+      .map(p => [p.type, p.value]));
+    const today = parts.year + "-" + parts.month + "-" + parts.day;
+    if (feed.program_date > today) return false;
+    if (feed.program_date < today) return true;
+    const nowMinute = Number(parts.hour) * 60 + Number(parts.minute);
+    const slotMinute = Number(match[1]) * 60 + Number(match[2]);
+    return nowMinute >= slotMinute;
+  }
   async function refresh() {
     try {
       const response = await fetch(origin + "?_=" + Date.now(), { cache: "no-store" });
@@ -31,8 +48,14 @@
       $("live-updated").textContent = "آخرین دریافت: " + dateLabel(feed.updated_at);
       const wrap = $("live-content");
       wrap.replaceChildren();
+      if (!programWindowOpen(feed)) {
+        $("live-status").textContent = "در انتظار آغاز رسمی برنامه";
+        wrap.append(append("div", "tv-empty", "مطالب این برنامه از ساعت رسمی پخش نمایش داده می‌شوند."));
+        return;
+      }
       const items = feed.items.filter(item => item && item.kind === "edited_transcript" &&
         item.verification_status === "machine_edited_unverified" &&
+        item.scope === "topic_only" &&
         typeof item.title === "string" && item.title.length >= 12 &&
         typeof item.summary === "string" && item.summary.length >= 85).slice(-3).reverse();
       if (!items.length) {
