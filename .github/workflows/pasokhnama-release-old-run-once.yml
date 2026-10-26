@@ -1,0 +1,30 @@
+name: Release obsolete broken Pasokhnama worker (one time)
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/pasokhnama-release-old-run-once.yml']
+permissions:
+  actions: write
+  contents: read
+jobs:
+  release:
+    if: ${{ github.event.head_commit.message == 'Release obsolete broken Pasokhnama run only' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Stop only previous broken independent response-nama job
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const {owner,repo}=context.repo;
+            const oldRunId=40343661227;
+            const {data:old}=await github.rest.actions.getWorkflowRun({owner,repo,run_id:oldRunId});
+            if(old.name!=='Pasokhnama Live Persian (isolated)' ||
+               old.event!=='repository_dispatch') {
+              core.setFailed('Refusing to cancel an unrelated run.');
+              return;
+            }
+            if(old.status!=='completed') {
+              await github.rest.actions.cancelWorkflowRun({owner,repo,run_id:oldRunId});
+              core.notice('Only broken old Pasokhnama run was cancelled. Existing Didban runs remain untouched.');
+            }
