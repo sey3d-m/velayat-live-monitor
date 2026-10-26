@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-26",
   "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T17:59:02.589912+00:00",
+  "updated_at": "2026-10-26T17:59:48.391584+00:00",
   "items": [
-    {
-      "title": "بررسی الگوگیری از زندگی اهل بیت در خانواده",
-      "summary": "در این بخش درباره چگونگی الگوبرداری از زندگی امیرالمؤمنین و حضرت زهرا سلام‌الله‌علیهما در کانون خانواده و روابط زوجین گفت‌وگو می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40366703147-36",
-      "sequence": 36,
-      "updated_at": "2026-10-26T17:51:39.322734+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی آرامش و محبت در خانواده بر اساس آیات قرآن",
       "summary": "در این بخش به موضوع آرامش در زندگی مشترک و وجود محبت و رحمت میان همسران بر اساس آیات قرآن کریم پرداخته می‌شود.",
@@ -67,16 +55,28 @@
       "sequence": 48,
       "updated_at": "2026-10-26T17:58:41.917477+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نقل‌قول‌های تاریخی درباره فدک و حضرت زهرا (س)",
+      "summary": "در این بخش، به نقل‌قول‌های موجود در منابع اهل سنت درباره مطالبه فدک توسط حضرت زهرا (سلام‌الله‌علیها) و ماجرای پاسخ ابوبکر به ایشان پرداخته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40366703147-50",
+      "sequence": 50,
+      "updated_at": "2026-10-26T17:59:48.391569+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 50,
-    "segments_transcribed": 49,
-    "editor_attempts": 24,
+    "segments_captured": 51,
+    "segments_transcribed": 50,
+    "editor_attempts": 25,
     "editor_withheld": 11,
-    "topics_published": 14,
+    "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T17:58:58.415805+00:00"
+    "last_audio_at": "2026-10-26T17:59:34.051733+00:00"
   }
 }
