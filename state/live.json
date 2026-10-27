@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T17:40:46.293690+00:00",
-  "updated_at": "2026-10-27T17:59:06.468553+00:00",
+  "updated_at": "2026-10-27T18:00:02.413027+00:00",
   "items": [
     {
       "title": "پرسش درباره مصداق نزدیکان پیامبر و حضرت زهرا در گفت‌وگو",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 46,
-    "segments_transcribed": 45,
-    "editor_attempts": 42,
-    "editor_withheld": 36,
+    "segments_captured": 48,
+    "segments_transcribed": 47,
+    "editor_attempts": 43,
+    "editor_withheld": 37,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T17:59:02.822423+00:00"
+    "last_audio_at": "2026-10-27T17:59:53.004871+00:00"
   }
 }
