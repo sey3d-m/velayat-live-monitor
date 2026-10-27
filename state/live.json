@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T17:40:46.293690+00:00",
-  "updated_at": "2026-10-27T17:42:22.051560+00:00",
+  "updated_at": "2026-10-27T17:42:25.446782+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
@@ -20,16 +20,29 @@
       "sequence": 0,
       "updated_at": "2026-10-27T17:41:13.233301+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره ارتباط آیات و اسباب نزول مرتبط با حضرت زهرا",
+      "summary": "در این بخش، کارشناس به موضوع اسباب نزول آیات و حوادث منجر به نزول مجموعه‌ای از آیات اشاره می‌کند. وی استدلال می‌کند که نام حضرت زهرا به عنوان سبب نزول در بخشی از این آیات مطرح شده است؛ اما به صورت دقیق مشخص نمی‌کند که ایشان شخصاً مصداق بوده‌اند یا به عنوان یکی از مصادیق آن مجموعه به شمار می‌آیند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "40548632898-3",
+      "sequence": 3,
+      "updated_at": "2026-10-27T17:42:25.446753+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 4,
     "segments_transcribed": 4,
     "editor_attempts": 4,
-    "editor_withheld": 3,
-    "topics_published": 1,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
+    "editor_withheld": 4,
+    "topics_published": 2,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
     "last_audio_at": "2026-10-27T17:42:18.284875+00:00"
   }
 }
