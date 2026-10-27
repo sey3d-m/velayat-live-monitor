@@ -3,6 +3,267 @@
   "year": "2026",
   "items": [
     {
+      "id": "8654085d7062b7ad0b",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-27-1800",
+      "program_title": "کانون مهر",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "پشتوانه‌های قرآنی مهارت نه گفتن و مرزبندی سالم (سوره لقمان و سوره مائده)",
+      "summary": "پشتوانه‌های قرآنی مهارت نه گفتن و مرزبندی سالم (سوره لقمان و سوره مائده)",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-27",
+      "program_start_time": "18:00",
+      "start_timecode": 2940,
+      "end_timecode": 3270,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-27T15:32:46+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "4ec0b6b6af949cf512",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-27-1800",
+      "program_title": "کانون مهر",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "همسرم طلاق گرفته و تمام وسایل و دارایی‌اش رفته، الان دچار وسواس فکری شدید است، مدام شکست‌هایش را مرور می‌کند و فقط با دارو کنترل می‌شود، پیشنهاد شما چیست؟",
+      "summary": "کارشناس توضیح داد وسواس فکری صرفاً با دارو درمان نمی‌شود و نیازمند یک دوره ۱۵ تا ۲۰ جلسه‌ای روان‌درمانی برای تخلیه احساسات منفی است. همچنین باید تداخلات دارویی (مثل مصرف لبنیات با داروهای ضد افسردگی) تنظیم شود و از روش خطرناک هیپنوتیزم پرهیز گردد.",
+      "question": "همسرم طلاق گرفته و تمام وسایل و دارایی‌اش رفته، الان دچار وسواس فکری شدید است، مدام شکست‌هایش را مرور می‌کند و فقط با دارو کنترل می‌شود، پیشنهاد شما چیست؟",
+      "answer": "کارشناس توضیح داد وسواس فکری صرفاً با دارو درمان نمی‌شود و نیازمند یک دوره ۱۵ تا ۲۰ جلسه‌ای روان‌درمانی برای تخلیه احساسات منفی است. همچنین باید تداخلات دارویی (مثل مصرف لبنیات با داروهای ضد افسردگی) تنظیم شود و از روش خطرناک هیپنوتیزم پرهیز گردد.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-27",
+      "program_start_time": "18:00",
+      "start_timecode": 2394,
+      "end_timecode": 2940,
+      "estimated_answer_time": "18:39",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-27T15:32:46+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "b4eed81173d046e7af",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-27-1800",
+      "program_title": "کانون مهر",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "بررسی وسواس فکری، ریشه آن در کودکی و نیاز به روان‌درمانی تخصصی",
+      "summary": "بررسی وسواس فکری، ریشه آن در کودکی و نیاز به روان‌درمانی تخصصی",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-27",
+      "program_start_time": "18:00",
+      "start_timecode": 2394,
+      "end_timecode": 2940,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-27T15:32:46+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "69ef029beaaf16cf27",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-27-1800",
+      "program_title": "کانون مهر",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "پسری دارم نه ساله که فقط به خواسته‌های من و پدرش نه می‌گوید اما در برابر خواسته‌های دیگران این‌طور نیست و نمی‌تواند نه بگوید. آیا این رفتار عادی است؟",
+      "summary": "کارشناس پاسخ داد این رفتار عادی نیست؛ زیرا تعادل زمانی وجود دارد که فرد در همه جا بتواند به جا نه بگوید یا بله بگوید. این وضعیت نشان می‌دهد آموزش نه گفتن در خارج از خانه دیده نشده، کودک دارای ترس مکنون است و در بازی‌های کودکان تمرین داده نشده است.",
+      "question": "پسری دارم نه ساله که فقط به خواسته‌های من و پدرش نه می‌گوید اما در برابر خواسته‌های دیگران این‌طور نیست و نمی‌تواند نه بگوید. آیا این رفتار عادی است؟",
+      "answer": "کارشناس پاسخ داد این رفتار عادی نیست؛ زیرا تعادل زمانی وجود دارد که فرد در همه جا بتواند به جا نه بگوید یا بله بگوید. این وضعیت نشان می‌دهد آموزش نه گفتن در خارج از خانه دیده نشده، کودک دارای ترس مکنون است و در بازی‌های کودکان تمرین داده نشده است.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-27",
+      "program_start_time": "18:00",
+      "start_timecode": 2134,
+      "end_timecode": 2394,
+      "estimated_answer_time": "18:35",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-27T15:32:46+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "49c13fec62b8cdf7e8",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-27-1800",
+      "program_title": "کانون مهر",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "پاسخ به سوال مخاطب درباره نه گفتن پسر ۹ ساله به والدین و نه نگفتن به دیگران",
+      "summary": "پاسخ به سوال مخاطب درباره نه گفتن پسر ۹ ساله به والدین و نه نگفتن به دیگران",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-27",
+      "program_start_time": "18:00",
+      "start_timecode": 1994,
+      "end_timecode": 2394,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-27T15:32:46+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "06305ffef66d8abe8f",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-27-1800",
+      "program_title": "کانون مهر",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "عامل چهارم: ترس از تعارض و احساس گناه همراه با داستان تاریخی مرحوم کاشف‌الغطاء",
+      "summary": "عامل چهارم: ترس از تعارض و احساس گناه همراه با داستان تاریخی مرحوم کاشف‌الغطاء",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-27",
+      "program_start_time": "18:00",
+      "start_timecode": 1620,
+      "end_timecode": 1994,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-27T15:32:46+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "02cea03fc2033957a1",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-27-1800",
+      "program_title": "کانون مهر",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "عامل دوم و سوم: تربیت مبتنی بر اطاعت بی‌چون‌و‌چرا و نیاز به آزمایش‌های تربیتی",
+      "summary": "عامل دوم و سوم: تربیت مبتنی بر اطاعت بی‌چون‌و‌چرا و نیاز به آزمایش‌های تربیتی",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-27",
+      "program_start_time": "18:00",
+      "start_timecode": 1020,
+      "end_timecode": 1620,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-27T15:32:46+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "117078b31d7c291d06",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-27-1800",
+      "program_title": "کانون مهر",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "عامل اول ناتوانی در نه گفتن: ترس از طرد شدن",
+      "summary": "عامل اول ناتوانی در نه گفتن: ترس از طرد شدن",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-27",
+      "program_start_time": "18:00",
+      "start_timecode": 480,
+      "end_timecode": 1020,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-27T15:32:46+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "86c1346e94c9197de7",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-27-1800",
+      "program_title": "کانون مهر",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "تعریف دوستی سالم و اهمیت نه گفتن محترمانه",
+      "summary": "تعریف دوستی سالم و اهمیت نه گفتن محترمانه",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-27",
+      "program_start_time": "18:00",
+      "start_timecode": 0,
+      "end_timecode": 480,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-27T15:32:46+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
+      "source_reported_at": null
+    },
+    {
       "id": "9346fdeb51408dfc7f",
       "network": "velayat_farsi",
       "program_id": "persian-2026-10-26-2100",
@@ -28,7 +289,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -57,7 +318,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -86,7 +347,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -115,7 +376,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -144,7 +405,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -173,7 +434,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -202,7 +463,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -231,7 +492,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -260,7 +521,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -289,7 +550,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -318,7 +579,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -347,7 +608,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -376,7 +637,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -405,7 +666,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -434,7 +695,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -463,7 +724,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -492,7 +753,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -521,7 +782,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -550,7 +811,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -579,7 +840,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -608,7 +869,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -637,7 +898,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -666,7 +927,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -695,7 +956,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -724,7 +985,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -753,7 +1014,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -782,7 +1043,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -811,7 +1072,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -840,7 +1101,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -869,7 +1130,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -898,7 +1159,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -927,7 +1188,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -956,7 +1217,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     },
     {
@@ -985,7 +1246,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-26T18:37:48+00:00",
+      "updated_at": "2026-10-27T15:32:46+00:00",
       "source_reported_at": null
     }
   ]
