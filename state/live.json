@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T16:48:23.806857+00:00",
+  "updated_at": "2026-10-27T16:48:58.688513+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40533918258-42",
-      "sequence": 42,
-      "updated_at": "2026-10-27T16:32:31.636565+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره کیفیت توسل به پنج تن آل عبا در روایت",
       "summary": "در این بخش کارشناس درباره نحوه توسل به پنج تن آل عبا در روایت سخن می‌گوید و استدلال می‌کند که شخص با ذکر اسامی و حق انوار مقدسه به محضر خدا متوسل می‌شود. در این گفت‌وگو به ذکر عباراتی منتسب به دعا در روایات اشاره می‌شود و نتیجه محدود به همین کیفیت ذکرشده در متن است.",
@@ -70,16 +57,28 @@
       "sequence": 81,
       "updated_at": "2026-10-27T16:48:16.755898+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی روایات ازدواج حضرت فاطمه و علی و جایگاه خشم و رضای ایشان",
+      "summary": "در این بخش کارشناس استدلال می‌کند که بر اساس تعابیر روایات، ازدواج حضرت فاطمه با علی (ع) به امر الهی بوده و خشم و رضایت آن حضرت به منزله خشم و رضای پروردگار است؛ همچنین بیان شد کسی که به ایشان ظلم کند ملعون است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40533918258-84",
+      "sequence": 84,
+      "updated_at": "2026-10-27T16:48:58.688488+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 84,
-    "segments_transcribed": 81,
-    "editor_attempts": 55,
-    "editor_withheld": 47,
-    "topics_published": 14,
+    "segments_captured": 85,
+    "segments_transcribed": 82,
+    "editor_attempts": 56,
+    "editor_withheld": 48,
+    "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T16:48:18.057873+00:00"
+    "last_audio_at": "2026-10-27T16:48:41.172451+00:00"
   }
 }
