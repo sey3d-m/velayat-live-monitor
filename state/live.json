@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T14:50:26.879277+00:00",
-  "updated_at": "2026-10-27T14:53:32.137423+00:00",
+  "updated_at": "2026-10-27T14:53:33.534507+00:00",
   "items": [
     {
       "title": "پرسش درباره علت حکم شرعی آزمایش در امور مالی",
@@ -20,16 +20,29 @@
       "sequence": 2,
       "updated_at": "2026-10-27T14:51:40.041932+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی شیوه تربیت کودکان میان سکوت مطلق و رهاسازی",
+      "summary": "در این بخش کارشناس استدلال می‌کند که روش تربیتی کودکان نباید نه به صورت سکوت و فرمان‌برداری بی‌چون‌وچرا باشد و نه به شکل رهاسازی کامل؛ زیرا رها کردن کودک موجب می‌شود که او از فرمان‌برداری والدین سرپیچی کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "40519177924-6",
+      "sequence": 6,
+      "updated_at": "2026-10-27T14:53:33.534483+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 8,
     "segments_transcribed": 7,
     "editor_attempts": 7,
-    "editor_withheld": 6,
-    "topics_published": 1,
-    "audio_ai_calls": 2,
-    "audio_ai_success": 2,
+    "editor_withheld": 7,
+    "topics_published": 2,
+    "audio_ai_calls": 3,
+    "audio_ai_success": 3,
     "last_audio_at": "2026-10-27T14:53:32.078738+00:00"
   }
 }
