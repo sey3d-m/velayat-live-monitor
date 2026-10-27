@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T17:16:22.592588+00:00",
+  "updated_at": "2026-10-27T17:16:52.251062+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره خانواده و ازدواج",
-      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40533918258-96",
-      "sequence": 96,
-      "updated_at": "2026-10-27T16:53:50.216954+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی شناخت فاطمه زهرا و درک شب قدر",
       "summary": "در این بخش کارشناس استدلال می‌کند که شناخت حضرت فاطمه چنان‌که سزاوار است، موجب درک شب قدر می‌شود و کسی که به این مقام برسد، شب قدر را درک کرده است. همچنین به گفته کارشناس، امام معصوم حجت خدا بر خلق است و ملائکه با او سخن می‌گویند.",
@@ -68,16 +55,28 @@
       "sequence": 139,
       "updated_at": "2026-10-27T17:11:03.970315+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی استدلال ارث‌بری حضرت زهرا (س) از پدر بر اساس آیات قرآن",
+      "summary": "در این بخش، کارشناس درباره مطالبه ارث و ادعای عدم ارث‌بری از پیامبر (ص) سخن می‌گوید. به گفته وی، با استناد به اینکه در کتاب خدا ذکر شده سلیمان از داوود ارث برده است، طرح عدم ارث‌بری به معنای ترک یا پشت سر انداختن کتاب خدا و نسبت دادن دروغ به خدا و رسولش دانسته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40533918258-154",
+      "sequence": 154,
+      "updated_at": "2026-10-27T17:16:52.251035+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 154,
-    "segments_transcribed": 147,
-    "editor_attempts": 105,
-    "editor_withheld": 90,
-    "topics_published": 22,
+    "segments_captured": 155,
+    "segments_transcribed": 148,
+    "editor_attempts": 106,
+    "editor_withheld": 91,
+    "topics_published": 23,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T17:16:17.862054+00:00"
+    "last_audio_at": "2026-10-27T17:16:41.903622+00:00"
   }
 }
