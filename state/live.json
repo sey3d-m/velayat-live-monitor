@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T17:40:46.293690+00:00",
-  "updated_at": "2026-10-27T17:44:50.942878+00:00",
+  "updated_at": "2026-10-27T17:45:08.928567+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
@@ -59,16 +59,28 @@
       "sequence": 9,
       "updated_at": "2026-10-27T17:44:50.942846+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره روایات مربوط به ورود حضرت زهرا و ماجرای در خانه",
+      "summary": "در این بخش، کارشناس درباره وجود روایات مربوط به ماجرای در خانه و حضرت زهرا (س) سخن می‌گوید و به نقل روایاتی در این زمینه اشاره می‌کند. او همچنین به این نکته می‌پردازد که مکان رویداد اهمیت چندانی ندارد و ورود آن حضرت با خستگی و درخواست استراحت مطرح شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40548632898-10",
+      "sequence": 10,
+      "updated_at": "2026-10-27T17:45:08.928540+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 10,
-    "segments_transcribed": 10,
-    "editor_attempts": 10,
+    "segments_captured": 11,
+    "segments_transcribed": 11,
+    "editor_attempts": 11,
     "editor_withheld": 10,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T17:44:40.190321+00:00"
+    "last_audio_at": "2026-10-27T17:45:04.595549+00:00"
   }
 }
