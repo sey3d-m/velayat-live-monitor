@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T16:35:37.590053+00:00",
+  "updated_at": "2026-10-27T16:36:21.363709+00:00",
   "items": [
     {
       "title": "بررسی سختی‌های پیامبر پس از وفات ابوطالب و حضرت خدیجه",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 52,
-    "segments_transcribed": 49,
-    "editor_attempts": 35,
-    "editor_withheld": 28,
+    "segments_captured": 54,
+    "segments_transcribed": 51,
+    "editor_attempts": 36,
+    "editor_withheld": 29,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T16:35:32.121741+00:00"
+    "last_audio_at": "2026-10-27T16:36:15.303192+00:00"
   }
 }
