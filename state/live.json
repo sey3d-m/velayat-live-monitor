@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T17:40:46.293690+00:00",
-  "updated_at": "2026-10-27T18:11:56.639459+00:00",
+  "updated_at": "2026-10-27T18:12:22.805860+00:00",
   "items": [
-    {
-      "title": "بررسی قرب معنوی و جسمانی حضرت زهرا به پیامبر",
-      "summary": "در این بخش کارشناس استدلال می‌کند که حضرت زهرا (س) علاوه بر قرب جسمانی به عنوان فرزند پیامبر، دارای قرب روحانی و معنوی نیز نسبت به ایشان بوده است. در این گفت‌وگو به تناسب میان مقام حضرت و انتساب به امیرالمؤمنین اشاره شده و نتیجه گرفته می‌شود که این مراتب قرب، جایگاه ویژه‌ای را ایجاد می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40548632898-19",
-      "sequence": 19,
-      "updated_at": "2026-10-27T17:48:45.480397+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی روایات مربوط به فدک و نقل آن از سیوطی",
       "summary": "در این بخش، کارشناس ادعا می‌کند که موضوع جدا کردن و بخشیدن فدک به حضرت فاطمه (س) روایات زیادی دارد و تنها به یک مورد محدود نمی‌شود. همچنین به نقل این مطلب توسط سیوطی از علمای اهل‌سنت استناد می‌شود.",
@@ -68,16 +56,28 @@
       "sequence": 47,
       "updated_at": "2026-10-27T18:00:34.731045+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره معنای آیه ذکر خدا در خانه‌ها",
+      "summary": "در این بخش، کارشناس به پرسش درباره معنای عبارت «فی بیوت» و آیه مربوط به اجازه رفعت خانه‌ها و ذکر خدا در آن‌ها می‌پردازد و اشاره می‌کند که «بیوت» جمع بیت و به معنای خانه‌ها است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40548632898-78",
+      "sequence": 78,
+      "updated_at": "2026-10-27T18:12:22.805832+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 78,
-    "segments_transcribed": 75,
-    "editor_attempts": 66,
-    "editor_withheld": 59,
-    "topics_published": 12,
+    "segments_captured": 79,
+    "segments_transcribed": 76,
+    "editor_attempts": 67,
+    "editor_withheld": 60,
+    "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T18:11:53.662242+00:00"
+    "last_audio_at": "2026-10-27T18:12:19.071363+00:00"
   }
 }
