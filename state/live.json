@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T17:40:46.293690+00:00",
-  "updated_at": "2026-10-27T18:23:16.349467+00:00",
+  "updated_at": "2026-10-27T18:23:41.457764+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره خانواده و ازدواج",
-      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40548632898-40",
-      "sequence": 40,
-      "updated_at": "2026-10-27T17:57:15.255018+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی استدلال کارشناس درباره اختصاص فدک و ذوی‌القربی به حضرت زهرا",
       "summary": "در این بخش، کارشناس استدلال می‌کند که پیامبر با بخشیدن فدک به حضرت زهرا سلام‌الله‌علیها به آیه ذوی‌القربی عمل کرده است؛ به گفته وی، منظور از این آیه یک فرد خاص بوده که این هدیه به او اختصاص یافته است.",
@@ -69,16 +56,28 @@
       "sequence": 94,
       "updated_at": "2026-10-27T18:18:49.893444+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره روایت ورود پیامبر به خانه حضرت زهرا",
+      "summary": "در این بخش، کارشناس به نقل داستانی از جابر از پیامبر اشاره می‌کند که هنگام گرسنگی وارد خانه حضرت زهرا (س) شده و غذایی در خانه نبوده است؛ سپس پرسشی درباره این واقعه و وضعیت موجود مطرح می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40548632898-106",
+      "sequence": 106,
+      "updated_at": "2026-10-27T18:23:41.457739+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 106,
-    "segments_transcribed": 103,
-    "editor_attempts": 92,
-    "editor_withheld": 83,
-    "topics_published": 15,
+    "segments_captured": 107,
+    "segments_transcribed": 104,
+    "editor_attempts": 93,
+    "editor_withheld": 84,
+    "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T18:23:06.429688+00:00"
+    "last_audio_at": "2026-10-27T18:23:31.790880+00:00"
   }
 }
