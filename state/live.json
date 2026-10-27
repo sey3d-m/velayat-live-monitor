@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T16:20:56.968764+00:00",
+  "updated_at": "2026-10-27T16:21:16.258825+00:00",
   "items": [
     {
       "title": "پرسش درباره توسل اهل‌بیت به حضرت زهرا (س)",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 15,
-    "segments_transcribed": 15,
-    "editor_attempts": 11,
+    "segments_captured": 16,
+    "segments_transcribed": 16,
+    "editor_attempts": 12,
     "editor_withheld": 10,
     "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T16:20:45.221108+00:00"
+    "last_audio_at": "2026-10-27T16:21:10.604438+00:00"
   }
 }
