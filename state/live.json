@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "40519177924",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T14:50:26.879277+00:00",
-  "updated_at": "2026-10-27T14:51:08.394660+00:00",
-  "items": [],
+  "updated_at": "2026-10-27T14:51:40.041956+00:00",
+  "items": [
+    {
+      "title": "پرسش درباره علت حکم شرعی آزمایش در امور مالی",
+      "summary": "در این بخش کارشناس درباره علت حکم شرعی آزمایش افراد در مسائل مالی سخن می‌گوید و استدلال می‌کند که این کار برای تشخیص رشید و رشیده شدن آن‌ها انجام می‌شود تا در صورت عدم بلوغ اقتصادی، اختیار معامله و خرید و پول در اختیارشان قرار نگیرد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "40519177924-2",
+      "sequence": 2,
+      "updated_at": "2026-10-27T14:51:40.041932+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 2,
-    "segments_transcribed": 2,
-    "editor_attempts": 2,
-    "editor_withheld": 1,
-    "topics_published": 0,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
-    "last_audio_at": "2026-10-27T14:51:03.533348+00:00"
+    "segments_captured": 3,
+    "segments_transcribed": 3,
+    "editor_attempts": 3,
+    "editor_withheld": 3,
+    "topics_published": 1,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
+    "last_audio_at": "2026-10-27T14:51:28.053712+00:00"
   }
 }
