@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T17:40:46.293690+00:00",
-  "updated_at": "2026-10-27T17:44:44.175022+00:00",
+  "updated_at": "2026-10-27T17:44:50.942878+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
@@ -46,16 +46,29 @@
       "sequence": 6,
       "updated_at": "2026-10-27T17:43:44.902503+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره استناد به ابن‌عباس درباره سبب نزول آیه",
+      "summary": "در این بخش کارشناس استدلال می‌کند که به گفته ابن‌عباس، آیه مورد بحث درباره علی بن ابی طالب و فاطمه بنت رسول الله نازل شده است. همچنین در ادامه اشاره می‌شود که روایات دیگری نیز وجود دارد و به عنوان نمونه به سبب نزول آیه تطهیر پرداخته می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "40548632898-9",
+      "sequence": 9,
+      "updated_at": "2026-10-27T17:44:50.942846+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 10,
     "segments_transcribed": 10,
     "editor_attempts": 10,
-    "editor_withheld": 9,
-    "topics_published": 3,
-    "audio_ai_calls": 2,
-    "audio_ai_success": 2,
+    "editor_withheld": 10,
+    "topics_published": 4,
+    "audio_ai_calls": 3,
+    "audio_ai_success": 3,
     "last_audio_at": "2026-10-27T17:44:40.190321+00:00"
   }
 }
