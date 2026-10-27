@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T16:55:40.427975+00:00",
+  "updated_at": "2026-10-27T16:56:25.572369+00:00",
   "items": [
     {
       "title": "بررسی روایات ازدواج حضرت فاطمه و علی و جایگاه خشم و رضای ایشان",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 102,
-    "segments_transcribed": 99,
+    "segments_captured": 104,
+    "segments_transcribed": 100,
     "editor_attempts": 71,
-    "editor_withheld": 59,
+    "editor_withheld": 60,
     "topics_published": 19,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T16:55:31.963025+00:00"
+    "last_audio_at": "2026-10-27T16:56:21.989010+00:00"
   }
 }
