@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T16:18:04.448464+00:00",
+  "updated_at": "2026-10-27T16:18:09.841530+00:00",
   "items": [
     {
       "title": "پرسش درباره توسل اهل‌بیت به حضرت زهرا (س)",
@@ -20,16 +20,29 @@
       "sequence": 2,
       "updated_at": "2026-10-27T16:16:54.697113+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی اصالت و جایگاه خانوادگی حضرت خدیجه در دوران جاهلیت",
+      "summary": "در این بخش، کارشناس درباره اصالت و جایگاه خانوادگی حضرت خدیجه (س) در دوران جاهلیت سخن می‌گوید. به گفته کارشناس، مادر گرامی حضرت فاطمه زهرا (س)، خدیجه بنت خویلد، از خانواده‌ای اصیل و اصل‌ونصب‌دار در قبل از اسلام بوده است و در این زمینه به ویژگی‌های ازدواج‌ها و شرایط آن دوران اشاره می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "40533918258-7",
+      "sequence": 7,
+      "updated_at": "2026-10-27T16:18:09.841506+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 8,
     "segments_transcribed": 8,
     "editor_attempts": 6,
-    "editor_withheld": 5,
-    "topics_published": 1,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
+    "editor_withheld": 6,
+    "topics_published": 2,
+    "audio_ai_calls": 2,
+    "audio_ai_success": 2,
     "last_audio_at": "2026-10-27T16:17:58.183183+00:00"
   }
 }
