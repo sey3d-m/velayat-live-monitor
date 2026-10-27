@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T16:53:58.477720+00:00",
+  "updated_at": "2026-10-27T16:54:26.060104+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره حدیث و روایت",
-      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40533918258-81",
-      "sequence": 81,
-      "updated_at": "2026-10-27T16:48:16.755898+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی روایات ازدواج حضرت فاطمه و علی و جایگاه خشم و رضای ایشان",
       "summary": "در این بخش کارشناس استدلال می‌کند که بر اساس تعابیر روایات، ازدواج حضرت فاطمه با علی (ع) به امر الهی بوده و خشم و رضایت آن حضرت به منزله خشم و رضای پروردگار است؛ همچنین بیان شد کسی که به ایشان ظلم کند ملعون است.",
@@ -69,16 +56,28 @@
       "sequence": 96,
       "updated_at": "2026-10-27T16:53:50.216954+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی شناخت فاطمه زهرا و درک شب قدر",
+      "summary": "در این بخش کارشناس استدلال می‌کند که شناخت حضرت فاطمه چنان‌که سزاوار است، موجب درک شب قدر می‌شود و کسی که به این مقام برسد، شب قدر را درک کرده است. همچنین به گفته کارشناس، امام معصوم حجت خدا بر خلق است و ملائکه با او سخن می‌گویند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40533918258-98",
+      "sequence": 98,
+      "updated_at": "2026-10-27T16:54:26.060080+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 98,
-    "segments_transcribed": 95,
-    "editor_attempts": 67,
-    "editor_withheld": 56,
-    "topics_published": 18,
+    "segments_captured": 99,
+    "segments_transcribed": 96,
+    "editor_attempts": 68,
+    "editor_withheld": 57,
+    "topics_published": 19,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T16:53:52.691522+00:00"
+    "last_audio_at": "2026-10-27T16:54:16.969486+00:00"
   }
 }
