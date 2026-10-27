@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T17:40:46.293690+00:00",
-  "updated_at": "2026-10-27T18:17:29.694091+00:00",
+  "updated_at": "2026-10-27T18:18:19.862589+00:00",
   "items": [
     {
       "title": "بررسی استناد حدیث و تعبیر «أخرجه» در منابع اهل سنت",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 92,
-    "segments_transcribed": 89,
-    "editor_attempts": 79,
-    "editor_withheld": 70,
+    "segments_captured": 94,
+    "segments_transcribed": 91,
+    "editor_attempts": 81,
+    "editor_withheld": 72,
     "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T18:17:27.077370+00:00"
+    "last_audio_at": "2026-10-27T18:18:16.912886+00:00"
   }
 }
