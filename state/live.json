@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T16:25:17.302834+00:00",
+  "updated_at": "2026-10-27T16:25:55.345202+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره خانواده و ازدواج",
-      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40533918258-8",
-      "sequence": 8,
-      "updated_at": "2026-10-27T16:18:53.498234+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره تبیین جایگاه بهشتی حضرت خدیجه برای حضرت فاطمه",
       "summary": "در این بخش کارشناس استدلال می‌کند که رسول خدا با تبیین جایگاه بهشتی حضرت خدیجه برای حضرت فاطمه موجب آرامش وی شد. بر اساس این گفت‌وگو، پس از این سخنان بی‌تابی حضرت فاطمه پایان یافت.",
@@ -69,16 +56,28 @@
       "sequence": 16,
       "updated_at": "2026-10-27T16:21:55.654103+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نحوه بند آوردن خون پیامبر (ص) با خاکستر حصیر",
+      "summary": "در این بخش کارشناس استدلال می‌کند که به گفته نقل‌ها، زنان مدینه برای امدادرسانی به جبهه آمده بودند. بر اساس این روایت، پس از مجروح شدن پیامبر (ص)، به دستور حضرت فاطمه (س) حصیر را سوزاندند و از خاکستر آن برای بند آوردن خون زخم پیامبر استفاده کردند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40533918258-26",
+      "sequence": 26,
+      "updated_at": "2026-10-27T16:25:55.345182+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 26,
-    "segments_transcribed": 26,
-    "editor_attempts": 18,
-    "editor_withheld": 14,
-    "topics_published": 7,
+    "segments_captured": 27,
+    "segments_transcribed": 27,
+    "editor_attempts": 19,
+    "editor_withheld": 15,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T16:25:12.061758+00:00"
+    "last_audio_at": "2026-10-27T16:25:36.611078+00:00"
   }
 }
