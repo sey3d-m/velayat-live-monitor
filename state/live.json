@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T16:48:03.923590+00:00",
+  "updated_at": "2026-10-27T16:48:16.755921+00:00",
   "items": [
-    {
-      "title": "پرسش درباره مصادیق آیات و روایات مرتبط با منزلت حضرت زهرا",
-      "summary": "در این بخش، کارشناس در پاسخ به پرسشی درباره وجود مصادیق دیگر در آیات و روایات برای منزلت حضرت زهرا، اشاره می‌کند که در منابع روایی و تاریخی تعابیر بلندی درباره آن حضرت آمده است و مباحث را از دیدگاه قرآن و پیامبر بررسی می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40533918258-39",
-      "sequence": 39,
-      "updated_at": "2026-10-27T16:31:16.209556+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
       "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +57,29 @@
       "sequence": 64,
       "updated_at": "2026-10-27T16:41:17.617897+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره حدیث و روایت",
+      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40533918258-81",
+      "sequence": 81,
+      "updated_at": "2026-10-27T16:48:16.755898+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 82,
-    "segments_transcribed": 79,
+    "segments_captured": 83,
+    "segments_transcribed": 80,
     "editor_attempts": 54,
-    "editor_withheld": 46,
-    "topics_published": 13,
+    "editor_withheld": 47,
+    "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T16:47:33.190554+00:00"
+    "last_audio_at": "2026-10-27T16:48:05.248135+00:00"
   }
 }
