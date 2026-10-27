@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T17:40:46.293690+00:00",
-  "updated_at": "2026-10-27T18:24:01.834511+00:00",
+  "updated_at": "2026-10-27T18:24:42.652626+00:00",
   "items": [
     {
       "title": "بررسی استدلال کارشناس درباره اختصاص فدک و ذوی‌القربی به حضرت زهرا",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 108,
-    "segments_transcribed": 105,
-    "editor_attempts": 94,
-    "editor_withheld": 84,
+    "segments_captured": 110,
+    "segments_transcribed": 107,
+    "editor_attempts": 96,
+    "editor_withheld": 86,
     "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T18:23:56.061411+00:00"
+    "last_audio_at": "2026-10-27T18:24:39.694013+00:00"
   }
 }
