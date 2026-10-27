@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T17:40:46.293690+00:00",
-  "updated_at": "2026-10-27T17:47:37.319280+00:00",
+  "updated_at": "2026-10-27T17:47:53.128043+00:00",
   "items": [
     {
       "title": "پرسش درباره ارتباط آیات و اسباب نزول مرتبط با حضرت زهرا",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 17,
-    "segments_transcribed": 17,
-    "editor_attempts": 17,
+    "segments_captured": 18,
+    "segments_transcribed": 18,
+    "editor_attempts": 18,
     "editor_withheld": 16,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T17:47:33.677699+00:00"
+    "last_audio_at": "2026-10-27T17:47:50.874855+00:00"
   }
 }
