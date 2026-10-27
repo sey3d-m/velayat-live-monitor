@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T17:40:46.293690+00:00",
-  "updated_at": "2026-10-27T18:09:34.894529+00:00",
+  "updated_at": "2026-10-27T18:10:17.717807+00:00",
   "items": [
     {
       "title": "بررسی قرب معنوی و جسمانی حضرت زهرا به پیامبر",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 72,
-    "segments_transcribed": 69,
-    "editor_attempts": 60,
-    "editor_withheld": 53,
+    "segments_captured": 74,
+    "segments_transcribed": 71,
+    "editor_attempts": 62,
+    "editor_withheld": 55,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T18:09:31.750635+00:00"
+    "last_audio_at": "2026-10-27T18:10:14.984900+00:00"
   }
 }
