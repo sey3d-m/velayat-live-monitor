@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T16:26:07.717406+00:00",
+  "updated_at": "2026-10-27T16:26:50.500899+00:00",
   "items": [
     {
       "title": "پرسش درباره تبیین جایگاه بهشتی حضرت خدیجه برای حضرت فاطمه",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 28,
-    "segments_transcribed": 28,
-    "editor_attempts": 20,
-    "editor_withheld": 15,
+    "segments_captured": 30,
+    "segments_transcribed": 30,
+    "editor_attempts": 21,
+    "editor_withheld": 16,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T16:26:01.843526+00:00"
+    "last_audio_at": "2026-10-27T16:26:44.762699+00:00"
   }
 }
