@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T16:20:27.691869+00:00",
+  "updated_at": "2026-10-27T16:20:56.968764+00:00",
   "items": [
     {
       "title": "پرسش درباره توسل اهل‌بیت به حضرت زهرا (س)",
@@ -59,16 +59,28 @@
       "sequence": 12,
       "updated_at": "2026-10-27T16:20:27.691846+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی شرایط سخت حضور حضرت زهرا در شعب ابی‌طالب",
+      "summary": "در این بخش کارشناس استدلال می‌کند که با توجه به حضور حضرت زهرا از سنین کودکی در شعب ابی‌طالب همراه با سایر مسلمانان، شرایط سخت آن دوران برای کودکان دشوارتر بوده است. به گفته وی، پس از وفات جناب ابوطالب و حضرت خدیجه شرایط بر پیامبر خدا سخت‌تر شد زیرا آنها جایگاه اجتماعی ویژه‌ای در میان قبایل داشتند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40533918258-14",
+      "sequence": 14,
+      "updated_at": "2026-10-27T16:20:56.968735+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 14,
-    "segments_transcribed": 14,
-    "editor_attempts": 10,
+    "segments_captured": 15,
+    "segments_transcribed": 15,
+    "editor_attempts": 11,
     "editor_withheld": 10,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T16:20:20.574327+00:00"
+    "last_audio_at": "2026-10-27T16:20:45.221108+00:00"
   }
 }
