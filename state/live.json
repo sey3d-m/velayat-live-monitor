@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T17:40:46.293690+00:00",
-  "updated_at": "2026-10-27T17:43:11.121309+00:00",
+  "updated_at": "2026-10-27T17:43:44.902530+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
@@ -33,16 +33,29 @@
       "sequence": 3,
       "updated_at": "2026-10-27T17:42:25.446753+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی استناد به روایات اهل‌سنت توسط جلال‌الدین سیوطی ذیل آیات",
+      "summary": "در این بخش کارشناس استدلال می‌کند که جلال‌الدین سیوطی در منابع اهل‌سنت روایات فراوانی را ذیل آیات مورد بحث آورده است. وی در ادامه از دوستان می‌خواهد که اگر روایات دیگری نیز در این زمینه دارند، مطرح کنند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "40548632898-6",
+      "sequence": 6,
+      "updated_at": "2026-10-27T17:43:44.902503+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 6,
-    "segments_transcribed": 6,
-    "editor_attempts": 6,
-    "editor_withheld": 5,
-    "topics_published": 2,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
-    "last_audio_at": "2026-10-27T17:43:08.103078+00:00"
+    "segments_captured": 7,
+    "segments_transcribed": 7,
+    "editor_attempts": 7,
+    "editor_withheld": 7,
+    "topics_published": 3,
+    "audio_ai_calls": 2,
+    "audio_ai_success": 2,
+    "last_audio_at": "2026-10-27T17:43:31.951000+00:00"
   }
 }
