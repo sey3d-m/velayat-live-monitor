@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T16:42:00.191378+00:00",
+  "updated_at": "2026-10-27T16:43:04.124380+00:00",
   "items": [
     {
       "title": "پرسش درباره مصادیق آیات و روایات مرتبط با منزلت حضرت زهرا",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 68,
-    "segments_transcribed": 65,
-    "editor_attempts": 44,
-    "editor_withheld": 36,
+    "segments_captured": 70,
+    "segments_transcribed": 67,
+    "editor_attempts": 45,
+    "editor_withheld": 37,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T16:41:53.197383+00:00"
+    "last_audio_at": "2026-10-27T16:42:42.640621+00:00"
   }
 }
