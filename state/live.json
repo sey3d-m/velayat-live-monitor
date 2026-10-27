@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T17:08:22.961045+00:00",
+  "updated_at": "2026-10-27T17:09:13.030848+00:00",
   "items": [
     {
       "title": "پرسش درباره شهادت حضرت فاطمه (س) به عنوان دلیل ولایت امیرالمؤمنین (ع)",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 134,
-    "segments_transcribed": 128,
-    "editor_attempts": 91,
-    "editor_withheld": 77,
+    "segments_captured": 136,
+    "segments_transcribed": 130,
+    "editor_attempts": 93,
+    "editor_withheld": 79,
     "topics_published": 21,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T17:08:19.153503+00:00"
+    "last_audio_at": "2026-10-27T17:09:08.319757+00:00"
   }
 }
