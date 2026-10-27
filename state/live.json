@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T17:17:09.131212+00:00",
+  "updated_at": "2026-10-27T17:17:46.456720+00:00",
   "items": [
-    {
-      "title": "بررسی شناخت فاطمه زهرا و درک شب قدر",
-      "summary": "در این بخش کارشناس استدلال می‌کند که شناخت حضرت فاطمه چنان‌که سزاوار است، موجب درک شب قدر می‌شود و کسی که به این مقام برسد، شب قدر را درک کرده است. همچنین به گفته کارشناس، امام معصوم حجت خدا بر خلق است و ملائکه با او سخن می‌گویند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40533918258-98",
-      "sequence": 98,
-      "updated_at": "2026-10-27T16:54:26.060080+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره استدلال کارشناس پیرامون اوصاف پیامبر در قرآن",
       "summary": "در این بخش، کارشناس استدلال می‌کند که سخنان مطرح‌شده نادرست و ناحق نیست. به گفته کارشناس، در این زمینه به حقیقتی اشاره می‌شود که پیامبری از خود مردم به سویشان آمده است؛ کسی که رنج و سختی‌های مؤمنان برای او ناگوار است و نسبت به مؤمنان رئوف و مهربان است.",
@@ -67,16 +55,29 @@
       "sequence": 154,
       "updated_at": "2026-10-27T17:16:52.251035+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40533918258-156",
+      "sequence": 156,
+      "updated_at": "2026-10-27T17:17:46.456696+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 156,
-    "segments_transcribed": 148,
-    "editor_attempts": 106,
-    "editor_withheld": 91,
-    "topics_published": 23,
+    "segments_captured": 157,
+    "segments_transcribed": 149,
+    "editor_attempts": 107,
+    "editor_withheld": 92,
+    "topics_published": 24,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T17:17:06.721680+00:00"
+    "last_audio_at": "2026-10-27T17:17:31.546713+00:00"
   }
 }
