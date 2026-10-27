@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T14:50:26.879277+00:00",
-  "updated_at": "2026-10-27T15:17:30.847914+00:00",
+  "updated_at": "2026-10-27T15:17:54.666034+00:00",
   "items": [
     {
       "title": "پرسش درباره علت حکم شرعی آزمایش در امور مالی",
@@ -46,16 +46,29 @@
       "sequence": 19,
       "updated_at": "2026-10-27T14:58:16.935144+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40519177924-67",
+      "sequence": 67,
+      "updated_at": "2026-10-27T15:17:54.666018+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 68,
-    "segments_transcribed": 63,
+    "segments_captured": 69,
+    "segments_transcribed": 64,
     "editor_attempts": 48,
-    "editor_withheld": 47,
-    "topics_published": 3,
+    "editor_withheld": 48,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T15:17:25.028690+00:00"
+    "last_audio_at": "2026-10-27T15:17:49.674877+00:00"
   }
 }
