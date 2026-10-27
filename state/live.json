@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T17:40:46.293690+00:00",
-  "updated_at": "2026-10-27T18:25:31.687506+00:00",
+  "updated_at": "2026-10-27T18:25:57.645628+00:00",
   "items": [
-    {
-      "title": "بررسی استدلال کارشناس درباره اختصاص فدک و ذوی‌القربی به حضرت زهرا",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که پیامبر با بخشیدن فدک به حضرت زهرا سلام‌الله‌علیها به آیه ذوی‌القربی عمل کرده است؛ به گفته وی، منظور از این آیه یک فرد خاص بوده که این هدیه به او اختصاص یافته است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "40548632898-47",
-      "sequence": 47,
-      "updated_at": "2026-10-27T18:00:34.731045+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره معنای آیه ذکر خدا در خانه‌ها",
       "summary": "در این بخش، کارشناس به پرسش درباره معنای عبارت «فی بیوت» و آیه مربوط به اجازه رفعت خانه‌ها و ذکر خدا در آن‌ها می‌پردازد و اشاره می‌کند که «بیوت» جمع بیت و به معنای خانه‌ها است.",
@@ -68,16 +56,28 @@
       "sequence": 106,
       "updated_at": "2026-10-27T18:23:41.457739+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ادعای برتری زنان برگزیده عالم به استناد سخن کارشناس",
+      "summary": "در این بخش، کارشناس درباره برتری زنان عالم استدلال می‌کند و با اشاره به نام‌هایی چون خدیجه، فاطمه، مریم و آسیه، این افراد را به عنوان برترین زنان معرفی می‌کند؛ به گفته وی این موضوع از روشن‌ترین مباحث است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40548632898-112",
+      "sequence": 112,
+      "updated_at": "2026-10-27T18:25:57.645603+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 112,
-    "segments_transcribed": 109,
-    "editor_attempts": 98,
-    "editor_withheld": 88,
-    "topics_published": 16,
+    "segments_captured": 113,
+    "segments_transcribed": 110,
+    "editor_attempts": 99,
+    "editor_withheld": 89,
+    "topics_published": 17,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T18:25:28.851885+00:00"
+    "last_audio_at": "2026-10-27T18:25:53.987806+00:00"
   }
 }
