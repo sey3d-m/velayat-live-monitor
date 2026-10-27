@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T17:23:20.702630+00:00",
+  "updated_at": "2026-10-27T17:23:35.337764+00:00",
   "items": [
     {
       "title": "پرسش درباره رویکرد مخالفان و فرار از جنگ‌ها",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 171,
-    "segments_transcribed": 163,
-    "editor_attempts": 118,
+    "segments_captured": 172,
+    "segments_transcribed": 164,
+    "editor_attempts": 119,
     "editor_withheld": 102,
     "topics_published": 25,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T17:23:05.207239+00:00"
+    "last_audio_at": "2026-10-27T17:23:29.904994+00:00"
   }
 }
