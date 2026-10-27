@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T16:41:15.811312+00:00",
+  "updated_at": "2026-10-27T16:41:17.617926+00:00",
   "items": [
-    {
-      "title": "بررسی نحوه بند آوردن خون پیامبر (ص) با خاکستر حصیر",
-      "summary": "در این بخش کارشناس استدلال می‌کند که به گفته نقل‌ها، زنان مدینه برای امدادرسانی به جبهه آمده بودند. بر اساس این روایت، پس از مجروح شدن پیامبر (ص)، به دستور حضرت فاطمه (س) حصیر را سوزاندند و از خاکستر آن برای بند آوردن خون زخم پیامبر استفاده کردند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40533918258-26",
-      "sequence": 26,
-      "updated_at": "2026-10-27T16:25:55.345182+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره مصادیق آیات و روایات مرتبط با منزلت حضرت زهرا",
       "summary": "در این بخش، کارشناس در پاسخ به پرسشی درباره وجود مصادیق دیگر در آیات و روایات برای منزلت حضرت زهرا، اشاره می‌کند که در منابع روایی و تاریخی تعابیر بلندی درباره آن حضرت آمده است و مباحث را از دیدگاه قرآن و پیامبر بررسی می‌کند.",
@@ -68,14 +56,27 @@
       "sequence": 60,
       "updated_at": "2026-10-27T16:39:36.687185+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خمس و زکات",
+      "summary": "در این بخش از برنامه، موضوع «خمس و زکات» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40533918258-64",
+      "sequence": 64,
+      "updated_at": "2026-10-27T16:41:17.617897+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 66,
     "segments_transcribed": 63,
     "editor_attempts": 43,
-    "editor_withheld": 35,
-    "topics_published": 12,
+    "editor_withheld": 36,
+    "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-10-27T16:41:07.091362+00:00"
