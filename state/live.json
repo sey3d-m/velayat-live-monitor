@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T17:18:49.783423+00:00",
+  "updated_at": "2026-10-27T17:19:31.465689+00:00",
   "items": [
     {
       "title": "پرسش درباره استدلال کارشناس پیرامون اوصاف پیامبر در قرآن",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 160,
-    "segments_transcribed": 152,
-    "editor_attempts": 109,
-    "editor_withheld": 93,
+    "segments_captured": 162,
+    "segments_transcribed": 154,
+    "editor_attempts": 110,
+    "editor_withheld": 95,
     "topics_published": 24,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T17:18:45.328690+00:00"
+    "last_audio_at": "2026-10-27T17:19:28.069613+00:00"
   }
 }
