@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "ended",
   "network": "velayat_farsi",
   "session": "40533918258",
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T17:24:25.966368+00:00",
+  "updated_at": "2026-10-27T17:24:59.702635+00:00",
   "items": [
     {
       "title": "پرسش درباره رویکرد مخالفان و فرار از جنگ‌ها",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 174,
-    "segments_transcribed": 166,
-    "editor_attempts": 121,
-    "editor_withheld": 104,
+    "segments_captured": 175,
+    "segments_transcribed": 167,
+    "editor_attempts": 122,
+    "editor_withheld": 105,
     "topics_published": 25,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T17:24:20.073120+00:00"
+    "last_audio_at": "2026-10-27T17:24:45.843977+00:00"
   }
 }
