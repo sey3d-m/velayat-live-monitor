@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T17:03:32.152603+00:00",
+  "updated_at": "2026-10-27T17:04:22.937429+00:00",
   "items": [
     {
       "title": "بررسی روایت سیدة نساء اهل الجنة و پاره تن پیامبر",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 122,
-    "segments_transcribed": 117,
-    "editor_attempts": 82,
-    "editor_withheld": 69,
+    "segments_captured": 124,
+    "segments_transcribed": 119,
+    "editor_attempts": 84,
+    "editor_withheld": 71,
     "topics_published": 20,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T17:03:28.205981+00:00"
+    "last_audio_at": "2026-10-27T17:04:18.023470+00:00"
   }
 }
