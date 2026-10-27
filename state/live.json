@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T17:40:46.293690+00:00",
-  "updated_at": "2026-10-27T17:47:54.609192+00:00",
+  "updated_at": "2026-10-27T17:48:43.997635+00:00",
   "items": [
     {
       "title": "بررسی استناد به روایات اهل‌سنت توسط جلال‌الدین سیوطی ذیل آیات",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 18,
-    "segments_transcribed": 18,
-    "editor_attempts": 18,
-    "editor_withheld": 16,
+    "segments_captured": 20,
+    "segments_transcribed": 20,
+    "editor_attempts": 20,
+    "editor_withheld": 17,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T17:47:50.874855+00:00"
+    "last_audio_at": "2026-10-27T17:48:40.465131+00:00"
   }
 }
