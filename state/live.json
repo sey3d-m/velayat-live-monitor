@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "starting",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "40548632898",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T17:40:46.293690+00:00",
-  "updated_at": "2026-10-27T17:40:47.450389+00:00",
-  "items": [],
+  "updated_at": "2026-10-27T17:41:13.233333+00:00",
+  "items": [
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40548632898-0",
+      "sequence": 0,
+      "updated_at": "2026-10-27T17:41:13.233301+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 0,
-    "segments_transcribed": 0,
-    "editor_attempts": 0,
-    "editor_withheld": 0,
-    "topics_published": 0,
+    "segments_captured": 1,
+    "segments_transcribed": 1,
+    "editor_attempts": 1,
+    "editor_withheld": 1,
+    "topics_published": 1,
     "audio_ai_calls": 0,
     "audio_ai_success": 0,
-    "last_audio_at": null
+    "last_audio_at": "2026-10-27T17:41:04.347356+00:00"
   }
 }
