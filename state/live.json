@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T14:50:26.879277+00:00",
-  "updated_at": "2026-10-27T15:07:55.969713+00:00",
+  "updated_at": "2026-10-27T15:08:40.991739+00:00",
   "items": [
     {
       "title": "پرسش درباره علت حکم شرعی آزمایش در امور مالی",
@@ -49,13 +49,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 44,
-    "segments_transcribed": 39,
-    "editor_attempts": 33,
-    "editor_withheld": 32,
+    "segments_captured": 46,
+    "segments_transcribed": 41,
+    "editor_attempts": 34,
+    "editor_withheld": 33,
     "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T15:07:50.717183+00:00"
+    "last_audio_at": "2026-10-27T15:08:33.896763+00:00"
   }
 }
