@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T14:50:26.879277+00:00",
-  "updated_at": "2026-10-27T14:58:15.410574+00:00",
+  "updated_at": "2026-10-27T14:58:16.935161+00:00",
   "items": [
     {
       "title": "پرسش درباره علت حکم شرعی آزمایش در امور مالی",
@@ -33,14 +33,27 @@
       "sequence": 6,
       "updated_at": "2026-10-27T14:53:33.534483+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره روزه",
+      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40519177924-19",
+      "sequence": 19,
+      "updated_at": "2026-10-27T14:58:16.935144+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 20,
     "segments_transcribed": 19,
     "editor_attempts": 19,
-    "editor_withheld": 18,
-    "topics_published": 2,
+    "editor_withheld": 19,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-10-27T14:58:09.948820+00:00"
