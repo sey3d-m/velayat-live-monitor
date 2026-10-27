@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T14:50:26.879277+00:00",
-  "updated_at": "2026-10-27T15:44:57.994074+00:00",
+  "updated_at": "2026-10-27T15:45:29.100919+00:00",
   "items": [
     {
       "title": "بررسی شیوه تربیت کودکان میان سکوت مطلق و رهاسازی",
@@ -75,13 +75,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 136,
-    "segments_transcribed": 107,
+    "segments_captured": 138,
+    "segments_transcribed": 108,
     "editor_attempts": 74,
     "editor_withheld": 74,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T15:44:38.253163+00:00"
+    "last_audio_at": "2026-10-27T15:45:21.406372+00:00"
   }
 }
