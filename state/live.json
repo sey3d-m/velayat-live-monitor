@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T16:20:26.289316+00:00",
+  "updated_at": "2026-10-27T16:20:27.691869+00:00",
   "items": [
     {
       "title": "پرسش درباره توسل اهل‌بیت به حضرت زهرا (س)",
@@ -46,16 +46,29 @@
       "sequence": 8,
       "updated_at": "2026-10-27T16:18:53.498234+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره تبیین جایگاه بهشتی حضرت خدیجه برای حضرت فاطمه",
+      "summary": "در این بخش کارشناس استدلال می‌کند که رسول خدا با تبیین جایگاه بهشتی حضرت خدیجه برای حضرت فاطمه موجب آرامش وی شد. بر اساس این گفت‌وگو، پس از این سخنان بی‌تابی حضرت فاطمه پایان یافت.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "40533918258-12",
+      "sequence": 12,
+      "updated_at": "2026-10-27T16:20:27.691846+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 14,
     "segments_transcribed": 14,
     "editor_attempts": 10,
-    "editor_withheld": 9,
-    "topics_published": 3,
-    "audio_ai_calls": 2,
-    "audio_ai_success": 2,
+    "editor_withheld": 10,
+    "topics_published": 4,
+    "audio_ai_calls": 3,
+    "audio_ai_success": 3,
     "last_audio_at": "2026-10-27T16:20:20.574327+00:00"
   }
 }
