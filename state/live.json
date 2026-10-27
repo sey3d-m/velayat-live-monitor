@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T16:51:09.606122+00:00",
+  "updated_at": "2026-10-27T16:51:34.118700+00:00",
   "items": [
     {
       "title": "پرسش درباره روزه اهل‌بیت و نزول آیه به نقل از تفاسیر",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 91,
-    "segments_transcribed": 88,
-    "editor_attempts": 61,
+    "segments_captured": 92,
+    "segments_transcribed": 89,
+    "editor_attempts": 62,
     "editor_withheld": 52,
     "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T16:51:04.114322+00:00"
+    "last_audio_at": "2026-10-27T16:51:28.774418+00:00"
   }
 }
