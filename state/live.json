@@ -1,83 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "40533918258",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "40548632898",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-27",
-  "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T17:24:59.702635+00:00",
-  "items": [
-    {
-      "title": "پرسش درباره رویکرد مخالفان و فرار از جنگ‌ها",
-      "summary": "در این بخش کارشناس استدلال می‌کند که گروهی در آرامش و در امان زندگی می‌کردند و منتظر بودند تا روزگار علیه امام برگردد. به گفته کارشناس، این افراد گوش‌به‌زنگ خبرها بودند و در بحران‌ها می‌نشستند و در جنگ‌ها می‌گریختند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40533918258-131",
-      "sequence": 131,
-      "updated_at": "2026-10-27T17:07:50.807513+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره شتاب در وقایع پس از رحلت پیامبر",
-      "summary": "در این بخش کارشناس استدلال می‌کند که پس از رحلت پیامبر اکرم (ص) و پیش از التیام زخم‌ها و دفن ایشان، برخی افراد با شتاب اقداماتی انجام دادند و گمان می‌کردند اگر چنین نکنند دچار فتنه می‌شوند، در حالی که خود در فتنه افتادند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40533918258-139",
-      "sequence": 139,
-      "updated_at": "2026-10-27T17:11:03.970315+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی استدلال ارث‌بری حضرت زهرا (س) از پدر بر اساس آیات قرآن",
-      "summary": "در این بخش، کارشناس درباره مطالبه ارث و ادعای عدم ارث‌بری از پیامبر (ص) سخن می‌گوید. به گفته وی، با استناد به اینکه در کتاب خدا ذکر شده سلیمان از داوود ارث برده است، طرح عدم ارث‌بری به معنای ترک یا پشت سر انداختن کتاب خدا و نسبت دادن دروغ به خدا و رسولش دانسته می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40533918258-154",
-      "sequence": 154,
-      "updated_at": "2026-10-27T17:16:52.251035+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40533918258-156",
-      "sequence": 156,
-      "updated_at": "2026-10-27T17:17:46.456696+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره رزق کافران بر اساس دعای حضرت ابراهیم",
-      "summary": "در این بخش کارشناس درباره رزق‌ومزیه مؤمن و کافر بحث می‌کند و استدلال می‌کند که به گفته وی، حضرت ابراهیم نیز دعا کرد که خداوند به کفار روزی ندهد، اما پاسخ آمد که حتی به کافر نیز در دنیا روزی داده می‌شود و حساب قیامت جداست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40533918258-170",
-      "sequence": 170,
-      "updated_at": "2026-10-27T17:23:20.702612+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-10-27T17:40:46.293690+00:00",
+  "updated_at": "2026-10-27T17:40:47.450389+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 167,
-    "editor_attempts": 122,
-    "editor_withheld": 105,
-    "topics_published": 25,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T17:24:45.843977+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
