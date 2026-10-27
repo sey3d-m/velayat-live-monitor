@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T17:40:46.293690+00:00",
-  "updated_at": "2026-10-27T17:56:54.486052+00:00",
+  "updated_at": "2026-10-27T17:57:15.255041+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره حدیث و روایت",
-      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40548632898-16",
-      "sequence": 16,
-      "updated_at": "2026-10-27T17:47:37.319259+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره مصداق نزدیکان پیامبر و حضرت زهرا در گفت‌وگو",
       "summary": "در این بخش کارشناس درباره مصداق نزدیکان پیامبر اکرم (ص) سخن می‌گوید و بر اساس آنچه مطرح شد، نزدیک‌ترین افراد به پیامبر را حضرت زهرا (س) معرفی می‌کند و به موضوع قرب الهی می‌پردازد.",
@@ -68,16 +55,29 @@
       "sequence": 30,
       "updated_at": "2026-10-27T17:53:10.281968+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خانواده و ازدواج",
+      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40548632898-40",
+      "sequence": 40,
+      "updated_at": "2026-10-27T17:57:15.255018+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 40,
-    "segments_transcribed": 39,
-    "editor_attempts": 36,
-    "editor_withheld": 30,
-    "topics_published": 10,
+    "segments_captured": 41,
+    "segments_transcribed": 40,
+    "editor_attempts": 37,
+    "editor_withheld": 32,
+    "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T17:56:41.902579+00:00"
+    "last_audio_at": "2026-10-27T17:57:06.502892+00:00"
   }
 }
