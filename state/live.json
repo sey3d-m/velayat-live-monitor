@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T17:40:46.293690+00:00",
-  "updated_at": "2026-10-27T18:41:23.251187+00:00",
+  "updated_at": "2026-10-27T18:42:20.673717+00:00",
   "items": [
     {
       "title": "پرسش درباره معنای آیه ذکر خدا در خانه‌ها",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 152,
-    "segments_transcribed": 130,
-    "editor_attempts": 117,
+    "segments_captured": 154,
+    "segments_transcribed": 131,
+    "editor_attempts": 118,
     "editor_withheld": 107,
     "topics_published": 17,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T18:41:21.881578+00:00"
+    "last_audio_at": "2026-10-27T18:42:11.182294+00:00"
   }
 }
