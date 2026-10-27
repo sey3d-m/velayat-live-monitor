@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T16:31:16.209573+00:00",
+  "updated_at": "2026-10-27T16:31:39.598536+00:00",
   "items": [
     {
       "title": "بررسی شرایط سخت حضور حضرت زهرا در شعب ابی‌طالب",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 41,
-    "segments_transcribed": 38,
-    "editor_attempts": 25,
+    "segments_captured": 42,
+    "segments_transcribed": 39,
+    "editor_attempts": 26,
     "editor_withheld": 20,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T16:31:10.738772+00:00"
+    "last_audio_at": "2026-10-27T16:31:34.699439+00:00"
   }
 }
