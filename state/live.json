@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T17:40:46.293690+00:00",
-  "updated_at": "2026-10-27T17:47:10.176343+00:00",
+  "updated_at": "2026-10-27T17:47:37.319280+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40548632898-0",
-      "sequence": 0,
-      "updated_at": "2026-10-27T17:41:13.233301+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره ارتباط آیات و اسباب نزول مرتبط با حضرت زهرا",
       "summary": "در این بخش، کارشناس به موضوع اسباب نزول آیات و حوادث منجر به نزول مجموعه‌ای از آیات اشاره می‌کند. وی استدلال می‌کند که نام حضرت زهرا به عنوان سبب نزول در بخشی از این آیات مطرح شده است؛ اما به صورت دقیق مشخص نمی‌کند که ایشان شخصاً مصداق بوده‌اند یا به عنوان یکی از مصادیق آن مجموعه به شمار می‌آیند.",
@@ -71,16 +58,29 @@
       "sequence": 10,
       "updated_at": "2026-10-27T17:45:08.928540+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره حدیث و روایت",
+      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40548632898-16",
+      "sequence": 16,
+      "updated_at": "2026-10-27T17:47:37.319259+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 16,
-    "segments_transcribed": 16,
-    "editor_attempts": 16,
-    "editor_withheld": 14,
-    "topics_published": 5,
+    "segments_captured": 17,
+    "segments_transcribed": 17,
+    "editor_attempts": 17,
+    "editor_withheld": 16,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T17:47:07.780768+00:00"
+    "last_audio_at": "2026-10-27T17:47:33.677699+00:00"
   }
 }
