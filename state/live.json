@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T17:40:46.293690+00:00",
-  "updated_at": "2026-10-27T17:49:35.693191+00:00",
+  "updated_at": "2026-10-27T17:50:21.652366+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره استناد به ابن‌عباس درباره سبب نزول آیه",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 22,
-    "segments_transcribed": 22,
-    "editor_attempts": 22,
-    "editor_withheld": 18,
+    "segments_captured": 24,
+    "segments_transcribed": 24,
+    "editor_attempts": 24,
+    "editor_withheld": 20,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T17:49:30.024990+00:00"
+    "last_audio_at": "2026-10-27T17:50:19.177303+00:00"
   }
 }
