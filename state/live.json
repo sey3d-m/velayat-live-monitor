@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "40366703147",
-  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
-  "program_date": "2026-10-26",
-  "started_at": "2026-10-26T17:15:04.455812+00:00",
-  "updated_at": "2026-10-26T18:40:11.792533+00:00",
-  "items": [
-    {
-      "title": "بررسی روایت‌های زندگی خانوادگی و معنوی حضرت زهرا (س)",
-      "summary": "در این بخش به بررسی مباحث مطرح‌شده درباره ابعاد گوناگون زندگی نورانی و معنوی خاندان اهل‌بیت (ع) و لزوم بهره‌گیری از روایت‌های مرتبط با آن پرداخته می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40366703147-80",
-      "sequence": 80,
-      "updated_at": "2026-10-26T18:17:21.781127+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی فضائل و سبک زندگی اهل‌بیت",
-      "summary": "در این بخش درباره برخی ویژگی‌ها و نحوه رفتار معصومان علیهم‌السلام و فضائل اخلاقی آنان مطالبی بیان شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40366703147-82",
-      "sequence": 82,
-      "updated_at": "2026-10-26T18:18:26.418713+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی نقش رفتار والدین در تربیت فرزند",
-      "summary": "در این بخش به موضوع تربیت فرزند از طریق الگوبرداری از رفتار و دعا کردن والدین برای دیگران در نیمه شب پرداخته می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40366703147-86",
-      "sequence": 86,
-      "updated_at": "2026-10-26T18:21:08.210795+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی نکات تربیتی و اهمیت انتخاب دوست",
-      "summary": "در این بخش به توصیه‌های تربیتی درباره انتخاب دوست، پرهیز از دوستی با افراد کینه‌توز و نقش رفتار دوستان در شکل‌گیری شخصیت انسان پرداخته می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40366703147-90",
-      "sequence": 90,
-      "updated_at": "2026-10-26T18:23:04.230375+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی فضائل حضرت زهرا و معرفی برنامه‌های شبکه جهانی ولایت",
-      "summary": "در این بخش به ذکر فضائل و مناقب حضرت زهرا سلام‌الله‌علیها و الگو بودن ایشان برای بشریت پرداخته شد و در ادامه، زمان پخش برنامه‌ها و دعوت از بینندگان برای مشارکت در تأمین هزینه‌های تولید برنامه در شبکه جهانی ولایت مطرح گردید.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "id": "40366703147-94",
-      "sequence": 94,
-      "updated_at": "2026-10-26T18:25:22.738152+00:00",
-      "speaker": null
-    }
-  ],
+  "session": "40519177924",
+  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "program_date": "2026-10-27",
+  "started_at": "2026-10-27T14:50:26.879277+00:00",
+  "updated_at": "2026-10-27T14:50:28.031252+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 120,
-    "segments_transcribed": 103,
-    "editor_attempts": 52,
-    "editor_withheld": 27,
-    "topics_published": 27,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-10-26T18:39:47.795883+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
