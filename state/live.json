@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T16:39:36.687204+00:00",
+  "updated_at": "2026-10-27T16:40:22.662590+00:00",
   "items": [
     {
       "title": "بررسی نحوه بند آوردن خون پیامبر (ص) با خاکستر حصیر",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 62,
-    "segments_transcribed": 59,
-    "editor_attempts": 41,
+    "segments_captured": 64,
+    "segments_transcribed": 61,
+    "editor_attempts": 42,
     "editor_withheld": 34,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T16:39:27.989191+00:00"
+    "last_audio_at": "2026-10-27T16:40:17.355078+00:00"
   }
 }
