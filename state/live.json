@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "40533918258",
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-27",
   "started_at": "2026-10-27T16:14:51.984474+00:00",
-  "updated_at": "2026-10-27T16:16:30.639396+00:00",
-  "items": [],
+  "updated_at": "2026-10-27T16:16:54.697134+00:00",
+  "items": [
+    {
+      "title": "پرسش درباره توسل اهل‌بیت به حضرت زهرا (س)",
+      "summary": "در این بخش کارشناس ادعا می‌کند که همان‌طور که مردم در گرفتاری‌ها به اهل‌بیت متوسل می‌شوند، خود اهل‌بیت نیز در مسائل پیش‌آمده به حضرت زهرا سلام‌الله‌علیها متوسل می‌گردند. در ادامه به ذکر نکاتی پیرامون والدین حضرت اشاره می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "40533918258-2",
+      "sequence": 2,
+      "updated_at": "2026-10-27T16:16:54.697113+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 4,
-    "segments_transcribed": 4,
+    "segments_captured": 5,
+    "segments_transcribed": 5,
     "editor_attempts": 3,
-    "editor_withheld": 2,
-    "topics_published": 0,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
-    "last_audio_at": "2026-10-27T16:16:24.558407+00:00"
+    "editor_withheld": 3,
+    "topics_published": 1,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
+    "last_audio_at": "2026-10-27T16:16:49.439418+00:00"
   }
 }
