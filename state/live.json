@@ -1,83 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "40548632898",
-  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
-  "program_date": "2026-10-27",
-  "started_at": "2026-10-27T17:40:46.293690+00:00",
-  "updated_at": "2026-10-27T18:50:49.993429+00:00",
-  "items": [
-    {
-      "title": "پرسش درباره معنای آیه ذکر خدا در خانه‌ها",
-      "summary": "در این بخش، کارشناس به پرسش درباره معنای عبارت «فی بیوت» و آیه مربوط به اجازه رفعت خانه‌ها و ذکر خدا در آن‌ها می‌پردازد و اشاره می‌کند که «بیوت» جمع بیت و به معنای خانه‌ها است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40548632898-78",
-      "sequence": 78,
-      "updated_at": "2026-10-27T18:12:22.805832+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی استناد به منابع اهل سنت در اثبات معارف",
-      "summary": "در این بخش کارشناس استدلال می‌کند که وقتی مطلبی با ظاهری متفاوت در منابع نقل می‌شود، امام یا پیامبر آن را به گونه‌ای دیگر بیان می‌کند. وی می‌افزاید که این موضوع بحث مستقلی در علوم قرآن دارد که هم شیعه و هم اهل سنت آن را قبول دارند و تأکید می‌کند که در برنامه امشب صرفاً از منابع اهل سنت استفاده می‌شود و از منابع شیعی مطلبی مطرح نخواهد شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40548632898-85",
-      "sequence": 85,
-      "updated_at": "2026-10-27T18:15:10.756583+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40548632898-94",
-      "sequence": 94,
-      "updated_at": "2026-10-27T18:18:49.893444+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره روایت ورود پیامبر به خانه حضرت زهرا",
-      "summary": "در این بخش، کارشناس به نقل داستانی از جابر از پیامبر اشاره می‌کند که هنگام گرسنگی وارد خانه حضرت زهرا (س) شده و غذایی در خانه نبوده است؛ سپس پرسشی درباره این واقعه و وضعیت موجود مطرح می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40548632898-106",
-      "sequence": 106,
-      "updated_at": "2026-10-27T18:23:41.457739+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی ادعای برتری زنان برگزیده عالم به استناد سخن کارشناس",
-      "summary": "در این بخش، کارشناس درباره برتری زنان عالم استدلال می‌کند و با اشاره به نام‌هایی چون خدیجه، فاطمه، مریم و آسیه، این افراد را به عنوان برترین زنان معرفی می‌کند؛ به گفته وی این موضوع از روشن‌ترین مباحث است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40548632898-112",
-      "sequence": 112,
-      "updated_at": "2026-10-27T18:25:57.645603+00:00",
-      "speaker": null
-    }
-  ],
+  "session": "40703930657",
+  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "program_date": "2026-10-28",
+  "started_at": "2026-10-28T14:14:40.565141+00:00",
+  "updated_at": "2026-10-28T14:30:00.000329+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 141,
-    "editor_attempts": 123,
-    "editor_withheld": 113,
-    "topics_published": 17,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-10-27T18:50:39.433796+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
