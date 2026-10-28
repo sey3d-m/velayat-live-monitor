@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T14:14:40.565141+00:00",
-  "updated_at": "2026-10-28T15:06:43.661708+00:00",
+  "updated_at": "2026-10-28T15:07:08.159940+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره ولایت و غدیر",
-      "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40703930657-14",
-      "sequence": 14,
-      "updated_at": "2026-10-28T14:36:20.853171+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره نماز",
       "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +57,28 @@
       "sequence": 78,
       "updated_at": "2026-10-28T15:01:49.100684+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره حکم دریافت شیربها در ازدواج",
+      "summary": "در این بخش درباره حکم شرعی دریافت مبلغی به عنوان شیربها از سوی خانواده دختر به هنگام ازدواج پرسش شد. کارشناס اشاره کرد که این رسم در ایران کمتر دیده می‌شود اما در افغانستان رایج‌تر است و بررسی این عنوان نیازمند دقت در ماهیت آن است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40703930657-91",
+      "sequence": 91,
+      "updated_at": "2026-10-28T15:07:08.159919+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 92,
-    "segments_transcribed": 83,
+    "segments_captured": 93,
+    "segments_transcribed": 84,
     "editor_attempts": 49,
     "editor_withheld": 46,
-    "topics_published": 6,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T15:06:38.271840+00:00"
+    "last_audio_at": "2026-10-28T15:07:01.998322+00:00"
   }
 }
