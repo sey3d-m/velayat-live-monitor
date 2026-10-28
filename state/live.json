@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T16:20:23.899968+00:00",
+  "updated_at": "2026-10-28T16:20:38.730274+00:00",
   "items": [
     {
       "title": "بررسی ناتوانی اندیشه بشری در شناخت کامل انسان و سعادت",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 51,
-    "segments_transcribed": 47,
-    "editor_attempts": 33,
+    "segments_captured": 52,
+    "segments_transcribed": 48,
+    "editor_attempts": 34,
     "editor_withheld": 28,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T16:20:11.545247+00:00"
+    "last_audio_at": "2026-10-28T16:20:36.264289+00:00"
   }
 }
