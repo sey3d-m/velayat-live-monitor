@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T14:14:40.565141+00:00",
-  "updated_at": "2026-10-28T15:01:03.580551+00:00",
+  "updated_at": "2026-10-28T15:01:49.100705+00:00",
   "items": [
-    {
-      "title": "پرسش درباره لزوم تماس مخاطبان در نیمه اول برنامه",
-      "summary": "در این بخش کارشناس برنامه درباره تماس زودهنگام برخی مخاطبان پیش از شروع رسمی گفتگو صحبت می‌کند. به گفته وی، اصرار بر این است که بینندگان در نیمه اول برنامه تماس بگیرند، زمان خود را برنامه‌ریزی کنند و شماره خود را ثبت نمایند تا در طول برنامه امکان پاسخگویی به تلفن‌ها فراهم شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "editor_mode": "audio_grounded_topic",
-      "id": "40703930657-10",
-      "sequence": 10,
-      "updated_at": "2026-10-28T14:35:43.552193+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره ولایت و غدیر",
       "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -71,16 +58,28 @@
       "sequence": 56,
       "updated_at": "2026-10-28T14:52:45.310725+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره ارث نوه در زمان حیات پدربزرگ و شرایط طبقات ارث",
+      "summary": "در این بخش درباره ارث‌بری نوه‌ها در زمان حیات پدربزرگ پرسش شد. کارشناس استدلال می‌کند که دلیل عدم ارث‌بری نوه‌ها در این حالت، قرار نداشتن آن‌ها در طبقات ارث تعیین‌شده شرعی است و این موضوع به طبقات ارث مشخص‌شده در شرع مقدس بستگی دارد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40703930657-78",
+      "sequence": 78,
+      "updated_at": "2026-10-28T15:01:49.100684+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 78,
-    "segments_transcribed": 70,
-    "editor_attempts": 40,
-    "editor_withheld": 38,
-    "topics_published": 5,
+    "segments_captured": 79,
+    "segments_transcribed": 71,
+    "editor_attempts": 41,
+    "editor_withheld": 39,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T15:01:01.612134+00:00"
+    "last_audio_at": "2026-10-28T15:01:25.953898+00:00"
   }
 }
