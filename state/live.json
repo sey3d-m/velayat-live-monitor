@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T17:03:44.830441+00:00",
+  "updated_at": "2026-10-28T17:04:26.142934+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره تربیت و اخلاق",
-      "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40718955434-95",
-      "sequence": 95,
-      "updated_at": "2026-10-28T16:38:35.089392+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره اثبات دین از طریق کشف محدودیت‌های عقل",
       "summary": "در این بخش کارشناس استدلال می‌کند که عقل انسان محدودیت‌های خود را کشف می‌کند و از این طریق می‌فهمد که در کنار این منبع محدود، منبع نامحدودی نیز وجود دارد و خداوند راه‌هایی برای درک این موضوع قرار داده است.",
@@ -68,16 +55,28 @@
       "sequence": 153,
       "updated_at": "2026-10-28T17:01:36.172550+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی بازتاب و پیامدهای رحلت پیامبر اکرم در گفتار کارشناس",
+      "summary": "در این بخش کارشناس با استناد به عباراتی درباره حوادث زمان رحلت پیامبر اکرم، استدلال می‌کند که این واقعه مصیبتی بزرگ و نزولی سنگین بوده است؛ به گفته وی این رویداد با نشانه‌هایی چون ظلمت زمین و دگرگونی در عالم همراه بوده و حرمت‌ها پس از آن دستخوش تغییر شده است که به عنوان بزرگ‌ترین نازله توصیف می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40718955434-160",
+      "sequence": 160,
+      "updated_at": "2026-10-28T17:04:26.142916+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 160,
-    "segments_transcribed": 151,
-    "editor_attempts": 109,
+    "segments_captured": 161,
+    "segments_transcribed": 152,
+    "editor_attempts": 110,
     "editor_withheld": 98,
-    "topics_published": 14,
+    "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T17:03:42.998603+00:00"
+    "last_audio_at": "2026-10-28T17:04:08.256015+00:00"
   }
 }
