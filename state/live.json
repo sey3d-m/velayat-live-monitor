@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T14:14:40.565141+00:00",
-  "updated_at": "2026-10-28T15:14:12.098446+00:00",
+  "updated_at": "2026-10-28T15:14:13.602196+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره روزه",
-      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40703930657-56",
-      "sequence": 56,
-      "updated_at": "2026-10-28T14:52:45.310725+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره ارث نوه در زمان حیات پدربزرگ و شرایط طبقات ارث",
       "summary": "در این بخش درباره ارث‌بری نوه‌ها در زمان حیات پدربزرگ پرسش شد. کارشناس استدلال می‌کند که دلیل عدم ارث‌بری نوه‌ها در این حالت، قرار نداشتن آن‌ها در طبقات ارث تعیین‌شده شرعی است و این موضوع به طبقات ارث مشخص‌شده در شرع مقدس بستگی دارد.",
@@ -69,14 +56,27 @@
       "sequence": 99,
       "updated_at": "2026-10-28T15:10:08.204675+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خمس و زکات",
+      "summary": "در این بخش از برنامه، موضوع «خمس و زکات» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40703930657-108",
+      "sequence": 108,
+      "updated_at": "2026-10-28T15:14:13.602179+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 110,
     "segments_transcribed": 101,
     "editor_attempts": 60,
-    "editor_withheld": 55,
-    "topics_published": 9,
+    "editor_withheld": 56,
+    "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-10-28T15:13:50.725539+00:00"
