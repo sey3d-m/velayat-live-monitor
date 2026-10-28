@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T16:19:49.222781+00:00",
+  "updated_at": "2026-10-28T16:20:23.899968+00:00",
   "items": [
-    {
-      "title": "پرسش درباره استعدادهای وجودی و غایت خلقت انسان",
-      "summary": "در این بخش درباره استعدادهای وجودی انسان و غایت خلقت او پرسش مطرح شد. به گفته کارشناس، این موارد مجموعه‌ای را تشکیل می‌دهند که جهان‌بینی را می‌سازد و ساختن آن از عهده علوم بشری خارج است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "editor_mode": "audio_grounded_topic",
-      "id": "40718955434-12",
-      "sequence": 12,
-      "updated_at": "2026-10-28T16:05:40.555536+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی ناتوانی اندیشه بشری در شناخت کامل انسان و سعادت",
       "summary": "در این بخش کارشناس استدلال می‌کند که اندیشه‌های بشری نتوانسته‌اند مسائل انسان را به نحو مطلوبی حل کنند و میان اندیشمندان وفاق و اجماعی وجود ندارد؛ بر همین اساس، انسان برای گام نخست سعادت و خودشناسی نیازمند منبعی بدون خطا و کاستی است.",
@@ -68,16 +55,28 @@
       "sequence": 37,
       "updated_at": "2026-10-28T16:15:24.935995+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ضرورت فرهنگ‌سازی در کنار قانون‌گذاری و دستگاه نظارتی",
+      "summary": "در این بخش کارشناس استدلال می‌کند که در کنار قانون‌گذاری، فرهنگ‌سازی اهمیت زیادی دارد و باید به آن بها داد؛ همچنین دستگاه‌های نظارتی نیز برای مراقبت در این زمینه قرار داده می‌شوند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.8,
+      "id": "40718955434-50",
+      "sequence": 50,
+      "updated_at": "2026-10-28T16:20:23.899949+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 50,
-    "segments_transcribed": 46,
-    "editor_attempts": 32,
-    "editor_withheld": 27,
-    "topics_published": 6,
+    "segments_captured": 51,
+    "segments_transcribed": 47,
+    "editor_attempts": 33,
+    "editor_withheld": 28,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T16:19:46.690529+00:00"
+    "last_audio_at": "2026-10-28T16:20:11.545247+00:00"
   }
 }
