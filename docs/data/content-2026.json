@@ -3,6 +3,412 @@
   "year": "2026",
   "items": [
     {
+      "id": "631d42d76959988d10",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-28-2100",
+      "program_title": "پرسمان اعتقادی",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "چرا نام فرزندان دیگر پیامبر (مانند دختران دیگر) کمتر در تاریخ برجسته شده است؟",
+      "summary": "پیامبر اکرم (ص) فرزندان دیگری از خدیجه و ماریه قبطیه داشتند، اما به دلیل شرایط تاریخی و اینکه حوادث و فضائل پیرامون شخصیت‌های خاصی جریان داشت، نام برخی فرزندان کمتر در افواه ذکر شده است.",
+      "question": "چرا نام فرزندان دیگر پیامبر (مانند دختران دیگر) کمتر در تاریخ برجسته شده است؟",
+      "answer": "پیامبر اکرم (ص) فرزندان دیگری از خدیجه و ماریه قبطیه داشتند، اما به دلیل شرایط تاریخی و اینکه حوادث و فضائل پیرامون شخصیت‌های خاصی جریان داشت، نام برخی فرزندان کمتر در افواه ذکر شده است.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-28",
+      "program_start_time": "21:00",
+      "start_timecode": 3080,
+      "end_timecode": 3359,
+      "estimated_answer_time": "21:51",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "df251adc1261a6f961",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-28-2100",
+      "program_title": "پرسمان اعتقادی",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "خواب دیدم سیدی فوت شده می‌گوید تمام خیرات و برکات از دست فاطمه (س) است، تعبیر آن چیست؟",
+      "summary": "این خواب کاملاً درست و صادقه است. حضرت زهرا (س) به دلیل مقام والای ولایت کلیه الهی (ولی‌الله‌الاعظم)، محور و حجت بر تمام معصومین (ع) است و تمسک به ولایت ایشان، انسان را به سعادت می‌رساند.",
+      "question": "خواب دیدم سیدی فوت شده می‌گوید تمام خیرات و برکات از دست فاطمه (س) است، تعبیر آن چیست؟",
+      "answer": "این خواب کاملاً درست و صادقه است. حضرت زهرا (س) به دلیل مقام والای ولایت کلیه الهی (ولی‌الله‌الاعظم)، محور و حجت بر تمام معصومین (ع) است و تمسک به ولایت ایشان، انسان را به سعادت می‌رساند.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-28",
+      "program_start_time": "21:00",
+      "start_timecode": 2926,
+      "end_timecode": 3060,
+      "estimated_answer_time": "21:48",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "52618bd46ce6a38318",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-28-2100",
+      "program_title": "پرسمان اعتقادی",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "توضیح خواب و رویای صادقه درباره ولایت اهل‌بیت و مقام والای حضرت زهرا (س)",
+      "summary": "توضیح خواب و رویای صادقه درباره ولایت اهل‌بیت و مقام والای حضرت زهرا (س)",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-28",
+      "program_start_time": "21:00",
+      "start_timecode": 2926,
+      "end_timecode": 3060,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "1d0da82da8ba510355",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-28-2100",
+      "program_title": "پرسمان اعتقادی",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "چه سندی در منابع اهل‌سنت وجود دارد که اثبات کند حضرت زهرا (س) بر اثر ضرب و شتم به شهادت رسیده‌اند؟",
+      "summary": "بخشی از این وقایع در کتب تاریخی و حدیثی معتبر منعکس شده است، اما برای یافتن مستندات دقیق باید به منابع شیعه و مبانی آن مراجعه کرد؛ زیرا نویسندگان در حکومت‌های وقت به خاطر حفظ جان خود نمی‌توانستند تمام حقیقت را بنویسند، با این حال اشاراتی به اتفاقات بیت حضرت زهرا در کتب اهل‌سنت نیز وجود دارد.",
+      "question": "چه سندی در منابع اهل‌سنت وجود دارد که اثبات کند حضرت زهرا (س) بر اثر ضرب و شتم به شهادت رسیده‌اند؟",
+      "answer": "بخشی از این وقایع در کتب تاریخی و حدیثی معتبر منعکس شده است، اما برای یافتن مستندات دقیق باید به منابع شیعه و مبانی آن مراجعه کرد؛ زیرا نویسندگان در حکومت‌های وقت به خاطر حفظ جان خود نمی‌توانستند تمام حقیقت را بنویسند، با این حال اشاراتی به اتفاقات بیت حضرت زهرا در کتب اهل‌سنت نیز وجود دارد.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-28",
+      "program_start_time": "21:00",
+      "start_timecode": 2448,
+      "end_timecode": 2790,
+      "estimated_answer_time": "21:40",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "1b47440ff35fb0c6fa",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-28-2100",
+      "program_title": "پرسمان اعتقادی",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "بررسی شهادت حضرت زهرا (س) و استناد به منابع تاریخی شیعه و اهل‌سنت",
+      "summary": "بررسی شهادت حضرت زهرا (س) و استناد به منابع تاریخی شیعه و اهل‌سنت",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-28",
+      "program_start_time": "21:00",
+      "start_timecode": 2448,
+      "end_timecode": 2790,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "45d11444f4a234acd9",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-28-2100",
+      "program_title": "پرسمان اعتقادی",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "چقدر احتمال دارد که ترامپ همان شخص «سفیانی» باشد؟",
+      "summary": "اگر سفیانی و دجال را یک جریان و مکتب بدانیم تا یک فرد خاص، می‌توان ترامپ و نتانیاهو را مصداق جبهه باطل و دجالیت زمان دانست؛ چنان‌که عناوین سیمای روایی مانند سید خراسانی یا نفس زکیه نیز بیشتر به عنوان جریان‌های حق تلقی می‌شوند.",
+      "question": "چقدر احتمال دارد که ترامپ همان شخص «سفیانی» باشد؟",
+      "answer": "اگر سفیانی و دجال را یک جریان و مکتب بدانیم تا یک فرد خاص، می‌توان ترامپ و نتانیاهو را مصداق جبهه باطل و دجالیت زمان دانست؛ چنان‌که عناوین سیمای روایی مانند سید خراسانی یا نفس زکیه نیز بیشتر به عنوان جریان‌های حق تلقی می‌شوند.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-28",
+      "program_start_time": "21:00",
+      "start_timecode": 1530,
+      "end_timecode": 1776,
+      "estimated_answer_time": "21:25",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "b0995a0ce5951fed51",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-28-2100",
+      "program_title": "پرسمان اعتقادی",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "تحلیل مصداقی جریان‌های سفیانی و دجال در عصر حاضر",
+      "summary": "تحلیل مصداقی جریان‌های سفیانی و دجال در عصر حاضر",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-28",
+      "program_start_time": "21:00",
+      "start_timecode": 1530,
+      "end_timecode": 1776,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "8143b374aaf103fba9",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-28-2100",
+      "program_title": "پرسمان اعتقادی",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "هنگام زیارت امامزادگان دچار وسواس فکری و تردید در وجود قبر یا صحت مدفون می‌شوم، چه کنم؟",
+      "summary": "این وسوسه شیطانی و حدیث نفس است. برای درمان آن می‌توان ذکر «لا حول و لا قوة الا بالله»، نماز حدیث نفس، مسواک زدن و شستن سر با سدر را انجام داد. ضمن اینکه در زیارت، ارتباط با روح و نفس متوجه امام است و بودن یا نبودن بدن تفاوتی ایجاد نمی‌کند.",
+      "question": "هنگام زیارت امامزادگان دچار وسواس فکری و تردید در وجود قبر یا صحت مدفون می‌شوم، چه کنم؟",
+      "answer": "این وسوسه شیطانی و حدیث نفس است. برای درمان آن می‌توان ذکر «لا حول و لا قوة الا بالله»، نماز حدیث نفس، مسواک زدن و شستن سر با سدر را انجام داد. ضمن اینکه در زیارت، ارتباط با روح و نفس متوجه امام است و بودن یا نبودن بدن تفاوتی ایجاد نمی‌کند.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-28",
+      "program_start_time": "21:00",
+      "start_timecode": 1326,
+      "end_timecode": 1530,
+      "estimated_answer_time": "21:22",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "5fef3b9c440355520b",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-28-2100",
+      "program_title": "پرسمان اعتقادی",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "راهکار درمان وسواس فکری و تردید هنگام زیارت قبور و امامزادگان",
+      "summary": "راهکار درمان وسواس فکری و تردید هنگام زیارت قبور و امامزادگان",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-28",
+      "program_start_time": "21:00",
+      "start_timecode": 1326,
+      "end_timecode": 1530,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "9f5519161eb66441c4",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-28-2100",
+      "program_title": "پرسمان اعتقادی",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "راز مخفی ماندن قبر حضرت زهرا (س) چیست و چرا این مزار همچنان مخفی است؟",
+      "summary": "مخفی بودن قبر حضرت زهرا (س) سند زنده و فریاد جاودانه مظلومیت اهل‌بیت (ع) و ظلم تاریخ به ایشان است که این جریان ظلم در طول تاریخ تا عصر حاضر علیه اسلام و مسلمانان ادامه دارد.",
+      "question": "راز مخفی ماندن قبر حضرت زهرا (س) چیست و چرا این مزار همچنان مخفی است؟",
+      "answer": "مخفی بودن قبر حضرت زهرا (س) سند زنده و فریاد جاودانه مظلومیت اهل‌بیت (ع) و ظلم تاریخ به ایشان است که این جریان ظلم در طول تاریخ تا عصر حاضر علیه اسلام و مسلمانان ادامه دارد.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-28",
+      "program_start_time": "21:00",
+      "start_timecode": 1146,
+      "end_timecode": 1326,
+      "estimated_answer_time": "21:19",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "fecbe92e6fd4e9ef13",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-28-2100",
+      "program_title": "پرسمان اعتقادی",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "تحلیل چرایی مخفی بودن قبر مطهر حضرت زهرا (س) و سند مظلومیت",
+      "summary": "تحلیل چرایی مخفی بودن قبر مطهر حضرت زهرا (س) و سند مظلومیت",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-28",
+      "program_start_time": "21:00",
+      "start_timecode": 1146,
+      "end_timecode": 1326,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "6e788050bd46e47779",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-28-2100",
+      "program_title": "پرسمان اعتقادی",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "با توجه به اینکه قرآن بر دفاع از مظلوم تأکید دارد، چرا امیرالمؤمنین (ع) در زمان غصب خلافت و ظلم به حضرت زهرا (س) قیام نکرد و شمشیر نکشید؟",
+      "summary": "مظلوم بودن با انزلام (زیر بار ظلم رفتن) متفاوت است. امام علی (ع) زیر بار ظلم نرفت و احتجاج و مناظره کرد، اما چون یار و یاور کافی نداشت و اصل دین و نهال نوپای اسلام در خطر نابودی کامل توسط دشمنان خارجی و داخلی بود، قیام مسلحانه نکرد تا اصل اسلام حفظ شود.",
+      "question": "با توجه به اینکه قرآن بر دفاع از مظلوم تأکید دارد، چرا امیرالمؤمنین (ع) در زمان غصب خلافت و ظلم به حضرت زهرا (س) قیام نکرد و شمشیر نکشید؟",
+      "answer": "مظلوم بودن با انزلام (زیر بار ظلم رفتن) متفاوت است. امام علی (ع) زیر بار ظلم نرفت و احتجاج و مناظره کرد، اما چون یار و یاور کافی نداشت و اصل دین و نهال نوپای اسلام در خطر نابودی کامل توسط دشمنان خارجی و داخلی بود، قیام مسلحانه نکرد تا اصل اسلام حفظ شود.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-28",
+      "program_start_time": "21:00",
+      "start_timecode": 558,
+      "end_timecode": 1020,
+      "estimated_answer_time": "21:09",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "db21558e26b498959a",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-28-2100",
+      "program_title": "پرسمان اعتقادی",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "پاسخ به شبهه چرا امام علی (ع) در برابر ظالمان شمشیر نکشید؟",
+      "summary": "پاسخ به شبهه چرا امام علی (ع) در برابر ظالمان شمشیر نکشید؟",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-28",
+      "program_start_time": "21:00",
+      "start_timecode": 558,
+      "end_timecode": 1020,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "6560a16768485ab726",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-28-2100",
+      "program_title": "پرسمان اعتقادی",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "جایگاه علمی و پاسخگویی حضرت زهرا (س)",
+      "summary": "جایگاه علمی و پاسخگویی حضرت زهرا (س)",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-28",
+      "program_start_time": "21:00",
+      "start_timecode": 324,
+      "end_timecode": 510,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
+      "source_reported_at": null
+    },
+    {
       "id": "47da63d8028346e910",
       "network": "velayat_farsi",
       "program_id": "persian-2026-10-28-1930",
@@ -28,7 +434,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T17:10:56+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -57,7 +463,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T17:10:56+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -86,7 +492,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T17:10:56+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -115,7 +521,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T17:10:56+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -144,7 +550,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T17:10:56+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -173,7 +579,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T17:10:56+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -202,7 +608,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -231,7 +637,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -260,7 +666,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -289,7 +695,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -318,7 +724,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -347,7 +753,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -376,7 +782,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -405,7 +811,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -434,7 +840,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -463,7 +869,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -492,7 +898,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -521,7 +927,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -550,7 +956,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -579,7 +985,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -608,7 +1014,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -637,7 +1043,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -666,7 +1072,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -695,7 +1101,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -724,7 +1130,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -753,7 +1159,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -782,7 +1188,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -811,7 +1217,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -840,7 +1246,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -869,7 +1275,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -898,7 +1304,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -927,7 +1333,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -956,7 +1362,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -985,7 +1391,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1014,7 +1420,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1043,7 +1449,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1072,7 +1478,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1101,7 +1507,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1130,7 +1536,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1159,7 +1565,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1188,7 +1594,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1217,7 +1623,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1246,7 +1652,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1275,7 +1681,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1304,7 +1710,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1333,7 +1739,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1362,7 +1768,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1391,7 +1797,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1420,7 +1826,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1449,7 +1855,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1478,7 +1884,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1507,7 +1913,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1536,7 +1942,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1565,7 +1971,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1594,7 +2000,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1623,7 +2029,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1652,7 +2058,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1681,7 +2087,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1710,7 +2116,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1739,7 +2145,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1768,7 +2174,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1797,7 +2203,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1826,7 +2232,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1855,7 +2261,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1884,7 +2290,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1913,7 +2319,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1942,7 +2348,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -1971,7 +2377,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -2000,7 +2406,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -2029,7 +2435,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -2058,7 +2464,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -2087,7 +2493,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -2116,7 +2522,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -2145,7 +2551,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -2174,7 +2580,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     },
     {
@@ -2203,7 +2609,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T17:10:56+00:00",
+      "updated_at": "2026-10-28T18:38:15+00:00",
       "source_reported_at": null
     }
   ]
