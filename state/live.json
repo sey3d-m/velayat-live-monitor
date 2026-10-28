@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T16:11:55.619417+00:00",
+  "updated_at": "2026-10-28T16:12:25.412298+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره احکام طهارت",
@@ -57,16 +57,28 @@
       "sequence": 16,
       "updated_at": "2026-10-28T16:06:56.279938+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نقش عوامل فراتر از جسم و طرح موضوع دین‌درمانی",
+      "summary": "در این بخش کارشناس استدلال می‌کند که بیماری‌های انسانی صرفاً عوامل فیزیکی، کالبدی و فارماکولوژیک ندارند، بلکه جنبه‌های روان‌شناختی یا فراروان‌شناختی نیز در آن‌ها اثرگذار است. وی در ادامه برای روشن‌تر شدن بحث، به رواج موضوع دین‌درمانی در دنیای امروز اشاره کرده و درباره چیستی آن پرسش مطرح می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40718955434-30",
+      "sequence": 30,
+      "updated_at": "2026-10-28T16:12:25.412270+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 30,
-    "segments_transcribed": 27,
-    "editor_attempts": 16,
-    "editor_withheld": 13,
-    "topics_published": 4,
+    "segments_captured": 31,
+    "segments_transcribed": 28,
+    "editor_attempts": 17,
+    "editor_withheld": 14,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T16:11:52.796185+00:00"
+    "last_audio_at": "2026-10-28T16:12:11.065097+00:00"
   }
 }
