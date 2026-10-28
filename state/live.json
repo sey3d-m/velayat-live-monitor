@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "40718955434",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "40733750550",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-28",
-  "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T17:10:03.034075+00:00",
-  "items": [
-    {
-      "title": "بررسی ادعای بشری نبودن کلام قرآن در گفتار کارشناس",
-      "summary": "در این بخش کارشناس استدلال می‌کند که مخالفان با برگزاری جلسات و مشورت تلاش کردند تا اشکال یا نقطه‌ضعفی در قرآن پیدا کنند و تبلیغاتی علیه آن به راه بیندازند، اما موفق نشدند. به گفته وی، خود این افراد اعتراف کرده‌اند که جنس کلام قرآن از جنس سخن بشر نیست و به همین دلیل هیچ نقطه ضعفی در آن وجود ندارد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40718955434-115",
-      "sequence": 115,
-      "updated_at": "2026-10-28T16:46:39.093760+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره استدلال به آیات ارث و خویشاوندی",
-      "summary": "در این بخش کارشناس استدلال می‌کند که بر اساس آیات قرآن درباره اولویت خویشان، سهم ارث فرزندان و وصیت برای پدر و مادر و نزدیکان، این حق برای اهل‌بیت نیز مطرح بوده است؛ وی به استناد این آیات، دیدگاه مخالف درباره عدم وجود رابطه خویشاوندی و ارث‌بری را مطرح می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40718955434-147",
-      "sequence": 147,
-      "updated_at": "2026-10-28T16:59:17.560172+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی سخنان مطرح‌شده درباره ماجرای فدک و خلافت",
-      "summary": "در این بخش کارشناس به مطالبی درباره فدک و خلافت اشاره می‌کند و استدلال می‌کند که این موارد ارزانی دیگران باد و روز محشر خداوند در این زمینه حکم خواهد کرد و پیامبر پیشوا و سرپرست خواهد بود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "40718955434-153",
-      "sequence": 153,
-      "updated_at": "2026-10-28T17:01:36.172550+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی بازتاب و پیامدهای رحلت پیامبر اکرم در گفتار کارشناس",
-      "summary": "در این بخش کارشناس با استناد به عباراتی درباره حوادث زمان رحلت پیامبر اکرم، استدلال می‌کند که این واقعه مصیبتی بزرگ و نزولی سنگین بوده است؛ به گفته وی این رویداد با نشانه‌هایی چون ظلمت زمین و دگرگونی در عالم همراه بوده و حرمت‌ها پس از آن دستخوش تغییر شده است که به عنوان بزرگ‌ترین نازله توصیف می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40718955434-160",
-      "sequence": 160,
-      "updated_at": "2026-10-28T17:04:26.142916+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی روایتی درباره مصیبت‌ها و حوادث در سخنان کارشناس",
-      "summary": "در این بخش، کارشناس درباره عظمت برخی مصیبت‌ها سخن می‌گوید و به نقل عبارتی عربی درباره وجود بلاها و صداها در منازل اشاره می‌کند؛ این مطالب به عنوان ادعاهای مطرح‌شده در برنامه گزارش شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40718955434-164",
-      "sequence": 164,
-      "updated_at": "2026-10-28T17:06:05.403076+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-10-28T17:14:47.975618+00:00",
+  "updated_at": "2026-10-28T17:30:00.000242+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 166,
-    "editor_attempts": 120,
-    "editor_withheld": 107,
-    "topics_published": 16,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T17:09:45.214371+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
