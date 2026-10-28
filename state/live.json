@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T14:14:40.565141+00:00",
-  "updated_at": "2026-10-28T14:36:19.619293+00:00",
+  "updated_at": "2026-10-28T14:36:20.853192+00:00",
   "items": [
     {
       "title": "پرسش درباره لزوم تماس مخاطبان در نیمه اول برنامه",
@@ -20,14 +20,27 @@
       "sequence": 10,
       "updated_at": "2026-10-28T14:35:43.552193+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره ولایت و غدیر",
+      "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40703930657-14",
+      "sequence": 14,
+      "updated_at": "2026-10-28T14:36:20.853171+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 16,
     "segments_transcribed": 10,
     "editor_attempts": 4,
-    "editor_withheld": 3,
-    "topics_published": 1,
+    "editor_withheld": 4,
+    "topics_published": 2,
     "audio_ai_calls": 1,
     "audio_ai_success": 1,
     "last_audio_at": "2026-10-28T14:36:11.158136+00:00"
