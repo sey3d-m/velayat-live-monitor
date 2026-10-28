@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T14:14:40.565141+00:00",
-  "updated_at": "2026-10-28T15:08:21.567939+00:00",
+  "updated_at": "2026-10-28T15:09:11.012123+00:00",
   "items": [
     {
       "title": "پرسش درباره حکم شرعی معاملات و گفتگو در مسجد",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 96,
-    "segments_transcribed": 87,
-    "editor_attempts": 52,
-    "editor_withheld": 47,
+    "segments_captured": 98,
+    "segments_transcribed": 89,
+    "editor_attempts": 54,
+    "editor_withheld": 49,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T15:08:15.394431+00:00"
+    "last_audio_at": "2026-10-28T15:09:05.138538+00:00"
   }
 }
