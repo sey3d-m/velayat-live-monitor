@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T17:14:47.975618+00:00",
-  "updated_at": "2026-10-28T17:35:26.341387+00:00",
+  "updated_at": "2026-10-28T17:36:05.178264+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
@@ -20,16 +20,29 @@
       "sequence": 5,
       "updated_at": "2026-10-28T17:32:26.794225+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی روایت شناخت فاطمه سلام‌الله‌علیها و درک لیلةالقدر",
+      "summary": "در این بخش، کارشناس استدلال می‌کند به نقل از آقازاده که هرکس حضرت فاطمه سلام‌الله‌علیها را آن‌گونه که حق معرفت اوست بشناسد، یقیناً لیلةالقدر را درک کرده است؛ با این استناد، در گفت‌وگو به بیان این فضیلت پرداخته شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "editor_mode": "audio_grounded_topic",
+      "id": "40733750550-13",
+      "sequence": 13,
+      "updated_at": "2026-10-28T17:36:05.178243+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 14,
-    "segments_transcribed": 10,
+    "segments_captured": 15,
+    "segments_transcribed": 11,
     "editor_attempts": 6,
-    "editor_withheld": 5,
-    "topics_published": 1,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
-    "last_audio_at": "2026-10-28T17:35:23.370157+00:00"
+    "editor_withheld": 6,
+    "topics_published": 2,
+    "audio_ai_calls": 2,
+    "audio_ai_success": 2,
+    "last_audio_at": "2026-10-28T17:35:48.751431+00:00"
   }
 }
