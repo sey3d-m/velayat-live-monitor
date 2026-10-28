@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T17:04:26.142934+00:00",
+  "updated_at": "2026-10-28T17:04:35.047744+00:00",
   "items": [
     {
       "title": "پرسش درباره اثبات دین از طریق کشف محدودیت‌های عقل",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 161,
-    "segments_transcribed": 152,
-    "editor_attempts": 110,
+    "segments_captured": 162,
+    "segments_transcribed": 153,
+    "editor_attempts": 111,
     "editor_withheld": 98,
     "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T17:04:08.256015+00:00"
+    "last_audio_at": "2026-10-28T17:04:32.752068+00:00"
   }
 }
