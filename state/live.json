@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T14:14:40.565141+00:00",
-  "updated_at": "2026-10-28T14:47:37.291127+00:00",
+  "updated_at": "2026-10-28T14:48:17.044126+00:00",
   "items": [
     {
       "title": "پرسش درباره لزوم تماس مخاطبان در نیمه اول برنامه",
@@ -49,13 +49,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 44,
-    "segments_transcribed": 38,
-    "editor_attempts": 19,
-    "editor_withheld": 18,
+    "segments_captured": 46,
+    "segments_transcribed": 40,
+    "editor_attempts": 20,
+    "editor_withheld": 19,
     "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T14:47:29.023354+00:00"
+    "last_audio_at": "2026-10-28T14:48:11.254612+00:00"
   }
 }
