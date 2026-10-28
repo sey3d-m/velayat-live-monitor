@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T14:14:40.565141+00:00",
-  "updated_at": "2026-10-28T15:23:50.072963+00:00",
+  "updated_at": "2026-10-28T15:24:22.113713+00:00",
   "items": [
     {
       "title": "بررسی حکم و فلسفه شیربها در گفت‌وگو",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 134,
-    "segments_transcribed": 125,
-    "editor_attempts": 75,
-    "editor_withheld": 68,
+    "segments_captured": 136,
+    "segments_transcribed": 127,
+    "editor_attempts": 76,
+    "editor_withheld": 69,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T15:23:27.453622+00:00"
+    "last_audio_at": "2026-10-28T15:24:15.915301+00:00"
   }
 }
