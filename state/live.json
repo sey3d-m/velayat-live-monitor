@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T16:06:21.524673+00:00",
+  "updated_at": "2026-10-28T16:06:56.279955+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره احکام طهارت",
@@ -45,16 +45,28 @@
       "sequence": 14,
       "updated_at": "2026-10-28T16:06:21.524644+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ضرورت هدایت آسمانی برای پاسخ به پرسش‌های انسان",
+      "summary": "در این بخش کارشناس استدلال می‌کند که برای معرفی انسان به خودش، پاسخ به پرسش‌های مرتبط و نشان دادن راه سعادت، تنها خداوند متعال نیاز است. به گفته کارشناس، در همین راستا نیاز به هدایت آسمانی و الهی مطرح می‌شود که یکی از اوصاف آن هادی بودن است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40718955434-16",
+      "sequence": 16,
+      "updated_at": "2026-10-28T16:06:56.279938+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 16,
-    "segments_transcribed": 13,
-    "editor_attempts": 7,
+    "segments_captured": 17,
+    "segments_transcribed": 14,
+    "editor_attempts": 8,
     "editor_withheld": 6,
-    "topics_published": 3,
+    "topics_published": 4,
     "audio_ai_calls": 2,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-28T16:06:14.562914+00:00"
+    "last_audio_at": "2026-10-28T16:06:38.499269+00:00"
   }
 }
