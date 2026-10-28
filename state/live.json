@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T17:14:47.975618+00:00",
-  "updated_at": "2026-10-28T18:11:26.463345+00:00",
+  "updated_at": "2026-10-28T18:12:18.130754+00:00",
   "items": [
     {
       "title": "پرسش درباره شیعه بودن همسر در گفت‌وگو با حضرت علی",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 104,
-    "segments_transcribed": 93,
-    "editor_attempts": 74,
+    "segments_captured": 106,
+    "segments_transcribed": 95,
+    "editor_attempts": 75,
     "editor_withheld": 73,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T18:11:25.286619+00:00"
+    "last_audio_at": "2026-10-28T18:12:15.093667+00:00"
   }
 }
