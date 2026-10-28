@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "ended",
   "network": "velayat_farsi",
   "session": "40718955434",
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T17:09:22.747412+00:00",
+  "updated_at": "2026-10-28T17:10:03.034075+00:00",
   "items": [
     {
       "title": "بررسی ادعای بشری نبودن کلام قرآن در گفتار کارشناس",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 174,
-    "segments_transcribed": 165,
+    "segments_captured": 175,
+    "segments_transcribed": 166,
     "editor_attempts": 120,
-    "editor_withheld": 106,
+    "editor_withheld": 107,
     "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T17:09:20.566837+00:00"
+    "last_audio_at": "2026-10-28T17:09:45.214371+00:00"
   }
 }
