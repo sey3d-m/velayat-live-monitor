@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T16:49:28.855708+00:00",
+  "updated_at": "2026-10-28T16:50:19.374182+00:00",
   "items": [
     {
       "title": "پرسش درباره تفاوت قانون دین و قوانین غیردینی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 124,
-    "segments_transcribed": 118,
-    "editor_attempts": 89,
-    "editor_withheld": 79,
+    "segments_captured": 126,
+    "segments_transcribed": 120,
+    "editor_attempts": 90,
+    "editor_withheld": 80,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T16:49:26.207054+00:00"
+    "last_audio_at": "2026-10-28T16:50:16.021798+00:00"
   }
 }
