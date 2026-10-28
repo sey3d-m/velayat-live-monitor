@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T16:25:28.027463+00:00",
+  "updated_at": "2026-10-28T16:26:16.993231+00:00",
   "items": [
     {
       "title": "بررسی ضرورت هدایت آسمانی برای پاسخ به پرسش‌های انسان",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 64,
-    "segments_transcribed": 60,
-    "editor_attempts": 46,
-    "editor_withheld": 39,
+    "segments_captured": 66,
+    "segments_transcribed": 62,
+    "editor_attempts": 48,
+    "editor_withheld": 41,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T16:25:25.336262+00:00"
+    "last_audio_at": "2026-10-28T16:26:14.587887+00:00"
   }
 }
