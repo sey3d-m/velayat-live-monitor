@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T16:06:16.832076+00:00",
+  "updated_at": "2026-10-28T16:06:21.524673+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره احکام طهارت",
@@ -33,6 +33,18 @@
       "sequence": 12,
       "updated_at": "2026-10-28T16:05:40.555536+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ناتوانی اندیشه بشری در شناخت کامل انسان و سعادت",
+      "summary": "در این بخش کارشناس استدلال می‌کند که اندیشه‌های بشری نتوانسته‌اند مسائل انسان را به نحو مطلوبی حل کنند و میان اندیشمندان وفاق و اجماعی وجود ندارد؛ بر همین اساس، انسان برای گام نخست سعادت و خودشناسی نیازمند منبعی بدون خطا و کاستی است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40718955434-14",
+      "sequence": 14,
+      "updated_at": "2026-10-28T16:06:21.524644+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -40,7 +52,7 @@
     "segments_transcribed": 13,
     "editor_attempts": 7,
     "editor_withheld": 6,
-    "topics_published": 2,
+    "topics_published": 3,
     "audio_ai_calls": 2,
     "audio_ai_success": 2,
     "last_audio_at": "2026-10-28T16:06:14.562914+00:00"
