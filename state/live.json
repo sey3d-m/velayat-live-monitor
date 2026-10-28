@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T16:41:28.905337+00:00",
+  "updated_at": "2026-10-28T16:42:03.464716+00:00",
   "items": [
-    {
-      "title": "پرسش درباره کارآمدی قوانین بدون دین در روابط اجتماعی",
-      "summary": "در این بخش درباره رابطه قانون‌گذاری و دین پرسش شد. کارشناس اشاره کرد که برخی می‌گویند با وجود قانون نیازی به بست دین نیست و سپس به بررسی این دیدگاه در روابط اجتماعی و مساعده اجتماعی پرداختند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40718955434-37",
-      "sequence": 37,
-      "updated_at": "2026-10-28T16:15:24.935995+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی ضرورت فرهنگ‌سازی در کنار قانون‌گذاری و دستگاه نظارتی",
       "summary": "در این بخش کارشناس استدلال می‌کند که در کنار قانون‌گذاری، فرهنگ‌سازی اهمیت زیادی دارد و باید به آن بها داد؛ همچنین دستگاه‌های نظارتی نیز برای مراقبت در این زمینه قرار داده می‌شوند.",
@@ -68,16 +56,28 @@
       "sequence": 95,
       "updated_at": "2026-10-28T16:38:35.089392+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره اثبات دین از طریق کشف محدودیت‌های عقل",
+      "summary": "در این بخش کارشناس استدلال می‌کند که عقل انسان محدودیت‌های خود را کشف می‌کند و از این طریق می‌فهمد که در کنار این منبع محدود، منبع نامحدودی نیز وجود دارد و خداوند راه‌هایی برای درک این موضوع قرار داده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40718955434-104",
+      "sequence": 104,
+      "updated_at": "2026-10-28T16:42:03.464690+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 104,
-    "segments_transcribed": 98,
-    "editor_attempts": 75,
-    "editor_withheld": 67,
-    "topics_published": 10,
+    "segments_captured": 105,
+    "segments_transcribed": 99,
+    "editor_attempts": 76,
+    "editor_withheld": 68,
+    "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T16:41:26.716384+00:00"
+    "last_audio_at": "2026-10-28T16:41:51.513038+00:00"
   }
 }
