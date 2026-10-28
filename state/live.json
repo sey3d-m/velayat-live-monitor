@@ -1,84 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "40703930657",
-  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "session": "40718955434",
+  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
-  "started_at": "2026-10-28T14:14:40.565141+00:00",
-  "updated_at": "2026-10-28T15:40:06.050807+00:00",
-  "items": [
-    {
-      "title": "گفت‌وگو درباره احکام طهارت",
-      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40703930657-99",
-      "sequence": 99,
-      "updated_at": "2026-10-28T15:10:08.204675+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره خمس و زکات",
-      "summary": "در این بخش از برنامه، موضوع «خمس و زکات» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40703930657-108",
-      "sequence": 108,
-      "updated_at": "2026-10-28T15:14:13.602179+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره تعلق خمس به برنج خریداری‌شده با وام",
-      "summary": "در این بخش کارشناس به پرسش درباره تعلق خمس به برنجی پاسخ می‌دهد که با پول وام خریداری شده و قیمت آن افزایش یافته است. به گفته کارشناس، اگر برنج در سر سال خمسی موجود باشد و قیمت آن بالا رفته باشد، ملاک محاسبه، نرخ روز سر سال خمسی است و این افزایش قیمت به معنای تعلق خمس به کل مبلغ اضافه نیست، بلکه نحوه محاسبه متناسب با مصرف و نرخ روز است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40703930657-113",
-      "sequence": 113,
-      "updated_at": "2026-10-28T15:15:53.150531+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره تعلق خمس به اقلام خریداری‌شده و مصرف‌نشده",
-      "summary": "در این بخش کارشناس به پرسشی درباره حکم تعلق خمس به اقلامی پاسخ می‌دهد که خریداری شده اما تا پایان سال خمسی مصرف نشده‌اند. بر اساس این گفت‌وگو، در صورتی که اقلام یادشده تا سر سال خمسی باقی بماند، به مقدار مصرف‌نشده خمس تعلق می‌گیرد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40703930657-130",
-      "sequence": 130,
-      "updated_at": "2026-10-28T15:22:34.804210+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی حکم نماز با انگشتر یا جوهر خودکار روی دست",
-      "summary": "در این بخش کارشناس درباره حکم نماز با انگشتر غصبی یا وجود جوهر خودکار بر روی دست هنگام وضو سخن می‌گوید. به گفته کارشناس، اگر انگشتر غصبی در جیب نمازگزار باشد مانعی ندارد اما اگر پوشش و لباس غصبی باشد نماز را باطل می‌کند؛ همچنین درباره باقی‌ماندن اثر رنگ جوهر خودکار روی دست برای وضو نکاتی مطرح شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40703930657-137",
-      "sequence": 137,
-      "updated_at": "2026-10-28T15:25:19.733255+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-10-28T15:44:49.208342+00:00",
+  "updated_at": "2026-10-28T16:00:00.000245+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 155,
-    "editor_attempts": 89,
-    "editor_withheld": 82,
-    "topics_published": 13,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T15:39:48.651507+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
