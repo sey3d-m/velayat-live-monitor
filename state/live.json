@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T17:00:40.199656+00:00",
+  "updated_at": "2026-10-28T17:01:23.725974+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره التزام به قانون و نظارت همه‌جانبه",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 152,
-    "segments_transcribed": 144,
-    "editor_attempts": 104,
+    "segments_captured": 154,
+    "segments_transcribed": 145,
+    "editor_attempts": 105,
     "editor_withheld": 94,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T17:00:38.382452+00:00"
+    "last_audio_at": "2026-10-28T17:01:21.630284+00:00"
   }
 }
