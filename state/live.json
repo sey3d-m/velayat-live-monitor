@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T14:14:40.565141+00:00",
-  "updated_at": "2026-10-28T14:49:54.319732+00:00",
+  "updated_at": "2026-10-28T14:50:36.252199+00:00",
   "items": [
     {
       "title": "پرسش درباره لزوم تماس مخاطبان در نیمه اول برنامه",
@@ -46,16 +46,28 @@
       "sequence": 24,
       "updated_at": "2026-10-28T14:40:10.849612+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره حکم شرعی معاملات و گفتگو در مسجد",
+      "summary": "در این بخش کارشناس درباره احکام مسجد اظهار نظر می‌کند و توضیح می‌دهد که انجام معاملاتی مانند خرید و فروش یا دوختن جوراب در فضای مسجد حرام نیست، اما صحبت‌های دنیوی و گفتگو در آن مکان مکروه شمرده می‌شود؛ همچنین تأکید می‌کند که سخن گفتن در فاصله میان نمازها یا هنگام حضور سخنران آداب خاصی دارد و باید به سخنان گوش داد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40703930657-50",
+      "sequence": 50,
+      "updated_at": "2026-10-28T14:50:36.252180+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 50,
-    "segments_transcribed": 44,
-    "editor_attempts": 23,
-    "editor_withheld": 22,
-    "topics_published": 3,
+    "segments_captured": 51,
+    "segments_transcribed": 45,
+    "editor_attempts": 24,
+    "editor_withheld": 23,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T14:49:49.181553+00:00"
+    "last_audio_at": "2026-10-28T14:50:13.567143+00:00"
   }
 }
