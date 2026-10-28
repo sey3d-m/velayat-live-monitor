@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T17:14:47.975618+00:00",
-  "updated_at": "2026-10-28T17:57:35.261034+00:00",
+  "updated_at": "2026-10-28T17:57:52.342812+00:00",
   "items": [
     {
       "title": "بررسی روایت شناخت فاطمه سلام‌الله‌علیها و درک لیلةالقدر",
@@ -75,13 +75,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 69,
-    "segments_transcribed": 65,
-    "editor_attempts": 52,
+    "segments_captured": 70,
+    "segments_transcribed": 66,
+    "editor_attempts": 53,
     "editor_withheld": 52,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T17:57:24.238740+00:00"
+    "last_audio_at": "2026-10-28T17:57:49.642708+00:00"
   }
 }
