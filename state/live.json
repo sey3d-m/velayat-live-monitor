@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T14:14:40.565141+00:00",
-  "updated_at": "2026-10-28T14:39:37.562895+00:00",
+  "updated_at": "2026-10-28T14:40:10.849634+00:00",
   "items": [
     {
       "title": "پرسش درباره لزوم تماس مخاطبان در نیمه اول برنامه",
@@ -33,16 +33,29 @@
       "sequence": 14,
       "updated_at": "2026-10-28T14:36:20.853171+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز",
+      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40703930657-24",
+      "sequence": 24,
+      "updated_at": "2026-10-28T14:40:10.849612+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 24,
-    "segments_transcribed": 18,
-    "editor_attempts": 8,
-    "editor_withheld": 7,
-    "topics_published": 2,
-    "audio_ai_calls": 2,
-    "audio_ai_success": 2,
-    "last_audio_at": "2026-10-28T14:39:26.899562+00:00"
+    "segments_captured": 25,
+    "segments_transcribed": 19,
+    "editor_attempts": 9,
+    "editor_withheld": 9,
+    "topics_published": 3,
+    "audio_ai_calls": 3,
+    "audio_ai_success": 3,
+    "last_audio_at": "2026-10-28T14:39:50.786804+00:00"
   }
 }
