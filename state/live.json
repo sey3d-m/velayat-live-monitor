@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T16:39:49.450086+00:00",
+  "updated_at": "2026-10-28T16:40:39.676964+00:00",
   "items": [
     {
       "title": "پرسش درباره کارآمدی قوانین بدون دین در روابط اجتماعی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 100,
-    "segments_transcribed": 94,
-    "editor_attempts": 73,
-    "editor_withheld": 65,
+    "segments_captured": 102,
+    "segments_transcribed": 96,
+    "editor_attempts": 74,
+    "editor_withheld": 66,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T16:39:46.874617+00:00"
+    "last_audio_at": "2026-10-28T16:40:37.013869+00:00"
   }
 }
