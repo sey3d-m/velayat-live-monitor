@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T14:14:40.565141+00:00",
-  "updated_at": "2026-10-28T15:09:52.915516+00:00",
+  "updated_at": "2026-10-28T15:10:08.204701+00:00",
   "items": [
-    {
-      "title": "پرسش درباره حکم شرعی معاملات و گفتگو در مسجد",
-      "summary": "در این بخش کارشناس درباره احکام مسجد اظهار نظر می‌کند و توضیح می‌دهد که انجام معاملاتی مانند خرید و فروش یا دوختن جوراب در فضای مسجد حرام نیست، اما صحبت‌های دنیوی و گفتگو در آن مکان مکروه شمرده می‌شود؛ همچنین تأکید می‌کند که سخن گفتن در فاصله میان نمازها یا هنگام حضور سخنران آداب خاصی دارد و باید به سخنان گوش داد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40703930657-50",
-      "sequence": 50,
-      "updated_at": "2026-10-28T14:50:36.252180+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره روزه",
       "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -68,14 +56,27 @@
       "sequence": 93,
       "updated_at": "2026-10-28T15:07:47.507920+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره احکام طهارت",
+      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40703930657-99",
+      "sequence": 99,
+      "updated_at": "2026-10-28T15:10:08.204675+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 100,
     "segments_transcribed": 91,
     "editor_attempts": 55,
-    "editor_withheld": 50,
-    "topics_published": 8,
+    "editor_withheld": 51,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-10-28T15:09:47.317041+00:00"
