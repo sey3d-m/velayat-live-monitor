@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T16:15:24.936023+00:00",
+  "updated_at": "2026-10-28T16:16:02.372782+00:00",
   "items": [
     {
       "title": "پرسش درباره استعدادهای وجودی و غایت خلقت انسان",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 38,
-    "segments_transcribed": 35,
-    "editor_attempts": 23,
+    "segments_captured": 40,
+    "segments_transcribed": 37,
+    "editor_attempts": 24,
     "editor_withheld": 19,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T16:15:02.514233+00:00"
+    "last_audio_at": "2026-10-28T16:15:51.603653+00:00"
   }
 }
