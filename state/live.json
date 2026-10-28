@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T16:15:05.651834+00:00",
+  "updated_at": "2026-10-28T16:15:24.936023+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره احکام طهارت",
-      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40718955434-4",
-      "sequence": 4,
-      "updated_at": "2026-10-28T16:02:03.535936+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره استعدادهای وجودی و غایت خلقت انسان",
       "summary": "در این بخش درباره استعدادهای وجودی انسان و غایت خلقت او پرسش مطرح شد. به گفته کارشناس، این موارد مجموعه‌ای را تشکیل می‌دهند که جهان‌بینی را می‌سازد و ساختن آن از عهده علوم بشری خارج است.",
@@ -69,6 +56,18 @@
       "sequence": 30,
       "updated_at": "2026-10-28T16:12:25.412270+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره کارآمدی قوانین بدون دین در روابط اجتماعی",
+      "summary": "در این بخش درباره رابطه قانون‌گذاری و دین پرسش شد. کارشناس اشاره کرد که برخی می‌گویند با وجود قانون نیازی به بست دین نیست و سپس به بررسی این دیدگاه در روابط اجتماعی و مساعده اجتماعی پرداختند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40718955434-37",
+      "sequence": 37,
+      "updated_at": "2026-10-28T16:15:24.935995+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -76,7 +75,7 @@
     "segments_transcribed": 35,
     "editor_attempts": 23,
     "editor_withheld": 19,
-    "topics_published": 5,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-10-28T16:15:02.514233+00:00"
