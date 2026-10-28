@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T17:06:05.403102+00:00",
+  "updated_at": "2026-10-28T17:06:11.683821+00:00",
   "items": [
     {
       "title": "بررسی ادعای بشری نبودن کلام قرآن در گفتار کارشناس",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 165,
-    "segments_transcribed": 156,
+    "segments_captured": 166,
+    "segments_transcribed": 157,
     "editor_attempts": 113,
     "editor_withheld": 100,
     "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T17:05:45.302809+00:00"
+    "last_audio_at": "2026-10-28T17:06:09.742316+00:00"
   }
 }
