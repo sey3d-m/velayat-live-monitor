@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T16:27:49.936931+00:00",
+  "updated_at": "2026-10-28T16:28:38.082500+00:00",
   "items": [
     {
       "title": "بررسی نقش عوامل فراتر از جسم و طرح موضوع دین‌درمانی",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 70,
-    "segments_transcribed": 66,
-    "editor_attempts": 52,
-    "editor_withheld": 44,
+    "segments_captured": 72,
+    "segments_transcribed": 68,
+    "editor_attempts": 54,
+    "editor_withheld": 46,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T16:27:47.791136+00:00"
+    "last_audio_at": "2026-10-28T16:28:35.713906+00:00"
   }
 }
