@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "40703930657",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T14:14:40.565141+00:00",
-  "updated_at": "2026-10-28T14:35:34.356685+00:00",
-  "items": [],
+  "updated_at": "2026-10-28T14:35:43.552218+00:00",
+  "items": [
+    {
+      "title": "پرسش درباره لزوم تماس مخاطبان در نیمه اول برنامه",
+      "summary": "در این بخش کارشناس برنامه درباره تماس زودهنگام برخی مخاطبان پیش از شروع رسمی گفتگو صحبت می‌کند. به گفته وی، اصرار بر این است که بینندگان در نیمه اول برنامه تماس بگیرند، زمان خود را برنامه‌ریزی کنند و شماره خود را ثبت نمایند تا در طول برنامه امکان پاسخگویی به تلفن‌ها فراهم شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "editor_mode": "audio_grounded_topic",
+      "id": "40703930657-10",
+      "sequence": 10,
+      "updated_at": "2026-10-28T14:35:43.552193+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
     "segments_captured": 14,
     "segments_transcribed": 8,
     "editor_attempts": 3,
-    "editor_withheld": 2,
-    "topics_published": 0,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
+    "editor_withheld": 3,
+    "topics_published": 1,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
     "last_audio_at": "2026-10-28T14:35:28.217678+00:00"
   }
 }
