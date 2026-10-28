@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T14:14:40.565141+00:00",
-  "updated_at": "2026-10-28T15:14:13.602196+00:00",
+  "updated_at": "2026-10-28T15:14:44.850520+00:00",
   "items": [
     {
       "title": "پرسش درباره ارث نوه در زمان حیات پدربزرگ و شرایط طبقات ارث",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 110,
-    "segments_transcribed": 101,
-    "editor_attempts": 60,
-    "editor_withheld": 56,
+    "segments_captured": 112,
+    "segments_transcribed": 103,
+    "editor_attempts": 62,
+    "editor_withheld": 57,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T15:13:50.725539+00:00"
+    "last_audio_at": "2026-10-28T15:14:39.278392+00:00"
   }
 }
