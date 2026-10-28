@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T16:05:27.180113+00:00",
+  "updated_at": "2026-10-28T16:05:40.555567+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره احکام طهارت",
@@ -20,16 +20,29 @@
       "sequence": 4,
       "updated_at": "2026-10-28T16:02:03.535936+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره استعدادهای وجودی و غایت خلقت انسان",
+      "summary": "در این بخش درباره استعدادهای وجودی انسان و غایت خلقت او پرسش مطرح شد. به گفته کارشناس، این موارد مجموعه‌ای را تشکیل می‌دهند که جهان‌بینی را می‌سازد و ساختن آن از عهده علوم بشری خارج است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "editor_mode": "audio_grounded_topic",
+      "id": "40718955434-12",
+      "sequence": 12,
+      "updated_at": "2026-10-28T16:05:40.555536+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 14,
     "segments_transcribed": 11,
     "editor_attempts": 6,
-    "editor_withheld": 5,
-    "topics_published": 1,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
+    "editor_withheld": 6,
+    "topics_published": 2,
+    "audio_ai_calls": 2,
+    "audio_ai_success": 2,
     "last_audio_at": "2026-10-28T16:05:24.762174+00:00"
   }
 }
