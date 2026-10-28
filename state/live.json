@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T14:14:40.565141+00:00",
-  "updated_at": "2026-10-28T15:03:27.670119+00:00",
+  "updated_at": "2026-10-28T15:04:17.156859+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره ولایت و غدیر",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 84,
-    "segments_transcribed": 75,
-    "editor_attempts": 45,
-    "editor_withheld": 42,
+    "segments_captured": 86,
+    "segments_transcribed": 77,
+    "editor_attempts": 46,
+    "editor_withheld": 43,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T15:03:22.544061+00:00"
+    "last_audio_at": "2026-10-28T15:04:11.308435+00:00"
   }
 }
