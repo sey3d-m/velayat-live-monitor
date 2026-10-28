@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T14:14:40.565141+00:00",
-  "updated_at": "2026-10-28T15:15:53.150550+00:00",
+  "updated_at": "2026-10-28T15:16:35.179287+00:00",
   "items": [
     {
       "title": "پرسش درباره حکم دریافت شیربها در ازدواج",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 115,
-    "segments_transcribed": 106,
-    "editor_attempts": 63,
+    "segments_captured": 116,
+    "segments_transcribed": 107,
+    "editor_attempts": 64,
     "editor_withheld": 58,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T15:15:46.997089+00:00"
+    "last_audio_at": "2026-10-28T15:16:11.312532+00:00"
   }
 }
