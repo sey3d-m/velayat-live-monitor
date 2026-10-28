@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-28",
   "started_at": "2026-10-28T15:44:49.208342+00:00",
-  "updated_at": "2026-10-28T16:43:01.519531+00:00",
+  "updated_at": "2026-10-28T16:43:50.967707+00:00",
   "items": [
     {
       "title": "بررسی ضرورت فرهنگ‌سازی در کنار قانون‌گذاری و دستگاه نظارتی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 108,
-    "segments_transcribed": 102,
-    "editor_attempts": 78,
-    "editor_withheld": 69,
+    "segments_captured": 110,
+    "segments_transcribed": 104,
+    "editor_attempts": 79,
+    "editor_withheld": 70,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-28T16:42:59.149603+00:00"
+    "last_audio_at": "2026-10-28T16:43:48.311296+00:00"
   }
 }
