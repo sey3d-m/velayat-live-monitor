@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T15:45:05.524221+00:00",
-  "updated_at": "2026-10-29T17:07:47.661550+00:00",
+  "updated_at": "2026-10-29T17:08:36.557305+00:00",
   "items": [
     {
       "title": "بررسی مفهوم تمدن و نفی انزوا در اندیشه کارشناس",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 170,
-    "segments_transcribed": 162,
-    "editor_attempts": 102,
-    "editor_withheld": 89,
+    "segments_captured": 172,
+    "segments_transcribed": 164,
+    "editor_attempts": 103,
+    "editor_withheld": 90,
     "topics_published": 22,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-29T17:07:44.817286+00:00"
+    "last_audio_at": "2026-10-29T17:08:34.591381+00:00"
   }
 }
