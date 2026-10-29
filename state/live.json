@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T14:14:45.106097+00:00",
-  "updated_at": "2026-10-29T15:33:50.793504+00:00",
+  "updated_at": "2026-10-29T15:34:39.696572+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره امام زمان",
@@ -49,13 +49,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 160,
-    "segments_transcribed": 141,
-    "editor_attempts": 82,
+    "segments_captured": 162,
+    "segments_transcribed": 143,
+    "editor_attempts": 83,
     "editor_withheld": 82,
     "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-29T15:33:49.154494+00:00"
+    "last_audio_at": "2026-10-29T15:34:37.955688+00:00"
   }
 }
