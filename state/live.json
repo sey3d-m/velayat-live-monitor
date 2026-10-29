@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T17:14:45.297230+00:00",
-  "updated_at": "2026-10-29T17:49:55.942437+00:00",
+  "updated_at": "2026-10-29T17:50:20.143409+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40919365093-15",
-      "sequence": 15,
-      "updated_at": "2026-10-29T17:36:26.409861+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره ضرورت استنطاق آیات و استناد به کتب در برنامه",
       "summary": "در این بخش کارشناس استدلال می‌کند که برای بررسی ادله قرآنی اهل‌بیت (ع)، استنطاق آیات ضرورت دارد و فلسفه وجودی این‌گونه برنامه‌ها همراهی با بینندگان و رجوع به کتاب‌هاست.",
@@ -71,16 +58,29 @@
       "sequence": 47,
       "updated_at": "2026-10-29T17:49:10.873738+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره امام زمان",
+      "summary": "در این بخش از برنامه، موضوع «امام زمان» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40919365093-49",
+      "sequence": 49,
+      "updated_at": "2026-10-29T17:50:20.143388+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 50,
-    "segments_transcribed": 48,
+    "segments_captured": 51,
+    "segments_transcribed": 49,
     "editor_attempts": 37,
-    "editor_withheld": 35,
-    "topics_published": 5,
+    "editor_withheld": 36,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-29T17:49:50.819965+00:00"
+    "last_audio_at": "2026-10-29T17:50:15.208414+00:00"
   }
 }
