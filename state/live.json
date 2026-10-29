@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T15:45:05.524221+00:00",
-  "updated_at": "2026-10-29T16:10:21.834611+00:00",
+  "updated_at": "2026-10-29T16:10:40.672260+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره مهدویت با حضور حجت‌الاسلام نسوری",
@@ -45,16 +45,29 @@
       "sequence": 15,
       "updated_at": "2026-10-29T16:06:49.819191+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره دلیل حضور حضرت زهرا در میدان حمایت از ولی خدا",
+      "summary": "در این بخش کارشناس استدلال می‌کند که حضور حضرت زهرا (س) در میدان برای جلوگیری از تنها ماندن حجت خدا بوده است؛ به گفته وی، تاریخ اسلام نشان می‌دهد هرگاه مردم میدان را رها کرده‌اند، ولی خدا تنها مانده و حضرت زهرا از این رو به میدان آمد که مردم از میدان‌داری و حمایت سر باز زدند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "40904553517-23",
+      "sequence": 23,
+      "updated_at": "2026-10-29T16:10:40.672233+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 26,
-    "segments_transcribed": 24,
+    "segments_captured": 27,
+    "segments_transcribed": 25,
     "editor_attempts": 11,
-    "editor_withheld": 9,
-    "topics_published": 3,
-    "audio_ai_calls": 2,
-    "audio_ai_success": 2,
-    "last_audio_at": "2026-10-29T16:10:18.675883+00:00"
+    "editor_withheld": 10,
+    "topics_published": 4,
+    "audio_ai_calls": 3,
+    "audio_ai_success": 3,
+    "last_audio_at": "2026-10-29T16:10:36.411908+00:00"
   }
 }
