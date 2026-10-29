@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T15:45:05.524221+00:00",
-  "updated_at": "2026-10-29T16:55:04.218080+00:00",
+  "updated_at": "2026-10-29T16:55:39.621481+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره اعتقادات اسلامی",
-      "summary": "در این بخش از برنامه، موضوع «اعتقادات اسلامی» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40904553517-100",
-      "sequence": 100,
-      "updated_at": "2026-10-29T16:40:29.494405+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
       "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +56,28 @@
       "sequence": 132,
       "updated_at": "2026-10-29T16:53:26.867201+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره وظایف انسان منتظر در عصر غیبت بر اساس روایت امام سجاد",
+      "summary": "در این بخش کارشناس استدلال می‌کند که دستورات دینی برای انسان‌های منتظر طراحی شده است و به روایتی از امام سجاد (ع) خطاب به ابوالخ خالد استناد می‌کند. به گفته کارشناس، در دوران غیبت، مردمی که به امامت اعتقاد دارند، باید منتظر ظهور امام خود باشند تا به عنوان بهترین مردم آن زمان شناخته شوند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.8,
+      "id": "40904553517-137",
+      "sequence": 137,
+      "updated_at": "2026-10-29T16:55:39.621454+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 138,
-    "segments_transcribed": 131,
+    "segments_captured": 139,
+    "segments_transcribed": 132,
     "editor_attempts": 83,
     "editor_withheld": 74,
-    "topics_published": 18,
+    "topics_published": 19,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-29T16:55:01.483621+00:00"
+    "last_audio_at": "2026-10-29T16:55:26.494139+00:00"
   }
 }
