@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T15:45:05.524221+00:00",
-  "updated_at": "2026-10-29T16:16:39.834195+00:00",
+  "updated_at": "2026-10-29T16:17:29.274707+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره مهدویت با حضور حجت‌الاسلام نسوری",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 42,
-    "segments_transcribed": 40,
-    "editor_attempts": 22,
-    "editor_withheld": 20,
+    "segments_captured": 44,
+    "segments_transcribed": 42,
+    "editor_attempts": 23,
+    "editor_withheld": 21,
     "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-29T16:16:36.747000+00:00"
+    "last_audio_at": "2026-10-29T16:17:26.398155+00:00"
   }
 }
