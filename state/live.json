@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T15:45:05.524221+00:00",
-  "updated_at": "2026-10-29T16:06:21.438497+00:00",
+  "updated_at": "2026-10-29T16:06:49.819219+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره مهدویت با حضور حجت‌الاسلام نسوری",
@@ -33,16 +33,28 @@
       "sequence": 13,
       "updated_at": "2026-10-29T16:06:00.070624+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره شناخت امام زمان و جایگاه زهرای مرضیه در گفتار کارشناس",
+      "summary": "در این بخش، کارشناس درباره استدلال علامه امینی برای اثبات امامت سخن می‌گوید و این پرسش را مطرح می‌کند که آیا ممکن است زهرای مرضیه امام زمان دوران خود را نشناخته و از دنیا رفته باشد. وی با اشاره به ویژگی‌های خاص آن حضرت و توصیه‌های پیامبر درباره عدم آزار ایشان، استدلال می‌کند که این موارد نشان‌دهنده عظمت این شخصیت است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40904553517-15",
+      "sequence": 15,
+      "updated_at": "2026-10-29T16:06:49.819191+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 16,
-    "segments_transcribed": 14,
+    "segments_captured": 17,
+    "segments_transcribed": 15,
     "editor_attempts": 7,
     "editor_withheld": 6,
-    "topics_published": 2,
+    "topics_published": 3,
     "audio_ai_calls": 1,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-10-29T16:06:17.551108+00:00"
+    "last_audio_at": "2026-10-29T16:06:41.732776+00:00"
   }
 }
