@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "40904553517",
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T15:45:05.524221+00:00",
-  "updated_at": "2026-10-29T16:03:56.739547+00:00",
-  "items": [],
+  "updated_at": "2026-10-29T16:03:58.263597+00:00",
+  "items": [
+    {
+      "title": "گفت‌وگو درباره مهدویت با حضور حجت‌الاسلام نسوری",
+      "summary": "در این بخش از برنامه، مجری ضمن خوش‌آمدگویی به کارشناس برنامه، حجت‌الاسلام و المسلمین استاد نسوری از اساتید مرکز تخصصی مهدویت و معاونت تبلیغ، از حضور ایشان در برنامه برای گفتگو خبر داد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "editor_mode": "audio_grounded_topic",
+      "id": "40904553517-5",
+      "sequence": 5,
+      "updated_at": "2026-10-29T16:03:58.263575+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
     "segments_captured": 10,
     "segments_transcribed": 8,
     "editor_attempts": 3,
-    "editor_withheld": 2,
-    "topics_published": 0,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
+    "editor_withheld": 3,
+    "topics_published": 1,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
     "last_audio_at": "2026-10-29T16:03:53.953100+00:00"
   }
 }
