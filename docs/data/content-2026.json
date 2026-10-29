@@ -3,6 +3,209 @@
   "year": "2026",
   "items": [
     {
+      "id": "3b2d192052eda62518",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-29-1800",
+      "program_title": "پرسمان تاریخی",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "بررسی ماهیت اراضی فدک و چگونگی واگذاری آن به حضرت زهرا (س)",
+      "summary": "بررسی ماهیت اراضی فدک و چگونگی واگذاری آن به حضرت زهرا (س)",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-29",
+      "program_start_time": "18:00",
+      "start_timecode": 3161,
+      "end_timecode": 3551,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-29T15:38:53+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "72a4bc89099fa83a49",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-29-1800",
+      "program_title": "پرسمان تاریخی",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "بررسی سابقه درج عنوان شهادت و وفات در تقویم‌ها و منابع تاریخی",
+      "summary": "بررسی سابقه درج عنوان شهادت و وفات در تقویم‌ها و منابع تاریخی",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-29",
+      "program_start_time": "18:00",
+      "start_timecode": 2720,
+      "end_timecode": 3161,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-29T15:38:53+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "fddf8fc06bb5eed810",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-29-1800",
+      "program_title": "پرسمان تاریخی",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "چرا پیامبر اکرم (ص) با وجود آگاهی از شهادت دخترشان و ستم‌های وارده، سکوت اختیار کردند و پیش از وقوع جنایت کاری نکردند؟",
+      "summary": "کارشناس پاسخ داد که انبیا بر اساس علم غیب قصاص قبل از جنایت نمی‌کنند و دنیا دار امتحان و اختیار بشر است. پیامبر با ابلاغ غدیر و معرفی اهل‌بیت حجت را تمام کرد تا انسان‌ها خود راه هدایت یا ضلالت را برگزینند.",
+      "question": "چرا پیامبر اکرم (ص) با وجود آگاهی از شهادت دخترشان و ستم‌های وارده، سکوت اختیار کردند و پیش از وقوع جنایت کاری نکردند؟",
+      "answer": "کارشناس پاسخ داد که انبیا بر اساس علم غیب قصاص قبل از جنایت نمی‌کنند و دنیا دار امتحان و اختیار بشر است. پیامبر با ابلاغ غدیر و معرفی اهل‌بیت حجت را تمام کرد تا انسان‌ها خود راه هدایت یا ضلالت را برگزینند.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-29",
+      "program_start_time": "18:00",
+      "start_timecode": 2130,
+      "end_timecode": 2561,
+      "estimated_answer_time": "18:35",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-29T15:38:53+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "2f0ef8c4d501c1a339",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-29-1800",
+      "program_title": "پرسمان تاریخی",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "پاسخ به شبهه چرایی عدم جلوگیری پیامبر (ص) از ظلم‌های آینده به حضرت فاطمه",
+      "summary": "پاسخ به شبهه چرایی عدم جلوگیری پیامبر (ص) از ظلم‌های آینده به حضرت فاطمه",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-29",
+      "program_start_time": "18:00",
+      "start_timecode": 2130,
+      "end_timecode": 2670,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-29T15:38:53+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "44dcee16d77d31bf21",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-29-1800",
+      "program_title": "پرسمان تاریخی",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "ادله متعدد شیعه و اهل‌سنت بر اثبات شهادت حضرت زهرا (س)",
+      "summary": "ادله متعدد شیعه و اهل‌سنت بر اثبات شهادت حضرت زهرا (س)",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-29",
+      "program_start_time": "18:00",
+      "start_timecode": 1020,
+      "end_timecode": 2130,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-29T15:38:53+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "3b2d2cfe8da246a3b7",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-29-1800",
+      "program_title": "پرسمان تاریخی",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "بررسی شخصیت سلیم بن قیس هلالی و اعتبار کتاب اسرار آل محمد",
+      "summary": "بررسی شخصیت سلیم بن قیس هلالی و اعتبار کتاب اسرار آل محمد",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-29",
+      "program_start_time": "18:00",
+      "start_timecode": 605,
+      "end_timecode": 1020,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-29T15:38:53+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "05b126023cb1a00982",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-29-1800",
+      "program_title": "پرسمان تاریخی",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "مقدمه‌ای بر ایام فاطمیه و طرح سوالات تاریخی بدون تعصب",
+      "summary": "مقدمه‌ای بر ایام فاطمیه و طرح سوالات تاریخی بدون تعصب",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-29",
+      "program_start_time": "18:00",
+      "start_timecode": 311,
+      "end_timecode": 467,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-29T15:38:53+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
+      "source_reported_at": null
+    },
+    {
       "id": "631d42d76959988d10",
       "network": "velayat_farsi",
       "program_id": "persian-2026-10-28-2100",
@@ -28,7 +231,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -57,7 +260,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -86,7 +289,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -115,7 +318,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -144,7 +347,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -173,7 +376,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -202,7 +405,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -231,7 +434,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -260,7 +463,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -289,7 +492,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -318,7 +521,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -347,7 +550,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -376,7 +579,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -405,7 +608,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -434,7 +637,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T17:10:56+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -463,7 +666,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T17:10:56+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -492,7 +695,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T17:10:56+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -521,7 +724,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T17:10:56+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -550,7 +753,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T17:10:56+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -579,7 +782,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T17:10:56+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -608,7 +811,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -637,7 +840,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -666,7 +869,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -695,7 +898,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -724,7 +927,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -753,7 +956,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -782,7 +985,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -811,7 +1014,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -840,7 +1043,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -869,7 +1072,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -898,7 +1101,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -927,7 +1130,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -956,7 +1159,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -985,7 +1188,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1014,7 +1217,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1043,7 +1246,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1072,7 +1275,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1101,7 +1304,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1130,7 +1333,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1159,7 +1362,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1188,7 +1391,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1217,7 +1420,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1246,7 +1449,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1275,7 +1478,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1304,7 +1507,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1333,7 +1536,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1362,7 +1565,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1391,7 +1594,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1420,7 +1623,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1449,7 +1652,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1478,7 +1681,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1507,7 +1710,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1536,7 +1739,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1565,7 +1768,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1594,7 +1797,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1623,7 +1826,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1652,7 +1855,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1681,7 +1884,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1710,7 +1913,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1739,7 +1942,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1768,7 +1971,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1797,7 +2000,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1826,7 +2029,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1855,7 +2058,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1884,7 +2087,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1913,7 +2116,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1942,7 +2145,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -1971,7 +2174,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2000,7 +2203,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2029,7 +2232,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2058,7 +2261,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2087,7 +2290,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2116,7 +2319,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2145,7 +2348,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2174,7 +2377,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2203,7 +2406,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2232,7 +2435,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2261,7 +2464,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2290,7 +2493,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2319,7 +2522,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2348,7 +2551,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2377,7 +2580,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2406,7 +2609,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2435,7 +2638,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2464,7 +2667,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2493,7 +2696,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2522,7 +2725,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2551,7 +2754,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2580,7 +2783,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     },
     {
@@ -2609,7 +2812,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-28T18:38:15+00:00",
+      "updated_at": "2026-10-29T15:38:53+00:00",
       "source_reported_at": null
     }
   ]
