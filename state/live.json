@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T15:45:05.524221+00:00",
-  "updated_at": "2026-10-29T16:46:17.154199+00:00",
+  "updated_at": "2026-10-29T16:46:44.494606+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره تربیت و اخلاق",
-      "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40904553517-60",
-      "sequence": 60,
-      "updated_at": "2026-10-29T16:24:47.767759+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره روزه",
       "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +57,29 @@
       "sequence": 100,
       "updated_at": "2026-10-29T16:40:29.494405+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40904553517-116",
+      "sequence": 116,
+      "updated_at": "2026-10-29T16:46:44.494578+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 116,
-    "segments_transcribed": 109,
-    "editor_attempts": 66,
-    "editor_withheld": 60,
-    "topics_published": 14,
+    "segments_captured": 117,
+    "segments_transcribed": 110,
+    "editor_attempts": 67,
+    "editor_withheld": 62,
+    "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-29T16:46:14.123913+00:00"
+    "last_audio_at": "2026-10-29T16:46:38.310871+00:00"
   }
 }
