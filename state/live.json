@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T14:14:45.106097+00:00",
-  "updated_at": "2026-10-29T15:02:41.633597+00:00",
+  "updated_at": "2026-10-29T15:03:16.877818+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره امام زمان",
@@ -20,16 +20,29 @@
       "sequence": 21,
       "updated_at": "2026-10-29T14:39:05.432112+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره زیارت",
+      "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40889453995-81",
+      "sequence": 81,
+      "updated_at": "2026-10-29T15:03:16.877785+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 82,
-    "segments_transcribed": 73,
+    "segments_captured": 83,
+    "segments_transcribed": 74,
     "editor_attempts": 45,
-    "editor_withheld": 44,
-    "topics_published": 1,
+    "editor_withheld": 45,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-29T15:02:38.357782+00:00"
+    "last_audio_at": "2026-10-29T15:03:02.526924+00:00"
   }
 }
