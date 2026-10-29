@@ -1,19 +1,33 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "40889453995",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T14:14:45.106097+00:00",
-  "updated_at": "2026-10-29T14:38:44.054901+00:00",
-  "items": [],
+  "updated_at": "2026-10-29T14:39:05.432140+00:00",
+  "items": [
+    {
+      "title": "گفت‌وگو درباره امام زمان",
+      "summary": "در این بخش از برنامه، موضوع «امام زمان» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40889453995-21",
+      "sequence": 21,
+      "updated_at": "2026-10-29T14:39:05.432112+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
     "segments_captured": 22,
     "segments_transcribed": 14,
     "editor_attempts": 5,
-    "editor_withheld": 4,
-    "topics_published": 0,
+    "editor_withheld": 5,
+    "topics_published": 1,
     "audio_ai_calls": 2,
     "audio_ai_success": 2,
     "last_audio_at": "2026-10-29T14:38:41.076012+00:00"
