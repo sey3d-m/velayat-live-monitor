@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T17:14:45.297230+00:00",
-  "updated_at": "2026-10-29T17:50:44.648893+00:00",
+  "updated_at": "2026-10-29T17:51:33.048106+00:00",
   "items": [
     {
       "title": "پرسش درباره ضرورت استنطاق آیات و استناد به کتب در برنامه",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 52,
-    "segments_transcribed": 50,
-    "editor_attempts": 38,
-    "editor_withheld": 36,
+    "segments_captured": 54,
+    "segments_transcribed": 52,
+    "editor_attempts": 39,
+    "editor_withheld": 37,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-29T17:50:39.593164+00:00"
+    "last_audio_at": "2026-10-29T17:51:28.084352+00:00"
   }
 }
