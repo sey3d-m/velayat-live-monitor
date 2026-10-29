@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T15:45:05.524221+00:00",
-  "updated_at": "2026-10-29T16:21:30.480340+00:00",
+  "updated_at": "2026-10-29T16:21:41.088682+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره ولایت و غدیر",
-      "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40904553517-13",
-      "sequence": 13,
-      "updated_at": "2026-10-29T16:06:00.070624+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره شناخت امام زمان و جایگاه زهرای مرضیه در گفتار کارشناس",
       "summary": "در این بخش، کارشناس درباره استدلال علامه امینی برای اثبات امامت سخن می‌گوید و این پرسش را مطرح می‌کند که آیا ممکن است زهرای مرضیه امام زمان دوران خود را نشناخته و از دنیا رفته باشد. وی با اشاره به ویژگی‌های خاص آن حضرت و توصیه‌های پیامبر درباره عدم آزار ایشان، استدلال می‌کند که این موارد نشان‌دهنده عظمت این شخصیت است.",
@@ -71,14 +58,27 @@
       "sequence": 51,
       "updated_at": "2026-10-29T16:20:58.973378+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز",
+      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40904553517-52",
+      "sequence": 52,
+      "updated_at": "2026-10-29T16:21:41.088653+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 54,
     "segments_transcribed": 52,
     "editor_attempts": 29,
-    "editor_withheld": 27,
-    "topics_published": 6,
+    "editor_withheld": 28,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-10-29T16:21:26.982364+00:00"
