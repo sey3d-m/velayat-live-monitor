@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T17:14:45.297230+00:00",
-  "updated_at": "2026-10-29T17:53:55.582174+00:00",
+  "updated_at": "2026-10-29T17:54:29.133482+00:00",
   "items": [
-    {
-      "title": "پرسش درباره ضرورت استنطاق آیات و استناد به کتب در برنامه",
-      "summary": "در این بخش کارشناس استدلال می‌کند که برای بررسی ادله قرآنی اهل‌بیت (ع)، استنطاق آیات ضرورت دارد و فلسفه وجودی این‌گونه برنامه‌ها همراهی با بینندگان و رجوع به کتاب‌هاست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40919365093-16",
-      "sequence": 16,
-      "updated_at": "2026-10-29T17:36:50.931411+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره روزه",
       "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -71,16 +59,28 @@
       "sequence": 49,
       "updated_at": "2026-10-29T17:50:20.143388+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره رابطه ترس از خدا و تسلط بر دیگران از نگاه کارشناس",
+      "summary": "در این بخش کارشناس استدلال می‌کند که انسان مؤمن و خداشناس به واسطه قدرت الهی به سلطه و توان دست پیدا می‌کند. به گفته وی، کسی که از خدا بترسد موجب ترس دشمنان و دیگران از او می‌شود و در مقابل، کسانی که از خدا نمی‌ترسند از همه چیز بیمناک خواهند بود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40919365093-60",
+      "sequence": 60,
+      "updated_at": "2026-10-29T17:54:29.133454+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 60,
-    "segments_transcribed": 58,
-    "editor_attempts": 42,
-    "editor_withheld": 40,
-    "topics_published": 6,
+    "segments_captured": 61,
+    "segments_transcribed": 59,
+    "editor_attempts": 43,
+    "editor_withheld": 41,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-29T17:53:50.413340+00:00"
+    "last_audio_at": "2026-10-29T17:54:14.774665+00:00"
   }
 }
