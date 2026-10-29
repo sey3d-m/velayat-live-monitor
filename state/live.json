@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "40904553517",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "40919365093",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-29",
-  "started_at": "2026-10-29T15:45:05.524221+00:00",
-  "updated_at": "2026-10-29T17:10:06.944449+00:00",
-  "items": [
-    {
-      "title": "بررسی مفهوم تمدن و نفی انزوا در اندیشه کارشناس",
-      "summary": "در این بخش کارشناس استدلال می‌کند که برای تحقق توحید حاکم بر جامعه، تکیه بر انزواطلبی، گوشه‌نشینی و دست رو دست گذاشتن معنایی ندارد. به گفته کارشناس، مفهوم تمدن با پویایی و حضور در میدان گره خورده است و حرکت و تلاش انسان در این زمینه اهمیت اساسی دارد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40904553517-132",
-      "sequence": 132,
-      "updated_at": "2026-10-29T16:53:26.867201+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره وظایف انسان منتظر در عصر غیبت بر اساس روایت امام سجاد",
-      "summary": "در این بخش کارشناس استدلال می‌کند که دستورات دینی برای انسان‌های منتظر طراحی شده است و به روایتی از امام سجاد (ع) خطاب به ابوالخ خالد استناد می‌کند. به گفته کارشناس، در دوران غیبت، مردمی که به امامت اعتقاد دارند، باید منتظر ظهور امام خود باشند تا به عنوان بهترین مردم آن زمان شناخته شوند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "40904553517-137",
-      "sequence": 137,
-      "updated_at": "2026-10-29T16:55:39.621454+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره استناد کارشناس به آیه شریفه در برنامه زنده",
-      "summary": "در این بخش، کارشناس شبکه ولایت با استناد به قرائت آیه‌ای از قرآن کریم درباره ویژگی‌های پیامبر اسلام، به طرح نکاتی می‌پردازد. به گفته کارشناس، در این آیه به توصیف‌هایی پیرامون دلسوزی و رأفت پیامبر نسبت به مؤمنان اشاره شده است و مباحثی پیرامون آن مطرح می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40904553517-144",
-      "sequence": 144,
-      "updated_at": "2026-10-29T16:58:28.418794+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی استناد به آیه درباره رأفت پیامبر در گفتار کارشناس",
-      "summary": "در این بخش کارشناس استدلال می‌کند که سخنان مطرح‌شده نادرست نیست و در ادامه بیان می‌کند رسولی از خود مردم به سوی آن‌ها آمده که رنج‌ها و سختی‌هایشان بر او ناگوار است و نسبت به مؤمنان رئوف و مهربان است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40904553517-148",
-      "sequence": 148,
-      "updated_at": "2026-10-29T16:59:47.998176+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره نقش و تلاش‌های نزدیکان رسول خدا و وضعیت دیگران",
-      "summary": "در این بخش کارشناس استدلال می‌کند که فردی نزدیک به رسول خدا سخت می‌کوشید و در راه خدا از ملامت دیگران نمی‌ترسید، در حالی که به گفته وی، گروهی دیگر در آرامش و خوش‌گذرانی بودند و منتظر ماندند تا روزگار علیه او بگردد و در بحران‌ها و جنگ‌ها می‌گریختند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40904553517-166",
-      "sequence": 166,
-      "updated_at": "2026-10-29T17:07:08.153123+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-10-29T17:14:45.297230+00:00",
+  "updated_at": "2026-10-29T17:30:00.000282+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 167,
-    "editor_attempts": 105,
-    "editor_withheld": 93,
-    "topics_published": 22,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-10-29T17:09:42.943767+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
