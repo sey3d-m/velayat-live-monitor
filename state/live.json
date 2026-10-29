@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T15:45:05.524221+00:00",
-  "updated_at": "2026-10-29T17:00:38.716933+00:00",
+  "updated_at": "2026-10-29T17:01:28.461060+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره ویژگی‌های تمدن مهدوی و نقش انسان‌های منتظر",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 152,
-    "segments_transcribed": 145,
-    "editor_attempts": 92,
-    "editor_withheld": 80,
+    "segments_captured": 154,
+    "segments_transcribed": 147,
+    "editor_attempts": 93,
+    "editor_withheld": 81,
     "topics_published": 21,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-29T17:00:36.787827+00:00"
+    "last_audio_at": "2026-10-29T17:01:26.313978+00:00"
   }
 }
