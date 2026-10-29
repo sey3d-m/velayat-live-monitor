@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T15:45:05.524221+00:00",
-  "updated_at": "2026-10-29T16:39:56.823438+00:00",
+  "updated_at": "2026-10-29T16:40:29.494439+00:00",
   "items": [
-    {
-      "title": "بررسی نقش حضرت زینب در دفاع از امام زمان و بصیرت ایشان",
-      "summary": "در این بخش کارشناس استدلال می‌کند که حضرت زینب کاملاً تسلیم امام زمان خود بوده و شخصیتی شبیه به زهرا مرضیه داشته است. به گفته کارشناس، ایشان هم از امام زنده و هم از امام شهید خود دفاع و افشاگری کرد تا احقاق حق صورت گیرد و این نمونه‌ای از بصیرت است که جنسیت در آن ملاک نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "40904553517-58",
-      "sequence": 58,
-      "updated_at": "2026-10-29T16:23:54.011058+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره تربیت و اخلاق",
       "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +57,29 @@
       "sequence": 98,
       "updated_at": "2026-10-29T16:39:56.823411+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره اعتقادات اسلامی",
+      "summary": "در این بخش از برنامه، موضوع «اعتقادات اسلامی» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40904553517-100",
+      "sequence": 100,
+      "updated_at": "2026-10-29T16:40:29.494405+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 100,
-    "segments_transcribed": 93,
-    "editor_attempts": 56,
-    "editor_withheld": 51,
-    "topics_published": 13,
+    "segments_captured": 101,
+    "segments_transcribed": 94,
+    "editor_attempts": 57,
+    "editor_withheld": 52,
+    "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-29T16:39:49.215384+00:00"
+    "last_audio_at": "2026-10-29T16:40:14.135888+00:00"
   }
 }
