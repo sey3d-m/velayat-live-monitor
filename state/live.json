@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T15:45:05.524221+00:00",
-  "updated_at": "2026-10-29T16:39:08.558983+00:00",
+  "updated_at": "2026-10-29T16:39:52.539229+00:00",
   "items": [
     {
       "title": "پرسش درباره الگوبرداری از بصیرت حضرت زهرا در شناخت زمانه و امام",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 98,
-    "segments_transcribed": 91,
-    "editor_attempts": 55,
-    "editor_withheld": 50,
+    "segments_captured": 100,
+    "segments_transcribed": 93,
+    "editor_attempts": 56,
+    "editor_withheld": 51,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-29T16:39:05.731164+00:00"
+    "last_audio_at": "2026-10-29T16:39:49.215384+00:00"
   }
 }
