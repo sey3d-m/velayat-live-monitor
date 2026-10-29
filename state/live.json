@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T15:45:05.524221+00:00",
-  "updated_at": "2026-10-29T16:51:53.303940+00:00",
+  "updated_at": "2026-10-29T16:52:41.464146+00:00",
   "items": [
     {
       "title": "بررسی ارتباط خطبه فدکیه با جایگاه امامت",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 130,
-    "segments_transcribed": 123,
-    "editor_attempts": 76,
-    "editor_withheld": 68,
+    "segments_captured": 132,
+    "segments_transcribed": 125,
+    "editor_attempts": 78,
+    "editor_withheld": 70,
     "topics_published": 17,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-29T16:51:50.178586+00:00"
+    "last_audio_at": "2026-10-29T16:52:38.402268+00:00"
   }
 }
