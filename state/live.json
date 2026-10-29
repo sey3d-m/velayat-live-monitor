@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T14:14:45.106097+00:00",
-  "updated_at": "2026-10-29T15:26:40.057713+00:00",
+  "updated_at": "2026-10-29T15:27:01.402329+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره امام زمان",
@@ -33,14 +33,27 @@
       "sequence": 81,
       "updated_at": "2026-10-29T15:03:16.877785+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "40889453995-141",
+      "sequence": 141,
+      "updated_at": "2026-10-29T15:27:01.402264+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 142,
     "segments_transcribed": 127,
     "editor_attempts": 75,
-    "editor_withheld": 74,
-    "topics_published": 2,
+    "editor_withheld": 75,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
     "last_audio_at": "2026-10-29T15:26:37.128247+00:00"
