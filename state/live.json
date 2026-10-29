@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T17:14:45.297230+00:00",
-  "updated_at": "2026-10-29T18:07:32.087108+00:00",
+  "updated_at": "2026-10-29T18:08:00.919658+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره روزه",
-      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40919365093-17",
-      "sequence": 17,
-      "updated_at": "2026-10-29T17:37:18.049928+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره زیارت",
       "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -71,16 +58,28 @@
       "sequence": 60,
       "updated_at": "2026-10-29T17:54:29.133454+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره کیفیت و ابزار القای وحی شیطانی و فریب آدم",
+      "summary": "در این بخش کارشناس درباره نحوه القای مطالب توسط شیطان به عنوان نوعی وحی سخن می‌گوید و استدلال می‌کند که این القائات با کلام زیبا و ظاهر فریبنده انجام می‌شود. به گفته وی، شیطان با وعده‌هایی مانند جاودانگی و بهره‌مندی از درخت گندم، آدم را وسوسه کرد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40919365093-93",
+      "sequence": 93,
+      "updated_at": "2026-10-29T18:08:00.919634+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 94,
-    "segments_transcribed": 90,
+    "segments_captured": 95,
+    "segments_transcribed": 91,
     "editor_attempts": 64,
     "editor_withheld": 61,
-    "topics_published": 7,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-29T18:07:26.529418+00:00"
+    "last_audio_at": "2026-10-29T18:07:51.296443+00:00"
   }
 }
