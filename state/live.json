@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T17:14:45.297230+00:00",
-  "updated_at": "2026-10-29T18:25:08.332715+00:00",
+  "updated_at": "2026-10-29T18:25:35.750986+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره زیارت",
-      "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "40919365093-44",
-      "sequence": 44,
-      "updated_at": "2026-10-29T17:48:19.682795+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره نماز",
       "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +57,28 @@
       "sequence": 93,
       "updated_at": "2026-10-29T18:08:00.919634+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره فرازهای زیارت عاشورا و سلام بر اباعبدالله",
+      "summary": "در این بخش کارشناس به قرائت و ذکر فرازهایی از زیارت عاشورا می‌پردازد. به گفته کارشناس، عباراتی در خصوص اعلام همراهی و بیعت با اهل‌بیت و همچنین سلام و درود همیشگی بر اباعبدالله الحسین و اهل‌بیت ایشان مطرح شد و در پایان، تداوم این سلام تا بقای شب و روز مورد تأکید قرار گرفت.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.95,
+      "id": "40919365093-138",
+      "sequence": 138,
+      "updated_at": "2026-10-29T18:25:35.750965+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 138,
-    "segments_transcribed": 134,
-    "editor_attempts": 104,
-    "editor_withheld": 100,
-    "topics_published": 8,
+    "segments_captured": 139,
+    "segments_transcribed": 135,
+    "editor_attempts": 105,
+    "editor_withheld": 101,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-29T18:25:02.945747+00:00"
+    "last_audio_at": "2026-10-29T18:25:26.829503+00:00"
   }
 }
