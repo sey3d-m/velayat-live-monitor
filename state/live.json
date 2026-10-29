@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T15:45:05.524221+00:00",
-  "updated_at": "2026-10-29T16:22:14.739825+00:00",
+  "updated_at": "2026-10-29T16:22:20.340025+00:00",
   "items": [
     {
       "title": "پرسش درباره دلیل حضور حضرت زهرا در میدان حمایت از ولی خدا",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 55,
-    "segments_transcribed": 53,
-    "editor_attempts": 30,
+    "segments_captured": 56,
+    "segments_transcribed": 54,
+    "editor_attempts": 31,
     "editor_withheld": 28,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-29T16:21:52.503572+00:00"
+    "last_audio_at": "2026-10-29T16:22:17.212285+00:00"
   }
 }
