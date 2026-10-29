@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T15:45:05.524221+00:00",
-  "updated_at": "2026-10-29T16:52:41.464146+00:00",
+  "updated_at": "2026-10-29T16:53:26.867230+00:00",
   "items": [
-    {
-      "title": "بررسی ارتباط خطبه فدکیه با جایگاه امامت",
-      "summary": "در این بخش کارشناس استدلال می‌کند که خطبه فدکیه ارتباط مستقیمی با خود فدک ندارد، بلکه به کلیات بحث امامت و دفاع از جایگاه امیرالمؤمنین می‌پردازد. همچنین به وجود بشارت‌های مرتبط با مهدی از نسل حضرت زهرا در احادیث اشاره شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "40904553517-98",
-      "sequence": 98,
-      "updated_at": "2026-10-29T16:39:56.823411+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره اعتقادات اسلامی",
       "summary": "در این بخش از برنامه، موضوع «اعتقادات اسلامی» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +57,28 @@
       "sequence": 128,
       "updated_at": "2026-10-29T16:51:48.170491+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی مفهوم تمدن و نفی انزوا در اندیشه کارشناس",
+      "summary": "در این بخش کارشناس استدلال می‌کند که برای تحقق توحید حاکم بر جامعه، تکیه بر انزواطلبی، گوشه‌نشینی و دست رو دست گذاشتن معنایی ندارد. به گفته کارشناس، مفهوم تمدن با پویایی و حضور در میدان گره خورده است و حرکت و تلاش انسان در این زمینه اهمیت اساسی دارد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "40904553517-132",
+      "sequence": 132,
+      "updated_at": "2026-10-29T16:53:26.867201+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 132,
-    "segments_transcribed": 125,
-    "editor_attempts": 78,
-    "editor_withheld": 70,
-    "topics_published": 17,
+    "segments_captured": 133,
+    "segments_transcribed": 126,
+    "editor_attempts": 79,
+    "editor_withheld": 71,
+    "topics_published": 18,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-29T16:52:38.402268+00:00"
+    "last_audio_at": "2026-10-29T16:53:03.788756+00:00"
   }
 }
