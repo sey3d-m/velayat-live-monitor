@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-29",
   "started_at": "2026-10-29T15:45:05.524221+00:00",
-  "updated_at": "2026-10-29T16:58:28.418820+00:00",
+  "updated_at": "2026-10-29T16:59:05.194453+00:00",
   "items": [
     {
       "title": "بررسی دیدگاه رهبر شهید درباره تمدن‌سازی اسلامی و مؤلفه‌های آن",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 146,
-    "segments_transcribed": 139,
-    "editor_attempts": 87,
-    "editor_withheld": 77,
+    "segments_captured": 148,
+    "segments_transcribed": 141,
+    "editor_attempts": 89,
+    "editor_withheld": 78,
     "topics_published": 20,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-29T16:58:13.379397+00:00"
+    "last_audio_at": "2026-10-29T16:59:03.071299+00:00"
   }
 }
