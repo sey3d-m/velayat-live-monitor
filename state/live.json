@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:24:10.793307+00:00",
+  "updated_at": "2026-10-31T16:24:46.262237+00:00",
   "items": [
     {
       "title": "بررسی ادعای اخراج مسلمین و تسخیر اراضی اسلامی",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 60,
-    "segments_transcribed": 53,
-    "editor_attempts": 47,
-    "editor_withheld": 39,
+    "segments_captured": 62,
+    "segments_transcribed": 55,
+    "editor_attempts": 49,
+    "editor_withheld": 40,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:23:53.999786+00:00"
+    "last_audio_at": "2026-10-31T16:24:43.726115+00:00"
   }
 }
