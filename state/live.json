@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T17:15:57.782618+00:00",
-  "updated_at": "2026-10-31T18:37:52.533047+00:00",
+  "updated_at": "2026-10-31T18:38:48.307546+00:00",
   "items": [
     {
       "title": "بررسی شگفتی‌های آفرینش پا و استواری قامت انسان",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 170,
-    "segments_transcribed": 151,
-    "editor_attempts": 135,
-    "editor_withheld": 128,
+    "segments_captured": 172,
+    "segments_transcribed": 153,
+    "editor_attempts": 137,
+    "editor_withheld": 129,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T18:37:52.471481+00:00"
+    "last_audio_at": "2026-10-31T18:38:42.676319+00:00"
   }
 }
