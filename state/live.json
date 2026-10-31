@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T17:08:42.193271+00:00",
+  "updated_at": "2026-10-31T17:09:07.622444+00:00",
   "items": [
-    {
-      "title": "بررسی نسخه انجیل یوحنا به زبان گیلکی",
-      "summary": "در این بخش، کارشناس به معرفی و نمایش نسخه‌ای از انجیل یوحنا به زبان گیلکی می‌پردازد و ترجمه این اثر را به مخاطبان نشان می‌دهد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41216257666-124",
-      "sequence": 124,
-      "updated_at": "2026-10-31T16:49:57.646424+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره معنای اصطلاح و سقوط کشورهای اسلامی با فرض سقوط ایران",
       "summary": "در این بخش درباره معنای یک اصطلاح پرسش شد و کارشناس استدلال می‌کند که قرن کنونی، قرن مسیحی‌سازی کشورهای اسلامی است. به گفته کارشناس، کانون این کشورها ایران است و با فرض سقوط یا شکست ایران، کل جهان اسلام و کشورهای اسلامی سقوط خواهند کرد.",
@@ -67,16 +55,28 @@
       "sequence": 156,
       "updated_at": "2026-10-31T17:02:41.970963+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ادعای کارشناس درباره عظمت مصیبت رحلت",
+      "summary": "در این بخش کارشناس استدلال می‌کند که با رحلت، احترام از بین رفته و به گفته وی، فاجعه و مصیبتی به این بزرگی در دنیا وجود ندارد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41216257666-172",
+      "sequence": 172,
+      "updated_at": "2026-10-31T17:09:07.622418+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 172,
-    "segments_transcribed": 162,
-    "editor_attempts": 145,
-    "editor_withheld": 119,
-    "topics_published": 28,
+    "segments_captured": 173,
+    "segments_transcribed": 163,
+    "editor_attempts": 146,
+    "editor_withheld": 120,
+    "topics_published": 29,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T17:08:39.755321+00:00"
+    "last_audio_at": "2026-10-31T17:09:04.478925+00:00"
   }
 }
