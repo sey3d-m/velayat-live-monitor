@@ -3,6 +3,528 @@
   "year": "2026",
   "items": [
     {
+      "id": "c0af0e04d6b1250ecb",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-31-1800",
+      "program_title": "زمزم احکام",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "حکم اجاره صوری برای دریافت وام ودیعه مسکن",
+      "summary": "حکم اجاره صوری برای دریافت وام ودیعه مسکن",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-31",
+      "program_start_time": "18:00",
+      "start_timecode": 3000,
+      "end_timecode": 3120,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-31T15:32:08+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "a9d583bad51c30715b",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-31-1800",
+      "program_title": "زمزم احکام",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "اگر در نمازهای مستحبی تعداد سوره‌ها جابجا خوانده شود، حکم چیست؟",
+      "summary": "اشکالی ندارد و نماز صحیح است.",
+      "question": "اگر در نمازهای مستحبی تعداد سوره‌ها جابجا خوانده شود، حکم چیست؟",
+      "answer": "اشکالی ندارد و نماز صحیح است.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-31",
+      "program_start_time": "18:00",
+      "start_timecode": 1960,
+      "end_timecode": 2180,
+      "estimated_answer_time": "18:32",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-31T15:32:08+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "8ba25a345258004d96",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-31-1800",
+      "program_title": "زمزم احکام",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "اگر کسی نذر کرده کاری را در حرم امام رضا انجام دهد ولی در افغانستان است، چکار کند؟",
+      "summary": "اگر نذر شرعی باشد، در صورتی که وکالت بردارد می‌تواند به دیگری وکالت دهد تا در مشهد انجام دهد.",
+      "question": "اگر کسی نذر کرده کاری را در حرم امام رضا انجام دهد ولی در افغانستان است، چکار کند؟",
+      "answer": "اگر نذر شرعی باشد، در صورتی که وکالت بردارد می‌تواند به دیگری وکالت دهد تا در مشهد انجام دهد.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-31",
+      "program_start_time": "18:00",
+      "start_timecode": 1700,
+      "end_timecode": 1840,
+      "estimated_answer_time": "18:28",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-31T15:32:08+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "257304282536c237d1",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-31-1800",
+      "program_title": "زمزم احکام",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "تلفیق نذر حرم مطهر و وکالت در ادا کردن آن",
+      "summary": "تلفیق نذر حرم مطهر و وکالت در ادا کردن آن",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-31",
+      "program_start_time": "18:00",
+      "start_timecode": 1700,
+      "end_timecode": 1840,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-31T15:32:08+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "98bbbaaa8bc676c159",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-31-1800",
+      "program_title": "زمزم احکام",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "شخصی در دوران مدرسه ناخواسته لامپ درون پنکه را شکسته است، آیا ضامن بیت‌المال است؟",
+      "summary": "استناد به ایشان ضعیف است اما برای برائت ذمه می‌تواند به مدرسه مراجعه کرده و هزینه لامپ را بپردازد.",
+      "question": "شخصی در دوران مدرسه ناخواسته لامپ درون پنکه را شکسته است، آیا ضامن بیت‌المال است؟",
+      "answer": "استناد به ایشان ضعیف است اما برای برائت ذمه می‌تواند به مدرسه مراجعه کرده و هزینه لامپ را بپردازد.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-31",
+      "program_start_time": "18:00",
+      "start_timecode": 1540,
+      "end_timecode": 1700,
+      "estimated_answer_time": "18:25",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-31T15:32:08+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "34d5fb6e278ccba93e",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-31-1800",
+      "program_title": "زمزم احکام",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "آیا نماز شب اذان و اقامه دارد؟",
+      "summary": "خیر، اذان و اقامه فقط مستحب برای نمازهای یومیه است.",
+      "question": "آیا نماز شب اذان و اقامه دارد؟",
+      "answer": "خیر، اذان و اقامه فقط مستحب برای نمازهای یومیه است.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-31",
+      "program_start_time": "18:00",
+      "start_timecode": 1480,
+      "end_timecode": 1540,
+      "estimated_answer_time": "18:24",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-31T15:32:08+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "a146623fe99c7f58a8",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-31-1800",
+      "program_title": "زمزم احکام",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "شخصی که جراحی لثه کرده و دهانش خونریزی دارد، چگونه نماز بخواند؟",
+      "summary": "اگر خون زیاد است می‌تواند در دستمال تخلیه کند و نمازش صحیح است، و نجاست داخل دهان مانع نماز نیست.",
+      "question": "شخصی که جراحی لثه کرده و دهانش خونریزی دارد، چگونه نماز بخواند؟",
+      "answer": "اگر خون زیاد است می‌تواند در دستمال تخلیه کند و نمازش صحیح است، و نجاست داخل دهان مانع نماز نیست.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-31",
+      "program_start_time": "18:00",
+      "start_timecode": 1340,
+      "end_timecode": 1480,
+      "estimated_answer_time": "18:22",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-31T15:32:08+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "c82706a1e1bb07249c",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-31-1800",
+      "program_title": "زمزم احکام",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "نماز خواندن فرد پس از جراحی لثه با وجود خونریزی دهان",
+      "summary": "نماز خواندن فرد پس از جراحی لثه با وجود خونریزی دهان",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-31",
+      "program_start_time": "18:00",
+      "start_timecode": 1340,
+      "end_timecode": 1480,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-31T15:32:08+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "cfdd4354311d338ea7",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-31-1800",
+      "program_title": "زمزم احکام",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "زن و شوهری که درآمد خود را خرج زندگی مشترک می‌کنند و سال خمسی متفاوتی دارند، چگونه خمس محاسبه کنند؟",
+      "summary": "با وکالت دادن به یکدیگر برای پرداخت خمس اموال مشترک در سر سال خمسی هر یک، مسئله حل می‌شود.",
+      "question": "زن و شوهری که درآمد خود را خرج زندگی مشترک می‌کنند و سال خمسی متفاوتی دارند، چگونه خمس محاسبه کنند؟",
+      "answer": "با وکالت دادن به یکدیگر برای پرداخت خمس اموال مشترک در سر سال خمسی هر یک، مسئله حل می‌شود.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-31",
+      "program_start_time": "18:00",
+      "start_timecode": 1020,
+      "end_timecode": 1280,
+      "estimated_answer_time": "18:17",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-31T15:32:08+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "90113d8fe8d105c8a2",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-31-1800",
+      "program_title": "زمزم احکام",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "احکام خمس زوجین و سال خمسی مشترک",
+      "summary": "احکام خمس زوجین و سال خمسی مشترک",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-31",
+      "program_start_time": "18:00",
+      "start_timecode": 1020,
+      "end_timecode": 1280,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-31T15:32:08+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "948d7409c4cdbaf4bc",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-31-1800",
+      "program_title": "زمزم احکام",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "گرفتن چوب گردگیری از خادمان حرم امام رضا (ع) به عنوان تبرک و جایگزین کردن آن چه حکمی دارد؟",
+      "summary": "خادمان اختیار دارند و بخشیدن آن اشکالی ندارد و نیازی به جایگزین کردن نیست.",
+      "question": "گرفتن چوب گردگیری از خادمان حرم امام رضا (ع) به عنوان تبرک و جایگزین کردن آن چه حکمی دارد؟",
+      "answer": "خادمان اختیار دارند و بخشیدن آن اشکالی ندارد و نیازی به جایگزین کردن نیست.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-31",
+      "program_start_time": "18:00",
+      "start_timecode": 920,
+      "end_timecode": 1020,
+      "estimated_answer_time": "18:15",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-31T15:32:08+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "f3845bd266413f98b8",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-31-1800",
+      "program_title": "زمزم احکام",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "آیا خانمی که مهریه خود را به خاطر وضعیت همسرش بخشیده، می‌تواند دوباره آن را مطالبه کند؟",
+      "summary": "خیر، این ابراء ذمه است و از ایقاعات محسوب می‌شود و پس از انجام، قابل بازگشت نیست.",
+      "question": "آیا خانمی که مهریه خود را به خاطر وضعیت همسرش بخشیده، می‌تواند دوباره آن را مطالبه کند؟",
+      "answer": "خیر، این ابراء ذمه است و از ایقاعات محسوب می‌شود و پس از انجام، قابل بازگشت نیست.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-31",
+      "program_start_time": "18:00",
+      "start_timecode": 760,
+      "end_timecode": 920,
+      "estimated_answer_time": "18:12",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-31T15:32:08+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "5d5125055f39cfd3ca",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-31-1800",
+      "program_title": "زمزم احکام",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "بخشیدن مهریه و ابراء ذمه",
+      "summary": "بخشیدن مهریه و ابراء ذمه",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-31",
+      "program_start_time": "18:00",
+      "start_timecode": 760,
+      "end_timecode": 920,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-31T15:32:08+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "992826594c03c94fb9",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-31-1800",
+      "program_title": "زمزم احکام",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "اگر در رکعت چهارم نماز سهواً حمد خوانده شود، حکم نماز چیست؟",
+      "summary": "اگر قبل از رکوع متوجه شود حمد لغو است و تسبیحات اربعه را می‌خواند؛ اگر بعد از رکوع یادش بیاید نماز درست است ولی احتیاطاً سجده سهو واجب است.",
+      "question": "اگر در رکعت چهارم نماز سهواً حمد خوانده شود، حکم نماز چیست؟",
+      "answer": "اگر قبل از رکوع متوجه شود حمد لغو است و تسبیحات اربعه را می‌خواند؛ اگر بعد از رکوع یادش بیاید نماز درست است ولی احتیاطاً سجده سهو واجب است.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-31",
+      "program_start_time": "18:00",
+      "start_timecode": 510,
+      "end_timecode": 760,
+      "estimated_answer_time": "18:08",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-31T15:32:08+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "9308de7b8510d8f98d",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-31-1800",
+      "program_title": "زمزم احکام",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "حکم خواندن سهوی حمد در رکعت چهارم نماز",
+      "summary": "حکم خواندن سهوی حمد در رکعت چهارم نماز",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-31",
+      "program_start_time": "18:00",
+      "start_timecode": 510,
+      "end_timecode": 760,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-31T15:32:08+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "a02fcb838ac6739310",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-31-1800",
+      "program_title": "زمزم احکام",
+      "expert_name": null,
+      "content_type": "question_answer",
+      "display_label": "پرسش و پاسخ",
+      "title": "اگر کسی قبلاً مقلد امام خمینی بوده و سپس به فتوای رهبری شهید بر تقلید باقی مانده، اکنون تکلیفش چیست؟",
+      "summary": "به فتوای مراجع فعلی نیز می‌تواند بر تقلید از امام خمینی باقی بماند.",
+      "question": "اگر کسی قبلاً مقلد امام خمینی بوده و سپس به فتوای رهبری شهید بر تقلید باقی مانده، اکنون تکلیفش چیست؟",
+      "answer": "به فتوای مراجع فعلی نیز می‌تواند بر تقلید از امام خمینی باقی بماند.",
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-31",
+      "program_start_time": "18:00",
+      "start_timecode": 460,
+      "end_timecode": 510,
+      "estimated_answer_time": "18:07",
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-31T15:32:08+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "a88a7fdd57e1d31c46",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-31-1800",
+      "program_title": "زمزم احکام",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "احکام تقلید و باقی ماندن بر تقلید گذشته",
+      "summary": "احکام تقلید و باقی ماندن بر تقلید گذشته",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-31",
+      "program_start_time": "18:00",
+      "start_timecode": 460,
+      "end_timecode": 510,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-31T15:32:08+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
+      "source_reported_at": null
+    },
+    {
+      "id": "7003c96145ac470e0b",
+      "network": "velayat_farsi",
+      "program_id": "persian-2026-10-31-1800",
+      "program_title": "زمزم احکام",
+      "expert_name": null,
+      "content_type": "expert_topic",
+      "display_label": "محور بحث کارشناس",
+      "title": "اخبار و تحولات روز",
+      "summary": "اخبار و تحولات روز",
+      "question": null,
+      "answer": null,
+      "audience_name": null,
+      "audience_city": null,
+      "program_date": "2026-10-31",
+      "program_start_time": "18:00",
+      "start_timecode": 300,
+      "end_timecode": 460,
+      "estimated_answer_time": null,
+      "source": "didban",
+      "source_message_id": null,
+      "evidence_excerpt": "",
+      "confidence": 0,
+      "verification_status": "source_report",
+      "broadcast_eligible": false,
+      "created_at": "2026-10-31T15:32:08+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
+      "source_reported_at": null
+    },
+    {
       "id": "bf0ad55bb1994df708",
       "network": "velayat_farsi",
       "program_id": "persian-2026-10-29-2100",
@@ -28,7 +550,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T18:33:20+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -57,7 +579,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T18:33:20+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -86,7 +608,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T18:33:20+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -115,7 +637,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T18:33:20+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -144,7 +666,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T18:33:20+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -173,7 +695,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T18:33:20+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -202,7 +724,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T17:05:58+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -231,7 +753,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T17:05:58+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -260,7 +782,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T17:05:58+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -289,7 +811,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T17:05:58+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -318,7 +840,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T17:05:58+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -347,7 +869,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T17:05:58+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -376,7 +898,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T17:05:58+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -405,7 +927,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T15:38:53+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -434,7 +956,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T15:38:53+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -463,7 +985,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T15:38:53+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -492,7 +1014,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T15:38:53+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -521,7 +1043,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T15:38:53+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -550,7 +1072,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T15:38:53+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -579,7 +1101,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-29T15:38:53+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -608,7 +1130,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -637,7 +1159,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -666,7 +1188,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -695,7 +1217,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -724,7 +1246,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -753,7 +1275,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -782,7 +1304,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -811,7 +1333,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -840,7 +1362,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -869,7 +1391,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -898,7 +1420,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -927,7 +1449,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -956,7 +1478,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -985,7 +1507,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T18:38:15+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1014,7 +1536,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T17:10:56+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1043,7 +1565,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T17:10:56+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1072,7 +1594,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T17:10:56+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1101,7 +1623,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T17:10:56+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1130,7 +1652,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T17:10:56+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1159,7 +1681,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T17:10:56+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1188,7 +1710,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1217,7 +1739,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1246,7 +1768,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1275,7 +1797,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1304,7 +1826,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1333,7 +1855,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1362,7 +1884,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1391,7 +1913,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1420,7 +1942,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1449,7 +1971,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1478,7 +2000,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1507,7 +2029,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1536,7 +2058,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1565,7 +2087,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1594,7 +2116,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1623,7 +2145,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1652,7 +2174,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1681,7 +2203,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1710,7 +2232,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-28T15:31:55+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1739,7 +2261,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1768,7 +2290,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1797,7 +2319,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1826,7 +2348,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1855,7 +2377,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1884,7 +2406,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1913,7 +2435,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1942,7 +2464,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T17:01:51+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -1971,7 +2493,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2000,7 +2522,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2029,7 +2551,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2058,7 +2580,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2087,7 +2609,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2116,7 +2638,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2145,7 +2667,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2174,7 +2696,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2203,7 +2725,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-27T15:32:46+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2232,7 +2754,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2261,7 +2783,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2290,7 +2812,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2319,7 +2841,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2348,7 +2870,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2377,7 +2899,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2406,7 +2928,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2435,7 +2957,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2464,7 +2986,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2493,7 +3015,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T18:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2522,7 +3044,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2551,7 +3073,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2580,7 +3102,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2609,7 +3131,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2638,7 +3160,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2667,7 +3189,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2696,7 +3218,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2725,7 +3247,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T17:03:39+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2754,7 +3276,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2783,7 +3305,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2812,7 +3334,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2841,7 +3363,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2870,7 +3392,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2899,7 +3421,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2928,7 +3450,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2957,7 +3479,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -2986,7 +3508,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -3015,7 +3537,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -3044,7 +3566,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -3073,7 +3595,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -3102,7 +3624,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -3131,7 +3653,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -3160,7 +3682,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     },
     {
@@ -3189,7 +3711,7 @@
       "verification_status": "source_report",
       "broadcast_eligible": false,
       "created_at": "2026-10-26T15:37:48+00:00",
-      "updated_at": "2026-10-29T18:33:20+00:00",
+      "updated_at": "2026-10-31T15:32:08+00:00",
       "source_reported_at": null
     }
   ]
