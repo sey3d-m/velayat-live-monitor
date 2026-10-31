@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T14:14:42.965336+00:00",
-  "updated_at": "2026-10-31T14:40:18.056495+00:00",
+  "updated_at": "2026-10-31T14:40:45.356004+00:00",
   "items": [
     {
       "title": "پرسش درباره احکام تدفین و مسائل شرعی از گچساران",
@@ -44,16 +44,28 @@
       "sequence": 24,
       "updated_at": "2026-10-31T14:40:09.600820+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره مهریه زن بخشنده‌شده پس از طلاق",
+      "summary": "در این بخش، پرسش یکی از بینندگان درباره وضعیت مهریه‌ای مطرح شد که زنی هنگام طلاق و به خاطر وضعت شوهرش بخشیده است و آیا امکان مطالبه دوباره آن وجود دارد یا خیر. کارشناس برنامه به این پرسش جزئی بیننده می‌پردازد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41209182078-26",
+      "sequence": 26,
+      "updated_at": "2026-10-31T14:40:45.355976+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 26,
-    "segments_transcribed": 21,
-    "editor_attempts": 21,
-    "editor_withheld": 18,
-    "topics_published": 3,
+    "segments_captured": 27,
+    "segments_transcribed": 22,
+    "editor_attempts": 22,
+    "editor_withheld": 19,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T14:40:14.022097+00:00"
+    "last_audio_at": "2026-10-31T14:40:38.613861+00:00"
   }
 }
