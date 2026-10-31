@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T14:14:42.965336+00:00",
-  "updated_at": "2026-10-31T14:57:07.413467+00:00",
+  "updated_at": "2026-10-31T14:57:59.069610+00:00",
   "items": [
     {
       "title": "پرسش درباره مهریه زن بخشنده‌شده پس از طلاق",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 68,
-    "segments_transcribed": 63,
-    "editor_attempts": 62,
-    "editor_withheld": 57,
+    "segments_captured": 70,
+    "segments_transcribed": 65,
+    "editor_attempts": 64,
+    "editor_withheld": 59,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T14:57:04.598381+00:00"
+    "last_audio_at": "2026-10-31T14:57:54.029087+00:00"
   }
 }
