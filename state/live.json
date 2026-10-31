@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:47:10.521123+00:00",
+  "updated_at": "2026-10-31T16:47:30.236171+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره نماز",
-      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41216257666-85",
-      "sequence": 85,
-      "updated_at": "2026-10-31T16:34:20.510266+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره ماهیت نگاه و احساس جریان‌های مسیحی نسبت به اهل‌بیت",
       "summary": "در این بخش کارشناس استدلال می‌کند که برخلاف ابراز محبت ظاهری برخی افراد، در درون این جریان‌ها حس عداوت، دشمنی و بغض نسبت به اهل‌بیت وجود دارد. به گفته کارشناس، این گروه‌ها از مسیحیان جنگجو هستند و شامل مسیحیان صلح‌طلب نمی‌شوند.",
@@ -69,16 +56,28 @@
       "sequence": 105,
       "updated_at": "2026-10-31T16:42:23.161392+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی گویش‌های خاص و زبان تورکی خراسانی",
+      "summary": "در این بخش کارشناس به طرح مطالبی درباره ویژگی‌های زبانی و جغرافیایی برخی گویش‌ها و زبان‌ها از جمله تورکی خراسانی، تورکی شاهسوانی به گویش خوانساری و همچنین گویش‌های مرتبط با زرتشتیان یزد، دزفول و منداییان خوزستان می‌پردازد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41216257666-118",
+      "sequence": 118,
+      "updated_at": "2026-10-31T16:47:30.236154+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 118,
-    "segments_transcribed": 109,
-    "editor_attempts": 98,
-    "editor_withheld": 79,
-    "topics_published": 20,
+    "segments_captured": 119,
+    "segments_transcribed": 110,
+    "editor_attempts": 99,
+    "editor_withheld": 80,
+    "topics_published": 21,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:47:07.895905+00:00"
+    "last_audio_at": "2026-10-31T16:47:25.813475+00:00"
   }
 }
