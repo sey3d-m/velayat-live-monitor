@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:55:06.197579+00:00",
+  "updated_at": "2026-10-31T16:55:55.242181+00:00",
   "items": [
     {
       "title": "بررسی گویش‌های خاص و زبان تورکی خراسانی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 138,
-    "segments_transcribed": 129,
-    "editor_attempts": 118,
-    "editor_withheld": 95,
+    "segments_captured": 140,
+    "segments_transcribed": 131,
+    "editor_attempts": 120,
+    "editor_withheld": 97,
     "topics_published": 25,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:55:03.560924+00:00"
+    "last_audio_at": "2026-10-31T16:55:52.365652+00:00"
   }
 }
