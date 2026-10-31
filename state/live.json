@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T17:15:57.782618+00:00",
-  "updated_at": "2026-10-31T18:33:07.417645+00:00",
+  "updated_at": "2026-10-31T18:33:32.425425+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41223525423-98",
-      "sequence": 98,
-      "updated_at": "2026-10-31T18:09:37.802082+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی رابطه اختیار انسان و قضا و قدر الهی",
       "summary": "در این بخش کارشناس استدلال می‌کند که اختیار انسان در طول قضا و قدر الهی قرار دارد و خداوند مقدر کرده است که انسان برخی از کارهای خود را با اختیار انجام دهد. به گفته وی، تبیین این موضوع نیازمند چندین جلد کتاب است.",
@@ -68,16 +55,28 @@
       "sequence": 156,
       "updated_at": "2026-10-31T18:32:45.433022+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی فرار از مسئولیت بندگی و پناه بردن به مفاهیم تصادف و تکامل",
+      "summary": "در این بخش کارشناس استدلال می‌کند که گاهی انسان برای فرار از مسئولیت بندگی و وجدان، چشم خود را بر نشانه‌ها می‌بندد و برای تبرئه خود به مفاهیمی مثل تصادف، تفکر و تکامل بی‌شعور پناه می‌برد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41223525423-158",
+      "sequence": 158,
+      "updated_at": "2026-10-31T18:33:32.425401+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 158,
-    "segments_transcribed": 147,
-    "editor_attempts": 131,
-    "editor_withheld": 125,
-    "topics_published": 8,
+    "segments_captured": 159,
+    "segments_transcribed": 148,
+    "editor_attempts": 132,
+    "editor_withheld": 126,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T18:33:02.601604+00:00"
+    "last_audio_at": "2026-10-31T18:33:26.793324+00:00"
   }
 }
