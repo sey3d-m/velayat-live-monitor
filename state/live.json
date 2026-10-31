@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:30:21.255302+00:00",
+  "updated_at": "2026-10-31T16:31:04.739344+00:00",
   "items": [
     {
       "title": "بررسی ارتباط میان مسیحیت اوانجلیکال و صهیونیسم مسیحی",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 76,
-    "segments_transcribed": 69,
-    "editor_attempts": 63,
-    "editor_withheld": 48,
+    "segments_captured": 78,
+    "segments_transcribed": 71,
+    "editor_attempts": 65,
+    "editor_withheld": 49,
     "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:30:17.755020+00:00"
+    "last_audio_at": "2026-10-31T16:31:02.256273+00:00"
   }
 }
