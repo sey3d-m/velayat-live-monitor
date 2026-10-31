@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T14:14:42.965336+00:00",
-  "updated_at": "2026-10-31T15:19:43.228425+00:00",
+  "updated_at": "2026-10-31T15:20:20.992591+00:00",
   "items": [
     {
       "title": "پرسش درباره نحوه محاسبه سال خمسی زوجین و نقش وکالت",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 124,
-    "segments_transcribed": 119,
-    "editor_attempts": 114,
-    "editor_withheld": 107,
+    "segments_captured": 126,
+    "segments_transcribed": 121,
+    "editor_attempts": 116,
+    "editor_withheld": 109,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T15:19:28.642705+00:00"
+    "last_audio_at": "2026-10-31T15:20:17.746930+00:00"
   }
 }
