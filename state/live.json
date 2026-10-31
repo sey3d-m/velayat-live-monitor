@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T14:14:42.965336+00:00",
-  "updated_at": "2026-10-31T14:49:07.059837+00:00",
+  "updated_at": "2026-10-31T14:49:08.423547+00:00",
   "items": [
-    {
-      "title": "بررسی حکم فراموشی تسبیحات اربعه و سجده سهو در نماز",
-      "summary": "در این بخش درباره حکم فراموش کردن تسبیحات اربعه در نماز گفت‌وگو شد. کارشناس استدلال می‌کند که اگر پیش از رکوع یادش بیاید و تسبیحات را بخواند، نماز مشکل خاصی ندارد و نیازی به اقدام دیگری نیست، اما اگر بعد از سلام نماز متوجه شود، باید سجده سهو به جا آورد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41209182078-24",
-      "sequence": 24,
-      "updated_at": "2026-10-31T14:40:09.600820+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره مهریه زن بخشنده‌شده پس از طلاق",
       "summary": "در این بخش، پرسش یکی از بینندگان درباره وضعیت مهریه‌ای مطرح شد که زنی هنگام طلاق و به خاطر وضعت شوهرش بخشیده است و آیا امکان مطالبه دوباره آن وجود دارد یا خیر. کارشناس برنامه به این پرسش جزئی بیننده می‌پردازد.",
@@ -69,14 +57,27 @@
       "sequence": 41,
       "updated_at": "2026-10-31T14:46:46.883769+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره احکام طهارت",
+      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41209182078-47",
+      "sequence": 47,
+      "updated_at": "2026-10-31T14:49:08.423525+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 48,
     "segments_transcribed": 43,
     "editor_attempts": 43,
-    "editor_withheld": 38,
-    "topics_published": 7,
+    "editor_withheld": 39,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-10-31T14:49:03.793596+00:00"
