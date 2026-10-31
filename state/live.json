@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T17:15:57.782618+00:00",
-  "updated_at": "2026-10-31T17:37:24.533404+00:00",
+  "updated_at": "2026-10-31T17:37:45.239129+00:00",
   "items": [
     {
       "title": "بررسی ویژگی‌های زندگی مشترک امام علی و حضرت زهرا",
@@ -32,16 +32,29 @@
       "sequence": 15,
       "updated_at": "2026-10-31T17:36:58.507106+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز",
+      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41223525423-17",
+      "sequence": 17,
+      "updated_at": "2026-10-31T17:37:45.239105+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 18,
-    "segments_transcribed": 15,
+    "segments_captured": 19,
+    "segments_transcribed": 16,
     "editor_attempts": 10,
-    "editor_withheld": 8,
-    "topics_published": 2,
+    "editor_withheld": 9,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T17:37:03.870226+00:00"
+    "last_audio_at": "2026-10-31T17:37:29.051225+00:00"
   }
 }
