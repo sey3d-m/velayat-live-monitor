@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:14:17.745254+00:00",
+  "updated_at": "2026-10-31T16:14:19.009360+00:00",
   "items": [
     {
       "title": "پرسش درباره تحقق علائم ظهور مسیح",
@@ -43,6 +43,18 @@
       "sequence": 34,
       "updated_at": "2026-10-31T16:13:55.111951+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ادعای اخراج مسلمین و تسخیر اراضی اسلامی",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که اخراج مسلمانان و جایگزینی قوم یهود به جای آن‌ها، با هدف غصب سرزمین‌های اسلامی از نیل تا فرات، برپایی حکومت یهودی، تخریب نخستین قبله مسلمانان و ساخت معبد تحت عنوان هیکل سلیمان صورت می‌گیرد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41216257666-35",
+      "sequence": 35,
+      "updated_at": "2026-10-31T16:14:19.009337+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -50,7 +62,7 @@
     "segments_transcribed": 29,
     "editor_attempts": 23,
     "editor_withheld": 19,
-    "topics_published": 3,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
     "last_audio_at": "2026-10-31T16:14:15.292190+00:00"
