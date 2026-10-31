@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:13:28.050614+00:00",
+  "updated_at": "2026-10-31T16:13:55.111976+00:00",
   "items": [
     {
       "title": "پرسش درباره تحقق علائم ظهور مسیح",
@@ -31,16 +31,28 @@
       "sequence": 30,
       "updated_at": "2026-10-31T16:12:22.636335+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره تخریب مسجدالاقصی برای ساخت هیکل سلیمان",
+      "summary": "در این بخش کارشناس درباره مقدمه چهارم طرح دولت یهود سخن می‌گوید و استدلال می‌کند که برپایی این دولت مستلزم ساخت هیکل سلیمان به جای مسجدالاقصی است. وی در این زمینه پرسش می‌کند که آیا معنای این اقدام، تخریب نخستین قبله مسلمانان است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41216257666-34",
+      "sequence": 34,
+      "updated_at": "2026-10-31T16:13:55.111951+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 34,
-    "segments_transcribed": 27,
-    "editor_attempts": 21,
-    "editor_withheld": 18,
-    "topics_published": 2,
+    "segments_captured": 35,
+    "segments_transcribed": 28,
+    "editor_attempts": 22,
+    "editor_withheld": 19,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:13:25.866415+00:00"
+    "last_audio_at": "2026-10-31T16:13:50.253986+00:00"
   }
 }
