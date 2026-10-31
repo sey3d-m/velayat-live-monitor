@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:39:53.895199+00:00",
+  "updated_at": "2026-10-31T16:40:20.162034+00:00",
   "items": [
-    {
-      "title": "بررسی اتحادیه جهانی اوانجلی‌کال دبلیو‌ای‌ایی در گفتار کارشناس",
-      "summary": "در این بخش کارشناس درباره مسیحیت پنتی‌کاستی و ایوانجلیست سخن می‌گوید و استدلال می‌کند که این جریان‌ها اتحادیه‌ای به نام اتحادیه جهانی اوانجلی‌کال با مخفف دبلیو‌ای‌ایی تشکیل داده‌اند. در گفت‌وگو به این تشکل به عنوان شبکه ایوانجلی‌کال اشاره شد و نتیجه‌گیری محدودی درباره شکل‌گیری این اتحادیه جهانی ارائه گردید.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41216257666-74",
-      "sequence": 74,
-      "updated_at": "2026-10-31T16:29:57.495138+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی ادعای ارتباط کاخ سفید با کلیساهای مسیحیت صهیونیستی",
       "summary": "در این بخش کارشناس استدلال می‌کند که کاخ سفید یکی از شعب کلیساهای مسیحیت صهیونیستی است و در ادامه به رئیس‌جمهور آمریکا اشاره می‌کند.",
@@ -68,16 +56,29 @@
       "sequence": 97,
       "updated_at": "2026-10-31T16:39:06.617060+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خانواده و ازدواج",
+      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41216257666-100",
+      "sequence": 100,
+      "updated_at": "2026-10-31T16:40:20.162013+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 100,
-    "segments_transcribed": 92,
-    "editor_attempts": 82,
-    "editor_withheld": 64,
-    "topics_published": 18,
+    "segments_captured": 101,
+    "segments_transcribed": 93,
+    "editor_attempts": 83,
+    "editor_withheld": 66,
+    "topics_published": 19,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:39:50.836015+00:00"
+    "last_audio_at": "2026-10-31T16:40:15.239767+00:00"
   }
 }
