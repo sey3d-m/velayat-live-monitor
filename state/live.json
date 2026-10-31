@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T14:14:42.965336+00:00",
-  "updated_at": "2026-10-31T14:39:34.678069+00:00",
+  "updated_at": "2026-10-31T14:40:09.600846+00:00",
   "items": [
     {
       "title": "پرسش درباره احکام تدفین و مسائل شرعی از گچساران",
@@ -32,16 +32,28 @@
       "sequence": 22,
       "updated_at": "2026-10-31T14:39:11.700663+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی حکم فراموشی تسبیحات اربعه و سجده سهو در نماز",
+      "summary": "در این بخش درباره حکم فراموش کردن تسبیحات اربعه در نماز گفت‌وگو شد. کارشناس استدلال می‌کند که اگر پیش از رکوع یادش بیاید و تسبیحات را بخواند، نماز مشکل خاصی ندارد و نیازی به اقدام دیگری نیست، اما اگر بعد از سلام نماز متوجه شود، باید سجده سهو به جا آورد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41209182078-24",
+      "sequence": 24,
+      "updated_at": "2026-10-31T14:40:09.600820+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 24,
-    "segments_transcribed": 19,
-    "editor_attempts": 19,
-    "editor_withheld": 17,
-    "topics_published": 2,
+    "segments_captured": 25,
+    "segments_transcribed": 20,
+    "editor_attempts": 20,
+    "editor_withheld": 18,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T14:39:31.035708+00:00"
+    "last_audio_at": "2026-10-31T14:39:56.027082+00:00"
   }
 }
