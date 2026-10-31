@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:36:41.488060+00:00",
+  "updated_at": "2026-10-31T16:37:44.273351+00:00",
   "items": [
     {
       "title": "بررسی القای مفاهیم صهیونیستی به مبلغان مسیحی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 92,
-    "segments_transcribed": 84,
-    "editor_attempts": 74,
-    "editor_withheld": 59,
+    "segments_captured": 94,
+    "segments_transcribed": 86,
+    "editor_attempts": 76,
+    "editor_withheld": 60,
     "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:36:39.522867+00:00"
+    "last_audio_at": "2026-10-31T16:37:28.656460+00:00"
   }
 }
