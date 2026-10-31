@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T17:15:57.782618+00:00",
-  "updated_at": "2026-10-31T18:09:12.051176+00:00",
+  "updated_at": "2026-10-31T18:09:37.802110+00:00",
   "items": [
     {
       "title": "بررسی ویژگی‌های زندگی مشترک امام علی و حضرت زهرا",
@@ -45,16 +45,29 @@
       "sequence": 17,
       "updated_at": "2026-10-31T17:37:45.239105+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41223525423-98",
+      "sequence": 98,
+      "updated_at": "2026-10-31T18:09:37.802082+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 98,
-    "segments_transcribed": 89,
-    "editor_attempts": 75,
-    "editor_withheld": 73,
-    "topics_published": 3,
+    "segments_captured": 99,
+    "segments_transcribed": 90,
+    "editor_attempts": 76,
+    "editor_withheld": 75,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T18:09:05.866575+00:00"
+    "last_audio_at": "2026-10-31T18:09:31.234329+00:00"
   }
 }
