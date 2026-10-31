@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T14:14:42.965336+00:00",
-  "updated_at": "2026-10-31T14:47:28.450532+00:00",
+  "updated_at": "2026-10-31T14:48:18.011781+00:00",
   "items": [
     {
       "title": "بررسی حکم فراموشی تسبیحات اربعه و سجده سهو در نماز",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 44,
-    "segments_transcribed": 39,
-    "editor_attempts": 39,
-    "editor_withheld": 34,
+    "segments_captured": 46,
+    "segments_transcribed": 41,
+    "editor_attempts": 41,
+    "editor_withheld": 36,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T14:47:25.901963+00:00"
+    "last_audio_at": "2026-10-31T14:48:14.859711+00:00"
   }
 }
