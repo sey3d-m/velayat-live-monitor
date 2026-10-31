@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:15:57.135513+00:00",
+  "updated_at": "2026-10-31T16:16:40.251437+00:00",
   "items": [
     {
       "title": "پرسش درباره تحقق علائم ظهور مسیح",
@@ -58,13 +58,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 40,
-    "segments_transcribed": 33,
-    "editor_attempts": 27,
-    "editor_withheld": 22,
+    "segments_captured": 42,
+    "segments_transcribed": 35,
+    "editor_attempts": 29,
+    "editor_withheld": 24,
     "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:15:54.449065+00:00"
+    "last_audio_at": "2026-10-31T16:16:37.885420+00:00"
   }
 }
