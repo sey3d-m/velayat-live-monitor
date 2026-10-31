@@ -1,21 +1,34 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "41209182078",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T14:14:42.965336+00:00",
-  "updated_at": "2026-10-31T14:36:17.364936+00:00",
-  "items": [],
+  "updated_at": "2026-10-31T14:36:44.932507+00:00",
+  "items": [
+    {
+      "title": "پرسش درباره احکام تدفین و مسائل شرعی از گچساران",
+      "summary": "در این بخش، کارشناس به پاسخگویی به پرسش‌های شرعی و احکام مربوط به تدفین و مسائل فقهی می‌پردازد. همچنین تماسی از شهر گچساران برای پرسش شرعی در برنامه مطرح می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41209182078-16",
+      "sequence": 16,
+      "updated_at": "2026-10-31T14:36:44.932481+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 16,
-    "segments_transcribed": 11,
-    "editor_attempts": 11,
-    "editor_withheld": 10,
-    "topics_published": 0,
+    "segments_captured": 17,
+    "segments_transcribed": 12,
+    "editor_attempts": 12,
+    "editor_withheld": 11,
+    "topics_published": 1,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T14:36:14.271361+00:00"
+    "last_audio_at": "2026-10-31T14:36:38.672634+00:00"
   }
 }
