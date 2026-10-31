@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:38:47.425307+00:00",
+  "updated_at": "2026-10-31T16:39:05.303922+00:00",
   "items": [
     {
       "title": "بررسی ادعای ارتباط با جن و جابجایی نام‌ها در دستگاه شیطان",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 97,
-    "segments_transcribed": 89,
-    "editor_attempts": 79,
+    "segments_captured": 98,
+    "segments_transcribed": 90,
+    "editor_attempts": 80,
     "editor_withheld": 63,
     "topics_published": 17,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:38:42.877936+00:00"
+    "last_audio_at": "2026-10-31T16:39:02.586753+00:00"
   }
 }
