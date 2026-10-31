@@ -15,6 +15,7 @@ import requests
 from clip_settings import load_clip_settings
 from clip_sync import align_video_to_audio, probe_duration
 from clip_editorial import polish_title, snap_to_pauses, topic_hashtags
+from clip_multisource import select_mixed_segments
 
 PRIVATE_DIR = Path("private_live_video")
 RECORDING = PRIVATE_DIR / "programme_preview.mp4"
@@ -337,12 +338,19 @@ def make_clip(source, start, end, index):
     settings = load_clip_settings()
     speed = playback_speed()
     width = 1920 if settings["quality"] == "1080p" else 1280
+    # Compact only exported MP4s; preserve original capture and audio timing.
+    compact = os.getenv("BALE_CLIP_COMPACT", "true").lower() not in ("0", "false", "off")
+    if compact:
+        width = min(width, 960)
     # Allow longer selections, but aim below Bale's configured upload budget.
     seconds = max(1, end - start)
     total_bits = settings["max_upload_mb"] * 1024 * 1024 * 8 * 0.93
-    audio_bps = settings["audio_bitrate_kbps"] * 1000
-    video_bps = max(180_000, int(total_bits / seconds - audio_bps))
-    video_bps = min(video_bps, 4_000_000 if width == 1920 else 1_150_000)
+    audio_kbps = min(settings["audio_bitrate_kbps"], 64) if compact else settings["audio_bitrate_kbps"]
+    audio_bps = audio_kbps * 1000
+    video_bps = max(150_000 if compact else 180_000,
+                    int(total_bits / seconds - audio_bps))
+    video_bps = min(video_bps, 760_000 if compact else
+                    (4_000_000 if width == 1920 else 1_150_000))
     # For a long answer lower the resolution, never shorten the content.
     if video_bps < 550_000:
         width = min(width, 854)
@@ -358,7 +366,7 @@ def make_clip(source, start, end, index):
         "-b:v", str(video_bps), "-maxrate", str(video_bps),
         "-bufsize", str(video_bps * 2),
         "-g", "50", "-c:a", "aac",
-        "-b:a", f"{settings['audio_bitrate_kbps']}k",
+        "-b:a", f"{audio_kbps}k",
         "-ar", "44100", "-ac", "2",
         "-movflags", "+faststart", "-avoid_negative_ts", "make_zero",
         "-y", str(dest),
@@ -451,7 +459,8 @@ def description_for(suggestions, start, title):
 
 def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
                     expert="نامشخص", date="", hashtags=None, timed_transcript=None,
-                    strict_report=False, audio_reference=None):
+                    strict_report=False, audio_reference=None,
+                    adaptive_mix=False):
     """Send only to clip channel; strict mode honors the reported viral cuts."""
     errors, sent = [], []
     settings = load_clip_settings()
@@ -467,11 +476,20 @@ def send_bale_clips(source, suggestions, duration, token, chat_id, program, *,
     recorded_duration = None
     if strict_report:
         suggestions = list(suggestions or [])
-        selections = select_report_segments(
-            suggestions, duration, limit=target_count,
-            min_seconds=settings["min_seconds"],
-            max_seconds=settings["max_seconds"],
-        )
+        if adaptive_mix:
+            selections = select_mixed_segments(
+                suggestions, duration,
+                maximum=int(os.getenv("DIDBAN_MAX_MIXED_CLIPS", "8")),
+                min_seconds=settings["min_seconds"],
+                max_seconds=settings["max_seconds"],
+            )
+            target_count = len(selections)
+        else:
+            selections = select_report_segments(
+                suggestions, duration, limit=target_count,
+                min_seconds=settings["min_seconds"],
+                max_seconds=settings["max_seconds"],
+            )
         if not selections:
             return {"status": "unavailable", "sent": sent,
                     "errors": ["no_valid_report_viral_clips"],

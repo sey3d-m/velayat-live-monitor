@@ -37,6 +37,8 @@ from video_clips import (
     cleanup as cleanup_video_clips, build_clip_candidates,
 )
 from clip_settings import load_clip_settings
+from clip_multisource import build_candidates as build_multisource_clip_candidates
+from youtube_packs import enabled as youtube_packs_enabled, produce_youtube_packs
 from extra_schedule import get_extra
 
 
@@ -1979,14 +1981,15 @@ def main() -> None:
             clip_rules = load_clip_settings()
             clips_result = send_bale_clips(
                 clip_recording,
-                # Exactly the source array used in format_bale_persian_part2:
-                # no generated fallback and no independent viral re-selection.
-                analysis.viral_clips,
+                # All three independently reported, timestamped source groups:
+                # viral suggestions, real answered questions and main axes.
+                build_multisource_clip_candidates(analysis),
                 tmeta.audio_capture_seconds,
                 BALE_BOT_TOKEN, "@live_vtv", info["program"],
                 expert=normalize_name(analysis.expert),
                 date=jalali_date_for_info(info), hashtags=analysis.hashtags,
-                strict_report=True, audio_reference=AUDIO_BACKUP_FILE)
+                strict_report=True, audio_reference=AUDIO_BACKUP_FILE,
+                adaptive_mix=True)
             diagnostic["video_clips"] = clips_result
             delivery["bale_clips"] = clips_result["status"].upper()
             delivery["errors"].extend(clips_result["errors"])
@@ -1999,6 +2002,26 @@ def main() -> None:
     except Exception as exc:
         delivery["bale_clips"] = "FAILED"
         delivery["errors"].append(f"bale_clips: {type(exc).__name__}: {exc}")
+
+    # Independent text-only editorial handoff for @vtv_youtube. Even failure
+    # or an uncreated channel must NOT affect original reporting, Sheets, clips,
+    # Bengali dubbing, workflow success, or transcript delivery.
+    if cfg.report_mode == "persian_full" and youtube_packs_enabled(cfg.key):
+        try:
+            youtube_result = produce_youtube_packs(
+                client, analysis, timed_transcript, tmeta.audio_capture_seconds,
+                BALE_BOT_TOKEN, programme=info["program"],
+                date=jalali_date_for_info(info),
+                expert=normalize_name(analysis.expert))
+            diagnostic["youtube_packs"] = youtube_result
+            print("YouTube text pack handoff: " +
+                  str(youtube_result.get("status")), flush=True)
+        except Exception as youtube_exc:
+            diagnostic["youtube_packs"] = {
+                "status": "failed", "errors": [
+                    f"{type(youtube_exc).__name__}: {youtube_exc}"]}
+            print("Optional YouTube pack delivery failed: " +
+                  str(youtube_exc), file=sys.stderr)
 
     try:
         # TXT is attempted independently even if the formatted Bale message failed.
