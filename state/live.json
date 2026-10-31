@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T17:09:07.622444+00:00",
+  "updated_at": "2026-10-31T17:09:30.812148+00:00",
   "items": [
     {
       "title": "پرسش درباره معنای اصطلاح و سقوط کشورهای اسلامی با فرض سقوط ایران",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 173,
-    "segments_transcribed": 163,
+    "segments_captured": 174,
+    "segments_transcribed": 164,
     "editor_attempts": 146,
     "editor_withheld": 120,
     "topics_published": 29,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T17:09:04.478925+00:00"
+    "last_audio_at": "2026-10-31T17:09:28.884032+00:00"
   }
 }
