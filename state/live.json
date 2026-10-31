@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T17:15:57.782618+00:00",
-  "updated_at": "2026-10-31T18:33:32.425425+00:00",
+  "updated_at": "2026-10-31T18:33:56.249614+00:00",
   "items": [
     {
       "title": "بررسی رابطه اختیار انسان و قضا و قدر الهی",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 159,
-    "segments_transcribed": 148,
-    "editor_attempts": 132,
+    "segments_captured": 160,
+    "segments_transcribed": 149,
+    "editor_attempts": 133,
     "editor_withheld": 126,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T18:33:26.793324+00:00"
+    "last_audio_at": "2026-10-31T18:33:51.523382+00:00"
   }
 }
