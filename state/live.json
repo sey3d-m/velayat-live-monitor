@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:42:21.722163+00:00",
+  "updated_at": "2026-10-31T16:42:23.161415+00:00",
   "items": [
-    {
-      "title": "بررسی ادعای ارتباط کاخ سفید با کلیساهای مسیحیت صهیونیستی",
-      "summary": "در این بخش کارشناس استدلال می‌کند که کاخ سفید یکی از شعب کلیساهای مسیحیت صهیونیستی است و در ادامه به رئیس‌جمهور آمریکا اشاره می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41216257666-75",
-      "sequence": 75,
-      "updated_at": "2026-10-31T16:30:21.255282+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره نماز",
       "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,6 +57,18 @@
       "sequence": 100,
       "updated_at": "2026-10-31T16:40:20.162013+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره حقیقت پدیده جدایی جوانان و هویست اسلامی",
+      "summary": "در این بخش، کارشناس این پرسش را مطرح می‌کند که آیا مسائل مطرح‌شده صرفاً نظریه بوده یا واقعاً در کشور ایران فاجعه جدایی جوانان از هویت اسلامی در حال رخ دادن است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41216257666-105",
+      "sequence": 105,
+      "updated_at": "2026-10-31T16:42:23.161392+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -76,7 +76,7 @@
     "segments_transcribed": 98,
     "editor_attempts": 88,
     "editor_withheld": 70,
-    "topics_published": 19,
+    "topics_published": 20,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
     "last_audio_at": "2026-10-31T16:42:18.824237+00:00"
