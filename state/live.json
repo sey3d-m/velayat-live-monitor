@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:29:57.495164+00:00",
+  "updated_at": "2026-10-31T16:30:20.135457+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره تفکیک مسیحیت صهیونیستی از بدنه مسیحیت",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 75,
-    "segments_transcribed": 68,
-    "editor_attempts": 62,
+    "segments_captured": 76,
+    "segments_transcribed": 69,
+    "editor_attempts": 63,
     "editor_withheld": 48,
     "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:29:52.757231+00:00"
+    "last_audio_at": "2026-10-31T16:30:17.755020+00:00"
   }
 }
