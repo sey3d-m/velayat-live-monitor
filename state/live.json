@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "41209182078",
-  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "session": "41216257666",
+  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
-  "started_at": "2026-10-31T14:14:42.965336+00:00",
-  "updated_at": "2026-10-31T15:40:02.189793+00:00",
-  "items": [
-    {
-      "title": "بررسی حکم استفاده از آلات موسیقی و تعابیر نامناسب در عزاداری",
-      "summary": "در این بخش کارشناس استدلال می‌کند که استفاده از آلات موسیقی در مراسم سیدالشهدا جایز نیست و تنها استفاده از طبل و سنج به اندازه متعارف مجاز است. همچنین به گفته کارشناس، نسبت دروغ دادن به اهل‌بیت علیهم‌السلام و غلو کردن در شأن آنان جایز نیست و این موضوع گاهی در برخی نوحه‌ها دیده می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41209182078-74",
-      "sequence": 74,
-      "updated_at": "2026-10-31T14:59:56.572751+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره تکریم مادر و صبر در برابر تکرار کلام او",
-      "summary": "در این بخش کارشناس تأکید می‌کند که باید به مادر خدمت کرد و از این فرصت غافل نشد. به گفته وی، اگر مادر از روی فراموشی مطلبی را تکرار کرد، باید مدارا و ملاحظه کرد؛ چنانچه با خوش‌اخلاقی و برخورد مناسب با مادر رفتار شود، حتی در صورت بی‌نیازی او، مایه آرامش خواهد بود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41209182078-89",
-      "sequence": 89,
-      "updated_at": "2026-10-31T15:06:03.538619+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره محاسبه خمس کفن خریداری‌شده با قیمت روز یا خرید",
-      "summary": "در این بخش درباره نحوه محاسبه خمس کفن خریداری‌شده در سال‌های گذشته پرسش شد. کارشناس با استناد به نظر رهبر معظم انقلاب بیان می‌کند که اگر کفن در سال خمسین مصرف شود خمس به قیمت خرید تعلق می‌گیرد، اما اگر بماند و سال بر آن بگذرد باید خمس آن به قیمت روز پرداخت شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41209182078-130",
-      "sequence": 130,
-      "updated_at": "2026-10-31T15:22:20.188966+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره تأخیر در اقامه نماز مغرب هنگام پذیرایی از مهمان در روزه",
-      "summary": "در این بخش، پرسشی درباره حکم تأخیر انداختن نماز مغرب تا پس از افطار و هنگام داشتن مهمان مطرح شد. کارشناس در پاسخ استدلال می‌کند که اگر افطاری دادن به مهمان موجب شود نماز مغرب کمی به تأخیر بیفتد و سپس نماز مغرب خوانده شده و پس از آن نماز عشا اقامه شود، ایرادی ندارد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41209182078-131",
-      "sequence": 131,
-      "updated_at": "2026-10-31T15:22:45.382879+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره سن تکلیف دختران و کیفیت خواندن نماز آیات",
-      "summary": "در این بخش، کارشناس درباره نحوه خواندن نماز آیات و عدم الزام به بلند خواندن آن توضیحاتی ارائه می‌دهد. همچنین به نقل از بیننده‌ای از افغانستان، درباره سن تکلیف دختران ادعا می‌شود که این سن در انتهای نه سالگی قمری تمام است و اگر به شمسی حساب شود، تفاوت خواهد داشت.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "41209182078-135",
-      "sequence": 135,
-      "updated_at": "2026-10-31T15:24:29.643232+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-10-31T15:44:38.667856+00:00",
+  "updated_at": "2026-10-31T16:00:00.000238+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 161,
-    "editor_attempts": 143,
-    "editor_withheld": 134,
-    "topics_published": 13,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T15:39:49.672687+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
