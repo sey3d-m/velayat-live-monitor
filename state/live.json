@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T14:14:42.965336+00:00",
-  "updated_at": "2026-10-31T14:46:45.568468+00:00",
+  "updated_at": "2026-10-31T14:46:46.883790+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره نماز",
-      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41209182078-22",
-      "sequence": 22,
-      "updated_at": "2026-10-31T14:39:11.700663+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی حکم فراموشی تسبیحات اربعه و سجده سهو در نماز",
       "summary": "در این بخش درباره حکم فراموش کردن تسبیحات اربعه در نماز گفت‌وگو شد. کارشناس استدلال می‌کند که اگر پیش از رکوع یادش بیاید و تسبیحات را بخواند، نماز مشکل خاصی ندارد و نیازی به اقدام دیگری نیست، اما اگر بعد از سلام نماز متوجه شود، باید سجده سهو به جا آورد.",
@@ -69,14 +56,27 @@
       "sequence": 38,
       "updated_at": "2026-10-31T14:45:35.480736+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خمس و زکات",
+      "summary": "در این بخش از برنامه، موضوع «خمس و زکات» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41209182078-41",
+      "sequence": 41,
+      "updated_at": "2026-10-31T14:46:46.883769+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 42,
     "segments_transcribed": 37,
     "editor_attempts": 37,
-    "editor_withheld": 32,
-    "topics_published": 6,
+    "editor_withheld": 33,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-10-31T14:46:42.013813+00:00"
