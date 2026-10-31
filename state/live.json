@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T17:15:57.782618+00:00",
-  "updated_at": "2026-10-31T18:30:44.738419+00:00",
+  "updated_at": "2026-10-31T18:31:34.222997+00:00",
   "items": [
     {
       "title": "بررسی مرجعیت علمی فاطمه زهرا سلام‌الله‌علیها بر اساس گفتار کارشناس",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 152,
-    "segments_transcribed": 141,
-    "editor_attempts": 125,
-    "editor_withheld": 121,
+    "segments_captured": 154,
+    "segments_transcribed": 143,
+    "editor_attempts": 127,
+    "editor_withheld": 123,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T18:30:40.097732+00:00"
+    "last_audio_at": "2026-10-31T18:31:30.122308+00:00"
   }
 }
