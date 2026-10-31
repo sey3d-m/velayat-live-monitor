@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:58:22.093149+00:00",
+  "updated_at": "2026-10-31T16:58:48.520963+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41216257666-121",
-      "sequence": 121,
-      "updated_at": "2026-10-31T16:48:44.386004+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی فعالیت سایت‌های مسیحی به زبان‌های محلی",
       "summary": "در این بخش، کارشناس به معرفی و نمایش سایت‌های تبلیغاتی مسیحی و ترجمه انجیل به زبان‌های محلی از جمله لوری و جلکی اشاره می‌کند و در این زمینه توضیحاتی ارائه می‌دهد.",
@@ -68,16 +55,28 @@
       "sequence": 139,
       "updated_at": "2026-10-31T16:55:56.374726+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره پیشینه تاریخی حضور و آزادی قوم یهود توسط کوروش",
+      "summary": "در این بخش کارشناس استدلال می‌کند که این گروه از زمان اسارت در دوران نبوکدنصر پادشاه بابل به این منطقه در بین‌النهرین وارد شده و به بردگی کشفته شده‌اند و سپس به گفته وی، جناب کوروش آنها را آزاد کرده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41216257666-146",
+      "sequence": 146,
+      "updated_at": "2026-10-31T16:58:48.520935+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 146,
-    "segments_transcribed": 137,
-    "editor_attempts": 126,
-    "editor_withheld": 102,
-    "topics_published": 26,
+    "segments_captured": 147,
+    "segments_transcribed": 138,
+    "editor_attempts": 127,
+    "editor_withheld": 103,
+    "topics_published": 27,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:58:19.689940+00:00"
+    "last_audio_at": "2026-10-31T16:58:37.292538+00:00"
   }
 }
