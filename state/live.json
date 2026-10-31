@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:39:06.617076+00:00",
+  "updated_at": "2026-10-31T16:39:53.895199+00:00",
   "items": [
     {
       "title": "بررسی اتحادیه جهانی اوانجلی‌کال دبلیو‌ای‌ایی در گفتار کارشناس",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 98,
-    "segments_transcribed": 90,
-    "editor_attempts": 80,
-    "editor_withheld": 63,
+    "segments_captured": 100,
+    "segments_transcribed": 92,
+    "editor_attempts": 82,
+    "editor_withheld": 64,
     "topics_published": 18,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:39:02.586753+00:00"
+    "last_audio_at": "2026-10-31T16:39:50.836015+00:00"
   }
 }
