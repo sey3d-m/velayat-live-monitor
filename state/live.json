@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T17:05:31.865813+00:00",
+  "updated_at": "2026-10-31T17:06:21.440480+00:00",
   "items": [
     {
       "title": "بررسی نسخه انجیل یوحنا به زبان گیلکی",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 164,
-    "segments_transcribed": 154,
-    "editor_attempts": 138,
-    "editor_withheld": 113,
+    "segments_captured": 166,
+    "segments_transcribed": 156,
+    "editor_attempts": 140,
+    "editor_withheld": 114,
     "topics_published": 28,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T17:05:29.613297+00:00"
+    "last_audio_at": "2026-10-31T17:06:18.397098+00:00"
   }
 }
