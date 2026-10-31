@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:28:41.599029+00:00",
+  "updated_at": "2026-10-31T16:29:31.113683+00:00",
   "items": [
     {
       "title": "بررسی اهداف پشت پرده واژه بشارت در گفتار کارشناس",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 72,
-    "segments_transcribed": 65,
-    "editor_attempts": 59,
-    "editor_withheld": 46,
+    "segments_captured": 74,
+    "segments_transcribed": 67,
+    "editor_attempts": 61,
+    "editor_withheld": 48,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:28:38.700220+00:00"
+    "last_audio_at": "2026-10-31T16:29:28.302795+00:00"
   }
 }
