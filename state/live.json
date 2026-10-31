@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:34:19.277437+00:00",
+  "updated_at": "2026-10-31T16:34:20.510287+00:00",
   "items": [
-    {
-      "title": "بررسی ارتباط میان مسیحیت اوانجلیکال و صهیونیسم مسیحی",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که مسیحیت اوانجلیکال فرقی از مسیحیت صهیونیستی است و ممکن است فردی فریب خورده و ناخواسته وارد حلقه مسیحیت صهیونیستی شود، در حالی که خودش نیز از این موضوع آگاهی ندارد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41216257666-68",
-      "sequence": 68,
-      "updated_at": "2026-10-31T16:27:34.405253+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی القای مفاهیم صهیونیستی به مبلغان مسیحی",
       "summary": "در این بخش کارشناس استدلال می‌کند که برخی جریان‌ها با سال‌ها فعالیت تبلیغی و مذهبی، بدون ذکر نام صهیونیزم، تفکرات و مفاهیم مد نظر خود را به ذهن مبلغان مسیحی القا می‌کنند و جوانان ایرانی را تحت تأثیر قرار می‌دهند.",
@@ -67,14 +55,27 @@
       "sequence": 75,
       "updated_at": "2026-10-31T16:30:21.255282+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز",
+      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41216257666-85",
+      "sequence": 85,
+      "updated_at": "2026-10-31T16:34:20.510266+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 86,
     "segments_transcribed": 79,
     "editor_attempts": 72,
-    "editor_withheld": 56,
-    "topics_published": 15,
+    "editor_withheld": 57,
+    "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
     "last_audio_at": "2026-10-31T16:34:17.526722+00:00"
