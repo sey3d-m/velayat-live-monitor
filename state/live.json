@@ -1,21 +1,34 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "41216257666",
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:11:07.696988+00:00",
-  "items": [],
+  "updated_at": "2026-10-31T16:11:32.790857+00:00",
+  "items": [
+    {
+      "title": "پرسش درباره تحقق علائم ظهور مسیح",
+      "summary": "در این بخش کارشناس ادعا می‌کند که برای تحقق علائم ظهور و نزول مسیح به عنوان منجی، هفت علامت مشاهده می‌شود و از دست‌اندرکاران درخواست می‌کند صفحه مربوطه را نمایش دهند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41216257666-28",
+      "sequence": 28,
+      "updated_at": "2026-10-31T16:11:32.790835+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 28,
-    "segments_transcribed": 21,
-    "editor_attempts": 15,
-    "editor_withheld": 14,
-    "topics_published": 0,
+    "segments_captured": 29,
+    "segments_transcribed": 22,
+    "editor_attempts": 16,
+    "editor_withheld": 15,
+    "topics_published": 1,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:11:05.081535+00:00"
+    "last_audio_at": "2026-10-31T16:11:28.965418+00:00"
   }
 }
