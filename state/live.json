@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T14:14:42.965336+00:00",
-  "updated_at": "2026-10-31T14:45:07.432846+00:00",
+  "updated_at": "2026-10-31T14:45:35.480763+00:00",
   "items": [
-    {
-      "title": "پرسش درباره احکام تدفین و مسائل شرعی از گچساران",
-      "summary": "در این بخش، کارشناس به پاسخگویی به پرسش‌های شرعی و احکام مربوط به تدفین و مسائل فقهی می‌پردازد. همچنین تماسی از شهر گچساران برای پرسش شرعی در برنامه مطرح می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41209182078-16",
-      "sequence": 16,
-      "updated_at": "2026-10-31T14:36:44.932481+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره نماز",
       "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +57,28 @@
       "sequence": 33,
       "updated_at": "2026-10-31T14:43:37.335983+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره نحوه محاسبه سال خمسی زوجین و نقش وکالت",
+      "summary": "در این بخش درباره نحوه محاسبه و حساب‌رسی سال خمسی زوجینی که درآمدشان در زندگی مشترک با هم مخلوط می‌شود، پرسش مطرح شد. کارشناس استدلال می‌کند که این مسئله با استفاده از موضوع وکالت قابل حل است و کیفیت این محاسبه در گفتگو بررسی شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41209182078-38",
+      "sequence": 38,
+      "updated_at": "2026-10-31T14:45:35.480736+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 38,
-    "segments_transcribed": 33,
-    "editor_attempts": 33,
-    "editor_withheld": 29,
-    "topics_published": 5,
+    "segments_captured": 39,
+    "segments_transcribed": 34,
+    "editor_attempts": 34,
+    "editor_withheld": 30,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T14:45:04.137837+00:00"
+    "last_audio_at": "2026-10-31T14:45:28.788130+00:00"
   }
 }
