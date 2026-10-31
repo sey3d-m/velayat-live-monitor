@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:51:55.022067+00:00",
+  "updated_at": "2026-10-31T16:52:43.590509+00:00",
   "items": [
     {
       "title": "پرسش درباره حقیقت پدیده جدایی جوانان و هویست اسلامی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 130,
-    "segments_transcribed": 121,
-    "editor_attempts": 110,
-    "editor_withheld": 88,
+    "segments_captured": 132,
+    "segments_transcribed": 123,
+    "editor_attempts": 112,
+    "editor_withheld": 90,
     "topics_published": 24,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:51:52.321150+00:00"
+    "last_audio_at": "2026-10-31T16:52:41.083775+00:00"
   }
 }
