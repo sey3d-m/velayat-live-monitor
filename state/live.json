@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:40:43.122654+00:00",
+  "updated_at": "2026-10-31T16:41:32.099305+00:00",
   "items": [
     {
       "title": "بررسی ادعای ارتباط کاخ سفید با کلیساهای مسیحیت صهیونیستی",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 102,
-    "segments_transcribed": 94,
-    "editor_attempts": 84,
-    "editor_withheld": 66,
+    "segments_captured": 104,
+    "segments_transcribed": 96,
+    "editor_attempts": 86,
+    "editor_withheld": 68,
     "topics_published": 19,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:40:40.455494+00:00"
+    "last_audio_at": "2026-10-31T16:41:29.458788+00:00"
   }
 }
