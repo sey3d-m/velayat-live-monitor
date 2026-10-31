@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:20:17.077662+00:00",
+  "updated_at": "2026-10-31T16:20:40.854477+00:00",
   "items": [
     {
       "title": "پرسش درباره تشکیل دولت یهود و گستره ارضی آن از نیل تا فرات",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 51,
-    "segments_transcribed": 44,
-    "editor_attempts": 38,
+    "segments_captured": 52,
+    "segments_transcribed": 45,
+    "editor_attempts": 39,
     "editor_withheld": 32,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:20:13.492872+00:00"
+    "last_audio_at": "2026-10-31T16:20:38.166697+00:00"
   }
 }
