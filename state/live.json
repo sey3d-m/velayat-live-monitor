@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "41216257666",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "41223525423",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-31",
-  "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T17:10:04.998361+00:00",
-  "items": [
-    {
-      "title": "پرسش درباره معنای اصطلاح و سقوط کشورهای اسلامی با فرض سقوط ایران",
-      "summary": "در این بخش درباره معنای یک اصطلاح پرسش شد و کارشناس استدلال می‌کند که قرن کنونی، قرن مسیحی‌سازی کشورهای اسلامی است. به گفته کارشناس، کانون این کشورها ایران است و با فرض سقوط یا شکست ایران، کل جهان اسلام و کشورهای اسلامی سقوط خواهند کرد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41216257666-131",
-      "sequence": 131,
-      "updated_at": "2026-10-31T16:52:44.922907+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره نسبت سوءاستفاده افراد در باشگاه‌ها به اصل ورزش",
-      "summary": "در این بخش کارشناس استدلال می‌کند که وجود افراد سودجو و توزیع‌کننده مواد در باشگاه‌های ورزشی، به معنای بد بودن و ناامنی خود محیط باشگاه نیست؛ همان‌طور که هشدار درباره قرص‌های نیروزا به معنای رد مطلق ورزش محسوب نمی‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41216257666-139",
-      "sequence": 139,
-      "updated_at": "2026-10-31T16:55:56.374726+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره پیشینه تاریخی حضور و آزادی قوم یهود توسط کوروش",
-      "summary": "در این بخش کارشناس استدلال می‌کند که این گروه از زمان اسارت در دوران نبوکدنصر پادشاه بابل به این منطقه در بین‌النهرین وارد شده و به بردگی کشفته شده‌اند و سپس به گفته وی، جناب کوروش آنها را آزاد کرده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41216257666-146",
-      "sequence": 146,
-      "updated_at": "2026-10-31T16:58:48.520935+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره استدلال ارث و خویشاوندی در گفتار کارشناس",
-      "summary": "در این بخش، کارشناس به موضوع نیکی به پدر و مادر و نزدیکان اشاره می‌کند و در ادامه به گفته او، ادعایی مطرح می‌شود که فردی پنداشته است از پدر خود ارث نمی‌برد و رابطه خویشاوندی وجود ندارد؛ این مبحث به صورت طرح پرسش از سوی گوینده ادامه می‌یابد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "41216257666-156",
-      "sequence": 156,
-      "updated_at": "2026-10-31T17:02:41.970963+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی ادعای کارشناس درباره عظمت مصیبت رحلت",
-      "summary": "در این بخش کارشناس استدلال می‌کند که با رحلت، احترام از بین رفته و به گفته وی، فاجعه و مصیبتی به این بزرگی در دنیا وجود ندارد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41216257666-172",
-      "sequence": 172,
-      "updated_at": "2026-10-31T17:09:07.622418+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-10-31T17:15:57.782618+00:00",
+  "updated_at": "2026-10-31T17:30:00.000288+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 165,
-    "editor_attempts": 147,
-    "editor_withheld": 121,
-    "topics_published": 29,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T17:09:53.099956+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
