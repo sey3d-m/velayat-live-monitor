@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T14:14:42.965336+00:00",
-  "updated_at": "2026-10-31T14:59:39.896059+00:00",
+  "updated_at": "2026-10-31T14:59:56.572779+00:00",
   "items": [
-    {
-      "title": "پرسش درباره مهریه زن بخشنده‌شده پس از طلاق",
-      "summary": "در این بخش، پرسش یکی از بینندگان درباره وضعیت مهریه‌ای مطرح شد که زنی هنگام طلاق و به خاطر وضعت شوهرش بخشیده است و آیا امکان مطالبه دوباره آن وجود دارد یا خیر. کارشناس برنامه به این پرسش جزئی بیننده می‌پردازد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41209182078-26",
-      "sequence": 26,
-      "updated_at": "2026-10-31T14:40:45.355976+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره زیارت",
       "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +58,28 @@
       "sequence": 47,
       "updated_at": "2026-10-31T14:49:08.423525+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی حکم استفاده از آلات موسیقی و تعابیر نامناسب در عزاداری",
+      "summary": "در این بخش کارشناس استدلال می‌کند که استفاده از آلات موسیقی در مراسم سیدالشهدا جایز نیست و تنها استفاده از طبل و سنج به اندازه متعارف مجاز است. همچنین به گفته کارشناس، نسبت دروغ دادن به اهل‌بیت علیهم‌السلام و غلو کردن در شأن آنان جایز نیست و این موضوع گاهی در برخی نوحه‌ها دیده می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41209182078-74",
+      "sequence": 74,
+      "updated_at": "2026-10-31T14:59:56.572751+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 74,
-    "segments_transcribed": 69,
-    "editor_attempts": 67,
-    "editor_withheld": 62,
-    "topics_published": 8,
+    "segments_captured": 75,
+    "segments_transcribed": 70,
+    "editor_attempts": 68,
+    "editor_withheld": 63,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T14:59:26.510595+00:00"
+    "last_audio_at": "2026-10-31T14:59:51.122975+00:00"
   }
 }
