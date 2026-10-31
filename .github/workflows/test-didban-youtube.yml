@@ -1,0 +1,30 @@
+name: Verify Didban YouTube Packs and Mixed Clips
+on:
+  pull_request:
+    paths:
+      - 'youtube_packs.py'
+      - 'clip_multisource.py'
+      - 'video_clips.py'
+      - 'velayat_monitor.py'
+      - 'tests/test_youtube_packs.py'
+      - '.github/workflows/test-didban-youtube.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-safe-integration:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install no-network unit-test dependencies
+        run: python -m pip install 'pydantic>=2.7,<3' 'requests>=2.31,<3'
+      - name: Compile all new and touched Python modules
+        run: python -m py_compile youtube_packs.py clip_multisource.py video_clips.py velayat_monitor.py
+      - name: Check separate text-only YouTube channel and adaptive clips
+        run: python -m unittest discover -s tests -p 'test_youtube_packs.py' -v
