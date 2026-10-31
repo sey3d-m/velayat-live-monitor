@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T14:14:42.965336+00:00",
-  "updated_at": "2026-10-31T15:35:35.506630+00:00",
+  "updated_at": "2026-10-31T15:36:15.448685+00:00",
   "items": [
     {
       "title": "بررسی حکم استفاده از آلات موسیقی و تعابیر نامناسب در عزاداری",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 164,
-    "segments_transcribed": 153,
-    "editor_attempts": 139,
-    "editor_withheld": 130,
+    "segments_captured": 166,
+    "segments_transcribed": 154,
+    "editor_attempts": 140,
+    "editor_withheld": 131,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T15:35:31.019886+00:00"
+    "last_audio_at": "2026-10-31T15:36:13.985645+00:00"
   }
 }
