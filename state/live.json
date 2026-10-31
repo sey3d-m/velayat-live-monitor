@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:27:34.405278+00:00",
+  "updated_at": "2026-10-31T16:27:59.616536+00:00",
   "items": [
     {
       "title": "بررسی ریشه حوادث و اقدامات تخریبی",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 69,
-    "segments_transcribed": 62,
-    "editor_attempts": 56,
+    "segments_captured": 70,
+    "segments_transcribed": 63,
+    "editor_attempts": 57,
     "editor_withheld": 45,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:27:30.793568+00:00"
+    "last_audio_at": "2026-10-31T16:27:56.651557+00:00"
   }
 }
