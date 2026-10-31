@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "41223525423",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T17:15:57.782618+00:00",
-  "updated_at": "2026-10-31T17:33:08.071097+00:00",
-  "items": [],
+  "updated_at": "2026-10-31T17:33:09.282605+00:00",
+  "items": [
+    {
+      "title": "بررسی ویژگی‌های زندگی مشترک امام علی و حضرت زهرا",
+      "summary": "در این بخش کارشناس استدلال می‌کند که زندگی مشترک امام علی (ع) و حضرت زهرا (س) در تمام دنیا بی‌مانند بوده و میان آن‌ها سراسر خوبی جریان داشته است؛ همچنین به گفته کارشناس، نام حضرت زهرا معنی اسم اعظم حق بیان شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "editor_mode": "audio_grounded_topic",
+      "id": "41223525423-6",
+      "sequence": 6,
+      "updated_at": "2026-10-31T17:33:09.282583+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
     "segments_captured": 8,
     "segments_transcribed": 6,
     "editor_attempts": 4,
-    "editor_withheld": 3,
-    "topics_published": 0,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
+    "editor_withheld": 4,
+    "topics_published": 1,
+    "audio_ai_calls": 2,
+    "audio_ai_success": 2,
     "last_audio_at": "2026-10-31T17:33:03.316710+00:00"
   }
 }
