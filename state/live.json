@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:11:56.634720+00:00",
+  "updated_at": "2026-10-31T16:12:22.636353+00:00",
   "items": [
     {
       "title": "پرسش درباره تحقق علائم ظهور مسیح",
@@ -19,16 +19,28 @@
       "sequence": 28,
       "updated_at": "2026-10-31T16:11:32.790835+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره تشکیل دولت یهود و گستره ارضی آن از نیل تا فرات",
+      "summary": "در این بخش کارشناس استدلال می‌کند که تشکیل دولت یهود بدون سرزمین امکان‌پذیر نبوده و به معنای غصب زمین‌های اسلامی است. به گفته وی، این روند شامل اخراج مسلمانان از خانه‌هایشان و اسکان یهودیان است و ادعا می‌شود گستره این دولت از نیل تا فرات در نظر گرفته شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41216257666-30",
+      "sequence": 30,
+      "updated_at": "2026-10-31T16:12:22.636335+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 30,
-    "segments_transcribed": 23,
-    "editor_attempts": 17,
-    "editor_withheld": 15,
-    "topics_published": 1,
+    "segments_captured": 31,
+    "segments_transcribed": 24,
+    "editor_attempts": 18,
+    "editor_withheld": 16,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:11:54.114676+00:00"
+    "last_audio_at": "2026-10-31T16:12:17.839646+00:00"
   }
 }
