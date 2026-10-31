@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T14:14:42.965336+00:00",
-  "updated_at": "2026-10-31T14:39:11.700693+00:00",
+  "updated_at": "2026-10-31T14:39:34.678069+00:00",
   "items": [
     {
       "title": "پرسش درباره احکام تدفین و مسائل شرعی از گچساران",
@@ -35,13 +35,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 23,
-    "segments_transcribed": 18,
-    "editor_attempts": 18,
+    "segments_captured": 24,
+    "segments_transcribed": 19,
+    "editor_attempts": 19,
     "editor_withheld": 17,
     "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T14:39:06.305548+00:00"
+    "last_audio_at": "2026-10-31T14:39:31.035708+00:00"
   }
 }
