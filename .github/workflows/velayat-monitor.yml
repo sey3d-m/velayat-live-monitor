@@ -177,6 +177,12 @@ jobs:
           # Clip-only route, count, speed, and encoding are read from
           # config/didban_clips.json. Old variable speed overrides are removed.
           ENABLE_BALE_VIDEO_CLIPS: ${{ vars.ENABLE_BALE_VIDEO_CLIPS || 'true' }}
+          # New optional features are independent of legacy reporting.
+          DIDBAN_MAX_MIXED_CLIPS: ${{ vars.DIDBAN_MAX_MIXED_CLIPS || '8' }}
+          BALE_CLIP_COMPACT: ${{ vars.BALE_CLIP_COMPACT || 'true' }}
+          ENABLE_YOUTUBE_PACKS: ${{ vars.ENABLE_YOUTUBE_PACKS || 'true' }}
+          YOUTUBE_PACKS_AI: ${{ vars.YOUTUBE_PACKS_AI || 'true' }}
+          YOUTUBE_PACKS_MODEL: ${{ vars.YOUTUBE_PACKS_MODEL || 'gemini-3.5-flash-lite' }}
           ENABLE_VISUAL_REVIEW: ${{ vars.ENABLE_VISUAL_REVIEW || 'true' }}
           VISUAL_REVIEW_MODEL: ${{ vars.VISUAL_REVIEW_MODEL || 'gemini-3.8-flash' }}
           VISUAL_REPORT_IMAGE_COUNT: ${{ vars.VISUAL_REPORT_IMAGE_COUNT || '2' }}
