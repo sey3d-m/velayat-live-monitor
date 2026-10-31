@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T15:44:38.667856+00:00",
-  "updated_at": "2026-10-31T16:58:48.520963+00:00",
+  "updated_at": "2026-10-31T16:59:05.815316+00:00",
   "items": [
     {
       "title": "بررسی فعالیت سایت‌های مسیحی به زبان‌های محلی",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 147,
-    "segments_transcribed": 138,
-    "editor_attempts": 127,
+    "segments_captured": 148,
+    "segments_transcribed": 139,
+    "editor_attempts": 128,
     "editor_withheld": 103,
     "topics_published": 27,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-10-31T16:58:37.292538+00:00"
+    "last_audio_at": "2026-10-31T16:59:02.672362+00:00"
   }
 }
