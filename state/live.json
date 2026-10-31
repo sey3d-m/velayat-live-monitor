@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T17:15:57.782618+00:00",
-  "updated_at": "2026-10-31T18:25:55.529868+00:00",
+  "updated_at": "2026-10-31T18:26:44.035943+00:00",
   "items": [
     {
       "title": "بررسی ویژگی‌های زندگی مشترک امام علی و حضرت زهرا",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 140,
-    "segments_transcribed": 130,
-    "editor_attempts": 114,
-    "editor_withheld": 111,
+    "segments_captured": 142,
+    "segments_transcribed": 131,
+    "editor_attempts": 115,
+    "editor_withheld": 112,
     "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T18:25:50.910752+00:00"
+    "last_audio_at": "2026-10-31T18:26:39.087823+00:00"
   }
 }
