@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T17:15:57.782618+00:00",
-  "updated_at": "2026-10-31T18:13:22.202148+00:00",
+  "updated_at": "2026-10-31T18:13:24.363870+00:00",
   "items": [
     {
       "title": "بررسی ویژگی‌های زندگی مشترک امام علی و حضرت زهرا",
@@ -58,6 +58,18 @@
       "sequence": 98,
       "updated_at": "2026-10-31T18:09:37.802082+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی رابطه اختیار انسان و قضا و قدر الهی",
+      "summary": "در این بخش کارشناس استدلال می‌کند که اختیار انسان در طول قضا و قدر الهی قرار دارد و خداوند مقدر کرده است که انسان برخی از کارهای خود را با اختیار انجام دهد. به گفته وی، تبیین این موضوع نیازمند چندین جلد کتاب است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41223525423-107",
+      "sequence": 107,
+      "updated_at": "2026-10-31T18:13:24.363845+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -65,7 +77,7 @@
     "segments_transcribed": 99,
     "editor_attempts": 84,
     "editor_withheld": 82,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-10-31T18:13:06.561626+00:00"
