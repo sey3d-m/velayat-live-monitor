@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-10-31",
   "started_at": "2026-10-31T17:15:57.782618+00:00",
-  "updated_at": "2026-10-31T17:36:20.358454+00:00",
+  "updated_at": "2026-10-31T17:36:58.507123+00:00",
   "items": [
     {
       "title": "بررسی ویژگی‌های زندگی مشترک امام علی و حضرت زهرا",
@@ -20,16 +20,28 @@
       "sequence": 6,
       "updated_at": "2026-10-31T17:33:09.282583+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی مرجعیت علمی فاطمه زهرا سلام‌الله‌علیها بر اساس گفتار کارشناس",
+      "summary": "در این بخش کارشناس استدلال می‌کند که فاطمه زهرا سلام‌الله‌علیها علاوه بر جایگاه معنوی، دارای مرجعیت علمی بوده‌اند و بانوان برای پرسش و دریافت راهنمایی به حضور ایشان مراجعه می‌کردند؛ به گفته وی، این مرجعیت علمی حتی در پاسخ به مسائل و راهنمایی پیروان حق در منازل گوناگون نیز جریان داشته است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.82,
+      "id": "41223525423-15",
+      "sequence": 15,
+      "updated_at": "2026-10-31T17:36:58.507106+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 16,
-    "segments_transcribed": 13,
+    "segments_captured": 17,
+    "segments_transcribed": 14,
     "editor_attempts": 9,
     "editor_withheld": 8,
-    "topics_published": 1,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T17:36:14.895683+00:00"
+    "last_audio_at": "2026-10-31T17:36:39.554381+00:00"
   }
 }
