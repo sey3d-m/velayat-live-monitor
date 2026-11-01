@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T17:14:45.441178+00:00",
-  "updated_at": "2026-11-01T17:58:44.717240+00:00",
+  "updated_at": "2026-11-01T17:58:46.049757+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره ولایت و غدیر",
-      "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41330421440-47",
-      "sequence": 47,
-      "updated_at": "2026-11-01T17:49:09.883928+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره نماز",
       "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,6 +56,18 @@
       "sequence": 54,
       "updated_at": "2026-11-01T17:51:55.584115+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ماجرای بردن امیرالمؤمنین به مسجد برای بیعت",
+      "summary": "در این بخش کارشناس استدلال می‌کند که بردن دست‌بسته امیرالمؤمنین به مسجد برای گرفتن بیعت و مقاومت کسانی که در خانه ایشان از حریم ولایت دفاع کردند، درسی بزرگ برای روزگار ما محسوب می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.8,
+      "id": "41330421440-71",
+      "sequence": 71,
+      "updated_at": "2026-11-01T17:58:46.049735+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -76,7 +75,7 @@
     "segments_transcribed": 70,
     "editor_attempts": 53,
     "editor_withheld": 44,
-    "topics_published": 12,
+    "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-01T17:58:38.825364+00:00"
