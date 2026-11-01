@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T17:14:45.441178+00:00",
-  "updated_at": "2026-11-01T18:16:17.006977+00:00",
+  "updated_at": "2026-11-01T18:17:06.596932+00:00",
   "items": [
     {
       "title": "بررسی شهادت حضرت زهرا (س) به عنوان بهترین مرگ در راه خدا",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 116,
-    "segments_transcribed": 109,
-    "editor_attempts": 87,
-    "editor_withheld": 71,
+    "segments_captured": 118,
+    "segments_transcribed": 111,
+    "editor_attempts": 89,
+    "editor_withheld": 73,
     "topics_published": 19,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T18:16:12.879734+00:00"
+    "last_audio_at": "2026-11-01T18:17:02.076442+00:00"
   }
 }
