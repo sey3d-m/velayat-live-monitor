@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T17:14:45.441178+00:00",
-  "updated_at": "2026-11-01T18:21:06.153340+00:00",
+  "updated_at": "2026-11-01T18:21:55.679398+00:00",
   "items": [
     {
       "title": "پرسش درباره توجیه تخلف از جش اسامه و ماجرای سقیفه",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 128,
-    "segments_transcribed": 121,
-    "editor_attempts": 98,
-    "editor_withheld": 79,
+    "segments_captured": 130,
+    "segments_transcribed": 123,
+    "editor_attempts": 100,
+    "editor_withheld": 81,
     "topics_published": 22,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T18:21:01.715037+00:00"
+    "last_audio_at": "2026-11-01T18:21:50.323161+00:00"
   }
 }
