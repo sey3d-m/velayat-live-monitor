@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T14:15:22.891696+00:00",
-  "updated_at": "2026-11-01T15:10:46.588559+00:00",
+  "updated_at": "2026-11-01T15:11:35.650284+00:00",
   "items": [
     {
       "title": "بررسی برد موشکی و ماهیت تسلیحات نظامی در ادبیات نظامی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 102,
-    "segments_transcribed": 95,
-    "editor_attempts": 93,
-    "editor_withheld": 82,
+    "segments_captured": 104,
+    "segments_transcribed": 97,
+    "editor_attempts": 95,
+    "editor_withheld": 84,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T15:10:35.275162+00:00"
+    "last_audio_at": "2026-11-01T15:11:25.639772+00:00"
   }
 }
