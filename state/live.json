@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T15:44:50.687868+00:00",
-  "updated_at": "2026-11-01T16:13:26.182205+00:00",
+  "updated_at": "2026-11-01T16:13:51.973148+00:00",
   "items": [
     {
       "title": "پرسش درباره ضرورت بهره‌گیری از کلام نهج‌البلاغه در دنیای امروز",
@@ -45,16 +45,28 @@
       "sequence": 11,
       "updated_at": "2026-11-01T16:04:45.726837+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره ترس از بلای خدا بر اساس روایت",
+      "summary": "در این بخش کارشناس با اشاره به عبارت خفت البلیه، این پرسش را مطرح می‌کند که آیا انسان باید از شهرد بترسد یا از بلای خدا. همچنین در ادامه به روایتی درباره ملاقات مؤمنان اشاره می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41322714464-34",
+      "sequence": 34,
+      "updated_at": "2026-11-01T16:13:51.973130+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 34,
-    "segments_transcribed": 32,
-    "editor_attempts": 30,
-    "editor_withheld": 28,
-    "topics_published": 3,
+    "segments_captured": 35,
+    "segments_transcribed": 33,
+    "editor_attempts": 31,
+    "editor_withheld": 29,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T16:13:21.329194+00:00"
+    "last_audio_at": "2026-11-01T16:13:46.308521+00:00"
   }
 }
