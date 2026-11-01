@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T17:14:45.441178+00:00",
-  "updated_at": "2026-11-01T17:47:30.011644+00:00",
+  "updated_at": "2026-11-01T17:47:54.734320+00:00",
   "items": [
-    {
-      "title": "بررسی شخصیت فرادینی و فراد تاریخی حضرت زهرا (س) در یک اثر",
-      "summary": "در این بخش کارشناس استدلال می‌کند که کتاب مورد بحث با نگاهی فرادینی و دور از تعصب نگاشته شده و قاطعانه وجود حضرت زهرا (س) را به عنوان شخصیتی فرادینی، فراترجغرافیایی و فراتاریخی معرفی می‌کند که فراتر از انتظار است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41330421440-0",
-      "sequence": 0,
-      "updated_at": "2026-11-01T17:30:41.141933+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی اسوه بودن پیامبر و ذکر روایتی درباره فاطمه زهرا",
       "summary": "در این بخش کارشناس استدلال می‌کند که روش و سیرت رسول خدا بهترین الگوست. سپس به نقل از امام صادق درباره وجود گرامی حضرت فاطمه و نقشی که در ارتباط با ولایت در آن روایت مطرح شده، اشاره می‌کند.",
@@ -69,16 +57,28 @@
       "sequence": 41,
       "updated_at": "2026-11-01T17:46:41.831644+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره استدلال امیرالمؤمنین و فاطمه زهرا در خانه مهاجران و انصار",
+      "summary": "در این بخش کارشناس ادعا می‌کند که امیرالمؤمنین، فاطمه زهرا را به خانه مهاجران و انصار می‌برد تا چهره به چهره به تبلیغ ولایت و امامت بپردازند و در این زمینه به نقل روایتی اشاره می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41330421440-44",
+      "sequence": 44,
+      "updated_at": "2026-11-01T17:47:54.734295+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 44,
-    "segments_transcribed": 42,
-    "editor_attempts": 28,
-    "editor_withheld": 24,
-    "topics_published": 5,
+    "segments_captured": 45,
+    "segments_transcribed": 43,
+    "editor_attempts": 29,
+    "editor_withheld": 25,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T17:47:25.149415+00:00"
+    "last_audio_at": "2026-11-01T17:47:49.043798+00:00"
   }
 }
