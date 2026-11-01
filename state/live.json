@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T15:44:50.687868+00:00",
-  "updated_at": "2026-11-01T16:12:43.267990+00:00",
+  "updated_at": "2026-11-01T16:13:26.182205+00:00",
   "items": [
     {
       "title": "پرسش درباره ضرورت بهره‌گیری از کلام نهج‌البلاغه در دنیای امروز",
@@ -48,13 +48,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 32,
-    "segments_transcribed": 30,
-    "editor_attempts": 28,
-    "editor_withheld": 26,
+    "segments_captured": 34,
+    "segments_transcribed": 32,
+    "editor_attempts": 30,
+    "editor_withheld": 28,
     "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T16:12:38.850598+00:00"
+    "last_audio_at": "2026-11-01T16:13:21.329194+00:00"
   }
 }
