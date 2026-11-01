@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T17:14:45.441178+00:00",
-  "updated_at": "2026-11-01T17:44:52.835830+00:00",
+  "updated_at": "2026-11-01T17:45:02.216716+00:00",
   "items": [
     {
       "title": "بررسی شخصیت فرادینی و فراد تاریخی حضرت زهرا (س) در یک اثر",
@@ -59,13 +59,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 37,
-    "segments_transcribed": 35,
-    "editor_attempts": 21,
+    "segments_captured": 38,
+    "segments_transcribed": 36,
+    "editor_attempts": 22,
     "editor_withheld": 18,
     "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T17:44:34.070827+00:00"
+    "last_audio_at": "2026-11-01T17:44:57.993797+00:00"
   }
 }
