@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T17:14:45.441178+00:00",
-  "updated_at": "2026-11-01T18:05:53.384884+00:00",
+  "updated_at": "2026-11-01T18:06:51.801935+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره آمدن ماهیان به سطح آب در روزهای شنبه",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 90,
-    "segments_transcribed": 84,
-    "editor_attempts": 65,
-    "editor_withheld": 52,
+    "segments_captured": 92,
+    "segments_transcribed": 86,
+    "editor_attempts": 67,
+    "editor_withheld": 54,
     "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T18:05:48.363765+00:00"
+    "last_audio_at": "2026-11-01T18:06:36.548135+00:00"
   }
 }
