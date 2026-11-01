@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T14:15:22.891696+00:00",
-  "updated_at": "2026-11-01T14:41:12.774526+00:00",
+  "updated_at": "2026-11-01T14:41:14.027415+00:00",
   "items": [
     {
       "title": "پرسش درباره مدت مقاومت مردم خرمشهر در جنگ تحمیلی",
@@ -31,14 +31,27 @@
       "sequence": 25,
       "updated_at": "2026-11-01T14:40:24.394053+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره حدیث و روایت",
+      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41315169831-27",
+      "sequence": 27,
+      "updated_at": "2026-11-01T14:41:14.027387+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 28,
     "segments_transcribed": 25,
     "editor_attempts": 25,
-    "editor_withheld": 22,
-    "topics_published": 2,
+    "editor_withheld": 23,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-01T14:41:05.543517+00:00"
