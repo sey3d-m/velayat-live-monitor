@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T17:14:45.441178+00:00",
-  "updated_at": "2026-11-01T18:17:07.828944+00:00",
+  "updated_at": "2026-11-01T18:17:32.450376+00:00",
   "items": [
-    {
-      "title": "بررسی دفاع عملی از امامت در سخنان کارشناس",
-      "summary": "در این بخش کارشناس استدلال می‌کند که حضرت زهرا (س) با تحمل سختی‌ها، درس دفاع میدانی و عملی از امامت، ولایت و صراط مستقیم را به نمایش گذاشتند. این روایت به عنوان الگو مطرح شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41330421440-76",
-      "sequence": 76,
-      "updated_at": "2026-11-01T18:00:41.255236+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره سرپیچی از حرکت در جیش اسامه",
       "summary": "در این بخش کارشناس استدلال می‌کند که با وجود فرمان صریح پیامبر اکرم مبنی بر لزوم حرکت همگان در سپاه اسامه، برخی افراد از این فرمان سر باز زدند و نرفتند؛ این در حالی بود که پیامبر در بستر بیماری قرار داشتند.",
@@ -67,16 +55,28 @@
       "sequence": 117,
       "updated_at": "2026-11-01T18:17:07.828918+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره نقش فاطمه زهرا در بنیان‌گذاری جهاد تبیین و حضور سیاسی و اجتماعی",
+      "summary": "در این بخش کارشناس استدلال می‌کند که حضور در صحنه سیاسی و اجتماعی و جهاد تبیین توسط فاطمه زهرا بنیان گذاشته شده است. به گفته وی، این حضور آگاهانه و مؤمنانه شامل زنان و مردان می‌شود و به جنسیت خاصی محدود نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41330421440-118",
+      "sequence": 118,
+      "updated_at": "2026-11-01T18:17:32.450350+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 118,
-    "segments_transcribed": 111,
-    "editor_attempts": 89,
+    "segments_captured": 119,
+    "segments_transcribed": 112,
+    "editor_attempts": 90,
     "editor_withheld": 73,
-    "topics_published": 20,
+    "topics_published": 21,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T18:17:02.076442+00:00"
+    "last_audio_at": "2026-11-01T18:17:26.779373+00:00"
   }
 }
