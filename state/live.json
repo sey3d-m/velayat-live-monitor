@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T14:15:22.891696+00:00",
-  "updated_at": "2026-11-01T15:04:02.906535+00:00",
+  "updated_at": "2026-11-01T15:04:23.875955+00:00",
   "items": [
     {
       "title": "بررسی تکیه نظام بر مردم و رزمندگان در بازدارندگی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 85,
-    "segments_transcribed": 78,
-    "editor_attempts": 76,
+    "segments_captured": 86,
+    "segments_transcribed": 79,
+    "editor_attempts": 77,
     "editor_withheld": 68,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T15:03:51.771045+00:00"
+    "last_audio_at": "2026-11-01T15:04:17.191177+00:00"
   }
 }
