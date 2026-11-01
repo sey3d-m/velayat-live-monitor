@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "41315169831",
-  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "session": "41322714464",
+  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-01",
-  "started_at": "2026-11-01T14:15:22.891696+00:00",
-  "updated_at": "2026-11-01T15:40:03.502311+00:00",
-  "items": [
-    {
-      "title": "بررسی استدلال امداد غیبی ملائکه در جنگ",
-      "summary": "در این بخش کارشناس استدلال می‌کند که در جنگ، ملائکه برای یاری مؤمنان آمده‌اند و به حضور گروه‌های فرشتگان در کنار تعداد کم مؤمنان اشاره می‌کند؛ به گفته وی، این امداد الهی برای کمک به آنان صورت گرفته است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.82,
-      "id": "41315169831-95",
-      "sequence": 95,
-      "updated_at": "2026-11-01T15:08:20.229058+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره استناد به اعترافات اروپاییان در همراهی با آمریکا",
-      "summary": "در این بخش کارشناس استدلال می‌کند که پایگاه‌های کشورهای اروپایی از جمله آلمان، فرانسه و انگلستان پایگاه‌های آمریکا بوده‌اند. به گفته کارشناس، خود اروپاییان اعتراف کرده‌اند که در جنگ اخیر هم‌پیمان آمریکا بوده‌اند و فیلم و سند آن نیز موجود است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41315169831-103",
-      "sequence": 103,
-      "updated_at": "2026-11-01T15:11:37.828026+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی استقامت در برابر دشمن با استناد به سوره فتح",
-      "summary": "در این بخش کارشناس استدلال می‌کند که به پیروی از آیات قرآن کریم نباید در برابر دشمن ترسید و فرار کرد، بلکه باید ایستادگی نمود؛ وی برای این ادعا به سوره فتح استناد می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41315169831-105",
-      "sequence": 105,
-      "updated_at": "2026-11-01T15:12:23.949962+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره آیه آرامش قلب مؤمنین در شرایط جنگی",
-      "summary": "در این بخش کارشناس به پرسشی درباره وضعیت آرامش، نصرت و پیروزی در ایام جنگ پاسخ می‌دهد و با استناد به آیه ذکرشده در گفتار، استدلال می‌کند که خداوند آرامش را در شرایط تهدید و جنگ به قلب مؤمنین نازل می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41315169831-106",
-      "sequence": 106,
-      "updated_at": "2026-11-01T15:12:46.898582+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی شرط نصرت الهی و استقامت بر آرمان‌ها بر اساس قرآن",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که اگر ملتی بر اساس باورهای قرآنی اهل استقامت و ایستادگی پای آرمان‌های الهی و دین خدا باشد، خداوند قطعاً او را عزیز می‌کند. وی در این زمینه به آیه‌ای از قرآن درباره عزت‌بخشی الهی استناد می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41315169831-135",
-      "sequence": 135,
-      "updated_at": "2026-11-01T15:24:20.108938+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-01T15:44:50.687868+00:00",
+  "updated_at": "2026-11-01T16:00:00.000292+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 149,
-    "editor_attempts": 132,
-    "editor_withheld": 118,
-    "topics_published": 16,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T15:39:52.682694+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
