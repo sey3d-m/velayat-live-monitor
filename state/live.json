@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T14:15:22.891696+00:00",
-  "updated_at": "2026-11-01T15:03:35.407851+00:00",
+  "updated_at": "2026-11-01T15:04:02.906535+00:00",
   "items": [
-    {
-      "title": "پرسش درباره نقش مردم آبادان و عملیات کوی ذوالفقاری",
-      "summary": "در این بخش کارشناس درباره ایستادگی مردم آبادان و جلوگیری از ورود دشمن به شهر گفتگو می‌کند. به گفته کارشناس، این مقاومت تاریخی در قالب عملیات کوی ذوالفقاری شناخته می‌شود و ماجرا از زمان حرکت نیروها به سمت آبادان آغاز شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "41315169831-32",
-      "sequence": 32,
-      "updated_at": "2026-11-01T14:43:18.383383+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی تکیه نظام بر مردم و رزمندگان در بازدارندگی",
       "summary": "در این بخش کارشناس استدلال می‌کند که مدل نظام برپایه بازدارندگی متکی بر دوش رزمندگان و حضور مردم شکل گرفته است؛ به گفته وی نمونه این الگو در آمریکا و اروپا دیده نمی‌شود و این مؤلفه مانع ورود دشمن است.",
@@ -67,16 +55,29 @@
       "sequence": 69,
       "updated_at": "2026-11-01T14:58:02.369888+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41315169831-84",
+      "sequence": 84,
+      "updated_at": "2026-11-01T15:04:02.906509+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 84,
-    "segments_transcribed": 77,
-    "editor_attempts": 75,
-    "editor_withheld": 66,
-    "topics_published": 9,
+    "segments_captured": 85,
+    "segments_transcribed": 78,
+    "editor_attempts": 76,
+    "editor_withheld": 68,
+    "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T15:03:28.633575+00:00"
+    "last_audio_at": "2026-11-01T15:03:51.771045+00:00"
   }
 }
