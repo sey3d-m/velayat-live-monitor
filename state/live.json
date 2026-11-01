@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T14:15:22.891696+00:00",
-  "updated_at": "2026-11-01T15:24:20.108960+00:00",
+  "updated_at": "2026-11-01T15:25:29.586998+00:00",
   "items": [
     {
       "title": "بررسی استدلال امداد غیبی ملائکه در جنگ",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 136,
-    "segments_transcribed": 127,
-    "editor_attempts": 123,
-    "editor_withheld": 109,
+    "segments_captured": 138,
+    "segments_transcribed": 129,
+    "editor_attempts": 125,
+    "editor_withheld": 110,
     "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T15:24:11.663189+00:00"
+    "last_audio_at": "2026-11-01T15:25:01.098490+00:00"
   }
 }
