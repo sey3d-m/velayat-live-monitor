@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T17:14:45.441178+00:00",
-  "updated_at": "2026-11-01T17:40:19.817367+00:00",
+  "updated_at": "2026-11-01T17:40:26.859746+00:00",
   "items": [
     {
       "title": "بررسی شخصیت فرادینی و فراد تاریخی حضرت زهرا (س) در یک اثر",
@@ -31,6 +31,18 @@
       "sequence": 18,
       "updated_at": "2026-11-01T17:37:40.835380+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره رویداد تاریخی گریه در خانه عایشه و واکنش عمر",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که عایشه در خانه خود مجلس عزاداری و گریه برپا کرده بود و عمر با ورود به خانه، زن‌ها را متفرق کرد و دستور داد برای مرگ کسی گریه نکنند. به گفته کارشناس، این تفکر اصحاب سقیفه بوده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41330421440-25",
+      "sequence": 25,
+      "updated_at": "2026-11-01T17:40:26.859724+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -38,7 +50,7 @@
     "segments_transcribed": 24,
     "editor_attempts": 12,
     "editor_withheld": 9,
-    "topics_published": 2,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-01T17:40:15.445382+00:00"
