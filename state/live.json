@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T17:14:45.441178+00:00",
-  "updated_at": "2026-11-01T18:24:17.496796+00:00",
+  "updated_at": "2026-11-01T18:25:04.027508+00:00",
   "items": [
     {
       "title": "پرسش درباره سخنرانی حضرت فاطمه در مسجد و سابقه آن",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 136,
-    "segments_transcribed": 129,
-    "editor_attempts": 105,
-    "editor_withheld": 86,
+    "segments_captured": 138,
+    "segments_transcribed": 131,
+    "editor_attempts": 106,
+    "editor_withheld": 87,
     "topics_published": 23,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T18:24:11.714938+00:00"
+    "last_audio_at": "2026-11-01T18:25:00.569252+00:00"
   }
 }
