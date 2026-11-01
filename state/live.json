@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T15:44:50.687868+00:00",
-  "updated_at": "2026-11-01T16:42:15.229608+00:00",
+  "updated_at": "2026-11-01T16:43:04.467549+00:00",
   "items": [
     {
       "title": "پرسش درباره میزان علاقه و محبت به برادر مؤمن",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 106,
-    "segments_transcribed": 99,
-    "editor_attempts": 96,
-    "editor_withheld": 89,
+    "segments_captured": 108,
+    "segments_transcribed": 101,
+    "editor_attempts": 98,
+    "editor_withheld": 91,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T16:42:09.632519+00:00"
+    "last_audio_at": "2026-11-01T16:42:59.253101+00:00"
   }
 }
