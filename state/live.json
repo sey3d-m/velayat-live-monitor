@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T14:15:22.891696+00:00",
-  "updated_at": "2026-11-01T15:04:23.875955+00:00",
+  "updated_at": "2026-11-01T15:04:50.817000+00:00",
   "items": [
-    {
-      "title": "بررسی تکیه نظام بر مردم و رزمندگان در بازدارندگی",
-      "summary": "در این بخش کارشناس استدلال می‌کند که مدل نظام برپایه بازدارندگی متکی بر دوش رزمندگان و حضور مردم شکل گرفته است؛ به گفته وی نمونه این الگو در آمریکا و اروپا دیده نمی‌شود و این مؤلفه مانع ورود دشمن است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "41315169831-51",
-      "sequence": 51,
-      "updated_at": "2026-11-01T14:50:51.516260+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی ماهیت دفاعی سیستم نظامی و تمرکز بر تولید موشک",
       "summary": "در این بخش کارشناس استدلال می‌کند که پیام مکتب اسلام لزوم دفاع در برابر حمله دیگران است و سیستم نظامی کشور کاملاً به صورت دفاعی طراحی شده است. به گفته وی، تمرکز اصلی در سده گذشته بر روی ساخت و تولید موشک بوده و کشور به سمت جنگ‌طلبی نرفته است.",
@@ -68,16 +56,28 @@
       "sequence": 84,
       "updated_at": "2026-11-01T15:04:02.906509+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره استقامت و نقش آن در برابر دشمنان",
+      "summary": "در این بخش کارشناس استدلال می‌کند که ایستادگی در راه خدا و استقامت مؤمنان همچون سد پولادین در برابر دشمنان است. به گفته وی، با تدبر در قرآن و اشاره به آیه مطرح‌شده، تلاش‌های دشمنان خنثی می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41315169831-86",
+      "sequence": 86,
+      "updated_at": "2026-11-01T15:04:50.816975+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 86,
-    "segments_transcribed": 79,
-    "editor_attempts": 77,
-    "editor_withheld": 68,
-    "topics_published": 10,
+    "segments_captured": 87,
+    "segments_transcribed": 80,
+    "editor_attempts": 78,
+    "editor_withheld": 69,
+    "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T15:04:17.191177+00:00"
+    "last_audio_at": "2026-11-01T15:04:42.109558+00:00"
   }
 }
