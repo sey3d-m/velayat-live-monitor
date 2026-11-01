@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T14:15:22.891696+00:00",
-  "updated_at": "2026-11-01T14:42:58.042802+00:00",
+  "updated_at": "2026-11-01T14:43:18.383411+00:00",
   "items": [
     {
       "title": "پرسش درباره مدت مقاومت مردم خرمشهر در جنگ تحمیلی",
@@ -56,16 +56,28 @@
       "sequence": 29,
       "updated_at": "2026-11-01T14:42:04.409195+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره نقش مردم آبادان و عملیات کوی ذوالفقاری",
+      "summary": "در این بخش کارشناس درباره ایستادگی مردم آبادان و جلوگیری از ورود دشمن به شهر گفتگو می‌کند. به گفته کارشناس، این مقاومت تاریخی در قالب عملیات کوی ذوالفقاری شناخته می‌شود و ماجرا از زمان حرکت نیروها به سمت آبادان آغاز شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.8,
+      "id": "41315169831-32",
+      "sequence": 32,
+      "updated_at": "2026-11-01T14:43:18.383383+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 32,
-    "segments_transcribed": 29,
-    "editor_attempts": 29,
-    "editor_withheld": 25,
-    "topics_published": 4,
+    "segments_captured": 33,
+    "segments_transcribed": 30,
+    "editor_attempts": 30,
+    "editor_withheld": 26,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T14:42:44.165944+00:00"
+    "last_audio_at": "2026-11-01T14:43:09.347416+00:00"
   }
 }
