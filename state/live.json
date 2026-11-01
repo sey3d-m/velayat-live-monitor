@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T17:14:45.441178+00:00",
-  "updated_at": "2026-11-01T18:13:07.365615+00:00",
+  "updated_at": "2026-11-01T18:13:29.654038+00:00",
   "items": [
-    {
-      "title": "پرسش درباره جایگاه فاطمه زهرا و شهادت در دفاع از ولایت",
-      "summary": "در این بخش، کارشناس درباره جایگاه فاطمه زهرا (س) در نزد خدا و قیامت استدلال می‌کند و به نقل از قرآن، به شهادت ایشان در راه دفاع از ولایت اشاره می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "41330421440-73",
-      "sequence": 73,
-      "updated_at": "2026-11-01T17:59:35.593690+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی شهادت حضرت زهرا (س) به عنوان بهترین مرگ در راه خدا",
       "summary": "در این بخش کارشناس استدلال می‌کند که جان‌دادن در راه خدا بهترین مرگ است و فاطمه زهرا (س) شهادت را انتخاب کرد؛ زیرا می‌دانست اگر از امامت و ولایت دفاع کند و با اصحاب سقیفه مخالفت نماید، او را به شهادت می‌رسانند.",
@@ -67,16 +55,28 @@
       "sequence": 101,
       "updated_at": "2026-11-01T18:10:42.257850+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره سخنرانی حضرت فاطمه در مسجد و سابقه آن",
+      "summary": "در این بخش کارشناس ادعا می‌کند که سخنرانی کردن زنان در برابر مردان یا اجتماع زنان و ایراد سخن، همانند آنچه به گفته او درباره فاطمه زهرا مطرح شده و درخواست حضور در مسجد برای سخنرانی داشته است، پیش از آن سابقه نداشته است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.8,
+      "id": "41330421440-108",
+      "sequence": 108,
+      "updated_at": "2026-11-01T18:13:29.653988+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 108,
-    "segments_transcribed": 101,
-    "editor_attempts": 80,
-    "editor_withheld": 65,
-    "topics_published": 18,
+    "segments_captured": 109,
+    "segments_transcribed": 102,
+    "editor_attempts": 81,
+    "editor_withheld": 66,
+    "topics_published": 19,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T18:13:03.426493+00:00"
+    "last_audio_at": "2026-11-01T18:13:22.510852+00:00"
   }
 }
