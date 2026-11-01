@@ -1,21 +1,34 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "41315169831",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T14:15:22.891696+00:00",
-  "updated_at": "2026-11-01T14:39:39.791101+00:00",
-  "items": [],
+  "updated_at": "2026-11-01T14:40:01.754425+00:00",
+  "items": [
+    {
+      "title": "پرسش درباره مدت مقاومت مردم خرمشهر در جنگ تحمیلی",
+      "summary": "در این بخش کارشناس استدلال می‌کند که چهل روز پس از آغاز جنگ تحمیلی در سی‌ویکم شهریور سال پنجاه‌ودو، مردم خرمشهر به مدت سی‌وپنج روز با دست خالی مقاومت کرده‌اند و از کسانی که تاریخ را کمتر می‌خوانند می‌خواهد به مطالعه این وقایع بپردازند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41315169831-24",
+      "sequence": 24,
+      "updated_at": "2026-11-01T14:40:01.754399+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 24,
-    "segments_transcribed": 21,
-    "editor_attempts": 21,
-    "editor_withheld": 20,
-    "topics_published": 0,
+    "segments_captured": 25,
+    "segments_transcribed": 22,
+    "editor_attempts": 22,
+    "editor_withheld": 21,
+    "topics_published": 1,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T14:39:32.713505+00:00"
+    "last_audio_at": "2026-11-01T14:39:52.083334+00:00"
   }
 }
