@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T14:15:22.891696+00:00",
-  "updated_at": "2026-11-01T14:54:49.250495+00:00",
+  "updated_at": "2026-11-01T14:55:39.042493+00:00",
   "items": [
     {
       "title": "بررسی نقش غیرت دینی و استقامت مردم در حفظ کشور",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 62,
-    "segments_transcribed": 59,
-    "editor_attempts": 59,
-    "editor_withheld": 53,
+    "segments_captured": 64,
+    "segments_transcribed": 61,
+    "editor_attempts": 61,
+    "editor_withheld": 55,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T14:54:42.646940+00:00"
+    "last_audio_at": "2026-11-01T14:55:31.981526+00:00"
   }
 }
