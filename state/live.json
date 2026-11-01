@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T14:15:22.891696+00:00",
-  "updated_at": "2026-11-01T14:59:40.353423+00:00",
+  "updated_at": "2026-11-01T15:00:25.228471+00:00",
   "items": [
     {
       "title": "پرسش درباره نقش مردم آبادان و عملیات کوی ذوالفقاری",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 74,
-    "segments_transcribed": 71,
-    "editor_attempts": 71,
-    "editor_withheld": 62,
+    "segments_captured": 76,
+    "segments_transcribed": 73,
+    "editor_attempts": 73,
+    "editor_withheld": 64,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T14:59:32.549418+00:00"
+    "last_audio_at": "2026-11-01T15:00:16.658776+00:00"
   }
 }
