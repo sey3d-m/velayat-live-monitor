@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T15:44:50.687868+00:00",
-  "updated_at": "2026-11-01T16:45:31.470476+00:00",
+  "updated_at": "2026-11-01T16:45:32.632670+00:00",
   "items": [
-    {
-      "title": "پرسش درباره میزان علاقه و محبت به برادر مؤمن",
-      "summary": "در این بخش، کارشناس درباره نحوه تقسیم محبت و علاقه میان برادران مؤمن نکاتی را مطرح می‌کند و استدلال می‌کند که بهره کامل از این محبت به کسی می‌رسد که کمتر از دیگری به خویشتن توجه دارد و در صورت تساوی علاقه دوطرفه، وضعیت متفاوتی شکل می‌گیرد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41322714464-36",
-      "sequence": 36,
-      "updated_at": "2026-11-01T16:14:42.213825+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره نقش تلاش فردی در بهره‌مندی از پرتوهای هدایت",
       "summary": "در این بخش، کارشناس استدلال می‌کند که بهره‌مندی از هدایت نیازمند تلاش درونی است؛ او این روند را به جریان برق شهری تشبیه می‌کند که برای تبدیل شدن به نور، نیازمند اقداماتی در داخل منزل است.",
@@ -68,14 +56,27 @@
       "sequence": 100,
       "updated_at": "2026-11-01T16:40:18.692662+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره احکام طهارت",
+      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41322714464-113",
+      "sequence": 113,
+      "updated_at": "2026-11-01T16:45:32.632651+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 114,
     "segments_transcribed": 107,
     "editor_attempts": 103,
-    "editor_withheld": 96,
-    "topics_published": 9,
+    "editor_withheld": 97,
+    "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-01T16:45:26.680570+00:00"
