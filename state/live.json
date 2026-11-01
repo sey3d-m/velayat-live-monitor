@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T17:14:45.441178+00:00",
-  "updated_at": "2026-11-01T18:29:53.896841+00:00",
+  "updated_at": "2026-11-01T18:30:43.190924+00:00",
   "items": [
     {
       "title": "پرسش درباره کیفیت و احکام جهاد زنان در اسلام",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 150,
-    "segments_transcribed": 141,
-    "editor_attempts": 114,
-    "editor_withheld": 94,
+    "segments_captured": 152,
+    "segments_transcribed": 143,
+    "editor_attempts": 115,
+    "editor_withheld": 95,
     "topics_published": 24,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T18:29:48.463391+00:00"
+    "last_audio_at": "2026-11-01T18:30:38.316879+00:00"
   }
 }
