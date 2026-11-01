@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "41322714464",
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T15:44:50.687868+00:00",
-  "updated_at": "2026-11-01T16:03:05.994482+00:00",
-  "items": [],
+  "updated_at": "2026-11-01T16:03:10.239168+00:00",
+  "items": [
+    {
+      "title": "پرسش درباره ضرورت بهره‌گیری از کلام نهج‌البلاغه در دنیای امروز",
+      "summary": "در این بخش کارشناس استدلال می‌کند که نهج‌البلاغه امیرالمؤمنین علی بن ابی‌طالب (ع) هدیه‌ای بزرگ از سوی خداوند است و تأکید می‌کند که باید در هر لحظه از آن درس گرفت و این کلام آسمانی را وارد زندگی و دنیای امروز کرد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.95,
+      "editor_mode": "audio_grounded_topic",
+      "id": "41322714464-7",
+      "sequence": 7,
+      "updated_at": "2026-11-01T16:03:10.239143+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
     "segments_captured": 8,
     "segments_transcribed": 6,
     "editor_attempts": 4,
-    "editor_withheld": 3,
-    "topics_published": 0,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
+    "editor_withheld": 4,
+    "topics_published": 1,
+    "audio_ai_calls": 2,
+    "audio_ai_success": 2,
     "last_audio_at": "2026-11-01T16:03:00.507299+00:00"
   }
 }
