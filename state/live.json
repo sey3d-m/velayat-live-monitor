@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T14:15:22.891696+00:00",
-  "updated_at": "2026-11-01T14:46:05.349887+00:00",
+  "updated_at": "2026-11-01T14:46:46.842346+00:00",
   "items": [
     {
       "title": "پرسش درباره مدت مقاومت مردم خرمشهر در جنگ تحمیلی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 40,
-    "segments_transcribed": 37,
-    "editor_attempts": 37,
-    "editor_withheld": 32,
+    "segments_captured": 42,
+    "segments_transcribed": 39,
+    "editor_attempts": 39,
+    "editor_withheld": 34,
     "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T14:45:56.840427+00:00"
+    "last_audio_at": "2026-11-01T14:46:40.055338+00:00"
   }
 }
