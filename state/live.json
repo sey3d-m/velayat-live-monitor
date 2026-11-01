@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T17:14:45.441178+00:00",
-  "updated_at": "2026-11-01T18:22:43.903917+00:00",
+  "updated_at": "2026-11-01T18:23:08.598089+00:00",
   "items": [
-    {
-      "title": "پرسش درباره توجیه تخلف از جش اسامه و ماجرای سقیفه",
-      "summary": "در این بخش کارشناس درباره لزوم شرکت همگان در جیش اسامه و عدم ماندن در مدینه سخن می‌گوید. او این توجیه را که عده‌ای به دلیل وخامت حال پیامبر (ص) در مدینه ماندند نادرست می‌داند و با طرح پرسشی، بر چیستی انگیزه آنان در جریان سقیفه تأکید می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41330421440-101",
-      "sequence": 101,
-      "updated_at": "2026-11-01T18:10:42.257850+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره سخنرانی حضرت فاطمه در مسجد و سابقه آن",
       "summary": "در این بخش کارشناس ادعا می‌کند که سخنرانی کردن زنان در برابر مردان یا اجتماع زنان و ایراد سخن، همانند آنچه به گفته او درباره فاطمه زهرا مطرح شده و درخواست حضور در مسجد برای سخنرانی داشته است، پیش از آن سابقه نداشته است.",
@@ -67,16 +55,29 @@
       "sequence": 122,
       "updated_at": "2026-11-01T18:19:03.819856+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره حدیث و روایت",
+      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41330421440-132",
+      "sequence": 132,
+      "updated_at": "2026-11-01T18:23:08.598064+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 132,
-    "segments_transcribed": 125,
-    "editor_attempts": 101,
-    "editor_withheld": 83,
-    "topics_published": 22,
+    "segments_captured": 133,
+    "segments_transcribed": 126,
+    "editor_attempts": 102,
+    "editor_withheld": 84,
+    "topics_published": 23,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T18:22:39.646708+00:00"
+    "last_audio_at": "2026-11-01T18:22:58.121749+00:00"
   }
 }
