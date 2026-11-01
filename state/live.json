@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T17:14:45.441178+00:00",
-  "updated_at": "2026-11-01T18:08:21.458833+00:00",
+  "updated_at": "2026-11-01T18:09:02.483455+00:00",
   "items": [
     {
       "title": "بررسی ماجرای بردن امیرالمؤمنین به مسجد برای بیعت",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 96,
-    "segments_transcribed": 89,
-    "editor_attempts": 70,
+    "segments_captured": 98,
+    "segments_transcribed": 91,
+    "editor_attempts": 71,
     "editor_withheld": 57,
     "topics_published": 17,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T18:08:15.319666+00:00"
+    "last_audio_at": "2026-11-01T18:08:57.859453+00:00"
   }
 }
