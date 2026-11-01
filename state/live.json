@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T17:14:45.441178+00:00",
-  "updated_at": "2026-11-01T18:38:36.395500+00:00",
+  "updated_at": "2026-11-01T18:39:25.660300+00:00",
   "items": [
     {
       "title": "پرسش درباره نقش فاطمه زهرا در بنیان‌گذاری جهاد تبیین و حضور سیاسی و اجتماعی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 172,
+    "segments_captured": 174,
     "segments_transcribed": 147,
     "editor_attempts": 118,
     "editor_withheld": 98,
     "topics_published": 25,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T18:38:36.333361+00:00"
+    "last_audio_at": "2026-11-01T18:39:25.595224+00:00"
   }
 }
