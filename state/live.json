@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T15:44:50.687868+00:00",
-  "updated_at": "2026-11-01T16:59:07.282932+00:00",
+  "updated_at": "2026-11-01T16:59:27.753472+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره گرامیداشت ایام فاطمیه و دعا برای ظهور",
-      "summary": "در این بخش کارشناس به مناسبت ایام فاطمیه و شهادت حضرت فاطمه زهرا سلام‌الله‌علیها، بر ذکر صلوات خاصه و عرض ارادت به ساحت آن حضرت تأکید می‌کند. همچنین در ادامه، ابراز امیدواری می‌شود که توفیق الهی شامل حال مؤمنان برای درک روزگار ظهور و انتقام الهی گردد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41322714464-91",
-      "sequence": 91,
-      "updated_at": "2026-11-01T16:36:53.938899+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
       "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +57,28 @@
       "sequence": 146,
       "updated_at": "2026-11-01T16:58:43.951154+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره استدلال کارشناس پیرامون آیات قرآن و صفات پیامبر",
+      "summary": "در این بخش کارشناس به استناد متن مطرح می‌کند که رسولی از خود شما آمده که سختی‌های شما برای او ناگوار است و نسبت به مؤمنان رئوف و مهربان است، و در این زمینه به طرح نکاتی می‌پردازد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41322714464-148",
+      "sequence": 148,
+      "updated_at": "2026-11-01T16:59:27.753443+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 148,
-    "segments_transcribed": 140,
-    "editor_attempts": 130,
-    "editor_withheld": 121,
-    "topics_published": 12,
+    "segments_captured": 149,
+    "segments_transcribed": 141,
+    "editor_attempts": 131,
+    "editor_withheld": 122,
+    "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T16:59:02.882569+00:00"
+    "last_audio_at": "2026-11-01T16:59:21.329855+00:00"
   }
 }
