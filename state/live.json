@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T14:15:22.891696+00:00",
-  "updated_at": "2026-11-01T15:14:43.522543+00:00",
+  "updated_at": "2026-11-01T15:15:32.571932+00:00",
   "items": [
     {
       "title": "پرسش درباره استقامت و نقش آن در برابر دشمنان",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 112,
-    "segments_transcribed": 105,
-    "editor_attempts": 103,
-    "editor_withheld": 89,
+    "segments_captured": 114,
+    "segments_transcribed": 107,
+    "editor_attempts": 105,
+    "editor_withheld": 91,
     "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T15:14:36.285734+00:00"
+    "last_audio_at": "2026-11-01T15:15:25.537654+00:00"
   }
 }
