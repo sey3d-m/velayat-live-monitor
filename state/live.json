@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T15:44:50.687868+00:00",
-  "updated_at": "2026-11-01T16:39:53.886366+00:00",
+  "updated_at": "2026-11-01T16:40:18.692687+00:00",
   "items": [
-    {
-      "title": "پرسش درباره ترس از بلای خدا بر اساس روایت",
-      "summary": "در این بخش کارشناس با اشاره به عبارت خفت البلیه، این پرسش را مطرح می‌کند که آیا انسان باید از شهرد بترسد یا از بلای خدا. همچنین در ادامه به روایتی درباره ملاقات مؤمنان اشاره می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41322714464-34",
-      "sequence": 34,
-      "updated_at": "2026-11-01T16:13:51.973130+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره میزان علاقه و محبت به برادر مؤمن",
       "summary": "در این بخش، کارشناس درباره نحوه تقسیم محبت و علاقه میان برادران مؤمن نکاتی را مطرح می‌کند و استدلال می‌کند که بهره کامل از این محبت به کسی می‌رسد که کمتر از دیگری به خویشتن توجه دارد و در صورت تساوی علاقه دوطرفه، وضعیت متفاوتی شکل می‌گیرد.",
@@ -67,16 +55,29 @@
       "sequence": 91,
       "updated_at": "2026-11-01T16:36:53.938899+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41322714464-100",
+      "sequence": 100,
+      "updated_at": "2026-11-01T16:40:18.692662+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 100,
-    "segments_transcribed": 93,
-    "editor_attempts": 90,
-    "editor_withheld": 83,
-    "topics_published": 8,
+    "segments_captured": 101,
+    "segments_transcribed": 94,
+    "editor_attempts": 91,
+    "editor_withheld": 85,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T16:39:48.052604+00:00"
+    "last_audio_at": "2026-11-01T16:40:13.026082+00:00"
   }
 }
