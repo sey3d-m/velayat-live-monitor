@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T15:44:50.687868+00:00",
-  "updated_at": "2026-11-01T16:04:44.630029+00:00",
+  "updated_at": "2026-11-01T16:04:45.726852+00:00",
   "items": [
     {
       "title": "پرسش درباره ضرورت بهره‌گیری از کلام نهج‌البلاغه در دنیای امروز",
@@ -33,6 +33,18 @@
       "sequence": 10,
       "updated_at": "2026-11-01T16:04:33.089341+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره تفکر در کلام امیرالمؤمنین",
+      "summary": "در این بخش کارشناس پیشنهاد می‌کند که مخاطبان در ایام هفته فرصتی را به تفکر درباره کلام امیرالمؤمنین اختصاص داده و مفاهیم آن را در زندگی خود عملی کنند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41322714464-11",
+      "sequence": 11,
+      "updated_at": "2026-11-01T16:04:45.726837+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -40,7 +52,7 @@
     "segments_transcribed": 10,
     "editor_attempts": 8,
     "editor_withheld": 7,
-    "topics_published": 2,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-01T16:04:39.356157+00:00"
