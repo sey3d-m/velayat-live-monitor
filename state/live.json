@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T15:44:50.687868+00:00",
-  "updated_at": "2026-11-01T16:25:33.168109+00:00",
+  "updated_at": "2026-11-01T16:26:15.718868+00:00",
   "items": [
     {
       "title": "بررسی بحث کاربردی نهج‌البلاغه در برنامه",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 64,
-    "segments_transcribed": 62,
-    "editor_attempts": 60,
-    "editor_withheld": 56,
+    "segments_captured": 66,
+    "segments_transcribed": 64,
+    "editor_attempts": 62,
+    "editor_withheld": 57,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T16:25:26.833250+00:00"
+    "last_audio_at": "2026-11-01T16:26:10.524270+00:00"
   }
 }
