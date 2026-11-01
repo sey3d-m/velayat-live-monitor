@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T14:15:22.891696+00:00",
-  "updated_at": "2026-11-01T15:07:42.085625+00:00",
+  "updated_at": "2026-11-01T15:08:19.023977+00:00",
   "items": [
     {
       "title": "بررسی ماهیت دفاعی سیستم نظامی و تمرکز بر تولید موشک",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 94,
-    "segments_transcribed": 87,
-    "editor_attempts": 85,
-    "editor_withheld": 75,
+    "segments_captured": 96,
+    "segments_transcribed": 89,
+    "editor_attempts": 87,
+    "editor_withheld": 77,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T15:07:23.055598+00:00"
+    "last_audio_at": "2026-11-01T15:08:12.742239+00:00"
   }
 }
