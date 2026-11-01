@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "ended",
   "network": "velayat_farsi",
   "session": "41315169831",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T14:15:22.891696+00:00",
-  "updated_at": "2026-11-01T15:39:36.313674+00:00",
+  "updated_at": "2026-11-01T15:40:03.502311+00:00",
   "items": [
     {
       "title": "بررسی استدلال امداد غیبی ملائکه در جنگ",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 174,
+    "segments_captured": 175,
     "segments_transcribed": 149,
     "editor_attempts": 132,
     "editor_withheld": 118,
     "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T15:39:27.341558+00:00"
+    "last_audio_at": "2026-11-01T15:39:52.682694+00:00"
   }
 }
