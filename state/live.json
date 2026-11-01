@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T14:15:22.891696+00:00",
-  "updated_at": "2026-11-01T14:40:23.257089+00:00",
+  "updated_at": "2026-11-01T14:40:24.394074+00:00",
   "items": [
     {
       "title": "پرسش درباره مدت مقاومت مردم خرمشهر در جنگ تحمیلی",
@@ -19,6 +19,18 @@
       "sequence": 24,
       "updated_at": "2026-11-01T14:40:01.754399+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نقش غیرت دینی و استقامت مردم در حفظ کشور",
+      "summary": "در این بخش کارشناس استدلال می‌کند که استقامت پنج روزه مردم خرمشهر با دست خالی مانع از تسلیم کشور در روزهای نخست شد. به گفته کارشناس، این غیرت دینی و ریشه‌های اعتقادی و مذهبی مردم است که چنین ایستادگی و مقاومت را رقم زده و به آنان اجازه تسلیم نمی‌دهد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41315169831-25",
+      "sequence": 25,
+      "updated_at": "2026-11-01T14:40:24.394053+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -26,7 +38,7 @@
     "segments_transcribed": 23,
     "editor_attempts": 23,
     "editor_withheld": 21,
-    "topics_published": 1,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-01T14:40:16.275842+00:00"
