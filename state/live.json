@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "41223525423",
-  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
-  "program_date": "2026-10-31",
-  "started_at": "2026-10-31T17:15:57.782618+00:00",
-  "updated_at": "2026-10-31T18:40:02.175254+00:00",
-  "items": [
-    {
-      "title": "بررسی شگفتی‌های آفرینش پا و استواری قامت انسان",
-      "summary": "در این بخش کارشناس درباره اهمیت شکل کشیده پا و ساختار آن استدلال می‌کند که اگر کف پا مانند توپ یا ستون چهارگوش بود، ایستادن و راه رفتن راست‌قامت برای انسان بسیار دشوار می‌شد و شکل کشیده پا به این ایستادن کمک می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "id": "41223525423-146",
-      "sequence": 146,
-      "updated_at": "2026-10-31T18:28:48.045528+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی طراحی مهندسی پای پرندگان",
-      "summary": "در این بخش کارشناس استدلال می‌کند که پای شترمرغ هنگام زمین گذاشتن پهن می‌شود تا وزن سنگین را پخش کند و در گل فرو نرود، و هنگام بلند کردن جمع می‌شود تا راحت قدم بردارد. همچنین اشاره شد که تاندون‌های پای پرندگان روی شاخه به صورت مهندسی‌شده آفریده شده‌اند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41223525423-154",
-      "sequence": 154,
-      "updated_at": "2026-10-31T18:32:01.181850+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی استناد کارشناس به آیه هفتم سوره سجده درباره خلقت انسان",
-      "summary": "در این بخش، کارشناس برای تبیین موضوعی پیرامون آفرینش، به آیه‌ای از قرآن کریم استناد می‌کند. به گفته وی، در سوره سجده و آیه هفتم، این نکته مطرح شده است که خداوند هر چیزی را به بهترین شکل آفریده و انسان را از گل پدید آورده است؛ این مطلب به عنوان شاهدی بر مبحث ذکر شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41223525423-156",
-      "sequence": 156,
-      "updated_at": "2026-10-31T18:32:45.433022+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی فرار از مسئولیت بندگی و پناه بردن به مفاهیم تصادف و تکامل",
-      "summary": "در این بخش کارشناس استدلال می‌کند که گاهی انسان برای فرار از مسئولیت بندگی و وجدان، چشم خود را بر نشانه‌ها می‌بندد و برای تبرئه خود به مفاهیمی مثل تصادف، تفکر و تکامل بی‌شعور پناه می‌برد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41223525423-158",
-      "sequence": 158,
-      "updated_at": "2026-10-31T18:33:32.425401+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره نحوه شکل‌گیری استخوان‌ها و بافت بدن انسان",
-      "summary": "در این بخش کارشناس پرسشی را مطرح می‌کند که چطور چرم، گوشت و استخوان فهمیده‌اند باید بیست‌وشش استخوان را کنار هم بگذارند، گاو را بسازند، شست را قوی‌تر کنند و لای بارهای تندن ببافند تا انسان بدون زمین خوردن روی زمین راه برود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41223525423-159",
-      "sequence": 159,
-      "updated_at": "2026-10-31T18:33:57.528038+00:00",
-      "speaker": null
-    }
-  ],
+  "session": "41315169831",
+  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "program_date": "2026-11-01",
+  "started_at": "2026-11-01T14:15:22.891696+00:00",
+  "updated_at": "2026-11-01T14:30:00.000286+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 156,
-    "editor_attempts": 140,
-    "editor_withheld": 133,
-    "topics_published": 10,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-10-31T18:39:50.599067+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
