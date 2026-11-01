@@ -1,84 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "41322714464",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "41330421440",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-01",
-  "started_at": "2026-11-01T15:44:50.687868+00:00",
-  "updated_at": "2026-11-01T17:10:07.127190+00:00",
-  "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41322714464-100",
-      "sequence": 100,
-      "updated_at": "2026-11-01T16:40:18.692662+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره احکام طهارت",
-      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41322714464-113",
-      "sequence": 113,
-      "updated_at": "2026-11-01T16:45:32.632651+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره ترس از کثرت مخالفان در مسیر اهل‌بیت",
-      "summary": "در این بخش کارشناس استدلال می‌کند که اگر مسیر انسان همان راه اهل‌بیت باشد، نباید از زیاد بودن تعداد مخالفان و معارضان ترسید و به لرزه افتاد؛ زیرا به گفته او این راه حق است و به مقصد خواهد رسید.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41322714464-134",
-      "sequence": 134,
-      "updated_at": "2026-11-01T16:54:02.566552+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره تقوا و اطاعت از فرمان الهی در گفتار کارشناس",
-      "summary": "در این بخش کارشناس درباره لزوم ترس از خدا و رعایت تقوا تا لحظه مرگ سخن می‌گوید و استدلال می‌کند که مسلمانان باید در انجام فرائض و دوری از منهیات الهی مطیع اوامر باشند، به‌طوری که بندگی خدا معیار اصلی قرار گیرد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41322714464-146",
-      "sequence": 146,
-      "updated_at": "2026-11-01T16:58:43.951154+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره استدلال کارشناس پیرامون آیات قرآن و صفات پیامبر",
-      "summary": "در این بخش کارشناس به استناد متن مطرح می‌کند که رسولی از خود شما آمده که سختی‌های شما برای او ناگوار است و نسبت به مؤمنان رئوف و مهربان است، و در این زمینه به طرح نکاتی می‌پردازد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41322714464-148",
-      "sequence": 148,
-      "updated_at": "2026-11-01T16:59:27.753443+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-01T17:14:45.441178+00:00",
+  "updated_at": "2026-11-01T17:30:00.000352+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 167,
-    "editor_attempts": 145,
-    "editor_withheld": 135,
-    "topics_published": 13,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T17:09:49.359976+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
