@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T17:14:45.441178+00:00",
-  "updated_at": "2026-11-01T17:51:05.592071+00:00",
+  "updated_at": "2026-11-01T17:51:28.273272+00:00",
   "items": [
     {
       "title": "پرسش درباره استدلال امیرالمؤمنین و فاطمه زهرا در خانه مهاجران و انصار",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 53,
-    "segments_transcribed": 51,
-    "editor_attempts": 36,
+    "segments_captured": 54,
+    "segments_transcribed": 52,
+    "editor_attempts": 37,
     "editor_withheld": 30,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T17:50:59.022091+00:00"
+    "last_audio_at": "2026-11-01T17:51:23.622703+00:00"
   }
 }
