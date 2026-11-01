@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T15:44:50.687868+00:00",
-  "updated_at": "2026-11-01T16:36:06.344454+00:00",
+  "updated_at": "2026-11-01T16:36:51.854522+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره تفکر در کلام امیرالمؤمنین",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 90,
-    "segments_transcribed": 84,
-    "editor_attempts": 81,
+    "segments_captured": 92,
+    "segments_transcribed": 85,
+    "editor_attempts": 82,
     "editor_withheld": 76,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T16:35:48.758524+00:00"
+    "last_audio_at": "2026-11-01T16:36:38.472810+00:00"
   }
 }
