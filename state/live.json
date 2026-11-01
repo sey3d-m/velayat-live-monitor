@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T17:14:45.441178+00:00",
-  "updated_at": "2026-11-01T17:51:29.358030+00:00",
+  "updated_at": "2026-11-01T17:51:55.584141+00:00",
   "items": [
-    {
-      "title": "پرسش درباره دفاع از ولایت در سخنان کارشناس",
-      "summary": "در این بخش کارشناس ادعا می‌کند که شخصیتی با وجود مصائب و فشارها، برای دفاع از ولایت امیرالمؤمنین در خانه مهاجران و انصار حضور می‌یافته و به تبلیغ می‌پرداخته است؛ این مطلب صرفاً به عنوان گزارش سخن مطرح می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "41330421440-45",
-      "sequence": 45,
-      "updated_at": "2026-11-01T17:48:19.559620+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره ولایت و غدیر",
       "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +57,28 @@
       "sequence": 53,
       "updated_at": "2026-11-01T17:51:29.357979+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره آمدن ماهیان به سطح آب در روزهای شنبه",
+      "summary": "در این بخش کارشناس ادعا می‌کند که ماهی‌های درشت در روزهای شنبه به سطح آب می‌آیند و به استخرها و حوضچه‌های کنار ساحل وارد می‌شوند. این ادعا بر اساس مشاهدات مطرح‌شده در برنامه بیان شد و نتیجه آن طرح این ویژگی خاص برای ماهیان در روزهای شنبه بود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41330421440-54",
+      "sequence": 54,
+      "updated_at": "2026-11-01T17:51:55.584115+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 54,
-    "segments_transcribed": 52,
-    "editor_attempts": 37,
+    "segments_captured": 55,
+    "segments_transcribed": 53,
+    "editor_attempts": 38,
     "editor_withheld": 30,
-    "topics_published": 11,
+    "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T17:51:23.622703+00:00"
+    "last_audio_at": "2026-11-01T17:51:48.285797+00:00"
   }
 }
