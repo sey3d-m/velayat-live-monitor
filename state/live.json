@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T15:44:50.687868+00:00",
-  "updated_at": "2026-11-01T16:55:01.278234+00:00",
+  "updated_at": "2026-11-01T16:55:52.339970+00:00",
   "items": [
     {
       "title": "بررسی مفهوم و معنای احتدا در برابر هدایت",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 138,
-    "segments_transcribed": 131,
-    "editor_attempts": 125,
-    "editor_withheld": 117,
+    "segments_captured": 140,
+    "segments_transcribed": 133,
+    "editor_attempts": 126,
+    "editor_withheld": 118,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T16:54:58.145790+00:00"
+    "last_audio_at": "2026-11-01T16:55:47.462854+00:00"
   }
 }
