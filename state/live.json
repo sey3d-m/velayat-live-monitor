@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T17:14:45.441178+00:00",
-  "updated_at": "2026-11-01T17:47:54.734320+00:00",
+  "updated_at": "2026-11-01T17:48:18.481321+00:00",
   "items": [
     {
       "title": "بررسی اسوه بودن پیامبر و ذکر روایتی درباره فاطمه زهرا",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 45,
-    "segments_transcribed": 43,
-    "editor_attempts": 29,
+    "segments_captured": 46,
+    "segments_transcribed": 44,
+    "editor_attempts": 30,
     "editor_withheld": 25,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T17:47:49.043798+00:00"
+    "last_audio_at": "2026-11-01T17:48:13.703818+00:00"
   }
 }
