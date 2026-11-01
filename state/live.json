@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T15:44:50.687868+00:00",
-  "updated_at": "2026-11-01T16:14:14.619328+00:00",
+  "updated_at": "2026-11-01T16:14:42.213851+00:00",
   "items": [
     {
       "title": "پرسش درباره ضرورت بهره‌گیری از کلام نهج‌البلاغه در دنیای امروز",
@@ -57,16 +57,28 @@
       "sequence": 34,
       "updated_at": "2026-11-01T16:13:51.973130+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره میزان علاقه و محبت به برادر مؤمن",
+      "summary": "در این بخش، کارشناس درباره نحوه تقسیم محبت و علاقه میان برادران مؤمن نکاتی را مطرح می‌کند و استدلال می‌کند که بهره کامل از این محبت به کسی می‌رسد که کمتر از دیگری به خویشتن توجه دارد و در صورت تساوی علاقه دوطرفه، وضعیت متفاوتی شکل می‌گیرد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41322714464-36",
+      "sequence": 36,
+      "updated_at": "2026-11-01T16:14:42.213825+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 36,
-    "segments_transcribed": 34,
-    "editor_attempts": 32,
-    "editor_withheld": 29,
-    "topics_published": 4,
+    "segments_captured": 37,
+    "segments_transcribed": 35,
+    "editor_attempts": 33,
+    "editor_withheld": 30,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T16:14:10.137734+00:00"
+    "last_audio_at": "2026-11-01T16:14:35.598313+00:00"
   }
 }
