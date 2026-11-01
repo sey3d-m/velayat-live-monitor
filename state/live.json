@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T15:44:50.687868+00:00",
-  "updated_at": "2026-11-01T16:38:15.584613+00:00",
+  "updated_at": "2026-11-01T16:39:04.878434+00:00",
   "items": [
     {
       "title": "پرسش درباره ترس از بلای خدا بر اساس روایت",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 96,
-    "segments_transcribed": 89,
-    "editor_attempts": 86,
-    "editor_withheld": 79,
+    "segments_captured": 98,
+    "segments_transcribed": 91,
+    "editor_attempts": 88,
+    "editor_withheld": 81,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T16:38:10.978614+00:00"
+    "last_audio_at": "2026-11-01T16:39:00.018480+00:00"
   }
 }
