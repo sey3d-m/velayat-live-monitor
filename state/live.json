@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T17:14:45.441178+00:00",
-  "updated_at": "2026-11-01T18:12:21.868153+00:00",
+  "updated_at": "2026-11-01T18:13:07.365615+00:00",
   "items": [
     {
       "title": "پرسش درباره جایگاه فاطمه زهرا و شهادت در دفاع از ولایت",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 106,
-    "segments_transcribed": 99,
-    "editor_attempts": 79,
-    "editor_withheld": 64,
+    "segments_captured": 108,
+    "segments_transcribed": 101,
+    "editor_attempts": 80,
+    "editor_withheld": 65,
     "topics_published": 18,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T18:12:14.272419+00:00"
+    "last_audio_at": "2026-11-01T18:13:03.426493+00:00"
   }
 }
