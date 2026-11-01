@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T15:44:50.687868+00:00",
-  "updated_at": "2026-11-01T16:03:56.454721+00:00",
+  "updated_at": "2026-11-01T16:04:33.089359+00:00",
   "items": [
     {
       "title": "پرسش درباره ضرورت بهره‌گیری از کلام نهج‌البلاغه در دنیای امروز",
@@ -20,16 +20,29 @@
       "sequence": 7,
       "updated_at": "2026-11-01T16:03:10.239143+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی بحث کاربردی نهج‌البلاغه در برنامه",
+      "summary": "در این بخش کارشناس اشاره می‌کند که چند هفته است بحثی کاربردی و تفکربرانگیز از نهج‌البلاغه امیرالمؤمنین مطرح شده است. وی بیان می‌کند که با توجه به فرصت محدود برنامه، نباید انتظار داشت که این بحث در همین زمان کوتاه به نتیجه نهایی برسد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "41322714464-10",
+      "sequence": 10,
+      "updated_at": "2026-11-01T16:04:33.089341+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 10,
-    "segments_transcribed": 8,
-    "editor_attempts": 6,
-    "editor_withheld": 5,
-    "topics_published": 1,
-    "audio_ai_calls": 2,
-    "audio_ai_success": 2,
-    "last_audio_at": "2026-11-01T16:03:50.216093+00:00"
+    "segments_captured": 11,
+    "segments_transcribed": 9,
+    "editor_attempts": 7,
+    "editor_withheld": 7,
+    "topics_published": 2,
+    "audio_ai_calls": 3,
+    "audio_ai_success": 3,
+    "last_audio_at": "2026-11-01T16:04:14.553963+00:00"
   }
 }
