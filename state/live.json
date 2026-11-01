@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T15:44:50.687868+00:00",
-  "updated_at": "2026-11-01T16:52:42.651786+00:00",
+  "updated_at": "2026-11-01T16:53:33.013329+00:00",
   "items": [
     {
       "title": "پرسش درباره نقش تلاش فردی در بهره‌مندی از پرتوهای هدایت",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 132,
-    "segments_transcribed": 125,
-    "editor_attempts": 120,
-    "editor_withheld": 113,
+    "segments_captured": 134,
+    "segments_transcribed": 127,
+    "editor_attempts": 122,
+    "editor_withheld": 115,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T16:52:37.214097+00:00"
+    "last_audio_at": "2026-11-01T16:53:26.452568+00:00"
   }
 }
