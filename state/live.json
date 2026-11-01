@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-01",
   "started_at": "2026-11-01T15:44:50.687868+00:00",
-  "updated_at": "2026-11-01T16:53:33.013329+00:00",
+  "updated_at": "2026-11-01T16:54:02.566578+00:00",
   "items": [
-    {
-      "title": "پرسش درباره نقش تلاش فردی در بهره‌مندی از پرتوهای هدایت",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که بهره‌مندی از هدایت نیازمند تلاش درونی است؛ او این روند را به جریان برق شهری تشبیه می‌کند که برای تبدیل شدن به نور، نیازمند اقداماتی در داخل منزل است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41322714464-63",
-      "sequence": 63,
-      "updated_at": "2026-11-01T16:25:33.168095+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی مفهوم و معنای احتدا در برابر هدایت",
       "summary": "در این بخش، کارشناس درباره معنای واژه احتدا بحث می‌کند و استدلال می‌کند که احتدا در برابر کسی است که هدایت به او رسیده، اما تلاشی برای بهره‌برداری کامل از آن انجام نمی‌دهد تا هدایت در وجود او اثر کند.",
@@ -69,16 +57,28 @@
       "sequence": 113,
       "updated_at": "2026-11-01T16:45:32.632651+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره ترس از کثرت مخالفان در مسیر اهل‌بیت",
+      "summary": "در این بخش کارشناس استدلال می‌کند که اگر مسیر انسان همان راه اهل‌بیت باشد، نباید از زیاد بودن تعداد مخالفان و معارضان ترسید و به لرزه افتاد؛ زیرا به گفته او این راه حق است و به مقصد خواهد رسید.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41322714464-134",
+      "sequence": 134,
+      "updated_at": "2026-11-01T16:54:02.566552+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 134,
-    "segments_transcribed": 127,
-    "editor_attempts": 122,
-    "editor_withheld": 115,
-    "topics_published": 10,
+    "segments_captured": 135,
+    "segments_transcribed": 128,
+    "editor_attempts": 123,
+    "editor_withheld": 116,
+    "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T16:53:26.452568+00:00"
+    "last_audio_at": "2026-11-01T16:53:51.016133+00:00"
   }
 }
