@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T17:14:52.977388+00:00",
-  "updated_at": "2026-11-02T18:25:52.084248+00:00",
+  "updated_at": "2026-11-02T18:26:38.854829+00:00",
   "items": [
     {
       "title": "بررسی استدلال کتاب المستدرک درباره روایات امان اهل‌بیت",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 140,
-    "segments_transcribed": 132,
-    "editor_attempts": 103,
-    "editor_withheld": 92,
+    "segments_captured": 142,
+    "segments_transcribed": 133,
+    "editor_attempts": 104,
+    "editor_withheld": 94,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T18:25:48.081868+00:00"
+    "last_audio_at": "2026-11-02T18:26:37.126742+00:00"
   }
 }
