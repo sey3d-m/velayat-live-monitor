@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T14:15:07.451281+00:00",
-  "updated_at": "2026-11-02T14:43:34.287588+00:00",
+  "updated_at": "2026-11-02T14:44:17.928054+00:00",
   "items": [
     {
       "title": "بررسی ضرورت حضور در تجمعات با تأکید بر رهبری",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 34,
-    "segments_transcribed": 30,
-    "editor_attempts": 30,
-    "editor_withheld": 25,
+    "segments_captured": 36,
+    "segments_transcribed": 32,
+    "editor_attempts": 32,
+    "editor_withheld": 27,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T14:43:28.190248+00:00"
+    "last_audio_at": "2026-11-02T14:44:11.397832+00:00"
   }
 }
