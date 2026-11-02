@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T17:14:52.977388+00:00",
-  "updated_at": "2026-11-02T17:46:45.366671+00:00",
+  "updated_at": "2026-11-02T17:47:27.150863+00:00",
   "items": [
     {
       "title": "بررسی وضعیت عدم مقاومت مردم ایران و عدم اجبار در پذیرش اسلام",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 42,
-    "segments_transcribed": 37,
-    "editor_attempts": 17,
-    "editor_withheld": 12,
+    "segments_captured": 44,
+    "segments_transcribed": 39,
+    "editor_attempts": 18,
+    "editor_withheld": 13,
     "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T17:46:40.842127+00:00"
+    "last_audio_at": "2026-11-02T17:47:23.255803+00:00"
   }
 }
