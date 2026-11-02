@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T14:15:07.451281+00:00",
-  "updated_at": "2026-11-02T14:34:16.253462+00:00",
+  "updated_at": "2026-11-02T14:34:26.192410+00:00",
   "items": [
     {
       "title": "پرسش درباره روند پاسخگویی به احکام شرعی در برنامه زنده شبکه ولایت",
@@ -32,16 +32,28 @@
       "sequence": 8,
       "updated_at": "2026-11-02T14:33:39.694270+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره ایام منسوب به حضرت فاطمه زهرا (س)",
+      "summary": "در این بخش، کارشناس برنامه ضمن سلام و احوالپرسی، حضور خود در برنامه را با ایام منسوب به حضرت فاطمه زهرا (س) مرتبط می‌داند و به ذکر نام استاد سید محمدتقی محمدی شیخ شهبانی می‌پردازد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41460008111-10",
+      "sequence": 10,
+      "updated_at": "2026-11-02T14:34:26.192383+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 10,
-    "segments_transcribed": 6,
-    "editor_attempts": 6,
-    "editor_withheld": 4,
-    "topics_published": 2,
+    "segments_captured": 11,
+    "segments_transcribed": 7,
+    "editor_attempts": 7,
+    "editor_withheld": 5,
+    "topics_published": 3,
     "audio_ai_calls": 1,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-02T14:33:47.240052+00:00"
+    "last_audio_at": "2026-11-02T14:34:17.564141+00:00"
   }
 }
