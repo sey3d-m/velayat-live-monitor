@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T15:46:07.563178+00:00",
-  "updated_at": "2026-11-02T16:09:34.072925+00:00",
+  "updated_at": "2026-11-02T16:10:15.731992+00:00",
   "items": [
     {
       "title": "بررسی ادعای کارشناس درباره نفاق تاریخی و ارزیابی ابن‌تیمیه",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 24,
-    "segments_transcribed": 22,
-    "editor_attempts": 18,
-    "editor_withheld": 15,
+    "segments_captured": 26,
+    "segments_transcribed": 24,
+    "editor_attempts": 20,
+    "editor_withheld": 16,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T16:09:28.034649+00:00"
+    "last_audio_at": "2026-11-02T16:10:10.996602+00:00"
   }
 }
