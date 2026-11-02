@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T15:46:07.563178+00:00",
-  "updated_at": "2026-11-02T17:00:43.507242+00:00",
+  "updated_at": "2026-11-02T17:01:11.640642+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره احکام طهارت",
-      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41474498820-16",
-      "sequence": 16,
-      "updated_at": "2026-11-02T16:07:00.247337+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره نوع خداشناسی و موضع ابن تیمیه نسبت به امام علی (ع)",
       "summary": "در این بخش، کارشناس ادعا می‌کند که ابن تیمیه در خداشناسی مشابه منافقین عمل کرده است؛ زیرا به گفته وی، هیچ‌کس در طول تاریخ به اندازه او کلمات ناهنجار علیه امام علی (ع) به کار نبرده است.",
@@ -71,16 +58,28 @@
       "sequence": 86,
       "updated_at": "2026-11-02T16:34:47.262330+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی روزهای فاطمیه و یادآور ایام بی‌مادری",
+      "summary": "در این بخش کارشناس اشاره می‌کند که ایام فاطمیه یادآور روزهای غم و اندوه و کم‌شدن سایه مادر است و آن را روزهای بی‌مادری می‌داند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41474498820-152",
+      "sequence": 152,
+      "updated_at": "2026-11-02T17:01:11.640615+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 152,
-    "segments_transcribed": 146,
-    "editor_attempts": 132,
-    "editor_withheld": 128,
-    "topics_published": 8,
+    "segments_captured": 153,
+    "segments_transcribed": 147,
+    "editor_attempts": 133,
+    "editor_withheld": 129,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T17:00:39.251270+00:00"
+    "last_audio_at": "2026-11-02T17:01:04.070287+00:00"
   }
 }
