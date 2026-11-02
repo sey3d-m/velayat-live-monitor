@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T17:14:52.977388+00:00",
-  "updated_at": "2026-11-02T17:57:08.419714+00:00",
+  "updated_at": "2026-11-02T17:57:35.653724+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره حدیث و روایت",
-      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41489212944-37",
-      "sequence": 37,
-      "updated_at": "2026-11-02T17:45:41.787587+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره قهر و عدم تکلم حضرت زهرا با ابوبکر پس از پیامبر",
       "summary": "در این بخش، کارشناس استدلال می‌کند که حضرت فاطمه زهرا (س) پس از پیامبر اکرم (ص) با ابوبکر قهر کرده و این نارضایتی تا هنگام وفات ایشان ادامه داشته است؛ به گونه‌ای که آن حضرت تا شش ماه پس از رحلت پیامبر نیز با او سخن نگ Lفت.",
@@ -68,16 +55,28 @@
       "sequence": 57,
       "updated_at": "2026-11-02T17:53:12.104167+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره پیشنهاد مهار غریزه جنسی و پاسخ معصوم",
+      "summary": "در این بخش کارشناس مطرح می‌کند که برخی اصحاب برای پیشگیری از گناه پیشنهاد داده بودند غریزه جنسی خود را از بین ببرند، اما به گفته وی حضرت این کار را نهی فرمودند و به جای آن راهکار ازدواج را توصیه کردند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41489212944-68",
+      "sequence": 68,
+      "updated_at": "2026-11-02T17:57:35.653699+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 68,
-    "segments_transcribed": 63,
-    "editor_attempts": 39,
-    "editor_withheld": 30,
-    "topics_published": 9,
+    "segments_captured": 69,
+    "segments_transcribed": 64,
+    "editor_attempts": 40,
+    "editor_withheld": 31,
+    "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T17:57:04.029236+00:00"
+    "last_audio_at": "2026-11-02T17:57:29.196828+00:00"
   }
 }
