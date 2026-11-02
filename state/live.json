@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T14:15:07.451281+00:00",
-  "updated_at": "2026-11-02T15:24:24.232931+00:00",
+  "updated_at": "2026-11-02T15:24:49.904325+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره خانواده و ازدواج",
-      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41460008111-99",
-      "sequence": 99,
-      "updated_at": "2026-11-02T15:09:58.005156+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی حکم وجود موی گربه در لباس نمازگزار",
       "summary": "در این بخش درباره تأثیر وجود موی گربه بر صحت نماز گفتگو شد. به گفته کارشناس، بنا بر نظر مشهور، حتی وجود یک تار موی گربه در بدن یا لباس نمازگزار موجب باطل شدن نماز است، اما در ادامه به دیدگاه متفاوت برخی مراجع مانند آیت‌الله سیستانی درباره تعداد مو اشاره شد.",
@@ -69,16 +56,28 @@
       "sequence": 109,
       "updated_at": "2026-11-02T15:14:00.434683+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره احکام شرعی ایرانیان خارج از کشور در اینستاگرام",
+      "summary": "در این بخش درباره پاسخگویی به سوالات شرعی و احکام ایرانیان خارج از کشور گفت‌وگو شد. کارشناس استدلال می‌کند با توجه به اینکه دسترسی به افراد پاسخگو در خارج از کشور برای برخی سخت است، صفحه اینستاگرام شبکه آماده پاسخگویی به پرسش‌های شرعی مخاطبان در شبانه‌روز است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41460008111-136",
+      "sequence": 136,
+      "updated_at": "2026-11-02T15:24:49.904299+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 136,
-    "segments_transcribed": 132,
-    "editor_attempts": 126,
-    "editor_withheld": 114,
-    "topics_published": 19,
+    "segments_captured": 137,
+    "segments_transcribed": 133,
+    "editor_attempts": 127,
+    "editor_withheld": 115,
+    "topics_published": 20,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T15:24:14.206083+00:00"
+    "last_audio_at": "2026-11-02T15:24:35.771967+00:00"
   }
 }
