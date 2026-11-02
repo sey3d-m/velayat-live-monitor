@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T15:46:07.563178+00:00",
-  "updated_at": "2026-11-02T16:10:15.731992+00:00",
+  "updated_at": "2026-11-02T16:10:17.191991+00:00",
   "items": [
-    {
-      "title": "بررسی ادعای کارشناس درباره نفاق تاریخی و ارزیابی ابن‌تیمیه",
-      "summary": "در این بخش، کارشناس با طرح این فرض که مخالفت یا موافقت با علی (ع) معیار نفاق است، ادعا می‌کند که در میان علما، ابن‌تیمیه منافق‌ترین شخص در تاریخ اسلام بوده است؛ وی اشاره می‌کند که پیش‌تر چنین باوری نداشته اما اکنون بر اساس این ملاک چنین استدلال می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "editor_mode": "audio_grounded_topic",
-      "id": "41474498820-11",
-      "sequence": 11,
-      "updated_at": "2026-11-02T16:04:56.491178+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره سابقه مطالعه آثار ابن تیمیه",
       "summary": "در این بخش، کارشناس ادعا می‌کند که پیش‌تر در مکتب ابن تیمیه بوده و آثار او مانند منهاج السنة را مطالعه کرده و بر روی کلمات او تعبد داشته است. این ادعا بدون تایید صحت تاریخی، صرفاً به نقل از گوینده مطرح شد.",
@@ -70,14 +57,27 @@
       "sequence": 23,
       "updated_at": "2026-11-02T16:09:34.072904+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41474498820-25",
+      "sequence": 25,
+      "updated_at": "2026-11-02T16:10:17.191971+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 26,
     "segments_transcribed": 24,
     "editor_attempts": 20,
-    "editor_withheld": 16,
-    "topics_published": 6,
+    "editor_withheld": 17,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-02T16:10:10.996602+00:00"
