@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T14:15:07.451281+00:00",
-  "updated_at": "2026-11-02T14:45:12.264945+00:00",
+  "updated_at": "2026-11-02T14:45:56.645653+00:00",
   "items": [
     {
       "title": "بررسی حکم شرعی کسر مبالغ پس‌انداز سال خمسی برای نیازهای احتمالی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 38,
-    "segments_transcribed": 34,
-    "editor_attempts": 34,
-    "editor_withheld": 28,
+    "segments_captured": 40,
+    "segments_transcribed": 36,
+    "editor_attempts": 36,
+    "editor_withheld": 29,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T14:45:01.370516+00:00"
+    "last_audio_at": "2026-11-02T14:45:50.362944+00:00"
   }
 }
