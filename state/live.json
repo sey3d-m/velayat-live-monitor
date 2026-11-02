@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T14:15:07.451281+00:00",
-  "updated_at": "2026-11-02T15:05:56.267622+00:00",
+  "updated_at": "2026-11-02T15:06:43.602582+00:00",
   "items": [
     {
       "title": "پرسش درباره تعلق خمس به طلای زینتی خریداری‌شده از درآمد بین سال",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 90,
-    "segments_transcribed": 86,
-    "editor_attempts": 82,
-    "editor_withheld": 74,
+    "segments_captured": 92,
+    "segments_transcribed": 88,
+    "editor_attempts": 84,
+    "editor_withheld": 75,
     "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T15:05:48.386631+00:00"
+    "last_audio_at": "2026-11-02T15:06:38.349393+00:00"
   }
 }
