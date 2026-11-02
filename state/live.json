@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T15:46:07.563178+00:00",
-  "updated_at": "2026-11-02T16:34:22.012321+00:00",
+  "updated_at": "2026-11-02T16:34:47.262358+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره سابقه مطالعه آثار ابن تیمیه",
-      "summary": "در این بخش، کارشناس ادعا می‌کند که پیش‌تر در مکتب ابن تیمیه بوده و آثار او مانند منهاج السنة را مطالعه کرده و بر روی کلمات او تعبد داشته است. این ادعا بدون تایید صحت تاریخی، صرفاً به نقل از گوینده مطرح شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41474498820-14",
-      "sequence": 14,
-      "updated_at": "2026-11-02T16:05:57.181676+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره احکام طهارت",
       "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +58,29 @@
       "sequence": 25,
       "updated_at": "2026-11-02T16:10:17.191971+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره زیارت",
+      "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41474498820-86",
+      "sequence": 86,
+      "updated_at": "2026-11-02T16:34:47.262330+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 86,
-    "segments_transcribed": 84,
-    "editor_attempts": 76,
-    "editor_withheld": 72,
-    "topics_published": 7,
+    "segments_captured": 87,
+    "segments_transcribed": 85,
+    "editor_attempts": 77,
+    "editor_withheld": 74,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T16:34:16.006129+00:00"
+    "last_audio_at": "2026-11-02T16:34:40.445437+00:00"
   }
 }
