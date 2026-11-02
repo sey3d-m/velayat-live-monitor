@@ -1,83 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "41460008111",
-  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "session": "41474498820",
+  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-02",
-  "started_at": "2026-11-02T14:15:07.451281+00:00",
-  "updated_at": "2026-11-02T15:40:04.120473+00:00",
-  "items": [
-    {
-      "title": "بررسی حکم وجود موی گربه در لباس نمازگزار",
-      "summary": "در این بخش درباره تأثیر وجود موی گربه بر صحت نماز گفتگو شد. به گفته کارشناس، بنا بر نظر مشهور، حتی وجود یک تار موی گربه در بدن یا لباس نمازگزار موجب باطل شدن نماز است، اما در ادامه به دیدگاه متفاوت برخی مراجع مانند آیت‌الله سیستانی درباره تعداد مو اشاره شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41460008111-100",
-      "sequence": 100,
-      "updated_at": "2026-11-02T15:10:22.726597+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره حکم نجاست لباس و بدن در مواجهه با اطفال",
-      "summary": "در این بخش کارشناس درباره حکم نجاست لباس و بدن هنگام تماس با رطوبت یا ترولات اطفالی مانند ادرار و مدفوع نکاتی را مطرح می‌کند و توضیحاتی درباره شرایط پاک بودن لباس و بدن ارائه می‌دهد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "41460008111-103",
-      "sequence": 103,
-      "updated_at": "2026-11-02T15:11:32.598170+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره نماز",
-      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41460008111-104",
-      "sequence": 104,
-      "updated_at": "2026-11-02T15:11:58.883079+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره شرایط کسر سهم سادات از فرد فقیر و بدکار",
-      "summary": "در این بخش کارشناس درباره کسر سهم سادات استدلال می‌کند که اگر فردی فقیر و در عین حال بدکار باشد، در صورتی که توانایی مالی ندارد و پول نمی‌پردازد، ممکن است اندازه سهم سادات او کاهش یابد؛ اما اگر ثروتمند باشد و زور بدهد و پول نپردازد، این کسر انجام نمی‌شود و شرط آن فقر همراه با بدکاری است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41460008111-109",
-      "sequence": 109,
-      "updated_at": "2026-11-02T15:14:00.434683+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره احکام شرعی ایرانیان خارج از کشور در اینستاگرام",
-      "summary": "در این بخش درباره پاسخگویی به سوالات شرعی و احکام ایرانیان خارج از کشور گفت‌وگو شد. کارشناس استدلال می‌کند با توجه به اینکه دسترسی به افراد پاسخگو در خارج از کشور برای برخی سخت است، صفحه اینستاگرام شبکه آماده پاسخگویی به پرسش‌های شرعی مخاطبان در شبانه‌روز است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41460008111-136",
-      "sequence": 136,
-      "updated_at": "2026-11-02T15:24:49.904299+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-02T15:46:07.563178+00:00",
+  "updated_at": "2026-11-02T16:00:00.000298+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 154,
-    "editor_attempts": 137,
-    "editor_withheld": 125,
-    "topics_published": 20,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T15:39:52.302663+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
