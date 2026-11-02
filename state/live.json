@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T15:46:07.563178+00:00",
-  "updated_at": "2026-11-02T17:05:29.654436+00:00",
+  "updated_at": "2026-11-02T17:06:18.621759+00:00",
   "items": [
     {
       "title": "پرسش درباره نوع خداشناسی و موضع ابن تیمیه نسبت به امام علی (ع)",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 164,
-    "segments_transcribed": 158,
-    "editor_attempts": 140,
-    "editor_withheld": 135,
+    "segments_captured": 166,
+    "segments_transcribed": 160,
+    "editor_attempts": 141,
+    "editor_withheld": 136,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T17:05:24.705165+00:00"
+    "last_audio_at": "2026-11-02T17:06:13.820266+00:00"
   }
 }
