@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T17:14:52.977388+00:00",
-  "updated_at": "2026-11-02T18:05:03.120617+00:00",
+  "updated_at": "2026-11-02T18:06:04.769184+00:00",
   "items": [
     {
       "title": "پرسش درباره قهر و عدم تکلم حضرت زهرا با ابوبکر پس از پیامبر",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 88,
-    "segments_transcribed": 83,
-    "editor_attempts": 55,
-    "editor_withheld": 46,
+    "segments_captured": 90,
+    "segments_transcribed": 84,
+    "editor_attempts": 56,
+    "editor_withheld": 47,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T18:05:00.431235+00:00"
+    "last_audio_at": "2026-11-02T18:05:49.412516+00:00"
   }
 }
