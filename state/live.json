@@ -1,21 +1,34 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "41474498820",
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T15:46:07.563178+00:00",
-  "updated_at": "2026-11-02T16:01:30.092209+00:00",
-  "items": [],
+  "updated_at": "2026-11-02T16:01:59.398984+00:00",
+  "items": [
+    {
+      "title": "بررسی نقش حضرت خدیجه و سختی‌های زندگی حضرت زهرا",
+      "summary": "در این بخش کارشناس استدلال می‌کند که حضرت خدیجه (س) علاوه بر همسری، پناه و یار پیامبر (ص) بوده است. به گفته کارشناس، وجود مادری چون خدیجه باعث شد حضرت زهرا (س) همدم و آرام‌جان پدر باشد و روزگار فرصت کودکی به ایشان ندهد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41474498820-3",
+      "sequence": 3,
+      "updated_at": "2026-11-02T16:01:59.398957+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 4,
-    "segments_transcribed": 4,
+    "segments_captured": 5,
+    "segments_transcribed": 5,
     "editor_attempts": 3,
     "editor_withheld": 2,
-    "topics_published": 0,
+    "topics_published": 1,
     "audio_ai_calls": 0,
     "audio_ai_success": 0,
-    "last_audio_at": "2026-11-02T16:01:24.908869+00:00"
+    "last_audio_at": "2026-11-02T16:01:49.507921+00:00"
   }
 }
