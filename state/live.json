@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T14:15:07.451281+00:00",
-  "updated_at": "2026-11-02T14:35:37.505439+00:00",
+  "updated_at": "2026-11-02T14:35:58.996406+00:00",
   "items": [
     {
       "title": "پرسش درباره روند پاسخگویی به احکام شرعی در برنامه زنده شبکه ولایت",
@@ -57,16 +57,29 @@
       "sequence": 13,
       "updated_at": "2026-11-02T14:35:37.505413+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز",
+      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41460008111-14",
+      "sequence": 14,
+      "updated_at": "2026-11-02T14:35:58.996374+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 14,
-    "segments_transcribed": 10,
-    "editor_attempts": 10,
-    "editor_withheld": 8,
-    "topics_published": 4,
+    "segments_captured": 15,
+    "segments_transcribed": 11,
+    "editor_attempts": 11,
+    "editor_withheld": 9,
+    "topics_published": 5,
     "audio_ai_calls": 2,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-02T14:35:26.473280+00:00"
+    "last_audio_at": "2026-11-02T14:35:50.823573+00:00"
   }
 }
