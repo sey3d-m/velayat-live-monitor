@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T15:46:07.563178+00:00",
-  "updated_at": "2026-11-02T16:03:06.031961+00:00",
+  "updated_at": "2026-11-02T16:03:56.456428+00:00",
   "items": [
     {
       "title": "بررسی نقش حضرت خدیجه و سختی‌های زندگی حضرت زهرا",
@@ -22,13 +22,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 8,
-    "segments_transcribed": 7,
-    "editor_attempts": 4,
+    "segments_captured": 10,
+    "segments_transcribed": 8,
+    "editor_attempts": 5,
     "editor_withheld": 3,
     "topics_published": 1,
     "audio_ai_calls": 0,
     "audio_ai_success": 0,
-    "last_audio_at": "2026-11-02T16:03:02.970209+00:00"
+    "last_audio_at": "2026-11-02T16:03:52.619316+00:00"
   }
 }
