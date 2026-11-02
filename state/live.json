@@ -1,19 +1,32 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "41460008111",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T14:15:07.451281+00:00",
-  "updated_at": "2026-11-02T14:32:23.575376+00:00",
-  "items": [],
+  "updated_at": "2026-11-02T14:32:25.114757+00:00",
+  "items": [
+    {
+      "title": "پرسش درباره روند پاسخگویی به احکام شرعی در برنامه زنده شبکه ولایت",
+      "summary": "در این بخش از برنامه، کارشناس اشاره می‌کند که در این برنامه زنده به پرسش‌ها و احکام شرعی مخاطبان پاسخ داده می‌شود و توضیحاتی درباره نحوه ارتباط با برنامه برای بینندگان جدید ارائه می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41460008111-5",
+      "sequence": 5,
+      "updated_at": "2026-11-02T14:32:25.114731+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
     "segments_captured": 6,
     "segments_transcribed": 2,
     "editor_attempts": 2,
     "editor_withheld": 1,
-    "topics_published": 0,
+    "topics_published": 1,
     "audio_ai_calls": 0,
     "audio_ai_success": 0,
     "last_audio_at": "2026-11-02T14:32:14.346184+00:00"
