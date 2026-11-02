@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T17:14:52.977388+00:00",
-  "updated_at": "2026-11-02T17:39:02.562310+00:00",
+  "updated_at": "2026-11-02T17:39:23.078231+00:00",
   "items": [
     {
       "title": "بررسی وضعیت عدم مقاومت مردم ایران و عدم اجبار در پذیرش اسلام",
@@ -19,16 +19,28 @@
       "sequence": 21,
       "updated_at": "2026-11-02T17:39:02.562287+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نوع برخورد اسلام با اهل کتاب در مقایسه با خرافات",
+      "summary": "در این بخش کارشناس استدلال می‌کند که برخورد اسلام با اهل کتاب متفاوت از برخورد با بت‌پرستان و خرافات است؛ به گفته وی، بت‌پرستی و حماقت توسط اسلام تحمل نمی‌شود، اما دین تحریف‌شده‌ای که اصالت داشته باشد حکم دیگری دارد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41489212944-22",
+      "sequence": 22,
+      "updated_at": "2026-11-02T17:39:23.078205+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 22,
-    "segments_transcribed": 17,
-    "editor_attempts": 6,
+    "segments_captured": 23,
+    "segments_transcribed": 18,
+    "editor_attempts": 7,
     "editor_withheld": 5,
-    "topics_published": 1,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T17:38:37.331956+00:00"
+    "last_audio_at": "2026-11-02T17:39:04.234278+00:00"
   }
 }
