@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T14:15:07.451281+00:00",
-  "updated_at": "2026-11-02T14:40:32.115363+00:00",
+  "updated_at": "2026-11-02T14:41:06.233734+00:00",
   "items": [
     {
       "title": "بررسی راه‌های ارتباطی و پاسخگویی شبانه‌روزی شبکه",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 26,
-    "segments_transcribed": 22,
-    "editor_attempts": 22,
-    "editor_withheld": 20,
+    "segments_captured": 28,
+    "segments_transcribed": 24,
+    "editor_attempts": 24,
+    "editor_withheld": 21,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T14:40:11.330906+00:00"
+    "last_audio_at": "2026-11-02T14:41:00.364852+00:00"
   }
 }
