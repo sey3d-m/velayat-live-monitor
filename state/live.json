@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T14:15:07.451281+00:00",
-  "updated_at": "2026-11-02T14:33:13.673311+00:00",
+  "updated_at": "2026-11-02T14:33:39.694297+00:00",
   "items": [
     {
       "title": "پرسش درباره روند پاسخگویی به احکام شرعی در برنامه زنده شبکه ولایت",
@@ -19,16 +19,29 @@
       "sequence": 5,
       "updated_at": "2026-11-02T14:32:25.114731+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی راه‌های ارتباطی و پاسخگویی شبانه‌روزی شبکه",
+      "summary": "در این بخش کارشناس توضیح می‌دهد که ارتباط با مخاطبان محدود به زمان پخش برنامه نبوده و به گفته وی، امکان پاسخگویی به سوالات به صورت بیست‌وچهار ساعته از طریق واتساپ و صفحه اینستاگرام شبکه برای مخاطبان فراهم است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "editor_mode": "audio_grounded_topic",
+      "id": "41460008111-8",
+      "sequence": 8,
+      "updated_at": "2026-11-02T14:33:39.694270+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 8,
-    "segments_transcribed": 4,
-    "editor_attempts": 4,
-    "editor_withheld": 2,
-    "topics_published": 1,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
-    "last_audio_at": "2026-11-02T14:33:03.677155+00:00"
+    "segments_captured": 9,
+    "segments_transcribed": 5,
+    "editor_attempts": 5,
+    "editor_withheld": 4,
+    "topics_published": 2,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
+    "last_audio_at": "2026-11-02T14:33:29.389092+00:00"
   }
 }
