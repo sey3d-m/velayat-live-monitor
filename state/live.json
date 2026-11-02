@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T14:15:07.451281+00:00",
-  "updated_at": "2026-11-02T14:57:10.678176+00:00",
+  "updated_at": "2026-11-02T14:57:57.967136+00:00",
   "items": [
     {
       "title": "پرسش درباره مبنای تعیین سال خمسی درآمدهای مختلف",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 68,
-    "segments_transcribed": 64,
-    "editor_attempts": 63,
-    "editor_withheld": 57,
+    "segments_captured": 70,
+    "segments_transcribed": 66,
+    "editor_attempts": 65,
+    "editor_withheld": 58,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T14:57:02.517452+00:00"
+    "last_audio_at": "2026-11-02T14:57:51.425881+00:00"
   }
 }
