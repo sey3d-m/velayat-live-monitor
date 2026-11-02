@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T15:46:07.563178+00:00",
-  "updated_at": "2026-11-02T16:05:30.265586+00:00",
+  "updated_at": "2026-11-02T16:05:57.181701+00:00",
   "items": [
     {
       "title": "بررسی نقش حضرت خدیجه و سختی‌های زندگی حضرت زهرا",
@@ -32,16 +32,28 @@
       "sequence": 11,
       "updated_at": "2026-11-02T16:04:56.491178+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره سابقه مطالعه آثار ابن تیمیه",
+      "summary": "در این بخش، کارشناس ادعا می‌کند که پیش‌تر در مکتب ابن تیمیه بوده و آثار او مانند منهاج السنة را مطالعه کرده و بر روی کلمات او تعبد داشته است. این ادعا بدون تایید صحت تاریخی، صرفاً به نقل از گوینده مطرح شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41474498820-14",
+      "sequence": 14,
+      "updated_at": "2026-11-02T16:05:57.181676+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 14,
-    "segments_transcribed": 12,
-    "editor_attempts": 9,
-    "editor_withheld": 7,
-    "topics_published": 2,
+    "segments_captured": 15,
+    "segments_transcribed": 13,
+    "editor_attempts": 10,
+    "editor_withheld": 8,
+    "topics_published": 3,
     "audio_ai_calls": 2,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-02T16:05:25.496985+00:00"
+    "last_audio_at": "2026-11-02T16:05:49.754671+00:00"
   }
 }
