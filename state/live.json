@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T14:15:07.451281+00:00",
-  "updated_at": "2026-11-02T15:11:29.487916+00:00",
+  "updated_at": "2026-11-02T15:11:32.598196+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره روزه",
-      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41460008111-67",
-      "sequence": 67,
-      "updated_at": "2026-11-02T14:57:10.678156+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره حکم شرعی تغییر کاربری و دفن میت در مسجد",
       "summary": "در این بخش درباره حکم شرعی تغییر کاربری مسجد و دفن میت در آن گفتگو شد. کارشناس استدلال می‌کند که به گفته وی، تغییر کاربری یا دفن میت در مسجد جایز نیست مگر اینکه واقف مسجد اجازه داده باشد و ضرورت یا کار لازمی در میان باشد.",
@@ -69,6 +56,18 @@
       "sequence": 100,
       "updated_at": "2026-11-02T15:10:22.726597+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره حکم نجاست لباس و بدن در مواجهه با اطفال",
+      "summary": "در این بخش کارشناس درباره حکم نجاست لباس و بدن هنگام تماس با رطوبت یا ترولات اطفالی مانند ادرار و مدفوع نکاتی را مطرح می‌کند و توضیحاتی درباره شرایط پاک بودن لباس و بدن ارائه می‌دهد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.8,
+      "id": "41460008111-103",
+      "sequence": 103,
+      "updated_at": "2026-11-02T15:11:32.598170+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -76,7 +75,7 @@
     "segments_transcribed": 100,
     "editor_attempts": 96,
     "editor_withheld": 86,
-    "topics_published": 16,
+    "topics_published": 17,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-02T15:11:23.246716+00:00"
