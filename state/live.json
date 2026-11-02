@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T17:14:52.977388+00:00",
-  "updated_at": "2026-11-02T18:17:56.218475+00:00",
+  "updated_at": "2026-11-02T18:18:40.692933+00:00",
   "items": [
     {
       "title": "بررسی استدلال درباره عدم اجبار در هدایت دینی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 120,
-    "segments_transcribed": 113,
-    "editor_attempts": 85,
-    "editor_withheld": 75,
+    "segments_captured": 122,
+    "segments_transcribed": 115,
+    "editor_attempts": 87,
+    "editor_withheld": 77,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T18:17:52.378370+00:00"
+    "last_audio_at": "2026-11-02T18:18:35.665760+00:00"
   }
 }
