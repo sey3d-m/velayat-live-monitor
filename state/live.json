@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T14:15:07.451281+00:00",
-  "updated_at": "2026-11-02T14:35:32.941542+00:00",
+  "updated_at": "2026-11-02T14:35:37.505439+00:00",
   "items": [
     {
       "title": "پرسش درباره روند پاسخگویی به احکام شرعی در برنامه زنده شبکه ولایت",
@@ -44,16 +44,29 @@
       "sequence": 10,
       "updated_at": "2026-11-02T14:34:26.192383+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ضرورت حضور در تجمعات با تأکید بر رهبری",
+      "summary": "در این بخش کارشناس با اشاره به نقش دشمنان و برنامه‌ریزی آن‌ها، بیان می‌کند که رهبری بر افزایش حضور مردم تأکید دارند. به گفته کارشناس، وظیفه ما سنگین‌تر شده است تا از این فضیلت بی‌بهره نباشیم و در تجمعات شرکت کنیم.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "editor_mode": "audio_grounded_topic",
+      "id": "41460008111-13",
+      "sequence": 13,
+      "updated_at": "2026-11-02T14:35:37.505413+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 14,
     "segments_transcribed": 10,
     "editor_attempts": 10,
-    "editor_withheld": 7,
-    "topics_published": 3,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
+    "editor_withheld": 8,
+    "topics_published": 4,
+    "audio_ai_calls": 2,
+    "audio_ai_success": 2,
     "last_audio_at": "2026-11-02T14:35:26.473280+00:00"
   }
 }
