@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T17:14:52.977388+00:00",
-  "updated_at": "2026-11-02T17:39:31.601665+00:00",
+  "updated_at": "2026-11-02T17:39:57.421808+00:00",
   "items": [
     {
       "title": "بررسی وضعیت عدم مقاومت مردم ایران و عدم اجبار در پذیرش اسلام",
@@ -31,16 +31,28 @@
       "sequence": 22,
       "updated_at": "2026-11-02T17:39:23.078205+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره عدم اجبار به پذیرش دین در حکومت مدینه",
+      "summary": "در این بخش کارشناس استدلال می‌کند که پیامبر اسلام پس از هجرت به مدینه و تشکیل حکومت، اهل کتاب و یهودیان ساکن آنجا را مجبور به پذیرش دین نکردند. به گفته وی، این سیره نشان می‌دهد که دین‌داری با اجبار همراه نبوده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41489212944-23",
+      "sequence": 23,
+      "updated_at": "2026-11-02T17:39:57.421788+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 24,
-    "segments_transcribed": 19,
+    "segments_captured": 25,
+    "segments_transcribed": 20,
     "editor_attempts": 8,
     "editor_withheld": 5,
-    "topics_published": 2,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T17:39:27.487494+00:00"
+    "last_audio_at": "2026-11-02T17:39:51.936734+00:00"
   }
 }
