@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "ended",
   "network": "velayat_farsi",
   "session": "41489212944",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T17:14:52.977388+00:00",
-  "updated_at": "2026-11-02T18:39:20.612181+00:00",
+  "updated_at": "2026-11-02T18:40:06.294885+00:00",
   "items": [
     {
       "title": "پرسش درباره استناد کارشناس به حدیث امان امت",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 174,
-    "segments_transcribed": 152,
-    "editor_attempts": 118,
-    "editor_withheld": 107,
+    "segments_captured": 175,
+    "segments_transcribed": 153,
+    "editor_attempts": 119,
+    "editor_withheld": 108,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T18:39:17.877738+00:00"
+    "last_audio_at": "2026-11-02T18:39:42.118103+00:00"
   }
 }
