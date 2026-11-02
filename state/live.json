@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T14:15:07.451281+00:00",
-  "updated_at": "2026-11-02T15:35:28.918148+00:00",
+  "updated_at": "2026-11-02T15:36:20.385809+00:00",
   "items": [
     {
       "title": "بررسی حکم وجود موی گربه در لباس نمازگزار",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 164,
-    "segments_transcribed": 146,
-    "editor_attempts": 133,
-    "editor_withheld": 121,
+    "segments_captured": 166,
+    "segments_transcribed": 148,
+    "editor_attempts": 134,
+    "editor_withheld": 122,
     "topics_published": 20,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T15:35:26.475251+00:00"
+    "last_audio_at": "2026-11-02T15:36:16.590328+00:00"
   }
 }
