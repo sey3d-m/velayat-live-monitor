@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T14:15:07.451281+00:00",
-  "updated_at": "2026-11-02T14:44:21.409347+00:00",
+  "updated_at": "2026-11-02T14:44:43.838342+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره نماز",
-      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41460008111-14",
-      "sequence": 14,
-      "updated_at": "2026-11-02T14:35:58.996374+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره خمس و زکات",
       "summary": "در این بخش از برنامه، موضوع «خمس و زکات» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +57,28 @@
       "sequence": 35,
       "updated_at": "2026-11-02T14:44:21.409319+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره تعلق خمس به طلای زینتی خریداری‌شده از درآمد بین سال",
+      "summary": "در این بخش درباره تعلق خمس به طلای زینتی خریداری‌شده از درآمد بین سال پرسش شد. کارشناس در پاسخ به پرسش درباره فردی که با درآمد بین سال طلا خریده و قصد زیارت دارد، به بررسی حکم خمس زیورآلات مصرفی و پوششی مانند النگو، انگشتر و گردنبند می‌پردازد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41460008111-36",
+      "sequence": 36,
+      "updated_at": "2026-11-02T14:44:43.838317+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 36,
-    "segments_transcribed": 32,
-    "editor_attempts": 32,
+    "segments_captured": 37,
+    "segments_transcribed": 33,
+    "editor_attempts": 33,
     "editor_withheld": 28,
-    "topics_published": 9,
+    "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T14:44:11.397832+00:00"
+    "last_audio_at": "2026-11-02T14:44:35.865835+00:00"
   }
 }
