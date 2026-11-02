@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T14:15:07.451281+00:00",
-  "updated_at": "2026-11-02T15:09:58.005176+00:00",
+  "updated_at": "2026-11-02T15:10:22.726628+00:00",
   "items": [
-    {
-      "title": "پرسش درباره تعلق خمس به طلای آب‌شده و سرمایه‌ای",
-      "summary": "در این بخش، کارشناس درباره تعلق خمس به طلا توضیح می‌دهد و بیان می‌کند اگر طلا برای نیازهای زندگی یا سفر فروخته شود خمس ندارد، اما اگر به عنوان سرمایه نگهداری شود و سال بر آن بگذرد، مشمول حکم خمس خواهد بود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41460008111-37",
-      "sequence": 37,
-      "updated_at": "2026-11-02T14:45:12.264923+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره روزه",
       "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +57,28 @@
       "sequence": 99,
       "updated_at": "2026-11-02T15:09:58.005156+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی حکم وجود موی گربه در لباس نمازگزار",
+      "summary": "در این بخش درباره تأثیر وجود موی گربه بر صحت نماز گفتگو شد. به گفته کارشناس، بنا بر نظر مشهور، حتی وجود یک تار موی گربه در بدن یا لباس نمازگزار موجب باطل شدن نماز است، اما در ادامه به دیدگاه متفاوت برخی مراجع مانند آیت‌الله سیستانی درباره تعداد مو اشاره شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41460008111-100",
+      "sequence": 100,
+      "updated_at": "2026-11-02T15:10:22.726597+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 100,
-    "segments_transcribed": 96,
-    "editor_attempts": 92,
+    "segments_captured": 101,
+    "segments_transcribed": 97,
+    "editor_attempts": 93,
     "editor_withheld": 84,
-    "topics_published": 15,
+    "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T15:09:50.236137+00:00"
+    "last_audio_at": "2026-11-02T15:10:14.691177+00:00"
   }
 }
