@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T14:15:07.451281+00:00",
-  "updated_at": "2026-11-02T15:11:32.598196+00:00",
+  "updated_at": "2026-11-02T15:11:58.883105+00:00",
   "items": [
-    {
-      "title": "پرسش درباره حکم شرعی تغییر کاربری و دفن میت در مسجد",
-      "summary": "در این بخش درباره حکم شرعی تغییر کاربری مسجد و دفن میت در آن گفتگو شد. کارشناس استدلال می‌کند که به گفته وی، تغییر کاربری یا دفن میت در مسجد جایز نیست مگر اینکه واقف مسجد اجازه داده باشد و ضرورت یا کار لازمی در میان باشد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41460008111-78",
-      "sequence": 78,
-      "updated_at": "2026-11-02T15:01:56.647461+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی موضع کارشناس درباره جنایت‌کار بودن طرفین درگیری",
       "summary": "در این بخش، کارشناس استدلال می‌کند که هر دو گروه درگیر جنایت‌کار و آدم‌کش هستند؛ زیرا به گفته وی، هر دو به دنبال قدرت هستند و حفظ قدرت برایشان اهمیت دارد. وی همچنین اشاره می‌کند که این بار نیروهای مسلح با قدرت وارد خواهند شد.",
@@ -68,16 +56,29 @@
       "sequence": 103,
       "updated_at": "2026-11-02T15:11:32.598170+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز",
+      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41460008111-104",
+      "sequence": 104,
+      "updated_at": "2026-11-02T15:11:58.883079+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 104,
-    "segments_transcribed": 100,
-    "editor_attempts": 96,
-    "editor_withheld": 86,
-    "topics_published": 17,
+    "segments_captured": 105,
+    "segments_transcribed": 101,
+    "editor_attempts": 97,
+    "editor_withheld": 87,
+    "topics_published": 18,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T15:11:23.246716+00:00"
+    "last_audio_at": "2026-11-02T15:11:47.469442+00:00"
   }
 }
