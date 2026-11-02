@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T14:15:07.451281+00:00",
-  "updated_at": "2026-11-02T14:44:17.928054+00:00",
+  "updated_at": "2026-11-02T14:44:21.409347+00:00",
   "items": [
-    {
-      "title": "بررسی ضرورت حضور در تجمعات با تأکید بر رهبری",
-      "summary": "در این بخش کارشناس با اشاره به نقش دشمنان و برنامه‌ریزی آن‌ها، بیان می‌کند که رهبری بر افزایش حضور مردم تأکید دارند. به گفته کارشناس، وظیفه ما سنگین‌تر شده است تا از این فضیلت بی‌بهره نباشیم و در تجمعات شرکت کنیم.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "editor_mode": "audio_grounded_topic",
-      "id": "41460008111-13",
-      "sequence": 13,
-      "updated_at": "2026-11-02T14:35:37.505413+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره نماز",
       "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,14 +57,27 @@
       "sequence": 29,
       "updated_at": "2026-11-02T14:41:57.679950+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره زیارت",
+      "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41460008111-35",
+      "sequence": 35,
+      "updated_at": "2026-11-02T14:44:21.409319+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 36,
     "segments_transcribed": 32,
     "editor_attempts": 32,
-    "editor_withheld": 27,
-    "topics_published": 8,
+    "editor_withheld": 28,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-02T14:44:11.397832+00:00"
