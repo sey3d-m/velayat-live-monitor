@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T15:46:07.563178+00:00",
-  "updated_at": "2026-11-02T16:11:55.418865+00:00",
+  "updated_at": "2026-11-02T16:12:45.425481+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره سابقه مطالعه آثار ابن تیمیه",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 30,
-    "segments_transcribed": 28,
-    "editor_attempts": 24,
-    "editor_withheld": 20,
+    "segments_captured": 32,
+    "segments_transcribed": 30,
+    "editor_attempts": 26,
+    "editor_withheld": 22,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T16:11:50.423343+00:00"
+    "last_audio_at": "2026-11-02T16:12:40.202665+00:00"
   }
 }
