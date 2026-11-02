@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T17:14:52.977388+00:00",
-  "updated_at": "2026-11-02T18:33:44.339729+00:00",
+  "updated_at": "2026-11-02T18:34:33.939349+00:00",
   "items": [
     {
       "title": "پرسش درباره استناد کارشناس به حدیث امان امت",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 160,
+    "segments_captured": 162,
     "segments_transcribed": 143,
     "editor_attempts": 113,
     "editor_withheld": 102,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T18:33:44.282131+00:00"
+    "last_audio_at": "2026-11-02T18:34:33.880934+00:00"
   }
 }
