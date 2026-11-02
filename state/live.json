@@ -1,83 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "41330421440",
-  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
-  "program_date": "2026-11-01",
-  "started_at": "2026-11-01T17:14:45.441178+00:00",
-  "updated_at": "2026-11-01T18:40:01.881601+00:00",
-  "items": [
-    {
-      "title": "پرسش درباره نقش فاطمه زهرا در بنیان‌گذاری جهاد تبیین و حضور سیاسی و اجتماعی",
-      "summary": "در این بخش کارشناس استدلال می‌کند که حضور در صحنه سیاسی و اجتماعی و جهاد تبیین توسط فاطمه زهرا بنیان گذاشته شده است. به گفته وی، این حضور آگاهانه و مؤمنانه شامل زنان و مردان می‌شود و به جنسیت خاصی محدود نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41330421440-118",
-      "sequence": 118,
-      "updated_at": "2026-11-01T18:17:32.450350+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره استدلال حفظ حجاب بر اساس رفتار حضرت زهرا در مواجهه با نابینا",
-      "summary": "در این بخش کارشناس درباره ماجرای حضور حضرت فاطمه (س) در حضور مرد نابینا استدلال می‌کند و به پرسشی درباره رعایت حجاب حتی در زمان نابینا بودن فرد مقابل پاسخ می‌دهد. به گفته وی، پیامبر اکرم (ص) در این زمینه نکاتی را درباره عفاف مطرح فرمودند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41330421440-122",
-      "sequence": 122,
-      "updated_at": "2026-11-01T18:19:03.819856+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره حدیث و روایت",
-      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41330421440-132",
-      "sequence": 132,
-      "updated_at": "2026-11-01T18:23:08.598064+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی تأثیر خاموشی سیستم‌ها بر ابعاد دنیای مدرن",
-      "summary": "در این بخش کارشناس ادعا می‌کند با خاموش شدن موبایل‌ها و رایانه‌ها، تمام سیستم‌های پزشکی با مشکل مواجه می‌شوند. وی اشاره می‌کند که ما آهن را تنها وسیله‌ای ساده برای بازی یا چسباندن عکس روی یخچال می‌دانیم، در حالی که حقیقت دنیا متفاوت است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41330421440-143",
-      "sequence": 143,
-      "updated_at": "2026-11-01T18:27:34.964744+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره پیدایش خودبه‌خودی قوانین مغناطیس و تدبیر حکیمانه آن",
-      "summary": "در این بخش کارشناس درباره منشأ قوانین مغناطیس پرسش مطرح می‌کند که آیا این قانون عجیب دنیا خودش به‌خودی‌خود به وجود آمده است. وی استدلال می‌کند که هرگز چنین نبوده و پشت این خاصیت شگفت‌انگیز، تدبیر و دانایی یک صانع حکیم ایستاده است؛ چنان‌که با پیشرفت علم، انسان بیشتر می‌فهمد که چه قدر به قوانین دقیق الهی وابسته است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "id": "41330421440-150",
-      "sequence": 150,
-      "updated_at": "2026-11-01T18:30:44.336098+00:00",
-      "speaker": null
-    }
-  ],
+  "session": "41460008111",
+  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "program_date": "2026-11-02",
+  "started_at": "2026-11-02T14:15:07.451281+00:00",
+  "updated_at": "2026-11-02T14:30:00.000294+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 147,
-    "editor_attempts": 118,
-    "editor_withheld": 98,
-    "topics_published": 25,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-01T18:39:49.999113+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
