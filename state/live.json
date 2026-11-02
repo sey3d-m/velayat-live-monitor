@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T17:14:52.977388+00:00",
-  "updated_at": "2026-11-02T17:40:21.730140+00:00",
+  "updated_at": "2026-11-02T17:40:48.258591+00:00",
   "items": [
     {
       "title": "بررسی وضعیت عدم مقاومت مردم ایران و عدم اجبار در پذیرش اسلام",
@@ -43,16 +43,28 @@
       "sequence": 23,
       "updated_at": "2026-11-02T17:39:57.421788+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره شرایط مالیات و تعهدات اقلیت‌ها در مدینه",
+      "summary": "در این بخش کارشناس استدلال می‌کند که غیرمسلمانان در مدینه باید به توافقات تاریخی پایبند بمانند، به این شهر خیانت نکنند و در برابر دشمن خارجی همکاری نداشته باشند. همچنین به گفته کارشناس، پرداخت مالیات تحت عنوان جزیه از دیگر تکالیفی است که برای غیرمسلمانان مطرح شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41489212944-25",
+      "sequence": 25,
+      "updated_at": "2026-11-02T17:40:48.258565+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 26,
-    "segments_transcribed": 21,
+    "segments_captured": 27,
+    "segments_transcribed": 22,
     "editor_attempts": 9,
     "editor_withheld": 5,
-    "topics_published": 3,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T17:40:16.173279+00:00"
+    "last_audio_at": "2026-11-02T17:40:42.152718+00:00"
   }
 }
