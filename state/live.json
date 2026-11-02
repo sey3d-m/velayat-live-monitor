@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-02",
   "started_at": "2026-11-02T14:15:07.451281+00:00",
-  "updated_at": "2026-11-02T14:33:39.694297+00:00",
+  "updated_at": "2026-11-02T14:34:16.253462+00:00",
   "items": [
     {
       "title": "پرسش درباره روند پاسخگویی به احکام شرعی در برنامه زنده شبکه ولایت",
@@ -35,13 +35,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 9,
-    "segments_transcribed": 5,
-    "editor_attempts": 5,
+    "segments_captured": 10,
+    "segments_transcribed": 6,
+    "editor_attempts": 6,
     "editor_withheld": 4,
     "topics_published": 2,
     "audio_ai_calls": 1,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-02T14:33:29.389092+00:00"
+    "last_audio_at": "2026-11-02T14:33:47.240052+00:00"
   }
 }
