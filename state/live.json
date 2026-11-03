@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T14:15:34.071525+00:00",
-  "updated_at": "2026-11-03T15:10:47.725954+00:00",
+  "updated_at": "2026-11-03T15:11:17.120086+00:00",
   "items": [
-    {
-      "title": "پرسش درباره ویژگی‌های مومنه قدرتمند در سخنان کارشناس",
-      "summary": "در این بخش کارشناس استدلال می‌کند که یک مومنه قدرتمند باید دو ویژگی مهم داشته باشد؛ نخست قدرت در نگفتن و نه گفتن و دوم قدرت و استرس نداشتن در ورود به کارهای خیر و کمک کردن. به گفته کارشناس، مومنه قدرتمند در برابر قضایا منفعل نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41651680183-51",
-      "sequence": 51,
-      "updated_at": "2026-11-03T14:50:56.833551+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره نماز",
       "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +58,29 @@
       "sequence": 91,
       "updated_at": "2026-11-03T15:07:01.373285+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41651680183-101",
+      "sequence": 101,
+      "updated_at": "2026-11-03T15:11:17.120062+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 102,
-    "segments_transcribed": 97,
+    "segments_captured": 103,
+    "segments_transcribed": 98,
     "editor_attempts": 58,
-    "editor_withheld": 53,
-    "topics_published": 8,
+    "editor_withheld": 54,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T15:10:39.814275+00:00"
+    "last_audio_at": "2026-11-03T15:11:04.745144+00:00"
   }
 }
