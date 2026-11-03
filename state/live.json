@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T17:14:49.831679+00:00",
-  "updated_at": "2026-11-03T18:30:26.667050+00:00",
+  "updated_at": "2026-11-03T18:30:47.514643+00:00",
   "items": [
     {
       "title": "بررسی نبود حدیث غدیر در صحیح بخاری به گفته کارشناس",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 151,
-    "segments_transcribed": 144,
-    "editor_attempts": 98,
+    "segments_captured": 152,
+    "segments_transcribed": 145,
+    "editor_attempts": 99,
     "editor_withheld": 91,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T18:30:17.755815+00:00"
+    "last_audio_at": "2026-11-03T18:30:42.312939+00:00"
   }
 }
