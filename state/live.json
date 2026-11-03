@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T17:00:04.452897+00:00",
+  "updated_at": "2026-11-03T17:00:43.697597+00:00",
   "items": [
     {
       "title": "بررسی پیام احترام به بزرگترها در سیره و رفتار حضرت زهرا",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 150,
-    "segments_transcribed": 139,
-    "editor_attempts": 114,
-    "editor_withheld": 101,
+    "segments_captured": 152,
+    "segments_transcribed": 141,
+    "editor_attempts": 115,
+    "editor_withheld": 102,
     "topics_published": 18,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T16:59:48.758230+00:00"
+    "last_audio_at": "2026-11-03T17:00:39.139740+00:00"
   }
 }
