@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:31:06.125638+00:00",
+  "updated_at": "2026-11-03T16:31:54.451312+00:00",
   "items": [
     {
       "title": "بررسی راویان خطبه فدکیه به نقل از کارشناس",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 78,
-    "segments_transcribed": 71,
-    "editor_attempts": 53,
-    "editor_withheld": 44,
+    "segments_captured": 80,
+    "segments_transcribed": 73,
+    "editor_attempts": 54,
+    "editor_withheld": 45,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T16:31:02.645668+00:00"
+    "last_audio_at": "2026-11-03T16:31:51.628561+00:00"
   }
 }
