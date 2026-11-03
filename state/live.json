@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:11:28.412547+00:00",
+  "updated_at": "2026-11-03T16:12:03.923232+00:00",
   "items": [
     {
       "title": "بررسی وجه تسمیه و مقام علمی محدّثه در روایت",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 29,
-    "segments_transcribed": 22,
-    "editor_attempts": 11,
+    "segments_captured": 30,
+    "segments_transcribed": 23,
+    "editor_attempts": 12,
     "editor_withheld": 8,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T16:11:25.224623+00:00"
+    "last_audio_at": "2026-11-03T16:11:50.828182+00:00"
   }
 }
