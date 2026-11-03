@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "41666951982",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "41682233708",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-03",
-  "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T17:10:33.274856+00:00",
-  "items": [
-    {
-      "title": "بررسی پیام احترام به بزرگترها در سیره و رفتار حضرت زهرا",
-      "summary": "در این بخش کارشناس استدلال می‌کند که احترام به بزرگترها باید عملی باشد؛ وی برای نمونه به رفتار حضرت زهرا (س) هنگام ورود پیامبر اشاره می‌کند که تمام‌قد بلند می‌شده و دست ایشان را می‌بوسیده و بیان می‌کند که فرزندان باید این رفتار را از بزرگترها یاد بگیرند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41666951982-79",
-      "sequence": 79,
-      "updated_at": "2026-11-03T16:32:00.741881+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره نقش مادری حضرت زهرا در کودکی به روایت کارشناس",
-      "summary": "در این بخش کارشناس استدلال می‌کند که لقب ام‌ابیها برای حضرت زهرا سلام‌الله‌علیها دارای دلیل و مستند تاریخی است و ایشان از کودکی و خردسالی، به‌ویژه پس از وفات حضرت خدیجه، نقش مادری می‌کرده‌اند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41666951982-81",
-      "sequence": 81,
-      "updated_at": "2026-11-03T16:32:56.824116+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی رابطه پدر و فرزندی و جایگاه حقوقی والدین",
-      "summary": "در این بخش کارشناس استدلال می‌کند که رابطه پدر و فرزندی نباید به جایگاه حقوقی والدین آسیب بزند؛ زیرا پدر علاوه بر کانون خانواده، در جامعه دارای جایگاه حقوقی است و ممکن است وزیر، وکیل، منجم یا در جایگاه فرزند باشد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41666951982-111",
-      "sequence": 111,
-      "updated_at": "2026-11-03T16:44:46.819316+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره ضرورت کوتاه آمدن همسران از مواضع خود",
-      "summary": "در این بخش کارشناس استدلال می‌کند که برای شکل‌گیری زندگی مشترک، هر یک از زن و شوهر باید از مواضع خود پایین بیایند. به گفته کارشناس، این تصور که همسران باید کاملاً در سلیقه و تطابق شبیه یکدیگر باشند اشتباه است، چرا که حتی دو خواهر و برادر در یک خانه نیز کاملاً شبیه هم نیستند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41666951982-140",
-      "sequence": 140,
-      "updated_at": "2026-11-03T16:56:18.846959+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی تفاوت‌های رفتاری فرزندان در خانواده",
-      "summary": "در این بخش کارشناس استدلال می‌کند که حتی خواهران و برادران در یک خانواده ممکن است از نظر رفتاری و تقدیر با یکدیگر تفاوت داشته باشند؛ بنابراین، اگر جوانان در انتخاب همسر انتظار تطابق صددرصدی سلایق را داشته باشند، هرگز موفق به یافتن گزینه مناسب نخواهند شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "41666951982-141",
-      "sequence": 141,
-      "updated_at": "2026-11-03T16:56:43.725947+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-03T17:14:49.831679+00:00",
+  "updated_at": "2026-11-03T17:30:00.000284+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 161,
-    "editor_attempts": 126,
-    "editor_withheld": 112,
-    "topics_published": 18,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T17:09:50.950355+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
