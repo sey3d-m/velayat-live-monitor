@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:44:45.517901+00:00",
+  "updated_at": "2026-11-03T16:44:46.819336+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره روزه",
-      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41666951982-60",
-      "sequence": 60,
-      "updated_at": "2026-11-03T16:24:20.495222+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی مبنای محبت در امور خانواده",
       "summary": "در این بخش کارشناس استدلال می‌کند که امور خانواده باید بر مبنای محبت و شفقت استوار باشد و محبت را به عنوان سنگ بنای گرمی خانواده معرفی می‌کند.",
@@ -68,6 +55,18 @@
       "sequence": 81,
       "updated_at": "2026-11-03T16:32:56.824116+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی رابطه پدر و فرزندی و جایگاه حقوقی والدین",
+      "summary": "در این بخش کارشناس استدلال می‌کند که رابطه پدر و فرزندی نباید به جایگاه حقوقی والدین آسیب بزند؛ زیرا پدر علاوه بر کانون خانواده، در جامعه دارای جایگاه حقوقی است و ممکن است وزیر، وکیل، منجم یا در جایگاه فرزند باشد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41666951982-111",
+      "sequence": 111,
+      "updated_at": "2026-11-03T16:44:46.819316+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -75,7 +74,7 @@
     "segments_transcribed": 103,
     "editor_attempts": 80,
     "editor_withheld": 69,
-    "topics_published": 15,
+    "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-03T16:44:42.298972+00:00"
