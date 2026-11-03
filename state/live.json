@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:12:45.413607+00:00",
+  "updated_at": "2026-11-03T16:13:46.918746+00:00",
   "items": [
     {
       "title": "پرسش درباره اتهام اعتقاد شیعه به قرآنی دیگر",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 32,
-    "segments_transcribed": 25,
-    "editor_attempts": 13,
-    "editor_withheld": 8,
+    "segments_captured": 34,
+    "segments_transcribed": 27,
+    "editor_attempts": 15,
+    "editor_withheld": 9,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T16:12:39.896550+00:00"
+    "last_audio_at": "2026-11-03T16:13:30.175988+00:00"
   }
 }
