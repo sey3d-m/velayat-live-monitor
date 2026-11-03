@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:10:14.566596+00:00",
+  "updated_at": "2026-11-03T16:10:20.033462+00:00",
   "items": [
     {
       "title": "بررسی محدودیت منابع در شناخت عظمت حضرت زهرا",
@@ -48,13 +48,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 25,
-    "segments_transcribed": 18,
-    "editor_attempts": 8,
+    "segments_captured": 26,
+    "segments_transcribed": 19,
+    "editor_attempts": 9,
     "editor_withheld": 7,
     "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T16:09:52.987991+00:00"
+    "last_audio_at": "2026-11-03T16:10:17.063760+00:00"
   }
 }
