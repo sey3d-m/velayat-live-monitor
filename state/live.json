@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:28:20.242326+00:00",
+  "updated_at": "2026-11-03T16:28:44.569724+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره تفاوت وحی قرآنی و غیرقرآنی و جایگاه حدیث قدسی",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 71,
-    "segments_transcribed": 64,
-    "editor_attempts": 47,
+    "segments_captured": 72,
+    "segments_transcribed": 65,
+    "editor_attempts": 48,
     "editor_withheld": 40,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T16:28:16.706104+00:00"
+    "last_audio_at": "2026-11-03T16:28:41.009767+00:00"
   }
 }
