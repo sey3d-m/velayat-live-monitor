@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T14:15:34.071525+00:00",
-  "updated_at": "2026-11-03T14:59:35.724573+00:00",
+  "updated_at": "2026-11-03T15:00:19.942041+00:00",
   "items": [
     {
       "title": "بررسی ایجاد فضای نه گفتن به عنوان ماموریت تربیتی والدین",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 74,
-    "segments_transcribed": 71,
-    "editor_attempts": 44,
-    "editor_withheld": 40,
+    "segments_captured": 76,
+    "segments_transcribed": 73,
+    "editor_attempts": 46,
+    "editor_withheld": 42,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T14:59:29.626737+00:00"
+    "last_audio_at": "2026-11-03T15:00:13.237885+00:00"
   }
 }
