@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:09:30.897880+00:00",
+  "updated_at": "2026-11-03T16:09:35.634820+00:00",
   "items": [
     {
       "title": "بررسی محدودیت منابع در شناخت عظمت حضرت زهرا",
@@ -20,16 +20,29 @@
       "sequence": 15,
       "updated_at": "2026-11-03T16:07:10.533461+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی وجه تسمیه و مقام علمی محدّثه در روایت",
+      "summary": "در این بخش درباره نام‌گذاری محدّثه و جایگاه علمی مطرح شد که به گفته کارشناس، دلیل این نام‌گذاری سخن گفتن جبرئیل با آن حضرت بوده است. همچنین در این گفت‌وگو به نقل روایتی از امام صادق علیه‌السّلام درباره دوران پس از رحلت رسول خدا اشاره شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "41666951982-21",
+      "sequence": 21,
+      "updated_at": "2026-11-03T16:09:35.634791+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 24,
     "segments_transcribed": 17,
     "editor_attempts": 7,
-    "editor_withheld": 6,
-    "topics_published": 1,
-    "audio_ai_calls": 2,
-    "audio_ai_success": 2,
+    "editor_withheld": 7,
+    "topics_published": 2,
+    "audio_ai_calls": 3,
+    "audio_ai_success": 3,
     "last_audio_at": "2026-11-03T16:09:27.944364+00:00"
   }
 }
