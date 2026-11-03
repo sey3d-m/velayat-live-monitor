@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "ended",
   "network": "velayat_farsi",
   "session": "41651680183",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T14:15:34.071525+00:00",
-  "updated_at": "2026-11-03T15:39:28.717672+00:00",
+  "updated_at": "2026-11-03T15:40:11.647046+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره تربیت و اخلاق",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 174,
-    "segments_transcribed": 153,
-    "editor_attempts": 91,
+    "segments_captured": 175,
+    "segments_transcribed": 154,
+    "editor_attempts": 92,
     "editor_withheld": 87,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T15:39:25.478243+00:00"
+    "last_audio_at": "2026-11-03T15:39:50.053474+00:00"
   }
 }
