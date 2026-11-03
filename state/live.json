@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:11:03.830559+00:00",
+  "updated_at": "2026-11-03T16:11:28.412547+00:00",
   "items": [
-    {
-      "title": "بررسی محدودیت منابع در شناخت عظمت حضرت زهرا",
-      "summary": "در این بخش کارشناس استدلال می‌کند که اطلاعات و روایات موجود در منابع شیعی تنها بازتاب‌دهنده بخش کوچکی از بضاعت ماست و انسان‌های معمولی به گرد پای مقام علمی و ملکوتی حضرت زهرا (س) نمی‌رسند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "editor_mode": "audio_grounded_topic",
-      "id": "41666951982-15",
-      "sequence": 15,
-      "updated_at": "2026-11-03T16:07:10.533461+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی وجه تسمیه و مقام علمی محدّثه در روایت",
       "summary": "در این بخش درباره نام‌گذاری محدّثه و جایگاه علمی مطرح شد که به گفته کارشناس، دلیل این نام‌گذاری سخن گفتن جبرئیل با آن حضرت بوده است. همچنین در این گفت‌وگو به نقل روایتی از امام صادق علیه‌السّلام درباره دوران پس از رحلت رسول خدا اشاره شد.",
@@ -70,16 +57,28 @@
       "sequence": 26,
       "updated_at": "2026-11-03T16:10:57.843673+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره محتوای مصحف فاطمی و مباحث مطرح‌شده در آن",
+      "summary": "در این بخش کارشناس استدلال می‌کند که امانت مصحف فاطمی در اختیار امام زمان (عج) قرار دارد. همچنین به گفته کارشناس، محتوای این اثر شامل موضوعاتی مانند جایگاه رسول خدا و آینده فرزندان فاطمه (س) بوده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41666951982-27",
+      "sequence": 27,
+      "updated_at": "2026-11-03T16:11:28.412526+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 28,
-    "segments_transcribed": 21,
+    "segments_captured": 29,
+    "segments_transcribed": 22,
     "editor_attempts": 11,
     "editor_withheld": 8,
-    "topics_published": 5,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T16:11:01.226242+00:00"
+    "last_audio_at": "2026-11-03T16:11:25.224623+00:00"
   }
 }
