@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T17:14:49.831679+00:00",
-  "updated_at": "2026-11-03T17:37:06.812243+00:00",
+  "updated_at": "2026-11-03T17:37:32.760660+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
@@ -20,16 +20,29 @@
       "sequence": 7,
       "updated_at": "2026-11-03T17:33:30.774481+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره سندیت یک فیلم و درخواست پاسخ از کارشناس",
+      "summary": "در این بخش درباره فیلمی که به نمایش درآمد، پرسش شد و کارشناس برنامه، آقای سادات‌حسنی‌نژاد، برای ارائه توضیحات و بررسی این موضوع دعوت شد تا در این خصوص اظهارنظر کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "41682233708-16",
+      "sequence": 16,
+      "updated_at": "2026-11-03T17:37:32.760637+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 18,
-    "segments_transcribed": 14,
+    "segments_captured": 19,
+    "segments_transcribed": 15,
     "editor_attempts": 7,
-    "editor_withheld": 6,
-    "topics_published": 1,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
-    "last_audio_at": "2026-11-03T17:37:01.831526+00:00"
+    "editor_withheld": 7,
+    "topics_published": 2,
+    "audio_ai_calls": 2,
+    "audio_ai_success": 2,
+    "last_audio_at": "2026-11-03T17:37:27.289247+00:00"
   }
 }
