@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T17:14:49.831679+00:00",
-  "updated_at": "2026-11-03T18:32:29.988095+00:00",
+  "updated_at": "2026-11-03T18:32:45.170884+00:00",
   "items": [
-    {
-      "title": "بررسی طرح مسئله آتش زدن خانه اهل‌بیت در منابع اهل سنت",
-      "summary": "در این بخش، کارشناس به طرح موضوع آتش زدن خانه اهل‌بیت اشاره می‌کند و به گفته وی، این مطلب در منابع اهل سنت نیز وجود دارد و به کتاب «کنز العمال» استناد می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "41682233708-66",
-      "sequence": 66,
-      "updated_at": "2026-11-03T17:57:07.233707+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره دلیل دفن شبانه و وصیت حضرت زهرا",
       "summary": "در این بخش، کارشناس درباره علت دفن شبانه و وصیت حضرت زهرا (س) مبنی بر حضور نیافتن افراد خاصی در مراسم پرسش مطرح می‌کند و استدلال می‌کند که وجود این وصیت و کیفیت دفن، نشان‌دهنده وجود مسائل خاصی در آن زمان است.",
@@ -67,16 +55,28 @@
       "sequence": 153,
       "updated_at": "2026-11-03T18:31:32.801214+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی وفاداری زمین به قدرت‌ها و تمدن‌ها",
+      "summary": "در این بخش کارشناس استدلال می‌کند که روزگار و زمین به هیچ قدرت، تمدن و موجود زورمندی وفادار نمانده است؛ به گفته وی، سرانجامِ بسیاری از مدعیان این بوده که زیر خروارها خاک دفن شده‌اند و این امر پیامی برای انسان دارد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41682233708-156",
+      "sequence": 156,
+      "updated_at": "2026-11-03T18:32:45.170857+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 156,
-    "segments_transcribed": 149,
-    "editor_attempts": 102,
-    "editor_withheld": 93,
-    "topics_published": 11,
+    "segments_captured": 157,
+    "segments_transcribed": 150,
+    "editor_attempts": 103,
+    "editor_withheld": 94,
+    "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T18:32:14.616314+00:00"
+    "last_audio_at": "2026-11-03T18:32:38.348577+00:00"
   }
 }
