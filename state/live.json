@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:09:35.634820+00:00",
+  "updated_at": "2026-11-03T16:10:14.566596+00:00",
   "items": [
     {
       "title": "بررسی محدودیت منابع در شناخت عظمت حضرت زهرا",
@@ -33,16 +33,28 @@
       "sequence": 21,
       "updated_at": "2026-11-03T16:09:35.634791+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره استناد ائمه به قرآن موجود و رد تحریف",
+      "summary": "در این بخش کارشناس استدلال می‌کند که ائمه به همین قرآن موجود در جهان اسلام استناد و تأکید می‌کردند که هیچ حرفی از آن کم یا زیاد نشده است؛ برخلاف ادعاهایی که برخی مراکز اهل سنت درباره اعتقاد شیعه به مصحف فاطمه و قرآن دیگر مطرح می‌کنند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41666951982-24",
+      "sequence": 24,
+      "updated_at": "2026-11-03T16:10:14.566578+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 24,
-    "segments_transcribed": 17,
-    "editor_attempts": 7,
+    "segments_captured": 25,
+    "segments_transcribed": 18,
+    "editor_attempts": 8,
     "editor_withheld": 7,
-    "topics_published": 2,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T16:09:27.944364+00:00"
+    "last_audio_at": "2026-11-03T16:09:52.987991+00:00"
   }
 }
