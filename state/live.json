@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T14:15:34.071525+00:00",
-  "updated_at": "2026-11-03T15:06:19.311008+00:00",
+  "updated_at": "2026-11-03T15:06:44.113117+00:00",
   "items": [
     {
       "title": "بررسی ضرورت استفاده از روش‌های عینی در تربیت کودکان",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 91,
-    "segments_transcribed": 86,
-    "editor_attempts": 51,
+    "segments_captured": 92,
+    "segments_transcribed": 87,
+    "editor_attempts": 52,
     "editor_withheld": 48,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T15:06:14.442602+00:00"
+    "last_audio_at": "2026-11-03T15:06:38.895511+00:00"
   }
 }
