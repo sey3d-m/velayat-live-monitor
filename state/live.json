@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:55:57.466459+00:00",
+  "updated_at": "2026-11-03T16:56:18.846984+00:00",
   "items": [
-    {
-      "title": "بررسی مبنای محبت در امور خانواده",
-      "summary": "در این بخش کارشناس استدلال می‌کند که امور خانواده باید بر مبنای محبت و شفقت استوار باشد و محبت را به عنوان سنگ بنای گرمی خانواده معرفی می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41666951982-70",
-      "sequence": 70,
-      "updated_at": "2026-11-03T16:28:20.242304+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی پیامدهای پیاده‌سازی مقررات حقوقی در نظام خانواده",
       "summary": "در این بخش کارشناس استدلال می‌کند که پیاده‌سازی مقررات حقوقی در نظام خانواده، مانند مسائل مربوط به شیردادن یا خروج زن از خانه بدون اجازه همسر، زندگی را به زهر مار و مانند زندان تبدیل می‌کند و تکالیف سختی به همراه می‌آورد.",
@@ -67,16 +55,28 @@
       "sequence": 111,
       "updated_at": "2026-11-03T16:44:46.819316+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره ضرورت کوتاه آمدن همسران از مواضع خود",
+      "summary": "در این بخش کارشناس استدلال می‌کند که برای شکل‌گیری زندگی مشترک، هر یک از زن و شوهر باید از مواضع خود پایین بیایند. به گفته کارشناس، این تصور که همسران باید کاملاً در سلیقه و تطابق شبیه یکدیگر باشند اشتباه است، چرا که حتی دو خواهر و برادر در یک خانه نیز کاملاً شبیه هم نیستند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41666951982-140",
+      "sequence": 140,
+      "updated_at": "2026-11-03T16:56:18.846959+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 140,
-    "segments_transcribed": 131,
-    "editor_attempts": 108,
-    "editor_withheld": 96,
-    "topics_published": 16,
+    "segments_captured": 141,
+    "segments_transcribed": 132,
+    "editor_attempts": 109,
+    "editor_withheld": 97,
+    "topics_published": 17,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T16:55:54.535515+00:00"
+    "last_audio_at": "2026-11-03T16:56:13.737262+00:00"
   }
 }
