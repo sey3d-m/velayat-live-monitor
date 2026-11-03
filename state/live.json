@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:27:54.446706+00:00",
+  "updated_at": "2026-11-03T16:28:20.242326+00:00",
   "items": [
-    {
-      "title": "پرسش درباره تفاوت میان وحی قرآنی و احادیث قدسی",
-      "summary": "در این بخش درباره دسته‌بندی وحی گفت‌وگو شد؛ به گفته کارشناس، هر خبری که از سوی خدا آمده لزوماً قرآن نیست و به عنوان نمونه از احادیث قدسی و سخنان میان خدا و پیامبر در معراج یاد شد که خارج از قرآن کریم قرار دارند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41666951982-29",
-      "sequence": 29,
-      "updated_at": "2026-11-03T16:12:14.562650+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره تفاوت وحی قرآنی و غیرقرآنی و جایگاه حدیث قدسی",
       "summary": "در این بخش کارشناس استدلال می‌کند که هر سخنی منتسب به خدا لزوماً در قرآن نیست و میان وحی قرآنی و غیرقرآنی تفاوت وجود دارد. به گفته کارشناس، حدیث قدسی نمونه‌ای از وحی غیرقرآنی است که جزء قرآن محسوب نمی‌شود اما کلام خداوند است و اخبار حوادث آینده در آن بیان شده است.",
@@ -69,16 +57,28 @@
       "sequence": 60,
       "updated_at": "2026-11-03T16:24:20.495222+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی مبنای محبت در امور خانواده",
+      "summary": "در این بخش کارشناس استدلال می‌کند که امور خانواده باید بر مبنای محبت و شفقت استوار باشد و محبت را به عنوان سنگ بنای گرمی خانواده معرفی می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41666951982-70",
+      "sequence": 70,
+      "updated_at": "2026-11-03T16:28:20.242304+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 70,
-    "segments_transcribed": 63,
-    "editor_attempts": 46,
-    "editor_withheld": 39,
-    "topics_published": 11,
+    "segments_captured": 71,
+    "segments_transcribed": 64,
+    "editor_attempts": 47,
+    "editor_withheld": 40,
+    "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T16:27:51.383765+00:00"
+    "last_audio_at": "2026-11-03T16:28:16.706104+00:00"
   }
 }
