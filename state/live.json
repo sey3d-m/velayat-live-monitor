@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T14:15:34.071525+00:00",
-  "updated_at": "2026-11-03T14:42:06.562856+00:00",
+  "updated_at": "2026-11-03T14:42:24.258706+00:00",
   "items": [
     {
       "title": "بررسی نحوه اجرای برنامه زنده و پاسخ به پرسش‌های بینندگان",
@@ -32,16 +32,28 @@
       "sequence": 13,
       "updated_at": "2026-11-03T14:36:55.650720+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ضرورت استفاده از روش‌های عینی در تربیت کودکان",
+      "summary": "در این بخش کارشناس استدلال می‌کند که برای تربیت بهتر کودکان، صرف گفتار و نصیحت کردن کافی نیست و باید از روش‌های عینی مانند نشان دادن کلیپ یا وقایع واقعی در خیابان استفاده کرد تا جریان‌ها به کودکان آموزش داده شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41651680183-29",
+      "sequence": 29,
+      "updated_at": "2026-11-03T14:42:24.258681+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 30,
-    "segments_transcribed": 27,
+    "segments_captured": 31,
+    "segments_transcribed": 28,
     "editor_attempts": 15,
     "editor_withheld": 13,
-    "topics_published": 2,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T14:41:50.083948+00:00"
+    "last_audio_at": "2026-11-03T14:42:15.074454+00:00"
   }
 }
