@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T14:15:34.071525+00:00",
-  "updated_at": "2026-11-03T14:36:21.227678+00:00",
+  "updated_at": "2026-11-03T14:36:55.650748+00:00",
   "items": [
     {
       "title": "بررسی نحوه اجرای برنامه زنده و پاسخ به پرسش‌های بینندگان",
@@ -19,16 +19,29 @@
       "sequence": 8,
       "updated_at": "2026-11-03T14:34:01.783631+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ایجاد فضای نه گفتن به عنوان ماموریت تربیتی والدین",
+      "summary": "در این بخش کارشناس استدلال می‌کند که یکی از ماموریت‌های تربیتی پدر و مادر این است که فضایی محترمانه و مؤدبانه برای نه گفتن فرزندان به وجود بیاورند؛ بر اساس این سخن، برنامه‌ریزی برای ایجاد چنین فضایی از وظایف مهم تربیتی محسوب می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "editor_mode": "audio_grounded_topic",
+      "id": "41651680183-13",
+      "sequence": 13,
+      "updated_at": "2026-11-03T14:36:55.650720+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 16,
-    "segments_transcribed": 13,
+    "segments_captured": 17,
+    "segments_transcribed": 14,
     "editor_attempts": 7,
-    "editor_withheld": 5,
-    "topics_published": 1,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
-    "last_audio_at": "2026-11-03T14:36:15.501227+00:00"
+    "editor_withheld": 6,
+    "topics_published": 2,
+    "audio_ai_calls": 2,
+    "audio_ai_success": 2,
+    "last_audio_at": "2026-11-03T14:36:40.711353+00:00"
   }
 }
