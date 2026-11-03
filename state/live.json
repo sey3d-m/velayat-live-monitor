@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T17:14:49.831679+00:00",
-  "updated_at": "2026-11-03T17:44:22.351292+00:00",
+  "updated_at": "2026-11-03T17:44:39.659358+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
@@ -58,6 +58,18 @@
       "sequence": 32,
       "updated_at": "2026-11-03T17:43:25.739961+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی استناد به صحیح بخاری درباره خانه‌نشینی پس از سقیفه",
+      "summary": "در این بخش کارشناس استدلال می‌کند که مسئله خانه‌نشینی امیرالمؤمنین پس از حادثه سقیفه و رحلت پیامبر از مسلمات تاریخ است و برای اثبات آن به منابع مهم اهل سنت مانند صحیح بخاری استناد می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.82,
+      "id": "41682233708-35",
+      "sequence": 35,
+      "updated_at": "2026-11-03T17:44:39.659333+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -65,7 +77,7 @@
     "segments_transcribed": 32,
     "editor_attempts": 16,
     "editor_withheld": 14,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-03T17:44:15.830063+00:00"
