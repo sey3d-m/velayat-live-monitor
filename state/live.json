@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T14:15:34.071525+00:00",
-  "updated_at": "2026-11-03T15:09:05.844105+00:00",
+  "updated_at": "2026-11-03T15:10:01.982212+00:00",
   "items": [
     {
       "title": "پرسش درباره ویژگی‌های مومنه قدرتمند در سخنان کارشناس",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 98,
-    "segments_transcribed": 93,
-    "editor_attempts": 55,
-    "editor_withheld": 50,
+    "segments_captured": 100,
+    "segments_transcribed": 95,
+    "editor_attempts": 57,
+    "editor_withheld": 52,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T15:09:00.390924+00:00"
+    "last_audio_at": "2026-11-03T15:09:50.631124+00:00"
   }
 }
