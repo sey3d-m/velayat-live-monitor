@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T17:14:49.831679+00:00",
-  "updated_at": "2026-11-03T17:53:54.550676+00:00",
+  "updated_at": "2026-11-03T17:54:43.310319+00:00",
   "items": [
     {
       "title": "پرسش درباره سندیت یک فیلم و درخواست پاسخ از کارشناس",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 60,
-    "segments_transcribed": 56,
-    "editor_attempts": 33,
-    "editor_withheld": 29,
+    "segments_captured": 62,
+    "segments_transcribed": 58,
+    "editor_attempts": 35,
+    "editor_withheld": 31,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T17:53:48.947047+00:00"
+    "last_audio_at": "2026-11-03T17:54:38.627435+00:00"
   }
 }
