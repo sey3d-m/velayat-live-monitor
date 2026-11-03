@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:10:29.482046+00:00",
+  "updated_at": "2026-11-03T16:10:57.843703+00:00",
   "items": [
     {
       "title": "بررسی محدودیت منابع در شناخت عظمت حضرت زهرا",
@@ -57,16 +57,29 @@
       "sequence": 25,
       "updated_at": "2026-11-03T16:10:29.482016+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41666951982-26",
+      "sequence": 26,
+      "updated_at": "2026-11-03T16:10:57.843673+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 26,
-    "segments_transcribed": 19,
-    "editor_attempts": 9,
-    "editor_withheld": 7,
-    "topics_published": 4,
+    "segments_captured": 27,
+    "segments_transcribed": 20,
+    "editor_attempts": 10,
+    "editor_withheld": 8,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T16:10:17.063760+00:00"
+    "last_audio_at": "2026-11-03T16:10:41.857006+00:00"
   }
 }
