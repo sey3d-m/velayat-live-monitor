@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:19:20.209518+00:00",
+  "updated_at": "2026-11-03T16:20:14.987372+00:00",
   "items": [
     {
       "title": "پرسش درباره محتوای مصحف فاطمی و مباحث مطرح‌شده در آن",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 48,
-    "segments_transcribed": 41,
-    "editor_attempts": 26,
-    "editor_withheld": 20,
+    "segments_captured": 50,
+    "segments_transcribed": 43,
+    "editor_attempts": 28,
+    "editor_withheld": 21,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T16:19:04.557383+00:00"
+    "last_audio_at": "2026-11-03T16:19:54.065810+00:00"
   }
 }
