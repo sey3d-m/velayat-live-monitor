@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:10:20.033462+00:00",
+  "updated_at": "2026-11-03T16:10:29.482046+00:00",
   "items": [
     {
       "title": "بررسی محدودیت منابع در شناخت عظمت حضرت زهرا",
@@ -45,6 +45,18 @@
       "sequence": 24,
       "updated_at": "2026-11-03T16:10:14.566578+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره اتهام اعتقاد شیعه به قرآنی دیگر",
+      "summary": "در این بخش کارشناس به طرح موضوع اتهام اعتقاد شیعه به قرآنی دیگر می‌پردازد و اشاره می‌کند که در کتاب منتشرشده درباره بانوان شیعه و قرآن، بخش مشخصی به بررسی اعتقادات شیعه نسبت به قرآن کریم اختصاص یافته است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41666951982-25",
+      "sequence": 25,
+      "updated_at": "2026-11-03T16:10:29.482016+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -52,7 +64,7 @@
     "segments_transcribed": 19,
     "editor_attempts": 9,
     "editor_withheld": 7,
-    "topics_published": 3,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-03T16:10:17.063760+00:00"
