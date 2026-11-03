@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T17:14:49.831679+00:00",
-  "updated_at": "2026-11-03T18:37:04.465072+00:00",
+  "updated_at": "2026-11-03T18:37:53.947283+00:00",
   "items": [
     {
       "title": "پرسش درباره دلیل دفن شبانه و وصیت حضرت زهرا",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 168,
+    "segments_captured": 170,
     "segments_transcribed": 157,
     "editor_attempts": 109,
     "editor_withheld": 100,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T18:37:04.401809+00:00"
+    "last_audio_at": "2026-11-03T18:37:53.884938+00:00"
   }
 }
