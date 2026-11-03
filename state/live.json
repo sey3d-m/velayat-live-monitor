@@ -1,19 +1,32 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "41651680183",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T14:15:34.071525+00:00",
-  "updated_at": "2026-11-03T14:33:57.437518+00:00",
-  "items": [],
+  "updated_at": "2026-11-03T14:34:01.783657+00:00",
+  "items": [
+    {
+      "title": "بررسی نحوه اجرای برنامه زنده و پاسخ به پرسش‌های بینندگان",
+      "summary": "در این بخش اعلام شد که برنامه در دو بخش شامل ارائه نکات آکادمیک و سپس پاسخ به پرسش‌ها و دغدغه‌های مطرح‌شده از سوی بینندگان از طریق راه‌های ارتباطی اجرا می‌شود. کارشناس از مخاطبان دعوت کرد در یک بستر علمی با برنامه تماس بگیرند و نظرات خود را مطرح کنند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41651680183-8",
+      "sequence": 8,
+      "updated_at": "2026-11-03T14:34:01.783631+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
     "segments_captured": 10,
     "segments_transcribed": 7,
     "editor_attempts": 4,
     "editor_withheld": 3,
-    "topics_published": 0,
+    "topics_published": 1,
     "audio_ai_calls": 1,
     "audio_ai_success": 1,
     "last_audio_at": "2026-11-03T14:33:52.540081+00:00"
