@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:19:17.528680+00:00",
+  "updated_at": "2026-11-03T16:19:20.209518+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41666951982-26",
-      "sequence": 26,
-      "updated_at": "2026-11-03T16:10:57.843673+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره محتوای مصحف فاطمی و مباحث مطرح‌شده در آن",
       "summary": "در این بخش کارشناس استدلال می‌کند که امانت مصحف فاطمی در اختیار امام زمان (عج) قرار دارد. همچنین به گفته کارشناس، محتوای این اثر شامل موضوعاتی مانند جایگاه رسول خدا و آینده فرزندان فاطمه (س) بوده است.",
@@ -68,14 +55,27 @@
       "sequence": 35,
       "updated_at": "2026-11-03T16:14:30.723541+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خانواده و ازدواج",
+      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41666951982-47",
+      "sequence": 47,
+      "updated_at": "2026-11-03T16:19:20.209486+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 48,
     "segments_transcribed": 41,
     "editor_attempts": 26,
-    "editor_withheld": 19,
-    "topics_published": 9,
+    "editor_withheld": 20,
+    "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-03T16:19:04.557383+00:00"
