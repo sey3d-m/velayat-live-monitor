@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T17:14:49.831679+00:00",
-  "updated_at": "2026-11-03T17:37:57.264602+00:00",
+  "updated_at": "2026-11-03T17:38:28.181792+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
@@ -33,16 +33,28 @@
       "sequence": 16,
       "updated_at": "2026-11-03T17:37:32.760637+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نقش حامیان و اربابان در کشتار کودکان و مادران",
+      "summary": "در این بخش کارشناس استدلال می‌کند که حامیان و اربابان این افراد، پشتیبان کشتاری هستند که در زمان ما رخ می‌دهد و زیر پرچم صهیونیست‌ها قرار دارند. همچنین بیان شد که آن‌ها با افتخار به این اقدامات می‌نشینند و ده‌ها هزار کودک و مادر را به شهادت می‌رسانند، در حالی که این موضوع با فریب‌های مختلفی همراه است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41682233708-19",
+      "sequence": 19,
+      "updated_at": "2026-11-03T17:38:28.181766+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 20,
-    "segments_transcribed": 16,
+    "segments_captured": 21,
+    "segments_transcribed": 17,
     "editor_attempts": 8,
     "editor_withheld": 7,
-    "topics_published": 2,
+    "topics_published": 3,
     "audio_ai_calls": 2,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-03T17:37:52.191598+00:00"
+    "last_audio_at": "2026-11-03T17:38:16.594019+00:00"
   }
 }
