@@ -1,83 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "41489212944",
-  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
-  "program_date": "2026-11-02",
-  "started_at": "2026-11-02T17:14:52.977388+00:00",
-  "updated_at": "2026-11-02T18:40:06.294885+00:00",
-  "items": [
-    {
-      "title": "پرسش درباره استناد کارشناس به حدیث امان امت",
-      "summary": "در این بخش کارشناس با استناد به روایتی، اهل‌بیت را مایه امان امت از اختلاف معرفی می‌کند و در ادامه مجری به طرح روایتی دیگر در این زمینه می‌پردازد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41489212944-57",
-      "sequence": 57,
-      "updated_at": "2026-11-02T17:53:12.104167+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره پیشنهاد مهار غریزه جنسی و پاسخ معصوم",
-      "summary": "در این بخش کارشناس مطرح می‌کند که برخی اصحاب برای پیشگیری از گناه پیشنهاد داده بودند غریزه جنسی خود را از بین ببرند، اما به گفته وی حضرت این کار را نهی فرمودند و به جای آن راهکار ازدواج را توصیه کردند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41489212944-68",
-      "sequence": 68,
-      "updated_at": "2026-11-02T17:57:35.653699+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41489212944-115",
-      "sequence": 115,
-      "updated_at": "2026-11-02T18:16:19.984652+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره مؤلفه اصلی قدرت مسلمانان در نگاه کارشناس",
-      "summary": "در این بخش، کارشناس پس از اشاره به برخورداری مسلمانان و جمهوری اسلامی از قدرت مناسب، این پرسش را مطرح می‌کند که با وجود توجه به جنبه‌های ظاهری، قدرت اصلی مسلمانان چیست و به دوری از نگاه کمونیستی تأکید می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41489212944-133",
-      "sequence": 133,
-      "updated_at": "2026-11-02T18:23:30.866436+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره تفاوت صداهای جهان و حکمت تنوع آن",
-      "summary": "در این بخش، کارشناس درباره تفاوت صداهای پیرامون مانند صدای نوزاد و بارش باران صحبت می‌کند و این پرسش را مطرح می‌سازد که اگر همه صداها یکسان بودند چه فاجعه‌ای رخ می‌داد و چرا از میان هشت میلیارد انسان صداها متفاوت است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41489212944-144",
-      "sequence": 144,
-      "updated_at": "2026-11-02T18:27:57.987146+00:00",
-      "speaker": null
-    }
-  ],
+  "session": "41651680183",
+  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "program_date": "2026-11-03",
+  "started_at": "2026-11-03T14:15:34.071525+00:00",
+  "updated_at": "2026-11-03T14:30:00.000323+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 153,
-    "editor_attempts": 119,
-    "editor_withheld": 108,
-    "topics_published": 13,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-02T18:39:42.118103+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
