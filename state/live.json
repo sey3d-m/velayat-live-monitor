@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T14:15:34.071525+00:00",
-  "updated_at": "2026-11-03T14:43:35.485134+00:00",
+  "updated_at": "2026-11-03T14:44:20.223761+00:00",
   "items": [
     {
       "title": "بررسی نحوه اجرای برنامه زنده و پاسخ به پرسش‌های بینندگان",
@@ -47,13 +47,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 34,
-    "segments_transcribed": 31,
-    "editor_attempts": 18,
-    "editor_withheld": 15,
+    "segments_captured": 36,
+    "segments_transcribed": 33,
+    "editor_attempts": 19,
+    "editor_withheld": 16,
     "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T14:43:29.125151+00:00"
+    "last_audio_at": "2026-11-03T14:44:13.301732+00:00"
   }
 }
