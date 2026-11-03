@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:23:53.416256+00:00",
+  "updated_at": "2026-11-03T16:24:20.495247+00:00",
   "items": [
-    {
-      "title": "پرسش درباره محتوای مصحف فاطمی و مباحث مطرح‌شده در آن",
-      "summary": "در این بخش کارشناس استدلال می‌کند که امانت مصحف فاطمی در اختیار امام زمان (عج) قرار دارد. همچنین به گفته کارشناس، محتوای این اثر شامل موضوعاتی مانند جایگاه رسول خدا و آینده فرزندان فاطمه (س) بوده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41666951982-27",
-      "sequence": 27,
-      "updated_at": "2026-11-03T16:11:28.412526+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره تفاوت میان وحی قرآنی و احادیث قدسی",
       "summary": "در این بخش درباره دسته‌بندی وحی گفت‌وگو شد؛ به گفته کارشناس، هر خبری که از سوی خدا آمده لزوماً قرآن نیست و به عنوان نمونه از احادیث قدسی و سخنان میان خدا و پیامبر در معراج یاد شد که خارج از قرآن کریم قرار دارند.",
@@ -68,16 +56,29 @@
       "sequence": 47,
       "updated_at": "2026-11-03T16:19:20.209486+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره روزه",
+      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41666951982-60",
+      "sequence": 60,
+      "updated_at": "2026-11-03T16:24:20.495222+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 60,
-    "segments_transcribed": 53,
-    "editor_attempts": 36,
-    "editor_withheld": 29,
-    "topics_published": 10,
+    "segments_captured": 61,
+    "segments_transcribed": 54,
+    "editor_attempts": 37,
+    "editor_withheld": 31,
+    "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T16:23:49.919383+00:00"
+    "last_audio_at": "2026-11-03T16:24:14.692371+00:00"
   }
 }
