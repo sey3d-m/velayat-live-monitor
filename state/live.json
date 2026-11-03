@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:45:28.343535+00:00",
+  "updated_at": "2026-11-03T16:46:19.495635+00:00",
   "items": [
     {
       "title": "بررسی مبنای محبت در امور خانواده",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 114,
-    "segments_transcribed": 105,
-    "editor_attempts": 82,
-    "editor_withheld": 70,
+    "segments_captured": 116,
+    "segments_transcribed": 107,
+    "editor_attempts": 84,
+    "editor_withheld": 72,
     "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T16:45:24.844639+00:00"
+    "last_audio_at": "2026-11-03T16:46:14.386932+00:00"
   }
 }
