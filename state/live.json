@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T17:14:49.831679+00:00",
-  "updated_at": "2026-11-03T18:31:32.801239+00:00",
+  "updated_at": "2026-11-03T18:32:29.988095+00:00",
   "items": [
     {
       "title": "بررسی طرح مسئله آتش زدن خانه اهل‌بیت در منابع اهل سنت",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 154,
-    "segments_transcribed": 147,
-    "editor_attempts": 100,
-    "editor_withheld": 92,
+    "segments_captured": 156,
+    "segments_transcribed": 149,
+    "editor_attempts": 102,
+    "editor_withheld": 93,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T18:31:25.199060+00:00"
+    "last_audio_at": "2026-11-03T18:32:14.616314+00:00"
   }
 }
