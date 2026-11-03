@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:32:43.098032+00:00",
+  "updated_at": "2026-11-03T16:32:56.824144+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره خانواده و ازدواج",
-      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41666951982-47",
-      "sequence": 47,
-      "updated_at": "2026-11-03T16:19:20.209486+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره روزه",
       "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,6 +56,18 @@
       "sequence": 79,
       "updated_at": "2026-11-03T16:32:00.741881+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره نقش مادری حضرت زهرا در کودکی به روایت کارشناس",
+      "summary": "در این بخش کارشناس استدلال می‌کند که لقب ام‌ابیها برای حضرت زهرا سلام‌الله‌علیها دارای دلیل و مستند تاریخی است و ایشان از کودکی و خردسالی، به‌ویژه پس از وفات حضرت خدیجه، نقش مادری می‌کرده‌اند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41666951982-81",
+      "sequence": 81,
+      "updated_at": "2026-11-03T16:32:56.824116+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -76,7 +75,7 @@
     "segments_transcribed": 75,
     "editor_attempts": 56,
     "editor_withheld": 46,
-    "topics_published": 14,
+    "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-03T16:32:40.141084+00:00"
