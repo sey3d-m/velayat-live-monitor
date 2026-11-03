@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:56:18.846984+00:00",
+  "updated_at": "2026-11-03T16:56:41.383813+00:00",
   "items": [
     {
       "title": "بررسی پیامدهای پیاده‌سازی مقررات حقوقی در نظام خانواده",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 141,
-    "segments_transcribed": 132,
-    "editor_attempts": 109,
+    "segments_captured": 142,
+    "segments_transcribed": 133,
+    "editor_attempts": 110,
     "editor_withheld": 97,
     "topics_published": 17,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T16:56:13.737262+00:00"
+    "last_audio_at": "2026-11-03T16:56:37.669084+00:00"
   }
 }
