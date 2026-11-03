@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T15:44:48.223830+00:00",
-  "updated_at": "2026-11-03T16:24:42.992248+00:00",
+  "updated_at": "2026-11-03T16:25:32.730147+00:00",
   "items": [
     {
       "title": "پرسش درباره تفاوت میان وحی قرآنی و احادیث قدسی",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 62,
-    "segments_transcribed": 55,
-    "editor_attempts": 38,
-    "editor_withheld": 31,
+    "segments_captured": 64,
+    "segments_transcribed": 57,
+    "editor_attempts": 40,
+    "editor_withheld": 33,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T16:24:39.107596+00:00"
+    "last_audio_at": "2026-11-03T16:25:29.126576+00:00"
   }
 }
