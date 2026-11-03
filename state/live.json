@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-03",
   "started_at": "2026-11-03T17:14:49.831679+00:00",
-  "updated_at": "2026-11-03T18:01:54.593305+00:00",
+  "updated_at": "2026-11-03T18:02:44.379037+00:00",
   "items": [
     {
       "title": "بررسی نقش حامیان و اربابان در کشتار کودکان و مادران",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 80,
-    "segments_transcribed": 76,
-    "editor_attempts": 48,
-    "editor_withheld": 43,
+    "segments_captured": 82,
+    "segments_transcribed": 78,
+    "editor_attempts": 49,
+    "editor_withheld": 44,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T18:01:49.493365+00:00"
+    "last_audio_at": "2026-11-03T18:02:38.768209+00:00"
   }
 }
