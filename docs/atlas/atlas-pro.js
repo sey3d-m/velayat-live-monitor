@@ -8,7 +8,7 @@ var NS='http://www.w3.org/2000/svg',stage=null,world=null,animation=0,nodeViews=
 var allowed=['topic','summary','expert','host','hashtags','key_points','clips'];
 var originals={graphSection:graphSection,drawGraph:drawGraph,resetGraph:resetGraph,render:render,timeline:timeline,episodeDetails:episodeDetails};
 function E(x){return esc(x)}
-function N(x){return String(x||'').replace(/[\u064b-\u065f\u0670]/g,'').replace(/[يى]/g,'ی').replace(/ك/g,'ک').replace(/[\u200c\u200d]/g,' ').replace(/ـ/g,'').toLowerCase().replace(/\s+/g,' ').trim()}
+function N(x){return String(x||'').replace(/[\u064b-\u065f\u0670]/g,'').replace(/[يى]/g,'ی').replace(/ك/g,'ک').replace(/[\u200c\u200d]/g,' ').replace(/[_#ـ]/g,' ').toLowerCase().replace(/\s+/g,' ').trim()}
 function tokens(x){return N(x).split(' ').filter(Boolean)}
 function safeUrl(x){try{var u=new URL(x,location.href);return u.protocol==='https:'||u.protocol==='http:'?u.href:''}catch(e){return ''}}
 function fmt(n){return Number(n||0).toLocaleString('fa-IR')}
@@ -27,7 +27,7 @@ function atlasGraphSection(){
  return section('نقشه زنده ارتباطات علمی','از شبکه ولایت تا مجموعه‌برنامه، قسمت، کارشناس، محور و پرسش؛ تمام پیوندها از داده موجود ساخته شده‌اند',
  '<button class="button small" onclick="go(\'#/search\')">⌕ جست‌وجوی همه محتوا</button>')+
  '<section class="atlas-panel" id="graphAnchor"><div class="atlas-head"><div><h3>منظومه هوشمند ولایت</h3><p>برنامه را انتخاب کنید؛ سپس وارد قسمت و محور علمی شوید</p></div><div class="atlas-actions">'+
- actionBtn('نمای کل','atlasSelectRoot()')+actionBtn('موضوعات مرتبط','atlasGraphTopic()')+
+ actionBtn('نمای کل','atlasSelectRoot()')+(S.graphSearch?actionBtn('پاک‌کردن فیلتر','atlasClearGraphQuery()'):'')+actionBtn('موضوعات مرتبط','atlasGraphTopic()')+
  actionBtn('＋','atlasZoom(1.16)')+actionBtn('−','atlasZoom(.86)')+
  actionBtn('⤢','atlasReset()')+actionBtn('⛶ تمام‌صفحه','atlasFullscreen()')+
  '</div></div><div class="atlas-graph-layout"><div class="atlas-stage" id="atlasStage"><svg id="atlasSvg" viewBox="0 0 1200 700" aria-label="نقشه تعاملی ارتباطات علمی ولایت" role="img"><g id="atlasWorld"></g></svg><div class="atlas-pins">◉ مرکز شبکه · ◇ برنامه · ● قسمت · ✦ محور | حرکت و بزرگ‌نمایی با ماوس</div></div><aside class="atlas-inspector" id="atlasInspector"></aside></div></section>';
@@ -41,7 +41,7 @@ function buildGraph(){
  function add(n){if(!map.has(n.id)){nodes.push(n);map.set(n.id,n)}return n}
  var gs=groupShows().map(x=>({name:x[0],items:x[1]}));
  if(!S.group){
-  var arr=gs.filter(g=>!S.graphSearch||N(g.name+' '+g.items.map(x=>x.topic+' '+expert(x)).join(' ')).includes(N(S.graphSearch)));
+  var linked=S.graphSearch?new Set(results(S.graphSearch,{}).map(x=>x.program)):null;var arr=gs.filter(g=>!linked||linked.has(g.name));
   arr.forEach(function(g,i){
    var a=2*Math.PI*i/Math.max(1,arr.length)-Math.PI/2,ring=i%2===0?242:290;
    add({id:'p:'+g.name,kind:'program',label:g.name,sub:fmt(g.items.length)+' قسمت',x:600+Math.cos(a)*ring*1.53,y:345+Math.sin(a)*ring,r:23,group:g.name});
@@ -139,6 +139,7 @@ function inspect(){
 }
 window.atlasPick=atlasPick;
 window.atlasSelectRoot=function(){S.group='';S.episode='';S.selected='root';mountGraph()};
+window.atlasClearGraphQuery=function(){S.graphSearch='';S.group='';S.episode='';S.selected='root';mountGraph()};
 window.atlasGraphTopic=function(){go('#/search');setTimeout(function(){var e=document.getElementById('atlasQuery');if(e)e.focus()},60)};
 window.atlasZoom=function(n){cam.k=Math.max(.58,Math.min(2.5,cam.k*n));setCamera()};
 window.atlasReset=function(){cam={x:0,y:0,k:1};setCamera()};
@@ -149,7 +150,7 @@ drawGraph=function(){mountGraph()};
 resetGraph=function(){mountGraph()};
 function searchable(){
  var list=[];programs.forEach(function(p){
-  list.push({kind:'episode',id:p.id,pid:p.id,program:name(p),expert:expert(p),date:when(p),title:p.topic||name(p),body:p.summary||'',start:null});
+  list.push({kind:'episode',id:p.id,pid:p.id,program:name(p),expert:expert(p),date:when(p),title:p.topic||name(p),body:p.summary||'',searchText:[p.host,p.date,p.date_iso,p.start,(p.hashtags||[]).join(' '),(p.clips||[]).map(c=>c.title).join(' '),(p.key_points||[]).map(t=>t.title).join(' '),(p.questions||[]).map(t=>t.question+' '+t.answer).join(' ')].join(' '),start:null});
  });
  content.forEach(function(c){if(!c.program_id||!get(c.program_id))return;
   if(c.content_type!=='expert_topic'&&c.content_type!=='question_answer')return;
@@ -160,7 +161,7 @@ function searchable(){
 }
 function score(r,q){
  var ts=tokens(q);if(!ts.length)return 1;
- var title=N(r.title),prog=N(r.program),person=N(r.expert),body=N(r.body),s=0;
+ var title=N(r.title),prog=N(r.program),person=N(r.expert),body=N(r.body+' '+(r.searchText||'')),s=0;
  ts.forEach(function(t){if(title.includes(t))s+=11;if(prog.includes(t))s+=8;if(person.includes(t))s+=8;if(body.includes(t))s+=3});
  if(ts.every(t=>(title+' '+prog+' '+person+' '+body).includes(t)))s+=12;else return 0;
  if(N(r.title)===N(q))s+=28;
@@ -194,7 +195,7 @@ function searchPage(){
  '<select class="atlas-select" aria-label="نوع نتیجه" onchange="atlasSearchFilter(\'type\',this.value)">'+[['all','تمام انواع'],['episode','قسمت'],['topic','محور'],['qa','پرسش و پاسخ']].map(x=>'<option value="'+x[0]+'" '+(S.sType===x[0]?'selected':'')+'>'+x[1]+'</option>').join('')+'</select>'+
  '<select class="atlas-select" aria-label="مرتب‌سازی" onchange="atlasSearchFilter(\'sort\',this.value)"><option value="relevance" '+(S.sSort==='relevance'?'selected':'')+'>مرتبط‌ترین</option><option value="date" '+(S.sSort==='date'?'selected':'')+'>جدیدترین</option></select></div>'+
  '<div class="atlas-sug">'+suggestions.map(x=>'<button onclick="atlasSearchSuggestion(this.textContent)">'+E(x.replace(/_/g,' '))+'</button>').join('')+'</div></section>'+
- '<div class="atlas-toolbar"><span class="atlas-count" id="atlasResultCount"></span><div class="atlas-actions">'+actionBtn('نمای کارت','atlasView(\'cards\')',S.sView==='cards'?'active':'')+actionBtn('نمای پژوهشی','atlasView(\'list\')',S.sView==='list'?'active':'')+actionBtn('کپی جست‌وجو','atlasCopySearch()')+'</div></div><div id="atlasResultList" class="atlas-result-grid"></div>';
+ '<div class="atlas-toolbar"><span class="atlas-count" id="atlasResultCount"></span><div class="atlas-actions">'+actionBtn('نمای کارت','atlasView(\'cards\')',S.sView==='cards'?'active':'')+actionBtn('نمای پژوهشی','atlasView(\'list\')',S.sView==='list'?'active':'')+actionBtn('نمای شبکه نتایج','atlasGraphFromSearch()')+actionBtn('کپی جست‌وجو','atlasCopySearch()')+'</div></div><div id="atlasResultList" class="atlas-result-grid"></div>';
 }
 function populateSearch(){
  var container=document.getElementById('atlasResultList');if(!container)return;
@@ -204,6 +205,7 @@ function populateSearch(){
  container.innerHTML=rs.length?rs.slice(0,160).map(resultCard).join(''):'<div class="empty">برای این عبارت در آرشیو فعلی نتیجه‌ای وجود ندارد.</div>';
  if(rs.length>160)container.insertAdjacentHTML('beforeend','<div class="muted">۱۶۰ نتیجه نخست نمایش داده شده است؛ جست‌وجو را دقیق‌تر کنید.</div>');
 }
+window.atlasGraphFromSearch=function(){if(!S.sQuery.trim())return toast('ابتدا عبارت جست‌وجو را وارد کنید');S.graphSearch=S.sQuery;S.group='';S.episode='';S.selected='root';go('#/');setTimeout(function(){document.getElementById('graphAnchor')?.scrollIntoView({behavior:'smooth'})},80)};
 window.atlasSearchInput=function(v){S.sQuery=v;populateSearch()};
 window.atlasSearchSuggestion=function(v){S.sQuery=v;document.getElementById('atlasQuery').value=v;populateSearch()};
 window.atlasSearchFilter=function(k,v){if(k==='program')S.sProgram=v;if(k==='type')S.sType=v;if(k==='sort')S.sSort=v;populateSearch()};
