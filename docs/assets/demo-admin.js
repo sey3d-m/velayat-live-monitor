@@ -57,6 +57,7 @@ function notify(msg,variant){
 function field(spec){
  const [key,label,type,a,b]=spec;
  const lab=document.createElement('label'),node=document.createElement(type==='select'?'select':'input');
+ node.dataset.setting=key;
  lab.className=type==='check'?'admin-checkbox':'admin-field';
  if(type==='check'){
   node.type='checkbox';lab.append(node,document.createTextNode(label));
