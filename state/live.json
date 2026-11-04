@@ -1,84 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "41845533409",
-  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "session": "41860823618",
+  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-04",
-  "started_at": "2026-11-04T14:14:52.411446+00:00",
-  "updated_at": "2026-11-04T15:40:01.917840+00:00",
-  "items": [
-    {
-      "title": "گفت‌وگو درباره زیارت",
-      "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41845533409-90",
-      "sequence": 90,
-      "updated_at": "2026-11-04T15:06:32.173060+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره روزه",
-      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41845533409-110",
-      "sequence": 110,
-      "updated_at": "2026-11-04T15:14:49.755725+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره وضعیت وضو و نماز افراد مبتلا به وسواس",
-      "summary": "در این بخش کارشناس درباره وضعیت افرادی که در انجام وضو و نماز دچار وسواس شدید هستند، سخن می‌گوید. به گفته کارشناس، برخی افراد به دلیل وسواس در وضو گرفتن، زمان زیادی صرف می‌کنند تا جایی که نماز صبحشان قضا می‌شود یا توان ایستادن برای نماز را از دست می‌دهند، و این روند که در برخی خانواده‌ها نیز دیده می‌شود، درست نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41845533409-115",
-      "sequence": 115,
-      "updated_at": "2026-11-04T15:16:43.549395+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره توصیف حس حضور نور پیامبر(ص) در خانه",
-      "summary": "در این بخش کارشناس استدلال می‌کند که هنگام ورود پیامبر(ص) به خانه، دلش روشنی گرفته و این حالت را با نور حضور او در درون خویش توصیف می‌کند؛ به گفته وی این وضعیت به گونه‌ای بوده که حتی توصیف یا خیال آن نیز از ذهن عبور نمی کرده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41845533409-144",
-      "sequence": 144,
-      "updated_at": "2026-11-04T15:28:08.504972+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره تجهیزات بهشتی و غسل مربوط به رویدادهای پس از مرگ",
-      "summary": "در این بخش، کارشناס درباره جامه‌های بهشتی، آب کوثر و آماده‌سازی برای ملاقات با خدا سخن می‌گوید و به موضوع آماده‌سازی برای رجعت و پوشیدن جامه سفید اشاره می‌کند؛ همچنین به رویدادی مرتبط با حضور در کنار پیکر و انتظار برای بازگشت یا بیداری پرداخته می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41845533409-163",
-      "sequence": 163,
-      "updated_at": "2026-11-04T15:35:59.084413+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-04T15:44:52.193040+00:00",
+  "updated_at": "2026-11-04T16:00:00.000333+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 165,
-    "editor_attempts": 109,
-    "editor_withheld": 102,
-    "topics_published": 13,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T15:39:49.844868+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
