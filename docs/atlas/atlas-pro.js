@@ -51,6 +51,17 @@ function buildGraph(){
    add({id:'p:'+g.name,kind:'program',label:g.name,sub:fmt(g.items.length)+' قسمت',x:600+Math.cos(a)*ring*1.53,y:345+Math.sin(a)*ring,r:23,group:g.name});
    edges.push(edge('root','p:'+g.name,'مجموعه واقعی برنامه‌ها'));
   });
+  // Cross-program lines require independently recorded, non-generic shared tags.
+  var ignored=new Set(['شبکه جهانی ولایت','شبکه ولایت','ولایت','فاطمیه','برنامه زنده','ولایت فارسی','شبکه','برنامه']);
+  var gsTags=arr.map(function(g){return new Set(g.items.flatMap(p=>specificTags(p)).map(N).filter(t=>t.length>3&&!ignored.has(t)))});
+  var tagFreq=new Map();gsTags.forEach(tags=>tags.forEach(t=>tagFreq.set(t,(tagFreq.get(t)||0)+1)));
+  var semantic=[];
+  for(var i=0;i<arr.length;i++)for(var j=i+1;j<arr.length;j++){
+   var overlap=[...gsTags[i]].filter(t=>gsTags[j].has(t)&&tagFreq.get(t)<=Math.max(3,Math.round(arr.length*.35)));
+   if(overlap.length)semantic.push({a:arr[i].name,b:arr[j].name,why:overlap.slice(0,3),weight:overlap.length});
+  }
+  semantic.sort((a,b)=>b.weight-a.weight);
+  semantic.slice(0,12).forEach(function(x){var e=edge('p:'+x.a,'p:'+x.b,'کلیدواژه ثبت‌شده مشترک: '+x.why.join('، '));e.semantic=true;edges.push(e)});
   return {nodes:nodes,edges:edges,map:map};
  }
  var group=gs.find(g=>g.name===S.group);if(!group){S.group='';return buildGraph()}
@@ -159,7 +170,7 @@ function mountGraph(){
    var pathD='M '+pa.x.toFixed(2)+' '+pa.y.toFixed(2)+' Q '+(mx+curve).toFixed(2)+' '+(my-21).toFixed(2)+' '+pb.x.toFixed(2)+' '+pb.y.toFixed(2);
    o.el.setAttribute('d',pathD);o.halo.setAttribute('d',pathD);
    var hot=S.selected===o.edge.a||S.selected===o.edge.b;
-   o.el.setAttribute('class','atlas-edge'+(hot?' highlight':''));
+   o.el.setAttribute('class','atlas-edge'+(o.edge.semantic?' semantic':'')+(hot?' highlight':''));
    o.halo.setAttribute('opacity',hot?'.9':'.35');
    if(quiet){o.signal.setAttribute('opacity','0');return}
    var progress=((t/3600)+(o.index*.19))%1;
@@ -189,7 +200,7 @@ function inspect(){
  if(!n){el.innerHTML='محتوایی برای این انتخاب وجود ندارد';return}
  var type='',meta='',desc='',buttons='';
  if(n.kind==='root'){type='مرکز اطلس';meta=fmt(programs.length)+' قسمت · '+fmt(groupShows().length)+' مجموعه برنامه';desc='تمام برنامه‌ها و پیوندهای اطلس از آرشیو فعلی دیدبان استخراج می‌شوند. برای مشاهده زیرشاخه‌ها یک برنامه را انتخاب کنید.';buttons=actionBtn('جست‌وجوی موضوعی','go(\'#/search\')')}
- if(n.kind==='program'){var a=programs.filter(p=>name(p)===n.group);type='مجموعه برنامه';meta=fmt(a.length)+' قسمت · '+fmt(unique(a.map(expert)).length)+' کارشناس';desc='قسمت‌های ثبت‌شده در این مجموعه و محورهای هر قسمت را می‌توانید بررسی کنید.';buttons=actionBtn('پرونده اختصاصی مجموعه','go(\'#/show/'+encodeURIComponent(n.group)+'\')','active')}
+ if(n.kind==='program'){var a=programs.filter(p=>name(p)===n.group);type='مجموعه برنامه';meta=fmt(a.length)+' قسمت · '+fmt(unique(a.map(expert)).length)+' کارشناس';var relations=model.edges.filter(e=>e.semantic&&(e.a===n.id||e.b===n.id));desc='قسمت‌های ثبت‌شده و محورهای هر قسمت را می‌توانید بررسی کنید.'+(relations.length?'\nپیوندهای محتوایی مستند: '+relations.map(e=>e.why).join('؛ '):'');meta+=' · '+fmt(relations.length)+' ارتباط عرضی ثبت‌شده';buttons=actionBtn('پرونده اختصاصی مجموعه','go(\'#/show/'+encodeURIComponent(n.group)+'\')','active')}
  if(n.kind==='episode'){var p=n.p;type='قسمت برنامه';meta=(p.date||p.date_iso||'')+' · '+(p.start||'')+' · '+expert(p);desc=p.summary||'متن خلاصه موجود نیست';buttons=actionBtn('پرونده و خط زمانی','go(\''+detailHash(p.id)+'\')','active')}
  if(n.kind==='expert'){type='کارشناس';meta=fmt(programs.filter(p=>expert(p)===n.who).length)+' قسمت ثبت‌شده';desc='اتصال این کارشناس به برنامه از نام درج‌شده در گزارش دیدبان استخراج شده است.';buttons=actionBtn('جست‌وجوی کارشناس','atlasSearchFor('+JSON.stringify(n.who).replace(/"/g,'&quot;')+')')}
  if(n.kind==='topic'){type='محور علمی زمان‌دار';meta=hhmm(n.t.start_sec)+' — '+hhmm(n.t.end_sec);desc=n.t.title;buttons=actionBtn('مشاهده در قسمت','go(\''+detailHash(n.p.id)+'\')','active')}
