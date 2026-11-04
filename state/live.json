@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T15:44:52.193040+00:00",
-  "updated_at": "2026-11-04T16:44:00.875263+00:00",
+  "updated_at": "2026-11-04T16:44:45.768847+00:00",
   "items": [
     {
       "title": "پرسش درباره کیفیت زندگی جاودان پس از مرگ",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 110,
-    "segments_transcribed": 106,
-    "editor_attempts": 58,
-    "editor_withheld": 52,
+    "segments_captured": 112,
+    "segments_transcribed": 108,
+    "editor_attempts": 59,
+    "editor_withheld": 53,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T16:43:55.608506+00:00"
+    "last_audio_at": "2026-11-04T16:44:38.670161+00:00"
   }
 }
