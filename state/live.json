@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "ended",
   "network": "velayat_farsi",
   "session": "41860823618",
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T15:44:52.193040+00:00",
-  "updated_at": "2026-11-04T17:09:59.520111+00:00",
+  "updated_at": "2026-11-04T17:10:26.101899+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 174,
-    "segments_transcribed": 167,
+    "segments_captured": 175,
+    "segments_transcribed": 168,
     "editor_attempts": 97,
     "editor_withheld": 89,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T17:09:51.057208+00:00"
+    "last_audio_at": "2026-11-04T17:10:00.746105+00:00"
   }
 }
