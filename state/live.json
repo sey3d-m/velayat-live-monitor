@@ -1,84 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "41860823618",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "41875588304",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-04",
-  "started_at": "2026-11-04T15:44:52.193040+00:00",
-  "updated_at": "2026-11-04T17:10:26.101899+00:00",
-  "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41860823618-50",
-      "sequence": 50,
-      "updated_at": "2026-11-04T16:20:27.286451+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره مقایسه خسارت‌های دنیا و آخرت",
-      "summary": "در این بخش کارشناس درباره تفاوت خسارت‌های محدود در این دنیا با محرومیت از حیات ابدی و آخرت استدلال می‌کند و خسارت‌های دنیوی را در مقایسه با آخرت ناچیز می‌داند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41860823618-55",
-      "sequence": 55,
-      "updated_at": "2026-11-04T16:22:49.510291+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره کیفیت حضور نفس در بدن و ارتباط آن",
-      "summary": "در این بخش کارشناس درباره نحوه حضور نفس در بدن و ارتباط آن بحث می‌کند و استدلال می‌کند که نفس با همه بدن ارتباط دارد و در همه جای آن حاضر است اما جای خاصی ندارد، و در ادامه به موضوع فرمان ربایی و ارتباط آن با مغز اشاره می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41860823618-120",
-      "sequence": 120,
-      "updated_at": "2026-11-04T16:48:40.047399+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره امام زمان",
-      "summary": "در این بخش از برنامه، موضوع «امام زمان» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41860823618-165",
-      "sequence": 165,
-      "updated_at": "2026-11-04T17:06:41.030248+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی روایت مجسم شدن خوبی‌ها در فاطمه زهرا (س)",
-      "summary": "در این بخش کارشناس استدلال می‌کند به نقل از پیامبر (ص) که اگر تمام خوبی‌ها به صورت یک انسان مجسم می‌شد، آن انسان فاطمه زهرا (س) بود، بلکه او حتی جایگاهی بالاتر دارد و عقل ما به آن راه ندارد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41860823618-166",
-      "sequence": 166,
-      "updated_at": "2026-11-04T17:07:15.978506+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-04T17:14:46.724830+00:00",
+  "updated_at": "2026-11-04T17:30:00.000324+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 168,
-    "editor_attempts": 97,
-    "editor_withheld": 89,
-    "topics_published": 10,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T17:10:00.746105+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
