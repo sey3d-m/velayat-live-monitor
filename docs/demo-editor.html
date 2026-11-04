@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#08182b">
+<title>ویرایشگر مستقل دموی پاسخ‌نما</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
+:root{font-family:Vazirmatn,Tahoma,Arial,sans-serif;--bg:#f1f5f9;--navy:#0b213b;--ink:#21354a;--muted:#697b8e;--line:#dce4ec;--gold:#caa769}
+*{box-sizing:border-box}
+html,body{min-height:100%;margin:0}body{background:var(--bg);color:var(--ink)}
+button,input,textarea,select{font:inherit}button{cursor:pointer}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #2b92dd;outline-offset:2px}
+[hidden]{display:none!important}
+a{color:inherit;text-decoration:none}
+header.page-head{background:#fff;border-bottom:1px solid var(--line);padding:18px max(24px,calc((100vw - 1480px)/2))}
+.head-top{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+.identity{display:flex;gap:13px;align-items:center}.mark{display:grid;place-items:center;background:#0a2642;color:#e3c78f;border-radius:14px;width:52px;height:52px;font-size:34px;font-weight:900}
+.identity strong{display:block;font-size:20px}.identity small{display:block;font-size:11px;color:#7e8e9b}
+.actions{display:flex;flex-wrap:wrap;gap:8px}
+.btn{border:1px solid #d8e0e8;background:white;color:#1f3e59;padding:10px 13px;border-radius:10px;font-size:12px;font-weight:800;white-space:nowrap}
+.btn:hover{background:#f0f5f8}.btn.primary{background:#0d3654;color:#fff;border-color:#0d3654}.btn.gold{background:#caa769;color:#172638;border-color:#caa769}.btn.danger{color:#9d3942}
+.notice{background:#ecf4fb;padding:10px 16px;border:1px solid #d6e5f0;border-radius:11px;font-size:12px;line-height:1.9;color:#4b6882;margin-top:13px}
+.editor-layout{max-width:1480px;min-height:calc(100vh - 145px);display:grid;grid-template-columns:minmax(420px,1fr) minmax(380px,570px);gap:22px;padding:25px 24px;margin:auto;align-items:start}
+.controls{min-width:0;display:grid;gap:14px}.panel{background:white;border:1px solid var(--line);border-radius:17px;padding:17px;box-shadow:0 4px 16px #071d3410}
+.panel-title{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 16px}.panel-title h2{font-size:15px;margin:0}.count{font-size:11px;color:var(--muted)}
+.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{display:flex;flex-direction:column;gap:6px;font-size:11px;font-weight:800;color:#5b6e80;min-width:0}
+.field.full{grid-column:1/-1}.field input,.field textarea,.field select{width:100%;border:1px solid #dbe5ed;background:#f8fafc;border-radius:9px;color:#1d3852;font-size:13px;padding:10px;resize:vertical;min-height:41px}
+.field textarea{line-height:1.9;min-height:85px}.field input:focus,.field textarea:focus{background:white}
+.cards-list{display:grid;gap:7px}.item-row{display:flex;align-items:center;gap:7px;padding:10px;background:#f8fafc;border:1px solid #e2eaf1;border-radius:10px;min-width:0}
+.item-row.active{background:#eff6fc;border-color:#75a4c3}.item-row button.select-card{border:0;background:none;text-align:right;flex:1;min-width:0;font-size:12px;color:#233b52;font-weight:800}
+.select-card .short{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.select-card small{display:block;font-weight:500;color:#8092a3;font-size:10px}
+.tiny{border:1px solid #d7e1e9;background:white;border-radius:7px;width:28px;height:30px;flex:none;color:#47637d}.tiny:disabled{opacity:.35;cursor:not-allowed}.tiny.remove{color:#b44d51}
+.subtle{font-size:11px;line-height:2;color:#748596;margin:10px 0 0}
+.preview-column{position:sticky;top:14px;min-width:0}.preview-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;font-size:12px;color:#61768b}
+.preview-heading strong{font-size:15px;color:#203b56}.preview-zone{height:min(790px,calc(100vh - 190px));min-height:520px;background:radial-gradient(circle at 50% 0,#243a50,#071625 75%);border-radius:20px;padding:11px;display:flex;justify-content:flex-start}
+.tv{--accent:#caa769;width:100%;height:100%;min-height:0;border-radius:18px;border:1px solid #c9a66b65;background:linear-gradient(180deg,#102b48fa,#071c35fa);box-shadow:0 20px 50px #020c1d66;display:flex;flex-direction:column;overflow:hidden;color:#eef5f8}
+.tv-head{padding:17px 19px;border-bottom:1px solid #ffffff25;display:flex;justify-content:space-between;align-items:center;gap:10px;flex:none}
+.tv-id{display:flex;align-items:center;gap:12px;min-width:0}.tv-mark{display:grid;place-items:center;background:var(--accent);color:#08253d;border-radius:10px;font-size:27px;font-weight:900;width:41px;height:41px;flex:none}
+.tv-brand{font-size:18px;font-weight:900}.tv-network{font-size:10px;color:#acbfd0}.tv-status{font-size:10px;padding:6px 9px;border-radius:8px;background:#1f4757;color:#b9e0d8;max-width:145px;text-align:center}
+.tv-meta{padding:12px 21px 7px;display:flex;justify-content:space-between;gap:9px;align-items:center;flex:none}
+.tv-meta strong{font-size:14px;color:var(--accent);font-weight:900}.tv-meta span{font-size:10px;color:#b3c8d6;text-align:left}
+.tv-timeline{display:flex;justify-content:space-between;align-items:center;padding:4px 21px 8px;color:#a6bdce;font-size:11px;flex:none}
+.tv-cards{flex:1;display:flex;flex-direction:column;gap:8px;overflow-y:auto;padding:0 12px 5px;min-height:0;scrollbar-width:thin}
+.tv-card{background:#ffffff0d;border-right:3px solid var(--accent);border-radius:10px;padding:10px 13px;display:flex;flex-direction:column;gap:4px;justify-content:center;min-height:90px;flex:1}
+.tv-card.qa{border-right-color:#76b0da}.tv-card .type{font-size:10px;font-weight:800;color:#e3cc9c;display:flex;justify-content:space-between;gap:6px}.tv-card .type small{color:#9db6c9;font-weight:500}
+.tv-card h3{font-size:clamp(13px,1.25vw,17px);line-height:1.6;color:#fff;margin:1px 0 0;font-weight:900;overflow-wrap:anywhere}
+.tv-card p{font-size:clamp(11px,.96vw,13px);line-height:1.75;color:#d0dee9;margin:0;overflow-wrap:anywhere}
+.tv-card .viewer{font-size:10px;color:#add3ea;display:flex;gap:12px;flex-wrap:wrap}
+.tv-card .qa-label{color:#f0d69c;font-weight:900}
+.tv-foot{display:flex;align-items:center;justify-content:space-between;gap:8px;flex:none;padding:12px 20px;border-top:1px solid #ffffff1b;background:#ffffff08;font-size:10px;color:#abbecd}
+.tv-foot strong{color:#f0d7a1;font-size:12px}.tv-foot .disclosure{font-size:9px}
+.feedback{font-size:12px;color:#336e72;min-height:20px;padding:8px 0}
+.overlay-only{display:none}
+body.preview-mode{background:transparent;overflow:hidden}body.preview-mode header.page-head,body.preview-mode .controls,body.preview-mode .preview-heading{display:none}
+body.preview-mode .editor-layout{display:block;max-width:none;min-height:100vh;margin:0;padding:0}
+body.preview-mode .preview-column{position:static}
+body.preview-mode .preview-zone{height:100vh;min-height:0;width:100%;border-radius:0;background:transparent;justify-content:flex-start;padding:8px 12px}
+body.preview-mode .tv{width:min(530px,100%);border-radius:19px}
+body.preview-mode .overlay-only{display:block;position:fixed;top:12px;left:12px;color:#bed3e0;background:#10283daa;border:1px solid #335269;border-radius:9px;font-size:11px;padding:8px 11px}
+@media(max-width:1050px){.editor-layout{grid-template-columns:1fr 1fr;gap:14px}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}}
+@media(max-width:760px){header.page-head{padding:14px}.editor-layout{grid-template-columns:1fr;padding:14px}.preview-column{position:static;order:-1}.preview-zone{height:560px;min-height:560px}.formgrid{grid-template-columns:1fr 1fr}.field.full{grid-column:1/-1}.tv-card h3{font-size:15px}.tv-card p{font-size:12px}}
+</style>
+</head>
+<body>
+<header class="page-head"><div class="head-top">
+ <div class="identity"><span class="mark">و</span><div><strong>ویرایشگر دموی پاسخ‌نما</strong><small>مستقل از پردازش زنده، کنداکتور و آرشیو اصلی</small></div></div>
+ <div class="actions">
+  <button class="btn primary" id="save" type="button">ذخیره در این مرورگر</button>
+  <button class="btn gold" id="add" type="button">+ افزودن باکس</button>
+  <button class="btn" id="full" type="button">نمای تمام‌صفحه ↗</button>
+  <button class="btn" id="export" type="button">دریافت JSON</button>
+  <button class="btn" id="import" type="button">بازیابی JSON</button>
+  <button class="btn danger" id="reset" type="button">بازگشت به محتوای اصلی دمو</button>
+  <input type="file" id="json-file" accept="application/json,.json" hidden>
+ </div>
+</div>
+<div class="notice"><b>محیط مستقل نمایش:</b> این صفحه فقط نمونه ارائه را تغییر می‌دهد. اطلاعات در حافظه همین مرورگر می‌ماند؛ هیچ درخواست نوشتن به گیت‌هاب، سامانه دیدبان، API، بات یا داده‌های زنده ارسال نمی‌شود. محتوای ویرایش‌شده برای نمایش است، نه نقل قول تأییدشده.</div>
+</header>
+<main class="editor-layout">
+<section class="controls">
+ <div class="panel"><div class="panel-title"><h2>مشخصات سربرگ</h2><span class="count">قابل ویرایش</span></div><div class="formgrid">
+  <label class="field">عنوان اصلی<input id="h-title" maxlength="80"></label>
+  <label class="field">نام شبکه<input id="h-network" maxlength="110"></label>
+  <label class="field full">عنوان مجموعه یا برنامه<input id="h-program" maxlength="150"></label>
+  <label class="field">توضیح زیرعنوان<input id="h-subtitle" maxlength="120"></label>
+  <label class="field">برچسب وضعیت<input id="h-status" maxlength="70"></label>
+  <label class="field full">متن پاصفحه<input id="h-footer" maxlength="140"></label>
+ </div></div>
+ <div class="panel"><div class="panel-title"><h2>مدیریت باکس‌ها</h2><span class="count" id="count-label">۰ باکس</span></div><div id="items-list" class="cards-list"></div><p class="subtle">برای انتخاب هر باکس، روی عنوان آن کلیک کنید؛ با فلش‌ها ترتیب را تغییر دهید. حذف فقط از این دمو انجام می‌شود.</p></div>
+ <div class="panel" id="item-editor"><div class="panel-title"><h2>ویرایش باکس انتخاب‌شده</h2><span class="count" id="selected-num"></span></div>
+  <div class="formgrid">
+    <label class="field full">نوع مطلب<select id="f-kind">
+     <option value="question_answer">پرسش و پاسخ</option>
+     <option value="expert_topic">محور بحث کارشناس</option>
+     <option value="expert_point">نکته علمی</option>
+     <option value="expert_reference">مستندات بحث</option>
+     <option value="expert_summary">جمع‌بندی کارشناس</option>
+    </select></label>
+    <label class="field full">سؤال / عنوان باکس<textarea id="f-title" rows="2" maxlength="2000"></textarea></label>
+    <label class="field full">پاسخ / توضیح باکس<textarea id="f-body" rows="4" maxlength="5000"></textarea></label>
+    <label class="field">نام بیننده<input id="f-name" maxlength="100" placeholder="نام ثبت نشده"></label>
+    <label class="field">شهر بیننده<input id="f-city" maxlength="80" placeholder="ثبت نشده"></label>
+    <label class="field">نام برنامه<input id="f-program" maxlength="140"></label>
+    <label class="field">نام کارشناس<input id="f-expert" maxlength="140"></label>
+    <label class="field">تاریخ<input id="f-date" maxlength="32" placeholder="2026-11-03"></label>
+    <label class="field">زمان در برنامه<input id="f-time" maxlength="12" placeholder="12:30"></label>
+  </div>
+  <p class="subtle">در آرشیو فعلی شهر بسیاری از بینندگان ثبت نشده است؛ شهر واقعی را فقط در صورت اطمینان وارد کنید. هر تغییر دستی با برچسب «ویرایش‌شده برای دمو» مشخص می‌شود.</p>
+ </div>
+ <div class="feedback" id="feedback" role="status" aria-live="polite"></div>
+</section>
+<section class="preview-column">
+ <div class="preview-heading"><strong>پیش‌نمایش لحظه‌ای</strong><span>همان نمای قابل ارائه روی پرده</span></div>
+ <div class="preview-zone"><div class="tv" id="tv">
+  <div class="tv-head"><div class="tv-id"><span class="tv-mark">و</span><div><div class="tv-brand" id="p-title">پاسخ‌نما</div><div class="tv-network" id="p-network">شبکه جهانی ولایت فارسی</div></div></div><span class="tv-status" id="p-status">نمونه آرشیوی</span></div>
+  <div class="tv-meta"><strong id="p-program">برنامه‌های شبکه ولایت</strong><span id="p-subtitle">آرشیو دیدبان</span></div>
+  <div class="tv-timeline"><span>محورهای علمی و پرسش‌های مخاطبان</span><span id="p-count">۰ باکس</span></div>
+  <div class="tv-cards" id="p-cards"></div>
+  <div class="tv-foot"><strong id="p-brand">پاسخ‌نما</strong><span class="disclosure" id="p-footer">آرشیو خودکار، نیازمند بازبینی</span></div>
+ </div></div>
+</section></main>
+<a href="demo-editor.html" class="overlay-only" id="return-editor">بازگشت به ویرایشگر</a>
+<script>
+(function(){
+'use strict';
+var KEY='velayat-pasokhnama-editable-presentation-v1';
+var previewMode=new URLSearchParams(location.search).get('preview')==='1';
+if(previewMode)document.body.classList.add('preview-mode');
+var $=function(id){return document.getElementById(id);};
+var dfa=function(v){return String(v==null?'':v).replace(/[0-9]/g,function(x){return '۰۱۲۳۴۵۶۷۸۹'[Number(x)];});};
+var labels={question_answer:'پرسش و پاسخ',expert_topic:'محور بحث کارشناس',expert_point:'نکته علمی',expert_reference:'مستندات بحث',expert_summary:'جمع‌بندی کارشناس'};
+var headerFields={title:'h-title',network:'h-network',program:'h-program',subtitle:'h-subtitle',status:'h-status',footer:'h-footer'};
+var itemFields={kind:'f-kind',title:'f-title',body:'f-body',name:'f-name',city:'f-city',program:'f-program',expert:'f-expert',date:'f-date',time:'f-time'};
+var state=null, selected=0, dirty=false;
+var defaults={title:'پاسخ‌نما',network:'شبکه جهانی ولایت فارسی',program:'منتخبی از برنامه‌های شبکه ولایت',subtitle:'برگرفته از آرشیو دیدبان',status:'منتخب آرشیو واقعی',footer:'خلاصه خودکار · نیازمند بازبینی علمی'};
+function safeStr(v,n){return String(v==null?'':v).slice(0,n||3000);}
+function timeOf(sec){if(sec===null||sec===undefined||!Number.isFinite(Number(sec)))return '';var n=Math.floor(Number(sec));return String(Math.floor(n/60)).padStart(2,'0')+':'+String(n%60).padStart(2,'0');}
+function initialFromData(data){
+ var cards=(Array.isArray(data.items)?data.items:[]).map(function(x,i){
+  return {kind:labels[x.content_type]?x.content_type:'expert_topic',title:safeStr(x.question||x.title,2000),
+   body:safeStr(x.answer||x.summary,5000),name:safeStr(x.audience_name,100),city:safeStr(x.audience_city,80),
+   program:safeStr(x.program_title,140),expert:safeStr(x.expert_name,140),date:safeStr(x.program_date,32),
+   time:timeOf(x.start_timecode),id:safeStr(x.id||'archival-'+i,150)};
+ });
+ return {version:1,edited:false,header:Object.assign({},defaults),cards:cards};
+}
+function validate(raw){
+ if(!raw||typeof raw!=='object'||!raw.header||!Array.isArray(raw.cards))throw Error('ساختار JSON نامعتبر است.');
+ if(raw.cards.length>30)throw Error('حداکثر ۳۰ باکس مجاز است.');
+ var h={};Object.keys(defaults).forEach(function(k){h[k]=safeStr(raw.header[k]==null?defaults[k]:raw.header[k],160);});
+ var cards=raw.cards.map(function(c,i){
+  if(!c||typeof c!=='object')throw Error('اطلاعات یک باکس نامعتبر است.');
+  var z={};Object.keys(itemFields).forEach(function(k){z[k]=safeStr(c[k],k==='body'?5000:2000);});
+  if(!labels[z.kind])z.kind='expert_topic';z.id='local-'+i;return z;
+ });
+ return {version:1,edited:!!raw.edited,header:h,cards:cards};
+}
+function element(tag,className,text){
+ var n=document.createElement(tag);if(className)n.className=className;if(text!==undefined)n.textContent=text;return n;
+}
+function feedback(msg){if($('feedback'))$('feedback').textContent=msg;}
+function persist(message){
+ try{localStorage.setItem(KEY,JSON.stringify(state));if(message)feedback(message);}
+ catch(e){feedback('مرورگر اجازه ذخیره محلی نمی‌دهد؛ خروجی JSON را دریافت کنید.');}
+}
+function updateDirty(){
+ state.edited=true;
+ persist();
+ renderPreview();
+}
+function updateHeader(){
+ if(!state||previewMode)return;
+ Object.keys(headerFields).forEach(function(k){state.header[k]=$ (headerFields[k]).value;});
+ updateDirty();
+}
+function fillHeader(){
+ Object.keys(headerFields).forEach(function(k){$(headerFields[k]).value=state.header[k]||'';});
+}
+function fillItem(){
+ if(!state||!state.cards.length){$('item-editor').hidden=true;return;}
+ $('item-editor').hidden=false;
+ selected=Math.max(0,Math.min(selected,state.cards.length-1));
+ var c=state.cards[selected];
+ Object.keys(itemFields).forEach(function(k){$(itemFields[k]).value=c[k]||'';});
+ $('selected-num').textContent='باکس '+dfa(selected+1)+' از '+dfa(state.cards.length);
+}
+function updateItem(){
+ if(!state||previewMode||!state.cards[selected])return;
+ Object.keys(itemFields).forEach(function(k){state.cards[selected][k]=$(itemFields[k]).value;});
+ updateDirty();renderList(false);
+}
+function renderList(refill){
+ if(previewMode||!state)return;
+ var list=$('items-list');list.replaceChildren();
+ state.cards.forEach(function(card,i){
+  var line=element('div','item-row'+(i===selected?' active':'')),btn=element('button','select-card');
+  btn.type='button';var sh=element('span','short',card.title||'باکس بدون عنوان');
+  btn.append(sh,element('small','',labels[card.kind]||'مطلب'));
+  btn.onclick=function(){selected=i;renderList(true);};
+  line.append(btn);
+  var up=element('button','tiny','↑');up.type='button';up.disabled=i===0;up.title='انتقال به بالا';
+  up.onclick=function(){var item=state.cards.splice(i,1)[0];state.cards.splice(i-1,0,item);selected=i-1;updateDirty();renderList(true);};
+  var down=element('button','tiny','↓');down.type='button';down.disabled=i===state.cards.length-1;down.title='انتقال به پایین';
+  down.onclick=function(){var item=state.cards.splice(i,1)[0];state.cards.splice(i+1,0,item);selected=i+1;updateDirty();renderList(true);};
+  var del=element('button','tiny remove','×');del.type='button';del.title='حذف باکس';
+  del.onclick=function(){if(!confirm('این باکس فقط از نسخه نمایشی حذف شود؟'))return;state.cards.splice(i,1);selected=Math.max(0,Math.min(selected,state.cards.length-1));updateDirty();renderList(true);};
+  line.append(up,down,del);list.append(line);
+ });
+ $('count-label').textContent=dfa(state.cards.length)+' باکس';
+ if(refill)fillItem();
+}
+function renderPreview(){
+ if(!state)return;
+ $('p-title').textContent=state.header.title||'پاسخ‌نما';
+ $('p-brand').textContent=state.header.title||'پاسخ‌نما';
+ $('p-network').textContent=state.header.network||'شبکه ولایت';
+ $('p-program').textContent=state.header.program||'نمایش آزمایشی';
+ $('p-subtitle').textContent=state.header.subtitle||'';
+ $('p-status').textContent=state.edited?'ویرایش‌شده برای دمو':state.header.status||'نمونه آرشیوی';
+ $('p-footer').textContent=(state.header.footer||'نیازمند بازبینی')+(state.edited?' · صرفاً نسخه نمایشی':'');
+ $('p-count').textContent=dfa(state.cards.length)+' باکس';
+ var list=$('p-cards');list.replaceChildren();
+ if(!state.cards.length){list.append(element('p','', 'باکسی برای نمایش ثبت نشده است.'));return;}
+ state.cards.forEach(function(c){
+  var qa=c.kind==='question_answer',box=element('article','tv-card'+(qa?' qa':'')),row=element('div','type');
+  row.append(element('span','',(qa?'؟ ':'✦ ')+(labels[c.kind]||'مطلب')));
+  var descriptor=[c.program,c.time?dfa(c.time):''].filter(Boolean).join(' · ');
+  if(descriptor)row.append(element('small','',descriptor));
+  box.append(row);
+  var title=element('h3','');
+  if(qa)title.append(element('span','qa-label','سؤال: '));
+  title.append(document.createTextNode(c.title||'عنوان وارد نشده'));
+  box.append(title);
+  if(c.body){
+   var body=element('p','');if(qa)body.append(element('span','qa-label','پاسخ: '));
+   body.append(document.createTextNode(c.body));box.append(body);
+  }
+  if(qa){
+   var viewer=element('div','viewer');
+   viewer.append(element('span','','بیننده: '+(c.name||'نام ثبت نشده')));
+   viewer.append(element('span','','شهر: '+(c.city||'ثبت نشده')));
+   box.append(viewer);
+  }
+  list.append(box);
+ });
+}
+async function restoreDefault(){
+ var res=await fetch('data/demo-showcase.json',{cache:'no-store'});
+ if(!res.ok)throw Error('دریافت اطلاعات آرشیوی ناموفق بود: '+res.status);
+ var data=await res.json();return initialFromData(data);
+}
+async function init(){
+ try{
+  var saved=null;try{saved=localStorage.getItem(KEY);}catch(e){}
+  if(saved){try{state=validate(JSON.parse(saved));}catch(e){feedback('داده ذخیره‌شده نامعتبر بود؛ نمونه اصلی بارگیری شد.');}}
+  if(!state)state=await restoreDefault();
+ }catch(e){
+  state={version:1,edited:false,header:Object.assign({},defaults),cards:[]};
+  feedback('اطلاعات نمونه در دسترس نیست: '+e.message);
+ }
+ if(!previewMode){
+  fillHeader();renderList(true);
+  Object.keys(headerFields).forEach(function(k){$(headerFields[k]).addEventListener('input',updateHeader);});
+  Object.keys(itemFields).forEach(function(k){$(itemFields[k]).addEventListener('input',updateItem);$(itemFields[k]).addEventListener('change',updateItem);});
+  $('save').onclick=function(){persist('تغییرات در مرورگر فعلی ذخیره شد.');};
+  $('add').onclick=function(){
+   state.cards.push({kind:'question_answer',title:'',body:'',name:'',city:'',program:'',expert:'',date:'',time:'',id:'local-new-'+Date.now()});
+   selected=state.cards.length-1;updateDirty();renderList(true);
+  };
+  $('full').onclick=function(){window.open('demo-editor.html?preview=1','_blank','noopener');};
+  $('reset').onclick=async function(){
+   if(!confirm('تمام ویرایش‌های ذخیره‌شده این مرورگر به حالت نمونه اصلی بازگردند؟'))return;
+   try{state=await restoreDefault();selected=0;persist();fillHeader();renderList(true);renderPreview();feedback('محتوای واقعی نمونه بازگردانده شد.');}
+   catch(e){feedback('بازگردانی ناموفق بود: '+e.message);}
+  };
+  $('export').onclick=function(){
+   var blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json;charset=utf-8'});
+   var url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='pasokhnama-demo-edit.json';a.click();setTimeout(function(){URL.revokeObjectURL(url);},1000);
+   feedback('فایل JSON ذخیره شد؛ آن را برای انتقال به مرورگر دیگر نگه دارید.');
+  };
+  $('import').onclick=function(){$('json-file').click();};
+  $('json-file').onchange=async function(ev){
+   var f=ev.target.files&&ev.target.files[0];if(!f)return;
+   try{if(f.size>500000)throw Error('حجم فایل بیش از حد مجاز است.');
+    var parsed=JSON.parse(await f.text());state=validate(parsed);state.edited=true;selected=0;persist();fillHeader();renderList(true);renderPreview();feedback('فایل JSON بازیابی شد؛ فقط در این مرورگر.');
+   }catch(e){feedback('خطا در بازیابی: '+e.message);}ev.target.value='';
+  };
+ }
+ renderPreview();
+}
+window.addEventListener('storage',function(ev){
+ if(ev.key!==KEY||!ev.newValue)return;
+ try{state=validate(JSON.parse(ev.newValue));if(!previewMode){fillHeader();renderList(true);}renderPreview();}catch(e){}
+});
+init();
+})();
+</script>
+</body>
+</html>
