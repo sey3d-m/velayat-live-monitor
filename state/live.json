@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T14:14:52.411446+00:00",
-  "updated_at": "2026-11-04T14:34:44.286022+00:00",
+  "updated_at": "2026-11-04T14:35:33.866884+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره کانال ایتا و حضور کارشناس برنامه",
@@ -23,13 +23,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 12,
-    "segments_transcribed": 9,
-    "editor_attempts": 5,
-    "editor_withheld": 4,
+    "segments_captured": 14,
+    "segments_transcribed": 11,
+    "editor_attempts": 6,
+    "editor_withheld": 5,
     "topics_published": 1,
     "audio_ai_calls": 2,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-04T14:34:40.653287+00:00"
+    "last_audio_at": "2026-11-04T14:35:30.115918+00:00"
   }
 }
