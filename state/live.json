@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T17:14:46.724830+00:00",
-  "updated_at": "2026-11-04T17:38:34.755346+00:00",
+  "updated_at": "2026-11-04T17:38:48.926612+00:00",
   "items": [
     {
       "title": "پرسش درباره ابعاد فراتاریخی شخصیت حضرت زهرا (س) و نقل حدیث",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 21,
-    "segments_transcribed": 18,
-    "editor_attempts": 9,
+    "segments_captured": 22,
+    "segments_transcribed": 19,
+    "editor_attempts": 10,
     "editor_withheld": 7,
     "topics_published": 5,
     "audio_ai_calls": 1,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-04T17:38:17.513672+00:00"
+    "last_audio_at": "2026-11-04T17:38:41.784890+00:00"
   }
 }
