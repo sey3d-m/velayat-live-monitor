@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T14:14:52.411446+00:00",
-  "updated_at": "2026-11-04T15:37:08.188082+00:00",
+  "updated_at": "2026-11-04T15:37:55.424779+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره زیارت",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 168,
-    "segments_transcribed": 162,
-    "editor_attempts": 107,
-    "editor_withheld": 99,
+    "segments_captured": 170,
+    "segments_transcribed": 164,
+    "editor_attempts": 108,
+    "editor_withheld": 101,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T15:37:04.195883+00:00"
+    "last_audio_at": "2026-11-04T15:37:53.520884+00:00"
   }
 }
