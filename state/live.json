@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T14:14:52.411446+00:00",
-  "updated_at": "2026-11-04T14:56:20.683731+00:00",
+  "updated_at": "2026-11-04T14:56:47.968598+00:00",
   "items": [
-    {
-      "title": "بررسی موضع کارشناس درباره بی‌تأثیری نتیجه انتخابات آمریکا بر دشمنی با ایران",
-      "summary": "در این بخش کارشناس استدلال می‌کند که نتیجه انتخابات آمریکا برای ملت ایران تفاوتی ندارد و هر کدام از جنایتکاران که بر سر کار باشند، دشمن جدی ملت ایران هستند. به گفته کارشناس، این افراد در دوره‌های مختلف دشمنی خود را ثابت کرده‌اند و قاتل رهبر شهید ما هستند و هرگز از آن‌ها نخواهیم گذشت.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41845533409-13",
-      "sequence": 13,
-      "updated_at": "2026-11-04T14:35:53.306554+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی حکم فقهی اقتدای مرد به زن در نماز جماعت",
       "summary": "در این بخش کارشناس درباره جواز اقتدای مرد به زن در نماز جماعت سخن می‌گوید و به گفته وی، مراجع تقلید فتوایی بر جواز این نوع اقتدا صادر نکرده‌اند؛ حتی در صورت وجود محرمیت میان زن و مرد نیز چنین جماعتی از نظر ایشان صحیح نیست و اشکال دارد.",
@@ -69,16 +57,29 @@
       "sequence": 59,
       "updated_at": "2026-11-04T14:54:09.763801+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خمس و زکات",
+      "summary": "در این بخش از برنامه، موضوع «خمس و زکات» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41845533409-65",
+      "sequence": 65,
+      "updated_at": "2026-11-04T14:56:47.968570+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 66,
-    "segments_transcribed": 62,
+    "segments_captured": 67,
+    "segments_transcribed": 63,
     "editor_attempts": 45,
-    "editor_withheld": 41,
-    "topics_published": 6,
+    "editor_withheld": 42,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T14:56:15.113566+00:00"
+    "last_audio_at": "2026-11-04T14:56:38.954151+00:00"
   }
 }
