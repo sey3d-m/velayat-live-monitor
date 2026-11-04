@@ -1,5 +1,5 @@
 name: Pasokhnama editor isolated browser test
-# Run after Pages deployment of the new editor event guard.
+# Run after Pages deployment of the new editor settings fix.
 on:
   push:
     branches: [main]
