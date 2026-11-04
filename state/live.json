@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T17:14:46.724830+00:00",
-  "updated_at": "2026-11-04T18:38:00.748559+00:00",
+  "updated_at": "2026-11-04T18:38:49.204516+00:00",
   "items": [
     {
       "title": "بررسی نقش وجود ویروس‌ها و میکروب‌ها در پیشرفت علوم بشر",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 170,
-    "segments_transcribed": 156,
-    "editor_attempts": 113,
-    "editor_withheld": 103,
+    "segments_captured": 172,
+    "segments_transcribed": 158,
+    "editor_attempts": 115,
+    "editor_withheld": 105,
     "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T18:37:54.675918+00:00"
+    "last_audio_at": "2026-11-04T18:38:44.184867+00:00"
   }
 }
