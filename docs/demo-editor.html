@@ -215,7 +215,7 @@ function renderList(refill){
  if(refill)fillItem();
 }
 function renderPreview(){
- if(!state)return;
+ if(!state||!$('p-title'))return; // exact iframe preview replaces the legacy mockup
  $('p-title').textContent=state.header.title||'پاسخ‌نما';
  $('p-brand').textContent=state.header.title||'پاسخ‌نما';
  $('p-network').textContent=state.header.network||'شبکه ولایت';
