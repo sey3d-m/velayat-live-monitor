@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T14:14:52.411446+00:00",
-  "updated_at": "2026-11-04T14:59:37.719851+00:00",
+  "updated_at": "2026-11-04T15:00:17.893961+00:00",
   "items": [
     {
       "title": "بررسی حکم فقهی اقتدای مرد به زن در نماز جماعت",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 74,
-    "segments_transcribed": 70,
-    "editor_attempts": 50,
-    "editor_withheld": 46,
+    "segments_captured": 76,
+    "segments_transcribed": 72,
+    "editor_attempts": 51,
+    "editor_withheld": 47,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T14:59:32.147846+00:00"
+    "last_audio_at": "2026-11-04T15:00:15.119322+00:00"
   }
 }
