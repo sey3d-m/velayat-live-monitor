@@ -1,0 +1,34 @@
+
+/* Isolated management enhancements; no changes to recording or archive pages. */
+.admin-section-title{font-size:12px;font-weight:900;color:#254866;margin:4px 0 11px;padding-bottom:7px;border-bottom:1px solid #e2e9f0}
+.admin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.admin-field{display:flex;flex-direction:column;gap:5px;font-size:11px;font-weight:800;color:#51677a;min-width:0}
+.admin-field.full{grid-column:1/-1}
+.admin-field input:not([type=checkbox]),.admin-field select{min-width:0;width:100%;border-radius:9px;border:1px solid #d7e3ed;background:#f8fafc;padding:9px;font-size:13px;min-height:42px;color:#1c3d5a}
+.admin-field input[type=color]{padding:3px;height:42px}
+.admin-checkbox{display:flex;gap:10px;align-items:center;font-size:11px;line-height:1.8;color:#455d72;font-weight:700;padding:10px;background:#f7fafc;border:1px solid #e2eaf1;border-radius:10px}
+.admin-checkbox input{width:18px;height:18px;accent-color:#1d6988;flex:none}
+.admin-checkbox.full{grid-column:1/-1}.admin-checkbox.warning{border-color:#c8a36f;background:#fff8ec}
+.admin-divider{height:1px;background:#e5edf2;margin:18px 0}
+.admin-safe{font-size:11px;line-height:2.2;color:#657b90;background:#f4f8fb;border-radius:10px;padding:12px;margin-top:15px}
+.admin-safe strong{color:#205b78}
+.admin-publication{border-color:#b6d1dd;box-shadow:0 5px 25px #093e6b0b}
+.admin-publication .field{margin:12px 0}
+.admin-publication .field input{width:100%;padding:10px;border:1px solid #d5e2ed;background:#fff;border-radius:9px}
+.admin-publication .publish-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}
+.admin-publication .publish-actions button{flex:1}
+.admin-publication .btn:disabled{opacity:.46;cursor:not-allowed}
+.admin-publication .admin-status{min-height:48px;margin-top:12px;padding:11px;background:#f1f6fa;border-radius:9px;color:#4c687d;font-size:12px;line-height:2}
+.admin-publication .admin-status.error{background:#fceeee;color:#973b48}
+.admin-publication .admin-status.success{background:#edf9f2;color:#22674b}
+.admin-publication .admin-status a{color:#146d98;text-decoration:underline}
+.admin-banner{font-size:11px;color:#78562a;background:#fff4e6;padding:11px 14px;border-radius:9px;line-height:2.15;margin-top:12px}
+.admin-preview-frame{border:0;width:100%;height:100%;background:transparent;border-radius:17px;display:block}
+.preview-zone{padding:0!important;background:radial-gradient(circle at 45% 0,#24435b,#061424)!important}
+.preview-column .preview-heading{gap:10px}
+.preview-column .preview-heading .admin-live{color:#356e7d;font-size:11px;white-space:nowrap}
+body.preview-mode .preview-zone{padding:0!important}
+body.preview-mode .admin-preview-frame{width:100%;height:100%;border-radius:0}
+.admin-publish-headline{display:flex;gap:9px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.admin-publish-headline .published-version{font-size:10px;color:#63869a;direction:ltr}
+@media(max-width:760px){.admin-grid{grid-template-columns:1fr 1fr}.admin-checkbox{font-size:11px}.admin-field.full{grid-column:1/-1}}
