@@ -3,7 +3,7 @@
    No AI model, audio, overlay, scheduler or production workflow is called. */
 (function(){
 'use strict';
-var S={group:'',episode:'',selected:'root',graphSearch:'',sQuery:'',sProgram:'',sType:'all',sView:'cards',sSort:'relevance',rQuery:'',draft:{},published:{},preview:false,archiveReport:null};
+var S={group:'',episode:'',selected:'root',graphSearch:'',sQuery:'',sProgram:'',sExpert:'',sDate:'',sType:'all',sView:'cards',sSort:'relevance',rQuery:'',draft:{},published:{},preview:false,archiveReport:null};
 var NS='http://www.w3.org/2000/svg',stage=null,world=null,animation=0,nodeViews=[],linkViews=[],model=null,cam={x:0,y:0,k:1},drag=null,quiet=matchMedia('(prefers-reduced-motion: reduce)').matches;
 var allowed=['topic','summary','expert','host','hashtags','key_points','clips'];
 var originals={graphSection:graphSection,drawGraph:drawGraph,resetGraph:resetGraph,render:render,timeline:timeline,episodeDetails:episodeDetails};
@@ -130,7 +130,7 @@ function inspect(){
  if(!n){el.innerHTML='محتوایی برای این انتخاب وجود ندارد';return}
  var type='',meta='',desc='',buttons='';
  if(n.kind==='root'){type='مرکز اطلس';meta=fmt(programs.length)+' قسمت · '+fmt(groupShows().length)+' مجموعه برنامه';desc='تمام برنامه‌ها و پیوندهای اطلس از آرشیو فعلی دیدبان استخراج می‌شوند. برای مشاهده زیرشاخه‌ها یک برنامه را انتخاب کنید.';buttons=actionBtn('جست‌وجوی موضوعی','go(\'#/search\')')}
- if(n.kind==='program'){var a=programs.filter(p=>name(p)===n.group);type='مجموعه برنامه';meta=fmt(a.length)+' قسمت · '+fmt(unique(a.map(expert)).length)+' کارشناس';desc='قسمت‌های ثبت‌شده در این مجموعه و محورهای هر قسمت را می‌توانید بررسی کنید.';buttons=actionBtn('مشاهده همه قسمت‌ها','go(\'#/programs\')')}
+ if(n.kind==='program'){var a=programs.filter(p=>name(p)===n.group);type='مجموعه برنامه';meta=fmt(a.length)+' قسمت · '+fmt(unique(a.map(expert)).length)+' کارشناس';desc='قسمت‌های ثبت‌شده در این مجموعه و محورهای هر قسمت را می‌توانید بررسی کنید.';buttons=actionBtn('پرونده اختصاصی مجموعه','go(\'#/show/'+encodeURIComponent(n.group)+'\')','active')}
  if(n.kind==='episode'){var p=n.p;type='قسمت برنامه';meta=(p.date||p.date_iso||'')+' · '+(p.start||'')+' · '+expert(p);desc=p.summary||'متن خلاصه موجود نیست';buttons=actionBtn('پرونده و خط زمانی','go(\''+detailHash(p.id)+'\')','active')}
  if(n.kind==='expert'){type='کارشناس';meta=fmt(programs.filter(p=>expert(p)===n.who).length)+' قسمت ثبت‌شده';desc='اتصال این کارشناس به برنامه از نام درج‌شده در گزارش دیدبان استخراج شده است.';buttons=actionBtn('جست‌وجوی کارشناس','atlasSearchFor('+JSON.stringify(n.who).replace(/"/g,'&quot;')+')')}
  if(n.kind==='topic'){type='محور علمی زمان‌دار';meta=hhmm(n.t.start_sec)+' — '+hhmm(n.t.end_sec);desc=n.t.title;buttons=actionBtn('مشاهده در قسمت','go(\''+detailHash(n.p.id)+'\')','active')}
@@ -193,13 +193,15 @@ function searchPage(){
  '<div class="atlas-search-row"><select class="atlas-select" aria-label="فیلتر مجموعه برنامه" onchange="atlasSearchFilter(\'program\',this.value)"><option value="">همه برنامه‌ها</option>'+
  groupShows().map(g=>'<option value="'+E(g[0])+'" '+(g[0]===S.sProgram?'selected':'')+'>'+E(g[0])+'</option>').join('')+'</select>'+
  '<select class="atlas-select" aria-label="نوع نتیجه" onchange="atlasSearchFilter(\'type\',this.value)">'+[['all','تمام انواع'],['episode','قسمت'],['topic','محور'],['qa','پرسش و پاسخ']].map(x=>'<option value="'+x[0]+'" '+(S.sType===x[0]?'selected':'')+'>'+x[1]+'</option>').join('')+'</select>'+
+ '<select class="atlas-select" aria-label="کارشناس" onchange="atlasSearchFilter(\'expert\',this.value)"><option value="">همه کارشناسان</option>'+unique(programs.map(expert)).map(x=>'<option value="'+E(x)+'" '+(S.sExpert===x?'selected':'')+'>'+E(x)+'</option>').join('')+'</select>'+ 
+ '<input type="date" class="atlas-select" aria-label="فیلتر تاریخ میلادی" value="'+E(S.sDate)+'" onchange="atlasSearchFilter(\'date\',this.value)">'+
  '<select class="atlas-select" aria-label="مرتب‌سازی" onchange="atlasSearchFilter(\'sort\',this.value)"><option value="relevance" '+(S.sSort==='relevance'?'selected':'')+'>مرتبط‌ترین</option><option value="date" '+(S.sSort==='date'?'selected':'')+'>جدیدترین</option></select></div>'+
  '<div class="atlas-sug">'+suggestions.map(x=>'<button onclick="atlasSearchSuggestion(this.textContent)">'+E(x.replace(/_/g,' '))+'</button>').join('')+'</div></section>'+
  '<div class="atlas-toolbar"><span class="atlas-count" id="atlasResultCount"></span><div class="atlas-actions">'+actionBtn('نمای کارت','atlasView(\'cards\')',S.sView==='cards'?'active':'')+actionBtn('نمای پژوهشی','atlasView(\'list\')',S.sView==='list'?'active':'')+actionBtn('نمای شبکه نتایج','atlasGraphFromSearch()')+actionBtn('کپی جست‌وجو','atlasCopySearch()')+'</div></div><div id="atlasResultList" class="atlas-result-grid"></div>';
 }
 function populateSearch(){
  var container=document.getElementById('atlasResultList');if(!container)return;
- var rs=results(S.sQuery,{program:S.sProgram,type:S.sType,sort:S.sSort});
+ var rs=results(S.sQuery,{program:S.sProgram,type:S.sType,sort:S.sSort});if(S.sExpert)rs=rs.filter(x=>x.expert===S.sExpert);if(S.sDate)rs=rs.filter(x=>x.date.startsWith(S.sDate));
  container.className='atlas-result-grid '+(S.sView==='list'?'list':'');
  var countNode=document.getElementById('atlasResultCount');if(countNode)countNode.textContent=fmt(rs.length)+' نتیجه در آرشیو فعلی';
  container.innerHTML=rs.length?rs.slice(0,160).map(resultCard).join(''):'<div class="empty">برای این عبارت در آرشیو فعلی نتیجه‌ای وجود ندارد.</div>';
@@ -208,9 +210,10 @@ function populateSearch(){
 window.atlasGraphFromSearch=function(){if(!S.sQuery.trim())return toast('ابتدا عبارت جست‌وجو را وارد کنید');S.graphSearch=S.sQuery;S.group='';S.episode='';S.selected='root';go('#/');setTimeout(function(){document.getElementById('graphAnchor')?.scrollIntoView({behavior:'smooth'})},80)};
 window.atlasSearchInput=function(v){S.sQuery=v;populateSearch()};
 window.atlasSearchSuggestion=function(v){S.sQuery=v;document.getElementById('atlasQuery').value=v;populateSearch()};
-window.atlasSearchFilter=function(k,v){if(k==='program')S.sProgram=v;if(k==='type')S.sType=v;if(k==='sort')S.sSort=v;populateSearch()};
+window.atlasSearchFilter=function(k,v){if(k==='program')S.sProgram=v;if(k==='expert')S.sExpert=v;if(k==='date')S.sDate=v;if(k==='type')S.sType=v;if(k==='sort')S.sSort=v;populateSearch()};
 window.atlasView=function(v){S.sView=v;populateSearch();document.querySelectorAll('.atlas-toolbar button').forEach(b=>b.classList.toggle('active',b.textContent.includes(v==='cards'?'کارت':'پژوهشی')))};
 window.atlasCopySearch=function(){var url=location.href; if(navigator.clipboard)navigator.clipboard.writeText(url).then(()=>toast('آدرس این صفحه کپی شد'));else prompt('نشانی',url)};
+function showPage(group){var ps=programs.filter(x=>name(x)===group),ex=unique(ps.map(expert)),tags=new Map();ps.forEach(p=>(p.hashtags||[]).forEach(t=>tags.set(t,(tags.get(t)||0)+1)));var tt=[...tags.entries()].sort((a,b)=>b[1]-a[1]).slice(0,14);return '<div class="atlas-searchhero"><small>اطلس ولایت / مجموعه برنامه</small><h2>'+E(group)+'</h2><p>'+fmt(ps.length)+' قسمت ثبت‌شده · '+fmt(ex.length)+' کارشناس · آخرین قسمت: '+E(ps[0]?.date||'—')+'</p><div class="atlas-sug">'+ex.map(x=>'<button onclick="atlasSearchFor(this.textContent)">'+E(x)+'</button>').join('')+'</div></div><section class="block"><h2>موضوعات و کلیدواژه‌های پرتکرار</h2><div class="chips">'+tt.map(x=>'<span class="chip">'+E(x[0])+' · '+fmt(x[1])+'</span>').join('')+'</div></section><section class="block"><h2>آرشیو قسمت‌های این مجموعه</h2><div class="atlas-inline-list">'+ps.map(p=>'<button class="atlas-row" onclick="go(\''+detailHash(p.id)+'\')">'+E(p.topic||'بدون عنوان')+' · '+E(p.date||p.date_iso)+' · '+E(expert(p))+' · '+fmt((p.key_points||[]).length)+' محور</button>').join('')+'</div></section>';}
 function researchPage(){
  return '<section class="atlas-searchhero"><h2>میز پژوهش و برنامه‌سازی</h2><p>بررسی سابقه پرداخت رسانه‌ای یک موضوع، بر پایه محورها، پرسش‌ها و برنامه‌های واقعی دیدبان.</p>'+
  '<input class="atlas-input" id="atlasResearchInput" placeholder="موضوع برنامه آینده را وارد کنید؛ مانند حدیث ثقلین" value="'+E(S.rQuery)+'" oninput="atlasResearchInput(this.value)">'+
@@ -238,7 +241,7 @@ function patchFor(id){return Object.assign({},S.published[id]||{},S.preview?(S.d
 function applyEdits(){if(!programs.length)return;programs=programs.map(function(p){var patch=patchFor(p.id),out=Object.assign({},p);allowed.forEach(k=>{if(Object.prototype.hasOwnProperty.call(patch,k)&&((Array.isArray(patch[k]))||typeof patch[k]==='string'))out[k]=patch[k]});return out})}
 function draftLoad(){try{return JSON.parse(localStorage.getItem('atlas-public-drafts-v1')||'{}')}catch(e){return {}}}
 S.draft=draftLoad();
-async function loadPublished(){try{var u=new URL('../atlas/overrides.json',location.href);var r=await fetch(u.href,{cache:'no-store'});if(!r.ok)return;var d=await r.json();if(d&&d.schema===1&&d.episodes&&typeof d.episodes==='object'){S.published=d.episodes;applyEdits();render()}}catch(e){/* no published overrides is supported */}}
+async function loadPublished(){try{var u=new URL('../atlas/overrides.json',location.href);var r=await fetch(u.href,{cache:'no-store'});if(!r.ok)return;var d=await r.json();if(d&&d.schema===1&&d.episodes&&typeof d.episodes==='object'){S.published=d.episodes;if(d.expert_photos&&typeof d.expert_photos==='object'){Object.entries(d.expert_photos).forEach(function(x){var url=safeUrl(x[1]);if(url&&url.startsWith('https://'))photos[photoKey(x[0])]=url})}applyEdits();render()}}catch(e){/* no published overrides is supported */}}
 function editorPage(){
  var options=programs.map(p=>'<option value="'+E(p.id)+'">'+E(name(p))+' · '+E(p.date||p.date_iso)+' · '+E((p.topic||'').slice(0,65))+'</option>').join('');
  return '<section class="atlas-searchhero"><h2>میز مدیریت محتوای اطلس</h2><p>اصلاح عنوان و خلاصه، بازبینی پیش‌نویس، بررسی آرشیو و تهیه بسته انتشار. داده اصلی دیدبان دست‌نخورده می‌ماند.</p>'+
@@ -293,6 +296,7 @@ timeline=timelinePlus;
 render=function(){
  applyEdits();
  var hash=decodeURIComponent(location.hash||'#/');
+ if(hash.startsWith('#/show/')){var gp=hash.slice(7);document.getElementById('app').innerHTML=showPage(gp);document.getElementById('bread').textContent=gp;document.querySelectorAll('.nav').forEach(x=>x.classList.toggle('on',x.dataset.view==='programs'));return;}
  if(hash==='#/search'||hash==='#/research'||hash==='#/editor'){
   var view=hash.slice(2),title={search:'جست‌وجوی جامع',research:'میز پژوهش و برنامه‌سازی',editor:'مدیریت اطلس'}[view];
   document.getElementById('app').innerHTML=view==='search'?searchPage():view==='research'?researchPage():editorPage();
