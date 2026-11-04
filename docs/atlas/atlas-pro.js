@@ -426,6 +426,12 @@ window.atlasBulkRenameExpert=function(){
  var affected=programs.filter(p=>expert(p)===old);
  if(!affected.length)return toast('قسمت مرتبطی پیدا نشد');
  affected.forEach(p=>{S.draft[p.id]=Object.assign({},S.draft[p.id]||{},{expert:newName})});
+ // Retain the old expert's image with the corrected display name.
+ if(photos[photoKey(old)]&&!photos[photoKey(newName)]){photos[photoKey(newName)]=photos[photoKey(old)];persistPhotos()}
+ if(S.draftPhotos[old]||S.publishedPhotos[old]){
+  S.draftPhotos[newName]=S.draftPhotos[old]||S.publishedPhotos[old];
+  try{localStorage.setItem('atlas-expert-photo-url-drafts-v1',JSON.stringify(S.draftPhotos))}catch(e){}
+ }
  try{localStorage.setItem('atlas-public-drafts-v1',JSON.stringify(S.draft))}catch(e){return toast('ذخیره اصلاحات ممکن نشد؛ فضای مرورگر را بررسی کنید')}
  S.preview=true;
  S.settingsExpert=newName;
