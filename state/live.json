@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "41845533409",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T14:14:52.411446+00:00",
-  "updated_at": "2026-11-04T14:33:55.579165+00:00",
-  "items": [],
+  "updated_at": "2026-11-04T14:34:36.295570+00:00",
+  "items": [
+    {
+      "title": "گفت‌وگو درباره کانال ایتا و حضور کارشناس برنامه",
+      "summary": "در این بخش کارشناس برنامه معرفی شد و اعلام شد کانال ایتا برای دسترسی مخاطبان فعال است؛ همچنین حضور حجت‌الاسلام والمسلمین آقای وحید پور در برنامه روزهای چهارشنبه ذکر شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "editor_mode": "audio_grounded_topic",
+      "id": "41845533409-9",
+      "sequence": 9,
+      "updated_at": "2026-11-04T14:34:36.295544+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 10,
-    "segments_transcribed": 7,
+    "segments_captured": 11,
+    "segments_transcribed": 8,
     "editor_attempts": 4,
-    "editor_withheld": 3,
-    "topics_published": 0,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
-    "last_audio_at": "2026-11-04T14:33:51.614601+00:00"
+    "editor_withheld": 4,
+    "topics_published": 1,
+    "audio_ai_calls": 2,
+    "audio_ai_success": 2,
+    "last_audio_at": "2026-11-04T14:34:15.941605+00:00"
   }
 }
