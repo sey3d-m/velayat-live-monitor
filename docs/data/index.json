@@ -1,15 +1,15 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-03T18:32:54+00:00",
+  "updated_at": "2026-11-04T15:34:28+00:00",
   "years": [
     {
       "year": "2026",
       "path": "archive-2026.json",
-      "program_count": 19,
-      "question_count": 51
+      "program_count": 20,
+      "question_count": 57
     }
   ],
-  "total_programs": 19,
-  "total_questions": 51,
+  "total_programs": 20,
+  "total_questions": 57,
   "source": "Velayat Live Monitor – public archive"
 }
