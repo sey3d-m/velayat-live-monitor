@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T14:14:52.411446+00:00",
-  "updated_at": "2026-11-04T14:38:01.569931+00:00",
+  "updated_at": "2026-11-04T14:38:36.921344+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره کانال ایتا و حضور کارشناس برنامه",
@@ -32,16 +32,28 @@
       "sequence": 13,
       "updated_at": "2026-11-04T14:35:53.306554+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی حکم فقهی اقتدای مرد به زن در نماز جماعت",
+      "summary": "در این بخش کارشناس درباره جواز اقتدای مرد به زن در نماز جماعت سخن می‌گوید و به گفته وی، مراجع تقلید فتوایی بر جواز این نوع اقتدا صادر نکرده‌اند؛ حتی در صورت وجود محرمیت میان زن و مرد نیز چنین جماعتی از نظر ایشان صحیح نیست و اشکال دارد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41845533409-20",
+      "sequence": 20,
+      "updated_at": "2026-11-04T14:38:36.921317+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 20,
-    "segments_transcribed": 16,
-    "editor_attempts": 9,
-    "editor_withheld": 7,
-    "topics_published": 2,
-    "audio_ai_calls": 2,
-    "audio_ai_success": 2,
-    "last_audio_at": "2026-11-04T14:37:50.813097+00:00"
+    "segments_captured": 21,
+    "segments_transcribed": 17,
+    "editor_attempts": 10,
+    "editor_withheld": 8,
+    "topics_published": 3,
+    "audio_ai_calls": 3,
+    "audio_ai_success": 3,
+    "last_audio_at": "2026-11-04T14:38:15.979452+00:00"
   }
 }
