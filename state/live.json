@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T17:14:46.724830+00:00",
-  "updated_at": "2026-11-04T17:31:33.620397+00:00",
+  "updated_at": "2026-11-04T17:31:48.790468+00:00",
   "items": [
     {
       "title": "پرسش درباره ابعاد فراتاریخی شخصیت حضرت زهرا (س) و نقل حدیث",
@@ -19,6 +19,18 @@
       "sequence": 1,
       "updated_at": "2026-11-04T17:31:10.273031+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی سرنوشت محبان اهل‌بیت در برخورد با اوامر و نواهی",
+      "summary": "در این بخش کارشناس استدلال می‌کند کسانی که محبت اهل‌بیت را دارند اما اوامر و نواهی آنان را اطاعت نمی‌کنند، به گفته وی به بهشت ملحق می‌شوند، اما پیش از آن به واسطه گناهان و به خاطر محبتشان، انواعی از بلاها و سختی‌ها را در دنیا، عرصه‌های قیامت و طبقات جهنم تجربه خواهند کرد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41875588304-3",
+      "sequence": 3,
+      "updated_at": "2026-11-04T17:31:48.790444+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -26,7 +38,7 @@
     "segments_transcribed": 3,
     "editor_attempts": 2,
     "editor_withheld": 0,
-    "topics_published": 1,
+    "topics_published": 2,
     "audio_ai_calls": 0,
     "audio_ai_success": 0,
     "last_audio_at": "2026-11-04T17:31:28.445873+00:00"
