@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T17:14:46.724830+00:00",
-  "updated_at": "2026-11-04T17:33:11.057277+00:00",
+  "updated_at": "2026-11-04T17:33:27.408411+00:00",
   "items": [
     {
       "title": "پرسش درباره ابعاد فراتاریخی شخصیت حضرت زهرا (س) و نقل حدیث",
@@ -31,14 +31,27 @@
       "sequence": 3,
       "updated_at": "2026-11-04T17:31:48.790444+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41875588304-7",
+      "sequence": 7,
+      "updated_at": "2026-11-04T17:33:27.408390+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 8,
     "segments_transcribed": 6,
     "editor_attempts": 4,
-    "editor_withheld": 1,
-    "topics_published": 2,
+    "editor_withheld": 2,
+    "topics_published": 3,
     "audio_ai_calls": 0,
     "audio_ai_success": 0,
     "last_audio_at": "2026-11-04T17:33:06.591978+00:00"
