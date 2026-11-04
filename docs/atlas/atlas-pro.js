@@ -5,6 +5,7 @@
 'use strict';
 var S={group:'',episode:'',selected:'root',graphSearch:'',sQuery:'',sProgram:'',sExpert:'',sDate:'',sType:'all',sView:'cards',sSort:'relevance',rQuery:'',draft:{},published:{},publishedPhotos:{},preview:false,archiveReport:null};
 var NS='http://www.w3.org/2000/svg',stage=null,world=null,animation=0,nodeViews=[],linkViews=[],model=null,cam={x:0,y:0,k:1},drag=null,quiet=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var motionResume=null;
 var allowed=['topic','summary','expert','host','hashtags','key_points','clips','questions'];
 var originals={graphSection:graphSection,drawGraph:drawGraph,resetGraph:resetGraph,render:render,timeline:timeline,episodeDetails:episodeDetails};
 function E(x){return esc(x)}
@@ -24,13 +25,16 @@ function installNavigation(){
 }
 function changeMode(m){S.group=m||'';S.episode='';S.selected=m?'p:'+m:'root';mountGraph()}
 function atlasGraphSection(){
- return section('نقشه زنده ارتباطات علمی','از شبکه ولایت تا مجموعه‌برنامه، قسمت، کارشناس، محور و پرسش؛ تمام پیوندها از داده موجود ساخته شده‌اند',
- '<button class="button small" onclick="go(\'#/search\')">⌕ جست‌وجوی همه محتوا</button>')+
- '<section class="atlas-panel" id="graphAnchor"><div class="atlas-head"><div><h3>منظومه هوشمند ولایت</h3><p>برنامه را انتخاب کنید؛ سپس وارد قسمت و محور علمی شوید</p></div><div class="atlas-actions">'+
- actionBtn('نمای کل','atlasSelectRoot()')+(S.graphSearch?actionBtn('پاک‌کردن فیلتر','atlasClearGraphQuery()'):'')+actionBtn('موضوعات مرتبط','atlasGraphTopic()')+
- actionBtn('＋','atlasZoom(1.16)')+actionBtn('−','atlasZoom(.86)')+
- actionBtn('⤢','atlasReset()')+actionBtn('⛶ تمام‌صفحه','atlasFullscreen()')+
- '</div></div><div class="atlas-graph-layout"><div class="atlas-stage" id="atlasStage"><svg id="atlasSvg" viewBox="0 0 1200 700" aria-label="نقشه تعاملی ارتباطات علمی ولایت" role="img"><g id="atlasWorld"></g></svg><div class="atlas-pins">◉ مرکز شبکه · ◇ برنامه · ● قسمت · ✦ محور | حرکت و بزرگ‌نمایی با ماوس</div></div><aside class="atlas-inspector" id="atlasInspector"></aside></div></section>';
+ var total=programs.length,groupCount=groupShows().length;
+ return section('نقشه زنده ارتباطات علمی','منظومه پویا و چندلایه: مسیر حرکت داده از شبکه ولایت به برنامه‌ها، قسمت‌ها، کارشناسان، محورها و پرسش‌های واقعی',
+ '<button class="button small" onclick="go(\'#/search\')">⌕ جست‌وجوی تخصصی در اطلس</button>')+
+ '<section class="atlas-panel" id="graphAnchor"><div class="atlas-head"><div><h3>◈ منظومه زنده دانش ولایت</h3><p>برای گسترش ارتباطات، گره‌ها را انتخاب کنید؛ جریان‌های نورانی حرکت داده را نشان می‌دهند.</p></div><div class="atlas-actions">'+
+ actionBtn('◉ شبکه کامل','atlasSelectRoot()')+
+ (S.graphSearch?actionBtn('× حذف فیلتر موضوعی','atlasClearGraphQuery()'):'')+
+ actionBtn('⌕ جست‌وجوی موضوعی','atlasGraphTopic()')+
+ '<button class="atlas-btn atlas-movement-control" id="atlasMotionControl" onclick="atlasToggleMotion()" aria-pressed="'+(!quiet)+'">'+(quiet?'▶ آغاز حرکت':'Ⅱ توقف حرکت')+'</button>'+
+ actionBtn('＋','atlasZoom(1.16)')+actionBtn('−','atlasZoom(.86)')+actionBtn('⤢','atlasReset()')+actionBtn('⛶ تمام‌صفحه','atlasFullscreen()')+
+ '</div></div><div class="atlas-graph-layout"><div class="atlas-stage" id="atlasStage"><div class="motion-glow" aria-hidden="true"></div><svg id="atlasSvg" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid meet" aria-label="نقشه پویا و تعاملی ارتباطات علمی ولایت" role="img"><g id="atlasWorld"></g></svg><div class="atlas-visual-stat"><span class="atlas-live-indicator"></span><span id="atlasLiveStats">'+fmt(groupCount)+' برنامه · '+fmt(total)+' قسمت</span></div><div class="atlas-pins">🟡 شبکه و مجموعه · 🟢 قسمت · 🔵 کارشناس · ✦ محور · بنفش: پرسش</div></div><aside class="atlas-inspector" id="atlasInspector"></aside></div></section>';
 }
 function svg(tag,attrs,parent){var el=document.createElementNS(NS,tag);Object.keys(attrs||{}).forEach(k=>el.setAttribute(k,attrs[k]));(parent||world).appendChild(el);return el}
 function edge(a,b,why){return {a:a,b:b,why:why}}
@@ -84,37 +88,92 @@ function buildGraph(){
 function labelShort(s,n){s=String(s||'');return s.length>n?s.slice(0,n-1)+'…':s}
 function mountGraph(){
  stage=document.getElementById('atlasStage');if(!stage)return;
- if(animation)cancelAnimationFrame(animation);animation=0;nodeViews=[];linkViews=[];cam={x:0,y:0,k:1};
+ if(animation)cancelAnimationFrame(animation);animation=0;nodeViews=[];linkViews=[];cam={x:0,y:0,k:1};drag=null;
  world=document.getElementById('atlasWorld');if(!world)return;world.replaceChildren();model=buildGraph();
- var ring=svg('g',{},world);[110,230,355].forEach(r=>svg('circle',{class:'atlas-grid-orbit',cx:600,cy:345,r:r},ring));
- var layer=svg('g',{},world),nodesLayer=svg('g',{},world);
- model.edges.forEach(function(l){var path=svg('path',{class:'atlas-edge'},layer);linkViews.push({edge:l,el:path})});
+ var svgEl=document.getElementById('atlasSvg');
+ var space=svg('g',{},world);
+ // A reproducible star field with no data-dependent decorative connections.
+ for(var j=0;j<48;j++){
+  var sx=(j*191.37+67)%1200,sy=(j*89.47+35)%700;
+  svg('circle',{class:'atlas-space-point',cx:sx,cy:sy,r:((j%4)+1)*.62,opacity:.12+(j%5)*.07},space);
+ }
+ var nebula=svg('g',{},world);
+ [110,240,358,480].forEach(function(rad,i){svg('ellipse',{class:'atlas-grid-orbit',cx:600,cy:345,rx:rad,ry:rad*.65,'stroke-dasharray':i%2?'5 13':'3 10'},nebula)});
+ svg('circle',{class:'atlas-nebula',cx:600,cy:345,r:182},nebula);
+ var glow=svg('g',{},world),links=svg('g',{},world),signals=svg('g',{},world),nodesLayer=svg('g',{},world);
+ model.edges.forEach(function(l,i){
+  var halo=svg('path',{class:'atlas-link-halo'},glow);
+  var path=svg('path',{class:'atlas-edge'},links);
+  var signal=svg('circle',{class:'atlas-signal'+(i%3===0?' warm':''),r:i%3===0?3.6:2.7,opacity:quiet?0:.92},signals);
+  linkViews.push({edge:l,el:path,halo:halo,signal:signal,index:i});
+ });
+ var glyph={root:'و',program:'◈',episode:'▶',expert:'♙',topic:'✦',qa:'؟'};
  model.nodes.forEach(function(n,i){
-  var g=svg('g',{class:'atlas-node '+n.kind+(S.selected===n.id?' active':''),role:'button',tabindex:0,'aria-label':n.kind+' '+n.label},nodesLayer);
+  var g=svg('g',{class:'atlas-node entering '+n.kind+(S.selected===n.id?' active':''),role:'button',tabindex:0,'aria-label':n.kind+' '+n.label},nodesLayer);
+  if(n.kind==='root'){
+   svg('circle',{class:'orbital',cx:0,cy:0,r:n.r+22,'stroke-dasharray':'4 8'},g);
+   svg('circle',{class:'orbital',cx:0,cy:0,r:n.r+12,'stroke-dasharray':'2 7'},g);
+  }else svg('circle',{class:'orbital',cx:0,cy:0,r:n.r+6,opacity:.55},g);
   svg('circle',{class:'primary',cx:0,cy:0,r:n.r},g);
-  if(n.kind==='root'){svg('circle',{cx:0,cy:0,r:61,fill:'none',stroke:'#e9c48266','stroke-dasharray':'3 9'},g)}
-  var t=svg('text',{class:'nlabel','text-anchor':'middle',y:n.r+18},g);t.textContent=labelShort(n.label,n.kind==='root'?30:24);
-  var sub=svg('text',{class:'nsub','text-anchor':'middle',y:n.r+33},g);sub.textContent=labelShort(n.sub||'',28);
+  var glyphY=n.kind==='root'?10:5;
+  var t0=svg('text',{class:'glyph','text-anchor':'middle',y:glyphY},g);t0.textContent=glyph[n.kind]||'◈';
+  if(n.kind!=='root')svg('circle',{class:'active-dot',cx:n.r*.7,cy:-n.r*.65,r:Math.max(2,Math.min(3.3,n.r/6))},g);
+  var t=svg('text',{class:'nlabel','text-anchor':'middle',y:n.r+21},g);t.textContent=labelShort(n.label,n.kind==='root'?30:27);
+  var sub=svg('text',{class:'nsub','text-anchor':'middle',y:n.r+37},g);sub.textContent=labelShort(n.sub||'',28);
+  g.style.animationDelay=Math.min(480,i*40)+'ms';
   g.addEventListener('click',function(ev){ev.stopPropagation();if(drag&&drag.moved)return;atlasPick(n.id)});
   g.addEventListener('keydown',function(ev){if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();atlasPick(n.id)}});
-  nodeViews.push({n:n,el:g,i:i});
+  nodeViews.push({n:n,el:g,i:i,x:n.x,y:n.y});
  });
- var svgEl=document.getElementById('atlasSvg');
  svgEl.onpointerdown=function(ev){if(ev.button!==0||ev.target.closest('.atlas-node'))return;drag={x:ev.clientX,y:ev.clientY,ox:cam.x,oy:cam.y,moved:false,id:ev.pointerId};svgEl.setPointerCapture(ev.pointerId);svgEl.classList.add('dragging')};
  svgEl.onpointermove=function(ev){if(!drag)return;var dx=ev.clientX-drag.x,dy=ev.clientY-drag.y;if(Math.abs(dx)+Math.abs(dy)>4)drag.moved=true;cam.x=drag.ox+dx*1200/Math.max(1,svgEl.clientWidth);cam.y=drag.oy+dy*700/Math.max(1,svgEl.clientHeight);setCamera()};
  svgEl.onpointerup=svgEl.onpointercancel=function(){drag=null;svgEl.classList.remove('dragging')};
- svgEl.onwheel=function(ev){ev.preventDefault();cam.k=Math.max(.58,Math.min(2.5,cam.k*(ev.deltaY<0?1.09:.91)));setCamera()};
+ svgEl.onwheel=function(ev){ev.preventDefault();cam.k=Math.max(.55,Math.min(2.8,cam.k*(ev.deltaY<0?1.10:.91)));setCamera()};
+ svgEl.ondblclick=function(ev){if(!ev.target.closest('.atlas-node')){cam.k=Math.min(2.8,cam.k*1.3);setCamera()}};
  inspect();
- function frame(t){if(!document.getElementById('atlasStage')||document.getElementById('atlasWorld')!==world){animation=0;return}
-  nodeViews.forEach(function(o){var wobble=quiet?0:(o.n.kind==='root'?0:Math.sin(t/1300+o.i*1.4)*2.7);o.el.setAttribute('transform','translate('+o.n.x+' '+(o.n.y+wobble)+')');});
-  linkViews.forEach(function(o){var a=model.map.get(o.edge.a),b=model.map.get(o.edge.b);if(a&&b){var dyA=quiet?0:Math.sin(t/1300+model.nodes.indexOf(a)*1.4)*2.7,dyB=quiet?0:Math.sin(t/1300+model.nodes.indexOf(b)*1.4)*2.7;
-   o.el.setAttribute('d','M'+a.x+' '+(a.y+dyA)+' L'+b.x+' '+(b.y+dyB));
-   o.el.setAttribute('class','atlas-edge'+((S.selected===o.edge.a||S.selected===o.edge.b)?' highlight':''));
-  }});
-  if(!quiet)animation=requestAnimationFrame(frame);
+ // Visible organic movement + directional light moving along factual edges.
+ var started=0,lastFrame=-1000;
+ function frame(t){
+  if(document.getElementById('atlasWorld')!==world){animation=0;return}
+  if(!started)started=t;
+  if(document.hidden){animation=0;motionResume=function(){if(document.getElementById('atlasWorld')===world&&!quiet&&!animation){animation=requestAnimationFrame(frame)}};return}
+  if(t-lastFrame<27&&!quiet){animation=requestAnimationFrame(frame);return}lastFrame=t;
+  var age=t-started,positions=new Map();
+  nodeViews.forEach(function(o){
+   var n=o.n,i=o.i,isRoot=n.kind==='root';
+   var a=quiet?0:(t/2400+i*1.55);
+   var amt=isRoot?0:(n.kind==='program'?13:(n.kind==='episode'?10:7.5));
+   var dx=Math.sin(a)*amt+Math.sin(t/5700+i*.93)*amt*.33;
+   var dy=Math.cos(t/3100+i*1.21)*amt*.75+Math.sin(t/6600+i*.47)*amt*.25;
+   var fade=quiet?1:Math.max(0,Math.min(1,(age-i*42)/850));
+   var ease=1-Math.pow(1-fade,3);
+   var initX=S.group?810:600,initY=345;
+   var px=initX+(n.x+dx-initX)*ease,py=initY+(n.y+dy-initY)*ease;
+   var sc=.72+.28*ease;
+   o.x=px;o.y=py;positions.set(n.id,{x:px,y:py});
+   o.el.setAttribute('transform','translate('+px.toFixed(2)+' '+py.toFixed(2)+') scale('+sc.toFixed(3)+')');
+  });
+  linkViews.forEach(function(o){
+   var pa=positions.get(o.edge.a),pb=positions.get(o.edge.b);if(!pa||!pb)return;
+   var mx=(pa.x+pb.x)/2,my=(pa.y+pb.y)/2,curve=Math.max(-28,Math.min(28,(pb.x-pa.x)*.07));
+   var pathD='M '+pa.x.toFixed(2)+' '+pa.y.toFixed(2)+' Q '+(mx+curve).toFixed(2)+' '+(my-21).toFixed(2)+' '+pb.x.toFixed(2)+' '+pb.y.toFixed(2);
+   o.el.setAttribute('d',pathD);o.halo.setAttribute('d',pathD);
+   var hot=S.selected===o.edge.a||S.selected===o.edge.b;
+   o.el.setAttribute('class','atlas-edge'+(hot?' highlight':''));
+   o.halo.setAttribute('opacity',hot?'.9':'.35');
+   if(quiet){o.signal.setAttribute('opacity','0');return}
+   var progress=((t/3600)+(o.index*.19))%1;
+   try{var dlen=o.el.getTotalLength(),point=o.el.getPointAtLength(dlen*progress);
+    o.signal.setAttribute('cx',point.x.toFixed(2));o.signal.setAttribute('cy',point.y.toFixed(2));
+    o.signal.setAttribute('opacity',hot?1:.82);
+   }catch(e){o.signal.setAttribute('opacity',0)}
+  });
+  if(!quiet)animation=requestAnimationFrame(frame);else animation=0;
  }
- frame(0);
+ motionResume=function(){if(document.getElementById('atlasWorld')===world&&!animation&&!quiet)animation=requestAnimationFrame(frame)};
+ frame(performance.now());
 }
+
 function setCamera(){if(world)world.setAttribute('transform','translate('+cam.x+' '+cam.y+') translate(600 350) scale('+cam.k+') translate(-600 -350)')}
 function atlasPick(id){
  var n=model&&model.map.get(id);if(!n)return;
@@ -143,6 +202,16 @@ window.atlasClearGraphQuery=function(){S.graphSearch='';S.group='';S.episode='';
 window.atlasGraphTopic=function(){go('#/search');setTimeout(function(){var e=document.getElementById('atlasQuery');if(e)e.focus()},60)};
 window.atlasZoom=function(n){cam.k=Math.max(.58,Math.min(2.5,cam.k*n));setCamera()};
 window.atlasReset=function(){cam={x:0,y:0,k:1};setCamera()};
+
+window.atlasToggleMotion=function(){
+ quiet=!quiet;
+ var btn=document.getElementById('atlasMotionControl');
+ if(btn){btn.textContent=quiet?'▶ آغاز حرکت':'Ⅱ توقف حرکت';btn.setAttribute('aria-pressed',String(!quiet));btn.classList.toggle('active',!quiet)}
+ if(animation){cancelAnimationFrame(animation);animation=0}
+ mountGraph();
+};
+document.addEventListener('visibilitychange',function(){if(!document.hidden&&typeof motionResume==='function')motionResume()});
+
 window.atlasFullscreen=function(){var e=document.getElementById('graphAnchor');if(!e)return;e.classList.toggle('atlas-view-full');setTimeout(setCamera,50)};
 window.atlasSearchFor=function(s){S.sQuery=s;go('#/search')};
 graphSection=atlasGraphSection;
@@ -313,8 +382,7 @@ render=function(){
   if(view==='search')populateSearch();if(view==='research')populateResearch();if(view==='editor')window.atlasLoadEditor();
   return;
  }
- originals.render();
- if(hash==='#/'||hash==='#')mountGraph();
+ originals.render(); // resetGraph in the original renderer mounts the upgraded graph exactly once
 };
 installNavigation();
 window.addEventListener('keydown',function(ev){if(ev.key==='Escape'){var p=document.querySelector('.atlas-view-full');if(p)window.atlasFullscreen()}});
