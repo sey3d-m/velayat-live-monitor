@@ -166,3 +166,11 @@
 @media(max-width:960px){.atlas-chapter-grid{grid-template-columns:1fr}.atlas-time-shell{padding:15px}}
 @media(max-width:550px){.atlas-time-track{min-height:74px}.atlas-time-track .atlas-time-row{inset:21px 5px 11px}.atlas-time-segment span{display:none}.atlas-chapter-grid{max-height:430px}.atlas-time-ruler span{font-size:9px}.atlas-visual-stat{display:none}}
 @media(prefers-reduced-motion:reduce){.atlas-node.entering{animation:none!important}.atlas-time-playhead,.atlas-time-segment,.atlas-chapter{transition:none!important}}
+
+
+/* Semantic links: distinct from the structural network spokes. */
+.atlas-edge.semantic{stroke:#c29debba;stroke-width:1.65;stroke-dasharray:4 7}
+.atlas-edge.semantic.highlight{stroke:#efd59f;stroke-width:3.1;stroke-dasharray:0}
+#timelineExplain:empty{display:none}
+.atlas-time-shell+ #timelineExplain:empty{display:none}
+@media print{.atlas-panel,.atlas-actions,.atlas-time-navigation,.atlas-time-qa{display:none!important}.atlas-time-shell{box-shadow:none;border-color:#aaa;color:#111;background:white}.atlas-chapter-grid{max-height:none;overflow:visible}.atlas-time-detail{color:#111;background:white}}
