@@ -3,7 +3,7 @@
    No AI model, audio, overlay, scheduler or production workflow is called. */
 (function(){
 'use strict';
-var S={group:'',episode:'',selected:'root',graphSearch:'',sQuery:'',sProgram:'',sExpert:'',sDate:'',sType:'all',sView:'cards',sSort:'relevance',rQuery:'',draft:{},published:{},publishedPhotos:{},preview:false,archiveReport:null};
+var S={group:'',episode:'',selected:'root',graphSearch:'',sQuery:'',sProgram:'',sExpert:'',sDate:'',sType:'all',sView:'cards',sSort:'relevance',rQuery:'',settingsTab:'experts',settingsExpert:'',expertFilter:'',draftPhotos:{},draft:{},published:{},publishedPhotos:{},preview:false,archiveReport:null};
 var NS='http://www.w3.org/2000/svg',stage=null,world=null,animation=0,nodeViews=[],linkViews=[],model=null,cam={x:0,y:0,k:1},drag=null,quiet=matchMedia('(prefers-reduced-motion: reduce)').matches;
 var motionResume=null;
 var allowed=['topic','summary','expert','host','hashtags','key_points','clips','questions'];
@@ -21,7 +21,13 @@ function actionBtn(text,fun,cls){return '<button class="atlas-btn '+(cls||'')+'"
 function installNavigation(){
  var side=document.getElementById('rail');if(!side||side.dataset.atlasPro)return;side.dataset.atlasPro='1';
  var bottom=side.querySelector('.rail-bottom');
- [['search','⌕','جست‌وجوی جامع'],['research','◉','میز پژوهش و برنامه‌سازی'],['editor','✎','مدیریت و اصلاحات']].forEach(function(x){var b=document.createElement('button');b.className='nav';b.dataset.view=x[0];b.innerHTML='<span class="emoji">'+x[1]+'</span>'+x[2];b.onclick=function(){go('#/'+x[0])};side.insertBefore(b,bottom)});
+ [['search','⌕','جست‌وجوی جامع'],['research','◉','میز پژوهش و برنامه‌سازی']].forEach(function(x){var b=document.createElement('button');b.className='nav';b.dataset.view=x[0];b.innerHTML='<span class="emoji">'+x[1]+'</span>'+x[2];b.onclick=function(){go('#/'+x[0])};side.insertBefore(b,bottom)});
+ var settings=document.createElement('button');
+ settings.className='atlas-settings-entry';
+ settings.dataset.view='settings';
+ settings.innerHTML='<span class="emoji">⚙</span><span>تنظیمات و مدیریت</span><span class="atlas-entry-chevron">‹</span>';
+ settings.onclick=function(){S.settingsTab='experts';go('#/settings')};
+ side.insertBefore(settings,bottom);
 }
 function changeMode(m){S.group=m||'';S.episode='';S.selected=m?'p:'+m:'root';mountGraph()}
 function atlasGraphSection(){
@@ -320,8 +326,131 @@ window.atlasResearchExport=function(){var m=researchModel(S.rQuery);var payload=
 function patchFor(id){return Object.assign({},S.published[id]||{},S.preview?(S.draft[id]||{}):{})}
 function applyEdits(){if(!programs.length)return;programs=programs.map(function(p){var patch=patchFor(p.id),out=Object.assign({},p);allowed.forEach(k=>{if(Object.prototype.hasOwnProperty.call(patch,k)&&((Array.isArray(patch[k]))||typeof patch[k]==='string'))out[k]=patch[k]});return out})}
 function draftLoad(){try{return JSON.parse(localStorage.getItem('atlas-public-drafts-v1')||'{}')}catch(e){return {}}}
-S.draft=draftLoad();try{S.sQuery=new URLSearchParams(location.search).get('q')||''}catch(e){}
+S.draft=draftLoad();try{S.draftPhotos=JSON.parse(localStorage.getItem('atlas-expert-photo-url-drafts-v1')||'{}')||{}}catch(e){S.draftPhotos={}}try{S.sQuery=new URLSearchParams(location.search).get('q')||''}catch(e){}
 async function loadPublished(){try{var u=new URL('../atlas/overrides.json',location.href);var r=await fetch(u.href,{cache:'no-store'});if(!r.ok)return;var d=await r.json();if(d&&d.schema===1&&d.episodes&&typeof d.episodes==='object'){S.published=d.episodes;S.publishedPhotos=d.expert_photos||{};if(d.expert_photos&&typeof d.expert_photos==='object'){Object.entries(d.expert_photos).forEach(function(x){var url=safeUrl(x[1]);if(url&&url.startsWith('https://'))photos[photoKey(x[0])]=url})}applyEdits();render()}}catch(e){/* no published overrides is supported */}}
+
+/* ─── Settings workspace: photo and expert management live outside public navigation. ─── */
+function atlasExpertNames(){return persons().filter(Boolean).sort((a,b)=>a.localeCompare(b,'fa'))}
+function atlasSettingsPhoto(who){
+ var src=imageFor(who);
+ return src?'<img src="'+E(src)+'" alt="تصویر '+E(who)+'" loading="lazy">':'<span class="atlas-placeholder-face">◉</span>';
+}
+function atlasSettingsExpertList(){
+ var xs=atlasExpertNames(),filter=N(S.expertFilter);
+ var available=xs.filter(x=>!filter||N(x).includes(filter));
+ return available.length?available.map(function(who){
+  var instances=programs.filter(p=>expert(p)===who).length;
+  return '<button class="atlas-expert-row '+(S.settingsExpert===who?'active':'')+'" data-expert="'+E(who)+'" onclick="atlasChooseExpert(this.dataset.expert)">'+
+   '<span class="atlas-expert-thumb">'+atlasSettingsPhoto(who)+'</span>'+
+   '<span class="atlas-expert-row-text"><b>'+E(who)+'</b><small>'+fmt(instances)+' قسمت ثبت‌شده</small></span>'+
+   '<span class="atlas-expert-arrow">‹</span></button>';
+ }).join(''):'<p class="muted">کارشناسی با این عبارت یافت نشد.</p>';
+}
+function atlasSelectedExpertPanel(){
+ var xs=atlasExpertNames();
+ if(!xs.includes(S.settingsExpert))S.settingsExpert=xs[0]||'';
+ var who=S.settingsExpert;
+ if(!who)return '<div class="empty">نام کارشناسی در آرشیو ثبت نشده است.</div>';
+ var count=programs.filter(p=>expert(p)===who).length;
+ var hosted=S.draftPhotos[who]||S.publishedPhotos[who]||'';
+ return '<div class="atlas-settings-expert-info"><div class="atlas-expert-large-photo">'+atlasSettingsPhoto(who)+'</div>'+
+ '<div><span class="atlas-time-eyebrow">EXPERT PROFILE</span><h3>'+E(who)+'</h3><p>'+fmt(count)+' قسمت مرتبط در آرشیو</p>'+
+ '<button class="atlas-btn active" onclick="openPhotoEditor(S.settingsExpert)">▧ انتخاب تصویر از رایانه</button></div></div>'+
+ '<div class="atlas-settings-form">'+
+ '<label for="atlasRenameExpertName">اصلاح نام کارشناس در تمام قسمت‌های مرتبط</label>'+
+ '<div class="atlas-settings-input-row"><input id="atlasRenameExpertName" class="atlas-input" value="'+E(who)+'" placeholder="نام صحیح کارشناس">'+
+ '<button class="atlas-btn" onclick="atlasBulkRenameExpert()">ثبت اصلاح نام</button></div>'+
+ '<p class="muted">این تغییر برای '+fmt(count)+' قسمت به‌صورت پیش‌نویس ثبت می‌شود و تا زمان انتشار در گیت‌هاب عمومی نیست.</p>'+
+ '<label for="atlasExpertPhotoUrl">نشانی تصویر عمومی (HTTPS) برای انتشار در تمام دستگاه‌ها</label>'+
+ '<div class="atlas-settings-input-row"><input id="atlasExpertPhotoUrl" class="atlas-input" dir="ltr" placeholder="https://example.com/expert.jpg" value="'+E(hosted)+'">'+
+ '<button class="atlas-btn" onclick="atlasSaveExpertUrl()">ذخیره نشانی</button></div>'+
+ '<p class="muted">تصویری که از رایانه انتخاب می‌کنید فقط در این مرورگر ذخیره می‌شود. برای نمایش دائمی در سایت، تصویر را در یک نشانی HTTPS معتبر میزبانی و فایل اصلاحات را منتشر کنید.</p>'+
+ '<div class="atlas-settings-tools"><button class="atlas-btn" onclick="atlasClearLocalExpertPhoto()">پاک‌کردن عکس محلی</button>'+
+ '<button class="atlas-btn" onclick="atlasExportPatch()">دریافت بسته اصلاحات و تصاویر میزبانی‌شده</button></div>'+
+ '</div>';
+}
+function atlasExpertsSettings(){
+ if(!S.settingsExpert){var ns=atlasExpertNames();S.settingsExpert=ns[0]||''}
+ return '<section class="atlas-settings-metrics">'+
+ '<div class="atlas-kpi"><strong>'+fmt(atlasExpertNames().length)+'</strong><span>کارشناس دارای نام ثبت‌شده</span></div>'+
+ '<div class="atlas-kpi"><strong>'+fmt(atlasExpertNames().filter(w=>!!imageFor(w)).length)+'</strong><span>تصویر تعریف‌شده در این مرورگر</span></div>'+
+ '<div class="atlas-kpi"><strong>'+fmt(Object.keys(S.draft).length)+'</strong><span>پرونده دارای پیش‌نویس اصلاحی</span></div>'+
+ '</section>'+
+ '<section class="atlas-settings-expert-layout">'+
+ '<aside class="atlas-settings-expert-list"><h3>فهرست کارشناسان</h3>'+
+ '<input class="atlas-input" aria-label="جست‌وجوی نام کارشناس" id="atlasExpertFilter" placeholder="جست‌وجوی کارشناس..." value="'+E(S.expertFilter)+'" oninput="atlasFilterExperts(this.value)">'+
+ '<div class="atlas-settings-expert-scroll" id="atlasSettingsExpertRows">'+atlasSettingsExpertList()+'</div></aside>'+
+ '<article class="atlas-settings-expert-editor" id="atlasSettingsExpertPanel">'+atlasSelectedExpertPanel()+'</article>'+
+ '</section>';
+}
+function atlasBackupSettings(){
+ return '<section class="atlas-settings-grid">'+
+ '<article class="atlas-editor-card"><div class="atlas-settings-card-icon">▧</div><h3>پشتیبان‌گیری تصاویر کارشناسان</h3>'+
+ '<p>دریافت تنظیمات عکس‌های ذخیره‌شده در مرورگر، یا بازیابی آن‌ها از فایل پشتیبان. این گزینه جایگزین انتشار عمومی تصویر نیست.</p>'+
+ '<div class="atlas-settings-tools"><button class="atlas-btn" onclick="exportPhotos()">دریافت پشتیبان تصاویر</button>'+
+ '<label class="atlas-btn atlas-file-picker">بازیابی تصاویر<input type="file" accept=".json,application/json" hidden onchange="importPhotos(this)"></label></div></article>'+
+ '<article class="atlas-editor-card"><div class="atlas-settings-card-icon">⇪</div><h3>انتقال اصلاحات به نسخه اصلی</h3>'+
+ '<p>فایل اصلاحاتِ قسمت‌ها، نام کارشناسان و نشانی عکس‌های میزبانی‌شده را دریافت کنید و پس از بازبینی در مخزن منتشر کنید.</p>'+
+ '<div class="atlas-settings-tools"><button class="atlas-btn active" onclick="atlasExportPatch()">دریافت بسته انتشار</button>'+
+ '<a class="atlas-btn" href="https://github.com/sey3d-m/velayat-live-monitor/edit/main/docs/atlas/overrides.json" target="_blank" rel="noopener noreferrer">ویرایش فایل انتشار در گیت‌هاب</a></div></article>'+
+ '</section><p class="atlas-warning">تغییرات محلی این صفحه به‌طور خودکار در GitHub Pages منتشر نمی‌شوند. نسخه عمومی فقط اصلاحات ثبت‌شده در مخزن را برای همه نمایش می‌دهد؛ از قراردادن رمز یا توکن گیت‌هاب در مرورگر خودداری کنید.</p>';
+}
+function settingsPage(){
+ var tabs=[['experts','کارشناسان و تصاویر','users'],['content','اصلاح محتوای برنامه‌ها','file-pen'],['backup','پشتیبان‌گیری و انتشار','archive']];
+ return '<section class="atlas-settings-hero"><div><span class="atlas-time-eyebrow">VELAYAT ATLAS / MANAGEMENT</span>'+
+ '<h2>⚙ تنظیمات اطلس ولایت</h2><p>مدیریت متمرکز کارشناسان، تصاویر، اصلاحات و تنظیمات انتشار؛ بدون شلوغ‌شدن منوی اصلی.</p></div>'+
+ '<span class="atlas-settings-status">پیش‌نویس محلی · انتشار کنترل‌شده</span></section>'+
+ '<nav class="atlas-settings-tabs" aria-label="بخش‌های تنظیمات">'+tabs.map(function(t){return '<button class="atlas-settings-tab '+(S.settingsTab===t[0]?'active':'')+'" onclick="atlasSettingsTab(\''+t[0]+'\')">'+t[1]+'</button>'}).join('')+'</nav>'+
+ '<div id="atlasSettingsBody">'+(S.settingsTab==='content'?editorPage():S.settingsTab==='backup'?atlasBackupSettings():atlasExpertsSettings())+'</div>';
+}
+window.atlasSettingsTab=function(tab){
+ if(!['experts','content','backup'].includes(tab))return;
+ S.settingsTab=tab;render();
+};
+window.atlasFilterExperts=function(query){
+ S.expertFilter=query;
+ var el=document.getElementById('atlasSettingsExpertRows');if(el)el.innerHTML=atlasSettingsExpertList();
+};
+window.atlasChooseExpert=function(who){
+ if(!atlasExpertNames().includes(who))return;
+ S.settingsExpert=who;
+ var panel=document.getElementById('atlasSettingsExpertPanel');if(panel)panel.innerHTML=atlasSelectedExpertPanel();
+ var rows=document.getElementById('atlasSettingsExpertRows');if(rows)rows.innerHTML=atlasSettingsExpertList();
+};
+window.atlasBulkRenameExpert=function(){
+ var old=S.settingsExpert,newName=document.getElementById('atlasRenameExpertName')?.value.trim();
+ if(!old||!newName)return toast('نام کارشناس نمی‌تواند خالی باشد');
+ if(old===newName)return toast('نام جدید با نام فعلی یکسان است');
+ if(newName.length>150)return toast('نام کارشناس بیش از حد طولانی است');
+ var affected=programs.filter(p=>expert(p)===old);
+ if(!affected.length)return toast('قسمت مرتبطی پیدا نشد');
+ affected.forEach(p=>{S.draft[p.id]=Object.assign({},S.draft[p.id]||{},{expert:newName})});
+ try{localStorage.setItem('atlas-public-drafts-v1',JSON.stringify(S.draft))}catch(e){return toast('ذخیره اصلاحات ممکن نشد؛ فضای مرورگر را بررسی کنید')}
+ S.preview=true;
+ S.settingsExpert=newName;
+ render();
+ toast('اصلاح نام برای '+fmt(affected.length)+' قسمت در پیش‌نمایش این مرورگر ثبت شد؛ برای انتشار بسته اصلاحات را دریافت کنید');
+};
+window.atlasSaveExpertUrl=function(){
+ var who=S.settingsExpert;
+ var input=document.getElementById('atlasExpertPhotoUrl');var raw=input?.value.trim()||'';
+ if(!who)return;
+ if(!raw)return toast('نشانی HTTPS تصویر را وارد کنید');
+ if(raw.length>2000)return toast('نشانی تصویر بیش از حد طولانی است');
+ var url=safeUrl(raw);
+ if(!url||!/^https:\/\//i.test(raw)||!/^https:\/\//i.test(url))return toast('نشانی معتبر HTTPS لازم است');
+ S.draftPhotos[who]=url;
+ try{localStorage.setItem('atlas-expert-photo-url-drafts-v1',JSON.stringify(S.draftPhotos))}catch(e){return toast('پیش‌نویس نشانی تصویر ذخیره نشد')}
+ photos[photoKey(who)]=url;persistPhotos();
+ render();
+ toast('نشانی تصویر در پیش‌نویس ذخیره شد؛ برای نمایش عمومی بسته اصلاحات را در گیت‌هاب منتشر کنید');
+};
+window.atlasClearLocalExpertPhoto=function(){
+ var who=S.settingsExpert;if(!who)return;
+ delete photos[photoKey(who)];persistPhotos();
+ render();toast('عکس محلی حذف شد؛ تصاویر منتشرشده در مخزن تغییر نمی‌کنند');
+};
+
 function editorPage(){
  var options=programs.map(p=>'<option value="'+E(p.id)+'">'+E(name(p))+' · '+E(p.date||p.date_iso)+' · '+E((p.topic||'').slice(0,65))+'</option>').join('');
  return '<section class="atlas-searchhero"><h2>میز مدیریت محتوای اطلس</h2><p>اصلاح عنوان و خلاصه، بازبینی پیش‌نویس، بررسی آرشیو و تهیه بسته انتشار. داده اصلی دیدبان دست‌نخورده می‌ماند.</p>'+
@@ -355,7 +484,7 @@ window.atlasSaveDraft=function(){
 window.atlasPreviewDraft=function(){S.preview=true;applyEdits();toast('پیش‌نمایش فعال است؛ هنوز در سایت منتشر نشده است')};
 window.atlasStopPreview=function(){S.preview=false;toast('پیش‌نمایش خاموش شد؛ برای بازیابی داده اولیه صفحه را تازه‌سازی کنید')};
 window.atlasExportPatch=function(){
- var payload={schema:1,updated_at:new Date().toISOString(),episodes:Object.assign({},S.published,S.draft),expert_photos:S.publishedPhotos};
+ var payload={schema:1,updated_at:new Date().toISOString(),episodes:Object.assign({},S.published,S.draft),expert_photos:Object.assign({},S.publishedPhotos,S.draftPhotos)};
  saveFile('velayat-atlas-overrides.json',JSON.stringify(payload,null,2),'application/json');
  toast('بسته اصلاحات برای بازبینی و انتشار دریافت شد');
 };
@@ -460,14 +589,25 @@ render=function(){
  applyEdits();
  var hash=decodeURIComponent(location.hash||'#/');
  if(hash.startsWith('#/show/')){var gp=hash.slice(7);document.getElementById('app').innerHTML=showPage(gp);document.getElementById('bread').textContent=gp;document.querySelectorAll('.nav').forEach(x=>x.classList.toggle('on',x.dataset.view==='programs'));return;}
- if(hash==='#/search'||hash==='#/research'||hash==='#/editor'){
-  var view=hash.slice(2),title={search:'جست‌وجوی جامع',research:'میز پژوهش و برنامه‌سازی',editor:'مدیریت اطلس'}[view];
+ if(hash==='#/settings'||hash==='#/editor'){
+  if(hash==='#/editor')S.settingsTab='content'; // Previous links remain compatible.
+  document.getElementById('app').innerHTML=settingsPage();
+  document.getElementById('bread').textContent='تنظیمات اطلس';
+  document.querySelectorAll('.nav').forEach(x=>x.classList.remove('on'));
+  var entry=document.querySelector('.atlas-settings-entry');if(entry)entry.classList.add('on');
+  if(S.settingsTab==='content')window.atlasLoadEditor();
+  return;
+ }
+ var settingsEntry=document.querySelector('.atlas-settings-entry');if(settingsEntry)settingsEntry.classList.remove('on');
+ if(hash==='#/search'||hash==='#/research'){
+  var view=hash.slice(2),title={search:'جست‌وجوی جامع',research:'میز پژوهش و برنامه‌سازی'}[view];
   document.getElementById('app').innerHTML=view==='search'?searchPage():view==='research'?researchPage():editorPage();
   var bread=document.getElementById('bread');if(bread)bread.textContent=title;
   document.querySelectorAll('.nav').forEach(x=>x.classList.toggle('on',x.dataset.view===view));
-  if(view==='search')populateSearch();if(view==='research')populateResearch();if(view==='editor')window.atlasLoadEditor();
+  if(view==='search')populateSearch();if(view==='research')populateResearch();
   return;
  }
+ var settingsEntry=document.querySelector('.atlas-settings-entry');if(settingsEntry)settingsEntry.classList.remove('on');
  originals.render(); // resetGraph in the original renderer mounts the upgraded graph exactly once
 };
 installNavigation();
