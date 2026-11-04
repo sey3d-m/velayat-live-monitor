@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T15:44:52.193040+00:00",
-  "updated_at": "2026-11-04T16:19:08.362606+00:00",
+  "updated_at": "2026-11-04T16:19:16.491568+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره یادآور مصائب فاطمیه و حضور استاد شاکرین در استودیو",
@@ -56,6 +56,18 @@
       "sequence": 29,
       "updated_at": "2026-11-04T16:12:17.522368+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی مفهوم غفلت و تفاوت آن با ندانستن در انسان",
+      "summary": "در این بخش کارشناس استدلال می‌کند که غفلت به معنای ندانستن نیست؛ بلکه گاهی انسان چیزی را می‌داند اما توجه و التفات چندانی به آن ندارد و دچار فراموشی موقت می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41860823618-46",
+      "sequence": 46,
+      "updated_at": "2026-11-04T16:19:16.491540+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -63,7 +75,7 @@
     "segments_transcribed": 47,
     "editor_attempts": 23,
     "editor_withheld": 19,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-04T16:19:03.198869+00:00"
