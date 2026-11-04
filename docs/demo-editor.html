@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#08182b">
-<title>ویرایشگر مستقل دموی پاسخ‌نما</title>
+<title>مدیریت و انتشار پاسخ‌نما | پیش‌نمایش و تأیید</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap');
 :root{font-family:Vazirmatn,Tahoma,Arial,sans-serif;--bg:#f1f5f9;--navy:#0b213b;--ink:#21354a;--muted:#697b8e;--line:#dce4ec;--gold:#caa769}
@@ -63,21 +63,22 @@ body.preview-mode .overlay-only{display:block;position:fixed;top:12px;left:12px;
 @media(max-width:1050px){.editor-layout{grid-template-columns:1fr 1fr;gap:14px}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}}
 @media(max-width:760px){header.page-head{padding:14px}.editor-layout{grid-template-columns:1fr;padding:14px}.preview-column{position:static;order:-1}.preview-zone{height:560px;min-height:560px}.formgrid{grid-template-columns:1fr 1fr}.field.full{grid-column:1/-1}.tv-card h3{font-size:15px}.tv-card p{font-size:12px}}
 </style>
+<link rel="stylesheet" href="assets/demo-admin.css?v=2">
 </head>
 <body>
 <header class="page-head"><div class="head-top">
- <div class="identity"><span class="mark">و</span><div><strong>ویرایشگر دموی پاسخ‌نما</strong><small>مستقل از پردازش زنده، کنداکتور و آرشیو اصلی</small></div></div>
+ <div class="identity"><span class="mark">و</span><div><strong>مدیریت و انتشار پاسخ‌نما</strong><small>ویرایش محتوا و چیدمان، پیش‌نمایش دقیق و انتشار پس از تأیید</small></div></div>
  <div class="actions">
   <button class="btn primary" id="save" type="button">ذخیره در این مرورگر</button>
   <button class="btn gold" id="add" type="button">+ افزودن باکس</button>
   <button class="btn" id="full" type="button">نمای تمام‌صفحه ↗</button>
   <button class="btn" id="export" type="button">دریافت JSON</button>
   <button class="btn" id="import" type="button">بازیابی JSON</button>
-  <button class="btn danger" id="reset" type="button">بازگشت به محتوای اصلی دمو</button>
+  <button class="btn danger" id="reset" type="button">بازیابی نسخه منتشرشده</button>
   <input type="file" id="json-file" accept="application/json,.json" hidden>
  </div>
 </div>
-<div class="notice"><b>محیط مستقل نمایش:</b> این صفحه فقط نمونه ارائه را تغییر می‌دهد. اطلاعات در حافظه همین مرورگر می‌ماند؛ هیچ درخواست نوشتن به گیت‌هاب، سامانه دیدبان، API، بات یا داده‌های زنده ارسال نمی‌شود. محتوای ویرایش‌شده برای نمایش است، نه نقل قول تأییدشده.</div>
+<div class="notice"><b>روال انتشار امن:</b> تغییرات ابتدا پیش‌نمایش می‌شوند و تنها پس از تأیید شما، با مجوز گیت‌هاب در فایل مخصوص ارائه ثبت خواهند شد. داده‌های عملیاتی دیدبان و گزارش‌های پخش زنده دست‌نخورده می‌مانند. انتشار تنظیمات ظاهری بر نمایش زنده نیز اختیاری و به‌صورت پیش‌فرض غیرفعال است.</div>
 </header>
 <main class="editor-layout">
 <section class="controls">
@@ -113,7 +114,7 @@ body.preview-mode .overlay-only{display:block;position:fixed;top:12px;left:12px;
  <div class="feedback" id="feedback" role="status" aria-live="polite"></div>
 </section>
 <section class="preview-column">
- <div class="preview-heading"><strong>پیش‌نمایش لحظه‌ای</strong><span>همان نمای قابل ارائه روی پرده</span></div>
+ <div class="preview-heading"><strong>پیش‌نمایش لحظه‌ای</strong><span>پیش‌نمایش واقعی با همان موتور نمای تلویزیونی</span></div>
  <div class="preview-zone"><div class="tv" id="tv">
   <div class="tv-head"><div class="tv-id"><span class="tv-mark">و</span><div><div class="tv-brand" id="p-title">پاسخ‌نما</div><div class="tv-network" id="p-network">شبکه جهانی ولایت فارسی</div></div></div><span class="tv-status" id="p-status">نمونه آرشیوی</span></div>
   <div class="tv-meta"><strong id="p-program">برنامه‌های شبکه ولایت</strong><span id="p-subtitle">آرشیو دیدبان</span></div>
@@ -156,7 +157,7 @@ function validate(raw){
   var z={};Object.keys(itemFields).forEach(function(k){z[k]=safeStr(c[k],k==='body'?5000:2000);});
   if(!labels[z.kind])z.kind='expert_topic';z.id='local-'+i;return z;
  });
- return {version:1,edited:!!raw.edited,header:h,cards:cards};
+ return {version:2,edited:!!raw.edited,header:h,cards:cards,settings:raw.settings&&typeof raw.settings==='object'?Object.assign({},raw.settings):{}};
 }
 function element(tag,className,text){
  var n=document.createElement(tag);if(className)n.className=className;if(text!==undefined)n.textContent=text;return n;
@@ -170,6 +171,7 @@ function updateDirty(){
  state.edited=true;
  persist();
  renderPreview();
+ window.dispatchEvent(new Event('pasokhnama:change'));
 }
 function updateHeader(){
  if(!state||previewMode)return;
@@ -248,6 +250,7 @@ function renderPreview(){
  });
 }
 async function restoreDefault(){
+ try{var published=await fetch('pasokhnama-presentation.json',{cache:'no-store'});if(published.ok)return validate(await published.json());}catch(e){}
  var res=await fetch('data/demo-showcase.json',{cache:'no-store'});
  if(!res.ok)throw Error('دریافت اطلاعات آرشیوی ناموفق بود: '+res.status);
  var data=await res.json();return initialFromData(data);
@@ -272,7 +275,7 @@ async function init(){
   };
   $('full').onclick=function(){window.open('demo-editor.html?preview=1','_blank','noopener');};
   $('reset').onclick=async function(){
-   if(!confirm('تمام ویرایش‌های ذخیره‌شده این مرورگر به حالت نمونه اصلی بازگردند؟'))return;
+   if(!confirm('ویرایش‌های محلی پاک و نسخه منتشرشده دوباره بارگذاری شود؟'))return;
    try{state=await restoreDefault();selected=0;persist();fillHeader();renderList(true);renderPreview();feedback('محتوای واقعی نمونه بازگردانده شد.');}
    catch(e){feedback('بازگردانی ناموفق بود: '+e.message);}
   };
@@ -290,13 +293,28 @@ async function init(){
   };
  }
  renderPreview();
+ window.dispatchEvent(new Event('pasokhnama:ready'));
 }
 window.addEventListener('storage',function(ev){
  if(ev.key!==KEY||!ev.newValue)return;
  try{state=validate(JSON.parse(ev.newValue));if(!previewMode){fillHeader();renderList(true);}renderPreview();}catch(e){}
 });
+window.PasokhnamaEditor={
+  getState:function(){return state?JSON.parse(JSON.stringify(state)):null;},
+  updateSettings:function(newSettings){
+    if(!state)return;
+    state.settings=Object.assign({},newSettings);state.edited=true;persist();renderPreview();
+    window.dispatchEvent(new Event('pasokhnama:change'));
+  },
+  replaceState:function(raw){
+    state=validate(raw);selected=0;persist();if(!previewMode){fillHeader();renderList(true);}
+    renderPreview();window.dispatchEvent(new Event('pasokhnama:change'));
+  },
+  isReady:function(){return !!state;}
+};
 init();
 })();
 </script>
+<script src="assets/demo-admin.js?v=2"></script>
 </body>
 </html>
