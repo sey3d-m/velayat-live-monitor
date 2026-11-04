@@ -21,7 +21,7 @@ body:before{position:fixed;content:"";inset:0;z-index:-1;pointer-events:none;bac
 @media(max-width:620px){.container{padding:20px 14px 55px}.top{padding:0 12px}.top .source-status{display:none}.hero{padding:25px 21px;min-height:228px}.hero h1{font-size:28px}.metric{padding:13px}.metric strong{font-size:22px}.cards{grid-template-columns:1fr}.graph-viewport{height:430px}.graph-head{align-items:flex-start;flex-direction:column}.detail-head{flex-direction:column;align-items:flex-start}.detail-grid{grid-template-columns:1fr}.search{min-width:100%}.select{max-width:none;flex:1}.section-heading{align-items:flex-start;flex-direction:column}.button{padding:9px 11px}.hero-actions .button{flex:1}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.001ms!important;transition-duration:.001ms!important}}
 </style>
-<link rel="stylesheet" href="../atlas/atlas-pro.css?v=20261104c">
+<link rel="stylesheet" href="../atlas/atlas-pro.css?v=20261104d">
 </head>
 <body>
 <div class="shell"><aside class="rail" id="rail"><a class="brand" href="#/"><div class="brand-mark">و</div><div><strong>اطلس ولایت</strong><span>VELAYAT KNOWLEDGE ATLAS</span></div></a><div class="rail-kicker">دسترسی سریع</div><button class="nav on" data-view="atlas" onclick="go('#/')"><span class="emoji">◈</span>نقشه دانش شبکه</button><button class="nav" data-view="programs" onclick="go('#/programs')"><span class="emoji">▣</span>برنامه‌ها و قسمت‌ها</button><button class="nav" data-view="analysis" onclick="go('#/analysis')"><span class="emoji">◴</span>تحلیل محتوایی</button><button class="nav" onclick="openPhotoEditor()"><span class="emoji">▧</span>تصاویر کارشناسان</button><div class="rail-bottom"><strong>اتصال فقط‌خواندنی به دیدبان</strong><p>اطلس صرفاً فایل‌های JSON منتشرشده را می‌خواند. هیچ تبدیل گفتار، مدل هوش مصنوعی یا درخواست پردازشی اضافه اجرا نمی‌شود.</p></div></aside>
@@ -110,5 +110,5 @@ function go(h){location.hash=h;$('#rail').classList.remove('open');if(location.h
 window.addEventListener('hashchange',()=>{render();window.scrollTo(0,0)});
 refreshData();setInterval(()=>{if(document.visibilityState==='visible')refreshData()},10*60*1000);
 </script>
-<script defer src="../atlas/atlas-pro.js?v=20261104c"></script>
+<script defer src="../atlas/atlas-pro.js?v=20261104d"></script>
 </body></html>
