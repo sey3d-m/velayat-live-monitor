@@ -212,7 +212,7 @@ window.atlasSearchInput=function(v){S.sQuery=v;populateSearch()};
 window.atlasSearchSuggestion=function(v){S.sQuery=v;document.getElementById('atlasQuery').value=v;populateSearch()};
 window.atlasSearchFilter=function(k,v){if(k==='program')S.sProgram=v;if(k==='expert')S.sExpert=v;if(k==='date')S.sDate=v;if(k==='type')S.sType=v;if(k==='sort')S.sSort=v;populateSearch()};
 window.atlasView=function(v){S.sView=v;populateSearch();document.querySelectorAll('.atlas-toolbar button').forEach(b=>b.classList.toggle('active',b.textContent.includes(v==='cards'?'کارت':'پژوهشی')))};
-window.atlasCopySearch=function(){var url=location.href; if(navigator.clipboard)navigator.clipboard.writeText(url).then(()=>toast('آدرس این صفحه کپی شد'));else prompt('نشانی',url)};
+window.atlasCopySearch=function(){var url=location.origin+location.pathname+(S.sQuery?'?q='+encodeURIComponent(S.sQuery):'')+'#/search'; if(navigator.clipboard)navigator.clipboard.writeText(url).then(()=>toast('آدرس این صفحه کپی شد'));else prompt('نشانی',url)};
 function showPage(group){var ps=programs.filter(x=>name(x)===group),ex=unique(ps.map(expert)),tags=new Map();ps.forEach(p=>(p.hashtags||[]).forEach(t=>tags.set(t,(tags.get(t)||0)+1)));var tt=[...tags.entries()].sort((a,b)=>b[1]-a[1]).slice(0,14);return '<div class="atlas-searchhero"><small>اطلس ولایت / مجموعه برنامه</small><h2>'+E(group)+'</h2><p>'+fmt(ps.length)+' قسمت ثبت‌شده · '+fmt(ex.length)+' کارشناس · آخرین قسمت: '+E(ps[0]?.date||'—')+'</p><div class="atlas-sug">'+ex.map(x=>'<button onclick="atlasSearchFor(this.textContent)">'+E(x)+'</button>').join('')+'</div></div><section class="block"><h2>موضوعات و کلیدواژه‌های پرتکرار</h2><div class="chips">'+tt.map(x=>'<span class="chip">'+E(x[0])+' · '+fmt(x[1])+'</span>').join('')+'</div></section><section class="block"><h2>آرشیو قسمت‌های این مجموعه</h2><div class="atlas-inline-list">'+ps.map(p=>'<button class="atlas-row" onclick="go(\''+detailHash(p.id)+'\')">'+E(p.topic||'بدون عنوان')+' · '+E(p.date||p.date_iso)+' · '+E(expert(p))+' · '+fmt((p.key_points||[]).length)+' محور</button>').join('')+'</div></section>';}
 function researchPage(){
  return '<section class="atlas-searchhero"><h2>میز پژوهش و برنامه‌سازی</h2><p>بررسی سابقه پرداخت رسانه‌ای یک موضوع، بر پایه محورها، پرسش‌ها و برنامه‌های واقعی دیدبان.</p>'+
@@ -240,7 +240,7 @@ window.atlasResearchExport=function(){var m=researchModel(S.rQuery);var payload=
 function patchFor(id){return Object.assign({},S.published[id]||{},S.preview?(S.draft[id]||{}):{})}
 function applyEdits(){if(!programs.length)return;programs=programs.map(function(p){var patch=patchFor(p.id),out=Object.assign({},p);allowed.forEach(k=>{if(Object.prototype.hasOwnProperty.call(patch,k)&&((Array.isArray(patch[k]))||typeof patch[k]==='string'))out[k]=patch[k]});return out})}
 function draftLoad(){try{return JSON.parse(localStorage.getItem('atlas-public-drafts-v1')||'{}')}catch(e){return {}}}
-S.draft=draftLoad();
+S.draft=draftLoad();try{S.sQuery=new URLSearchParams(location.search).get('q')||''}catch(e){}
 async function loadPublished(){try{var u=new URL('../atlas/overrides.json',location.href);var r=await fetch(u.href,{cache:'no-store'});if(!r.ok)return;var d=await r.json();if(d&&d.schema===1&&d.episodes&&typeof d.episodes==='object'){S.published=d.episodes;S.publishedPhotos=d.expert_photos||{};if(d.expert_photos&&typeof d.expert_photos==='object'){Object.entries(d.expert_photos).forEach(function(x){var url=safeUrl(x[1]);if(url&&url.startsWith('https://'))photos[photoKey(x[0])]=url})}applyEdits();render()}}catch(e){/* no published overrides is supported */}}
 function editorPage(){
  var options=programs.map(p=>'<option value="'+E(p.id)+'">'+E(name(p))+' · '+E(p.date||p.date_iso)+' · '+E((p.topic||'').slice(0,65))+'</option>').join('');
@@ -260,7 +260,7 @@ function editorPage(){
  '<section class="atlas-editor-card"><h2>انتشار پایدار و کنترل نسخه</h2><p>بسته خروجی را پس از بازبینی در <b>docs/atlas/overrides.json</b> ادغام کنید. این فایل جدا از خروجی‌های دیدبان است و با هر به‌روزرسانی برنامه‌ها پاک نمی‌شود.</p><a class="button" href="https://github.com/sey3d-m/velayat-live-monitor/edit/main/docs/atlas/overrides.json" target="_blank" rel="noopener noreferrer">بازکردن فایل اصلاحات در گیت‌هاب</a><p class="muted">برای سطح مدیریت امن و انتشار یک‌مرحله‌ای، یک سرویس مجزا با احراز هویت و ثبت تغییرات لازم است؛ در نسخه ایستا این قابلیت فعال نیست.</p></section>';
 }
 window.atlasLoadEditor=function(){
- var id=document.getElementById('atlasEditSelect')?.value,p=get(id);if(!p)return;var vals=patchFor(id);
+ var id=document.getElementById('atlasEditSelect')?.value,p=get(id);if(!p)return;var vals=Object.assign({},S.published[id]||{},S.draft[id]||{});
  [['Topic','topic'],['Expert','expert'],['Host','host'],['Summary','summary']].forEach(function(x){var e=document.getElementById('atlasEdit'+x[0]);if(e)e.value=vals[x[1]]??p[x[1]]??''});
  document.getElementById('atlasEditTags').value=(vals.hashtags??p.hashtags??[]).join('، ');
  [['Axes','key_points'],['Qas','questions'],['Clips','clips']].forEach(function(x){document.getElementById('atlasEdit'+x[0]).value=JSON.stringify(vals[x[1]]??p[x[1]]??[],null,2)});
