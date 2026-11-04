@@ -46,6 +46,18 @@ jobs:
                   iframeDataTitle:win?.document.querySelector('#tv-program')?.textContent};
               });
               console.log('PREVIEW_TRACE '+JSON.stringify(trace));
+              await page.evaluate(()=>{
+                 const frame=document.querySelector('iframe.admin-preview-frame');
+                 frame.contentWindow.postMessage({type:'PASOKHNAMA_EDITOR_DRAFT',presentation:window.PasokhnamaEditor.getState()},location.origin);
+              });
+              await page.waitForTimeout(900);
+              const manual=await page.evaluate(()=>{
+                const inner=document.querySelector('iframe.admin-preview-frame').contentWindow;
+                return {title:inner.document.querySelector('.tv-identity b')?.textContent,
+                  src:inner.document.querySelector('script[src*="app.js"]')?.src,
+                  url:inner.location.href};
+              });
+              console.log('MANUAL_TRACE '+JSON.stringify(manual));
               await inner.locator('.tv-identity b').getByText('عنوان تست پیش‌نمایش').waitFor({timeout:10000});
               await page.locator('#f-name').fill('مخاطب آزمون');
               await inner.getByText('بیننده: مخاطب آزمون').waitFor({timeout:10000});
