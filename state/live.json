@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T14:14:52.411446+00:00",
-  "updated_at": "2026-11-04T15:14:49.755748+00:00",
+  "updated_at": "2026-11-04T15:15:36.734727+00:00",
   "items": [
     {
       "title": "پرسش درباره وجود روایت در کتاب علل الشرایع شیخ صدوق",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 112,
-    "segments_transcribed": 107,
-    "editor_attempts": 74,
+    "segments_captured": 114,
+    "segments_transcribed": 109,
+    "editor_attempts": 75,
     "editor_withheld": 70,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T15:14:42.460068+00:00"
+    "last_audio_at": "2026-11-04T15:15:32.713338+00:00"
   }
 }
