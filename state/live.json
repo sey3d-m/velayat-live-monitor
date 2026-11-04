@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T15:44:52.193040+00:00",
-  "updated_at": "2026-11-04T16:19:16.491568+00:00",
+  "updated_at": "2026-11-04T16:19:56.531436+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره یادآور مصائب فاطمیه و حضور استاد شاکرین در استودیو",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 48,
-    "segments_transcribed": 47,
-    "editor_attempts": 23,
+    "segments_captured": 50,
+    "segments_transcribed": 49,
+    "editor_attempts": 24,
     "editor_withheld": 19,
     "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T16:19:03.198869+00:00"
+    "last_audio_at": "2026-11-04T16:19:51.706757+00:00"
   }
 }
