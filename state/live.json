@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T17:14:46.724830+00:00",
-  "updated_at": "2026-11-04T18:09:08.666064+00:00",
+  "updated_at": "2026-11-04T18:09:57.172758+00:00",
   "items": [
     {
       "title": "بررسی انتقال ولایت و دفاع فاطمه زهرا پس از شهادت پیامبر",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 98,
-    "segments_transcribed": 93,
-    "editor_attempts": 69,
+    "segments_captured": 100,
+    "segments_transcribed": 94,
+    "editor_attempts": 70,
     "editor_withheld": 64,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T18:09:05.174196+00:00"
+    "last_audio_at": "2026-11-04T18:09:53.643052+00:00"
   }
 }
