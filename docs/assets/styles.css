@@ -16,3 +16,15 @@
 .tv-viewer-line span{white-space:nowrap}
 .demo-label{font-size:11px;max-width:340px;line-height:1.65;transform:none;border:1px solid #cbb078a3;background:#273c4de0}
 @media(max-height:800px){.tv-header{padding:12px 18px}.tv-program-info{padding:9px 20px 6px}.tv-timeline{padding:0 20px 6px}.tv-footer{padding:7px 20px}.tv-card{padding:6px 11px}.tv-cards{gap:5px}.tv-card.kind-question_answer .tv-question{font-size:calc(var(--tv-font) - 3px)}}
+
+/* Approved presentation-only visual overrides; default live appearance unchanged. */
+.tv-panel .tv-card h2{color:var(--tv-text,#fff)}
+.tv-panel.presentation-compact .tv-card{padding:5px 10px}
+.tv-panel.presentation-compact .tv-card h2{line-height:1.35}
+.tv-panel.presentation-compact .tv-card p{line-height:1.45}
+.tv-panel.presentation-compact .tv-viewer-line{font-size:9px;margin-top:1px}
+.tv-panel.presentation-spacious .tv-card{padding:15px 16px}
+.tv-panel.presentation-spacious .tv-card h2{line-height:1.75}
+.tv-panel.presentation-spacious .tv-card p{line-height:1.85}
+.tv-panel.presentation-spacious .tv-viewer-line{margin-top:9px}
+.tv-card-origin{max-width:42%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
