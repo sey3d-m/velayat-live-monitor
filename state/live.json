@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T14:14:52.411446+00:00",
-  "updated_at": "2026-11-04T15:32:18.970749+00:00",
+  "updated_at": "2026-11-04T15:33:07.761532+00:00",
   "items": [
     {
       "title": "پرسش درباره حکم و کیفیت قضای نماز و غسل",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 156,
-    "segments_transcribed": 150,
-    "editor_attempts": 100,
-    "editor_withheld": 93,
+    "segments_captured": 158,
+    "segments_transcribed": 152,
+    "editor_attempts": 101,
+    "editor_withheld": 94,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T15:32:16.031131+00:00"
+    "last_audio_at": "2026-11-04T15:33:04.620649+00:00"
   }
 }
