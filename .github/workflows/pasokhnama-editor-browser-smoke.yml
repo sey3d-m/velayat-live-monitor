@@ -1,0 +1,63 @@
+name: Pasokhnama editor isolated browser test
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/pasokhnama-editor-browser-smoke.yml'
+permissions:
+  contents: read
+jobs:
+  editor-preview-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Install browser client
+        shell: bash
+        run: |
+          npm install --prefix "$RUNNER_TEMP/pasokhnama-editor-test" --no-audit --no-fund playwright-core@1.56.1 >/dev/null
+          command -v google-chrome
+      - name: Verify production editor and preview in browser
+        shell: bash
+        run: |
+          node <<'JS'
+          const { chromium }=require(process.env.RUNNER_TEMP+'/pasokhnama-editor-test/node_modules/playwright-core');
+          (async()=>{
+            const browser=await chromium.launch({executablePath:'/usr/bin/google-chrome',headless:true,args:['--no-sandbox','--disable-dev-shm-usage']});
+            try{
+              const page=await browser.newPage({viewport:{width:1400,height:930}});
+              const errors=[];
+              page.on('pageerror',e=>errors.push(e.message));
+              const url='https://sey3d-m.github.io/velayat-live-monitor/demo-editor.html?browser_smoke='+Date.now();
+              const response=await page.goto(url,{waitUntil:'domcontentloaded',timeout:45000});
+              await page.locator('#advanced-controls').waitFor({timeout:22000});
+              await page.locator('#publisher').waitFor({timeout:10000});
+              const inner=page.frameLocator('iframe.admin-preview-frame');
+              await inner.locator('.tv-card').first().waitFor({timeout:22000});
+              const before=await inner.locator('.tv-card').count();
+              if(before<3)throw Error('Expected >=3 archive cards, saw '+before);
+              if(!(await page.locator('#publish-approved').isDisabled()))throw Error('Unreviewed publish button must be disabled');
+              await page.locator('#h-title').fill('عنوان تست پیش‌نمایش');
+              await inner.locator('.tv-identity b').getByText('عنوان تست پیش‌نمایش').waitFor({timeout:10000});
+              await page.locator('#f-name').fill('مخاطب آزمون');
+              await inner.getByText('بیننده: مخاطب آزمون').waitFor({timeout:10000});
+              await page.locator('[data-setting="show_city"]').uncheck();
+              await inner.locator('.tv-viewer-line').first().waitFor({timeout:8000});
+              const cities=await inner.locator('.tv-viewer-line span').allTextContents();
+              if(cities.some(x=>x.startsWith('شهر:')))throw Error('City toggle did not hide cities');
+              await page.locator('[data-setting="position"]').selectOption('left');
+              await page.locator('[data-setting="vertical"]').selectOption('bottom');
+              await page.locator('[data-setting="panel_width_px"]').fill('420');
+              await page.locator('[data-setting="narration"]').selectOption('brief');
+              await page.waitForTimeout(700);
+              const layout=await inner.locator('.tv-panel').evaluate(n=>({width:n.getBoundingClientRect().width,title:n.querySelector('h2')?.textContent}));
+              if(layout.width>425)throw Error('Panel width override failed: '+layout.width);
+              await page.locator('#review-confirm').check();
+              if(await page.locator('#publish-approved').isDisabled())throw Error('Publish did not unlock after review');
+              await page.locator('#f-city').fill('شهر تست');
+              if(!(await page.locator('#publish-approved').isDisabled()))throw Error('Draft change did not invalidate approval');
+              if(errors.length)throw Error('Browser errors: '+JSON.stringify(errors));
+              console.log('PUBLISH_EDITOR_SMOKE_OK '+JSON.stringify({http:response.status(),cards:before,width:layout.width,cityHidden:true,approvalInvalidates:true}));
+              await page.close();
+            }finally{await browser.close();}
+          })().catch(err=>{console.error('PUBLISH_EDITOR_SMOKE_FAILED',err);process.exitCode=1;});
+          JS
