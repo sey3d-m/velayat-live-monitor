@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T14:14:52.411446+00:00",
-  "updated_at": "2026-11-04T14:52:22.783987+00:00",
+  "updated_at": "2026-11-04T14:52:38.106611+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره کانال ایتا و حضور کارشناس برنامه",
@@ -57,14 +57,27 @@
       "sequence": 39,
       "updated_at": "2026-11-04T14:46:12.905405+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز",
+      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41845533409-55",
+      "sequence": 55,
+      "updated_at": "2026-11-04T14:52:38.106584+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 56,
     "segments_transcribed": 52,
     "editor_attempts": 37,
-    "editor_withheld": 34,
-    "topics_published": 4,
+    "editor_withheld": 35,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-04T14:52:19.082114+00:00"
