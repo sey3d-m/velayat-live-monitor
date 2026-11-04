@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T15:44:52.193040+00:00",
-  "updated_at": "2026-11-04T16:10:19.511460+00:00",
+  "updated_at": "2026-11-04T16:10:51.150127+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره یادآور مصائب فاطمیه و حضور استاد شاکرین در استودیو",
@@ -32,16 +32,28 @@
       "sequence": 18,
       "updated_at": "2026-11-04T16:08:02.363130+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره کیفیت زندگی جاودان پس از مرگ",
+      "summary": "در این بخش، کارشناس پس از اشاره به جاودانگی انسان و استدلال به بقای حیات، این پرسش را مطرح می‌کند که اگر انسان موجودی جاودان است و پس از مرگ زندگی‌اش ادامه دارد، کیفیت و چیستی آن زندگی چگونه خواهد بود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41860823618-25",
+      "sequence": 25,
+      "updated_at": "2026-11-04T16:10:51.150096+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 26,
-    "segments_transcribed": 25,
+    "segments_captured": 27,
+    "segments_transcribed": 26,
     "editor_attempts": 12,
     "editor_withheld": 10,
-    "topics_published": 2,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T16:10:14.784743+00:00"
+    "last_audio_at": "2026-11-04T16:10:38.598459+00:00"
   }
 }
