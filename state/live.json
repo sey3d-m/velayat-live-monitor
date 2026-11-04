@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T17:14:46.724830+00:00",
-  "updated_at": "2026-11-04T17:38:09.340608+00:00",
+  "updated_at": "2026-11-04T17:38:34.755346+00:00",
   "items": [
     {
       "title": "پرسش درباره ابعاد فراتاریخی شخصیت حضرت زهرا (س) و نقل حدیث",
@@ -57,16 +57,29 @@
       "sequence": 18,
       "updated_at": "2026-11-04T17:38:09.340574+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره ولایت و غدیر",
+      "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41875588304-20",
+      "sequence": 20,
+      "updated_at": "2026-11-04T17:38:34.755320+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 20,
-    "segments_transcribed": 17,
-    "editor_attempts": 8,
-    "editor_withheld": 6,
-    "topics_published": 4,
+    "segments_captured": 21,
+    "segments_transcribed": 18,
+    "editor_attempts": 9,
+    "editor_withheld": 7,
+    "topics_published": 5,
     "audio_ai_calls": 1,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-04T17:37:53.038566+00:00"
+    "last_audio_at": "2026-11-04T17:38:17.513672+00:00"
   }
 }
