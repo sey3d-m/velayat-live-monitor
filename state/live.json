@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T17:14:46.724830+00:00",
-  "updated_at": "2026-11-04T18:28:23.354626+00:00",
+  "updated_at": "2026-11-04T18:29:07.405781+00:00",
   "items": [
     {
       "title": "پرسش درباره وضعیت زمین‌های فدک و حکم شرعی آن",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 146,
-    "segments_transcribed": 140,
-    "editor_attempts": 101,
-    "editor_withheld": 94,
+    "segments_captured": 148,
+    "segments_transcribed": 142,
+    "editor_attempts": 102,
+    "editor_withheld": 95,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T18:28:20.309539+00:00"
+    "last_audio_at": "2026-11-04T18:29:02.942480+00:00"
   }
 }
