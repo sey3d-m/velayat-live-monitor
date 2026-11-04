@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T17:14:46.724830+00:00",
-  "updated_at": "2026-11-04T17:42:46.195961+00:00",
+  "updated_at": "2026-11-04T17:43:32.278893+00:00",
   "items": [
     {
       "title": "بررسی سرنوشت محبان اهل‌بیت در برخورد با اوامر و نواهی",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 32,
-    "segments_transcribed": 29,
-    "editor_attempts": 16,
-    "editor_withheld": 13,
+    "segments_captured": 34,
+    "segments_transcribed": 30,
+    "editor_attempts": 17,
+    "editor_withheld": 15,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T17:42:40.838731+00:00"
+    "last_audio_at": "2026-11-04T17:43:29.749072+00:00"
   }
 }
