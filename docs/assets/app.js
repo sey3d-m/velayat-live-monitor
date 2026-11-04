@@ -51,11 +51,66 @@ function demoFromArchive(archivePrograms){
   return [selectedQuestions[0],selectedTopics[0],selectedQuestions[1],selectedTopics[1],selectedQuestions[2]].filter(Boolean);
 }
 let config={...defaultConfig},programs=[],items=[],live=null,index=null,shown=12,mode='content',modalId=null,loading=false,good=false;
+let publishedPresentation=null,editorPreviewState=null;
+const editorPreview=(page==='overlay'&&demo&&params.get('editor_preview')==='1');
+
+/* Read-only, independently published presentation settings.
+   Editorial demo cards NEVER enter the live feed or its approval pipeline. */
+function presentationFrom(raw){
+  if(!raw||typeof raw!=='object'||!raw.header||!Array.isArray(raw.cards))return null;
+  const header={}, h=raw.header;
+  for(const k of ['title','network','program','subtitle','status','footer'])header[k]=String(h[k]??'').slice(0,160);
+  const settings=(raw.settings&&typeof raw.settings==='object')?raw.settings:{};
+  const accepted=new Set(['question_answer','audience_question','expert_topic','expert_point','expert_reference','expert_summary']);
+  const cards=raw.cards.slice(0,30).filter(x=>x&&typeof x==='object').map((x,i)=>({
+    id:String(x.id||'editor-'+i).slice(0,160),kind:accepted.has(x.kind)?x.kind:'expert_topic',
+    title:String(x.title||'').slice(0,2000),body:String(x.body||'').slice(0,5000),
+    name:String(x.name||'').slice(0,100),city:String(x.city||'').slice(0,80),
+    program:String(x.program||'').slice(0,150),expert:String(x.expert||'').slice(0,140),
+    date:String(x.date||'').slice(0,32),time:String(x.time||'').slice(0,15)
+  }));
+  return {schema_version:2,release_id:String(raw.release_id||'').slice(0,80),edited:raw.edited===true,header,settings,cards};
+}
+function presentationCards(p){
+  if(!p)return [];
+  return p.cards.map((c,i)=>{
+    let at=null;
+    if(/^[0-9]{1,3}:[0-5][0-9]$/.test(c.time)){
+      const parts=c.time.split(':').map(Number);at=parts[0]*60+parts[1];
+    }
+    return {id:c.id||'published-'+i,network:'velayat_farsi',
+      program_id:'presentation-archive',program_title:c.program,expert_name:c.expert,
+      content_type:c.kind,title:c.title,summary:c.body,
+      question:c.kind==='question_answer'?c.title:null,
+      answer:c.kind==='question_answer'?c.body:null,
+      audience_name:c.name,audience_city:c.city,program_date:c.date,
+      start_timecode:at,end_timecode:null,broadcast_eligible:false,
+      verification_status:'demo_presentation'};
+  });
+}
+function optionsOf(){
+  return (publishedPresentation&&(demo||publishedPresentation.settings.apply_live_visual===true))
+    ?publishedPresentation.settings:{};
+}
+function settingNum(s,key,min,max,otherwise){return clamp(s[key],min,max,otherwise)}
+function settingBool(s,key,otherwise){return typeof s[key]==='boolean'?s[key]:otherwise}
+function settingColor(value,fallback){return typeof value==='string'&&/^#[0-9a-fA-F]{6}$/.test(value)?value:fallback}
+
 function clamp(v,min,max,fallback){if(v===null||v===undefined||v==='')return fallback;const n=Number(v);return Number.isFinite(n)?Math.min(max,Math.max(min,n)):fallback}
 function validated(raw){const c={...defaultConfig,...raw};c.refresh_seconds=clamp(c.refresh_seconds,60,120,90);c.tv_card_count=clamp(c.tv_card_count,4,6,5);c.tv_max_chars=clamp(c.tv_max_chars,70,300,150);c.stale_minutes=clamp(c.stale_minutes,10,240,120);c.tv_font_px=clamp(c.tv_font_px,14,36,19);c.tv_width_px=clamp(c.tv_width_px,350,900,560);c.question_priority=clamp(c.question_priority,.1,3,1.2);if(!['right','left','bottom'].includes(c.tv_position))c.tv_position='right';if(!/^#[0-9a-f]{6}$/i.test(c.brand_color))c.brand_color=defaultConfig.brand_color;return c}
 async function fetchData(path){const res=await fetch(path+'?_='+Date.now(),{cache:'no-store'});if(!res.ok)throw Error('HTTP '+res.status+' '+path);return res.json()}
 async function getConfig(){let local={};try{local=JSON.parse(localStorage.getItem('pasokhnama-v4-settings')||'{}')}catch(_){}let remote={};if(location.protocol!=='file:'){try{remote=await fetchData('data/config.json')}catch(e){console.warn('config:',e.message)}}return validated({...remote,...local})}
-async function loadData(){config=await getConfig();if(demo){
+async function loadData(){config=await getConfig();
+if(page==='overlay'){
+ try{publishedPresentation=presentationFrom(await fetchData('pasokhnama-presentation.json'))}catch(err){console.warn('Presentation unavailable; legacy overlay remains available:',err.message)}
+ if(editorPreview&&editorPreviewState)publishedPresentation=presentationFrom(editorPreviewState);
+}
+if(demo&&publishedPresentation&&publishedPresentation.cards.length){
+ items=presentationCards(publishedPresentation);
+ live={program_id:'presentation-archive',program_title:publishedPresentation.header.program||'منتخبی از برنامه‌های شبکه ولایت',expert_name:'',last_analysis_at:null,last_report_published_at:null,items};
+ index={updated_at:null};return;
+}
+if(demo){
   // This URL is a historical demonstration, not the live broadcast source.
   config.show_audience=true;config.enable_questions=true;config.enable_expert_content=true;
   let meta=null;
@@ -114,36 +169,132 @@ function closeDetails(){modalId=null;$('modal').hidden=true;document.body.style.
 function fresh(l){if(demo)return true;if(!(l?.last_analysis_at||l?.last_report_published_at)||!l?.program_date||!l?.program_start_time)return false;
 const checked=Date.parse(l.last_analysis_at||l.last_report_published_at);const started=Date.parse(`${l.program_date}T${l.program_start_time}:00+03:30`);const now=Date.now();return Number.isFinite(checked)&&Number.isFinite(started)&&now-checked>=-600000&&now-checked<config.stale_minutes*60000&&now-started>=-7200000&&now-started<8*3600000}
 function tvItem(item){
-const kind=item.content_type,qa=kind==='question_answer';
-const c=el('article','tv-card kind-'+kind);c.dataset.id=item.id;
-const top=el('div','tv-card-top');top.append(el('span','',`${icons[kind]||'✦'} ${labels[kind]||'مطلب علمی'}`));
-if(demo&&item.program_title)top.append(el('span','tv-card-origin',clip(item.program_title,24)));
-if(config.show_timecode&&item.start_timecode!==null&&item.start_timecode!==undefined)top.append(el('time','',secs(item.start_timecode)));
-c.append(top);
-if(qa){
-  const title=el('h2','tv-question');title.append(el('span','tv-qa-label','سؤال: '),document.createTextNode(clip(item.question||item.title,145)));c.append(title);
-  const answer=el('p','tv-answer');answer.append(el('b','tv-qa-label','پاسخ: '),document.createTextNode(clip(item.answer||item.summary,260)));c.append(answer);
-  if(demo||config.show_audience){
-    const viewer=el('div','tv-viewer-line');
-    viewer.append(el('span','', 'بیننده: '+(item.audience_name||'نام ثبت نشده')));
-    viewer.append(el('span','', 'شهر: '+(item.audience_city||'ثبت نشده')));
-    c.append(viewer);
-  }
-}else{
-  c.append(el('h2','',clip(item.title,125)));
-  if(item.summary&&item.summary!==item.title)c.append(el('p','',clip(item.summary,config.tv_max_chars)));
+ const kind=item.content_type,qa=kind==='question_answer',s=optionsOf();
+ const isStyled=!!publishedPresentation&&(demo||s.apply_live_visual===true);
+ const detailed=s.narration!=='brief';
+ const c=el('article','tv-card kind-'+kind);c.dataset.id=item.id;
+ const top=el('div','tv-card-top');
+ top.append(el('span','',(icons[kind]||'✦')+' '+(labels[kind]||'مطلب علمی')));
+ if((!isStyled?demo:settingBool(s,'show_program',true))&&item.program_title)
+   top.append(el('span','tv-card-origin',clip(item.program_title,36)));
+ if(isStyled&&settingBool(s,'show_expert',false)&&item.expert_name)
+   top.append(el('span','tv-card-origin',clip(item.expert_name,38)));
+ if((isStyled?settingBool(s,'show_timecode',true):config.show_timecode)&&item.start_timecode!==null&&item.start_timecode!==undefined)
+   top.append(el('time','',secs(item.start_timecode)));
+ c.append(top);
+ const titleMax=isStyled?settingNum(s,'title_limit',20,2000,150):145;
+ const bodyMax=isStyled?settingNum(s,'body_limit',30,4000,265):260;
+ const useLabel=detailed&&isStyled;
+ if(qa){
+   const title=el('h2','tv-question');
+   if(useLabel)title.append(el('span','tv-qa-label','سؤال: '));
+   title.append(document.createTextNode(clip(item.question||item.title,titleMax)));
+   c.append(title);
+   if((isStyled?settingBool(s,'show_answer',true):true)&&(item.answer||item.summary)){
+     const answer=el('p','tv-answer');
+     if(useLabel)answer.append(el('b','tv-qa-label','پاسخ: '));
+     answer.append(document.createTextNode(clip(item.answer||item.summary,detailed?bodyMax:Math.min(bodyMax,110))));
+     c.append(answer);
+   }
+   const showName=isStyled?settingBool(s,'show_name',true):(demo||config.show_audience);
+   const showCity=isStyled?settingBool(s,'show_city',true):(demo||config.show_audience);
+   const missing=isStyled?settingBool(s,'show_missing_metadata',true):true;
+   const viewer=el('div','tv-viewer-line');
+   if(showName&&(item.audience_name||missing))
+     viewer.append(el('span','','بیننده: '+(item.audience_name||'نام ثبت نشده')));
+   if(showCity&&(item.audience_city||missing))
+     viewer.append(el('span','','شهر: '+(item.audience_city||'ثبت نشده')));
+   if(viewer.children.length)c.append(viewer);
+ }else{
+   c.append(el('h2','',clip(item.title,titleMax)));
+   if((isStyled?settingBool(s,'show_summary',true):true)&&item.summary&&item.summary!==item.title)
+     c.append(el('p','',clip(item.summary,detailed?bodyMax:Math.min(bodyMax,110))));
+ }
+ return c;
 }
-return c}
-function renderOverlay(){const stage=qs('.overlay-stage'),panel=$('tv-panel');const pos=params.get('pos')||config.tv_position;stage.classList.remove('position-left','position-bottom');if(pos==='left'||pos==='bottom')stage.classList.add('position-'+pos);
-panel.style.setProperty('--tv-width',clamp(params.get('width'),350,900,config.tv_width_px)+'px');panel.style.setProperty('--tv-font',config.tv_font_px+'px');panel.style.setProperty('--tv-accent',config.brand_color);
-const icon=$('tv-panel').querySelector('.tv-logo');if(config.logo_url&&/^(https:\/\/|assets\/)[a-z\d_./-]+$/i.test(config.logo_url)){const im=el('img');im.src=config.logo_url;im.alt='نشان شبکه';icon.replaceChildren(im);icon.classList.add('has-image')}
-const isFresh=!demo&&fresh(live);const latest=live?.items||[];let matching=latest.filter(i=>(demo||i.broadcast_eligible)&&i.network==='velayat_farsi');
-matching=matching.filter(i=>i.content_type.startsWith('question')||i.content_type==='audience_question'?config.enable_questions:config.enable_expert_content);
-if(!demo)matching.sort((a,b)=>Number(b.start_timecode||0)-Number(a.start_timecode||0));const count=clamp(params.get('count'),4,6,config.tv_card_count);
-const ranked=matching.slice().sort((a,b)=>{const aw=a.content_type==='question_answer'?config.question_priority:1,bw=b.content_type==='question_answer'?config.question_priority:1;return bw-aw||Number(b.start_timecode||0)-Number(a.start_timecode||0)});
-const chosen=demo?matching.slice(0,Math.min(6,params.has('count')?count:(window.innerHeight>=850?5:4))):ranked.slice(0,count).sort((a,b)=>Number(b.start_timecode||0)-Number(a.start_timecode||0));
-$('tv-program').textContent=live?.program_title||'شبکه ولایت فارسی';$('tv-expert').textContent=demo?'برگرفته از گزارش‌های ثبت‌شده دیدبان':live?.expert_name?'کارشناس: '+live.expert_name:'محورهای علمی برنامه';$('tv-live-tag').textContent=demo?'منتخب آرشیو واقعی':isFresh?'گزارش تازه ثبت‌شده':'آخرین مطالب ثبت‌شده';$('tv-live-tag').classList.toggle('fresh',isFresh);$('tv-updated').textContent=(demo?'آخرین ثبت آرشیو: ':live?.last_analysis_at?'آخرین تحلیل: ':'آخرین انتشار گزارش: ')+prettyDate(live?.last_analysis_at||live?.last_report_published_at);$('tv-count').textContent=fa(chosen.length)+(demo?' مطلب آرشیوی':' مطلب');$('demo-label').hidden=!demo;
-const target=$('tv-cards'),prev=[...target.children].map(x=>x.dataset?.id).filter(Boolean);target.replaceChildren();if(!chosen.length){target.append(el('div','tv-empty',live?.program_id?'محتوای دارای تأیید کافی برای نمایش کارشناسی هنوز ثبت نشده است.':'در انتظار نخستین گزارش معتبر دیدبان …'));return}for(const item of chosen){const c=tvItem(item);if(!prev.includes(item.id)&&prev.length)c.classList.add('new-card');target.append(c)}}
+function renderOverlay(){
+ const stage=qs('.overlay-stage'),panel=$('tv-panel');
+ const presented=publishedPresentation&&(demo||publishedPresentation.settings.apply_live_visual===true);
+ const s=presented?publishedPresentation.settings:{};
+ const h=presented?publishedPresentation.header:{};
+ stage.classList.remove('position-left','position-bottom');
+ if(presented){
+   const position=['left','right','center'].includes(s.position)?s.position:'right';
+   const vertical=['top','center','bottom'].includes(s.vertical)?s.vertical:'center';
+   stage.style.justifyContent=position==='center'?'center':position==='left'?'flex-end':'flex-start';
+   stage.style.alignItems=vertical==='top'?'flex-start':vertical==='bottom'?'flex-end':'center';
+   stage.style.padding=settingNum(s,'offset_y_px',0,100,8)+'px '+settingNum(s,'offset_x_px',0,100,12)+'px';
+   panel.style.width='min('+settingNum(s,'panel_width_px',300,1600,530)+'px,100%)';
+   panel.style.height=settingNum(s,'panel_height_pct',20,100,96)+'%';
+   panel.style.minHeight='0';
+   panel.style.setProperty('--tv-width',settingNum(s,'panel_width_px',300,1600,530)+'px');
+   panel.style.setProperty('--tv-font',settingNum(s,'font_px',11,36,18)+'px');
+   const accent=settingColor(s.accent_color,'#caa769'),bg=settingColor(s.background_color,'#091c34');
+   const alpha=Math.round(settingNum(s,'opacity_pct',30,100,96)*255/100).toString(16).padStart(2,'0');
+   panel.style.setProperty('--tv-accent',accent);
+   panel.style.setProperty('--tv-text',settingColor(s.text_color,'#ffffff'));
+   panel.style.background='linear-gradient(180deg,'+bg+alpha+','+bg+alpha+')';
+   panel.style.borderRadius=settingNum(s,'panel_radius_px',0,60,20)+'px';
+   panel.style.fontFamily=['Vazirmatn','Tahoma','Arial'].includes(s.font_family)?s.font_family+',sans-serif':'Vazirmatn,Tahoma,Arial,sans-serif';
+   $('tv-cards').style.gap=settingNum(s,'card_gap_px',0,28,8)+'px';
+   $('tv-cards').style.padding=settingNum(s,'panel_padding_px',0,35,11)+'px';
+   panel.classList.toggle('presentation-compact',s.density==='compact');
+   panel.classList.toggle('presentation-spacious',s.density==='spacious');
+ }else{
+   stage.style.justifyContent='';stage.style.alignItems='';stage.style.padding='';
+   panel.style.width='';panel.style.height='';panel.style.minHeight='';
+   panel.style.background='';panel.style.borderRadius='';panel.style.fontFamily='';
+   $('tv-cards').style.gap='';$('tv-cards').style.padding='';
+   panel.classList.remove('presentation-compact','presentation-spacious');
+   const pos=params.get('pos')||config.tv_position;
+   if(pos==='left'||pos==='bottom')stage.classList.add('position-'+pos);
+   panel.style.setProperty('--tv-width',clamp(params.get('width'),350,900,config.tv_width_px)+'px');
+   panel.style.setProperty('--tv-font',config.tv_font_px+'px');
+   panel.style.setProperty('--tv-accent',config.brand_color);
+   panel.style.setProperty('--tv-text','#ffffff');
+ }
+ const icon=panel.querySelector('.tv-logo');
+ if(config.logo_url&&/^(https:\/\/|assets\/)[a-z\d_./-]+$/i.test(config.logo_url)){
+   if(!icon.querySelector('img')){const im=el('img');im.src=config.logo_url;im.alt='نشان شبکه';icon.replaceChildren(im);icon.classList.add('has-image')}
+ }
+ const isFresh=!demo&&fresh(live);
+ const latest=live?.items||[];
+ let matching=latest.filter(i=>(demo||i.broadcast_eligible)&&i.network==='velayat_farsi');
+ matching=matching.filter(i=>i.content_type.startsWith('question')||i.content_type==='audience_question'?config.enable_questions:config.enable_expert_content);
+ if(!demo)matching.sort((a,b)=>Number(b.start_timecode||0)-Number(a.start_timecode||0));
+ const ranked=matching.slice().sort((a,b)=>{
+   const aw=a.content_type==='question_answer'?config.question_priority:1,bw=b.content_type==='question_answer'?config.question_priority:1;
+   return bw-aw||Number(b.start_timecode||0)-Number(a.start_timecode||0);
+ });
+ const defaultCount=demo?(window.innerHeight>=850?5:4):config.tv_card_count;
+ const count=presented?settingNum(s,'card_count',1,12,5):clamp(params.get('count'),4,6,defaultCount);
+ const chosen=demo?matching.slice(0,count):ranked.slice(0,count).sort((a,b)=>Number(b.start_timecode||0)-Number(a.start_timecode||0));
+ const tvTitle=panel.querySelector('.tv-identity b'),tvNetwork=panel.querySelector('.tv-identity small');
+ tvTitle.textContent=presented?(h.title||'پاسخ‌نما'):'پاسخ‌نما';
+ tvNetwork.textContent=presented?(h.network||'شبکه جهانی ولایت فارسی'):'شبکه جهانی ولایت فارسی';
+ $('tv-program').textContent=(demo&&presented)?(h.program||'منتخب آرشیو'):live?.program_title||'شبکه ولایت فارسی';
+ $('tv-expert').textContent=(demo&&presented)?(h.subtitle||'آرشیو دیدبان'):demo?'برگرفته از گزارش‌های ثبت‌شده دیدبان':live?.expert_name?'کارشناس: '+live.expert_name:'محورهای علمی برنامه';
+ $('tv-live-tag').textContent=demo&&presented?(publishedPresentation.edited?'دموی ویرایش‌شده':h.status||'منتخب آرشیو'):demo?'منتخب آرشیو واقعی':isFresh?'گزارش تازه ثبت‌شده':'آخرین مطالب ثبت‌شده';
+ $('tv-live-tag').classList.toggle('fresh',isFresh);
+ $('tv-updated').textContent=demo&&presented?(h.footer||'نسخه نمایشی، نیازمند بازبینی'):(live?.last_analysis_at?'آخرین تحلیل: ':'آخرین انتشار گزارش: ')+prettyDate(live?.last_analysis_at||live?.last_report_published_at);
+ $('tv-count').textContent=fa(chosen.length)+(demo?' مطلب':' مطلب');
+ $('demo-label').hidden=!demo;
+ if(demo){
+   $('demo-label').textContent=publishedPresentation?.edited?'نسخه نمایشی ویرایش‌شده · محتوای آن لزوماً نقل دقیق برنامه نیست':'دمو از آرشیو دیدبان · خلاصه‌ها نیازمند بازبینی';
+ }
+ panel.querySelector('.tv-header').hidden=presented&&!settingBool(s,'show_header',true);
+ panel.querySelector('.tv-footer').hidden=presented&&!settingBool(s,'show_footer',true);
+ $('tv-live-tag').hidden=presented&&!settingBool(s,'show_badge',true);
+ $('tv-count').hidden=presented&&!settingBool(s,'show_count',true);
+ const target=$('tv-cards'),prev=[...target.children].map(x=>x.dataset?.id).filter(Boolean);target.replaceChildren();
+ if(!chosen.length){
+   target.append(el('div','tv-empty',live?.program_id?'محتوای قابل نمایش ثبت نشده است.':'در انتظار گزارش معتبر دیدبان …'));return;
+ }
+ for(const item of chosen){
+   const c=tvItem(item);if(!prev.includes(item.id)&&prev.length)c.classList.add('new-card');
+   target.append(c);
+ }
+}
 function wireAudience(){for(const id of ['query','type-filter','program-filter','expert-filter','year-filter'])$(id).addEventListener(id==='query'?'input':'change',()=>{shown=12;renderCards()});document.querySelectorAll('.tab').forEach(btn=>btn.onclick=()=>{mode=btn.dataset.mode;shown=12;document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t===btn));renderCards()});$('more').onclick=()=>{shown+=12;renderCards()};$('modal-close').onclick=closeDetails;qs('.modal-shade').onclick=closeDetails;document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modalId)closeDetails()});$('copy-link').onclick=async()=>{try{await navigator.clipboard.writeText(location.href);toast('لینک مستقیم کپی شد')}catch(_){toast('مرورگر اجازه کپی نداد')}};$('share').onclick=async()=>{if(navigator.share){try{await navigator.share({url:location.href,title:$('modal-title').textContent})}catch(_){}}else{$('copy-link').click()}}}
 const fields={'s-refresh':'refresh_seconds','s-count':'tv_card_count','s-length':'tv_max_chars','s-position':'tv_position','s-color':'brand_color','s-font':'tv_font_px','s-stale':'stale_minutes','s-width':'tv_width_px','s-priority':'question_priority','s-logo':'logo_url','s-timecodes':'show_timecode','s-audience':'show_audience','s-qa':'enable_questions','s-topics':'enable_expert_content'};
 function valuesFromSettings(){const raw={};for(const [id,name]of Object.entries(fields)){const node=$(id);raw[name]=node.type==='checkbox'?node.checked:node.type==='number'?Number(node.value):node.value}return validated(raw)}
@@ -151,5 +302,20 @@ function wireSettings(){for(const [id,key]of Object.entries(fields)){const e=$(i
 $('save-settings').onclick=()=>{config=valuesFromSettings();localStorage.setItem('pasokhnama-v4-settings',JSON.stringify(config));$('settings-feedback').textContent='تنظیمات برای همین مرورگر ذخیره شد. برای نصب سراسری از دکمه دریافت JSON استفاده کنید.'};
 $('export-settings').onclick=()=>{const data=JSON.stringify(valuesFromSettings(),null,2);const b=new Blob([data],{type:'application/json'}),url=URL.createObjectURL(b),a=el('a');a.href=url;a.download='config.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),3000);$('settings-feedback').textContent='فایل JSON تهیه شد. پس از بررسی، آن را در docs/data/config.json مخزن جایگزین کنید.'}}
 async function loop(){if(loading)return;loading=true;try{await loadData();good=true;if(page==='audience')renderAudience();else if(page==='overlay')renderOverlay();else if(page==='settings'&&!document.body.dataset.ready){wireSettings();document.body.dataset.ready='1'}}catch(error){console.warn('Pasokhnama:',error);if(!good){if(page==='audience')$('cards').replaceChildren(el('div','empty-list','ارتباط با داده‌های آرشیو برقرار نشد. صفحه را بعداً دوباره بررسی کنید.'));if(page==='overlay')$('tv-cards').replaceChildren(el('div','tv-empty','اتصال به خروجی دیدبان برقرار نیست.'))}}finally{loading=false;if(page!=='settings')setTimeout(loop,config.refresh_seconds*1000)}}
+if(editorPreview){
+  window.addEventListener('message',event=>{
+    if(event.origin!==location.origin||event.source!==window.parent)return;
+    const msg=event.data;
+    if(!msg||msg.type!=='PASOKHNAMA_EDITOR_DRAFT')return;
+    const valid=presentationFrom(msg.presentation);
+    if(!valid)return;
+    editorPreviewState=msg.presentation;
+    publishedPresentation=valid;
+    items=presentationCards(valid);
+    live={program_id:'presentation-archive',program_title:valid.header.program,expert_name:'',last_analysis_at:null,last_report_published_at:null,items};
+    renderOverlay();
+  });
+  window.addEventListener('load',()=>window.parent.postMessage({type:'PASOKHNAMA_PREVIEW_READY'},location.origin));
+}
 if(page==='audience')wireAudience();loop();
 })();
