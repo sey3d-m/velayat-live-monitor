@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T14:14:52.411446+00:00",
-  "updated_at": "2026-11-04T15:14:48.327572+00:00",
+  "updated_at": "2026-11-04T15:14:49.755748+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره نماز",
-      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41845533409-55",
-      "sequence": 55,
-      "updated_at": "2026-11-04T14:52:38.106584+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره وجود روایت در کتاب علل الشرایع شیخ صدوق",
       "summary": "در این بخش، کارشناس درباره احتمال وجود روایتی در کتاب علل الشرایع مرحوم شیخ صدوق سخن گفت و اشاره کرد که ترجمه فارسی این کتاب نیز وجود دارد؛ اما یادآور شد که متن دقیق روایت در همان لحظه در خاطرش نیست.",
@@ -70,14 +57,27 @@
       "sequence": 90,
       "updated_at": "2026-11-04T15:06:32.173060+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره روزه",
+      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41845533409-110",
+      "sequence": 110,
+      "updated_at": "2026-11-04T15:14:49.755725+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 112,
     "segments_transcribed": 107,
     "editor_attempts": 74,
-    "editor_withheld": 69,
-    "topics_published": 9,
+    "editor_withheld": 70,
+    "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-04T15:14:42.460068+00:00"
