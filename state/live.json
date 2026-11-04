@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T15:44:52.193040+00:00",
-  "updated_at": "2026-11-04T16:59:55.724645+00:00",
+  "updated_at": "2026-11-04T17:00:46.868207+00:00",
   "items": [
     {
       "title": "پرسش درباره مراحل حیات اخروی و عوامل سازنده سرنوشت انسان",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 150,
-    "segments_transcribed": 144,
-    "editor_attempts": 84,
+    "segments_captured": 152,
+    "segments_transcribed": 146,
+    "editor_attempts": 85,
     "editor_withheld": 78,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T16:59:52.142500+00:00"
+    "last_audio_at": "2026-11-04T17:00:41.868126+00:00"
   }
 }
