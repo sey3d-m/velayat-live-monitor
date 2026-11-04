@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T15:44:52.193040+00:00",
-  "updated_at": "2026-11-04T16:11:58.417046+00:00",
+  "updated_at": "2026-11-04T16:12:17.522401+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره یادآور مصائب فاطمیه و حضور استاد شاکرین در استودیو",
@@ -44,6 +44,18 @@
       "sequence": 25,
       "updated_at": "2026-11-04T16:10:51.150096+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره مراحل حیات اخروی و عوامل سازنده سرنوشت انسان",
+      "summary": "در این بخش کارشناس پرسش می‌کند که پس از حیات دنیا، زندگی بعدی چگونه است، چه مراحلی مانند عالم برزخ و قیامت دارد و چه منازلی طی می‌شود. همچنین مطرح شد که چه چیزی سرنوشت انسان را در این حیات آخرت می‌سازد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41860823618-29",
+      "sequence": 29,
+      "updated_at": "2026-11-04T16:12:17.522368+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -51,7 +63,7 @@
     "segments_transcribed": 29,
     "editor_attempts": 14,
     "editor_withheld": 11,
-    "topics_published": 3,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-04T16:11:52.457549+00:00"
