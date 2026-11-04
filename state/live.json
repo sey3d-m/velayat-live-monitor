@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T15:44:52.193040+00:00",
-  "updated_at": "2026-11-04T17:06:41.030278+00:00",
+  "updated_at": "2026-11-04T17:07:12.472430+00:00",
   "items": [
     {
       "title": "بررسی مفهوم غفلت و تفاوت آن با ندانستن در انسان",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 166,
-    "segments_transcribed": 159,
-    "editor_attempts": 92,
+    "segments_captured": 168,
+    "segments_transcribed": 161,
+    "editor_attempts": 93,
     "editor_withheld": 86,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T17:06:17.505562+00:00"
+    "last_audio_at": "2026-11-04T17:07:06.679985+00:00"
   }
 }
