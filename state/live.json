@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "41682233708",
-  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
-  "program_date": "2026-11-03",
-  "started_at": "2026-11-03T17:14:49.831679+00:00",
-  "updated_at": "2026-11-03T18:40:03.123639+00:00",
-  "items": [
-    {
-      "title": "پرسش درباره دلیل دفن شبانه و وصیت حضرت زهرا",
-      "summary": "در این بخش، کارشناس درباره علت دفن شبانه و وصیت حضرت زهرا (س) مبنی بر حضور نیافتن افراد خاصی در مراسم پرسش مطرح می‌کند و استدلال می‌کند که وجود این وصیت و کیفیت دفن، نشان‌دهنده وجود مسائل خاصی در آن زمان است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41682233708-134",
-      "sequence": 134,
-      "updated_at": "2026-11-03T18:23:56.636407+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره ماندگاری استخوان‌های دایناسورها در مقایسه با استخوان‌های معمولی",
-      "summary": "در این بخش، کارشناس درباره چرایی ماندگاری استخوان‌های دایناسورها طی میلیون‌ها سال پرسش مطرح می‌کند؛ در حالی که به گفته وی، استخوان‌های موجودات در شرایط عادی پس از دهه‌ها یا قرن‌ها تجزیه شده و به خاک تبدیل می‌شوند. این پرسش جزئی پیرامون تفاوت در روند تجزیه استخوان‌ها مطرح شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41682233708-149",
-      "sequence": 149,
-      "updated_at": "2026-11-03T18:30:00.348314+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره استناد به سوره انکبوت درباره آغاز آفرینش",
-      "summary": "در این بخش، کارشناس به طرح پرسش و استدلال درباره تبدیل رسوبات به سنگ‌واره‌ها می‌پردازد. به گفته کارشناس، در این زمینه خداوند در سوره انکبوت فرمان می‌دهد تا در زمین سیر و سفر کرده و چگونگی آغاز آفرینش توسط خداوند را بررسی کنند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41682233708-150",
-      "sequence": 150,
-      "updated_at": "2026-11-03T18:30:26.667025+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره علت آفرینش سوسک‌ها و حشرات آزاردهنده",
-      "summary": "در این بخش کارشناس به این پرسش پاسخ می‌دهد که چرا خداوند حشرات ظاهراً آزاردهنده‌ای مانند سوسک را آفریده است. به گفته وی، بر اساس کشفیات فسیل‌شناسی، این موجودات میلیون‌ها سال پیش از دایناسورها روی زمین بوده‌اند و به عنوان کارگران بهداشت و بازیافت زمین، لاشه‌ها و مواد پوسیده را از بین می‌برند و باکتری‌ها را مهار می‌کنند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "id": "41682233708-153",
-      "sequence": 153,
-      "updated_at": "2026-11-03T18:31:32.801214+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی وفاداری زمین به قدرت‌ها و تمدن‌ها",
-      "summary": "در این بخش کارشناس استدلال می‌کند که روزگار و زمین به هیچ قدرت، تمدن و موجود زورمندی وفادار نمانده است؛ به گفته وی، سرانجامِ بسیاری از مدعیان این بوده که زیر خروارها خاک دفن شده‌اند و این امر پیامی برای انسان دارد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41682233708-156",
-      "sequence": 156,
-      "updated_at": "2026-11-03T18:32:45.170857+00:00",
-      "speaker": null
-    }
-  ],
+  "session": "41845533409",
+  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "program_date": "2026-11-04",
+  "started_at": "2026-11-04T14:14:52.411446+00:00",
+  "updated_at": "2026-11-04T14:30:00.000254+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 159,
-    "editor_attempts": 110,
-    "editor_withheld": 101,
-    "topics_published": 12,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-03T18:39:50.907052+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
