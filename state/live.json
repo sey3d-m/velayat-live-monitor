@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T14:14:52.411446+00:00",
-  "updated_at": "2026-11-04T15:27:29.179029+00:00",
+  "updated_at": "2026-11-04T15:28:08.504997+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره خمس و زکات",
-      "summary": "در این بخش از برنامه، موضوع «خمس و زکات» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41845533409-65",
-      "sequence": 65,
-      "updated_at": "2026-11-04T14:56:47.968570+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره حکم و کیفیت قضای نماز و غسل",
       "summary": "در این بخش، پرسشی درباره لزوم قضا کردن نمازهای چند سال و کیفیت غسل تمام بدن مطرح شد. کارشناس توضیح می‌دهد که در غسل، فرقی نمی‌کند کدام قسمت بدن مانند دست، پا یا بالا‌تنه شسته شود و تمام بدن باید آب کشیده شود.",
@@ -70,16 +57,28 @@
       "sequence": 115,
       "updated_at": "2026-11-04T15:16:43.549395+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره توصیف حس حضور نور پیامبر(ص) در خانه",
+      "summary": "در این بخش کارشناس استدلال می‌کند که هنگام ورود پیامبر(ص) به خانه، دلش روشنی گرفته و این حالت را با نور حضور او در درون خویش توصیف می‌کند؛ به گفته وی این وضعیت به گونه‌ای بوده که حتی توصیف یا خیال آن نیز از ذهن عبور نمی کرده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41845533409-144",
+      "sequence": 144,
+      "updated_at": "2026-11-04T15:28:08.504972+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 144,
-    "segments_transcribed": 138,
-    "editor_attempts": 92,
-    "editor_withheld": 86,
-    "topics_published": 11,
+    "segments_captured": 145,
+    "segments_transcribed": 139,
+    "editor_attempts": 93,
+    "editor_withheld": 87,
+    "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T15:27:26.734143+00:00"
+    "last_audio_at": "2026-11-04T15:27:50.527098+00:00"
   }
 }
