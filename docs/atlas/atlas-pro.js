@@ -3,9 +3,9 @@
    No AI model, audio, overlay, scheduler or production workflow is called. */
 (function(){
 'use strict';
-var S={group:'',episode:'',selected:'root',graphSearch:'',sQuery:'',sProgram:'',sExpert:'',sDate:'',sType:'all',sView:'cards',sSort:'relevance',rQuery:'',draft:{},published:{},preview:false,archiveReport:null};
+var S={group:'',episode:'',selected:'root',graphSearch:'',sQuery:'',sProgram:'',sExpert:'',sDate:'',sType:'all',sView:'cards',sSort:'relevance',rQuery:'',draft:{},published:{},publishedPhotos:{},preview:false,archiveReport:null};
 var NS='http://www.w3.org/2000/svg',stage=null,world=null,animation=0,nodeViews=[],linkViews=[],model=null,cam={x:0,y:0,k:1},drag=null,quiet=matchMedia('(prefers-reduced-motion: reduce)').matches;
-var allowed=['topic','summary','expert','host','hashtags','key_points','clips'];
+var allowed=['topic','summary','expert','host','hashtags','key_points','clips','questions'];
 var originals={graphSection:graphSection,drawGraph:drawGraph,resetGraph:resetGraph,render:render,timeline:timeline,episodeDetails:episodeDetails};
 function E(x){return esc(x)}
 function N(x){return String(x||'').replace(/[\u064b-\u065f\u0670]/g,'').replace(/[يى]/g,'ی').replace(/ك/g,'ک').replace(/[\u200c\u200d]/g,' ').replace(/[_#ـ]/g,' ').toLowerCase().replace(/\s+/g,' ').trim()}
@@ -241,7 +241,7 @@ function patchFor(id){return Object.assign({},S.published[id]||{},S.preview?(S.d
 function applyEdits(){if(!programs.length)return;programs=programs.map(function(p){var patch=patchFor(p.id),out=Object.assign({},p);allowed.forEach(k=>{if(Object.prototype.hasOwnProperty.call(patch,k)&&((Array.isArray(patch[k]))||typeof patch[k]==='string'))out[k]=patch[k]});return out})}
 function draftLoad(){try{return JSON.parse(localStorage.getItem('atlas-public-drafts-v1')||'{}')}catch(e){return {}}}
 S.draft=draftLoad();
-async function loadPublished(){try{var u=new URL('../atlas/overrides.json',location.href);var r=await fetch(u.href,{cache:'no-store'});if(!r.ok)return;var d=await r.json();if(d&&d.schema===1&&d.episodes&&typeof d.episodes==='object'){S.published=d.episodes;if(d.expert_photos&&typeof d.expert_photos==='object'){Object.entries(d.expert_photos).forEach(function(x){var url=safeUrl(x[1]);if(url&&url.startsWith('https://'))photos[photoKey(x[0])]=url})}applyEdits();render()}}catch(e){/* no published overrides is supported */}}
+async function loadPublished(){try{var u=new URL('../atlas/overrides.json',location.href);var r=await fetch(u.href,{cache:'no-store'});if(!r.ok)return;var d=await r.json();if(d&&d.schema===1&&d.episodes&&typeof d.episodes==='object'){S.published=d.episodes;S.publishedPhotos=d.expert_photos||{};if(d.expert_photos&&typeof d.expert_photos==='object'){Object.entries(d.expert_photos).forEach(function(x){var url=safeUrl(x[1]);if(url&&url.startsWith('https://'))photos[photoKey(x[0])]=url})}applyEdits();render()}}catch(e){/* no published overrides is supported */}}
 function editorPage(){
  var options=programs.map(p=>'<option value="'+E(p.id)+'">'+E(name(p))+' · '+E(p.date||p.date_iso)+' · '+E((p.topic||'').slice(0,65))+'</option>').join('');
  return '<section class="atlas-searchhero"><h2>میز مدیریت محتوای اطلس</h2><p>اصلاح عنوان و خلاصه، بازبینی پیش‌نویس، بررسی آرشیو و تهیه بسته انتشار. داده اصلی دیدبان دست‌نخورده می‌ماند.</p>'+
@@ -250,7 +250,11 @@ function editorPage(){
  '<label>عنوان و موضوع اصلی</label><input class="atlas-input" id="atlasEditTopic">'+
  '<label>نام کارشناس</label><input class="atlas-input" id="atlasEditExpert">'+
  '<label>نام مجری</label><input class="atlas-input" id="atlasEditHost">'+
- '<label>خلاصه برنامه</label><textarea class="atlas-input" id="atlasEditSummary"></textarea>'+
+ '<label>خلاصه برنامه</label><textarea class="atlas-input" id="atlasEditSummary"></textarea>'+ 
+ '<label>برچسب‌ها (با ویرگول جدا شوند)</label><input class="atlas-input" id="atlasEditTags">'+
+ '<label>محورهای زمان‌دار (آرایه JSON)</label><textarea class="atlas-input" id="atlasEditAxes"></textarea>'+
+ '<label>پرسش‌وپاسخ‌ها (آرایه JSON)</label><textarea class="atlas-input" id="atlasEditQas"></textarea>'+
+ '<label>تقطیع‌های پیشنهادی (آرایه JSON)</label><textarea class="atlas-input" id="atlasEditClips"></textarea>'+
  '<div class="atlas-search-row">'+actionBtn('ذخیره پیش‌نویس','atlasSaveDraft()','active')+actionBtn('پیش‌نمایش اصلاحات','atlasPreviewDraft()')+actionBtn('لغو پیش‌نمایش','atlasStopPreview()')+actionBtn('خروجی قابل انتشار','atlasExportPatch()')+'</div><p class="muted" id="atlasDraftCount"></p></div>'+
  '<section class="atlas-editor-card"><h2>ورود و بررسی آرشیو تاریخی</h2><p class="muted">فایل JSON یا CSV را فقط در همین مرورگر بررسی کنید. فایل TXT بدون ساختار، خودکار به برنامه یا پرسش تبدیل نمی‌شود.</p><input type="file" class="atlas-input" id="atlasImportFile" accept=".json,.csv,.txt,application/json,text/csv,text/plain" onchange="atlasInspectArchive(this)"><div id="atlasImportReport" class="muted"></div></section>'+
  '<section class="atlas-editor-card"><h2>انتشار پایدار و کنترل نسخه</h2><p>بسته خروجی را پس از بازبینی در <b>docs/atlas/overrides.json</b> ادغام کنید. این فایل جدا از خروجی‌های دیدبان است و با هر به‌روزرسانی برنامه‌ها پاک نمی‌شود.</p><a class="button" href="https://github.com/sey3d-m/velayat-live-monitor/edit/main/docs/atlas/overrides.json" target="_blank" rel="noopener noreferrer">بازکردن فایل اصلاحات در گیت‌هاب</a><p class="muted">برای سطح مدیریت امن و انتشار یک‌مرحله‌ای، یک سرویس مجزا با احراز هویت و ثبت تغییرات لازم است؛ در نسخه ایستا این قابلیت فعال نیست.</p></section>';
@@ -258,16 +262,20 @@ function editorPage(){
 window.atlasLoadEditor=function(){
  var id=document.getElementById('atlasEditSelect')?.value,p=get(id);if(!p)return;var vals=patchFor(id);
  [['Topic','topic'],['Expert','expert'],['Host','host'],['Summary','summary']].forEach(function(x){var e=document.getElementById('atlasEdit'+x[0]);if(e)e.value=vals[x[1]]??p[x[1]]??''});
+ document.getElementById('atlasEditTags').value=(vals.hashtags??p.hashtags??[]).join('، ');
+ [['Axes','key_points'],['Qas','questions'],['Clips','clips']].forEach(function(x){document.getElementById('atlasEdit'+x[0]).value=JSON.stringify(vals[x[1]]??p[x[1]]??[],null,2)});
  var c=document.getElementById('atlasDraftCount');if(c)c.textContent=fmt(Object.keys(S.draft).length)+' پرونده دارای پیش‌نویس';
 };
 window.atlasSaveDraft=function(){
  var id=document.getElementById('atlasEditSelect')?.value;if(!id)return;var patch={topic:document.getElementById('atlasEditTopic').value.trim(),expert:document.getElementById('atlasEditExpert').value.trim(),host:document.getElementById('atlasEditHost').value.trim(),summary:document.getElementById('atlasEditSummary').value.trim()};
+ patch.hashtags=document.getElementById('atlasEditTags').value.split(/[,،]/).map(x=>x.trim()).filter(Boolean);
+ for(var row of [['Axes','key_points'],['Qas','questions'],['Clips','clips']]){try{var parsed=JSON.parse(document.getElementById('atlasEdit'+row[0]).value.trim()||'[]');if(!Array.isArray(parsed))throw Error('آرایه لازم است');patch[row[1]]=parsed}catch(e){return toast('فرمت JSON بخش '+row[0]+' معتبر نیست: '+e.message)}}
  S.draft[id]=patch;try{localStorage.setItem('atlas-public-drafts-v1',JSON.stringify(S.draft));toast('پیش‌نویس در مرورگر ذخیره شد')}catch(e){toast('امکان ذخیره پیش‌نویس در مرورگر نیست')}window.atlasLoadEditor();
 };
 window.atlasPreviewDraft=function(){S.preview=true;applyEdits();toast('پیش‌نمایش فعال است؛ هنوز در سایت منتشر نشده است')};
 window.atlasStopPreview=function(){S.preview=false;toast('پیش‌نمایش خاموش شد؛ برای بازیابی داده اولیه صفحه را تازه‌سازی کنید')};
 window.atlasExportPatch=function(){
- var payload={schema:1,updated_at:new Date().toISOString(),episodes:Object.assign({},S.published,S.draft)};
+ var payload={schema:1,updated_at:new Date().toISOString(),episodes:Object.assign({},S.published,S.draft),expert_photos:S.publishedPhotos};
  saveFile('velayat-atlas-overrides.json',JSON.stringify(payload,null,2),'application/json');
  toast('بسته اصلاحات برای بازبینی و انتشار دریافت شد');
 };
