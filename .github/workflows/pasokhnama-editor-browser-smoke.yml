@@ -37,6 +37,15 @@ jobs:
               if(before<3)throw Error('Expected >=3 archive cards, saw '+before);
               if(!(await page.locator('#publish-approved').isDisabled()))throw Error('Unreviewed publish button must be disabled');
               await page.locator('#h-title').fill('عنوان تست پیش‌نمایش');
+              await page.waitForTimeout(1000);
+              const trace=await page.evaluate(()=>{
+                const win=document.querySelector('iframe.admin-preview-frame')?.contentWindow;
+                return {editorTitle:window.PasokhnamaEditor?.getState()?.header?.title,
+                  iframeTitle:win?.document.querySelector('.tv-identity b')?.textContent,
+                  iframeURL:win?.location?.href,
+                  iframeDataTitle:win?.document.querySelector('#tv-program')?.textContent};
+              });
+              console.log('PREVIEW_TRACE '+JSON.stringify(trace));
               await inner.locator('.tv-identity b').getByText('عنوان تست پیش‌نمایش').waitFor({timeout:10000});
               await page.locator('#f-name').fill('مخاطب آزمون');
               await inner.getByText('بیننده: مخاطب آزمون').waitFor({timeout:10000});
