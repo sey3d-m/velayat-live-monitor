@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T15:44:52.193040+00:00",
-  "updated_at": "2026-11-04T16:48:08.601423+00:00",
+  "updated_at": "2026-11-04T16:48:40.047431+00:00",
   "items": [
-    {
-      "title": "پرسش درباره کیفیت زندگی جاودان پس از مرگ",
-      "summary": "در این بخش، کارشناس پس از اشاره به جاودانگی انسان و استدلال به بقای حیات، این پرسش را مطرح می‌کند که اگر انسان موجودی جاودان است و پس از مرگ زندگی‌اش ادامه دارد، کیفیت و چیستی آن زندگی چگونه خواهد بود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41860823618-25",
-      "sequence": 25,
-      "updated_at": "2026-11-04T16:10:51.150096+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره مراحل حیات اخروی و عوامل سازنده سرنوشت انسان",
       "summary": "در این بخش کارشناس پرسش می‌کند که پس از حیات دنیا، زندگی بعدی چگونه است، چه مراحلی مانند عالم برزخ و قیامت دارد و چه منازلی طی می‌شود. همچنین مطرح شد که چه چیزی سرنوشت انسان را در این حیات آخرت می‌سازد.",
@@ -68,16 +56,28 @@
       "sequence": 55,
       "updated_at": "2026-11-04T16:22:49.510291+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره کیفیت حضور نفس در بدن و ارتباط آن",
+      "summary": "در این بخش کارشناس درباره نحوه حضور نفس در بدن و ارتباط آن بحث می‌کند و استدلال می‌کند که نفس با همه بدن ارتباط دارد و در همه جای آن حاضر است اما جای خاصی ندارد، و در ادامه به موضوع فرمان ربایی و ارتباط آن با مغز اشاره می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41860823618-120",
+      "sequence": 120,
+      "updated_at": "2026-11-04T16:48:40.047399+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 120,
-    "segments_transcribed": 116,
-    "editor_attempts": 65,
-    "editor_withheld": 59,
-    "topics_published": 7,
+    "segments_captured": 121,
+    "segments_transcribed": 117,
+    "editor_attempts": 66,
+    "editor_withheld": 60,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T16:47:55.221079+00:00"
+    "last_audio_at": "2026-11-04T16:48:18.972878+00:00"
   }
 }
