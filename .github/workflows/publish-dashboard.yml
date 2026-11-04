@@ -5,6 +5,11 @@ on:
     workflows: ["Velayat Live Monitor"]
     types: [completed]
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - '!docs/data/**'
 
 permissions:
   contents: write
@@ -98,7 +103,7 @@ jobs:
             echo 'No new Persian report. Archive remains preserved.'
           fi
       - name: Test V4 evidence-based publication safeguards
-        if: steps.persian_report.outputs.ready == 'true' || github.event_name == 'workflow_dispatch'
+        if: steps.persian_report.outputs.ready == 'true' || github.event_name == 'workflow_dispatch' || github.event_name == 'push'
         run: python -m unittest discover -s tests -p 'test_v4.py' -v
       - name: Commit public archive only
         if: steps.persian_report.outputs.ready == 'true'
@@ -120,11 +125,11 @@ jobs:
             done
           fi
       - uses: actions/configure-pages@v5
-        if: steps.persian_report.outputs.ready == 'true' || github.event_name == 'workflow_dispatch'
+        if: steps.persian_report.outputs.ready == 'true' || github.event_name == 'workflow_dispatch' || github.event_name == 'push'
       - uses: actions/upload-pages-artifact@v3
-        if: steps.persian_report.outputs.ready == 'true' || github.event_name == 'workflow_dispatch'
+        if: steps.persian_report.outputs.ready == 'true' || github.event_name == 'workflow_dispatch' || github.event_name == 'push'
         with:
           path: docs
       - uses: actions/deploy-pages@v4
-        if: steps.persian_report.outputs.ready == 'true' || github.event_name == 'workflow_dispatch'
+        if: steps.persian_report.outputs.ready == 'true' || github.event_name == 'workflow_dispatch' || github.event_name == 'push'
         id: deployment
