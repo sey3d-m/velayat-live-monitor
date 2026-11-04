@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T14:14:52.411446+00:00",
-  "updated_at": "2026-11-04T15:01:57.264395+00:00",
+  "updated_at": "2026-11-04T15:02:35.161474+00:00",
   "items": [
-    {
-      "title": "بررسی حکم فقهی اقتدای مرد به زن در نماز جماعت",
-      "summary": "در این بخش کارشناس درباره جواز اقتدای مرد به زن در نماز جماعت سخن می‌گوید و به گفته وی، مراجع تقلید فتوایی بر جواز این نوع اقتدا صادر نکرده‌اند؛ حتی در صورت وجود محرمیت میان زن و مرد نیز چنین جماعتی از نظر ایشان صحیح نیست و اشکال دارد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41845533409-20",
-      "sequence": 20,
-      "updated_at": "2026-11-04T14:38:36.921317+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره احکام طهارت",
       "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +58,28 @@
       "sequence": 65,
       "updated_at": "2026-11-04T14:56:47.968570+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره حکم و کیفیت قضای نماز و غسل",
+      "summary": "در این بخش، پرسشی درباره لزوم قضا کردن نمازهای چند سال و کیفیت غسل تمام بدن مطرح شد. کارشناس توضیح می‌دهد که در غسل، فرقی نمی‌کند کدام قسمت بدن مانند دست، پا یا بالا‌تنه شسته شود و تمام بدن باید آب کشیده شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41845533409-80",
+      "sequence": 80,
+      "updated_at": "2026-11-04T15:02:35.161445+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 80,
-    "segments_transcribed": 76,
-    "editor_attempts": 54,
-    "editor_withheld": 50,
-    "topics_published": 7,
+    "segments_captured": 81,
+    "segments_transcribed": 77,
+    "editor_attempts": 55,
+    "editor_withheld": 51,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T15:01:53.407542+00:00"
+    "last_audio_at": "2026-11-04T15:02:17.678088+00:00"
   }
 }
