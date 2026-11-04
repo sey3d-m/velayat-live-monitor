@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T17:14:46.724830+00:00",
-  "updated_at": "2026-11-04T18:09:57.172758+00:00",
+  "updated_at": "2026-11-04T18:10:43.116074+00:00",
   "items": [
-    {
-      "title": "بررسی انتقال ولایت و دفاع فاطمه زهرا پس از شهادت پیامبر",
-      "summary": "در این بخش کارشناس استدلال می‌کند که پس از شهادت پیامبر، ولایت به امیرالمؤمنین منتقل شد و فاطمه زهرا برای دفاع از آن تا مرز شهادت ایستادگی کرد و به شهادت رسید.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "editor_mode": "audio_grounded_topic",
-      "id": "41875588304-24",
-      "sequence": 24,
-      "updated_at": "2026-11-04T17:40:40.123359+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره وضعیت زمین‌های فدک و حکم شرعی آن",
       "summary": "در این بخش کارشناس استدلال می‌کند که زمین‌های فدک بدون جنگ تسخیر شده‌اند؛ برخلاف خیبر که با جنگ مفتوح شد. به گفته کارشناس، زمین‌هایی که بدون جنگ فتح شوند در اختیار حاکم اسلامی قرار می‌گیرند و به عنوان غنیمت جنگی بین مجاهدین تقسیم نمی‌شوند.",
@@ -69,16 +56,28 @@
       "sequence": 90,
       "updated_at": "2026-11-04T18:06:43.926939+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره خطبه حضرت زهرا توسط بیننده کرمانشاهی در شبکه ولایت",
+      "summary": "در این بخش از برنامه، کارشناس به پرسش مطرح‌شده از سوی یکی از بینندگان برنامه به نام سرکار خانم محمدی از کرمانشاه درباره خطبه حضرت زهرا (س) پاسخ می‌دهد و این پرسش در جریان گفت‌وگو مطرح می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "41875588304-100",
+      "sequence": 100,
+      "updated_at": "2026-11-04T18:10:43.116052+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 100,
-    "segments_transcribed": 94,
-    "editor_attempts": 70,
-    "editor_withheld": 64,
-    "topics_published": 10,
+    "segments_captured": 101,
+    "segments_transcribed": 95,
+    "editor_attempts": 71,
+    "editor_withheld": 65,
+    "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T18:09:53.643052+00:00"
+    "last_audio_at": "2026-11-04T18:10:18.353013+00:00"
   }
 }
