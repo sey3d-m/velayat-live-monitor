@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-04",
   "started_at": "2026-11-04T17:14:46.724830+00:00",
-  "updated_at": "2026-11-04T17:56:21.039271+00:00",
+  "updated_at": "2026-11-04T17:56:30.206342+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره تربیت و اخلاق",
-      "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "41875588304-18",
-      "sequence": 18,
-      "updated_at": "2026-11-04T17:38:09.340574+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره ولایت و غدیر",
       "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,14 +57,27 @@
       "sequence": 59,
       "updated_at": "2026-11-04T17:54:11.727466+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز",
+      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "41875588304-65",
+      "sequence": 65,
+      "updated_at": "2026-11-04T17:56:30.206317+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 66,
     "segments_transcribed": 62,
     "editor_attempts": 46,
-    "editor_withheld": 41,
-    "topics_published": 8,
+    "editor_withheld": 42,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-04T17:56:14.623428+00:00"
