@@ -362,14 +362,89 @@ window.atlasInspectArchive=async function(input){
   out.innerHTML='<p>بررسی فایل «'+E(f.name)+'»: '+fmt(rows.length)+' ردیف؛ '+fmt(dup)+' شناسه تکراری؛ '+fmt(conflict)+' اختلاف خلاصه؛ '+fmt(missing)+' ردیف فاقد شناسه.</p><div class="atlas-warning">فایل صرفاً بررسی شد و هنوز وارد آرشیو عمومی نشده است. ردیف‌ها باید از نظر اعتبار، مجوز انتشار و تکرار ارزیابی شوند.</div>';
  }catch(e){out.textContent='فایل قابل پردازش نیست: '+e.message}
 };
-function timelinePlus(p){
- var seg=originals.timeline(p),q=qa(p).filter(x=>Number.isFinite(Number(x.start_sec))&&Number(x.start_sec)>=0);
- var durationMax=Math.max(3600,...topics(p).map(t=>+t.end_sec||0),...q.map(t=>+t.end_sec||0));
- var dots=q.map(x=>'<span class="atlas-qa-marker" style="right:'+(Math.min(99,Math.max(0,Number(x.start_sec)/durationMax*100)))+'%" title="'+E(x.question)+'"></span>').join('');
- seg=seg.replace(/(<div class="time-track"[^>]*>)/,'$1'+dots);
- return '<div class="atlas-timeline-key">قطعات سبز: محورهای گفتگو · نشان بنفش: پرسش مخاطب · زمان‌ها از گزارش دیدبان</div>'+seg;
+
+function atlasTimeSpan(x){
+ var a=Number(x.start_sec),b=Number(x.end_sec);
+ return (Number.isFinite(a)&&Number.isFinite(b)&&b>a)?Math.max(0,b-a):0;
 }
+function atlasTimelineDetail(p,kind,i){
+ var x=kind==='qa'?qa(p)[i]:topics(p)[i];if(!x)return '<p>مورد انتخابی در گزارش موجود نیست.</p>';
+ var a=Number(x.start_sec),b=Number(x.end_sec),time=Number.isFinite(a)&&a>=0?hhmm(a):'زمان ثبت نشده',d=atlasTimeSpan(x);
+ var title=kind==='qa'?x.question:x.title,desc=kind==='qa'?(x.answer||'پاسخی در گزارش موجود نیست'):'عنوان این محور مطابق گزارش ساختاریافته دیدبان است؛ متن کامل این بخش در آرشیو عمومی فعلی ثبت نشده است.';
+ return '<span class="eyebrow">'+(kind==='qa'?'◉ پرسش و پاسخ ثبت‌شده':'✦ محور علمی انتخاب‌شده')+'</span>'+
+ '<strong>'+E(title||'بدون عنوان')+'</strong>'+
+ '<p>'+E(desc)+'</p><div class="atlas-time-key"><span>⏱ '+E(time)+(d?' — '+hhmm(b):'')+'</span>'+
+ (d?'<span>مدت: '+hhmm(d)+'</span>':'')+'<span>منبع: گزارش خودکار دیدبان</span></div>';
+}
+function timelinePlus(p){
+ var axes=topics(p),questions=qa(p);
+ var valid=axes.filter(x=>atlasTimeSpan(x)),qtime=questions.filter(x=>Number.isFinite(Number(x.start_sec))&&Number(x.start_sec)>=0);
+ var total=Math.max(3600,...axes.map(x=>Number(x.end_sec)||0),...questions.map(x=>Number(x.end_sec)||0));
+ var palette=[['#198b80','#17616b'],['#38669f','#1d6081'],['#438b6d','#24675d'],['#987a43','#6a5531'],['#556fa9','#405586'],['#6c7897','#315a75'],['#5b8c87','#30717c']];
+ var ticks=[0,.25,.5,.75,1].map(x=>'<span>'+hhmm(Math.round(total*x))+'</span>').join('');
+ var segments=axes.map(function(x,i){
+  if(!atlasTimeSpan(x))return '';
+  var s=Math.max(0,Number(x.start_sec)),b=Math.max(s,Number(x.end_sec));
+  var left=(s/total*100),width=Math.max(.4,Math.min(100-left,(b-s)/total*100)),c=palette[i%palette.length];
+  return '<button class="atlas-time-segment '+(i===0?'selected':'')+'" data-atlas-idx="'+i+'" style="left:'+left.toFixed(3)+'%;width:'+width.toFixed(3)+'%;--seg1:'+c[0]+';--seg2:'+c[1]+'" onclick="atlasTimelineSelect('+i+')" title="'+E(x.title)+' · '+hhmm(s)+' تا '+hhmm(b)+'" aria-label="محور '+(i+1)+': '+E(x.title)+'"><span>'+(width>13?E(x.title):'')+'</span></button>';
+ }).join('');
+ var markers=questions.map(function(x,i){
+  var s=Number(x.start_sec);if(!Number.isFinite(s)||s<0)return '';
+  var left=Math.max(0,Math.min(99,s/total*100));
+  return '<button class="atlas-time-qa" style="left:'+left.toFixed(3)+'%" onclick="atlasTimelineQA('+i+')" title="'+E(x.question)+'" aria-label="پرسش مخاطب: '+E(x.question)+'">؟</button>';
+ }).join('');
+ var chapters=axes.map(function(x,i){
+  var time=Number.isFinite(Number(x.start_sec))&&x.start_sec!==undefined?hhmm(x.start_sec):'—';
+  var end=atlasTimeSpan(x)?hhmm(x.end_sec):'—';
+  return '<button class="atlas-chapter '+(i===0?'active':'')+'" data-atlas-idx="'+i+'" onclick="atlasTimelineSelect('+i+')" aria-label="انتخاب محور '+(i+1)+'"><span class="atlas-chapter-num">'+fmt(i+1)+'</span><span class="atlas-chapter-copy"><span class="atlas-chapter-title">'+E(x.title)+'</span><span class="atlas-chapter-range">'+time+' — '+end+'</span></span></button>';
+ }).join('');
+ var firstStart=Number(axes[0]?.start_sec)||0;
+ return '<section class="atlas-time-shell" id="atlasTimeline" data-program="'+E(p.id)+'">'+
+ '<div class="atlas-time-head"><div><span class="atlas-time-eyebrow">VELAYAT / SCIENTIFIC TIME NAVIGATOR</span><h3>نقشه زمانی گفت‌وگو</h3><p class="atlas-time-description">نقاط زمانی دقیقِ ثبت‌شده برای این قسمت؛ هر بخش و پرسش را انتخاب کنید.</p></div>'+
+ '<div class="atlas-time-total">◷ '+hhmm(total)+' <span style="direction:rtl;color:#a9c6c6;font-size:10px">بازه نمایش</span></div></div>'+
+ '<div class="atlas-time-ruler">'+ticks+'</div>'+
+ '<div class="atlas-time-track" aria-label="خط زمانی محورها"><div class="atlas-time-row">'+segments+'</div>'+markers+
+ '<span id="atlasTimelinePlayhead" class="atlas-time-playhead" style="left:'+(firstStart/total*100).toFixed(2)+'%"></span></div>'+
+ '<div class="atlas-time-bottom"><div class="atlas-time-key"><span><i style="background:#56b8ae"></i>محور علمی</span><span><i style="background:#c392e6;border-radius:100%"></i>پرسش مخاطب</span><span>'+fmt(valid.length)+' محور زمان‌دار / '+fmt(qtime.length)+' پرسش زمان‌دار</span></div>'+
+ '<div class="atlas-time-navigation"><button onclick="atlasTimelineStep(-1)">❮ محور قبل</button><button onclick="atlasTimelineStep(1)">محور بعد ❯</button></div></div>'+
+ '<div class="atlas-chapter-head"><b>فصل‌های این برنامه</b><small>'+fmt(axes.length)+' محور از گزارش دیدبان</small></div>'+
+ '<div class="atlas-chapter-grid">'+chapters+'</div>'+
+ '<div id="atlasTimelineInsight" class="atlas-time-detail">'+atlasTimelineDetail(p,'topic',0)+'</div>'+
+ '<p class="atlas-time-legend-note">عنوان‌ها و زمان‌کدها از گزارش موجود استخراج شده‌اند. انتخاب یک بخش به‌معنای وجود ویدیوی قابل پخش در همان لحظه نیست.</p></section>';
+}
+window.atlasTimelineSelect=function(i){
+ var el=document.getElementById('atlasTimeline');if(!el)return;
+ var p=get(el.dataset.program),axes=p&&topics(p);if(!p||!axes?.[i])return;
+ i=Number(i);currentTopic=i;
+ var total=Math.max(3600,...axes.map(x=>Number(x.end_sec)||0),...qa(p).map(x=>Number(x.end_sec)||0));
+ var info=document.getElementById('atlasTimelineInsight');if(info)info.innerHTML=atlasTimelineDetail(p,'topic',i);
+ var head=document.getElementById('atlasTimelinePlayhead');
+ if(head)head.style.left=(Math.max(0,Number(axes[i].start_sec)||0)/total*100).toFixed(2)+'%';
+ el.querySelectorAll('.atlas-chapter').forEach(x=>x.classList.toggle('active',Number(x.dataset.atlasIdx)===i));
+ el.querySelectorAll('.atlas-time-segment').forEach(x=>x.classList.toggle('selected',Number(x.dataset.atlasIdx)===i));
+ el.querySelectorAll('.atlas-time-qa').forEach(x=>x.classList.remove('selected'));
+};
+window.atlasTimelineQA=function(i){
+ var el=document.getElementById('atlasTimeline');if(!el)return;var p=get(el.dataset.program),q=p&&qa(p)[i];if(!q)return;
+ var info=document.getElementById('atlasTimelineInsight');if(info)info.innerHTML=atlasTimelineDetail(p,'qa',i);
+ var total=Math.max(3600,...topics(p).map(x=>Number(x.end_sec)||0),...qa(p).map(x=>Number(x.end_sec)||0));
+ var head=document.getElementById('atlasTimelinePlayhead');if(head)head.style.left=(Math.max(0,Number(q.start_sec)||0)/total*100).toFixed(2)+'%';
+ el.querySelectorAll('.atlas-time-segment').forEach(x=>x.classList.remove('selected'));
+ el.querySelectorAll('.atlas-chapter').forEach(x=>x.classList.remove('active'));
+ el.querySelectorAll('.atlas-time-qa').forEach(x=>x.classList.remove('selected'));
+ var button=el.querySelectorAll('.atlas-time-qa')[qa(p).slice(0,i+1).filter(x=>Number.isFinite(Number(x.start_sec))&&Number(x.start_sec)>=0).length-1];
+ if(button)button.classList.add('selected');
+};
+window.atlasTimelineStep=function(direction){
+ var el=document.getElementById('atlasTimeline');if(!el)return;
+ var p=get(el.dataset.program);if(!p)return;
+ var axes=topics(p);if(!axes.length)return;
+ var current=el.querySelector('.atlas-chapter.active');
+ var i=current?Number(current.dataset.atlasIdx):0;
+ window.atlasTimelineSelect(Math.min(axes.length-1,Math.max(0,i+direction)));
+};
 timeline=timelinePlus;
+
 render=function(){
  applyEdits();
  var hash=decodeURIComponent(location.hash||'#/');
