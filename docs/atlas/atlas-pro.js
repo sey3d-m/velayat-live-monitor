@@ -23,7 +23,7 @@ function installNavigation(){
  [['search','⌕','جست‌وجوی جامع'],['research','◉','میز پژوهش و برنامه‌سازی'],['editor','✎','مدیریت و اصلاحات']].forEach(function(x){var b=document.createElement('button');b.className='nav';b.dataset.view=x[0];b.innerHTML='<span class="emoji">'+x[1]+'</span>'+x[2];b.onclick=function(){go('#/'+x[0])};side.insertBefore(b,bottom)});
 }
 function changeMode(m){S.group=m||'';S.episode='';S.selected=m?'p:'+m:'root';mountGraph()}
-function graphSection(){
+function atlasGraphSection(){
  return section('نقشه زنده ارتباطات علمی','از شبکه ولایت تا مجموعه‌برنامه، قسمت، کارشناس، محور و پرسش؛ تمام پیوندها از داده موجود ساخته شده‌اند',
  '<button class="button small" onclick="go(\'#/search\')">⌕ جست‌وجوی همه محتوا</button>')+
  '<section class="atlas-panel" id="graphAnchor"><div class="atlas-head"><div><h3>منظومه هوشمند ولایت</h3><p>برنامه را انتخاب کنید؛ سپس وارد قسمت و محور علمی شوید</p></div><div class="atlas-actions">'+
@@ -144,7 +144,7 @@ window.atlasZoom=function(n){cam.k=Math.max(.58,Math.min(2.5,cam.k*n));setCamera
 window.atlasReset=function(){cam={x:0,y:0,k:1};setCamera()};
 window.atlasFullscreen=function(){var e=document.getElementById('graphAnchor');if(!e)return;e.classList.toggle('atlas-view-full');setTimeout(setCamera,50)};
 window.atlasSearchFor=function(s){S.sQuery=s;go('#/search')};
-graphSection=graphSection;
+graphSection=atlasGraphSection;
 drawGraph=function(){mountGraph()};
 resetGraph=function(){mountGraph()};
 function searchable(){
@@ -236,7 +236,7 @@ function patchFor(id){return Object.assign({},S.published[id]||{},S.preview?(S.d
 function applyEdits(){if(!programs.length)return;programs=programs.map(function(p){var patch=patchFor(p.id),out=Object.assign({},p);allowed.forEach(k=>{if(Object.prototype.hasOwnProperty.call(patch,k)&&((Array.isArray(patch[k]))||typeof patch[k]==='string'))out[k]=patch[k]});return out})}
 function draftLoad(){try{return JSON.parse(localStorage.getItem('atlas-public-drafts-v1')||'{}')}catch(e){return {}}}
 S.draft=draftLoad();
-async function loadPublished(){try{var u=new URL('../atlas/overrides.json',location.href);var r=await fetch(u.href,{cache:'no-store'});if(!r.ok)return;var d=await r.json();if(d&&d.schema===1&&d.episodes&&typeof d.episodes==='object'){S.published=d.episodes;applyEdits();originals.render()}}catch(e){/* no published overrides is supported */}}
+async function loadPublished(){try{var u=new URL('../atlas/overrides.json',location.href);var r=await fetch(u.href,{cache:'no-store'});if(!r.ok)return;var d=await r.json();if(d&&d.schema===1&&d.episodes&&typeof d.episodes==='object'){S.published=d.episodes;applyEdits();render()}}catch(e){/* no published overrides is supported */}}
 function editorPage(){
  var options=programs.map(p=>'<option value="'+E(p.id)+'">'+E(name(p))+' · '+E(p.date||p.date_iso)+' · '+E((p.topic||'').slice(0,65))+'</option>').join('');
  return '<section class="atlas-searchhero"><h2>میز مدیریت محتوای اطلس</h2><p>اصلاح عنوان و خلاصه، بازبینی پیش‌نویس، بررسی آرشیو و تهیه بسته انتشار. داده اصلی دیدبان دست‌نخورده می‌ماند.</p>'+
