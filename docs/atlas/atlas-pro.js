@@ -355,7 +355,7 @@ function atlasSelectedExpertPanel(){
  var hosted=S.draftPhotos[who]||S.publishedPhotos[who]||'';
  return '<div class="atlas-settings-expert-info"><div class="atlas-expert-large-photo">'+atlasSettingsPhoto(who)+'</div>'+
  '<div><span class="atlas-time-eyebrow">EXPERT PROFILE</span><h3>'+E(who)+'</h3><p>'+fmt(count)+' قسمت مرتبط در آرشیو</p>'+
- '<button class="atlas-btn active" onclick="openPhotoEditor(S.settingsExpert)">▧ انتخاب تصویر از رایانه</button></div></div>'+
+ '<button class="atlas-btn active" onclick="atlasOpenExpertPhoto()">▧ انتخاب تصویر از رایانه</button></div></div>'+
  '<div class="atlas-settings-form">'+
  '<label for="atlasRenameExpertName">اصلاح نام کارشناس در تمام قسمت‌های مرتبط</label>'+
  '<div class="atlas-settings-input-row"><input id="atlasRenameExpertName" class="atlas-input" value="'+E(who)+'" placeholder="نام صحیح کارشناس">'+
@@ -417,6 +417,7 @@ window.atlasChooseExpert=function(who){
  var panel=document.getElementById('atlasSettingsExpertPanel');if(panel)panel.innerHTML=atlasSelectedExpertPanel();
  var rows=document.getElementById('atlasSettingsExpertRows');if(rows)rows.innerHTML=atlasSettingsExpertList();
 };
+window.atlasOpenExpertPhoto=function(){if(S.settingsExpert)openPhotoEditor(S.settingsExpert)};
 window.atlasBulkRenameExpert=function(){
  var old=S.settingsExpert,newName=document.getElementById('atlasRenameExpertName')?.value.trim();
  if(!old||!newName)return toast('نام کارشناس نمی‌تواند خالی باشد');
