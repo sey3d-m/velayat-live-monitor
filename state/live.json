@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T15:44:52.762390+00:00",
-  "updated_at": "2026-11-05T16:58:22.377158+00:00",
+  "updated_at": "2026-11-05T16:58:47.752365+00:00",
   "items": [
     {
       "title": "بررسی مدت زمان دوران حضور در مدینه پس از هجرت",
@@ -58,16 +58,29 @@
       "sequence": 141,
       "updated_at": "2026-11-05T16:56:54.064357+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره روزه",
+      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42057985664-146",
+      "sequence": 146,
+      "updated_at": "2026-11-05T16:58:47.752338+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 146,
-    "segments_transcribed": 137,
-    "editor_attempts": 117,
-    "editor_withheld": 116,
-    "topics_published": 4,
+    "segments_captured": 147,
+    "segments_transcribed": 138,
+    "editor_attempts": 118,
+    "editor_withheld": 117,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-05T16:58:14.587791+00:00"
+    "last_audio_at": "2026-11-05T16:58:39.752418+00:00"
   }
 }
