@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T17:14:48.064739+00:00",
-  "updated_at": "2026-11-05T17:49:02.933964+00:00",
+  "updated_at": "2026-11-05T17:49:51.447741+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره مقام حضرت زهرا و پرورش‌یافتگان خانه ایشان",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 48,
-    "segments_transcribed": 45,
-    "editor_attempts": 42,
-    "editor_withheld": 38,
+    "segments_captured": 50,
+    "segments_transcribed": 47,
+    "editor_attempts": 44,
+    "editor_withheld": 40,
     "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-05T17:48:59.132554+00:00"
+    "last_audio_at": "2026-11-05T17:49:48.707117+00:00"
   }
 }
