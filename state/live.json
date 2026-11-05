@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T17:14:48.064739+00:00",
-  "updated_at": "2026-11-05T17:39:29.514093+00:00",
+  "updated_at": "2026-11-05T17:39:53.531949+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره مقام حضرت زهرا و پرورش‌یافتگان خانه ایشان",
@@ -32,16 +32,29 @@
       "sequence": 23,
       "updated_at": "2026-11-05T17:39:29.514078+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42072602232-24",
+      "sequence": 24,
+      "updated_at": "2026-11-05T17:39:53.531932+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 24,
-    "segments_transcribed": 21,
-    "editor_attempts": 18,
-    "editor_withheld": 17,
-    "topics_published": 2,
+    "segments_captured": 25,
+    "segments_transcribed": 22,
+    "editor_attempts": 19,
+    "editor_withheld": 18,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-05T17:39:25.432177+00:00"
+    "last_audio_at": "2026-11-05T17:39:50.225103+00:00"
   }
 }
