@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T17:14:48.064739+00:00",
-  "updated_at": "2026-11-05T18:23:25.979283+00:00",
+  "updated_at": "2026-11-05T18:23:32.510452+00:00",
   "items": [
-    {
-      "title": "بررسی بیداری انسان از خواب غفلت به واسطه خواندن قرآن",
-      "summary": "در این بخش کارشناس استدلال می‌کند که اگر انسان قرآن را به درستی تلاوت کند، از خواب غفلت بیدار شده و متوجه بیماری‌های درونی خود مانند تکبر، منیت، غرور، حسد و نفسانیات می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42072602232-33",
-      "sequence": 33,
-      "updated_at": "2026-11-05T17:43:30.145282+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره معنای حسنه و نیاز به استجابت در دعا",
       "summary": "در گفت‌وگو درباره مفهوم آیه «ربنا آتنا فی الدنیا حسنة»، کارشناس استدلال می‌کند که رسیدن به حسنه‌ دنیا و آخرت صرفاً با دعا میسر نمی‌شود، بلکه به فرموده قرآن نیازمند لبیک گفتن به ندای پروردگار و استجابت است. در این بخش به آیه للذین استجابو برای تبیین این موضوع استناد شد.",
@@ -70,14 +58,27 @@
       "sequence": 132,
       "updated_at": "2026-11-05T18:23:03.811220+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خانواده و ازدواج",
+      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42072602232-133",
+      "sequence": 133,
+      "updated_at": "2026-11-05T18:23:32.510422+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 134,
     "segments_transcribed": 125,
     "editor_attempts": 117,
-    "editor_withheld": 113,
-    "topics_published": 8,
+    "editor_withheld": 114,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-05T18:23:23.204106+00:00"
