@@ -1,21 +1,34 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "42057985664",
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T15:44:52.762390+00:00",
-  "updated_at": "2026-11-05T16:22:20.755686+00:00",
-  "items": [],
+  "updated_at": "2026-11-05T16:22:46.042910+00:00",
+  "items": [
+    {
+      "title": "بررسی مدت زمان دوران حضور در مدینه پس از هجرت",
+      "summary": "در این بخش کارشناس درباره مدت زمان حضور در مدینه پس از هجرت نکاتی را مطرح می‌کند و استدلال می‌کند که این دوران و فشارهای آن در همان محدوده و به مدت ده سال بوده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42057985664-56",
+      "sequence": 56,
+      "updated_at": "2026-11-05T16:22:46.042886+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 56,
-    "segments_transcribed": 52,
-    "editor_attempts": 42,
-    "editor_withheld": 41,
-    "topics_published": 0,
+    "segments_captured": 57,
+    "segments_transcribed": 53,
+    "editor_attempts": 43,
+    "editor_withheld": 42,
+    "topics_published": 1,
     "audio_ai_calls": 3,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-05T16:22:15.319124+00:00"
+    "last_audio_at": "2026-11-05T16:22:33.985745+00:00"
   }
 }
