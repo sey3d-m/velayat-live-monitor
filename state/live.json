@@ -6,16 +6,16 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T15:44:52.762390+00:00",
-  "updated_at": "2026-11-05T16:08:42.013314+00:00",
+  "updated_at": "2026-11-05T16:09:31.860932+00:00",
   "items": [],
   "progress": {
-    "segments_captured": 22,
-    "segments_transcribed": 18,
-    "editor_attempts": 13,
-    "editor_withheld": 13,
+    "segments_captured": 24,
+    "segments_transcribed": 20,
+    "editor_attempts": 15,
+    "editor_withheld": 14,
     "topics_published": 0,
     "audio_ai_calls": 3,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-05T16:08:38.115681+00:00"
+    "last_audio_at": "2026-11-05T16:09:27.162033+00:00"
   }
 }
