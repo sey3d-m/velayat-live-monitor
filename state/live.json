@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T17:14:48.064739+00:00",
-  "updated_at": "2026-11-05T17:52:14.382162+00:00",
+  "updated_at": "2026-11-05T17:52:46.456417+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره مقام حضرت زهرا و پرورش‌یافتگان خانه ایشان",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که حضرت زهرا (س) نه تنها نان، بلکه ایمان را به عالم بخشیده و در خانه‌ای کوچک، بزرگان و معصومان را پرورش داده است. در این گفت‌وگو با سلام بر آن حضرت، به مقام معصومه و معصوم‌پرور بودن ایشان اشاره می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "editor_mode": "audio_grounded_topic",
-      "id": "42072602232-8",
-      "sequence": 8,
-      "updated_at": "2026-11-05T17:33:35.307832+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی مفهوم وحی تبیینی و علم لدنی در تبیین قرآن",
       "summary": "در این بخش کارشناس استدلال می‌کند که پیامبر قرآن را نه به عنوان یک دانشمند نظریه‌پرداز، بلکه با تکیه بر علم لدنی و الهامات الهی تبیین می‌کند؛ مفهومی که در این گفتگو از آن با عنوان وحی تبیینی یاد می‌شود.",
@@ -69,16 +56,29 @@
       "sequence": 43,
       "updated_at": "2026-11-05T17:47:31.639091+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز",
+      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42072602232-56",
+      "sequence": 56,
+      "updated_at": "2026-11-05T17:52:46.456387+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 56,
-    "segments_transcribed": 53,
-    "editor_attempts": 50,
-    "editor_withheld": 46,
-    "topics_published": 5,
+    "segments_captured": 57,
+    "segments_transcribed": 54,
+    "editor_attempts": 51,
+    "editor_withheld": 48,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-05T17:52:11.521923+00:00"
+    "last_audio_at": "2026-11-05T17:52:35.848999+00:00"
   }
 }
