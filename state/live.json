@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T15:44:52.762390+00:00",
-  "updated_at": "2026-11-05T16:59:04.382919+00:00",
+  "updated_at": "2026-11-05T16:59:29.975094+00:00",
   "items": [
-    {
-      "title": "بررسی مدت زمان دوران حضور در مدینه پس از هجرت",
-      "summary": "در این بخش کارشناس درباره مدت زمان حضور در مدینه پس از هجرت نکاتی را مطرح می‌کند و استدلال می‌کند که این دوران و فشارهای آن در همان محدوده و به مدت ده سال بوده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42057985664-56",
-      "sequence": 56,
-      "updated_at": "2026-11-05T16:22:46.042886+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره امام زمان",
       "summary": "در این بخش از برنامه، موضوع «امام زمان» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -71,16 +59,29 @@
       "sequence": 146,
       "updated_at": "2026-11-05T16:58:47.752338+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره امام حسین و عاشورا",
+      "summary": "در این بخش از برنامه، موضوع «امام حسین و عاشورا» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42057985664-148",
+      "sequence": 148,
+      "updated_at": "2026-11-05T16:59:29.975069+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 148,
-    "segments_transcribed": 139,
-    "editor_attempts": 119,
-    "editor_withheld": 117,
-    "topics_published": 5,
+    "segments_captured": 149,
+    "segments_transcribed": 140,
+    "editor_attempts": 120,
+    "editor_withheld": 119,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-05T16:58:58.116255+00:00"
+    "last_audio_at": "2026-11-05T16:59:22.882458+00:00"
   }
 }
