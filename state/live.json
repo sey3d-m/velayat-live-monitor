@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "ended",
   "network": "velayat_farsi",
   "session": "42072602232",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T17:14:48.064739+00:00",
-  "updated_at": "2026-11-05T18:39:23.181065+00:00",
+  "updated_at": "2026-11-05T18:40:02.058108+00:00",
   "items": [
     {
       "title": "پرسش درباره معنای حسنه و نیاز به استجابت در دعا",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 174,
-    "segments_transcribed": 161,
-    "editor_attempts": 147,
-    "editor_withheld": 143,
+    "segments_captured": 175,
+    "segments_transcribed": 162,
+    "editor_attempts": 148,
+    "editor_withheld": 145,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-05T18:39:19.781546+00:00"
+    "last_audio_at": "2026-11-05T18:39:44.583577+00:00"
   }
 }
