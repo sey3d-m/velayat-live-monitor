@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T15:44:52.762390+00:00",
-  "updated_at": "2026-11-05T16:47:55.732726+00:00",
+  "updated_at": "2026-11-05T16:48:31.679905+00:00",
   "items": [
     {
       "title": "بررسی مدت زمان دوران حضور در مدینه پس از هجرت",
@@ -32,16 +32,29 @@
       "sequence": 108,
       "updated_at": "2026-11-05T16:43:31.162249+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره حدیث و روایت",
+      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42057985664-120",
+      "sequence": 120,
+      "updated_at": "2026-11-05T16:48:31.679880+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 120,
-    "segments_transcribed": 114,
-    "editor_attempts": 97,
-    "editor_withheld": 95,
-    "topics_published": 2,
+    "segments_captured": 121,
+    "segments_transcribed": 115,
+    "editor_attempts": 98,
+    "editor_withheld": 97,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-05T16:47:48.936317+00:00"
+    "last_audio_at": "2026-11-05T16:48:12.884362+00:00"
   }
 }
