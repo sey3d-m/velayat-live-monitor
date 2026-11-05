@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T15:44:52.762390+00:00",
-  "updated_at": "2026-11-05T16:56:43.678908+00:00",
+  "updated_at": "2026-11-05T16:56:54.064386+00:00",
   "items": [
     {
       "title": "بررسی مدت زمان دوران حضور در مدینه پس از هجرت",
@@ -45,14 +45,27 @@
       "sequence": 120,
       "updated_at": "2026-11-05T16:48:31.679880+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42057985664-141",
+      "sequence": 141,
+      "updated_at": "2026-11-05T16:56:54.064357+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 142,
     "segments_transcribed": 134,
     "editor_attempts": 115,
-    "editor_withheld": 113,
-    "topics_published": 3,
+    "editor_withheld": 114,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 1,
     "last_audio_at": "2026-11-05T16:56:37.405331+00:00"
