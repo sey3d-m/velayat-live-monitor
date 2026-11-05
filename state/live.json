@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T17:14:48.064739+00:00",
-  "updated_at": "2026-11-05T17:43:28.710194+00:00",
+  "updated_at": "2026-11-05T17:43:30.145297+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره مقام حضرت زهرا و پرورش‌یافتگان خانه ایشان",
@@ -45,6 +45,18 @@
       "sequence": 24,
       "updated_at": "2026-11-05T17:39:53.531932+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی بیداری انسان از خواب غفلت به واسطه خواندن قرآن",
+      "summary": "در این بخش کارشناس استدلال می‌کند که اگر انسان قرآن را به درستی تلاوت کند، از خواب غفلت بیدار شده و متوجه بیماری‌های درونی خود مانند تکبر، منیت، غرور، حسد و نفسانیات می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42072602232-33",
+      "sequence": 33,
+      "updated_at": "2026-11-05T17:43:30.145282+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -52,7 +64,7 @@
     "segments_transcribed": 31,
     "editor_attempts": 28,
     "editor_withheld": 26,
-    "topics_published": 3,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-05T17:43:26.066387+00:00"
