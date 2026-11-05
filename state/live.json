@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T17:14:48.064739+00:00",
-  "updated_at": "2026-11-05T18:33:43.176457+00:00",
+  "updated_at": "2026-11-05T18:34:33.309868+00:00",
   "items": [
     {
       "title": "پرسش درباره معنای حسنه و نیاز به استجابت در دعا",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 160,
-    "segments_transcribed": 148,
-    "editor_attempts": 138,
+    "segments_captured": 162,
+    "segments_transcribed": 150,
+    "editor_attempts": 139,
     "editor_withheld": 135,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-05T18:33:41.132871+00:00"
+    "last_audio_at": "2026-11-05T18:34:29.850281+00:00"
   }
 }
