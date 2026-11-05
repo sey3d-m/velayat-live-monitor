@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T17:14:48.064739+00:00",
-  "updated_at": "2026-11-05T17:47:29.075362+00:00",
+  "updated_at": "2026-11-05T17:47:31.639119+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره مقام حضرت زهرا و پرورش‌یافتگان خانه ایشان",
@@ -57,6 +57,18 @@
       "sequence": 33,
       "updated_at": "2026-11-05T17:43:30.145282+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره معنای حسنه و نیاز به استجابت در دعا",
+      "summary": "در گفت‌وگو درباره مفهوم آیه «ربنا آتنا فی الدنیا حسنة»، کارشناس استدلال می‌کند که رسیدن به حسنه‌ دنیا و آخرت صرفاً با دعا میسر نمی‌شود، بلکه به فرموده قرآن نیازمند لبیک گفتن به ندای پروردگار و استجابت است. در این بخش به آیه للذین استجابو برای تبیین این موضوع استناد شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42072602232-43",
+      "sequence": 43,
+      "updated_at": "2026-11-05T17:47:31.639091+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -64,7 +76,7 @@
     "segments_transcribed": 41,
     "editor_attempts": 38,
     "editor_withheld": 35,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-05T17:47:26.438102+00:00"
