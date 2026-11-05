@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T17:14:48.064739+00:00",
-  "updated_at": "2026-11-05T18:22:42.253852+00:00",
+  "updated_at": "2026-11-05T18:23:03.811241+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42072602232-24",
-      "sequence": 24,
-      "updated_at": "2026-11-05T17:39:53.531932+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی بیداری انسان از خواب غفلت به واسطه خواندن قرآن",
       "summary": "در این بخش کارشناس استدلال می‌کند که اگر انسان قرآن را به درستی تلاوت کند، از خواب غفلت بیدار شده و متوجه بیماری‌های درونی خود مانند تکبر، منیت، غرور، حسد و نفسانیات می‌شود.",
@@ -70,16 +57,29 @@
       "sequence": 85,
       "updated_at": "2026-11-05T18:04:20.770396+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره امام زمان",
+      "summary": "در این بخش از برنامه، موضوع «امام زمان» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42072602232-132",
+      "sequence": 132,
+      "updated_at": "2026-11-05T18:23:03.811220+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 132,
-    "segments_transcribed": 123,
-    "editor_attempts": 115,
-    "editor_withheld": 111,
-    "topics_published": 7,
+    "segments_captured": 133,
+    "segments_transcribed": 124,
+    "editor_attempts": 116,
+    "editor_withheld": 113,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-05T18:22:39.804532+00:00"
+    "last_audio_at": "2026-11-05T18:22:58.782831+00:00"
   }
 }
