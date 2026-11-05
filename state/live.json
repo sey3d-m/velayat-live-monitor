@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T15:44:52.762390+00:00",
-  "updated_at": "2026-11-05T16:22:46.042910+00:00",
+  "updated_at": "2026-11-05T16:23:03.625066+00:00",
   "items": [
     {
       "title": "بررسی مدت زمان دوران حضور در مدینه پس از هجرت",
@@ -22,13 +22,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 57,
-    "segments_transcribed": 53,
-    "editor_attempts": 43,
+    "segments_captured": 58,
+    "segments_transcribed": 54,
+    "editor_attempts": 44,
     "editor_withheld": 42,
     "topics_published": 1,
     "audio_ai_calls": 3,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-05T16:22:33.985745+00:00"
+    "last_audio_at": "2026-11-05T16:22:58.180052+00:00"
   }
 }
