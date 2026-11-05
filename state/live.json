@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T17:14:48.064739+00:00",
-  "updated_at": "2026-11-05T18:04:19.235067+00:00",
+  "updated_at": "2026-11-05T18:04:20.770415+00:00",
   "items": [
-    {
-      "title": "بررسی مفهوم وحی تبیینی و علم لدنی در تبیین قرآن",
-      "summary": "در این بخش کارشناس استدلال می‌کند که پیامبر قرآن را نه به عنوان یک دانشمند نظریه‌پرداز، بلکه با تکیه بر علم لدنی و الهامات الهی تبیین می‌کند؛ مفهومی که در این گفتگو از آن با عنوان وحی تبیینی یاد می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42072602232-23",
-      "sequence": 23,
-      "updated_at": "2026-11-05T17:39:29.514078+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
       "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,14 +57,27 @@
       "sequence": 56,
       "updated_at": "2026-11-05T17:52:46.456387+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره احکام طهارت",
+      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42072602232-85",
+      "sequence": 85,
+      "updated_at": "2026-11-05T18:04:20.770396+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 86,
     "segments_transcribed": 77,
     "editor_attempts": 73,
-    "editor_withheld": 69,
-    "topics_published": 6,
+    "editor_withheld": 70,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-05T18:04:13.330831+00:00"
