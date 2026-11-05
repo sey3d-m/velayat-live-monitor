@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T17:14:48.064739+00:00",
-  "updated_at": "2026-11-05T17:53:52.480189+00:00",
+  "updated_at": "2026-11-05T17:54:44.069404+00:00",
   "items": [
     {
       "title": "بررسی مفهوم وحی تبیینی و علم لدنی در تبیین قرآن",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 60,
-    "segments_transcribed": 57,
-    "editor_attempts": 54,
-    "editor_withheld": 50,
+    "segments_captured": 62,
+    "segments_transcribed": 59,
+    "editor_attempts": 56,
+    "editor_withheld": 52,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-05T17:53:49.818857+00:00"
+    "last_audio_at": "2026-11-05T17:54:39.275355+00:00"
   }
 }
