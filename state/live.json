@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T17:14:48.064739+00:00",
-  "updated_at": "2026-11-05T17:39:28.225603+00:00",
+  "updated_at": "2026-11-05T17:39:29.514093+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره مقام حضرت زهرا و پرورش‌یافتگان خانه ایشان",
@@ -20,6 +20,18 @@
       "sequence": 8,
       "updated_at": "2026-11-05T17:33:35.307832+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی مفهوم وحی تبیینی و علم لدنی در تبیین قرآن",
+      "summary": "در این بخش کارشناس استدلال می‌کند که پیامبر قرآن را نه به عنوان یک دانشمند نظریه‌پرداز، بلکه با تکیه بر علم لدنی و الهامات الهی تبیین می‌کند؛ مفهومی که در این گفتگو از آن با عنوان وحی تبیینی یاد می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42072602232-23",
+      "sequence": 23,
+      "updated_at": "2026-11-05T17:39:29.514078+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -27,7 +39,7 @@
     "segments_transcribed": 21,
     "editor_attempts": 18,
     "editor_withheld": 17,
-    "topics_published": 1,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-05T17:39:25.432177+00:00"
