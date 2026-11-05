@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "42072602232",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-05",
   "started_at": "2026-11-05T17:14:48.064739+00:00",
-  "updated_at": "2026-11-05T17:33:05.465675+00:00",
-  "items": [],
+  "updated_at": "2026-11-05T17:33:35.307850+00:00",
+  "items": [
+    {
+      "title": "گفت‌وگو درباره مقام حضرت زهرا و پرورش‌یافتگان خانه ایشان",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که حضرت زهرا (س) نه تنها نان، بلکه ایمان را به عالم بخشیده و در خانه‌ای کوچک، بزرگان و معصومان را پرورش داده است. در این گفت‌وگو با سلام بر آن حضرت، به مقام معصومه و معصوم‌پرور بودن ایشان اشاره می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "42072602232-8",
+      "sequence": 8,
+      "updated_at": "2026-11-05T17:33:35.307832+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 8,
-    "segments_transcribed": 6,
-    "editor_attempts": 4,
-    "editor_withheld": 3,
-    "topics_published": 0,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
-    "last_audio_at": "2026-11-05T17:33:03.236922+00:00"
+    "segments_captured": 9,
+    "segments_transcribed": 7,
+    "editor_attempts": 5,
+    "editor_withheld": 5,
+    "topics_published": 1,
+    "audio_ai_calls": 3,
+    "audio_ai_success": 3,
+    "last_audio_at": "2026-11-05T17:33:27.091746+00:00"
   }
 }
