@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "41875588304",
-  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
-  "program_date": "2026-11-04",
-  "started_at": "2026-11-04T17:14:46.724830+00:00",
-  "updated_at": "2026-11-04T18:40:16.310293+00:00",
-  "items": [
-    {
-      "title": "بررسی نقش وجود ویروس‌ها و میکروب‌ها در پیشرفت علوم بشر",
-      "summary": "در این بخش کارشناس استدلال می‌کند که وجود ویروس‌ها و میکروب‌ها بی‌فایده نبوده و اگر ویروس‌ها نبودند، بسیاری از علوم از جمله زیست‌شناسی و پزشکی و دیگر شاخه‌های علم بشر پدید نمی‌آمدند. به گفته وی، این موضوع منشأ خیرات و پیشرفت‌های علمی فراوانی برای بشریت شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41875588304-90",
-      "sequence": 90,
-      "updated_at": "2026-11-04T18:06:43.926939+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره خطبه حضرت زهرا توسط بیننده کرمانشاهی در شبکه ولایت",
-      "summary": "در این بخش از برنامه، کارشناس به پرسش مطرح‌شده از سوی یکی از بینندگان برنامه به نام سرکار خانم محمدی از کرمانشاه درباره خطبه حضرت زهرا (س) پاسخ می‌دهد و این پرسش در جریان گفت‌وگو مطرح می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41875588304-100",
-      "sequence": 100,
-      "updated_at": "2026-11-04T18:10:43.116052+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی تاریخ و نحوه رحلت پیامبر اسلام در منابع تاریخی",
-      "summary": "در این بخش کارشناس درباره تاریخ رحلت پیامبر اسلام در روز دوشنبه سال یازدهم هجرت صحبت می‌کند. به گفته کارشناس، بنا بر نقل مصادر تاریخی، رسول خدا در روز دوشنبه سال یازدهم هجری قمری از دنیا رفتند و در این هنگام سر مبارک ایشان در دامان امیرالمؤمنین علی بن ابی‌طالب قرار داشت.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41875588304-147",
-      "sequence": 147,
-      "updated_at": "2026-11-04T18:29:22.485777+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی اختلاف نظر علما درباره تاریخ شهادت",
-      "summary": "در این بخش درباره اختلاف تاریخ دقیق شهادت مطرح شد. کارشناس استدلال می‌کند که بر اساس دیدگاه علمایی همچون شیخ مفید، این تاریخ بیست‌وهشتم صفر است؛ در حالی که برخی دیگر مانند شیخ کلینی، آن را دوازدهم ربیع‌الاول دانسته‌اند. این پرسش جزئی درباره اختلاف در تاریخ شهادت با استناد به این اقوال بررسی شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41875588304-148",
-      "sequence": 148,
-      "updated_at": "2026-11-04T18:29:42.762501+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی بحران‌های تاریخی ایران و فجایع نجف در گفتار کارشناس",
-      "summary": "در این بخش، کارشناس درباره بلای قحطی در ایران، تلفات، فقر عمومی و تجاوزات دولت انگلیس سخن می‌گوید. او همچنین به وقوع حادثه‌ای عظیم در نجف اشرف، بستنش به حرم امام علی (ع) و شهادت حجت‌الاسلام آقاسیدعلی اشاره کرده و استدلال می‌کند که انکار این موارد نشانه بی‌حسی است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "41875588304-161",
-      "sequence": 161,
-      "updated_at": "2026-11-04T18:34:48.189456+00:00",
-      "speaker": null
-    }
-  ],
+  "session": "42057985664",
+  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "program_date": "2026-11-05",
+  "started_at": "2026-11-05T15:44:52.762390+00:00",
+  "updated_at": "2026-11-05T16:00:00.000326+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 161,
-    "editor_attempts": 117,
-    "editor_withheld": 107,
-    "topics_published": 14,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-04T18:39:51.641016+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
