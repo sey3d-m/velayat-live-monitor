@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T17:14:57.000658+00:00",
-  "updated_at": "2026-11-07T17:39:55.038621+00:00",
+  "updated_at": "2026-11-07T17:40:18.394651+00:00",
   "items": [
     {
       "title": "پرسش درباره رویا و مشاهدات مرتبط با شهادت حضرت زهرا",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 25,
-    "segments_transcribed": 21,
-    "editor_attempts": 18,
+    "segments_captured": 26,
+    "segments_transcribed": 22,
+    "editor_attempts": 19,
     "editor_withheld": 16,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T17:39:48.401811+00:00"
+    "last_audio_at": "2026-11-07T17:40:13.068749+00:00"
   }
 }
