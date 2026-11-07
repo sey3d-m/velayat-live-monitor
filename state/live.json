@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:11:56.337719+00:00",
+  "updated_at": "2026-11-07T16:12:00.306088+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره مرثیه‌خوانی و توصیف روضه‌های فاطمیه",
@@ -45,14 +45,27 @@
       "sequence": 28,
       "updated_at": "2026-11-07T16:11:34.137380+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز",
+      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42387811028-29",
+      "sequence": 29,
+      "updated_at": "2026-11-07T16:12:00.306062+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 30,
     "segments_transcribed": 18,
     "editor_attempts": 13,
-    "editor_withheld": 11,
-    "topics_published": 3,
+    "editor_withheld": 12,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-07T16:11:50.134614+00:00"
