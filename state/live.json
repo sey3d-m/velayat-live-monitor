@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:15:58.047268+00:00",
+  "updated_at": "2026-11-07T16:16:41.787452+00:00",
   "items": [
     {
       "title": "بررسی سرنوشت محبان متمرد از اوامر اهل‌بیت",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 40,
-    "segments_transcribed": 25,
-    "editor_attempts": 19,
-    "editor_withheld": 15,
+    "segments_captured": 42,
+    "segments_transcribed": 27,
+    "editor_attempts": 21,
+    "editor_withheld": 17,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:15:47.856295+00:00"
+    "last_audio_at": "2026-11-07T16:16:36.274066+00:00"
   }
 }
