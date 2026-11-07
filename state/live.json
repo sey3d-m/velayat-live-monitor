@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:17:57.545212+00:00",
+  "updated_at": "2026-11-07T16:18:19.237977+00:00",
   "items": [
     {
       "title": "پرسش درباره هدیه پیامبر به حضرت فاطمه",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 45,
-    "segments_transcribed": 30,
-    "editor_attempts": 24,
+    "segments_captured": 46,
+    "segments_transcribed": 31,
+    "editor_attempts": 25,
     "editor_withheld": 20,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:17:50.002394+00:00"
+    "last_audio_at": "2026-11-07T16:18:13.650093+00:00"
   }
 }
