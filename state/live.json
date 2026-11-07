@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:46:21.167650+00:00",
+  "updated_at": "2026-11-07T16:47:07.350271+00:00",
   "items": [
     {
       "title": "بررسی چرایی تفکر همسو و رفع انگیزه تقابل",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 116,
-    "segments_transcribed": 98,
-    "editor_attempts": 90,
-    "editor_withheld": 79,
+    "segments_captured": 118,
+    "segments_transcribed": 100,
+    "editor_attempts": 92,
+    "editor_withheld": 80,
     "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:46:12.659011+00:00"
+    "last_audio_at": "2026-11-07T16:47:02.028969+00:00"
   }
 }
