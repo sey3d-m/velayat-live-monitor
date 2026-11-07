@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:19:36.944659+00:00",
+  "updated_at": "2026-11-07T16:19:51.175853+00:00",
   "items": [
     {
       "title": "بررسی کیفیت شمارش و ترتیب تسبیحات پس از نماز",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 49,
-    "segments_transcribed": 34,
-    "editor_attempts": 28,
+    "segments_captured": 50,
+    "segments_transcribed": 35,
+    "editor_attempts": 29,
     "editor_withheld": 22,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:19:27.910152+00:00"
+    "last_audio_at": "2026-11-07T16:19:45.841552+00:00"
   }
 }
