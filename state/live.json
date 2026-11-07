@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T17:14:57.000658+00:00",
-  "updated_at": "2026-11-07T18:30:49.029556+00:00",
+  "updated_at": "2026-11-07T18:31:06.774143+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره احکام طهارت",
-      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42395287933-52",
-      "sequence": 52,
-      "updated_at": "2026-11-07T17:51:07.753309+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره امام زمان",
       "summary": "در این بخش از برنامه، موضوع «امام زمان» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +57,29 @@
       "sequence": 136,
       "updated_at": "2026-11-07T18:24:41.896284+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز جماعت",
+      "summary": "در این بخش از برنامه، موضوع «نماز جماعت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42395287933-152",
+      "sequence": 152,
+      "updated_at": "2026-11-07T18:31:06.774118+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 152,
-    "segments_transcribed": 140,
-    "editor_attempts": 132,
-    "editor_withheld": 123,
-    "topics_published": 16,
+    "segments_captured": 153,
+    "segments_transcribed": 141,
+    "editor_attempts": 133,
+    "editor_withheld": 125,
+    "topics_published": 17,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T18:30:35.334397+00:00"
+    "last_audio_at": "2026-11-07T18:31:01.044657+00:00"
   }
 }
