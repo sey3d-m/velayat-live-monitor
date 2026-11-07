@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T17:14:57.000658+00:00",
-  "updated_at": "2026-11-07T17:36:15.364014+00:00",
+  "updated_at": "2026-11-07T17:36:33.678014+00:00",
   "items": [
     {
       "title": "پرسش درباره وضعیت و مصائب پس از شهادت حضرت زهرا",
@@ -45,16 +45,29 @@
       "sequence": 12,
       "updated_at": "2026-11-07T17:35:20.501394+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی شعری درباره جایگاه حضرت زهرا و دلیل خلقت دنیا",
+      "summary": "در این بخش کارشناس با اشاره به بیانی دربارۀ اسرار عاشورا و راز آفرینش، استدلال می‌کند که شناخت و درک مقام و قدر و منزلت حضرت زهرا تا روز محشر برای ما به طور کامل مقدور نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "editor_mode": "audio_grounded_topic",
+      "id": "42395287933-15",
+      "sequence": 15,
+      "updated_at": "2026-11-07T17:36:33.677994+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 16,
     "segments_transcribed": 13,
     "editor_attempts": 10,
-    "editor_withheld": 8,
-    "topics_published": 3,
-    "audio_ai_calls": 2,
-    "audio_ai_success": 2,
+    "editor_withheld": 9,
+    "topics_published": 4,
+    "audio_ai_calls": 3,
+    "audio_ai_success": 3,
     "last_audio_at": "2026-11-07T17:36:11.071511+00:00"
   }
 }
