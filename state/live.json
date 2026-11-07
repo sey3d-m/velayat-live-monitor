@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:03:53.575257+00:00",
+  "updated_at": "2026-11-07T16:04:22.569558+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره مرثیه‌خوانی و توصیف روضه‌های فاطمیه",
@@ -20,16 +20,29 @@
       "sequence": 4,
       "updated_at": "2026-11-07T16:01:57.469675+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی سرنوشت محبان متمرد از اوامر اهل‌بیت",
+      "summary": "در این بخش کارشناس استدلال می‌کند که به گفته فاطمه زهرا سلام‌الله‌علیها، شیعیان واقعی بهترین اهل بهشت هستند؛ اما کسانی که تنها محبت اهل‌بیت را دارند و از اوامر و نواهی اطاعت نمی‌کنند نیز در نهایت به آنان در بهشت ملحق خواهند شد، مشروط بر اینکه پیش از آن، سختی‌ها و بلاهای گوناگونی را در دنیا یا عرصه قیامت تحمل کنند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "42387811028-10",
+      "sequence": 10,
+      "updated_at": "2026-11-07T16:04:22.569530+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 10,
-    "segments_transcribed": 8,
-    "editor_attempts": 5,
-    "editor_withheld": 5,
-    "topics_published": 1,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
-    "last_audio_at": "2026-11-07T16:03:51.135253+00:00"
+    "segments_captured": 11,
+    "segments_transcribed": 9,
+    "editor_attempts": 6,
+    "editor_withheld": 6,
+    "topics_published": 2,
+    "audio_ai_calls": 2,
+    "audio_ai_success": 2,
+    "last_audio_at": "2026-11-07T16:04:10.605405+00:00"
   }
 }
