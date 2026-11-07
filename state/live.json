@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T17:14:57.000658+00:00",
-  "updated_at": "2026-11-07T17:47:27.915725+00:00",
+  "updated_at": "2026-11-07T17:47:29.135902+00:00",
   "items": [
-    {
-      "title": "بررسی شعری درباره جایگاه حضرت زهرا و دلیل خلقت دنیا",
-      "summary": "در این بخش کارشناس با اشاره به بیانی دربارۀ اسرار عاشورا و راز آفرینش، استدلال می‌کند که شناخت و درک مقام و قدر و منزلت حضرت زهرا تا روز محشر برای ما به طور کامل مقدور نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "editor_mode": "audio_grounded_topic",
-      "id": "42395287933-15",
-      "sequence": 15,
-      "updated_at": "2026-11-07T17:36:33.677994+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره آغاز بحث اول برنامه با حضور کارشناس",
       "summary": "در این بخش از برنامه، مجری از مخاطبان درخواست کرد نظرات و انتقادات خود را ارسال کنند و اعلام کرد که در بحث اول، گفت‌وگو با حضور استاد ارزشمند حجت‌الاسلام و المسلمین محمدی شاهرودی پیگیری می‌شود و به زودی نخستین تلفن برنامه نیز پاسخ داده خواهد شد.",
@@ -69,14 +56,27 @@
       "sequence": 40,
       "updated_at": "2026-11-07T17:46:21.565039+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره زیارت",
+      "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42395287933-43",
+      "sequence": 43,
+      "updated_at": "2026-11-07T17:47:29.135883+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 44,
     "segments_transcribed": 40,
     "editor_attempts": 36,
-    "editor_withheld": 31,
-    "topics_published": 8,
+    "editor_withheld": 32,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-07T17:47:21.956937+00:00"
