@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T14:14:45.252283+00:00",
-  "updated_at": "2026-11-07T15:23:35.344514+00:00",
+  "updated_at": "2026-11-07T15:24:24.140908+00:00",
   "items": [
     {
       "title": "پرسش درباره حکم شرعی خونریزی پس از جراحی",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 134,
-    "segments_transcribed": 119,
-    "editor_attempts": 112,
-    "editor_withheld": 106,
+    "segments_captured": 136,
+    "segments_transcribed": 121,
+    "editor_attempts": 114,
+    "editor_withheld": 108,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T15:23:25.838518+00:00"
+    "last_audio_at": "2026-11-07T15:24:14.799782+00:00"
   }
 }
