@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:22:20.382865+00:00",
+  "updated_at": "2026-11-07T16:22:46.334328+00:00",
   "items": [
-    {
-      "title": "پرسش درباره یاد کردن حضرت زهرا و آیه قرآن",
-      "summary": "در این بخش کارشناس به یاد کردن روزانه و پس از هر نماز حضرت فاطمه سلام‌الله‌علیها و تسبیحات ایشان اشاره می‌کند. همچنین آیه‌ای درباره فرزندان آدم و پرهیز از پرستش شیطان مطرح می‌شود که در این گفت‌وگو به آن استناد شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "42387811028-33",
-      "sequence": 33,
-      "updated_at": "2026-11-07T16:13:32.075270+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی بازگشت یهود به سرزمین فلسطین به عنوان علامت پایانی",
       "summary": "در این بخش کارشناس استدلال می‌کند که نخستین علامت از هفت علامت پایانی، بازگشت یهود به سرزمین فلسطین و اخراج مسلمین است؛ به گفته وی دوستان در جریان بحث این نشانه‌ها را مدنظر داشته باشند.",
@@ -67,16 +55,28 @@
       "sequence": 49,
       "updated_at": "2026-11-07T16:19:53.457854+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ادعای نقش جنگ صلیبی در آماده‌سازی ظهور مسیح",
+      "summary": "در این بخش کارشناس استدلال می‌کند که جریان‌های صلیبی جنگ با اسلام و نظام اسلامی را رسالت مقدس خود برای آماده‌سازی ظهور مسیح می‌دانند و به عنوان مسیحیان جنگجو عمل می‌کنند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42387811028-56",
+      "sequence": 56,
+      "updated_at": "2026-11-07T16:22:46.334300+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 56,
-    "segments_transcribed": 41,
-    "editor_attempts": 35,
-    "editor_withheld": 27,
-    "topics_published": 10,
+    "segments_captured": 57,
+    "segments_transcribed": 42,
+    "editor_attempts": 36,
+    "editor_withheld": 28,
+    "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:22:13.876518+00:00"
+    "last_audio_at": "2026-11-07T16:22:38.499529+00:00"
   }
 }
