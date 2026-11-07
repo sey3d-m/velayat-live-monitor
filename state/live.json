@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T17:05:31.150791+00:00",
+  "updated_at": "2026-11-07T17:05:56.559868+00:00",
   "items": [
-    {
-      "title": "بررسی قدم یازدهم در شناخت خدا و دعا",
-      "summary": "در این بخش کارشناس درباره قدم یازدهم استدلال می‌کند که این مرحله بسیار مهم است و به عمیق‌تر شدن شناخت فرد از خداوند و رابطه با او از طریق دعا و مناجات مربوط می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42387811028-141",
-      "sequence": 141,
-      "updated_at": "2026-11-07T16:56:41.627039+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره شیوه ادعایی تغییر دین فرزندان توسط مسیحیت صهیونیستی",
       "summary": "در این بخش کارشناس ادعا می‌کند که جریانی منتسب به مسیحیت صهیونیستی با استفاده از ظاهر اسلامی و استناد به قرآن و نهج‌البلاغه تلاش می‌کند طی دوازده قدم عقاید فرزندان را تغییر دهد و آن‌ها را از اسلام دور کند.",
@@ -68,16 +56,28 @@
       "sequence": 155,
       "updated_at": "2026-11-07T17:02:22.436347+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره ریشه همه حقایق در قرآن و روایات اهل‌بیت",
+      "summary": "در این بخش کارشناس استدلال می‌کند که هر حقیقتی در خانه محمد و آل محمد قرار دارد و پیام‌های برنامه در قرآن، روایات و دعای کمیل نیز آمده است؛ از این رو تأکید می‌شود که بهتر است انسان به همان منبع اصلی متصل شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42387811028-164",
+      "sequence": 164,
+      "updated_at": "2026-11-07T17:05:56.559845+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 164,
-    "segments_transcribed": 146,
-    "editor_attempts": 133,
-    "editor_withheld": 112,
-    "topics_published": 25,
+    "segments_captured": 165,
+    "segments_transcribed": 147,
+    "editor_attempts": 134,
+    "editor_withheld": 113,
+    "topics_published": 26,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T17:05:25.162316+00:00"
+    "last_audio_at": "2026-11-07T17:05:49.305342+00:00"
   }
 }
