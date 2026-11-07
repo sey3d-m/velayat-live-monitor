@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T17:14:57.000658+00:00",
-  "updated_at": "2026-11-07T18:16:16.337470+00:00",
+  "updated_at": "2026-11-07T18:17:06.019044+00:00",
   "items": [
     {
       "title": "پرسش درباره ترفند تفرقه‌افکنی دشمنان میان شیعه و سنی",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 116,
-    "segments_transcribed": 106,
-    "editor_attempts": 98,
-    "editor_withheld": 90,
+    "segments_captured": 118,
+    "segments_transcribed": 108,
+    "editor_attempts": 100,
+    "editor_withheld": 92,
     "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T18:16:11.188710+00:00"
+    "last_audio_at": "2026-11-07T18:17:00.329957+00:00"
   }
 }
