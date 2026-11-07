@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T17:05:56.559868+00:00",
+  "updated_at": "2026-11-07T17:06:20.727983+00:00",
   "items": [
     {
       "title": "پرسش درباره شیوه ادعایی تغییر دین فرزندان توسط مسیحیت صهیونیستی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 165,
-    "segments_transcribed": 147,
-    "editor_attempts": 134,
+    "segments_captured": 166,
+    "segments_transcribed": 148,
+    "editor_attempts": 135,
     "editor_withheld": 113,
     "topics_published": 26,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T17:05:49.305342+00:00"
+    "last_audio_at": "2026-11-07T17:06:14.529178+00:00"
   }
 }
