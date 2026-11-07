@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:12:00.306088+00:00",
+  "updated_at": "2026-11-07T16:12:24.365854+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره مرثیه‌خوانی و توصیف روضه‌های فاطمیه",
@@ -58,16 +58,28 @@
       "sequence": 29,
       "updated_at": "2026-11-07T16:12:00.306062+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی کیفیت شمارش و ترتیب تسبیحات پس از نماز",
+      "summary": "در این بخش کارشناس درباره کیفیت شمارش و ترتیب تسبیحات پس از نماز نکاتی را مطرح می‌کند. به گفته وی، این ذکرها شامل گفتن سی‌وچهار مرتبه الله اکبر، سی‌وسه‌ بار الحمدلله و سی‌وسه مرتبه سبحان‌الله است که به صورت آسان بیان می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42387811028-30",
+      "sequence": 30,
+      "updated_at": "2026-11-07T16:12:24.365827+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 30,
-    "segments_transcribed": 18,
-    "editor_attempts": 13,
+    "segments_captured": 31,
+    "segments_transcribed": 19,
+    "editor_attempts": 14,
     "editor_withheld": 12,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:11:50.134614+00:00"
+    "last_audio_at": "2026-11-07T16:12:14.343709+00:00"
   }
 }
