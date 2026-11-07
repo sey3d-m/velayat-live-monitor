@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T14:14:45.252283+00:00",
-  "updated_at": "2026-11-07T15:26:44.430749+00:00",
+  "updated_at": "2026-11-07T15:27:26.535825+00:00",
   "items": [
     {
       "title": "پرسش درباره تکلیف شرعی میتِ دارای قضا و خانه موروثی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 142,
-    "segments_transcribed": 126,
+    "segments_captured": 144,
+    "segments_transcribed": 127,
     "editor_attempts": 119,
-    "editor_withheld": 111,
+    "editor_withheld": 112,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T15:26:35.282528+00:00"
+    "last_audio_at": "2026-11-07T15:27:24.216099+00:00"
   }
 }
