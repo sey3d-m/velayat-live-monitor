@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "ended",
   "network": "velayat_farsi",
   "session": "42395287933",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T17:14:57.000658+00:00",
-  "updated_at": "2026-11-07T18:39:24.591641+00:00",
+  "updated_at": "2026-11-07T18:40:01.624059+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره امام زمان",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 174,
-    "segments_transcribed": 151,
-    "editor_attempts": 141,
-    "editor_withheld": 133,
+    "segments_captured": 175,
+    "segments_transcribed": 152,
+    "editor_attempts": 142,
+    "editor_withheld": 134,
     "topics_published": 17,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T18:39:24.530190+00:00"
+    "last_audio_at": "2026-11-07T18:39:49.713378+00:00"
   }
 }
