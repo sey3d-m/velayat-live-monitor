@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T17:14:57.000658+00:00",
-  "updated_at": "2026-11-07T17:32:45.362623+00:00",
+  "updated_at": "2026-11-07T17:33:09.429759+00:00",
   "items": [
     {
       "title": "پرسش درباره وضعیت و مصائب پس از شهادت حضرت زهرا",
@@ -35,13 +35,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 7,
-    "segments_transcribed": 6,
+    "segments_captured": 8,
+    "segments_transcribed": 7,
     "editor_attempts": 4,
     "editor_withheld": 3,
     "topics_published": 2,
     "audio_ai_calls": 1,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-07T17:32:39.126284+00:00"
+    "last_audio_at": "2026-11-07T17:33:05.361108+00:00"
   }
 }
