@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T17:14:57.000658+00:00",
-  "updated_at": "2026-11-07T17:50:45.243493+00:00",
+  "updated_at": "2026-11-07T17:51:07.753333+00:00",
   "items": [
-    {
-      "title": "بررسی ابعاد مخاطبان و ارکان پرسش و پاسخ",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که پاسخ به سؤال تنها مختص به گوینده نیست، بلکه به پرسشگر، شنونده و علاقه‌مندان نیز تعلق دارد. در گفت‌وگو به این نکته اشاره شد که ارکان این موضوع شامل چهار دسته از جمله سائل، مجیب و مستمع است که هر کدام سهمی در این روند دارند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42395287933-35",
-      "sequence": 35,
-      "updated_at": "2026-11-07T17:44:23.534524+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره ورود مسلم به کوفه و منزل مختار ثقفی",
       "summary": "در این بخش کارشناس استدلال می‌کند که مسلم بن عقیل پس از ورود به کوفه به منزل مختار ثقفی رفت و به خانه‌های دیگر بزرگان کوفه که در آن زمان حضور داشتند مراجعه نکرد، و در ادامه به وجود احادیثی در این زمینه اشاره می‌کند.",
@@ -68,16 +56,29 @@
       "sequence": 48,
       "updated_at": "2026-11-07T17:49:34.105789+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره احکام طهارت",
+      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42395287933-52",
+      "sequence": 52,
+      "updated_at": "2026-11-07T17:51:07.753309+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 52,
-    "segments_transcribed": 48,
-    "editor_attempts": 44,
-    "editor_withheld": 37,
-    "topics_published": 11,
+    "segments_captured": 53,
+    "segments_transcribed": 49,
+    "editor_attempts": 45,
+    "editor_withheld": 39,
+    "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T17:50:35.203989+00:00"
+    "last_audio_at": "2026-11-07T17:50:59.587458+00:00"
   }
 }
