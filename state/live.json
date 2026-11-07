@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:35:08.813242+00:00",
+  "updated_at": "2026-11-07T16:35:29.561633+00:00",
   "items": [
-    {
-      "title": "بررسی بازگشت یهود به سرزمین فلسطین به عنوان علامت پایانی",
-      "summary": "در این بخش کارشناس استدلال می‌کند که نخستین علامت از هفت علامت پایانی، بازگشت یهود به سرزمین فلسطین و اخراج مسلمین است؛ به گفته وی دوستان در جریان بحث این نشانه‌ها را مدنظر داشته باشند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42387811028-44",
-      "sequence": 44,
-      "updated_at": "2026-11-07T16:17:57.545188+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره اهداف و برنامه‌های دولت یهود در رونوشت",
       "summary": "در این بخش کارشناس درباره اهداف دولت یهود از نیل تا فرات و اشغال سرزمین‌های اسلامی سخن می‌گوید و به مواردی همچون بشارت انجیل و ساخت معبد یهودی اشاره می‌کند.",
@@ -67,16 +55,28 @@
       "sequence": 56,
       "updated_at": "2026-11-07T16:22:46.334300+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ابزار نفوذ فکری و روشنگری در برابر فریب",
+      "summary": "در این بخش کارشناس استدلال می‌کند که برای نجات از دام و فریب، نیازمند آگاهسازی و روشنگری هستیم. به گفته وی، مهم‌ترین بخش این آگاهسازی، معرفی ابزارهای نفوذ فکری است که از طریق آن‌ها در ذهن جوانان نفوذ می‌کنند؛ ابزارهایی که به گفته کارشناس با «اشک و آه» همراه است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42387811028-88",
+      "sequence": 88,
+      "updated_at": "2026-11-07T16:35:29.561609+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 88,
-    "segments_transcribed": 73,
-    "editor_attempts": 66,
-    "editor_withheld": 57,
-    "topics_published": 11,
+    "segments_captured": 89,
+    "segments_transcribed": 74,
+    "editor_attempts": 67,
+    "editor_withheld": 58,
+    "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:35:03.823395+00:00"
+    "last_audio_at": "2026-11-07T16:35:21.937544+00:00"
   }
 }
