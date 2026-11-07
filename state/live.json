@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T17:14:57.000658+00:00",
-  "updated_at": "2026-11-07T18:19:29.780711+00:00",
+  "updated_at": "2026-11-07T18:20:18.524539+00:00",
   "items": [
     {
       "title": "بررسی نظرات درباره هویت نفس زکیه و تطبیق نشانه‌های ظهور",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 124,
-    "segments_transcribed": 114,
-    "editor_attempts": 106,
+    "segments_captured": 126,
+    "segments_transcribed": 115,
+    "editor_attempts": 107,
     "editor_withheld": 99,
     "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T18:19:23.403378+00:00"
+    "last_audio_at": "2026-11-07T18:20:13.385899+00:00"
   }
 }
