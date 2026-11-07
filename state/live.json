@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:19:53.457879+00:00",
+  "updated_at": "2026-11-07T16:20:41.126848+00:00",
   "items": [
     {
       "title": "پرسش درباره یاد کردن حضرت زهرا و آیه قرآن",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 50,
-    "segments_transcribed": 35,
-    "editor_attempts": 29,
-    "editor_withheld": 22,
+    "segments_captured": 52,
+    "segments_transcribed": 37,
+    "editor_attempts": 31,
+    "editor_withheld": 23,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:19:45.841552+00:00"
+    "last_audio_at": "2026-11-07T16:20:35.516427+00:00"
   }
 }
