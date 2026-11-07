@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:48:47.022415+00:00",
+  "updated_at": "2026-11-07T16:49:26.354558+00:00",
   "items": [
     {
       "title": "بررسی ابزار نفوذ فکری و روشنگری در برابر فریب",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 122,
-    "segments_transcribed": 104,
-    "editor_attempts": 96,
-    "editor_withheld": 83,
+    "segments_captured": 124,
+    "segments_transcribed": 106,
+    "editor_attempts": 98,
+    "editor_withheld": 84,
     "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:48:39.286212+00:00"
+    "last_audio_at": "2026-11-07T16:49:21.862964+00:00"
   }
 }
