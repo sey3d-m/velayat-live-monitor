@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T14:14:45.252283+00:00",
-  "updated_at": "2026-11-07T15:21:06.964229+00:00",
+  "updated_at": "2026-11-07T15:21:33.045191+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره نماز",
-      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42380640452-68",
-      "sequence": 68,
-      "updated_at": "2026-11-07T14:57:32.024506+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره حکم شرعی خونریزی پس از جراحی",
       "summary": "در این بخش درباره حکم شرعی خونریزی ناشی از جراحی گفتگو شد. کارشناس استدلال می‌کند که این نوع خون جراحت معمولاً تا زمان بند آمدن ادامه دارد و نظر نهایی به تشخیص پزشک بستگی دارد و بهتر است در این زمینه از پزشک سوال شود.",
@@ -70,16 +57,28 @@
       "sequence": 100,
       "updated_at": "2026-11-07T15:10:21.503083+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره حکم فقهی پاک شدن خون داخل دهان",
+      "summary": "در این بخش، کارشناس درباره حکم فقهی خونی که وارد دهان می‌شود استدلال می‌کند که اگر خون از بین برود و با آب دهان مخلوط شود، فضای دهان پاک می‌شود و نیازی به آب کشیدن نیست؛ زیرا چیزی بیرون از دهان نیامده است، هرچند اصل نجاست در جای خود باقی است اما با از بین رفتن عین نجاست، دهان پاک محسوب می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42380640452-128",
+      "sequence": 128,
+      "updated_at": "2026-11-07T15:21:33.045168+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 128,
-    "segments_transcribed": 113,
-    "editor_attempts": 106,
-    "editor_withheld": 101,
-    "topics_published": 8,
+    "segments_captured": 129,
+    "segments_transcribed": 114,
+    "editor_attempts": 107,
+    "editor_withheld": 102,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T15:20:59.628658+00:00"
+    "last_audio_at": "2026-11-07T15:21:24.022231+00:00"
   }
 }
