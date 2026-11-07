@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:19:07.917473+00:00",
+  "updated_at": "2026-11-07T16:19:36.944659+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره نماز",
-      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42387811028-29",
-      "sequence": 29,
-      "updated_at": "2026-11-07T16:12:00.306062+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی کیفیت شمارش و ترتیب تسبیحات پس از نماز",
       "summary": "در این بخش کارشناس درباره کیفیت شمارش و ترتیب تسبیحات پس از نماز نکاتی را مطرح می‌کند. به گفته وی، این ذکرها شامل گفتن سی‌وچهار مرتبه الله اکبر، سی‌وسه‌ بار الحمدلله و سی‌وسه مرتبه سبحان‌الله است که به صورت آسان بیان می‌شود.",
@@ -68,16 +55,28 @@
       "sequence": 45,
       "updated_at": "2026-11-07T16:18:20.721133+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ادعای تلاش برای مسیحی‌سازی و مهار فکری جوانان مسلمان",
+      "summary": "در این بخش کارشناس استدلال می‌کند که طرح موضوعاتی مانند بشارت انجیل به ملل مختلف، در واقع تلاشی برای مسیحی‌سازی جوانان مسلمان یا دستکم مهار فکری آن‌هاست اگر نتوانند به‌طور کامل آن‌ها را از اسلام برگردانند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42387811028-48",
+      "sequence": 48,
+      "updated_at": "2026-11-07T16:19:36.944634+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 48,
-    "segments_transcribed": 33,
-    "editor_attempts": 27,
-    "editor_withheld": 21,
-    "topics_published": 8,
+    "segments_captured": 49,
+    "segments_transcribed": 34,
+    "editor_attempts": 28,
+    "editor_withheld": 22,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:19:02.580866+00:00"
+    "last_audio_at": "2026-11-07T16:19:27.910152+00:00"
   }
 }
