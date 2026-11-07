@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:57:06.909649+00:00",
+  "updated_at": "2026-11-07T16:57:29.640701+00:00",
   "items": [
     {
       "title": "پرسش درباره اعتراف به آزار و خطای نسبت به دیگران",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 143,
-    "segments_transcribed": 125,
-    "editor_attempts": 116,
+    "segments_captured": 144,
+    "segments_transcribed": 126,
+    "editor_attempts": 117,
     "editor_withheld": 98,
     "topics_published": 22,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:56:59.562548+00:00"
+    "last_audio_at": "2026-11-07T16:57:23.912632+00:00"
   }
 }
