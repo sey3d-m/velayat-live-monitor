@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:56:41.627059+00:00",
+  "updated_at": "2026-11-07T16:57:06.909649+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره تربیت و اخلاق",
-      "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42387811028-125",
-      "sequence": 125,
-      "updated_at": "2026-11-07T16:50:18.539163+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره اعتراف به آزار و خطای نسبت به دیگران",
       "summary": "در این بخش کارشناس استدلال می‌کند که انسان باید اعتراف کند اگر رنج، آزار یا خطایی نسبت به خود، همسر، پدر، مادر، فرزند یا دیگران در محل کار ایجاد کرده است. در این گفت‌وگو به لزوم اعتراف به این خطاها اشاره شد.",
@@ -68,16 +55,28 @@
       "sequence": 141,
       "updated_at": "2026-11-07T16:56:41.627039+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره شیوه ادعایی تغییر دین فرزندان توسط مسیحیت صهیونیستی",
+      "summary": "در این بخش کارشناس ادعا می‌کند که جریانی منتسب به مسیحیت صهیونیستی با استفاده از ظاهر اسلامی و استناد به قرآن و نهج‌البلاغه تلاش می‌کند طی دوازده قدم عقاید فرزندان را تغییر دهد و آن‌ها را از اسلام دور کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42387811028-142",
+      "sequence": 142,
+      "updated_at": "2026-11-07T16:57:06.909624+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 142,
-    "segments_transcribed": 124,
-    "editor_attempts": 115,
+    "segments_captured": 143,
+    "segments_transcribed": 125,
+    "editor_attempts": 116,
     "editor_withheld": 98,
-    "topics_published": 21,
+    "topics_published": 22,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:56:34.845456+00:00"
+    "last_audio_at": "2026-11-07T16:56:59.562548+00:00"
   }
 }
