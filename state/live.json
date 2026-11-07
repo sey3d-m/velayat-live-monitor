@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:45:35.989474+00:00",
+  "updated_at": "2026-11-07T16:46:17.925718+00:00",
   "items": [
     {
       "title": "بررسی ادعای تلاش برای مسیحی‌سازی و مهار فکری جوانان مسلمان",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 114,
-    "segments_transcribed": 96,
-    "editor_attempts": 88,
-    "editor_withheld": 77,
+    "segments_captured": 116,
+    "segments_transcribed": 98,
+    "editor_attempts": 90,
+    "editor_withheld": 79,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:45:24.475106+00:00"
+    "last_audio_at": "2026-11-07T16:46:12.659011+00:00"
   }
 }
