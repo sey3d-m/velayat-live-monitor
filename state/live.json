@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T14:14:45.252283+00:00",
-  "updated_at": "2026-11-07T14:43:31.628213+00:00",
+  "updated_at": "2026-11-07T14:44:01.998436+00:00",
   "items": [
     {
       "title": "پرسش درباره امید به پیروزی به برکت حضرت فاطمه معصومه",
@@ -19,16 +19,28 @@
       "sequence": 19,
       "updated_at": "2026-11-07T14:38:05.109929+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره حکم فراموشی سجده و تشهد پیش از سجده سهو",
+      "summary": "در این بخش، کارشناس به پرسشی درباره لزوم خواندن سجده و تشهد فراموش‌شده پیش از انجام سجده سهو پاسخ می‌دهد. همچنین در ادامه، پرسش دیگری درباره وضعیت یکی از همسران و مراجعه به پزشک مطرح می‌شود که متن نامفهوم و ناقص است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42380640452-34",
+      "sequence": 34,
+      "updated_at": "2026-11-07T14:44:01.998377+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 34,
-    "segments_transcribed": 23,
-    "editor_attempts": 21,
-    "editor_withheld": 19,
-    "topics_published": 1,
+    "segments_captured": 35,
+    "segments_transcribed": 24,
+    "editor_attempts": 22,
+    "editor_withheld": 20,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T14:43:25.274993+00:00"
+    "last_audio_at": "2026-11-07T14:43:49.658205+00:00"
   }
 }
