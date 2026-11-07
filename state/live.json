@@ -1,84 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "42387811028",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "42395287933",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-07",
-  "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T17:10:05.537306+00:00",
-  "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42387811028-143",
-      "sequence": 143,
-      "updated_at": "2026-11-07T16:57:30.686434+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره روند خروج از دین و افتادن در دام اعتیاد زائران",
-      "summary": "در این بخش کارشناس درباره نحوه فاصله گرفتن جوانان مذهبی و زائران امام حسین (ع) از دین و افتادن آنان در دام اعتیاد سخن می‌گوید. وی استدلال می‌کند که این روند به‌گونه‌ای رخ می‌دهد که فرد متوجه خروج خود از دین نمی‌شود و این آسیب در گام‌های نخست و با اجازه خود شخص آغاز می‌گردد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42387811028-144",
-      "sequence": 144,
-      "updated_at": "2026-11-07T16:57:56.414356+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی تبلیغ مسیحیت تبشیری و موضوع اعتیاد",
-      "summary": "در این بخش کارشناس ادعا می‌کند جریان‌های مسیحی تندرو در ایران اسلامی با معرفی عیسی مسیح به عنوان تنها ناجی انسان از اعتیاد و با استفاده از این موضوع، به دنبال تبلیغ دین خود هستند. به گفته وی، از ترک اعتیاد به عنوان خبری خوش یاد می‌شود و مرور تاریخچه فعالیت این گروه‌ها ابعاد سوءاستفاده آن‌ها از این مسئله را روشن می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42387811028-155",
-      "sequence": 155,
-      "updated_at": "2026-11-07T17:02:22.436347+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره ریشه همه حقایق در قرآن و روایات اهل‌بیت",
-      "summary": "در این بخش کارشناس استدلال می‌کند که هر حقیقتی در خانه محمد و آل محمد قرار دارد و پیام‌های برنامه در قرآن، روایات و دعای کمیل نیز آمده است؛ از این رو تأکید می‌شود که بهتر است انسان به همان منبع اصلی متصل شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42387811028-164",
-      "sequence": 164,
-      "updated_at": "2026-11-07T17:05:56.559845+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره روزه",
-      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42387811028-173",
-      "sequence": 173,
-      "updated_at": "2026-11-07T17:09:30.973840+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-07T17:14:57.000658+00:00",
+  "updated_at": "2026-11-07T17:30:00.000313+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 155,
-    "editor_attempts": 142,
-    "editor_withheld": 121,
-    "topics_published": 27,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T17:09:47.982598+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
