@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T17:01:28.611862+00:00",
+  "updated_at": "2026-11-07T17:02:20.467667+00:00",
   "items": [
     {
       "title": "پرسش درباره تأثیر گناه بر کرامت نفس",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 154,
-    "segments_transcribed": 136,
-    "editor_attempts": 123,
-    "editor_withheld": 104,
+    "segments_captured": 156,
+    "segments_transcribed": 138,
+    "editor_attempts": 125,
+    "editor_withheld": 105,
     "topics_published": 24,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T17:01:25.254381+00:00"
+    "last_audio_at": "2026-11-07T17:02:14.880125+00:00"
   }
 }
