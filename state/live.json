@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:11:07.611405+00:00",
+  "updated_at": "2026-11-07T16:11:34.137400+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره مرثیه‌خوانی و توصیف روضه‌های فاطمیه",
@@ -33,16 +33,28 @@
       "sequence": 10,
       "updated_at": "2026-11-07T16:04:22.569530+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره هدیه پیامبر به حضرت فاطمه",
+      "summary": "در این بخش کارشناس درباره هدیه پیامبر اسلام به حضرت فاطمه زهرا سلام‌الله‌علیها پرسش مطرح می‌کند و با اشاره به اینکه هدیه از جنس لباس یا اشیاء معمول نبوده، در ادامه به تسبیح حضرت فاطمه اشاره می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42387811028-28",
+      "sequence": 28,
+      "updated_at": "2026-11-07T16:11:34.137380+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 28,
-    "segments_transcribed": 16,
-    "editor_attempts": 11,
-    "editor_withheld": 10,
-    "topics_published": 2,
+    "segments_captured": 29,
+    "segments_transcribed": 17,
+    "editor_attempts": 12,
+    "editor_withheld": 11,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:11:03.505807+00:00"
+    "last_audio_at": "2026-11-07T16:11:25.638986+00:00"
   }
 }
