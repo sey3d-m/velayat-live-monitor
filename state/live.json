@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T14:14:45.252283+00:00",
-  "updated_at": "2026-11-07T14:50:40.572483+00:00",
+  "updated_at": "2026-11-07T14:50:42.648894+00:00",
   "items": [
     {
       "title": "پرسش درباره امید به پیروزی به برکت حضرت فاطمه معصومه",
@@ -31,14 +31,27 @@
       "sequence": 34,
       "updated_at": "2026-11-07T14:44:01.998377+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خانواده و ازدواج",
+      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42380640452-51",
+      "sequence": 51,
+      "updated_at": "2026-11-07T14:50:42.648868+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 52,
     "segments_transcribed": 41,
     "editor_attempts": 38,
-    "editor_withheld": 35,
-    "topics_published": 2,
+    "editor_withheld": 36,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-07T14:50:33.969780+00:00"
