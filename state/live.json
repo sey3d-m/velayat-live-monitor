@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T14:14:45.252283+00:00",
-  "updated_at": "2026-11-07T15:05:10.144672+00:00",
+  "updated_at": "2026-11-07T15:05:30.586497+00:00",
   "items": [
     {
       "title": "پرسش درباره امید به پیروزی به برکت حضرت فاطمه معصومه",
@@ -57,16 +57,28 @@
       "sequence": 68,
       "updated_at": "2026-11-07T14:57:32.024506+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره حکم شرعی خونریزی پس از جراحی",
+      "summary": "در این بخش درباره حکم شرعی خونریزی ناشی از جراحی گفتگو شد. کارشناس استدلال می‌کند که این نوع خون جراحت معمولاً تا زمان بند آمدن ادامه دارد و نظر نهایی به تشخیص پزشک بستگی دارد و بهتر است در این زمینه از پزشک سوال شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42380640452-88",
+      "sequence": 88,
+      "updated_at": "2026-11-07T15:05:30.586473+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 88,
-    "segments_transcribed": 73,
-    "editor_attempts": 68,
-    "editor_withheld": 65,
-    "topics_published": 4,
+    "segments_captured": 89,
+    "segments_transcribed": 74,
+    "editor_attempts": 69,
+    "editor_withheld": 66,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T15:05:03.477618+00:00"
+    "last_audio_at": "2026-11-07T15:05:22.199982+00:00"
   }
 }
