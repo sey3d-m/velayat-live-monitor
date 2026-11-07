@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T17:02:22.436373+00:00",
+  "updated_at": "2026-11-07T17:03:03.687867+00:00",
   "items": [
     {
       "title": "بررسی قدم یازدهم در شناخت خدا و دعا",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 156,
-    "segments_transcribed": 138,
-    "editor_attempts": 125,
-    "editor_withheld": 105,
+    "segments_captured": 158,
+    "segments_transcribed": 140,
+    "editor_attempts": 127,
+    "editor_withheld": 106,
     "topics_published": 25,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T17:02:14.880125+00:00"
+    "last_audio_at": "2026-11-07T17:02:57.649505+00:00"
   }
 }
