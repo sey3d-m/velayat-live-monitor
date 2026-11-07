@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:27:53.347192+00:00",
+  "updated_at": "2026-11-07T16:29:02.796238+00:00",
   "items": [
     {
       "title": "بررسی بازگشت یهود به سرزمین فلسطین به عنوان علامت پایانی",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 70,
-    "segments_transcribed": 55,
-    "editor_attempts": 48,
-    "editor_withheld": 39,
+    "segments_captured": 72,
+    "segments_transcribed": 57,
+    "editor_attempts": 50,
+    "editor_withheld": 41,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:27:47.968602+00:00"
+    "last_audio_at": "2026-11-07T16:28:37.417017+00:00"
   }
 }
