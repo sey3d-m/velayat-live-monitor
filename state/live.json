@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:36:41.353609+00:00",
+  "updated_at": "2026-11-07T16:37:30.603545+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره اهداف و برنامه‌های دولت یهود در رونوشت",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 92,
-    "segments_transcribed": 77,
-    "editor_attempts": 70,
-    "editor_withheld": 60,
+    "segments_captured": 94,
+    "segments_transcribed": 79,
+    "editor_attempts": 72,
+    "editor_withheld": 62,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:36:35.982117+00:00"
+    "last_audio_at": "2026-11-07T16:37:25.793472+00:00"
   }
 }
