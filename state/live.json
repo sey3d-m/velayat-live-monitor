@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:05:29.876215+00:00",
+  "updated_at": "2026-11-07T16:06:18.316994+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره مرثیه‌خوانی و توصیف روضه‌های فاطمیه",
@@ -36,13 +36,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 14,
-    "segments_transcribed": 11,
-    "editor_attempts": 8,
-    "editor_withheld": 7,
+    "segments_captured": 16,
+    "segments_transcribed": 13,
+    "editor_attempts": 9,
+    "editor_withheld": 9,
     "topics_published": 2,
-    "audio_ai_calls": 2,
-    "audio_ai_success": 2,
-    "last_audio_at": "2026-11-07T16:05:24.433162+00:00"
+    "audio_ai_calls": 3,
+    "audio_ai_success": 3,
+    "last_audio_at": "2026-11-07T16:06:14.184142+00:00"
   }
 }
