@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "42387811028",
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:01:27.151016+00:00",
-  "items": [],
+  "updated_at": "2026-11-07T16:01:57.469701+00:00",
+  "items": [
+    {
+      "title": "گفت‌وگو درباره مرثیه‌خوانی و توصیف روضه‌های فاطمیه",
+      "summary": "در این بخش کارشناس با اشاره به نقل‌قول‌های عاطفی و مرثیه‌خوانی درباره مصائب حضرت زهرا سلام‌الله‌علیها، بر اساس متن رونوشت به ذکر مصائب کوچه و آسیب دیدن ایشان پرداخته و به گفته وی این توصیفات در قالب روضه بیان شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "42387811028-4",
+      "sequence": 4,
+      "updated_at": "2026-11-07T16:01:57.469675+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 4,
-    "segments_transcribed": 3,
-    "editor_attempts": 2,
-    "editor_withheld": 2,
-    "topics_published": 0,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
-    "last_audio_at": "2026-11-07T16:01:23.514138+00:00"
+    "segments_captured": 5,
+    "segments_transcribed": 4,
+    "editor_attempts": 3,
+    "editor_withheld": 3,
+    "topics_published": 1,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
+    "last_audio_at": "2026-11-07T16:01:48.153721+00:00"
   }
 }
