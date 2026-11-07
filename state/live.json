@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:48:15.273017+00:00",
+  "updated_at": "2026-11-07T16:48:45.749301+00:00",
   "items": [
     {
       "title": "بررسی ادعای نقش جنگ صلیبی در آماده‌سازی ظهور مسیح",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 120,
-    "segments_transcribed": 102,
-    "editor_attempts": 94,
-    "editor_withheld": 81,
+    "segments_captured": 122,
+    "segments_transcribed": 104,
+    "editor_attempts": 96,
+    "editor_withheld": 83,
     "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:47:50.573064+00:00"
+    "last_audio_at": "2026-11-07T16:48:39.286212+00:00"
   }
 }
