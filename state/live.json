@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:17:29.864563+00:00",
+  "updated_at": "2026-11-07T16:17:57.545212+00:00",
   "items": [
-    {
-      "title": "بررسی سرنوشت محبان متمرد از اوامر اهل‌بیت",
-      "summary": "در این بخش کارشناس استدلال می‌کند که به گفته فاطمه زهرا سلام‌الله‌علیها، شیعیان واقعی بهترین اهل بهشت هستند؛ اما کسانی که تنها محبت اهل‌بیت را دارند و از اوامر و نواهی اطاعت نمی‌کنند نیز در نهایت به آنان در بهشت ملحق خواهند شد، مشروط بر اینکه پیش از آن، سختی‌ها و بلاهای گوناگونی را در دنیا یا عرصه قیامت تحمل کنند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "editor_mode": "audio_grounded_topic",
-      "id": "42387811028-10",
-      "sequence": 10,
-      "updated_at": "2026-11-07T16:04:22.569530+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره هدیه پیامبر به حضرت فاطمه",
       "summary": "در این بخش کارشناس درباره هدیه پیامبر اسلام به حضرت فاطمه زهرا سلام‌الله‌علیها پرسش مطرح می‌کند و با اشاره به اینکه هدیه از جنس لباس یا اشیاء معمول نبوده، در ادامه به تسبیح حضرت فاطمه اشاره می‌کند.",
@@ -69,16 +56,28 @@
       "sequence": 33,
       "updated_at": "2026-11-07T16:13:32.075270+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی بازگشت یهود به سرزمین فلسطین به عنوان علامت پایانی",
+      "summary": "در این بخش کارشناس استدلال می‌کند که نخستین علامت از هفت علامت پایانی، بازگشت یهود به سرزمین فلسطین و اخراج مسلمین است؛ به گفته وی دوستان در جریان بحث این نشانه‌ها را مدنظر داشته باشند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42387811028-44",
+      "sequence": 44,
+      "updated_at": "2026-11-07T16:17:57.545188+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 44,
-    "segments_transcribed": 29,
-    "editor_attempts": 23,
-    "editor_withheld": 19,
-    "topics_published": 6,
+    "segments_captured": 45,
+    "segments_transcribed": 30,
+    "editor_attempts": 24,
+    "editor_withheld": 20,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:17:25.137062+00:00"
+    "last_audio_at": "2026-11-07T16:17:50.002394+00:00"
   }
 }
