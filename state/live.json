@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T17:14:57.000658+00:00",
-  "updated_at": "2026-11-07T17:46:02.175072+00:00",
+  "updated_at": "2026-11-07T17:46:21.565064+00:00",
   "items": [
-    {
-      "title": "بررسی میزان شناخت مقام حضرت زهرا در سخنان کارشناس",
-      "summary": "در این بخش کارشناس استدلال می‌کند که حتی پس از گذشت هزاران سال، انسان‌ها شناخت درستی از حقیقت وجودی آن حضرت ندارند و معرفت ما به غیر از نام و نشان‌های ظاهری محدود است؛ به‌گونه‌ای که به گفته وی، از حقیقت آن مقام به غیر از نام و برخی حروف چیزی درک نمی‌کنیم.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "editor_mode": "audio_grounded_topic",
-      "id": "42395287933-12",
-      "sequence": 12,
-      "updated_at": "2026-11-07T17:35:20.501394+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی شعری درباره جایگاه حضرت زهرا و دلیل خلقت دنیا",
       "summary": "در این بخش کارشناس با اشاره به بیانی دربارۀ اسرار عاشورا و راز آفرینش، استدلال می‌کند که شناخت و درک مقام و قدر و منزلت حضرت زهرا تا روز محشر برای ما به طور کامل مقدور نیست.",
@@ -70,16 +57,28 @@
       "sequence": 35,
       "updated_at": "2026-11-07T17:44:23.534524+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره ورود مسلم به کوفه و منزل مختار ثقفی",
+      "summary": "در این بخش کارشناس استدلال می‌کند که مسلم بن عقیل پس از ورود به کوفه به منزل مختار ثقفی رفت و به خانه‌های دیگر بزرگان کوفه که در آن زمان حضور داشتند مراجعه نکرد، و در ادامه به وجود احادیثی در این زمینه اشاره می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42395287933-40",
+      "sequence": 40,
+      "updated_at": "2026-11-07T17:46:21.565039+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 40,
-    "segments_transcribed": 36,
-    "editor_attempts": 32,
-    "editor_withheld": 28,
-    "topics_published": 7,
+    "segments_captured": 41,
+    "segments_transcribed": 37,
+    "editor_attempts": 33,
+    "editor_withheld": 29,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T17:45:49.253722+00:00"
+    "last_audio_at": "2026-11-07T17:46:14.264509+00:00"
   }
 }
