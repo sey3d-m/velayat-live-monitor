@@ -1,21 +1,21 @@
 {
   "version": 1,
-  "status": "starting",
+  "status": "reviewing",
   "network": "velayat_farsi",
   "session": "42380640452",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T14:14:45.252283+00:00",
-  "updated_at": "2026-11-07T14:30:00.000388+00:00",
+  "updated_at": "2026-11-07T14:30:36.495758+00:00",
   "items": [],
   "progress": {
-    "segments_captured": 0,
-    "segments_transcribed": 0,
-    "editor_attempts": 0,
-    "editor_withheld": 0,
+    "segments_captured": 2,
+    "segments_transcribed": 1,
+    "editor_attempts": 1,
+    "editor_withheld": 1,
     "topics_published": 0,
     "audio_ai_calls": 0,
     "audio_ai_success": 0,
-    "last_audio_at": null
+    "last_audio_at": "2026-11-07T14:30:33.591363+00:00"
   }
 }
