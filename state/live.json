@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T14:14:45.252283+00:00",
-  "updated_at": "2026-11-07T14:55:34.315894+00:00",
+  "updated_at": "2026-11-07T14:56:28.206325+00:00",
   "items": [
     {
       "title": "پرسش درباره امید به پیروزی به برکت حضرت فاطمه معصومه",
@@ -47,13 +47,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 64,
-    "segments_transcribed": 49,
-    "editor_attempts": 44,
-    "editor_withheld": 42,
+    "segments_captured": 66,
+    "segments_transcribed": 51,
+    "editor_attempts": 46,
+    "editor_withheld": 43,
     "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T14:55:28.610804+00:00"
+    "last_audio_at": "2026-11-07T14:56:10.570888+00:00"
   }
 }
