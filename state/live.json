@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:53:29.527125+00:00",
+  "updated_at": "2026-11-07T16:54:18.360852+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره چرخه تکرار و عدم موفقیت در ترک اعتیاد",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 134,
-    "segments_transcribed": 116,
-    "editor_attempts": 108,
-    "editor_withheld": 92,
+    "segments_captured": 136,
+    "segments_transcribed": 118,
+    "editor_attempts": 110,
+    "editor_withheld": 94,
     "topics_published": 19,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:53:22.908443+00:00"
+    "last_audio_at": "2026-11-07T16:54:11.954771+00:00"
   }
 }
