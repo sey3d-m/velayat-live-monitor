@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T15:44:53.383239+00:00",
-  "updated_at": "2026-11-07T16:55:57.953869+00:00",
+  "updated_at": "2026-11-07T16:56:40.692616+00:00",
   "items": [
     {
       "title": "پرسش درباره هماهنگی کتب آسمانی و ارائه دوازده قدمه",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 140,
-    "segments_transcribed": 122,
-    "editor_attempts": 113,
-    "editor_withheld": 96,
+    "segments_captured": 142,
+    "segments_transcribed": 124,
+    "editor_attempts": 115,
+    "editor_withheld": 98,
     "topics_published": 20,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T16:55:51.237113+00:00"
+    "last_audio_at": "2026-11-07T16:56:34.845456+00:00"
   }
 }
