@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T17:14:57.000658+00:00",
-  "updated_at": "2026-11-07T17:46:21.565064+00:00",
+  "updated_at": "2026-11-07T17:46:44.759308+00:00",
   "items": [
     {
       "title": "بررسی شعری درباره جایگاه حضرت زهرا و دلیل خلقت دنیا",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 41,
-    "segments_transcribed": 37,
-    "editor_attempts": 33,
+    "segments_captured": 42,
+    "segments_transcribed": 38,
+    "editor_attempts": 34,
     "editor_withheld": 29,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T17:46:14.264509+00:00"
+    "last_audio_at": "2026-11-07T17:46:38.649741+00:00"
   }
 }
