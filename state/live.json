@@ -1,83 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "42380640452",
-  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "session": "42387811028",
+  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-07",
-  "started_at": "2026-11-07T14:14:45.252283+00:00",
-  "updated_at": "2026-11-07T15:40:03.549892+00:00",
-  "items": [
-    {
-      "title": "گفت‌وگو درباره خمس و زکات",
-      "summary": "در این بخش از برنامه، موضوع «خمس و زکات» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42380640452-100",
-      "sequence": 100,
-      "updated_at": "2026-11-07T15:10:21.503083+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره حکم فقهی پاک شدن خون داخل دهان",
-      "summary": "در این بخش، کارشناس درباره حکم فقهی خونی که وارد دهان می‌شود استدلال می‌کند که اگر خون از بین برود و با آب دهان مخلوط شود، فضای دهان پاک می‌شود و نیازی به آب کشیدن نیست؛ زیرا چیزی بیرون از دهان نیامده است، هرچند اصل نجاست در جای خود باقی است اما با از بین رفتن عین نجاست، دهان پاک محسوب می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42380640452-128",
-      "sequence": 128,
-      "updated_at": "2026-11-07T15:21:33.045168+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره تعلق خمس به زمین و درآمد آن تا زمان فروش",
-      "summary": "در این بخش کارشناس درباره تعلق خمس به زمین و درآمدهای حاصل از آن پاسخ می‌دهد. به گفته کارشناس، تا زمانی که زمین‌های مورد بحث به فروش نرسند، نیازی به پرداخت خمس خودِ زمین نیست؛ اما درآمد حاصل از آن زمین، مشابه سایر درآمدها، در سر سال خمسی باید خمس آن پرداخت شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42380640452-135",
-      "sequence": 135,
-      "updated_at": "2026-11-07T15:24:27.245541+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره محاسبه خمس و وضعیت نسیه مشتریان",
-      "summary": "در این بخش درباره لزوم محاسبه خمس در سر سال خمسی و وضعیت اموالی که به صورت نسیه در دست مشتریان است، پرسش شد. کارشناس استدلال می‌کند که اگرچه برخی مطالبات نقد نیست و مشتریان هنوز پول را پرداخت نکرده‌اند، اما به گفته وی، اصل محاسبه خمس در سر سال نباید نادیده گرفته شود و مخاطب و فرد پرسشگر نیز خمس را محاسبه نکرده‌اند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42380640452-139",
-      "sequence": 139,
-      "updated_at": "2026-11-07T15:25:54.613889+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی توصیف کارشناس از پایداری دل‌ها به یاد علی مرتضی در مسیر کاروان",
-      "summary": "در این بخش، کارشناس توصیف می‌کند که چگونه با وجود لرزش بدن زنان کاروان و اضطراب دل‌هایشان در مواجهه با تهدید بستن راه، دلش به یاد علی و خدای علی آرام بوده است؛ همچنین از ایستادن علی مرتضی بر سراب کوه و فریاد کشیدن او یاد می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42380640452-151",
-      "sequence": 151,
-      "updated_at": "2026-11-07T15:30:40.902936+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-07T15:44:53.383239+00:00",
+  "updated_at": "2026-11-07T16:00:00.000335+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 152,
-    "editor_attempts": 143,
-    "editor_withheld": 135,
-    "topics_published": 12,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T15:39:46.264230+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
