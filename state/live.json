@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T14:14:45.252283+00:00",
-  "updated_at": "2026-11-07T15:07:34.580828+00:00",
+  "updated_at": "2026-11-07T15:07:35.590166+00:00",
   "items": [
-    {
-      "title": "پرسش درباره امید به پیروزی به برکت حضرت فاطمه معصومه",
-      "summary": "در این بخش کارشناس ابراز امیدواری می‌کند که به برکت حضرت فاطمه معصومه سلام‌الله‌علیها، کشور به پیروزی کامل در برابر جبهه کفار، اسرائیل جنایت‌کار و آمریکا برسد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42380640452-19",
-      "sequence": 19,
-      "updated_at": "2026-11-07T14:38:05.109929+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره حکم فراموشی سجده و تشهد پیش از سجده سهو",
       "summary": "در این بخش، کارشناس به پرسشی درباره لزوم خواندن سجده و تشهد فراموش‌شده پیش از انجام سجده سهو پاسخ می‌دهد. همچنین در ادامه، پرسش دیگری درباره وضعیت یکی از همسران و مراجعه به پزشک مطرح می‌شود که متن نامفهوم و ناقص است.",
@@ -69,14 +57,27 @@
       "sequence": 88,
       "updated_at": "2026-11-07T15:05:30.586473+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره روزه",
+      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42380640452-93",
+      "sequence": 93,
+      "updated_at": "2026-11-07T15:07:35.590147+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 94,
     "segments_transcribed": 79,
     "editor_attempts": 74,
-    "editor_withheld": 70,
-    "topics_published": 5,
+    "editor_withheld": 71,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-07T15:07:23.887076+00:00"
