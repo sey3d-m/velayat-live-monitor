@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T17:14:57.000658+00:00",
-  "updated_at": "2026-11-07T17:39:33.134294+00:00",
+  "updated_at": "2026-11-07T17:39:55.038621+00:00",
   "items": [
-    {
-      "title": "پرسش درباره وضعیت و مصائب پس از شهادت حضرت زهرا",
-      "summary": "در این بخش، کارشناس درباره مصائب و وضعیت دشوار پس از شهادت حضرت زهرا (س) سخن می‌گوید و با اشاره به تعابیری مانند زخم‌های تن و گریه شبانه، ادعا می‌کند که زندگی پس از آن حضرت عذاب‌آور بوده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "editor_mode": "audio_grounded_topic",
-      "id": "42395287933-4",
-      "sequence": 4,
-      "updated_at": "2026-11-07T17:32:19.968950+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره رویا و مشاهدات مرتبط با شهادت حضرت زهرا",
       "summary": "در این بخش کارشناس با اشاره به نقل رویایی درباره حوادث صدر اسلام، از مشاهدات مربوط به جراحات و مصائب حضرت زهرا سخن می‌گوید و به نقل رویدادهای کوچه و ستم‌های واردشده می‌پردازد.",
@@ -70,16 +57,29 @@
       "sequence": 18,
       "updated_at": "2026-11-07T17:37:33.890256+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره حدیث و روایت",
+      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42395287933-24",
+      "sequence": 24,
+      "updated_at": "2026-11-07T17:39:55.038598+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 24,
-    "segments_transcribed": 20,
-    "editor_attempts": 17,
-    "editor_withheld": 14,
-    "topics_published": 5,
+    "segments_captured": 25,
+    "segments_transcribed": 21,
+    "editor_attempts": 18,
+    "editor_withheld": 16,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T17:39:23.327955+00:00"
+    "last_audio_at": "2026-11-07T17:39:48.401811+00:00"
   }
 }
