@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-07",
   "started_at": "2026-11-07T17:14:57.000658+00:00",
-  "updated_at": "2026-11-07T17:47:29.135902+00:00",
+  "updated_at": "2026-11-07T17:48:20.649719+00:00",
   "items": [
     {
       "title": "پرسش درباره آغاز بحث اول برنامه با حضور کارشناس",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 44,
-    "segments_transcribed": 40,
-    "editor_attempts": 36,
-    "editor_withheld": 32,
+    "segments_captured": 46,
+    "segments_transcribed": 42,
+    "editor_attempts": 38,
+    "editor_withheld": 33,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-07T17:47:21.956937+00:00"
+    "last_audio_at": "2026-11-07T17:48:11.678794+00:00"
   }
 }
