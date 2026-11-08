@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T14:14:42.788481+00:00",
-  "updated_at": "2026-11-08T15:02:43.408998+00:00",
+  "updated_at": "2026-11-08T15:03:32.434351+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره حضور مردمی در دفاع بر اساس اظهارات فرمانده سپاه",
@@ -60,13 +60,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 82,
-    "segments_transcribed": 76,
-    "editor_attempts": 72,
-    "editor_withheld": 69,
+    "segments_captured": 84,
+    "segments_transcribed": 78,
+    "editor_attempts": 73,
+    "editor_withheld": 70,
     "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-08T15:02:39.820000+00:00"
+    "last_audio_at": "2026-11-08T15:03:28.831060+00:00"
   }
 }
