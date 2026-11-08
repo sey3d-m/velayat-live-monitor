@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "docs"
 TARGET = ROOT / "_wilai_public"
-ATLAS_ALLOWED = re.compile(r"^[a-zA-Z0-9._-]+\\.(?:html|css|js|json)$")
+ATLAS_FILES = {"index.html", "atlas-pro.css", "atlas-pro.js", "overrides.json"}
 DATA_ALLOWED = re.compile(r"^(?:index|content-index|archive-20[0-9]{2}|content-20[0-9]{2})\\.json$")
 
 
@@ -41,8 +41,7 @@ def build() -> dict[str, int]:
                 raise ValueError(f"Unexpected archive path: {name}")
             selected.add(name)
 
-    atlas_files = [p for p in atlas.iterdir() if p.is_file() and
-                   ATLAS_ALLOWED.fullmatch(p.name)]
+    atlas_files = [atlas / name for name in sorted(ATLAS_FILES)]
     if not atlas_files:
         raise ValueError("No Atlas assets found")
     for name in selected:
