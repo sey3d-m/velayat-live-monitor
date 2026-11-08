@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T15:44:58.466597+00:00",
-  "updated_at": "2026-11-08T16:17:31.526252+00:00",
+  "updated_at": "2026-11-08T16:17:58.531542+00:00",
   "items": [
-    {
-      "title": "بررسی انتخاب گلواژه و کلیدواژه از نهج‌البلاغه در برنامه بیان امیر",
-      "summary": "در این بخش کارشناس اشاره می‌کند که در چند برنامه اخیر «بیان امیر»، یک گلواژه و کلیدواژه از نهج‌البلاغه انتخاب شده و مورد بحث قرار می‌گیرد. به گفته کارشناس، این واژه‌ها از میان سطور و کلمات نهج‌البلاغه برای استفاده در برنامه‌ها گزینش شده‌اند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "editor_mode": "audio_grounded_topic",
-      "id": "42496308925-11",
-      "sequence": 11,
-      "updated_at": "2026-11-08T16:04:49.061487+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره وظیفه حفظ و اصلاح جامعه",
       "summary": "در این بخش کارشناس استدلال می‌کند که افراد جامعه به آن دسترسی دارند و در آن زندگی می‌کنند، بنابراین باید برای حفظ و بهتر شدن آن تلاش کنند. همچنین به دیدگاه افرادی اشاره می‌شود که از اصلاح جامعه ناامیدند و بر این باورند که غلبه باطل زیاد است.",
@@ -72,16 +59,28 @@
       "sequence": 32,
       "updated_at": "2026-11-08T16:13:06.887672+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره پیروی از هدایت پیامبر و بیم از هجوم و اسارت",
+      "summary": "در این بخش کارشناس استدلال می‌کند که اگر هدایت نزد پیامبر (ص) پیروی شود، بیم آن می‌رود که مکه حمله کرده، افراد را اسیر کند و اموال، فرزندان و زنان را به تاراج ببرد. این دغدغه‌ها به عنوان پرسش و ادعای مطرح‌شده در گفتار بررسی شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42496308925-44",
+      "sequence": 44,
+      "updated_at": "2026-11-08T16:17:58.531518+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 44,
-    "segments_transcribed": 41,
-    "editor_attempts": 38,
-    "editor_withheld": 36,
-    "topics_published": 7,
+    "segments_captured": 45,
+    "segments_transcribed": 42,
+    "editor_attempts": 39,
+    "editor_withheld": 37,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T16:17:27.193355+00:00"
+    "last_audio_at": "2026-11-08T16:17:52.618790+00:00"
   }
 }
