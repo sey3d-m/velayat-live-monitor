@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T15:44:58.466597+00:00",
-  "updated_at": "2026-11-08T16:21:33.735127+00:00",
+  "updated_at": "2026-11-08T16:22:15.879691+00:00",
   "items": [
     {
       "title": "پرسش درباره وظیفه حفظ و اصلاح جامعه",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 54,
-    "segments_transcribed": 51,
-    "editor_attempts": 48,
-    "editor_withheld": 45,
+    "segments_captured": 56,
+    "segments_transcribed": 53,
+    "editor_attempts": 49,
+    "editor_withheld": 46,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T16:21:29.733975+00:00"
+    "last_audio_at": "2026-11-08T16:22:12.681002+00:00"
   }
 }
