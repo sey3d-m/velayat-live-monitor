@@ -1,0 +1,79 @@
+name: WilAI | Publish public Atlas via FTPS (manual)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wilai-ftps-public-site
+  cancel-in-progress: false
+
+jobs:
+  deploy-public:
+    if: ${{ vars.WILAI_FTPS_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    environment: wilai-production
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Validate deployment settings
+        shell: bash
+        env:
+          FTPS_HOST: ${{ secrets.WILAI_FTPS_HOST }}
+          FTPS_USER: ${{ secrets.WILAI_FTPS_USER }}
+          FTPS_PASSWORD: ${{ secrets.WILAI_FTPS_PASSWORD }}
+          REMOTE_DIR: ${{ vars.WILAI_FTPS_REMOTE_DIR }}
+        run: |
+          set -euo pipefail
+          for name in FTPS_HOST FTPS_USER FTPS_PASSWORD REMOTE_DIR; do
+            if [ -z "${!name}" ]; then
+              echo "::error::Missing WilAI configuration: $name"
+              exit 1
+            fi
+          done
+          if [[ "$REMOTE_DIR" == / || "$REMOTE_DIR" == . || "$REMOTE_DIR" == .. ]]; then
+            echo "::error::Refusing ambiguous remote deployment directory."
+            exit 1
+          fi
+
+      - name: Package only previously public Atlas files
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p _wilai_public/atlas _wilai_public/data
+          cp -a docs/atlas/. _wilai_public/atlas/
+          cp -a docs/data/. _wilai_public/data/
+          test -s _wilai_public/atlas/index.html
+          test -s _wilai_public/data/index.json
+          # No transcript artifacts, credentials, internal research or private datasets.
+
+      - name: Install FTPS client
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Upload without deleting remote files
+        shell: bash
+        env:
+          FTPS_HOST: ${{ secrets.WILAI_FTPS_HOST }}
+          FTPS_USER: ${{ secrets.WILAI_FTPS_USER }}
+          FTPS_PASSWORD: ${{ secrets.WILAI_FTPS_PASSWORD }}
+          REMOTE_DIR: ${{ vars.WILAI_FTPS_REMOTE_DIR }}
+          FTPS_PORT: ${{ vars.WILAI_FTPS_PORT }}
+        run: |
+          set -euo pipefail
+          FTPS_PORT="${FTPS_PORT:-21}"
+          # FTPS explicit TLS on port 21. Certificate validation stays enabled.
+          lftp -u "$FTPS_USER","$FTPS_PASSWORD" -p "$FTPS_PORT" "ftp://$FTPS_HOST" <<LFTP
+          set cmd:fail-exit yes
+          set ftp:ssl-allow yes
+          set ftp:ssl-force yes
+          set ftp:ssl-protect-data yes
+          set ftp:ssl-auth TLS
+          set ssl:verify-certificate yes
+          set net:max-retries 2
+          set net:timeout 20
+          mirror -R --verbose --no-perms _wilai_public "$REMOTE_DIR"
+          bye
+          LFTP
