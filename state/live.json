@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T15:44:58.466597+00:00",
-  "updated_at": "2026-11-08T16:04:45.745928+00:00",
+  "updated_at": "2026-11-08T16:04:49.061512+00:00",
   "items": [
     {
       "title": "بررسی سیره و قوت امام علی (ع) در بیان کارشناس",
@@ -32,16 +32,29 @@
       "sequence": 8,
       "updated_at": "2026-11-08T16:03:32.512691+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی انتخاب گلواژه و کلیدواژه از نهج‌البلاغه در برنامه بیان امیر",
+      "summary": "در این بخش کارشناس اشاره می‌کند که در چند برنامه اخیر «بیان امیر»، یک گلواژه و کلیدواژه از نهج‌البلاغه انتخاب شده و مورد بحث قرار می‌گیرد. به گفته کارشناس، این واژه‌ها از میان سطور و کلمات نهج‌البلاغه برای استفاده در برنامه‌ها گزینش شده‌اند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "editor_mode": "audio_grounded_topic",
+      "id": "42496308925-11",
+      "sequence": 11,
+      "updated_at": "2026-11-08T16:04:49.061487+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 12,
     "segments_transcribed": 9,
     "editor_attempts": 7,
-    "editor_withheld": 5,
-    "topics_published": 2,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
+    "editor_withheld": 6,
+    "topics_published": 3,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
     "last_audio_at": "2026-11-08T16:04:41.809415+00:00"
   }
 }
