@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T17:14:41.251798+00:00",
-  "updated_at": "2026-11-08T17:50:46.664933+00:00",
+  "updated_at": "2026-11-08T17:51:10.155369+00:00",
   "items": [
-    {
-      "title": "پرسش درباره انطباق لیلة القدر بر فاطمه زهرا در استدلال کارشناس",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که آیه «انا انزلناه فی لیلة مبارکة» به نازل شدن قرآن در شب قدر اشاره دارد و با استناد به اینکه لیلة القدر فاطمه زهرا است، ظرف و وعاء قرآن کریم محسوب می‌شود؛ بنابراین، نزول قرآن در این شب به معنای ارتباط آن با فاطمه زهرا بیان شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42503929693-31",
-      "sequence": 31,
-      "updated_at": "2026-11-08T17:42:42.184077+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره استدلال خطبه فدکیه در اثبات ایمان",
       "summary": "در این بخش کارشناس استدلال می‌کند که حضرت زهرا سلام‌الله‌علیها در خطبه فدکیه و در مقام دفاع از حق غصب‌شده، برای اثبات ایمان ومسلمان بودن خود، ابتدا به مباحث توحید و معارف الهی می‌پردازد.",
@@ -68,16 +56,28 @@
       "sequence": 47,
       "updated_at": "2026-11-08T17:49:05.072230+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی مرجع ضمیر در آیه مبارکه و ارتباط آن با شب قدر",
+      "summary": "در این بخش، کارشناс درباره مرجع ضمیر در عبارت «فیها یفرق کل امر حکیم» استدلال می‌کند که ضمیر به «لیله» یعنی شب قدر بازمی‌گردد و عنوان می‌کند که این شب مبارکه به همین خاطر اهمیت دارد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42503929693-52",
+      "sequence": 52,
+      "updated_at": "2026-11-08T17:51:10.155350+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 52,
-    "segments_transcribed": 49,
-    "editor_attempts": 43,
-    "editor_withheld": 36,
-    "topics_published": 8,
+    "segments_captured": 53,
+    "segments_transcribed": 50,
+    "editor_attempts": 44,
+    "editor_withheld": 37,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T17:50:41.149627+00:00"
+    "last_audio_at": "2026-11-08T17:51:06.773300+00:00"
   }
 }
