@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T15:44:58.466597+00:00",
-  "updated_at": "2026-11-08T16:07:18.780852+00:00",
+  "updated_at": "2026-11-08T16:07:22.957818+00:00",
   "items": [
     {
       "title": "بررسی سیره و قوت امام علی (ع) در بیان کارشناس",
@@ -58,16 +58,29 @@
       "sequence": 14,
       "updated_at": "2026-11-08T16:05:57.808553+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی محوریت اهل‌بیت در دورهمی‌ها برای زندگی متعالی",
+      "summary": "در این بخش کارشناس استدلال می‌کند که مسابقه فوتبال یا دورهمی‌های معمولی جایگاه خود را دارند، اما آنچه به انسان برای داشتن زندگی متعالی و گرایش به معنویت کمک می‌کند این است که آن دورهمی و جمع باید حتماً بر محور اهل‌بیت شکل گرفته باشد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "42496308925-17",
+      "sequence": 17,
+      "updated_at": "2026-11-08T16:07:22.957792+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 18,
     "segments_transcribed": 15,
     "editor_attempts": 13,
-    "editor_withheld": 11,
-    "topics_published": 4,
-    "audio_ai_calls": 2,
-    "audio_ai_success": 2,
+    "editor_withheld": 12,
+    "topics_published": 5,
+    "audio_ai_calls": 3,
+    "audio_ai_success": 3,
     "last_audio_at": "2026-11-08T16:07:03.312141+00:00"
   }
 }
