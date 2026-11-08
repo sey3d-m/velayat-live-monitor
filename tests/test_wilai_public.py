@@ -24,6 +24,9 @@ class PublicPackageTest(unittest.TestCase):
         (self.docs / "wilai" / "index.html").write_text("Home", encoding="utf-8")
         (self.docs / "atlas" / "index.html").write_text("Atlas", encoding="utf-8")
         (self.docs / "atlas" / "atlas-pro.js").write_text("//public", encoding="utf-8")
+        (self.docs / "atlas" / "atlas-pro.css").write_text("body{}", encoding="utf-8")
+        (self.docs / "atlas" / "overrides.json").write_text('{"schema":1}', encoding="utf-8")
+        (self.docs / "atlas" / "private.json").write_text('{"not_public":true}', encoding="utf-8")
         (self.docs / "atlas" / ".env").write_text("DONT_COPY", encoding="utf-8")
         (self.docs / "data" / "private.json").write_text('{"secret":true}', encoding="utf-8")
         self.write_index([{"path": "archive-2026.json"}])
@@ -50,6 +53,7 @@ class PublicPackageTest(unittest.TestCase):
         self.assertTrue((builder.TARGET / "atlas" / "atlas-pro.js").is_file())
         self.assertFalse((builder.TARGET / "data" / "private.json").exists())
         self.assertFalse((builder.TARGET / "atlas" / ".env").exists())
+        self.assertFalse((builder.TARGET / "atlas" / "private.json").exists())
 
     def test_reject_unexpected_archive_path(self):
         self.write_index([{"path": "../private.json"}])
