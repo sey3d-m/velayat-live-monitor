@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "ended",
   "network": "velayat_farsi",
   "session": "42488800989",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T14:14:42.788481+00:00",
-  "updated_at": "2026-11-08T15:39:29.297909+00:00",
+  "updated_at": "2026-11-08T15:40:02.561830+00:00",
   "items": [
     {
       "title": "بررسی توانمندی نظامی و آمادگی ایران در صورت وقوع جنگ",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 174,
-    "segments_transcribed": 163,
-    "editor_attempts": 154,
-    "editor_withheld": 144,
+    "segments_captured": 175,
+    "segments_transcribed": 164,
+    "editor_attempts": 155,
+    "editor_withheld": 146,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-08T15:39:26.634627+00:00"
+    "last_audio_at": "2026-11-08T15:39:50.485147+00:00"
   }
 }
