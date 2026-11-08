@@ -32,9 +32,9 @@ body:before{position:fixed;content:"";inset:0;z-index:-1;pointer-events:none;bac
 <script>
 'use strict';
 const BASE='https://sey3d-m.github.io/velayat-live-monitor/data/';
-const LOCAL_PREFIX=(location.protocol==='http:'||location.protocol==='https:'||location.protocol==='file:')?new URL('../data/',location.href).href:BASE;
-const IS_DEPLOYED=/sey3d-m\.github\.io\/velayat-live-monitor\//i.test(location.href);
-const DATA_BASE=(location.protocol==='file:'||!IS_DEPLOYED)?BASE:LOCAL_PREFIX;
+// On a deployed site, always read the adjacent local data directory;
+// file:// previews continue to use the existing GitHub Pages public archive.
+const DATA_BASE=location.protocol==='file:'?BASE:new URL('../data/',location.href).href;
 const GENERIC_TAGS=new Set(['شبکه_جهانی_ولایت','شبکه_ولایت','ولایت','برنامه_زنده','شبکه_ولایت_فارسی','velayat','persian','فاطمیه']);
 const MAX_EDGES=48, $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
 let programs=[],content=[],indexInfo={},contentInfo={},sourceError='',currentProgram='',currentEpisode='',currentTopic=-1,activeNode='',search='',filterShow='',viewMode='program',pan={x:0,y:0,scale:.81},graphNodes=[],graphEdges=[],graphDrag=null,photos=loadPhotos(),lastSync=null,lastFetch=0,cacheSnapshot=null;
