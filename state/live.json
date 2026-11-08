@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T17:14:41.251798+00:00",
-  "updated_at": "2026-11-08T18:08:15.073003+00:00",
+  "updated_at": "2026-11-08T18:08:16.231282+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42503929693-42",
-      "sequence": 42,
-      "updated_at": "2026-11-08T17:47:07.867879+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی استدلال کارشناس درباره مالکیت فدک و پذیرش آن",
       "summary": "در گفت‌وگو درباره مالکیت فدک، کارشناس استدلال می‌کند که فدک به دستور خدا به فاطمه زهرا (س) واگذار شده بود، اما مخالفان به این موضوع اشاره نمی‌کنند؛ چرا که به گفته وی، آن‌ها این مسئله را مانند موضوع ولایت و خلافت امیرالمؤمنین (ع) نمی‌پذیرند.",
@@ -68,14 +55,27 @@
       "sequence": 91,
       "updated_at": "2026-11-08T18:06:44.789093+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره ولایت و غدیر",
+      "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42503929693-95",
+      "sequence": 95,
+      "updated_at": "2026-11-08T18:08:16.231260+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 96,
     "segments_transcribed": 92,
     "editor_attempts": 79,
-    "editor_withheld": 70,
-    "topics_published": 10,
+    "editor_withheld": 71,
+    "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-08T18:08:12.424472+00:00"
