@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T17:14:41.251798+00:00",
-  "updated_at": "2026-11-08T17:42:40.667092+00:00",
+  "updated_at": "2026-11-08T17:42:42.184100+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره ابعاد شخصیتی فرادینی حضرت فاطمه (س)",
@@ -44,6 +44,18 @@
       "sequence": 29,
       "updated_at": "2026-11-08T17:41:51.770790+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره انطباق لیلة القدر بر فاطمه زهرا در استدلال کارشناس",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که آیه «انا انزلناه فی لیلة مبارکة» به نازل شدن قرآن در شب قدر اشاره دارد و با استناد به اینکه لیلة القدر فاطمه زهرا است، ظرف و وعاء قرآن کریم محسوب می‌شود؛ بنابراین، نزول قرآن در این شب به معنای ارتباط آن با فاطمه زهرا بیان شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42503929693-31",
+      "sequence": 31,
+      "updated_at": "2026-11-08T17:42:42.184077+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -51,7 +63,7 @@
     "segments_transcribed": 29,
     "editor_attempts": 26,
     "editor_withheld": 23,
-    "topics_published": 3,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-08T17:42:38.334961+00:00"
