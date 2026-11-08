@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T14:14:42.788481+00:00",
-  "updated_at": "2026-11-08T15:27:32.156613+00:00",
+  "updated_at": "2026-11-08T15:27:33.257861+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره نماز",
-      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42488800989-43",
-      "sequence": 43,
-      "updated_at": "2026-11-08T14:47:31.433796+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره زیارت",
       "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,6 +56,18 @@
       "sequence": 124,
       "updated_at": "2026-11-08T15:19:56.220594+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی توانمندی نظامی و آمادگی ایران در صورت وقوع جنگ",
+      "summary": "در این بخش کارشناس استدلال می‌کند که ایران با داشتن قدرت نظامی، هم‌پیمانان منطقه‌ای و ذخایر گوناگون، قدرتمند است و دچار افول نشده است. بر اساس گفته کارشناس، اگر جنگی آغاز شود، کشور با توجه به تجربیاتی که تا کنون پشت سر گذاشته است، مطیع نخواهد بود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42488800989-143",
+      "sequence": 143,
+      "updated_at": "2026-11-08T15:27:33.257838+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -76,7 +75,7 @@
     "segments_transcribed": 134,
     "editor_attempts": 126,
     "editor_withheld": 121,
-    "topics_published": 6,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
     "last_audio_at": "2026-11-08T15:27:28.692014+00:00"
