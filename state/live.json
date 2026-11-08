@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T17:14:41.251798+00:00",
-  "updated_at": "2026-11-08T18:29:53.686989+00:00",
+  "updated_at": "2026-11-08T18:30:20.995220+00:00",
   "items": [
-    {
-      "title": "بررسی مرجع ضمیر در آیه مبارکه و ارتباط آن با شب قدر",
-      "summary": "در این بخش، کارشناс درباره مرجع ضمیر در عبارت «فیها یفرق کل امر حکیم» استدلال می‌کند که ضمیر به «لیله» یعنی شب قدر بازمی‌گردد و عنوان می‌کند که این شب مبارکه به همین خاطر اهمیت دارد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42503929693-52",
-      "sequence": 52,
-      "updated_at": "2026-11-08T17:51:10.155350+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره روایت معیار حق و باطل در محاوره کارشناس",
       "summary": "در این بخش، کارشناس استدلال کرد که شخصیتی فاروق و فاتح بودن حق و باطل تا روز قیامت است و در ا඼ن زم඼نه به روایتٞ موجود در کتاب‌هایی مانند بخاری اشاره کرد.",
@@ -68,16 +56,28 @@
       "sequence": 100,
       "updated_at": "2026-11-08T18:10:18.134747+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی چگونگی جمع‌آوری قرآن در عصر پیامبر",
+      "summary": "در این بخش کارشناس استدلال می‌کند که قرآن کریم در زمان پیامبر اکرم به صورت کتاب جمع‌آوری شده بود و مأموریت امیرمؤمنان علیه‌السلام مرتب کردن قرآنی بود که به املای پیامبر و کتابت آن حضرت نوشته و ثبت شده بود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42503929693-150",
+      "sequence": 150,
+      "updated_at": "2026-11-08T18:30:20.995187+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 150,
-    "segments_transcribed": 145,
-    "editor_attempts": 122,
-    "editor_withheld": 111,
-    "topics_published": 13,
+    "segments_captured": 151,
+    "segments_transcribed": 146,
+    "editor_attempts": 123,
+    "editor_withheld": 112,
+    "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T18:29:51.004299+00:00"
+    "last_audio_at": "2026-11-08T18:30:16.924178+00:00"
   }
 }
