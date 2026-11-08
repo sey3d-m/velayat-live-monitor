@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T17:14:41.251798+00:00",
-  "updated_at": "2026-11-08T18:07:30.961436+00:00",
+  "updated_at": "2026-11-08T18:08:15.073003+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 94,
-    "segments_transcribed": 90,
-    "editor_attempts": 77,
-    "editor_withheld": 68,
+    "segments_captured": 96,
+    "segments_transcribed": 92,
+    "editor_attempts": 79,
+    "editor_withheld": 70,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T18:07:28.564250+00:00"
+    "last_audio_at": "2026-11-08T18:08:12.424472+00:00"
   }
 }
