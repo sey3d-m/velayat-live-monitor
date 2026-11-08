@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T15:44:58.466597+00:00",
-  "updated_at": "2026-11-08T16:43:07.630207+00:00",
+  "updated_at": "2026-11-08T16:43:35.699610+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره نماز",
-      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42496308925-32",
-      "sequence": 32,
-      "updated_at": "2026-11-08T16:13:06.887672+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره پیروی از هدایت پیامبر و بیم از هجوم و اسارت",
       "summary": "در این بخش کارشناس استدلال می‌کند که اگر هدایت نزد پیامبر (ص) پیروی شود، بیم آن می‌رود که مکه حمله کرده، افراد را اسیر کند و اموال، فرزندان و زنان را به تاراج ببرد. این دغدغه‌ها به عنوان پرسش و ادعای مطرح‌شده در گفتار بررسی شد.",
@@ -68,16 +55,28 @@
       "sequence": 74,
       "updated_at": "2026-11-08T16:29:57.385887+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ماجرای تعقیب متخلف سیاسی در محله بنی‌اسد",
+      "summary": "در این بخش، کارشناس درباره نحوه پیگرد و دستگیری یک متخلف سیاسی توسط نیروهای امیرالمؤمنین استدلال می‌کند. به گفته وی، فرد مذکور که از سران قبیله بنی‌اسد بوده، پس از تعقیب در محله مربوطه شناسایی و در جریان عملیات دستگیر شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42496308925-108",
+      "sequence": 108,
+      "updated_at": "2026-11-08T16:43:35.699588+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 108,
-    "segments_transcribed": 104,
-    "editor_attempts": 97,
-    "editor_withheld": 91,
-    "topics_published": 11,
+    "segments_captured": 109,
+    "segments_transcribed": 105,
+    "editor_attempts": 98,
+    "editor_withheld": 92,
+    "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T16:43:05.039060+00:00"
+    "last_audio_at": "2026-11-08T16:43:29.649224+00:00"
   }
 }
