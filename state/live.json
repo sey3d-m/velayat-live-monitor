@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T14:14:42.788481+00:00",
-  "updated_at": "2026-11-08T15:37:08.776976+00:00",
+  "updated_at": "2026-11-08T15:37:56.130153+00:00",
   "items": [
     {
       "title": "بررسی تحولات سوریه و اقدامات اسرائیل",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 168,
-    "segments_transcribed": 157,
-    "editor_attempts": 148,
-    "editor_withheld": 140,
+    "segments_captured": 170,
+    "segments_transcribed": 159,
+    "editor_attempts": 150,
+    "editor_withheld": 141,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-08T15:37:04.164192+00:00"
+    "last_audio_at": "2026-11-08T15:37:53.704907+00:00"
   }
 }
