@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "42496308925",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "42503929693",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-08",
-  "started_at": "2026-11-08T15:44:58.466597+00:00",
-  "updated_at": "2026-11-08T17:10:02.178889+00:00",
-  "items": [
-    {
-      "title": "بررسی معنای واژه بطر در قرآن کریم",
-      "summary": "در این بخش، کارشناس درباره معنای واژه «بطر» در قرآن استدلال می‌کند و بر اساس آیاتی که به هلاکت آبادی‌ها اشاره دارد، بیان می‌کند که بطر به معنای سرکشی کردن و ناسپاسی در برابر امکانات و معیشتی است که خداوند به انسان‌ها اعطا کرده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42496308925-55",
-      "sequence": 55,
-      "updated_at": "2026-11-08T16:22:17.038674+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره مفهوم هدایت و نور معرفت در آیه قرآن",
-      "summary": "در این بخش، کارشناس درباره معنای هدایت و تابش انوار معرفت در آیه مطرح‌شده سخن می‌گوید و استدلال می‌کند که هنگام هجوم موانع، انسان بی‌دفاع نیست و با این موهبت حفظ می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42496308925-58",
-      "sequence": 58,
-      "updated_at": "2026-11-08T16:23:32.930767+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی نگرانی از آینده و از دست رفتن زمان حال",
-      "summary": "در این بخش کارشناس استدلال می‌کند که بسیاری از نگرانی‌ها و ترس‌ها درباره اتفاقات آینده هرگز رخ نمی‌دهند، اما انسان با تفکر درباره آن‌ها، آرامش و زمان امروز خود را از دست می‌دهد. به گفته وی، تمرکز بر این ترس‌ها موجب تباهی زمان حال می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42496308925-74",
-      "sequence": 74,
-      "updated_at": "2026-11-08T16:29:57.385887+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی ماجرای تعقیب متخلف سیاسی در محله بنی‌اسد",
-      "summary": "در این بخش، کارشناس درباره نحوه پیگرد و دستگیری یک متخلف سیاسی توسط نیروهای امیرالمؤمنین استدلال می‌کند. به گفته وی، فرد مذکور که از سران قبیله بنی‌اسد بوده، پس از تعقیب در محله مربوطه شناسایی و در جریان عملیات دستگیر شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42496308925-108",
-      "sequence": 108,
-      "updated_at": "2026-11-08T16:43:35.699588+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره پوشش تصویری فعالیت موکب‌ها در شبکه ولایت",
-      "summary": "در این بخش کارشناس برنامه به حضور و فعالیت موکب‌ها اشاره می‌کند و بیان می‌کند که توفیقی حاصل شده تا همکاران شبکه از طریق قاب شیشه‌ای تلویزیون، گوشه‌ای از ارادت‌ها و نوکری در موکب‌ها را به تصویر کشیده و جلوی دیدگان بینندگان قرار دهند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42496308925-143",
-      "sequence": 143,
-      "updated_at": "2026-11-08T16:57:31.782813+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-08T17:14:41.251798+00:00",
+  "updated_at": "2026-11-08T17:30:00.000265+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 168,
-    "editor_attempts": 152,
-    "editor_withheld": 145,
-    "topics_published": 13,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T17:09:50.277787+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
