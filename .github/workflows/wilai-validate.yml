@@ -1,0 +1,39 @@
+name: WilAI | Validate public deployment package
+
+on:
+  pull_request:
+    paths:
+      - 'docs/atlas/**'
+      - 'docs/data/**'
+      - 'docs/wilai/**'
+      - 'scripts/build_wilai_public.py'
+      - 'tests/test_wilai_public.py'
+      - '.github/workflows/wilai-*.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run public package safety tests
+        run: python -m unittest discover -s tests -p 'test_wilai_public.py' -v
+      - name: Build the site package
+        run: python scripts/build_wilai_public.py
+      - name: Validate public site entry points
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s _wilai_public/index.html
+          test -s _wilai_public/atlas/index.html
+          test -s _wilai_public/data/index.json
+          if find _wilai_public -type f | grep -E '/(private|secret|transcript|\.env)' ; then
+            echo 'Unexpected restricted file in public package'
+            exit 1
+          fi
