@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T15:44:58.466597+00:00",
-  "updated_at": "2026-11-08T16:23:07.139991+00:00",
+  "updated_at": "2026-11-08T16:23:32.930791+00:00",
   "items": [
-    {
-      "title": "بررسی محوریت اهل‌بیت در دورهمی‌ها برای زندگی متعالی",
-      "summary": "در این بخش کارشناس استدلال می‌کند که مسابقه فوتبال یا دورهمی‌های معمولی جایگاه خود را دارند، اما آنچه به انسان برای داشتن زندگی متعالی و گرایش به معنویت کمک می‌کند این است که آن دورهمی و جمع باید حتماً بر محور اهل‌بیت شکل گرفته باشد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "editor_mode": "audio_grounded_topic",
-      "id": "42496308925-17",
-      "sequence": 17,
-      "updated_at": "2026-11-08T16:07:22.957792+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره زیارت",
       "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +57,28 @@
       "sequence": 55,
       "updated_at": "2026-11-08T16:22:17.038674+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره مفهوم هدایت و نور معرفت در آیه قرآن",
+      "summary": "در این بخش، کارشناس درباره معنای هدایت و تابش انوار معرفت در آیه مطرح‌شده سخن می‌گوید و استدلال می‌کند که هنگام هجوم موانع، انسان بی‌دفاع نیست و با این موهبت حفظ می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42496308925-58",
+      "sequence": 58,
+      "updated_at": "2026-11-08T16:23:32.930767+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 58,
-    "segments_transcribed": 55,
-    "editor_attempts": 51,
-    "editor_withheld": 47,
-    "topics_published": 9,
+    "segments_captured": 59,
+    "segments_transcribed": 56,
+    "editor_attempts": 52,
+    "editor_withheld": 48,
+    "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T16:23:02.925381+00:00"
+    "last_audio_at": "2026-11-08T16:23:27.457539+00:00"
   }
 }
