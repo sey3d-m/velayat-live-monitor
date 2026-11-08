@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T14:14:42.788481+00:00",
-  "updated_at": "2026-11-08T15:34:44.284281+00:00",
+  "updated_at": "2026-11-08T15:35:27.084375+00:00",
   "items": [
     {
       "title": "بررسی ادعای انتقال شکاف‌ها به درون ساختار رژیم مقابل",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 162,
-    "segments_transcribed": 151,
-    "editor_attempts": 142,
-    "editor_withheld": 135,
+    "segments_captured": 164,
+    "segments_transcribed": 153,
+    "editor_attempts": 144,
+    "editor_withheld": 137,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-08T15:34:41.727371+00:00"
+    "last_audio_at": "2026-11-08T15:35:24.274604+00:00"
   }
 }
