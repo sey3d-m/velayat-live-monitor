@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T17:14:41.251798+00:00",
-  "updated_at": "2026-11-08T17:46:41.822822+00:00",
+  "updated_at": "2026-11-08T17:47:07.867908+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره ابعاد شخصیتی فرادینی حضرت فاطمه (س)",
-      "summary": "در این بخش کارشناس استدلال می‌کند که وجود حضرت فاطمه (س) به گونه‌ای است که حتی دشمنان خود را نیز وادار به اعتراف درباره شخصیت ایشان می‌کند. به گفته کارشناس، شخصیت این بانوی بزرگوار فرادینی، فرادتاریخی، فرادجغرافیایی و فراتر از جهان است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42503929693-2",
-      "sequence": 2,
-      "updated_at": "2026-11-08T17:31:09.263354+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره توصیف جایگاه و مقام معنوی در شعر خوانی",
       "summary": "در این بخش، کارشناس در قالب شعر به توصیف جایگاه معنوی پرداخته و ادعا می‌کند که پیشانی عرش ازلی و مرتبه قنبر درگاه با رتبه آدم مقایسه شده است؛ همچنین به ذکر صلوات و سلام الهی اشاره می‌شود.",
@@ -68,16 +56,29 @@
       "sequence": 38,
       "updated_at": "2026-11-08T17:45:28.593988+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42503929693-42",
+      "sequence": 42,
+      "updated_at": "2026-11-08T17:47:07.867879+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 42,
-    "segments_transcribed": 39,
-    "editor_attempts": 33,
-    "editor_withheld": 29,
-    "topics_published": 5,
+    "segments_captured": 43,
+    "segments_transcribed": 40,
+    "editor_attempts": 34,
+    "editor_withheld": 30,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T17:46:39.851376+00:00"
+    "last_audio_at": "2026-11-08T17:47:04.151490+00:00"
   }
 }
