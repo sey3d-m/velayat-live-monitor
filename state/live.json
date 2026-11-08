@@ -1,21 +1,34 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "42503929693",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T17:14:41.251798+00:00",
-  "updated_at": "2026-11-08T17:30:42.754153+00:00",
-  "items": [],
+  "updated_at": "2026-11-08T17:31:09.263380+00:00",
+  "items": [
+    {
+      "title": "گفت‌وگو درباره ابعاد شخصیتی فرادینی حضرت فاطمه (س)",
+      "summary": "در این بخش کارشناس استدلال می‌کند که وجود حضرت فاطمه (س) به گونه‌ای است که حتی دشمنان خود را نیز وادار به اعتراف درباره شخصیت ایشان می‌کند. به گفته کارشناس، شخصیت این بانوی بزرگوار فرادینی، فرادتاریخی، فرادجغرافیایی و فراتر از جهان است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42503929693-2",
+      "sequence": 2,
+      "updated_at": "2026-11-08T17:31:09.263354+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 2,
-    "segments_transcribed": 2,
-    "editor_attempts": 2,
-    "editor_withheld": 1,
-    "topics_published": 0,
+    "segments_captured": 3,
+    "segments_transcribed": 3,
+    "editor_attempts": 3,
+    "editor_withheld": 2,
+    "topics_published": 1,
     "audio_ai_calls": 0,
     "audio_ai_success": 0,
-    "last_audio_at": "2026-11-08T17:30:40.160863+00:00"
+    "last_audio_at": "2026-11-08T17:31:04.945188+00:00"
   }
 }
