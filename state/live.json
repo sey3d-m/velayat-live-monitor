@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T14:14:42.788481+00:00",
-  "updated_at": "2026-11-08T15:35:28.310905+00:00",
+  "updated_at": "2026-11-08T15:36:23.245483+00:00",
   "items": [
     {
       "title": "بررسی نتیجه انتخابات اسرائیل و کرسی احزاب",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 164,
-    "segments_transcribed": 153,
-    "editor_attempts": 144,
-    "editor_withheld": 137,
+    "segments_captured": 166,
+    "segments_transcribed": 155,
+    "editor_attempts": 146,
+    "editor_withheld": 138,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-08T15:35:24.274604+00:00"
+    "last_audio_at": "2026-11-08T15:36:13.897301+00:00"
   }
 }
