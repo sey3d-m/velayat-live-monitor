@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "docs"
 TARGET = ROOT / "_wilai_public"
 ATLAS_FILES = {"index.html", "atlas-pro.css", "atlas-pro.js", "overrides.json"}
-DATA_ALLOWED = re.compile(r"^(?:index|content-index|archive-20[0-9]{2}|content-20[0-9]{2})\\.json$")
+DATA_ALLOWED = re.compile(r"^(?:index|content-index|archive-20[0-9]{2}|content-20[0-9]{2})\.json$")
 
 
 def safe_copy(src: Path, dst: Path) -> None:
