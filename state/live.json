@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T17:14:41.251798+00:00",
-  "updated_at": "2026-11-08T17:47:31.347385+00:00",
+  "updated_at": "2026-11-08T17:47:59.269017+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره توصیف جایگاه و مقام معنوی در شعر خوانی",
-      "summary": "در این بخش، کارشناس در قالب شعر به توصیف جایگاه معنوی پرداخته و ادعا می‌کند که پیشانی عرش ازلی و مرتبه قنبر درگاه با رتبه آدم مقایسه شده است؛ همچنین به ذکر صلوات و سلام الهی اشاره می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "editor_mode": "audio_grounded_topic",
-      "id": "42503929693-8",
-      "sequence": 8,
-      "updated_at": "2026-11-08T17:33:34.906629+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره نزول قرآن در شب قدر بر اساس آیه مبارکه",
       "summary": "در این بخش، کارشناس درباره آیه نزول قرآن در شب مبارک استدلال می‌کند که مقصود از آن شب قدر است و به عبارت فیها یفرق کل امر حکیم استناد می‌کند. به گفته کارشناس، انذار از کارهای مطرح‌شده در این آیه است.",
@@ -69,16 +56,28 @@
       "sequence": 42,
       "updated_at": "2026-11-08T17:47:07.867879+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی استدلال کارشناس درباره مالکیت فدک و پذیرش آن",
+      "summary": "در گفت‌وگو درباره مالکیت فدک، کارشناس استدلال می‌کند که فدک به دستور خدا به فاطمه زهرا (س) واگذار شده بود، اما مخالفان به این موضوع اشاره نمی‌کنند؛ چرا که به گفته وی، آن‌ها این مسئله را مانند موضوع ولایت و خلافت امیرالمؤمنین (ع) نمی‌پذیرند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42503929693-44",
+      "sequence": 44,
+      "updated_at": "2026-11-08T17:47:59.268990+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 44,
-    "segments_transcribed": 41,
-    "editor_attempts": 35,
-    "editor_withheld": 30,
-    "topics_published": 6,
+    "segments_captured": 45,
+    "segments_transcribed": 42,
+    "editor_attempts": 36,
+    "editor_withheld": 31,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T17:47:29.052163+00:00"
+    "last_audio_at": "2026-11-08T17:47:54.555463+00:00"
   }
 }
