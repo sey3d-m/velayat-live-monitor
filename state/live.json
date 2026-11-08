@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T15:44:58.466597+00:00",
-  "updated_at": "2026-11-08T16:16:43.891107+00:00",
+  "updated_at": "2026-11-08T16:17:31.526252+00:00",
   "items": [
     {
       "title": "بررسی انتخاب گلواژه و کلیدواژه از نهج‌البلاغه در برنامه بیان امیر",
@@ -75,13 +75,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 42,
-    "segments_transcribed": 39,
-    "editor_attempts": 36,
-    "editor_withheld": 34,
+    "segments_captured": 44,
+    "segments_transcribed": 41,
+    "editor_attempts": 38,
+    "editor_withheld": 36,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T16:16:37.834553+00:00"
+    "last_audio_at": "2026-11-08T16:17:27.193355+00:00"
   }
 }
