@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T14:14:42.788481+00:00",
-  "updated_at": "2026-11-08T15:19:28.867211+00:00",
+  "updated_at": "2026-11-08T15:19:56.220625+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره حضور مردمی در دفاع بر اساس اظهارات فرمانده سپاه",
-      "summary": "در این بخش کارشناس به نقل از یک فرمانده سپاه استدلال می‌کند که خود مردم برای دفاع پای کار آمده‌اند؛ موضوعی که به گفته وی در جریان عبور از مناطق جنوبی مطرح شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42488800989-26",
-      "sequence": 26,
-      "updated_at": "2026-11-08T14:40:43.682430+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره نماز",
       "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +57,28 @@
       "sequence": 84,
       "updated_at": "2026-11-08T15:03:58.430610+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی تحولات سوریه و اقدامات اسرائیل",
+      "summary": "در این بخش، کارشناس به نارضایتی مردم در سوریه و خباست‌های اسرائیل اشاره می‌کند و استدلال می‌کند که پس از توافق آتش‌بس، حملات به زیرساخت‌ها و اشغال بخش‌هایی از خاک سوریه تا نزدیکی دمشق آغاز شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42488800989-124",
+      "sequence": 124,
+      "updated_at": "2026-11-08T15:19:56.220594+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 124,
-    "segments_transcribed": 114,
-    "editor_attempts": 106,
-    "editor_withheld": 102,
-    "topics_published": 5,
+    "segments_captured": 125,
+    "segments_transcribed": 115,
+    "editor_attempts": 107,
+    "editor_withheld": 103,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-08T15:19:25.740319+00:00"
+    "last_audio_at": "2026-11-08T15:19:51.060275+00:00"
   }
 }
