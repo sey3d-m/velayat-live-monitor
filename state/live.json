@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T15:44:58.466597+00:00",
-  "updated_at": "2026-11-08T16:47:04.732451+00:00",
+  "updated_at": "2026-11-08T16:47:53.831254+00:00",
   "items": [
     {
       "title": "پرسش درباره پیروی از هدایت پیامبر و بیم از هجوم و اسارت",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 118,
-    "segments_transcribed": 114,
-    "editor_attempts": 105,
-    "editor_withheld": 98,
+    "segments_captured": 120,
+    "segments_transcribed": 116,
+    "editor_attempts": 107,
+    "editor_withheld": 100,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T16:47:01.229723+00:00"
+    "last_audio_at": "2026-11-08T16:47:50.617287+00:00"
   }
 }
