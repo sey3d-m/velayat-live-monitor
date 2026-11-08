@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T17:14:41.251798+00:00",
-  "updated_at": "2026-11-08T18:26:43.120601+00:00",
+  "updated_at": "2026-11-08T18:27:30.776624+00:00",
   "items": [
     {
       "title": "بررسی مرجع ضمیر در آیه مبارکه و ارتباط آن با شب قدر",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 142,
-    "segments_transcribed": 137,
-    "editor_attempts": 116,
-    "editor_withheld": 105,
+    "segments_captured": 144,
+    "segments_transcribed": 139,
+    "editor_attempts": 117,
+    "editor_withheld": 106,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T18:26:39.250524+00:00"
+    "last_audio_at": "2026-11-08T18:27:28.230976+00:00"
   }
 }
