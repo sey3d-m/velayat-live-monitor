@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T17:14:41.251798+00:00",
-  "updated_at": "2026-11-08T17:49:54.310966+00:00",
+  "updated_at": "2026-11-08T17:50:46.664933+00:00",
   "items": [
     {
       "title": "پرسش درباره انطباق لیلة القدر بر فاطمه زهرا در استدلال کارشناس",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 50,
-    "segments_transcribed": 47,
-    "editor_attempts": 41,
-    "editor_withheld": 34,
+    "segments_captured": 52,
+    "segments_transcribed": 49,
+    "editor_attempts": 43,
+    "editor_withheld": 36,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T17:49:51.955710+00:00"
+    "last_audio_at": "2026-11-08T17:50:41.149627+00:00"
   }
 }
