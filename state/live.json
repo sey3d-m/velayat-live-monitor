@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T17:14:41.251798+00:00",
-  "updated_at": "2026-11-08T17:45:02.521168+00:00",
+  "updated_at": "2026-11-08T17:45:28.594014+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره ابعاد شخصیتی فرادینی حضرت فاطمه (س)",
@@ -56,16 +56,28 @@
       "sequence": 31,
       "updated_at": "2026-11-08T17:42:42.184077+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره استدلال خطبه فدکیه در اثبات ایمان",
+      "summary": "در این بخش کارشناس استدلال می‌کند که حضرت زهرا سلام‌الله‌علیها در خطبه فدکیه و در مقام دفاع از حق غصب‌شده، برای اثبات ایمان ومسلمان بودن خود، ابتدا به مباحث توحید و معارف الهی می‌پردازد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.82,
+      "id": "42503929693-38",
+      "sequence": 38,
+      "updated_at": "2026-11-08T17:45:28.593988+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 38,
-    "segments_transcribed": 35,
-    "editor_attempts": 30,
+    "segments_captured": 39,
+    "segments_transcribed": 36,
+    "editor_attempts": 31,
     "editor_withheld": 27,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T17:45:00.490711+00:00"
+    "last_audio_at": "2026-11-08T17:45:24.697831+00:00"
   }
 }
