@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T15:44:58.466597+00:00",
-  "updated_at": "2026-11-08T16:22:17.038694+00:00",
+  "updated_at": "2026-11-08T16:23:07.139991+00:00",
   "items": [
     {
       "title": "بررسی محوریت اهل‌بیت در دورهمی‌ها برای زندگی متعالی",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 56,
-    "segments_transcribed": 53,
-    "editor_attempts": 49,
-    "editor_withheld": 46,
+    "segments_captured": 58,
+    "segments_transcribed": 55,
+    "editor_attempts": 51,
+    "editor_withheld": 47,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T16:22:12.681002+00:00"
+    "last_audio_at": "2026-11-08T16:23:02.925381+00:00"
   }
 }
