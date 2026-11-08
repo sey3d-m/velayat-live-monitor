@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T17:14:41.251798+00:00",
-  "updated_at": "2026-11-08T18:30:20.995220+00:00",
+  "updated_at": "2026-11-08T18:30:44.079065+00:00",
   "items": [
     {
       "title": "پرسش درباره روایت معیار حق و باطل در محاوره کارشناس",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 151,
-    "segments_transcribed": 146,
-    "editor_attempts": 123,
+    "segments_captured": 152,
+    "segments_transcribed": 147,
+    "editor_attempts": 124,
     "editor_withheld": 112,
     "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T18:30:16.924178+00:00"
+    "last_audio_at": "2026-11-08T18:30:41.209405+00:00"
   }
 }
