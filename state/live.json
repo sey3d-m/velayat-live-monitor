@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T14:14:42.788481+00:00",
-  "updated_at": "2026-11-08T15:03:32.434351+00:00",
+  "updated_at": "2026-11-08T15:03:58.430640+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره حضور مردمی در دفاع بر اساس اظهارات فرمانده سپاه",
@@ -57,16 +57,28 @@
       "sequence": 78,
       "updated_at": "2026-11-08T15:01:30.195530+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نتیجه انتخابات اسرائیل و کرسی احزاب",
+      "summary": "در این بخش کارشناس به چگونگی کسب کرسی‌ها در انتخابات اسرائیل اشاره می‌کند و بیان می‌کند که حزب نتانیاهو و حزب رقیب با ائتلاف با گروه‌های دیگر توانستند به ترتیب پنجاه‌ونه و چهل‌وهشت کرسی به دست آورند و کرسی‌های احزاب عربی نیز هجدهتا گزارش شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.8,
+      "id": "42488800989-84",
+      "sequence": 84,
+      "updated_at": "2026-11-08T15:03:58.430610+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 84,
-    "segments_transcribed": 78,
-    "editor_attempts": 73,
-    "editor_withheld": 70,
-    "topics_published": 4,
+    "segments_captured": 85,
+    "segments_transcribed": 79,
+    "editor_attempts": 74,
+    "editor_withheld": 71,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-08T15:03:28.831060+00:00"
+    "last_audio_at": "2026-11-08T15:03:53.719491+00:00"
   }
 }
