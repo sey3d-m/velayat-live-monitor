@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T17:14:41.251798+00:00",
-  "updated_at": "2026-11-08T18:02:39.930381+00:00",
+  "updated_at": "2026-11-08T18:03:28.152363+00:00",
   "items": [
     {
       "title": "پرسش درباره استدلال خطبه فدکیه در اثبات ایمان",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 82,
-    "segments_transcribed": 79,
-    "editor_attempts": 67,
-    "editor_withheld": 59,
+    "segments_captured": 84,
+    "segments_transcribed": 81,
+    "editor_attempts": 68,
+    "editor_withheld": 60,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T18:02:38.205652+00:00"
+    "last_audio_at": "2026-11-08T18:03:26.690068+00:00"
   }
 }
