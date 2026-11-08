@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T14:14:42.788481+00:00",
-  "updated_at": "2026-11-08T15:01:03.913008+00:00",
+  "updated_at": "2026-11-08T15:01:30.195564+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره حضور مردمی در دفاع بر اساس اظهارات فرمانده سپاه",
@@ -45,16 +45,28 @@
       "sequence": 45,
       "updated_at": "2026-11-08T14:48:18.751520+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ادعای انتقال شکاف‌ها به درون ساختار رژیم مقابل",
+      "summary": "در این بخش کارشناس استدلال می‌کند که موجزه‌ مورد بحث نه‌تنها شکاف‌ها را ترمیم کرده، بلکه این شکاف‌ها به درون ساختار و سندهای رای آن‌ها منتقل شده و به استعفای بسیاری از سران نظامی‌شان و استعفاهای پیش‌رو منجر شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42488800989-78",
+      "sequence": 78,
+      "updated_at": "2026-11-08T15:01:30.195530+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 78,
-    "segments_transcribed": 72,
-    "editor_attempts": 68,
-    "editor_withheld": 66,
-    "topics_published": 3,
+    "segments_captured": 79,
+    "segments_transcribed": 73,
+    "editor_attempts": 69,
+    "editor_withheld": 67,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-08T15:01:00.685891+00:00"
+    "last_audio_at": "2026-11-08T15:01:25.073011+00:00"
   }
 }
