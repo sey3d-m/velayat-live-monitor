@@ -1,21 +1,34 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "42488800989",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T14:14:42.788481+00:00",
-  "updated_at": "2026-11-08T14:40:17.387568+00:00",
-  "items": [],
+  "updated_at": "2026-11-08T14:40:43.682455+00:00",
+  "items": [
+    {
+      "title": "گفت‌وگو درباره حضور مردمی در دفاع بر اساس اظهارات فرمانده سپاه",
+      "summary": "در این بخش کارشناس به نقل از یک فرمانده سپاه استدلال می‌کند که خود مردم برای دفاع پای کار آمده‌اند؛ موضوعی که به گفته وی در جریان عبور از مناطق جنوبی مطرح شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42488800989-26",
+      "sequence": 26,
+      "updated_at": "2026-11-08T14:40:43.682430+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 26,
-    "segments_transcribed": 20,
-    "editor_attempts": 16,
-    "editor_withheld": 15,
-    "topics_published": 0,
+    "segments_captured": 27,
+    "segments_transcribed": 21,
+    "editor_attempts": 17,
+    "editor_withheld": 16,
+    "topics_published": 1,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-08T14:40:13.746210+00:00"
+    "last_audio_at": "2026-11-08T14:40:38.648907+00:00"
   }
 }
