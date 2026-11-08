@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T15:44:58.466597+00:00",
-  "updated_at": "2026-11-08T16:05:29.960334+00:00",
+  "updated_at": "2026-11-08T16:05:57.808577+00:00",
   "items": [
     {
       "title": "بررسی سیره و قوت امام علی (ع) در بیان کارشناس",
@@ -45,16 +45,29 @@
       "sequence": 11,
       "updated_at": "2026-11-08T16:04:49.061487+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره وظیفه حفظ و اصلاح جامعه",
+      "summary": "در این بخش کارشناس استدلال می‌کند که افراد جامعه به آن دسترسی دارند و در آن زندگی می‌کنند، بنابراین باید برای حفظ و بهتر شدن آن تلاش کنند. همچنین به دیدگاه افرادی اشاره می‌شود که از اصلاح جامعه ناامیدند و بر این باورند که غلبه باطل زیاد است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "42496308925-14",
+      "sequence": 14,
+      "updated_at": "2026-11-08T16:05:57.808553+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 14,
-    "segments_transcribed": 11,
-    "editor_attempts": 9,
-    "editor_withheld": 7,
-    "topics_published": 3,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
-    "last_audio_at": "2026-11-08T16:05:24.733250+00:00"
+    "segments_captured": 15,
+    "segments_transcribed": 12,
+    "editor_attempts": 10,
+    "editor_withheld": 9,
+    "topics_published": 4,
+    "audio_ai_calls": 2,
+    "audio_ai_success": 2,
+    "last_audio_at": "2026-11-08T16:05:50.004804+00:00"
   }
 }
