@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T17:14:41.251798+00:00",
-  "updated_at": "2026-11-08T17:41:50.568588+00:00",
+  "updated_at": "2026-11-08T17:41:51.770813+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره ابعاد شخصیتی فرادینی حضرت فاطمه (س)",
@@ -32,6 +32,18 @@
       "sequence": 8,
       "updated_at": "2026-11-08T17:33:34.906629+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نزول قرآن در شب قدر بر اساس آیه مبارکه",
+      "summary": "در این بخش، کارشناس درباره آیه نزول قرآن در شب مبارک استدلال می‌کند که مقصود از آن شب قدر است و به عبارت فیها یفرق کل امر حکیم استناد می‌کند. به گفته کارشناس، انذار از کارهای مطرح‌شده در این آیه است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42503929693-29",
+      "sequence": 29,
+      "updated_at": "2026-11-08T17:41:51.770790+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -39,7 +51,7 @@
     "segments_transcribed": 27,
     "editor_attempts": 24,
     "editor_withheld": 22,
-    "topics_published": 2,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-08T17:41:48.166232+00:00"
