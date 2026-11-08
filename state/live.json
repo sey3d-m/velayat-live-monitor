@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T17:14:41.251798+00:00",
-  "updated_at": "2026-11-08T18:09:09.999731+00:00",
+  "updated_at": "2026-11-08T18:09:52.713915+00:00",
   "items": [
     {
       "title": "بررسی استدلال به آیه من لم یحکم بما انزل الله",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 98,
-    "segments_transcribed": 94,
-    "editor_attempts": 80,
-    "editor_withheld": 71,
+    "segments_captured": 100,
+    "segments_transcribed": 96,
+    "editor_attempts": 81,
+    "editor_withheld": 72,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T18:09:01.792635+00:00"
+    "last_audio_at": "2026-11-08T18:09:50.773236+00:00"
   }
 }
