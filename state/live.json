@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T15:44:58.466597+00:00",
-  "updated_at": "2026-11-08T16:03:06.178741+00:00",
+  "updated_at": "2026-11-08T16:03:32.512719+00:00",
   "items": [
     {
       "title": "بررسی سیره و قوت امام علی (ع) در بیان کارشناس",
@@ -19,16 +19,29 @@
       "sequence": 7,
       "updated_at": "2026-11-08T16:03:06.178721+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره ولایت و غدیر",
+      "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42496308925-8",
+      "sequence": 8,
+      "updated_at": "2026-11-08T16:03:32.512691+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 8,
-    "segments_transcribed": 5,
-    "editor_attempts": 3,
-    "editor_withheld": 2,
-    "topics_published": 1,
+    "segments_captured": 9,
+    "segments_transcribed": 6,
+    "editor_attempts": 4,
+    "editor_withheld": 3,
+    "topics_published": 2,
     "audio_ai_calls": 0,
     "audio_ai_success": 0,
-    "last_audio_at": "2026-11-08T16:03:02.570305+00:00"
+    "last_audio_at": "2026-11-08T16:03:27.247448+00:00"
   }
 }
