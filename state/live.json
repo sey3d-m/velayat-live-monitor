@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "42488800989",
-  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "session": "42496308925",
+  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-08",
-  "started_at": "2026-11-08T14:14:42.788481+00:00",
-  "updated_at": "2026-11-08T15:40:02.561830+00:00",
-  "items": [
-    {
-      "title": "بررسی توانمندی نظامی و آمادگی ایران در صورت وقوع جنگ",
-      "summary": "در این بخش کارشناس استدلال می‌کند که ایران با داشتن قدرت نظامی، هم‌پیمانان منطقه‌ای و ذخایر گوناگون، قدرتمند است و دچار افول نشده است. بر اساس گفته کارشناس، اگر جنگی آغاز شود، کشور با توجه به تجربیاتی که تا کنون پشت سر گذاشته است، مطیع نخواهد بود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42488800989-143",
-      "sequence": 143,
-      "updated_at": "2026-11-08T15:27:33.257838+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی نقش خانه اهل‌بیت پس از رحلت پیامبر",
-      "summary": "در این بخش کارشناس استدلال می‌کند که پس از رحلت پیامبر اکرم و در آن توفان‌های بحرانی، چشمه زلال اسلام از خانه اهل‌بیت می‌جوشید و این خانه به عنوان لنگر مطمئنی اسلام را از موج‌های جاهلیت حفظ کرد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42488800989-155",
-      "sequence": 155,
-      "updated_at": "2026-11-08T15:32:16.350671+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره سخن منتسب به حضرت زهرا در سوگواری",
-      "summary": "در این بخش کارشناس به نقل داستانی درباره واکنش حضرت زهرا سلام‌الله‌علیها به سوگواری پرداخته و استدلال می‌کند که ایشان در پاسخ به درخواست صبر، سخنی درباره تداوم گریه خود بیان کرده‌اند؛ روایتی که صحت تاریخی آن نیازمند بررسی است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42488800989-163",
-      "sequence": 163,
-      "updated_at": "2026-11-08T15:35:28.310881+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره دشواری‌های صدر اسلام و فداکاری‌ها در مدینه",
-      "summary": "در این بخش، کارشناס درباره ورود به مدینه و متحمل شدن سختی‌ها و فداکاری‌ها در راه اسلام سخن می‌گوید. به گفته کارشناس، تیرهای جهل و شمشیرها به جان خریداری شده و این در حالی است که طفل اسلام از آب و گل درآمده بوده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42488800989-167",
-      "sequence": 167,
-      "updated_at": "2026-11-08T15:37:08.776946+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره دستور پیامبر به ام‌سلمه برای باز کردن در",
-      "summary": "در این بخش کارشناس به روایتی درباره دستور پیامبر اکرم به ام‌سلمه برای گشودن در اشاره می‌کند و استدلال می‌کند که فردی که وارد می‌شود مورد محبت خدا و رسول است. در این میان، پرسش یا واکنشی از سوی ام‌سلمه مطرح می‌شود که متن رونوشت آن را به صورت ناقص و همراه با پرسش درباره پدر و مادر به فدایت ثبت کرده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42488800989-171",
-      "sequence": 171,
-      "updated_at": "2026-11-08T15:38:40.945467+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-08T15:44:58.466597+00:00",
+  "updated_at": "2026-11-08T16:00:00.000298+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 164,
-    "editor_attempts": 155,
-    "editor_withheld": 146,
-    "topics_published": 11,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 2,
-    "last_audio_at": "2026-11-08T15:39:50.485147+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
