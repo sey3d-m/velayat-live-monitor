@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T15:44:58.466597+00:00",
-  "updated_at": "2026-11-08T16:08:40.192377+00:00",
+  "updated_at": "2026-11-08T16:09:30.261370+00:00",
   "items": [
     {
       "title": "بررسی سیره و قوت امام علی (ع) در بیان کارشناس",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 22,
-    "segments_transcribed": 19,
-    "editor_attempts": 17,
-    "editor_withheld": 15,
+    "segments_captured": 24,
+    "segments_transcribed": 21,
+    "editor_attempts": 19,
+    "editor_withheld": 17,
     "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T16:08:36.586594+00:00"
+    "last_audio_at": "2026-11-08T16:09:25.984914+00:00"
   }
 }
