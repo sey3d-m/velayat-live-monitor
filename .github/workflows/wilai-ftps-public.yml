@@ -39,16 +39,17 @@ jobs:
             exit 1
           fi
 
-      - name: Package only previously public Atlas files
+      - name: Validate public package safeguards
+        run: python -m unittest discover -s tests -p 'test_wilai_public.py' -v
+
+      - name: Package only allowlisted public Atlas files
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p _wilai_public/atlas _wilai_public/data
-          cp -a docs/atlas/. _wilai_public/atlas/
-          cp -a docs/data/. _wilai_public/data/
+          python scripts/build_wilai_public.py
+          test -s _wilai_public/index.html
           test -s _wilai_public/atlas/index.html
           test -s _wilai_public/data/index.json
-          # No transcript artifacts, credentials, internal research or private datasets.
 
       - name: Install FTPS client
         run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
