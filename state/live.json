@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T17:14:41.251798+00:00",
-  "updated_at": "2026-11-08T17:41:07.256359+00:00",
+  "updated_at": "2026-11-08T17:41:50.568588+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره ابعاد شخصیتی فرادینی حضرت فاطمه (س)",
@@ -35,13 +35,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 28,
-    "segments_transcribed": 25,
-    "editor_attempts": 22,
-    "editor_withheld": 20,
+    "segments_captured": 30,
+    "segments_transcribed": 27,
+    "editor_attempts": 24,
+    "editor_withheld": 22,
     "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T17:41:05.011349+00:00"
+    "last_audio_at": "2026-11-08T17:41:48.166232+00:00"
   }
 }
