@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "ended",
   "network": "velayat_farsi",
   "session": "42496308925",
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T15:44:58.466597+00:00",
-  "updated_at": "2026-11-08T17:09:28.016561+00:00",
+  "updated_at": "2026-11-08T17:10:02.178889+00:00",
   "items": [
     {
       "title": "بررسی معنای واژه بطر در قرآن کریم",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 174,
-    "segments_transcribed": 167,
-    "editor_attempts": 151,
-    "editor_withheld": 144,
+    "segments_captured": 175,
+    "segments_transcribed": 168,
+    "editor_attempts": 152,
+    "editor_withheld": 145,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T17:09:25.491724+00:00"
+    "last_audio_at": "2026-11-08T17:09:50.277787+00:00"
   }
 }
