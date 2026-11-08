@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-08",
   "started_at": "2026-11-08T15:44:58.466597+00:00",
-  "updated_at": "2026-11-08T17:01:32.468891+00:00",
+  "updated_at": "2026-11-08T17:02:22.893866+00:00",
   "items": [
     {
       "title": "بررسی معنای واژه بطر در قرآن کریم",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 154,
-    "segments_transcribed": 147,
-    "editor_attempts": 135,
-    "editor_withheld": 127,
+    "segments_captured": 156,
+    "segments_transcribed": 149,
+    "editor_attempts": 137,
+    "editor_withheld": 129,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T17:01:28.281804+00:00"
+    "last_audio_at": "2026-11-08T17:02:18.886578+00:00"
   }
 }
