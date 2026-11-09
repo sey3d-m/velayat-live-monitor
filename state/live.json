@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "42647638247",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "42662621430",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
-  "started_at": "2026-11-09T16:00:06.087609+00:00",
-  "updated_at": "2026-11-09T17:10:14.056481+00:00",
-  "items": [
-    {
-      "title": "پرسش درباره استناد عالمان اهل سنت به احادیث خلافت",
-      "summary": "در این بخش، کارشناس به این پرسش می‌پردازد که عالمان بزرگ داعشی و تکفیری استدلال می‌کنند پیامبر اسلام پس از خود دستور به پیروی از ابوبکر، عمر و عثمان داده است یا به حدیث دیگری استناد می‌کنند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42647638247-47",
-      "sequence": 47,
-      "updated_at": "2026-11-09T16:19:15.447992+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی فرق میان فهم مکتب اهل‌بیت و مکتب مخالفان",
-      "summary": "در این بخش کارشناس به طرح بحث درباره تفاوت میان فهم مکتب آل محمد و فهم مخالفان می‌پردازد و اشاره می‌کند که در این زمینه سخنان قرآن کریم درباره فرهنگ منافقان و دشمنان بررسی خواهد شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42647638247-74",
-      "sequence": 74,
-      "updated_at": "2026-11-09T16:30:01.602207+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره تفاوت ترجمه‌های قرآن و استناد به تفاسیر مراجع",
-      "summary": "در این بخش کارشناس به تفاوت میان ترجمه‌های فارسی قرآن اشاره می‌کند و ادعا می‌کند که برخی ترجمه‌ها از سوی دشمنان ارائه شده است. وی برای نمونه به تفاسیر منتسب به مراجع عظام از جمله مکارم شیرازی و مشکینی اشاره کرده و بر لزوم دقت در ترجمه قرآن تأکید می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42647638247-112",
-      "sequence": 112,
-      "updated_at": "2026-11-09T16:45:13.217321+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره تفاوت مباحث فدک و ولایت امیرالمؤمنین",
-      "summary": "در این بخش کارشناس استدلال می‌کند که موضوع اصلی بحث فدک نیست، بلکه ولایت امیرالمؤمنین است و بر ضرورت شناخت بانیان سقیفه تأکید می‌کند. به گفته کارشناس، سخنان مطرح‌شده با آه و ناله و گریه همراه بوده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42647638247-153",
-      "sequence": 153,
-      "updated_at": "2026-11-09T17:01:36.943397+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی آغاز خطبه حضرت فاطمه با حمد و ستایش",
-      "summary": "در این بخش کارشناس استدلال می‌کند که خطبه حضرت فاطمه سلام‌الله‌علیها با حمد و ستایش الهی آغاز شده است. به گفته کارشناس، در بخشی از این خطبه به معرفی پیامبر گرامی اسلام به عنوان پدر ایشان اشاره می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42647638247-154",
-      "sequence": 154,
-      "updated_at": "2026-11-09T17:02:01.902911+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-09T17:15:08.642631+00:00",
+  "updated_at": "2026-11-09T17:30:00.000245+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 166,
-    "editor_attempts": 152,
-    "editor_withheld": 147,
-    "topics_published": 9,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T17:09:56.466606+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
