@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T18:09:56.419678+00:00",
+  "updated_at": "2026-11-09T18:10:21.547236+00:00",
   "items": [
-    {
-      "title": "بررسی استناد به روایت عشرۀ مبشره در گفت‌وگو",
-      "summary": "در این بخش کارشناس درباره روایت مربوط به بشارت بهشت به ده نفر صحبت می‌کند و مدعی است چون شیعیان با این افراد مخالفند، با عدد ده نیز مخالفت می‌کنند؛ سپس این مسئله را به مخالفت با حضرت علی (ع) مرتبط می‌سازد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42662621430-70",
-      "sequence": 70,
-      "updated_at": "2026-11-09T17:58:23.537805+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره گفت‌وگوی مذاهب اسلامی",
       "summary": "در این بخش از برنامه، موضوع «گفت‌وگوی مذاهب اسلامی» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -68,16 +56,29 @@
       "sequence": 97,
       "updated_at": "2026-11-09T18:09:07.841821+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42662621430-100",
+      "sequence": 100,
+      "updated_at": "2026-11-09T18:10:21.547210+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 100,
-    "segments_transcribed": 89,
-    "editor_attempts": 84,
-    "editor_withheld": 69,
-    "topics_published": 20,
+    "segments_captured": 101,
+    "segments_transcribed": 90,
+    "editor_attempts": 85,
+    "editor_withheld": 71,
+    "topics_published": 21,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T18:09:52.249293+00:00"
+    "last_audio_at": "2026-11-09T18:10:16.478212+00:00"
   }
 }
