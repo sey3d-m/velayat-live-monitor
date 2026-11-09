@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:13:53.795656+00:00",
+  "updated_at": "2026-11-09T15:14:52.631947+00:00",
   "items": [
     {
       "title": "بررسی حکم تیمم و نماز با دست جبیره در کلام کارشناس",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 110,
-    "segments_transcribed": 103,
-    "editor_attempts": 99,
-    "editor_withheld": 93,
+    "segments_captured": 112,
+    "segments_transcribed": 105,
+    "editor_attempts": 101,
+    "editor_withheld": 95,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T15:13:50.622381+00:00"
+    "last_audio_at": "2026-11-09T15:14:40.159796+00:00"
   }
 }
