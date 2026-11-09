@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T17:54:45.031855+00:00",
+  "updated_at": "2026-11-09T17:55:13.050025+00:00",
   "items": [
-    {
-      "title": "بررسی مقاومت اقتصادی ایران برابر تحریم‌ها",
-      "summary": "در این بخش کارشناس استدلال می‌کند که ایران با وجود محاصره اقتصادی و دشمنی کشورهای منطقه و اروپا، توانسته در برابر فشارهای خارجی مقاومت کند؛ به گفته وی این پایداری نتیجه لطف الهی و نصرت الهی است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42662621430-46",
-      "sequence": 46,
-      "updated_at": "2026-11-09T17:48:45.231345+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی وجود واثق حدیث در صحیح بخاری به نقل از ابن‌تیمیه",
       "summary": "در این بخش کارشناس استدلال می‌کند که اسناد و مدارکی وجود دارد که نشان می‌دهد واژه‌ای در صحیح بخاری بوده است؛ وی در این زمینه به نقل حدیث مذکور توسط ابن‌تیمیه در کتاب المنتقا استناد می‌کند.",
@@ -69,16 +57,28 @@
       "sequence": 59,
       "updated_at": "2026-11-09T17:54:09.685015+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی لزوم رعایت ادب در قلم و گفتار",
+      "summary": "در این بخش کارشناس استدلال می‌کند که اهل ادب و قلم نباید به فحاشی روی آورند؛ زیرا فحاشی کار افراد بی‌منطق و کوچه‌بازار است و هنگامی که فردی قلم به دست می‌گیرد، باید با ادب و احترام سخن بگوید.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42662621430-62",
+      "sequence": 62,
+      "updated_at": "2026-11-09T17:55:13.050001+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 62,
-    "segments_transcribed": 56,
-    "editor_attempts": 53,
-    "editor_withheld": 43,
-    "topics_published": 14,
+    "segments_captured": 63,
+    "segments_transcribed": 57,
+    "editor_attempts": 54,
+    "editor_withheld": 44,
+    "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T17:54:41.145888+00:00"
+    "last_audio_at": "2026-11-09T17:55:05.473474+00:00"
   }
 }
