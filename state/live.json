@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T16:00:06.087609+00:00",
-  "updated_at": "2026-11-09T17:00:03.254786+00:00",
+  "updated_at": "2026-11-09T17:00:47.337456+00:00",
   "items": [
     {
       "title": "پرسش درباره یتیم شدن امام علی پس از رحلت پیامبر",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 150,
-    "segments_transcribed": 142,
-    "editor_attempts": 129,
-    "editor_withheld": 125,
+    "segments_captured": 152,
+    "segments_transcribed": 144,
+    "editor_attempts": 131,
+    "editor_withheld": 127,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T16:59:59.530189+00:00"
+    "last_audio_at": "2026-11-09T17:00:43.509002+00:00"
   }
 }
