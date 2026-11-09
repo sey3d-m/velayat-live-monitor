@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T16:00:06.087609+00:00",
-  "updated_at": "2026-11-09T17:04:50.235912+00:00",
+  "updated_at": "2026-11-09T17:05:40.245925+00:00",
   "items": [
     {
       "title": "پرسش درباره استناد عالمان اهل سنت به احادیث خلافت",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 162,
-    "segments_transcribed": 154,
-    "editor_attempts": 140,
-    "editor_withheld": 135,
+    "segments_captured": 164,
+    "segments_transcribed": 156,
+    "editor_attempts": 142,
+    "editor_withheld": 136,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T17:04:47.485735+00:00"
+    "last_audio_at": "2026-11-09T17:05:36.555281+00:00"
   }
 }
