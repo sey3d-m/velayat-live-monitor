@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:19:32.082778+00:00",
+  "updated_at": "2026-11-09T15:19:33.569743+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42632678613-68",
-      "sequence": 68,
-      "updated_at": "2026-11-09T14:57:34.618118+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی کفایت نمازهای واجب یا مستحب از تحیت مسجد",
       "summary": "در این بخش، کارشناس استدلال می‌کند که خواندن هر نماز واجب یا مستحب دیگری در مسجد، جایگزین نماز تحیت مسجد شده و کفایت می‌کند. این موضوع به عنوان بخشی از آموزش احکام به صورت تصویری مطرح شد.",
@@ -70,6 +57,18 @@
       "sequence": 121,
       "updated_at": "2026-11-09T15:18:44.435233+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی حکم فقهی فراموشی سجده و بازگشت به قیام",
+      "summary": "در این بخش کارشناس درباره وظیفه فردی که سجده اول را فراموش کرده و وارد مرحله بعد شده است، استدلال می‌کند که باید به قیام بازگردد و رکوع و سجود را به‌جا آورد، و احتیاطاً نماز را دوباره بخواند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42632678613-123",
+      "sequence": 123,
+      "updated_at": "2026-11-09T15:19:33.569720+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -77,7 +76,7 @@
     "segments_transcribed": 117,
     "editor_attempts": 112,
     "editor_withheld": 106,
-    "topics_published": 12,
+    "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-09T15:19:28.961084+00:00"
