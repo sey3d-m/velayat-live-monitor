@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T16:00:06.087609+00:00",
-  "updated_at": "2026-11-09T16:44:46.927634+00:00",
+  "updated_at": "2026-11-09T16:45:13.217345+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره حدیث و روایت",
-      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "audio_grounded_topic",
-      "editor_confidence": 0.0,
-      "id": "42647638247-9",
-      "sequence": 9,
-      "updated_at": "2026-11-09T16:04:04.394339+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره یتیم شدن امام علی پس از رحلت پیامبر",
       "summary": "در این بخش کارشناس استدلال می‌کند که ابراز دوستی با امام علی پس از رحلت پیامبر اسلام صورت گرفته است. به گفته وی، حضرت علی با رحلت پیامبر یتیم شد؛ زیرا پیامبر هم پدر معنوی و هم پدر جسمی ایشان به شمار می‌رفته است.",
@@ -70,16 +57,28 @@
       "sequence": 74,
       "updated_at": "2026-11-09T16:30:01.602207+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره تفاوت ترجمه‌های قرآن و استناد به تفاسیر مراجع",
+      "summary": "در این بخش کارشناس به تفاوت میان ترجمه‌های فارسی قرآن اشاره می‌کند و ادعا می‌کند که برخی ترجمه‌ها از سوی دشمنان ارائه شده است. وی برای نمونه به تفاسیر منتسب به مراجع عظام از جمله مکارم شیرازی و مشکینی اشاره کرده و بر لزوم دقت در ترجمه قرآن تأکید می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42647638247-112",
+      "sequence": 112,
+      "updated_at": "2026-11-09T16:45:13.217321+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 112,
-    "segments_transcribed": 106,
-    "editor_attempts": 95,
-    "editor_withheld": 92,
-    "topics_published": 6,
+    "segments_captured": 113,
+    "segments_transcribed": 107,
+    "editor_attempts": 96,
+    "editor_withheld": 93,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T16:44:43.288383+00:00"
+    "last_audio_at": "2026-11-09T16:45:07.308470+00:00"
   }
 }
