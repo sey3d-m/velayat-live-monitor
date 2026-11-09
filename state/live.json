@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:08:21.229110+00:00",
+  "updated_at": "2026-11-09T15:08:48.087413+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره خمس و زکات",
-      "summary": "در این بخش از برنامه، موضوع «خمس و زکات» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42632678613-50",
-      "sequence": 50,
-      "updated_at": "2026-11-09T14:50:20.264445+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی حکم و کیفیت خواندن نماز قضا برای پدر مرحوم",
       "summary": "در این بخش درباره خواندن نماز قضا برای پدر مرحوم مطرح شد که کارشناس استدلال می‌کند نماز پدر بر فرزند چه پسر و چه دختر واجب نیست، اما اگر کسی برای خدمت به پدر مرحومش این کار را انجام دهد ثواب زیادی دارد و باید به صورت نشسته خوانده شود.",
@@ -69,16 +56,28 @@
       "sequence": 83,
       "updated_at": "2026-11-09T15:03:34.243135+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره حکم شرعی صدقه‌ای که دختر در حرم ریخته است",
+      "summary": "در این بخش درباره حکم شرعی صدقه‌ای که توسط دختر در حرم ریخته شده است پرسش مطرح شد. گوینده بیان می‌کند که دخترش مقداری صدقه را درون حرم ریخته و حالا می‌خواهد بداند تکلیف چیست و چه باید بکند. این پرسش بدون ارائه پاسخ قطعی در گفت‌وگو مطرح شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42632678613-96",
+      "sequence": 96,
+      "updated_at": "2026-11-09T15:08:48.087386+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 96,
-    "segments_transcribed": 89,
-    "editor_attempts": 85,
-    "editor_withheld": 80,
-    "topics_published": 9,
+    "segments_captured": 97,
+    "segments_transcribed": 90,
+    "editor_attempts": 86,
+    "editor_withheld": 81,
+    "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T15:08:18.100008+00:00"
+    "last_audio_at": "2026-11-09T15:08:42.803523+00:00"
   }
 }
