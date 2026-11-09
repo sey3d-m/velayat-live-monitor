@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T18:09:07.841847+00:00",
+  "updated_at": "2026-11-09T18:09:56.419678+00:00",
   "items": [
     {
       "title": "بررسی استناد به روایت عشرۀ مبشره در گفت‌وگو",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 98,
-    "segments_transcribed": 87,
-    "editor_attempts": 82,
-    "editor_withheld": 68,
+    "segments_captured": 100,
+    "segments_transcribed": 89,
+    "editor_attempts": 84,
+    "editor_withheld": 69,
     "topics_published": 20,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T18:09:02.109489+00:00"
+    "last_audio_at": "2026-11-09T18:09:52.249293+00:00"
   }
 }
