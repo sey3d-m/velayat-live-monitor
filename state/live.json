@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T16:00:06.087609+00:00",
-  "updated_at": "2026-11-09T16:19:13.299669+00:00",
+  "updated_at": "2026-11-09T16:19:15.448015+00:00",
   "items": [
     {
       "title": "پرسش درباره روند تغییر مذهب و خدمت به اهل‌بیت",
@@ -59,6 +59,18 @@
       "sequence": 16,
       "updated_at": "2026-11-09T16:06:54.549456+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره استناد عالمان اهل سنت به احادیث خلافت",
+      "summary": "در این بخش، کارشناس به این پرسش می‌پردازد که عالمان بزرگ داعشی و تکفیری استدلال می‌کنند پیامبر اسلام پس از خود دستور به پیروی از ابوبکر، عمر و عثمان داده است یا به حدیث دیگری استناد می‌کنند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42647638247-47",
+      "sequence": 47,
+      "updated_at": "2026-11-09T16:19:15.447992+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -66,7 +78,7 @@
     "segments_transcribed": 46,
     "editor_attempts": 42,
     "editor_withheld": 41,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-09T16:19:10.024220+00:00"
