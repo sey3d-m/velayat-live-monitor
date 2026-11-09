@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T17:40:22.626905+00:00",
+  "updated_at": "2026-11-09T17:40:23.909522+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره حضرت عباس",
@@ -44,6 +44,18 @@
       "sequence": 24,
       "updated_at": "2026-11-09T17:39:59.733673+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره استدلال آیه قرآن درباره جنگیدن در راه مستضعفین",
+      "summary": "در این بخش، کارشناس درباره آیه قرآن پیرامون لزوم جنگیدن در راه خدا و مستضعفین سخن می‌گوید. او با اشاره به عباراتی از آیات قرآن، استدلال می‌کند که باید با سردمداران کفر و پیمان‌شکنان جنگید و این موضوع را به عنوان یک نکته قرآنی مطرح می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42662621430-25",
+      "sequence": 25,
+      "updated_at": "2026-11-09T17:40:23.909498+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -51,7 +63,7 @@
     "segments_transcribed": 21,
     "editor_attempts": 18,
     "editor_withheld": 15,
-    "topics_published": 3,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-09T17:40:18.821484+00:00"
