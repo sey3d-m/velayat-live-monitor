@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:18:42.946058+00:00",
+  "updated_at": "2026-11-09T15:18:44.435257+00:00",
   "items": [
-    {
-      "title": "بررسی حکم تیمم و نماز با دست جبیره در کلام کارشناس",
-      "summary": "در این بخش درباره کیفیت انجام تیمم و نماز با وجود دست جبیره گفتگو شد. کارشناس استدلال می‌کند که اگر دو دست دارای مشکل و جبیره باشد، تیمم با کیفیت خاص خود انجام می‌شود و برای نماز مشکلی ایجاد نمی‌کند؛ همچنین نمازهای فرد در این حالت به شکل معمول ادا خواهد شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42632678613-58",
-      "sequence": 58,
-      "updated_at": "2026-11-09T14:53:31.757175+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
       "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,14 +57,27 @@
       "sequence": 98,
       "updated_at": "2026-11-09T15:09:31.980597+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره احکام طهارت",
+      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42632678613-121",
+      "sequence": 121,
+      "updated_at": "2026-11-09T15:18:44.435233+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 122,
     "segments_transcribed": 115,
     "editor_attempts": 110,
-    "editor_withheld": 104,
-    "topics_published": 11,
+    "editor_withheld": 105,
+    "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-09T15:18:39.723249+00:00"
