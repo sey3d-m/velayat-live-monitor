@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T16:00:06.087609+00:00",
-  "updated_at": "2026-11-09T17:01:36.943426+00:00",
+  "updated_at": "2026-11-09T17:02:01.902935+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42647638247-16",
-      "sequence": 16,
-      "updated_at": "2026-11-09T16:06:54.549456+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره استناد عالمان اهل سنت به احادیث خلافت",
       "summary": "در این بخش، کارشناس به این پرسش می‌پردازد که عالمان بزرگ داعشی و تکفیری استدلال می‌کنند پیامبر اسلام پس از خود دستور به پیروی از ابوبکر، عمر و عثمان داده است یا به حدیث دیگری استناد می‌کنند.",
@@ -68,16 +55,28 @@
       "sequence": 153,
       "updated_at": "2026-11-09T17:01:36.943397+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی آغاز خطبه حضرت فاطمه با حمد و ستایش",
+      "summary": "در این بخش کارشناس استدلال می‌کند که خطبه حضرت فاطمه سلام‌الله‌علیها با حمد و ستایش الهی آغاز شده است. به گفته کارشناس، در بخشی از این خطبه به معرفی پیامبر گرامی اسلام به عنوان پدر ایشان اشاره می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42647638247-154",
+      "sequence": 154,
+      "updated_at": "2026-11-09T17:02:01.902911+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 154,
-    "segments_transcribed": 146,
-    "editor_attempts": 133,
+    "segments_captured": 155,
+    "segments_transcribed": 147,
+    "editor_attempts": 134,
     "editor_withheld": 129,
-    "topics_published": 8,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T17:01:31.767428+00:00"
+    "last_audio_at": "2026-11-09T17:01:56.729905+00:00"
   }
 }
