@@ -1,83 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "42632678613",
-  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "session": "42647638247",
+  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-09",
-  "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:40:04.758930+00:00",
-  "items": [
-    {
-      "title": "گفت‌وگو درباره نماز",
-      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42632678613-160",
-      "sequence": 160,
-      "updated_at": "2026-11-09T15:34:19.163984+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره استقبال پیامبر از دخترش و توصیف گرسنگی و وضعیت جسمانی او",
-      "summary": "در این بخش، کارشناس به نقل روایتی درباره استقبال پیامبر از دختر خود می‌پردازد و ادعا می‌کند که آن حضرت پس از در آغوش کشیدن ایشان، به گرسنگی دو روزه و رنگ زرد و ناتوانی پاهایش در ایستادن اشاره کرده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42632678613-164",
-      "sequence": 164,
-      "updated_at": "2026-11-09T15:35:57.038388+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره پیشنهاد عقیل به امام علی درباره فاطمه",
-      "summary": "در این بخش کارشناس روایت می‌کند که عقیل به خانه امام علی آمد و پیشنهاد کرد از پیامبر درخواست کمک کنند تا زندگی‌شان سروسامان بگیرد. به گفته کارشناس، پاسخ امام این بود که اشتیاق دارد اما از مطرح کردن آن با پیامبر شرم می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42632678613-168",
-      "sequence": 168,
-      "updated_at": "2026-11-09T15:37:30.754601+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی نقل‌قول درباره واگذاری فاطمه به علی در گفتار کارشناس",
-      "summary": "در این بخش کارشناس با اشاره به حضور خود با شرمندگی در کنار پیامبر، روایتی را مطرح می‌کند که در آن پیامبر اسلام خطاب به علی درباره سپردن فاطمه به او پرسش کرده و علی با جان و دل پاسخ مثبت داده است؛ هرچند این ادعای تاریخی صرفاً به گفته کارشناس گزارش می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42632678613-170",
-      "sequence": 170,
-      "updated_at": "2026-11-09T15:38:19.097384+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره روایت اطعام مهمانان توسط پیامبر",
-      "summary": "در این بخش، کارشناس درباره داستانی از اطعام مهمانان توسط پیامبر استدلال می‌کند؛ بر اساس این روایت، حضرت با دست‌های مبارک خود غذا کشیدند و با وجود رفت‌وآمد افراد متعدد، غذا کم نیامد و در نهایت نیز برای افراد حاضر در آنجا غذا کنار گذاشتند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42632678613-173",
-      "sequence": 173,
-      "updated_at": "2026-11-09T15:39:32.402716+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-09T16:00:06.087609+00:00",
+  "updated_at": "2026-11-09T16:00:07.615918+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 167,
-    "editor_attempts": 162,
-    "editor_withheld": 145,
-    "topics_published": 26,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T15:39:53.027113+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
