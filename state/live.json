@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T16:00:06.087609+00:00",
-  "updated_at": "2026-11-09T16:29:32.472254+00:00",
+  "updated_at": "2026-11-09T16:30:01.602231+00:00",
   "items": [
-    {
-      "title": "پرسش درباره روند تغییر مذهب و خدمت به اهل‌بیت",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که به برکت محبت و شناخت علی (ع) از تکفیر به مکتب آل محمد (ص) درآمده است. به گفته کارشناس، وی نذر کرده است که تا روز مرگ به علی (ع) خدمت کند و درباره او سخن بگوید.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "editor_mode": "audio_grounded_topic",
-      "id": "42647638247-6",
-      "sequence": 6,
-      "updated_at": "2026-11-09T16:02:51.896988+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره حدیث و روایت",
       "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -71,16 +58,28 @@
       "sequence": 47,
       "updated_at": "2026-11-09T16:19:15.447992+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی فرق میان فهم مکتب اهل‌بیت و مکتب مخالفان",
+      "summary": "در این بخش کارشناس به طرح بحث درباره تفاوت میان فهم مکتب آل محمد و فهم مخالفان می‌پردازد و اشاره می‌کند که در این زمینه سخنان قرآن کریم درباره فرهنگ منافقان و دشمنان بررسی خواهد شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42647638247-74",
+      "sequence": 74,
+      "updated_at": "2026-11-09T16:30:01.602207+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 74,
-    "segments_transcribed": 69,
-    "editor_attempts": 61,
+    "segments_captured": 75,
+    "segments_transcribed": 70,
+    "editor_attempts": 62,
     "editor_withheld": 60,
-    "topics_published": 5,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T16:29:32.393489+00:00"
+    "last_audio_at": "2026-11-09T16:29:56.949555+00:00"
   }
 }
