@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T14:37:06.439610+00:00",
+  "updated_at": "2026-11-09T14:37:55.519671+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره احکام و برنامه زنده شبکه ولایت",
@@ -36,13 +36,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 18,
-    "segments_transcribed": 14,
-    "editor_attempts": 13,
-    "editor_withheld": 12,
+    "segments_captured": 20,
+    "segments_transcribed": 15,
+    "editor_attempts": 14,
+    "editor_withheld": 13,
     "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T14:37:01.618221+00:00"
+    "last_audio_at": "2026-11-09T14:37:50.736063+00:00"
   }
 }
