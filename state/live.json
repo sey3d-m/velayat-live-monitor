@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T18:23:33.435835+00:00",
+  "updated_at": "2026-11-09T18:24:21.649724+00:00",
   "items": [
     {
       "title": "پرسش درباره مصداق اهل‌بیت و استدلال به حدیث کسا",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 134,
-    "segments_transcribed": 123,
-    "editor_attempts": 118,
-    "editor_withheld": 96,
+    "segments_captured": 136,
+    "segments_transcribed": 125,
+    "editor_attempts": 120,
+    "editor_withheld": 97,
     "topics_published": 30,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T18:23:28.294231+00:00"
+    "last_audio_at": "2026-11-09T18:24:17.802487+00:00"
   }
 }
