@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:21:11.446976+00:00",
+  "updated_at": "2026-11-09T15:21:52.931068+00:00",
   "items": [
     {
       "title": "بررسی کفایت نمازهای واجب یا مستحب از تحیت مسجد",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 128,
-    "segments_transcribed": 121,
-    "editor_attempts": 116,
-    "editor_withheld": 109,
+    "segments_captured": 130,
+    "segments_transcribed": 123,
+    "editor_attempts": 118,
+    "editor_withheld": 111,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T15:21:07.994152+00:00"
+    "last_audio_at": "2026-11-09T15:21:50.189546+00:00"
   }
 }
