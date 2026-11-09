@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "42647638247",
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T16:00:06.087609+00:00",
-  "updated_at": "2026-11-09T16:02:23.226609+00:00",
-  "items": [],
+  "updated_at": "2026-11-09T16:02:51.897011+00:00",
+  "items": [
+    {
+      "title": "پرسش درباره روند تغییر مذهب و خدمت به اهل‌بیت",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که به برکت محبت و شناخت علی (ع) از تکفیر به مکتب آل محمد (ص) درآمده است. به گفته کارشناس، وی نذر کرده است که تا روز مرگ به علی (ع) خدمت کند و درباره او سخن بگوید.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "editor_mode": "audio_grounded_topic",
+      "id": "42647638247-6",
+      "sequence": 6,
+      "updated_at": "2026-11-09T16:02:51.896988+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 6,
-    "segments_transcribed": 4,
-    "editor_attempts": 2,
-    "editor_withheld": 1,
-    "topics_published": 0,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
-    "last_audio_at": "2026-11-09T16:02:19.980217+00:00"
+    "segments_captured": 7,
+    "segments_transcribed": 5,
+    "editor_attempts": 3,
+    "editor_withheld": 3,
+    "topics_published": 1,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
+    "last_audio_at": "2026-11-09T16:02:44.486733+00:00"
   }
 }
