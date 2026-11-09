@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T17:57:56.553059+00:00",
+  "updated_at": "2026-11-09T17:58:23.537829+00:00",
   "items": [
-    {
-      "title": "بررسی وجود واثق حدیث در صحیح بخاری به نقل از ابن‌تیمیه",
-      "summary": "در این بخش کارشناس استدلال می‌کند که اسناد و مدارکی وجود دارد که نشان می‌دهد واژه‌ای در صحیح بخاری بوده است؛ وی در این زمینه به نقل حدیث مذکور توسط ابن‌تیمیه در کتاب المنتقا استناد می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42662621430-51",
-      "sequence": 51,
-      "updated_at": "2026-11-09T17:50:44.105376+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی ادعای وجود حدیث مهدی از ذریه فاطمه در منابع",
       "summary": "در این بخش کارشناس استدلال می‌کند که پیامبر خدا فرموده است حضرت مهدی (عج) از اولاد و ذریه حضرت فاطمه (س) است و به گفته وی این حدیث در صحیح مسلم وجود داشته اما سال‌هاست که حذف شده است.",
@@ -69,16 +57,28 @@
       "sequence": 62,
       "updated_at": "2026-11-09T17:55:13.050001+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی استناد به روایت عشرۀ مبشره در گفت‌وگو",
+      "summary": "در این بخش کارشناس درباره روایت مربوط به بشارت بهشت به ده نفر صحبت می‌کند و مدعی است چون شیعیان با این افراد مخالفند، با عدد ده نیز مخالفت می‌کنند؛ سپس این مسئله را به مخالفت با حضرت علی (ع) مرتبط می‌سازد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42662621430-70",
+      "sequence": 70,
+      "updated_at": "2026-11-09T17:58:23.537805+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 70,
-    "segments_transcribed": 64,
-    "editor_attempts": 61,
-    "editor_withheld": 50,
-    "topics_published": 15,
+    "segments_captured": 71,
+    "segments_transcribed": 65,
+    "editor_attempts": 62,
+    "editor_withheld": 51,
+    "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T17:57:53.030567+00:00"
+    "last_audio_at": "2026-11-09T17:58:17.105364+00:00"
   }
 }
