@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T18:18:01.646608+00:00",
+  "updated_at": "2026-11-09T18:18:19.899816+00:00",
   "items": [
-    {
-      "title": "بررسی استناد به آیه تطهیر در فضائل اهل‌بیت",
-      "summary": "در این بخش کارشناس استدلال می‌کند که آیه سی‌وسوم سوره احزاب درباره دور کردن پلیدی و پاک کردن اهل‌بیت است و به گفته وی، روایات نیز پیامبر و اهل‌بیت را در ردیف قرآن قرار داده‌اند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42662621430-107",
-      "sequence": 107,
-      "updated_at": "2026-11-09T18:13:08.751067+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی مفهوم واژه بیت و بیوت در قرآن",
       "summary": "در این بخش، کارشناس درباره تفاوت واژه‌های بیت و بیوت استدلال می‌کند و با استناد به آیه قرآن «لا تدخلوا بیوت النبی»، بیان می‌کند که اگر منظور خانه سکونت باشد، پیامبر به جای یک بیت دارای بیوت بوده است.",
@@ -67,16 +55,29 @@
       "sequence": 119,
       "updated_at": "2026-11-09T18:18:01.646588+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خانواده و ازدواج",
+      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42662621430-120",
+      "sequence": 120,
+      "updated_at": "2026-11-09T18:18:19.899792+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 120,
-    "segments_transcribed": 109,
-    "editor_attempts": 104,
-    "editor_withheld": 85,
-    "topics_published": 26,
+    "segments_captured": 121,
+    "segments_transcribed": 110,
+    "editor_attempts": 105,
+    "editor_withheld": 86,
+    "topics_published": 27,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T18:17:56.440477+00:00"
+    "last_audio_at": "2026-11-09T18:18:13.858749+00:00"
   }
 }
