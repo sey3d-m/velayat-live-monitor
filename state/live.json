@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:27:31.668539+00:00",
+  "updated_at": "2026-11-09T15:27:56.592888+00:00",
   "items": [
-    {
-      "title": "بررسی حکم فقهی فراموشی سجده و بازگشت به قیام",
-      "summary": "در این بخش کارشناس درباره وظیفه فردی که سجده اول را فراموش کرده و وارد مرحله بعد شده است، استدلال می‌کند که باید به قیام بازگردد و رکوع و سجود را به‌جا آورد، و احتیاطاً نماز را دوباره بخواند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42632678613-123",
-      "sequence": 123,
-      "updated_at": "2026-11-09T15:19:33.569720+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره تعلق خمس به پول قرض‌داده‌شده به دیگران",
       "summary": "در این بخش، کارشناس درباره تعلق خمس به مبلغی که فردی از افغانستان به مدت پنج تا ششش سال به عنوان قرض به دیگران داده است، پاسخ می‌دهد و شکل‌های مختلف ذکر استغفار را نیز صحیح می‌داند.",
@@ -67,16 +55,29 @@
       "sequence": 142,
       "updated_at": "2026-11-09T15:27:08.611813+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خانواده و ازدواج",
+      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42632678613-144",
+      "sequence": 144,
+      "updated_at": "2026-11-09T15:27:56.592859+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 144,
-    "segments_transcribed": 136,
-    "editor_attempts": 131,
-    "editor_withheld": 120,
-    "topics_published": 17,
+    "segments_captured": 145,
+    "segments_transcribed": 137,
+    "editor_attempts": 132,
+    "editor_withheld": 122,
+    "topics_published": 18,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T15:27:29.031035+00:00"
+    "last_audio_at": "2026-11-09T15:27:52.923325+00:00"
   }
 }
