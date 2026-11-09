@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T18:14:48.153860+00:00",
+  "updated_at": "2026-11-09T18:15:32.672551+00:00",
   "items": [
     {
       "title": "پرسش درباره حکم و مدت زمان عده وفات و طلاق زن",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 112,
-    "segments_transcribed": 101,
-    "editor_attempts": 96,
-    "editor_withheld": 79,
+    "segments_captured": 114,
+    "segments_transcribed": 103,
+    "editor_attempts": 98,
+    "editor_withheld": 81,
     "topics_published": 23,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T18:14:43.065165+00:00"
+    "last_audio_at": "2026-11-09T18:15:26.930754+00:00"
   }
 }
