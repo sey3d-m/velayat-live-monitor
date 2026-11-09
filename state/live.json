@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T17:52:22.736735+00:00",
+  "updated_at": "2026-11-09T17:53:06.266484+00:00",
   "items": [
     {
       "title": "پرسش درباره تفاوت رویکرد ترامپ و نتانیاهو با امید به خدا",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 56,
-    "segments_transcribed": 50,
-    "editor_attempts": 47,
-    "editor_withheld": 37,
+    "segments_captured": 58,
+    "segments_transcribed": 52,
+    "editor_attempts": 49,
+    "editor_withheld": 39,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T17:52:18.903022+00:00"
+    "last_audio_at": "2026-11-09T17:53:02.164567+00:00"
   }
 }
