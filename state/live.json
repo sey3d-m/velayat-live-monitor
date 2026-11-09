@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T14:57:09.479950+00:00",
+  "updated_at": "2026-11-09T14:57:34.618137+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره نماز",
-      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42632678613-19",
-      "sequence": 19,
-      "updated_at": "2026-11-09T14:37:56.762253+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره حکم نماز اول وقت دورکعتی و مسئله موی گربه در لباس نمازگزار",
       "summary": "در این بخش درباره فضیلت خواندن نماز چهاررکعتی به‌صورت دورکعتی در اول وقت و ادعای برتری آن پرسش شد. همچنین کارشناس به دیدگاه مراجع درباره باطل شدن نماز در صورت وجود موی گربه در بدن یا لباس نمازگزار اشاره کرد و آن را نیازمند بررسی تفاوت فتواها دانست.",
@@ -69,16 +56,29 @@
       "sequence": 58,
       "updated_at": "2026-11-09T14:53:31.757175+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42632678613-68",
+      "sequence": 68,
+      "updated_at": "2026-11-09T14:57:34.618118+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 68,
-    "segments_transcribed": 61,
-    "editor_attempts": 58,
-    "editor_withheld": 54,
-    "topics_published": 7,
+    "segments_captured": 69,
+    "segments_transcribed": 62,
+    "editor_attempts": 59,
+    "editor_withheld": 56,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T14:57:06.920638+00:00"
+    "last_audio_at": "2026-11-09T14:57:25.819678+00:00"
   }
 }
