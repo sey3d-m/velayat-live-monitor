@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:05:05.275422+00:00",
+  "updated_at": "2026-11-09T15:05:53.691254+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره خمس و زکات",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 88,
-    "segments_transcribed": 81,
-    "editor_attempts": 77,
-    "editor_withheld": 72,
+    "segments_captured": 90,
+    "segments_transcribed": 83,
+    "editor_attempts": 79,
+    "editor_withheld": 74,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T15:05:01.729908+00:00"
+    "last_audio_at": "2026-11-09T15:05:50.949902+00:00"
   }
 }
