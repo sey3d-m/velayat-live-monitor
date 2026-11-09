@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:26:43.494546+00:00",
+  "updated_at": "2026-11-09T15:27:08.611843+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره احکام طهارت",
-      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42632678613-121",
-      "sequence": 121,
-      "updated_at": "2026-11-09T15:18:44.435233+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی حکم فقهی فراموشی سجده و بازگشت به قیام",
       "summary": "در این بخش کارشناس درباره وظیفه فردی که سجده اول را فراموش کرده و وارد مرحله بعد شده است، استدلال می‌کند که باید به قیام بازگردد و رکوع و سجود را به‌جا آورد، و احتیاطاً نماز را دوباره بخواند.",
@@ -68,16 +55,28 @@
       "sequence": 141,
       "updated_at": "2026-11-09T15:26:43.494524+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره دستور پیامبر به بلال برای اجتماع مهاجران و انصار در مسجد",
+      "summary": "در این بخش، کارشناس به روایتی اشاره می‌کند که بر اساس آن، پیامبر پس از ورود به مسجد، بلال را فراخواند تا مهاجران و انصار را برای تجمع گرد هم آورد. به گفته کارشناس، پیامبر پس از جمع شدن همگان بر فراز منبر رفت و با حمد و ثنای الهی سخن آغاز کرد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42632678613-142",
+      "sequence": 142,
+      "updated_at": "2026-11-09T15:27:08.611813+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 142,
-    "segments_transcribed": 134,
-    "editor_attempts": 129,
+    "segments_captured": 143,
+    "segments_transcribed": 135,
+    "editor_attempts": 130,
     "editor_withheld": 120,
-    "topics_published": 16,
+    "topics_published": 17,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T15:26:39.488016+00:00"
+    "last_audio_at": "2026-11-09T15:27:03.806794+00:00"
   }
 }
