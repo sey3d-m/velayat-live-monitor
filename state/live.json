@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T18:29:54.501792+00:00",
+  "updated_at": "2026-11-09T18:30:42.879266+00:00",
   "items": [
     {
       "title": "پرسش درباره مدت زمان و کیفیت نزول آیه تطهیر در خانه اهل‌بیت",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 150,
+    "segments_captured": 152,
     "segments_transcribed": 136,
     "editor_attempts": 129,
     "editor_withheld": 105,
     "topics_published": 32,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T18:29:52.910837+00:00"
+    "last_audio_at": "2026-11-09T18:30:42.819028+00:00"
   }
 }
