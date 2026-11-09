@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T16:00:06.087609+00:00",
-  "updated_at": "2026-11-09T16:04:01.253570+00:00",
+  "updated_at": "2026-11-09T16:04:04.394364+00:00",
   "items": [
     {
       "title": "پرسش درباره روند تغییر مذهب و خدمت به اهل‌بیت",
@@ -20,16 +20,29 @@
       "sequence": 6,
       "updated_at": "2026-11-09T16:02:51.896988+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره حدیث و روایت",
+      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "audio_grounded_topic",
+      "editor_confidence": 0.0,
+      "id": "42647638247-9",
+      "sequence": 9,
+      "updated_at": "2026-11-09T16:04:04.394339+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 10,
     "segments_transcribed": 8,
     "editor_attempts": 6,
-    "editor_withheld": 5,
-    "topics_published": 1,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
+    "editor_withheld": 6,
+    "topics_published": 2,
+    "audio_ai_calls": 2,
+    "audio_ai_success": 2,
     "last_audio_at": "2026-11-09T16:03:57.567941+00:00"
   }
 }
