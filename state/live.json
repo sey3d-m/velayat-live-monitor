@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T18:17:11.779033+00:00",
+  "updated_at": "2026-11-09T18:17:37.208806+00:00",
   "items": [
-    {
-      "title": "بررسی معنای کلمه «قروء» در آیه طلاق",
-      "summary": "در این بخش درباره معنای واژه «قروء» در آیه طلاق بحث شد. به گفته کارشناس، قرآن کریم در این باره می‌فرماید زنان مطلقه باید سه «قروء» انتظار بکشند، و سپس این پرسش مطرح شد که معنای دقیق «قرء» چیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42662621430-97",
-      "sequence": 97,
-      "updated_at": "2026-11-09T18:09:07.841821+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
       "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -68,16 +56,28 @@
       "sequence": 117,
       "updated_at": "2026-11-09T18:17:11.779015+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی استدلال اهل‌بیت به عنوان کشتی نجات و امان امت",
+      "summary": "در این بخش کارشناس استدلال می‌کند که اهل‌بیت مایه تمسک در کنار قرآن و کشتی نجات امت هستند. به گفته وی، پیامبر اسلام با تأکید بر اینکه اهل‌بیت امان از اختلاف‌ها هستند، جایگاه و مصادیق آنان را کاملاً مشخص کرده است تا امت دچار گمراهی نشود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42662621430-118",
+      "sequence": 118,
+      "updated_at": "2026-11-09T18:17:37.208782+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 118,
-    "segments_transcribed": 107,
-    "editor_attempts": 102,
+    "segments_captured": 119,
+    "segments_transcribed": 108,
+    "editor_attempts": 103,
     "editor_withheld": 85,
-    "topics_published": 24,
+    "topics_published": 25,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T18:17:06.299577+00:00"
+    "last_audio_at": "2026-11-09T18:17:31.007198+00:00"
   }
 }
