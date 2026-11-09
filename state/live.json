@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:33:53.059761+00:00",
+  "updated_at": "2026-11-09T15:34:19.164012+00:00",
   "items": [
-    {
-      "title": "پرسش درباره دستور پیامبر به بلال برای اجتماع مهاجران و انصار در مسجد",
-      "summary": "در این بخش، کارشناس به روایتی اشاره می‌کند که بر اساس آن، پیامبر پس از ورود به مسجد، بلال را فراخواند تا مهاجران و انصار را برای تجمع گرد هم آورد. به گفته کارشناس، پیامبر پس از جمع شدن همگان بر فراز منبر رفت و با حمد و ثنای الهی سخن آغاز کرد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42632678613-142",
-      "sequence": 142,
-      "updated_at": "2026-11-09T15:27:08.611813+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره خانواده و ازدواج",
       "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -68,16 +56,29 @@
       "sequence": 151,
       "updated_at": "2026-11-09T15:30:43.205153+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز",
+      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42632678613-160",
+      "sequence": 160,
+      "updated_at": "2026-11-09T15:34:19.163984+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 160,
-    "segments_transcribed": 152,
-    "editor_attempts": 147,
-    "editor_withheld": 133,
-    "topics_published": 21,
+    "segments_captured": 161,
+    "segments_transcribed": 153,
+    "editor_attempts": 148,
+    "editor_withheld": 135,
+    "topics_published": 22,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T15:33:50.469947+00:00"
+    "last_audio_at": "2026-11-09T15:34:14.430007+00:00"
   }
 }
