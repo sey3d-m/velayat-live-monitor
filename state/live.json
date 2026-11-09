@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T16:00:06.087609+00:00",
-  "updated_at": "2026-11-09T16:19:15.448015+00:00",
+  "updated_at": "2026-11-09T16:20:01.960758+00:00",
   "items": [
     {
       "title": "پرسش درباره روند تغییر مذهب و خدمت به اهل‌بیت",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 48,
-    "segments_transcribed": 46,
-    "editor_attempts": 42,
+    "segments_captured": 50,
+    "segments_transcribed": 48,
+    "editor_attempts": 43,
     "editor_withheld": 41,
     "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T16:19:10.024220+00:00"
+    "last_audio_at": "2026-11-09T16:19:58.492060+00:00"
   }
 }
