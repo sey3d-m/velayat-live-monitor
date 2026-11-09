@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T14:50:43.319492+00:00",
+  "updated_at": "2026-11-09T14:50:44.634964+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره احکام و برنامه زنده شبکه ولایت",
-      "summary": "در این بخش کارشناس برنامه زنده زمزمه احکام شبکه جهانی ولایت، ضمن سلام و درود به بینندگان، آغاز برنامه روزهای زوج هفته را اعلام می‌کند و به مخاطبان خوش‌آمد می‌گوید.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "editor_mode": "audio_grounded_topic",
-      "id": "42632678613-8",
-      "sequence": 8,
-      "updated_at": "2026-11-09T14:33:34.630858+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره روزه",
       "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -71,6 +58,18 @@
       "sequence": 50,
       "updated_at": "2026-11-09T14:50:20.264445+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی حکم و کیفیت خواندن نماز قضا برای پدر مرحوم",
+      "summary": "در این بخش درباره خواندن نماز قضا برای پدر مرحوم مطرح شد که کارشناس استدلال می‌کند نماز پدر بر فرزند چه پسر و چه دختر واجب نیست، اما اگر کسی برای خدمت به پدر مرحومش این کار را انجام دهد ثواب زیادی دارد و باید به صورت نشسته خوانده شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42632678613-51",
+      "sequence": 51,
+      "updated_at": "2026-11-09T14:50:44.634946+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -78,7 +77,7 @@
     "segments_transcribed": 46,
     "editor_attempts": 44,
     "editor_withheld": 42,
-    "topics_published": 5,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-09T14:50:39.997429+00:00"
