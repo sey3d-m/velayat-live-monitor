@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T17:37:09.574642+00:00",
+  "updated_at": "2026-11-09T17:37:35.315796+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره حضرت عباس",
@@ -20,16 +20,28 @@
       "sequence": 1,
       "updated_at": "2026-11-09T17:30:46.107616+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی استدلال مقابله با زور و قلدوری در اسلام",
+      "summary": "در این بخش کارشناس استدلال می‌کند که در برابر افرادی که منطق نمی‌پذیرند و از زور استفاده می‌کنند، اسلام دستور مقاومت و جنگ با ستمگران را صادر کرده است و پیامبر خدا در همین راستا نخستین دستورها را صادر کرد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42662621430-18",
+      "sequence": 18,
+      "updated_at": "2026-11-09T17:37:35.315773+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 18,
-    "segments_transcribed": 13,
-    "editor_attempts": 10,
-    "editor_withheld": 9,
-    "topics_published": 1,
+    "segments_captured": 19,
+    "segments_transcribed": 14,
+    "editor_attempts": 11,
+    "editor_withheld": 10,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T17:37:06.480667+00:00"
+    "last_audio_at": "2026-11-09T17:37:31.022217+00:00"
   }
 }
