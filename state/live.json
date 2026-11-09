@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T17:55:13.050025+00:00",
+  "updated_at": "2026-11-09T17:55:34.527134+00:00",
   "items": [
     {
       "title": "بررسی وجود واثق حدیث در صحیح بخاری به نقل از ابن‌تیمیه",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 63,
-    "segments_transcribed": 57,
-    "editor_attempts": 54,
+    "segments_captured": 64,
+    "segments_transcribed": 58,
+    "editor_attempts": 55,
     "editor_withheld": 44,
     "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T17:55:05.473474+00:00"
+    "last_audio_at": "2026-11-09T17:55:30.309122+00:00"
   }
 }
