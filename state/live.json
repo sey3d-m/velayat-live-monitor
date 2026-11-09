@@ -1,83 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "42503929693",
-  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
-  "program_date": "2026-11-08",
-  "started_at": "2026-11-08T17:14:41.251798+00:00",
-  "updated_at": "2026-11-08T18:40:03.598037+00:00",
-  "items": [
-    {
-      "title": "پرسش درباره روایت معیار حق و باطل در محاوره کارشناس",
-      "summary": "در این بخش، کارشناس استدلال کرد که شخصیتی فاروق و فاتح بودن حق و باطل تا روز قیامت است و در ا඼ن زم඼نه به روایتٞ موجود در کتاب‌هایی مانند بخاری اشاره کرد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "42503929693-91",
-      "sequence": 91,
-      "updated_at": "2026-11-08T18:06:44.789093+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره ولایت و غدیر",
-      "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42503929693-95",
-      "sequence": 95,
-      "updated_at": "2026-11-08T18:08:16.231260+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره نسبت حکم فدک و خیبر در بیان کارشناس",
-      "summary": "در این بخش، کارشناس درباره واگذاری فدک و ارتباط آن با حکم الهی و فتح خیبر نکاتی را مطرح می‌کند و به این موضوع می‌پردازد که این مسئله چگونه توسط گوینده بیان نشده است و به امر الهی در این زمینه اشاره می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42503929693-96",
-      "sequence": 96,
-      "updated_at": "2026-11-08T18:08:39.469407+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره ماجرای فدک و خطبه حضرت زهرا در سخنان کارشناس",
-      "summary": "در این بخش کارشناس درباره مطالبه فدک و استدلال به ارث پیامبر گفت‌وگو می‌کند. به گفته کارشناس، در این ماجرا این پرسش مطرح شد که چرا با وجود تعلق فدک به پیامبر و ارث بودن آن، از حضرت زهرا درخواست قسم شد و به خطبه منتسب به ابوبکر اشاره کرد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42503929693-100",
-      "sequence": 100,
-      "updated_at": "2026-11-08T18:10:18.134747+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی چگونگی جمع‌آوری قرآن در عصر پیامبر",
-      "summary": "در این بخش کارشناس استدلال می‌کند که قرآن کریم در زمان پیامبر اکرم به صورت کتاب جمع‌آوری شده بود و مأموریت امیرمؤمنان علیه‌السلام مرتب کردن قرآنی بود که به املای پیامبر و کتابت آن حضرت نوشته و ثبت شده بود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42503929693-150",
-      "sequence": 150,
-      "updated_at": "2026-11-08T18:30:20.995187+00:00",
-      "speaker": null
-    }
-  ],
+  "session": "42632678613",
+  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "program_date": "2026-11-09",
+  "started_at": "2026-11-09T14:14:45.708023+00:00",
+  "updated_at": "2026-11-09T14:30:00.000273+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 160,
-    "editor_attempts": 133,
-    "editor_withheld": 122,
-    "topics_published": 14,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-08T18:39:51.630866+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
