@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:37:30.754628+00:00",
+  "updated_at": "2026-11-09T15:37:53.230813+00:00",
   "items": [
     {
       "title": "بررسی اقلام جهیزیه ذکر شده در گفتار",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 169,
-    "segments_transcribed": 161,
-    "editor_attempts": 156,
+    "segments_captured": 170,
+    "segments_transcribed": 162,
+    "editor_attempts": 157,
     "editor_withheld": 141,
     "topics_published": 24,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T15:37:25.739942+00:00"
+    "last_audio_at": "2026-11-09T15:37:50.317874+00:00"
   }
 }
