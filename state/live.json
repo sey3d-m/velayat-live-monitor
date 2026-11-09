@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T16:00:06.087609+00:00",
-  "updated_at": "2026-11-09T16:06:48.959286+00:00",
+  "updated_at": "2026-11-09T16:06:54.549480+00:00",
   "items": [
     {
       "title": "پرسش درباره روند تغییر مذهب و خدمت به اهل‌بیت",
@@ -46,16 +46,29 @@
       "sequence": 12,
       "updated_at": "2026-11-09T16:05:18.480832+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42647638247-16",
+      "sequence": 16,
+      "updated_at": "2026-11-09T16:06:54.549456+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 16,
-    "segments_transcribed": 14,
-    "editor_attempts": 12,
-    "editor_withheld": 11,
-    "topics_published": 3,
+    "segments_captured": 17,
+    "segments_transcribed": 15,
+    "editor_attempts": 13,
+    "editor_withheld": 13,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T16:06:24.963275+00:00"
+    "last_audio_at": "2026-11-09T16:06:50.461006+00:00"
   }
 }
