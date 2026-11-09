@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:37:09.428073+00:00",
+  "updated_at": "2026-11-09T15:37:30.754628+00:00",
   "items": [
-    {
-      "title": "پرسش درباره ماجرای فروش زره و بازگرداندن آن توسط یکی از اصحاب",
-      "summary": "در این بخش کارشناس به داستانی اشاره می‌کند که بر اساس آن، گوینده زرهی را به یکی از اصحاب فروخته و آن صحابی پس از آگاهی از وضعیت فروش، پول و زره را به اصرار بازگردانده است. بررسی این روایت به صورت نقل‌قول از سوی کارشناس مطرح شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42632678613-148",
-      "sequence": 148,
-      "updated_at": "2026-11-09T15:29:29.846380+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی اقلام جهیزیه ذکر شده در گفتار",
       "summary": "در این بخش کارشناس به شمارش و معرفی اقلامی چون مغنعه، حوله، تختخواب، حصیر، آسیای دستی و ظروف سفالی و گلی می‌پردازد و این فهرست را به عنوان اقلام موجود مطرح می‌کند.",
@@ -68,16 +56,28 @@
       "sequence": 164,
       "updated_at": "2026-11-09T15:35:57.038388+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره پیشنهاد عقیل به امام علی درباره فاطمه",
+      "summary": "در این بخش کارشناس روایت می‌کند که عقیل به خانه امام علی آمد و پیشنهاد کرد از پیامبر درخواست کمک کنند تا زندگی‌شان سروسامان بگیرد. به گفته کارشناس، پاسخ امام این بود که اشتیاق دارد اما از مطرح کردن آن با پیامبر شرم می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42632678613-168",
+      "sequence": 168,
+      "updated_at": "2026-11-09T15:37:30.754601+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 168,
-    "segments_transcribed": 160,
-    "editor_attempts": 155,
-    "editor_withheld": 140,
-    "topics_published": 23,
+    "segments_captured": 169,
+    "segments_transcribed": 161,
+    "editor_attempts": 156,
+    "editor_withheld": 141,
+    "topics_published": 24,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T15:37:06.692652+00:00"
+    "last_audio_at": "2026-11-09T15:37:25.739942+00:00"
   }
 }
