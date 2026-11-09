@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T18:18:00.417692+00:00",
+  "updated_at": "2026-11-09T18:18:01.646608+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42662621430-100",
-      "sequence": 100,
-      "updated_at": "2026-11-09T18:10:21.547210+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی استناد به آیه تطهیر در فضائل اهل‌بیت",
       "summary": "در این بخش کارشناس استدلال می‌کند که آیه سی‌وسوم سوره احزاب درباره دور کردن پلیدی و پاک کردن اهل‌بیت است و به گفته وی، روایات نیز پیامبر و اهل‌بیت را در ردیف قرآن قرار داده‌اند.",
@@ -68,6 +55,18 @@
       "sequence": 118,
       "updated_at": "2026-11-09T18:17:37.208782+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره مصداق اهل‌بیت و استدلال به حدیث کسا",
+      "summary": "در این بخش کارشناس استدلال می‌کند که مقصود از اهل‌بیت در سخنان مطرح‌شده، افراد مشخصی هستند که در ماجرای تحت الکسا قرار گرفته‌اند و این مصداق با عبارت «اللهم هؤلاء اهل بیتی» مشخص شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.8,
+      "id": "42662621430-119",
+      "sequence": 119,
+      "updated_at": "2026-11-09T18:18:01.646588+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -75,7 +74,7 @@
     "segments_transcribed": 109,
     "editor_attempts": 104,
     "editor_withheld": 85,
-    "topics_published": 25,
+    "topics_published": 26,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-09T18:17:56.440477+00:00"
