@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T14:49:53.403883+00:00",
+  "updated_at": "2026-11-09T14:50:20.264475+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره احکام و برنامه زنده شبکه ولایت",
@@ -58,16 +58,29 @@
       "sequence": 26,
       "updated_at": "2026-11-09T14:40:42.115227+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خمس و زکات",
+      "summary": "در این بخش از برنامه، موضوع «خمس و زکات» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42632678613-50",
+      "sequence": 50,
+      "updated_at": "2026-11-09T14:50:20.264445+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 50,
-    "segments_transcribed": 44,
-    "editor_attempts": 42,
-    "editor_withheld": 40,
-    "topics_published": 4,
+    "segments_captured": 51,
+    "segments_transcribed": 45,
+    "editor_attempts": 43,
+    "editor_withheld": 42,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T14:49:49.997409+00:00"
+    "last_audio_at": "2026-11-09T14:50:14.622550+00:00"
   }
 }
