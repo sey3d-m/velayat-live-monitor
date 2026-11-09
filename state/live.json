@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T18:01:09.079613+00:00",
+  "updated_at": "2026-11-09T18:01:35.517359+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره حدیث و روایت",
-      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42662621430-54",
-      "sequence": 54,
-      "updated_at": "2026-11-09T17:51:59.702444+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره احکام طهارت",
       "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +57,28 @@
       "sequence": 71,
       "updated_at": "2026-11-09T17:58:47.707368+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی قدمت منابع و کتب روایی و فقهی شیعه",
+      "summary": "در این بخش کارشناس استدلال می‌کند که کتاب‌های شیعه از هزار سال پیش وجود داشته و به آثار علمای بزرگی مانند شیخ صدوق، شیخ مفید، شیخ طوسی و همچنین تحریر و وسیله امام خمینی اشاره می‌کند تا استمرار این منابع را نشان دهد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42662621430-78",
+      "sequence": 78,
+      "updated_at": "2026-11-09T18:01:35.517334+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 78,
-    "segments_transcribed": 72,
-    "editor_attempts": 69,
-    "editor_withheld": 57,
-    "topics_published": 17,
+    "segments_captured": 79,
+    "segments_transcribed": 73,
+    "editor_attempts": 70,
+    "editor_withheld": 58,
+    "topics_published": 18,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T18:01:05.189294+00:00"
+    "last_audio_at": "2026-11-09T18:01:29.647013+00:00"
   }
 }
