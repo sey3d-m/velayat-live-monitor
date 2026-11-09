@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:35:31.809506+00:00",
+  "updated_at": "2026-11-09T15:35:57.038413+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره خانواده و ازدواج",
-      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42632678613-144",
-      "sequence": 144,
-      "updated_at": "2026-11-09T15:27:56.592859+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره ماجرای فروش زره و بازگرداندن آن توسط یکی از اصحاب",
       "summary": "در این بخش کارشناس به داستانی اشاره می‌کند که بر اساس آن، گوینده زرهی را به یکی از اصحاب فروخته و آن صحابی پس از آگاهی از وضعیت فروش، پول و زره را به اصرار بازگردانده است. بررسی این روایت به صورت نقل‌قول از سوی کارشناس مطرح شد.",
@@ -69,16 +56,28 @@
       "sequence": 160,
       "updated_at": "2026-11-09T15:34:19.163984+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره استقبال پیامبر از دخترش و توصیف گرسنگی و وضعیت جسمانی او",
+      "summary": "در این بخش، کارشناس به نقل روایتی درباره استقبال پیامبر از دختر خود می‌پردازد و ادعا می‌کند که آن حضرت پس از در آغوش کشیدن ایشان، به گرسنگی دو روزه و رنگ زرد و ناتوانی پاهایش در ایستادن اشاره کرده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42632678613-164",
+      "sequence": 164,
+      "updated_at": "2026-11-09T15:35:57.038388+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 164,
-    "segments_transcribed": 156,
-    "editor_attempts": 151,
-    "editor_withheld": 137,
-    "topics_published": 22,
+    "segments_captured": 165,
+    "segments_transcribed": 157,
+    "editor_attempts": 152,
+    "editor_withheld": 138,
+    "topics_published": 23,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T15:35:28.993423+00:00"
+    "last_audio_at": "2026-11-09T15:35:53.250714+00:00"
   }
 }
