@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:37:53.230813+00:00",
+  "updated_at": "2026-11-09T15:38:19.097412+00:00",
   "items": [
-    {
-      "title": "بررسی اقلام جهیزیه ذکر شده در گفتار",
-      "summary": "در این بخش کارشناس به شمارش و معرفی اقلامی چون مغنعه، حوله، تختخواب، حصیر، آسیای دستی و ظروف سفالی و گلی می‌پردازد و این فهرست را به عنوان اقلام موجود مطرح می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "id": "42632678613-150",
-      "sequence": 150,
-      "updated_at": "2026-11-09T15:30:18.969451+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی ماجرای ساده‌زیستی و دعا هنگام تشکیل زندگی",
       "summary": "در این بخش کارشناس استدلال می‌کند که ابزار ساده‌ای مانند پوست و عبا برای تشکیل زندگی ارائه شد و به گفته وی، با دیدن این صحنه، دست‌های مبارک به دعا بلند شد و درخواست خیر برای اهل‌بیت مطرح گردید.",
@@ -68,16 +56,28 @@
       "sequence": 168,
       "updated_at": "2026-11-09T15:37:30.754601+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نقل‌قول درباره واگذاری فاطمه به علی در گفتار کارشناس",
+      "summary": "در این بخش کارشناس با اشاره به حضور خود با شرمندگی در کنار پیامبر، روایتی را مطرح می‌کند که در آن پیامبر اسلام خطاب به علی درباره سپردن فاطمه به او پرسش کرده و علی با جان و دل پاسخ مثبت داده است؛ هرچند این ادعای تاریخی صرفاً به گفته کارشناس گزارش می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42632678613-170",
+      "sequence": 170,
+      "updated_at": "2026-11-09T15:38:19.097384+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 170,
-    "segments_transcribed": 162,
-    "editor_attempts": 157,
-    "editor_withheld": 141,
-    "topics_published": 24,
+    "segments_captured": 171,
+    "segments_transcribed": 163,
+    "editor_attempts": 158,
+    "editor_withheld": 142,
+    "topics_published": 25,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T15:37:50.317874+00:00"
+    "last_audio_at": "2026-11-09T15:38:14.642799+00:00"
   }
 }
