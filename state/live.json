@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:09:04.868706+00:00",
+  "updated_at": "2026-11-09T15:09:31.980626+00:00",
   "items": [
-    {
-      "title": "بررسی حکم و کیفیت خواندن نماز قضا برای پدر مرحوم",
-      "summary": "در این بخش درباره خواندن نماز قضا برای پدر مرحوم مطرح شد که کارشناس استدلال می‌کند نماز پدر بر فرزند چه پسر و چه دختر واجب نیست، اما اگر کسی برای خدمت به پدر مرحومش این کار را انجام دهد ثواب زیادی دارد و باید به صورت نشسته خوانده شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42632678613-51",
-      "sequence": 51,
-      "updated_at": "2026-11-09T14:50:44.634946+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی حکم تیمم و نماز با دست جبیره در کلام کارشناس",
       "summary": "در این بخش درباره کیفیت انجام تیمم و نماز با وجود دست جبیره گفتگو شد. کارشناس استدلال می‌کند که اگر دو دست دارای مشکل و جبیره باشد، تیمم با کیفیت خاص خود انجام می‌شود و برای نماز مشکلی ایجاد نمی‌کند؛ همچنین نمازهای فرد در این حالت به شکل معمول ادا خواهد شد.",
@@ -68,16 +56,29 @@
       "sequence": 96,
       "updated_at": "2026-11-09T15:08:48.087386+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره زیارت",
+      "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42632678613-98",
+      "sequence": 98,
+      "updated_at": "2026-11-09T15:09:31.980597+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 98,
-    "segments_transcribed": 91,
-    "editor_attempts": 87,
-    "editor_withheld": 81,
-    "topics_published": 10,
+    "segments_captured": 99,
+    "segments_transcribed": 92,
+    "editor_attempts": 88,
+    "editor_withheld": 83,
+    "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T15:09:01.556723+00:00"
+    "last_audio_at": "2026-11-09T15:09:26.250864+00:00"
   }
 }
