@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T17:51:34.219586+00:00",
+  "updated_at": "2026-11-09T17:51:59.702470+00:00",
   "items": [
-    {
-      "title": "پرسش درباره میزان آسیب‌پذیری دشمنان در تحلیل کارشناس",
-      "summary": "در این بخش کارشناس استدلال می‌کند که همان‌گونه که مؤمنان از آسیب‌های دشمنان رنج می‌برند، دشمنان نیز آسیب می‌بینند. به گفته کارشناس، در شرایط کنونی دشمنانی مانند آمریکا و اسرائیل آسیب زیادی دیده و جایگاه خود را در دنیا از دست داده‌اند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42662621430-40",
-      "sequence": 40,
-      "updated_at": "2026-11-09T17:46:22.903807+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره تفاوت رویکرد ترامپ و نتانیاهو با امید به خدا",
       "summary": "در این بخش کارشناس استدلال می‌کند که ترامپ و نتانیاهو در مواجهه با مشکلات تلاش می‌کنند مسائل را به گردن دیگران بیندازند. با این وجود، به گفته کارشناس، تفاوت اساسی این است که مؤمنان به خداوند امید دارند و به استناد عبارت «ترجون امین الله ما لا یرجون»، چشم‌انداز متفاوتی در برابر مشکلات دارند.",
@@ -67,16 +55,29 @@
       "sequence": 53,
       "updated_at": "2026-11-09T17:51:34.219566+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره حدیث و روایت",
+      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42662621430-54",
+      "sequence": 54,
+      "updated_at": "2026-11-09T17:51:59.702444+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 54,
-    "segments_transcribed": 48,
-    "editor_attempts": 45,
-    "editor_withheld": 36,
-    "topics_published": 12,
+    "segments_captured": 55,
+    "segments_transcribed": 49,
+    "editor_attempts": 46,
+    "editor_withheld": 37,
+    "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T17:51:29.304353+00:00"
+    "last_audio_at": "2026-11-09T17:51:53.606993+00:00"
   }
 }
