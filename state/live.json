@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T18:08:22.546899+00:00",
+  "updated_at": "2026-11-09T18:08:24.632529+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره احکام طهارت",
-      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42662621430-59",
-      "sequence": 59,
-      "updated_at": "2026-11-09T17:54:09.685015+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی لزوم رعایت ادب در قلم و گفتار",
       "summary": "در این بخش کارشناس استدلال می‌کند که اهل ادب و قلم نباید به فحاشی روی آورند؛ زیرا فحاشی کار افراد بی‌منطق و کوچه‌بازار است و هنگامی که فردی قلم به دست می‌گیرد، باید با ادب و احترام سخن بگوید.",
@@ -69,6 +56,18 @@
       "sequence": 78,
       "updated_at": "2026-11-09T18:01:35.517334+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره حکم و مدت زمان عده وفات و طلاق زن",
+      "summary": "در این بخش کارشناس درباره احکام عده زن پس از فوت همسر یا طلاق توضیح می‌دهد و بیان می‌کند که در عده وفات زن تا مدت مشخصی حق ازدواج ندارد و باید محدودیت‌های مربوط به این ایام را رعایت کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42662621430-95",
+      "sequence": 95,
+      "updated_at": "2026-11-09T18:08:24.632504+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -76,7 +75,7 @@
     "segments_transcribed": 85,
     "editor_attempts": 80,
     "editor_withheld": 67,
-    "topics_published": 18,
+    "topics_published": 19,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-09T18:08:18.755011+00:00"
