@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T14:59:33.091659+00:00",
+  "updated_at": "2026-11-09T15:00:21.549444+00:00",
   "items": [
     {
       "title": "پرسش درباره حکم نماز اول وقت دورکعتی و مسئله موی گربه در لباس نمازگزار",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 74,
-    "segments_transcribed": 67,
-    "editor_attempts": 64,
-    "editor_withheld": 60,
+    "segments_captured": 76,
+    "segments_transcribed": 69,
+    "editor_attempts": 66,
+    "editor_withheld": 62,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T14:59:29.892462+00:00"
+    "last_audio_at": "2026-11-09T15:00:18.549217+00:00"
   }
 }
