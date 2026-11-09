@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T17:44:45.230522+00:00",
+  "updated_at": "2026-11-09T17:45:07.979534+00:00",
   "items": [
     {
       "title": "بررسی استدلال درباره مقابله با سردمداران کفر و ظلم",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 37,
-    "segments_transcribed": 31,
-    "editor_attempts": 28,
+    "segments_captured": 38,
+    "segments_transcribed": 32,
+    "editor_attempts": 29,
     "editor_withheld": 24,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T17:44:39.339294+00:00"
+    "last_audio_at": "2026-11-09T17:45:03.644066+00:00"
   }
 }
