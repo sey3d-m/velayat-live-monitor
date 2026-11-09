@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T17:39:59.733701+00:00",
+  "updated_at": "2026-11-09T17:40:22.626905+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره حضرت عباس",
@@ -47,13 +47,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 25,
-    "segments_transcribed": 20,
-    "editor_attempts": 17,
+    "segments_captured": 26,
+    "segments_transcribed": 21,
+    "editor_attempts": 18,
     "editor_withheld": 15,
     "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T17:39:54.267432+00:00"
+    "last_audio_at": "2026-11-09T17:40:18.821484+00:00"
   }
 }
