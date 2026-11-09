@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T17:39:33.106248+00:00",
+  "updated_at": "2026-11-09T17:39:59.733701+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره حضرت عباس",
@@ -32,16 +32,28 @@
       "sequence": 18,
       "updated_at": "2026-11-09T17:37:35.315773+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی استدلال درباره مقابله با سردمداران کفر و ظلم",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که در برابر کسانی که منطق نمی‌پذیرند و به زور و قلدوری متوسل می‌شوند، اسلام دستور به ایستادگی محکم می‌دهد. به گفته وی، در مواجهه با سردمداران کفر، ظلم و فساد باید بر اساس آیه ذکرشده در گفتار عمل کرد و با آنان به جنگ و مقابله برخاست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42662621430-24",
+      "sequence": 24,
+      "updated_at": "2026-11-09T17:39:59.733673+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 24,
-    "segments_transcribed": 19,
-    "editor_attempts": 16,
-    "editor_withheld": 14,
-    "topics_published": 2,
+    "segments_captured": 25,
+    "segments_transcribed": 20,
+    "editor_attempts": 17,
+    "editor_withheld": 15,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T17:39:29.393303+00:00"
+    "last_audio_at": "2026-11-09T17:39:54.267432+00:00"
   }
 }
