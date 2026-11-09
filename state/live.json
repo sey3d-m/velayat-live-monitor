@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:08:48.087413+00:00",
+  "updated_at": "2026-11-09T15:09:04.868706+00:00",
   "items": [
     {
       "title": "بررسی حکم و کیفیت خواندن نماز قضا برای پدر مرحوم",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 97,
-    "segments_transcribed": 90,
-    "editor_attempts": 86,
+    "segments_captured": 98,
+    "segments_transcribed": 91,
+    "editor_attempts": 87,
     "editor_withheld": 81,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T15:08:42.803523+00:00"
+    "last_audio_at": "2026-11-09T15:09:01.556723+00:00"
   }
 }
