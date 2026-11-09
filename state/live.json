@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:30:43.205175+00:00",
+  "updated_at": "2026-11-09T15:31:31.636788+00:00",
   "items": [
     {
       "title": "پرسش درباره دستور پیامبر به بلال برای اجتماع مهاجران و انصار در مسجد",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 152,
-    "segments_transcribed": 144,
-    "editor_attempts": 139,
-    "editor_withheld": 126,
+    "segments_captured": 154,
+    "segments_transcribed": 146,
+    "editor_attempts": 141,
+    "editor_withheld": 127,
     "topics_published": 21,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T15:30:39.403298+00:00"
+    "last_audio_at": "2026-11-09T15:31:29.246148+00:00"
   }
 }
