@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T18:20:36.007459+00:00",
+  "updated_at": "2026-11-09T18:21:09.578789+00:00",
   "items": [
     {
       "title": "پرسش درباره صلاحیت افراد برای تمسک به قرآن در کنار عترت",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 126,
-    "segments_transcribed": 115,
-    "editor_attempts": 110,
-    "editor_withheld": 89,
+    "segments_captured": 128,
+    "segments_transcribed": 117,
+    "editor_attempts": 112,
+    "editor_withheld": 91,
     "topics_published": 28,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T18:20:17.143752+00:00"
+    "last_audio_at": "2026-11-09T18:21:06.040521+00:00"
   }
 }
