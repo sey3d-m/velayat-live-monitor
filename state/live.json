@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:27:08.611843+00:00",
+  "updated_at": "2026-11-09T15:27:31.668539+00:00",
   "items": [
     {
       "title": "بررسی حکم فقهی فراموشی سجده و بازگشت به قیام",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 143,
-    "segments_transcribed": 135,
-    "editor_attempts": 130,
+    "segments_captured": 144,
+    "segments_transcribed": 136,
+    "editor_attempts": 131,
     "editor_withheld": 120,
     "topics_published": 17,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T15:27:03.806794+00:00"
+    "last_audio_at": "2026-11-09T15:27:29.031035+00:00"
   }
 }
