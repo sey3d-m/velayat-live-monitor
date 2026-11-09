@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T14:40:21.402371+00:00",
+  "updated_at": "2026-11-09T14:40:42.115257+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره احکام و برنامه زنده شبکه ولایت",
@@ -46,16 +46,28 @@
       "sequence": 19,
       "updated_at": "2026-11-09T14:37:56.762253+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره حکم نماز اول وقت دورکعتی و مسئله موی گربه در لباس نمازگزار",
+      "summary": "در این بخش درباره فضیلت خواندن نماز چهاررکعتی به‌صورت دورکعتی در اول وقت و ادعای برتری آن پرسش شد. همچنین کارشناس به دیدگاه مراجع درباره باطل شدن نماز در صورت وجود موی گربه در بدن یا لباس نمازگزار اشاره کرد و آن را نیازمند بررسی تفاوت فتواها دانست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.8,
+      "id": "42632678613-26",
+      "sequence": 26,
+      "updated_at": "2026-11-09T14:40:42.115227+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 26,
-    "segments_transcribed": 21,
-    "editor_attempts": 20,
-    "editor_withheld": 19,
-    "topics_published": 3,
+    "segments_captured": 27,
+    "segments_transcribed": 22,
+    "editor_attempts": 21,
+    "editor_withheld": 20,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T14:40:18.800393+00:00"
+    "last_audio_at": "2026-11-09T14:40:36.977907+00:00"
   }
 }
