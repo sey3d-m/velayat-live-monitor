@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:35:57.038413+00:00",
+  "updated_at": "2026-11-09T15:36:19.913649+00:00",
   "items": [
     {
       "title": "پرسش درباره ماجرای فروش زره و بازگرداندن آن توسط یکی از اصحاب",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 165,
-    "segments_transcribed": 157,
-    "editor_attempts": 152,
+    "segments_captured": 166,
+    "segments_transcribed": 158,
+    "editor_attempts": 153,
     "editor_withheld": 138,
     "topics_published": 23,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T15:35:53.250714+00:00"
+    "last_audio_at": "2026-11-09T15:36:17.495424+00:00"
   }
 }
