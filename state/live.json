@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:30:18.969481+00:00",
+  "updated_at": "2026-11-09T15:30:41.944121+00:00",
   "items": [
     {
       "title": "پرسش درباره علت شادی راوی در مسیر مسجد",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 151,
-    "segments_transcribed": 143,
-    "editor_attempts": 138,
+    "segments_captured": 152,
+    "segments_transcribed": 144,
+    "editor_attempts": 139,
     "editor_withheld": 126,
     "topics_published": 20,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T15:30:14.324782+00:00"
+    "last_audio_at": "2026-11-09T15:30:39.403298+00:00"
   }
 }
