@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T17:15:08.642631+00:00",
-  "updated_at": "2026-11-09T17:44:18.698544+00:00",
+  "updated_at": "2026-11-09T17:44:20.044485+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره حضرت عباس",
-      "summary": "در این بخش از برنامه، موضوع «حضرت عباس» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42662621430-1",
-      "sequence": 1,
-      "updated_at": "2026-11-09T17:30:46.107616+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی استدلال مقابله با زور و قلدوری در اسلام",
       "summary": "در این بخش کارشناس استدلال می‌کند که در برابر افرادی که منطق نمی‌پذیرند و از زور استفاده می‌کنند، اسلام دستور مقاومت و جنگ با ستمگران را صادر کرده است و پیامبر خدا در همین راستا نخستین دستورها را صادر کرد.",
@@ -69,14 +56,27 @@
       "sequence": 30,
       "updated_at": "2026-11-09T17:42:22.715456+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42662621430-35",
+      "sequence": 35,
+      "updated_at": "2026-11-09T17:44:20.044462+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 36,
     "segments_transcribed": 30,
     "editor_attempts": 27,
-    "editor_withheld": 23,
-    "topics_published": 5,
+    "editor_withheld": 24,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-09T17:44:14.783929+00:00"
