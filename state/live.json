@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-09",
   "started_at": "2026-11-09T14:14:45.708023+00:00",
-  "updated_at": "2026-11-09T15:38:42.385313+00:00",
+  "updated_at": "2026-11-09T15:39:30.932610+00:00",
   "items": [
     {
       "title": "بررسی ماجرای ساده‌زیستی و دعا هنگام تشکیل زندگی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 172,
-    "segments_transcribed": 164,
-    "editor_attempts": 159,
-    "editor_withheld": 142,
+    "segments_captured": 174,
+    "segments_transcribed": 166,
+    "editor_attempts": 161,
+    "editor_withheld": 144,
     "topics_published": 25,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-09T15:38:39.583092+00:00"
+    "last_audio_at": "2026-11-09T15:39:28.275320+00:00"
   }
 }
