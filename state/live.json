@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T17:14:54.823150+00:00",
-  "updated_at": "2026-11-10T18:27:34.760556+00:00",
+  "updated_at": "2026-11-10T18:28:16.882085+00:00",
   "items": [
     {
       "title": "پرسش درباره اطلاق واژه مصحف بر مکتوبات و مصحف فاطمه",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 144,
-    "segments_transcribed": 139,
-    "editor_attempts": 128,
-    "editor_withheld": 114,
+    "segments_captured": 146,
+    "segments_transcribed": 141,
+    "editor_attempts": 129,
+    "editor_withheld": 116,
     "topics_published": 20,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T18:27:32.222491+00:00"
+    "last_audio_at": "2026-11-10T18:28:14.967824+00:00"
   }
 }
