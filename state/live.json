@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T14:15:00.030591+00:00",
-  "updated_at": "2026-11-10T15:13:06.463840+00:00",
+  "updated_at": "2026-11-10T15:13:31.845993+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره خانواده و ازدواج",
-      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42832019722-10",
-      "sequence": 10,
-      "updated_at": "2026-11-10T14:34:27.000877+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره وجود گفت‌وگوی واقعی در خانواده‌ها",
       "summary": "در این بخش کارشناس درباره وجود گفت‌وگوی واقعی در خانواده‌ها پرسش می‌کند و استدلال می‌کند که صحبت کردن طولانی با یکدیگر لزوماً به معنای داشتن گفت‌وگو نیست، بلکه گاهی افراد تنها برای یکدیگر حرف می‌زنند و این دو با یکدیگر تفاوت دارند.",
@@ -69,16 +56,28 @@
       "sequence": 90,
       "updated_at": "2026-11-10T15:06:34.466780+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی لزوم صبوری و احترام در مواجهه با رفتار فرزندان",
+      "summary": "در این بخش کارشناس استدلال می‌کند که نباید توقع داشت مادر بزرگوار بتواند فرزند را با سرعت تغییر دهد و باید حوصله به خرج داد. وی راهکار نخست را ادامه دادن روند تربیتی و حفظ احترام عنوان می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42832019722-108",
+      "sequence": 108,
+      "updated_at": "2026-11-10T15:13:31.845967+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 108,
-    "segments_transcribed": 104,
-    "editor_attempts": 94,
-    "editor_withheld": 90,
-    "topics_published": 7,
+    "segments_captured": 109,
+    "segments_transcribed": 105,
+    "editor_attempts": 95,
+    "editor_withheld": 91,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T15:12:57.242370+00:00"
+    "last_audio_at": "2026-11-10T15:13:22.270856+00:00"
   }
 }
