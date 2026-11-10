@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T15:45:05.115583+00:00",
-  "updated_at": "2026-11-10T17:00:45.306572+00:00",
+  "updated_at": "2026-11-10T17:01:28.991626+00:00",
   "items": [
     {
       "title": "بررسی خدمت به جامعه به عنوان امور خیر ماندگار برای میت",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 152,
+    "segments_captured": 154,
     "segments_transcribed": 141,
     "editor_attempts": 129,
     "editor_withheld": 123,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T17:00:43.043582+00:00"
+    "last_audio_at": "2026-11-10T17:01:26.609992+00:00"
   }
 }
