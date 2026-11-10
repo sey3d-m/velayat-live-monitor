@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T15:45:05.115583+00:00",
-  "updated_at": "2026-11-10T16:06:22.728097+00:00",
+  "updated_at": "2026-11-10T16:06:24.326539+00:00",
   "items": [
     {
       "title": "پرسش درباره آغاز برنامه پیام تاریخ و عرض تسلیت ایام شهادت",
@@ -32,14 +32,27 @@
       "sequence": 11,
       "updated_at": "2026-11-10T16:04:51.767317+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خانواده و ازدواج",
+      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42847456073-15",
+      "sequence": 15,
+      "updated_at": "2026-11-10T16:06:24.326523+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 16,
     "segments_transcribed": 12,
     "editor_attempts": 11,
-    "editor_withheld": 9,
-    "topics_published": 2,
+    "editor_withheld": 10,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-10T16:06:16.648819+00:00"
