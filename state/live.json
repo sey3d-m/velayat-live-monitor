@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T15:45:05.115583+00:00",
-  "updated_at": "2026-11-10T16:37:34.728671+00:00",
+  "updated_at": "2026-11-10T16:38:00.036715+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره خانواده و ازدواج",
-      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42847456073-15",
-      "sequence": 15,
-      "updated_at": "2026-11-10T16:06:24.326523+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی افراط و تفریط در توجه به مسئله کفایت در ازدواج",
       "summary": "در این بخش کارشناس استدلال می‌کند که برخی افراد در مسئله کفایت در ازدواج دچار افراط و تفریط می‌شوند؛ به‌گونه‌ای که گاهی صرفاً به سرمایه پدر دختر یا زیبایی او توجه کرده و ملاک‌های دیگر را کنار می‌گذارند، یا برعکس، دختر تنها به تیپ و قیافه جوان علاقه‌مند می‌شود.",
@@ -70,16 +57,29 @@
       "sequence": 69,
       "updated_at": "2026-11-10T16:28:00.788274+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره تربیت و اخلاق",
+      "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42847456073-93",
+      "sequence": 93,
+      "updated_at": "2026-11-10T16:38:00.036697+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 94,
-    "segments_transcribed": 86,
+    "segments_captured": 95,
+    "segments_transcribed": 87,
     "editor_attempts": 80,
-    "editor_withheld": 76,
-    "topics_published": 7,
+    "editor_withheld": 77,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T16:37:28.891395+00:00"
+    "last_audio_at": "2026-11-10T16:37:54.256416+00:00"
   }
 }
