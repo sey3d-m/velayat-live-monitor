@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T14:15:00.030591+00:00",
-  "updated_at": "2026-11-10T15:36:18.562225+00:00",
+  "updated_at": "2026-11-10T15:37:02.152954+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره تمایز میان رفتار و شخصیت در نقد افراد",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 166,
-    "segments_transcribed": 151,
-    "editor_attempts": 138,
-    "editor_withheld": 131,
+    "segments_captured": 168,
+    "segments_transcribed": 153,
+    "editor_attempts": 139,
+    "editor_withheld": 132,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T15:36:14.247966+00:00"
+    "last_audio_at": "2026-11-10T15:36:58.658630+00:00"
   }
 }
