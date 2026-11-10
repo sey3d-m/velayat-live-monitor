@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T14:15:00.030591+00:00",
-  "updated_at": "2026-11-10T15:06:08.392975+00:00",
+  "updated_at": "2026-11-10T15:06:34.466806+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره احکام طهارت",
-      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42832019722-9",
-      "sequence": 9,
-      "updated_at": "2026-11-10T14:34:05.153190+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره خانواده و ازدواج",
       "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +57,28 @@
       "sequence": 89,
       "updated_at": "2026-11-10T15:06:08.392947+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی مرز میان نقد رفتار و تخریب شخصیت در گفتار کارشناس",
+      "summary": "در این بخش کارشناس استدلال می‌کند که بی‌مسئولیتی در رفتار با تمسخر، تقصیر و قضاوت همراه است. به گفته وی، در این رویکرد به جای گذر از سرزنش شخصیت به نقد رفتار، از تخریب رفتار به تخریب شخصیت رسیده‌ایم.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42832019722-90",
+      "sequence": 90,
+      "updated_at": "2026-11-10T15:06:34.466780+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 90,
-    "segments_transcribed": 87,
-    "editor_attempts": 80,
+    "segments_captured": 91,
+    "segments_transcribed": 88,
+    "editor_attempts": 81,
     "editor_withheld": 78,
-    "topics_published": 6,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T15:05:55.816303+00:00"
+    "last_audio_at": "2026-11-10T15:06:19.869240+00:00"
   }
 }
