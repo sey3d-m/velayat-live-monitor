@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T17:14:54.823150+00:00",
-  "updated_at": "2026-11-10T18:02:47.048241+00:00",
+  "updated_at": "2026-11-10T18:03:12.240624+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42862856651-51",
-      "sequence": 51,
-      "updated_at": "2026-11-10T17:50:43.675718+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی کیفیت و انگیزه نماز خواندن منافقان",
       "summary": "در این بخش کارشناس استدلال می‌کند که منافقان با وجود خواندن نماز در پنج وقت، این کار را از روی کسالت، ترس یا منفعت‌طلبی انجام می‌دهند و به آن اعتقاد ندارند؛ در نتیجه، ظاهر عبادت آن‌ها با انگیزه واقعی‌شان همخوانی ندارد.",
@@ -69,16 +56,28 @@
       "sequence": 79,
       "updated_at": "2026-11-10T18:01:59.000760+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی زمان و محل بیان حدیث ثقلین در خطبه غدیر",
+      "summary": "در این بخش کارشناس استدلال می‌کند که حدیث ثقلین در خطبه غدیر بیان شده است، در حالی که ذهن معمولاً متوجه بخش پایانی آن یعنی جمله «من کنت مولاه» است. به گفته وی، خود خطبه غدیر بسیار مفصل است و پیامبر در آن از توحید نیز سخن می‌گوید.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42862856651-82",
+      "sequence": 82,
+      "updated_at": "2026-11-10T18:03:12.240605+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 82,
-    "segments_transcribed": 79,
-    "editor_attempts": 71,
-    "editor_withheld": 64,
-    "topics_published": 10,
+    "segments_captured": 83,
+    "segments_transcribed": 80,
+    "editor_attempts": 72,
+    "editor_withheld": 65,
+    "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T18:02:44.466517+00:00"
+    "last_audio_at": "2026-11-10T18:03:08.284676+00:00"
   }
 }
