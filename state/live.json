@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T17:14:54.823150+00:00",
-  "updated_at": "2026-11-10T17:45:10.221618+00:00",
+  "updated_at": "2026-11-10T17:45:48.703117+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره احکام طهارت",
@@ -32,16 +32,28 @@
       "sequence": 33,
       "updated_at": "2026-11-10T17:43:35.114655+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره چرایی عدم شناخت منافقان توسط پیامبر",
+      "summary": "در این بخش کارشناس این پرسش را مطرح می‌کند که چرا پیامبر برخی منافقان را نمی‌شناخته است و استدلال می‌کند که علت آن، عدم بروز و سکوت این افراد در صف مؤمنان است که خود را مخفی نگه داشته بودند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.8,
+      "id": "42862856651-38",
+      "sequence": 38,
+      "updated_at": "2026-11-10T17:45:48.703093+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 38,
-    "segments_transcribed": 35,
-    "editor_attempts": 31,
-    "editor_withheld": 29,
-    "topics_published": 2,
+    "segments_captured": 39,
+    "segments_transcribed": 36,
+    "editor_attempts": 32,
+    "editor_withheld": 30,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T17:45:07.725596+00:00"
+    "last_audio_at": "2026-11-10T17:45:31.507441+00:00"
   }
 }
