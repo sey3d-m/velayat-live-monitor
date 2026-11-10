@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T17:14:54.823150+00:00",
-  "updated_at": "2026-11-10T17:51:08.545100+00:00",
+  "updated_at": "2026-11-10T17:51:30.437413+00:00",
   "items": [
     {
       "title": "پرسش درباره چرایی عدم شناخت منافقان توسط پیامبر",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 53,
-    "segments_transcribed": 50,
-    "editor_attempts": 46,
+    "segments_captured": 54,
+    "segments_transcribed": 51,
+    "editor_attempts": 47,
     "editor_withheld": 42,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T17:51:03.213212+00:00"
+    "last_audio_at": "2026-11-10T17:51:27.906651+00:00"
   }
 }
