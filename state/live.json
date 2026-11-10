@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "42832019722",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T14:15:00.030591+00:00",
-  "updated_at": "2026-11-10T14:33:09.975694+00:00",
-  "items": [],
+  "updated_at": "2026-11-10T14:33:49.374458+00:00",
+  "items": [
+    {
+      "title": "بررسی ساختار پارت‌بندی برنامه و ارائه مبانی آکادمیک",
+      "summary": "در این بخش کارشناس درباره نحوه اجرای برنامه توضیح می‌دهد و بیان می‌کند که برنامه در دو پارت ارائه می‌شود؛ به گفته کارشناس، در نیم‌ساعت اول مبانی آکادمیک و تئوری از زبان استاد مطرح می‌گردد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.95,
+      "editor_mode": "audio_grounded_topic",
+      "id": "42832019722-8",
+      "sequence": 8,
+      "updated_at": "2026-11-10T14:33:49.374432+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 8,
-    "segments_transcribed": 5,
-    "editor_attempts": 4,
-    "editor_withheld": 3,
-    "topics_published": 0,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
-    "last_audio_at": "2026-11-10T14:33:03.941316+00:00"
+    "segments_captured": 9,
+    "segments_transcribed": 6,
+    "editor_attempts": 5,
+    "editor_withheld": 5,
+    "topics_published": 1,
+    "audio_ai_calls": 3,
+    "audio_ai_success": 3,
+    "last_audio_at": "2026-11-10T14:33:28.372982+00:00"
   }
 }
