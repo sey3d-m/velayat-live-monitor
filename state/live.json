@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "42862856651",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T17:14:54.823150+00:00",
-  "updated_at": "2026-11-10T17:35:31.933823+00:00",
-  "items": [],
+  "updated_at": "2026-11-10T17:36:07.327720+00:00",
+  "items": [
+    {
+      "title": "گفت‌وگو درباره احکام طهارت",
+      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42862856651-14",
+      "sequence": 14,
+      "updated_at": "2026-11-10T17:36:07.327693+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 14,
-    "segments_transcribed": 11,
-    "editor_attempts": 8,
-    "editor_withheld": 7,
-    "topics_published": 0,
+    "segments_captured": 15,
+    "segments_transcribed": 12,
+    "editor_attempts": 9,
+    "editor_withheld": 9,
+    "topics_published": 1,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T17:35:28.993254+00:00"
+    "last_audio_at": "2026-11-10T17:35:53.838839+00:00"
   }
 }
