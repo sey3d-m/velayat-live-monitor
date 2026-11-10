@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T17:14:54.823150+00:00",
-  "updated_at": "2026-11-10T18:07:11.418486+00:00",
+  "updated_at": "2026-11-10T18:07:35.627825+00:00",
   "items": [
     {
       "title": "بررسی استناد به حدیث ثقلین و واقعه غدیر",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 93,
-    "segments_transcribed": 90,
-    "editor_attempts": 81,
+    "segments_captured": 94,
+    "segments_transcribed": 91,
+    "editor_attempts": 82,
     "editor_withheld": 70,
     "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T18:07:07.422450+00:00"
+    "last_audio_at": "2026-11-10T18:07:32.757473+00:00"
   }
 }
