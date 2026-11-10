@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T15:45:05.115583+00:00",
-  "updated_at": "2026-11-10T16:15:58.985617+00:00",
+  "updated_at": "2026-11-10T16:16:49.891064+00:00",
   "items": [
     {
       "title": "پرسش درباره آغاز برنامه پیام تاریخ و عرض تسلیت ایام شهادت",
@@ -60,13 +60,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 40,
-    "segments_transcribed": 36,
-    "editor_attempts": 34,
-    "editor_withheld": 31,
+    "segments_captured": 42,
+    "segments_transcribed": 38,
+    "editor_attempts": 36,
+    "editor_withheld": 33,
     "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T16:15:53.635945+00:00"
+    "last_audio_at": "2026-11-10T16:16:44.020817+00:00"
   }
 }
