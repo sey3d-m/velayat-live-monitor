@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T14:15:00.030591+00:00",
-  "updated_at": "2026-11-10T14:37:11.389393+00:00",
+  "updated_at": "2026-11-10T14:37:12.829177+00:00",
   "items": [
     {
       "title": "بررسی ساختار پارت‌بندی برنامه و ارائه مبانی آکادمیک",
@@ -46,6 +46,18 @@
       "sequence": 10,
       "updated_at": "2026-11-10T14:34:27.000877+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره وجود گفت‌وگوی واقعی در خانواده‌ها",
+      "summary": "در این بخش کارشناس درباره وجود گفت‌وگوی واقعی در خانواده‌ها پرسش می‌کند و استدلال می‌کند که صحبت کردن طولانی با یکدیگر لزوماً به معنای داشتن گفت‌وگو نیست، بلکه گاهی افراد تنها برای یکدیگر حرف می‌زنند و این دو با یکدیگر تفاوت دارند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42832019722-17",
+      "sequence": 17,
+      "updated_at": "2026-11-10T14:37:12.829144+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -53,7 +65,7 @@
     "segments_transcribed": 15,
     "editor_attempts": 14,
     "editor_withheld": 13,
-    "topics_published": 3,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-10T14:37:05.281868+00:00"
