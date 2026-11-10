@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T14:15:00.030591+00:00",
-  "updated_at": "2026-11-10T14:34:05.153218+00:00",
+  "updated_at": "2026-11-10T14:34:27.000903+00:00",
   "items": [
     {
       "title": "بررسی ساختار پارت‌بندی برنامه و ارائه مبانی آکادمیک",
@@ -33,16 +33,29 @@
       "sequence": 9,
       "updated_at": "2026-11-10T14:34:05.153190+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خانواده و ازدواج",
+      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42832019722-10",
+      "sequence": 10,
+      "updated_at": "2026-11-10T14:34:27.000877+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 10,
-    "segments_transcribed": 7,
-    "editor_attempts": 6,
-    "editor_withheld": 6,
-    "topics_published": 2,
+    "segments_captured": 11,
+    "segments_transcribed": 8,
+    "editor_attempts": 7,
+    "editor_withheld": 7,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T14:33:53.625699+00:00"
+    "last_audio_at": "2026-11-10T14:34:18.402568+00:00"
   }
 }
