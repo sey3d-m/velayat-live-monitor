@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T15:45:05.115583+00:00",
-  "updated_at": "2026-11-10T16:24:45.847002+00:00",
+  "updated_at": "2026-11-10T16:24:48.730471+00:00",
   "items": [
-    {
-      "title": "پرسش درباره آغاز برنامه پیام تاریخ و عرض تسلیت ایام شهادت",
-      "summary": "در این بخش از برنامه پیام تاریخ در شبکه جهانی ولایت، پس از سلام و درود به محضر حضرت فاطمه زهرا سلام‌الله‌علیها، آغاز این قسمت از برنامه با عرض تسلیت به مناسبت ایام شهادت همراه شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "editor_mode": "audio_grounded_topic",
-      "id": "42847456073-7",
-      "sequence": 7,
-      "updated_at": "2026-11-10T16:03:22.841034+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره عمر کوتاه و آثار فاطمی",
       "summary": "در این بخش، کارشناس درباره شخصیت و برکات زندگی حضرت زهرا (س) سخن می‌گوید و استدلال می‌کند که با وجود سن کم در حدود ده سال، تمامی آثار، راه و رسم زندگی، موفقیت و سعادت در کلمات ایشان خلاصه شده است.",
@@ -69,14 +56,27 @@
       "sequence": 57,
       "updated_at": "2026-11-10T16:23:09.488583+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره حدیث و روایت",
+      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42847456073-61",
+      "sequence": 61,
+      "updated_at": "2026-11-10T16:24:48.730452+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 62,
     "segments_transcribed": 58,
     "editor_attempts": 54,
-    "editor_withheld": 50,
-    "topics_published": 5,
+    "editor_withheld": 51,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-10T16:24:41.048082+00:00"
