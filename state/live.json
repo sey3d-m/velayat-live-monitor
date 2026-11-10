@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "ended",
   "network": "velayat_farsi",
   "session": "42832019722",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T14:15:00.030591+00:00",
-  "updated_at": "2026-11-10T15:39:30.346049+00:00",
+  "updated_at": "2026-11-10T15:40:02.955574+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره تمایز میان رفتار و شخصیت در نقد افراد",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 174,
-    "segments_transcribed": 156,
-    "editor_attempts": 140,
-    "editor_withheld": 134,
+    "segments_captured": 175,
+    "segments_transcribed": 157,
+    "editor_attempts": 141,
+    "editor_withheld": 135,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T15:39:26.741542+00:00"
+    "last_audio_at": "2026-11-10T15:39:46.592677+00:00"
   }
 }
