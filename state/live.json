@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T15:45:05.115583+00:00",
-  "updated_at": "2026-11-10T16:38:00.036715+00:00",
+  "updated_at": "2026-11-10T16:38:46.847648+00:00",
   "items": [
     {
       "title": "بررسی افراط و تفریط در توجه به مسئله کفایت در ازدواج",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 95,
-    "segments_transcribed": 87,
-    "editor_attempts": 80,
+    "segments_captured": 96,
+    "segments_transcribed": 88,
+    "editor_attempts": 81,
     "editor_withheld": 77,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T16:37:54.256416+00:00"
+    "last_audio_at": "2026-11-10T16:38:19.513482+00:00"
   }
 }
