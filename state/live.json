@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T15:45:05.115583+00:00",
-  "updated_at": "2026-11-10T16:15:18.593066+00:00",
+  "updated_at": "2026-11-10T16:15:20.346435+00:00",
   "items": [
     {
       "title": "پرسش درباره آغاز برنامه پیام تاریخ و عرض تسلیت ایام شهادت",
@@ -45,6 +45,18 @@
       "sequence": 15,
       "updated_at": "2026-11-10T16:06:24.326523+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی افراط و تفریط در توجه به مسئله کفایت در ازدواج",
+      "summary": "در این بخش کارشناس استدلال می‌کند که برخی افراد در مسئله کفایت در ازدواج دچار افراط و تفریط می‌شوند؛ به‌گونه‌ای که گاهی صرفاً به سرمایه پدر دختر یا زیبایی او توجه کرده و ملاک‌های دیگر را کنار می‌گذارند، یا برعکس، دختر تنها به تیپ و قیافه جوان علاقه‌مند می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42847456073-37",
+      "sequence": 37,
+      "updated_at": "2026-11-10T16:15:20.346419+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -52,7 +64,7 @@
     "segments_transcribed": 34,
     "editor_attempts": 32,
     "editor_withheld": 30,
-    "topics_published": 3,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-10T16:15:04.137653+00:00"
