@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T17:14:54.823150+00:00",
-  "updated_at": "2026-11-10T18:09:07.979763+00:00",
+  "updated_at": "2026-11-10T18:09:34.002637+00:00",
   "items": [
-    {
-      "title": "بررسی معنای محدثه بودن حضرت زهرا و تفاوت مصحف با قرآن",
-      "summary": "در این بخش کارشناس درباره معنای واژه محدثه برای حضرت زهرا استدلال می‌کند که به معنای گفته شدن حدیث غیبی به ایشان است. وی توضیح می‌دهد که مصحف فاطمه با قرآن کریم اشتراک لفظی دارد و این موضوع نباید موجب اشتباه شود، زیرا در گذشته به قرآن قدیم نیز مصحف گفته می‌شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42862856651-91",
-      "sequence": 91,
-      "updated_at": "2026-11-10T18:06:48.119255+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره اطلاق واژه مصحف بر مکتوبات و مصحف فاطمه",
       "summary": "در این بخش کارشناس استدلال می‌کند که واژه مصحف به هر چیز مکتوب و دارای صفحه اطلاق می‌شود و اطلاق آن بر قرآن یا مصحف فاطمه از باب اشتراک لفظی است، و به احادیثی اشاره می‌کند که پیامبر نیز به آن پرداخته‌اند.",
@@ -68,16 +56,29 @@
       "sequence": 95,
       "updated_at": "2026-11-10T18:08:27.793289+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42862856651-98",
+      "sequence": 98,
+      "updated_at": "2026-11-10T18:09:34.002608+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 98,
-    "segments_transcribed": 95,
-    "editor_attempts": 86,
-    "editor_withheld": 72,
-    "topics_published": 19,
+    "segments_captured": 99,
+    "segments_transcribed": 96,
+    "editor_attempts": 87,
+    "editor_withheld": 74,
+    "topics_published": 20,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T18:09:05.202129+00:00"
+    "last_audio_at": "2026-11-10T18:09:30.268287+00:00"
   }
 }
