@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T15:45:05.115583+00:00",
-  "updated_at": "2026-11-10T16:39:58.236119+00:00",
+  "updated_at": "2026-11-10T16:40:46.563360+00:00",
   "items": [
     {
       "title": "بررسی ویژگی زنان فرزندآور و ثواب مادری در روایت",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 100,
-    "segments_transcribed": 92,
-    "editor_attempts": 85,
-    "editor_withheld": 80,
+    "segments_captured": 102,
+    "segments_transcribed": 94,
+    "editor_attempts": 87,
+    "editor_withheld": 82,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T16:39:51.892613+00:00"
+    "last_audio_at": "2026-11-10T16:40:41.420420+00:00"
   }
 }
