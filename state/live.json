@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T15:45:05.115583+00:00",
-  "updated_at": "2026-11-10T16:59:08.474488+00:00",
+  "updated_at": "2026-11-10T16:59:09.736983+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره تربیت و اخلاق",
-      "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42847456073-93",
-      "sequence": 93,
-      "updated_at": "2026-11-10T16:38:00.036697+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی خدمت به جامعه به عنوان امور خیر ماندگار برای میت",
       "summary": "در این بخش کارشناس استدلال می‌کند که ساخت مساجد، بیمارستان‌ها یا انجام کارهای عام‌المنفعه توسط فرزندان، به عنوان خدمت ماندگار برای میت محسوب می‌شود و به گفته وی، این موضوع از اهل‌بیت آموزش داده شده است که فرزندان در امور خیر توجه داشته باشند.",
@@ -69,14 +56,27 @@
       "sequence": 135,
       "updated_at": "2026-11-10T16:54:28.032569+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره احکام طهارت",
+      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42847456073-147",
+      "sequence": 147,
+      "updated_at": "2026-11-10T16:59:09.736963+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 148,
     "segments_transcribed": 138,
     "editor_attempts": 127,
-    "editor_withheld": 120,
-    "topics_published": 12,
+    "editor_withheld": 121,
+    "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-10T16:59:02.578601+00:00"
