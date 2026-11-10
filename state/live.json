@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T17:14:54.823150+00:00",
-  "updated_at": "2026-11-10T17:46:41.830137+00:00",
+  "updated_at": "2026-11-10T17:46:43.091946+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره احکام طهارت",
@@ -44,6 +44,18 @@
       "sequence": 38,
       "updated_at": "2026-11-10T17:45:48.703093+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره استدلال کارشناس پیرامون رفتار پیامبر با منافقین",
+      "summary": "در این بخش، کارشناس ادعا می‌کند که پیامبر اسلام با وجود شناخت منافقین، بر اساس مأموریت الهی از افشای نام آن‌ها خودداری کرده و دستور عدم نماز بر جنازه آن‌ها را دریافت کرده است؛ این مباحث به عنوان نظرات مطرح‌شده در برنامه گزارش شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.82,
+      "id": "42862856651-41",
+      "sequence": 41,
+      "updated_at": "2026-11-10T17:46:43.091923+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -51,7 +63,7 @@
     "segments_transcribed": 39,
     "editor_attempts": 35,
     "editor_withheld": 32,
-    "topics_published": 3,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-10T17:46:39.354987+00:00"
