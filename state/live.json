@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T14:15:00.030591+00:00",
-  "updated_at": "2026-11-10T15:03:32.650842+00:00",
+  "updated_at": "2026-11-10T15:04:22.882856+00:00",
   "items": [
     {
       "title": "بررسی ساختار پارت‌بندی برنامه و ارائه مبانی آکادمیک",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 84,
-    "segments_transcribed": 81,
-    "editor_attempts": 74,
-    "editor_withheld": 72,
+    "segments_captured": 86,
+    "segments_transcribed": 83,
+    "editor_attempts": 76,
+    "editor_withheld": 74,
     "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T15:03:27.005574+00:00"
+    "last_audio_at": "2026-11-10T15:04:16.873709+00:00"
   }
 }
