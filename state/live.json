@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T15:45:05.115583+00:00",
-  "updated_at": "2026-11-10T16:27:59.233278+00:00",
+  "updated_at": "2026-11-10T16:28:00.788292+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره عمر کوتاه و آثار فاطمی",
-      "summary": "در این بخش، کارشناس درباره شخصیت و برکات زندگی حضرت زهرا (س) سخن می‌گوید و استدلال می‌کند که با وجود سن کم در حدود ده سال، تمامی آثار، راه و رسم زندگی، موفقیت و سعادت در کلمات ایشان خلاصه شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42847456073-11",
-      "sequence": 11,
-      "updated_at": "2026-11-10T16:04:51.767317+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره خانواده و ازدواج",
       "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,14 +57,27 @@
       "sequence": 61,
       "updated_at": "2026-11-10T16:24:48.730452+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42847456073-69",
+      "sequence": 69,
+      "updated_at": "2026-11-10T16:28:00.788274+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 70,
     "segments_transcribed": 66,
     "editor_attempts": 62,
-    "editor_withheld": 58,
-    "topics_published": 6,
+    "editor_withheld": 59,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-10T16:27:53.267653+00:00"
