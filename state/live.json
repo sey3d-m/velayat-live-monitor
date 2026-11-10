@@ -1,84 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "42847456073",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "42862856651",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-10",
-  "started_at": "2026-11-10T15:45:05.115583+00:00",
-  "updated_at": "2026-11-10T17:10:07.819338+00:00",
-  "items": [
-    {
-      "title": "بررسی خدمت به جامعه به عنوان امور خیر ماندگار برای میت",
-      "summary": "در این بخش کارشناس استدلال می‌کند که ساخت مساجد، بیمارستان‌ها یا انجام کارهای عام‌المنفعه توسط فرزندان، به عنوان خدمت ماندگار برای میت محسوب می‌شود و به گفته وی، این موضوع از اهل‌بیت آموزش داده شده است که فرزندان در امور خیر توجه داشته باشند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42847456073-95",
-      "sequence": 95,
-      "updated_at": "2026-11-10T16:38:48.930014+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی تفاوت مفهوم تاریخ و سیره در گفتار کارشناس",
-      "summary": "در این بخش کارشناس استدلال می‌کند که تاریخ مربوط به رویت حوادث گذشته است، در حالی که سیره به معنای مرام و سبک رفتار است؛ به گفته وی به عنوان نمونه، یکی از موارد سیره رسول خدا سلام کردن به دیگران بوده که بارها اتفاق افتاده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42847456073-101",
-      "sequence": 101,
-      "updated_at": "2026-11-10T16:40:48.647659+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره ابراز محبت همسران در روایت",
-      "summary": "در این بخش کارشناس استدلال می‌کند که دوستی اهل‌بیت علیهم‌السلام باید با ابراز محبت همراه باشد. وی برای اثبات این ادعا بیان می‌کند که محبت میان زن و شوهر نیز باید ابراز شود و در این زمینه به روایتی از پیامبر اشاره می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42847456073-105",
-      "sequence": 105,
-      "updated_at": "2026-11-10T16:42:24.767616+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره نماز",
-      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42847456073-135",
-      "sequence": 135,
-      "updated_at": "2026-11-10T16:54:28.032569+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره احکام طهارت",
-      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42847456073-147",
-      "sequence": 147,
-      "updated_at": "2026-11-10T16:59:09.736963+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-10T17:14:54.823150+00:00",
+  "updated_at": "2026-11-10T17:30:00.000291+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 160,
-    "editor_attempts": 144,
-    "editor_withheld": 138,
-    "topics_published": 13,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T17:09:49.907933+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
