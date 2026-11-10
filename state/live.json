@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T17:14:54.823150+00:00",
-  "updated_at": "2026-11-10T17:50:41.970022+00:00",
+  "updated_at": "2026-11-10T17:50:43.675739+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره احکام طهارت",
-      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42862856651-14",
-      "sequence": 14,
-      "updated_at": "2026-11-10T17:36:07.327693+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی آیات پایانی سوره درباره منافقین و لحن کلام آن‌ها",
       "summary": "در این بخش کارشناس استدلال می‌کند که پیامبر خدا پیش از رحلت درباره منافقین سخن می‌گوید و تفاوت منافقین در آیات پایانی سوره با منافقین پیشین در این است که از طریق لحن کلام خود شناخته می‌شوند؛ چنان‌که به گفته کارشناس در آیه لتعرفنهم فی لحن القول به آشکار شدن هویت منافقین از روی طرز حرف زدن اشاره شده است.",
@@ -69,14 +56,27 @@
       "sequence": 42,
       "updated_at": "2026-11-10T17:47:09.345581+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42862856651-51",
+      "sequence": 51,
+      "updated_at": "2026-11-10T17:50:43.675718+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 52,
     "segments_transcribed": 49,
     "editor_attempts": 45,
-    "editor_withheld": 41,
-    "topics_published": 5,
+    "editor_withheld": 42,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-10T17:50:39.259454+00:00"
