@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T17:14:54.823150+00:00",
-  "updated_at": "2026-11-10T18:07:36.757948+00:00",
+  "updated_at": "2026-11-10T18:07:55.501728+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره حدیث و روایت",
-      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42862856651-85",
-      "sequence": 85,
-      "updated_at": "2026-11-10T18:04:42.946080+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره تجلی قرآن و ادب در برابر عظمت کلام",
       "summary": "در این بخش کارشناس استدلال می‌کند که قرآن در وجود تجلی کرده و عباراتی درباره برهان بودن و تجلی ظواهر قرآن مطرح شد؛ بر اساس این سخن، باید در برابر عظمت این کلام ادب کرد.",
@@ -68,16 +55,29 @@
       "sequence": 93,
       "updated_at": "2026-11-10T18:07:36.757927+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خمس و زکات",
+      "summary": "در این بخش از برنامه، موضوع «خمس و زکات» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42862856651-94",
+      "sequence": 94,
+      "updated_at": "2026-11-10T18:07:55.501698+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 94,
-    "segments_transcribed": 91,
-    "editor_attempts": 82,
-    "editor_withheld": 70,
-    "topics_published": 17,
+    "segments_captured": 95,
+    "segments_transcribed": 92,
+    "editor_attempts": 83,
+    "editor_withheld": 71,
+    "topics_published": 18,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T18:07:32.757473+00:00"
+    "last_audio_at": "2026-11-10T18:07:51.319135+00:00"
   }
 }
