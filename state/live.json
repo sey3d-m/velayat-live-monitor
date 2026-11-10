@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T17:14:54.823150+00:00",
-  "updated_at": "2026-11-10T17:59:31.905004+00:00",
+  "updated_at": "2026-11-10T17:59:57.053579+00:00",
   "items": [
-    {
-      "title": "پرسش درباره استدلال کارشناس پیرامون رفتار پیامبر با منافقین",
-      "summary": "در این بخش، کارشناس ادعا می‌کند که پیامبر اسلام با وجود شناخت منافقین، بر اساس مأموریت الهی از افشای نام آن‌ها خودداری کرده و دستور عدم نماز بر جنازه آن‌ها را دریافت کرده است؛ این مباحث به عنوان نظرات مطرح‌شده در برنامه گزارش شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.82,
-      "id": "42862856651-41",
-      "sequence": 41,
-      "updated_at": "2026-11-10T17:46:43.091923+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره نماز",
       "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +57,28 @@
       "sequence": 59,
       "updated_at": "2026-11-10T17:54:00.615017+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره میزان بازتاب واقعه غدیر در خطبه فدکیه",
+      "summary": "در این بخش کارشناس استدلال می‌کند که خطبه فدکیه حضرت زهرا (س) مسیر تاریخ را تغییر داده و مطالب را به بهترین شکل بیان کرده است؛ با این وجود، به گفته وی در این خطبه هیچ اشاره واضحی به واقعه غدیر نشده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "42862856651-74",
+      "sequence": 74,
+      "updated_at": "2026-11-10T17:59:57.053549+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 74,
-    "segments_transcribed": 71,
-    "editor_attempts": 63,
-    "editor_withheld": 57,
-    "topics_published": 8,
+    "segments_captured": 75,
+    "segments_transcribed": 72,
+    "editor_attempts": 64,
+    "editor_withheld": 58,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T17:59:27.960289+00:00"
+    "last_audio_at": "2026-11-10T17:59:52.188708+00:00"
   }
 }
