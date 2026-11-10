@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T17:14:54.823150+00:00",
-  "updated_at": "2026-11-10T18:03:12.240624+00:00",
+  "updated_at": "2026-11-10T18:03:29.590808+00:00",
   "items": [
     {
       "title": "بررسی کیفیت و انگیزه نماز خواندن منافقان",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 83,
-    "segments_transcribed": 80,
-    "editor_attempts": 72,
+    "segments_captured": 84,
+    "segments_transcribed": 81,
+    "editor_attempts": 73,
     "editor_withheld": 65,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T18:03:08.284676+00:00"
+    "last_audio_at": "2026-11-10T18:03:26.546895+00:00"
   }
 }
