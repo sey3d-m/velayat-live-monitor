@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "42832019722",
-  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "session": "42847456073",
+  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-10",
-  "started_at": "2026-11-10T14:15:00.030591+00:00",
-  "updated_at": "2026-11-10T15:40:02.955574+00:00",
-  "items": [
-    {
-      "title": "گفت‌وگو درباره تمایز میان رفتار و شخصیت در نقد افراد",
-      "summary": "در این بخش کارشناس استدلال می‌کند که هنگام انتقاد باید میان رفتار و شخصیت افراد تفکیک قائل شد؛ زیرا پرداختن به بی‌مسئولیتی، بنیان شخصیتی فرد را هدف می‌گیرد، در حالی که نقد باید متوجه اصلاح رفتار و ارائه راه‌حل باشد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42832019722-89",
-      "sequence": 89,
-      "updated_at": "2026-11-10T15:06:08.392947+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی مرز میان نقد رفتار و تخریب شخصیت در گفتار کارشناس",
-      "summary": "در این بخش کارشناس استدلال می‌کند که بی‌مسئولیتی در رفتار با تمسخر، تقصیر و قضاوت همراه است. به گفته وی، در این رویکرد به جای گذر از سرزنش شخصیت به نقد رفتار، از تخریب رفتار به تخریب شخصیت رسیده‌ایم.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42832019722-90",
-      "sequence": 90,
-      "updated_at": "2026-11-10T15:06:34.466780+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی لزوم صبوری و احترام در مواجهه با رفتار فرزندان",
-      "summary": "در این بخش کارشناس استدلال می‌کند که نباید توقع داشت مادر بزرگوار بتواند فرزند را با سرعت تغییر دهد و باید حوصله به خرج داد. وی راهکار نخست را ادامه دادن روند تربیتی و حفظ احترام عنوان می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42832019722-108",
-      "sequence": 108,
-      "updated_at": "2026-11-10T15:13:31.845967+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره تقاضای خدمتکار از پیامبر و هدیه تسبیح",
-      "summary": "در این بخش کارشناس استدلال می‌کند که تقاضای خدمتکار از پیامبر مطرح شده اما دسترسی به ایشان میسر نبوده است؛ به گفته کارشناس، در این روایت اشاره شده که پیامبر به جای خدمتکار، تسبیحی آموختند که کارها را آسان می‌کرد و گره‌گشا بود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42832019722-155",
-      "sequence": 155,
-      "updated_at": "2026-11-10T15:32:19.545407+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی سخن کارشناس درباره جایگاه جهاد زنان و نقش‌آفرینی در جنگ‌ها",
-      "summary": "در این بخش، کارشناس ادعا می‌کند که در دوران جنگ‌ها، شمشیر پیامبر و امام با دستان مبارک ایشان همراه بوده است. همچنین بیان می‌شود که به گفته گوینده، کلام پیامبر درباره جهاد به عنوان سرداری برای زن نیکو در زندگی بهتر دریافت شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42832019722-158",
-      "sequence": 158,
-      "updated_at": "2026-11-10T15:33:33.998278+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-10T15:45:05.115583+00:00",
+  "updated_at": "2026-11-10T16:00:00.000287+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 157,
-    "editor_attempts": 141,
-    "editor_withheld": 135,
-    "topics_published": 10,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T15:39:46.592677+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
