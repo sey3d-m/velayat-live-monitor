@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T17:14:54.823150+00:00",
-  "updated_at": "2026-11-10T18:04:18.816590+00:00",
+  "updated_at": "2026-11-10T18:04:42.946101+00:00",
   "items": [
-    {
-      "title": "بررسی مقایسه خطر منافق و ظاهر متفاوت با باور قلبی",
-      "summary": "در گفت‌وگو درباره مقایسه خطر دو گروه انسان با ظاهر متفاوت از باور قلبی، کارشناس استدلال می‌کند که گروه دوم خطرناک‌تر است؛ چرا که به گفته وی، خداوند درباره گروه دوم سخن می‌گوید اما دربارۀ گروه اول تعابیر تندی به کار رفته است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42862856651-59",
-      "sequence": 59,
-      "updated_at": "2026-11-10T17:54:00.615017+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره میزان بازتاب واقعه غدیر در خطبه فدکیه",
       "summary": "در این بخش کارشناس استدلال می‌کند که خطبه فدکیه حضرت زهرا (س) مسیر تاریخ را تغییر داده و مطالب را به بهترین شکل بیان کرده است؛ با این وجود، به گفته وی در این خطبه هیچ اشاره واضحی به واقعه غدیر نشده است.",
@@ -68,16 +56,29 @@
       "sequence": 83,
       "updated_at": "2026-11-10T18:03:31.905462+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره حدیث و روایت",
+      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "42862856651-85",
+      "sequence": 85,
+      "updated_at": "2026-11-10T18:04:42.946080+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 86,
-    "segments_transcribed": 83,
+    "segments_captured": 87,
+    "segments_transcribed": 84,
     "editor_attempts": 75,
-    "editor_withheld": 66,
-    "topics_published": 12,
+    "editor_withheld": 67,
+    "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T18:04:16.401716+00:00"
+    "last_audio_at": "2026-11-10T18:04:40.094174+00:00"
   }
 }
