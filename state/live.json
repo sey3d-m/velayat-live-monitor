@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T17:14:54.823150+00:00",
-  "updated_at": "2026-11-10T18:05:07.827100+00:00",
+  "updated_at": "2026-11-10T18:05:57.101000+00:00",
   "items": [
     {
       "title": "پرسش درباره میزان بازتاب واقعه غدیر در خطبه فدکیه",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 88,
-    "segments_transcribed": 85,
-    "editor_attempts": 76,
-    "editor_withheld": 67,
+    "segments_captured": 90,
+    "segments_transcribed": 87,
+    "editor_attempts": 78,
+    "editor_withheld": 69,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T18:05:05.185958+00:00"
+    "last_audio_at": "2026-11-10T18:05:54.482327+00:00"
   }
 }
