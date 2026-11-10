@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-10",
   "started_at": "2026-11-10T14:15:00.030591+00:00",
-  "updated_at": "2026-11-10T15:22:42.127416+00:00",
+  "updated_at": "2026-11-10T15:23:31.165759+00:00",
   "items": [
     {
       "title": "پرسش درباره وجود گفت‌وگوی واقعی در خانواده‌ها",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 132,
-    "segments_transcribed": 128,
-    "editor_attempts": 116,
-    "editor_withheld": 111,
+    "segments_captured": 134,
+    "segments_transcribed": 130,
+    "editor_attempts": 118,
+    "editor_withheld": 113,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T15:22:35.993455+00:00"
+    "last_audio_at": "2026-11-10T15:23:25.839833+00:00"
   }
 }
