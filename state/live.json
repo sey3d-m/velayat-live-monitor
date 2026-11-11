@@ -1,84 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "42862856651",
+  "session": "43066153553",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
-  "program_date": "2026-11-10",
-  "started_at": "2026-11-10T17:14:54.823150+00:00",
-  "updated_at": "2026-11-10T18:40:06.370180+00:00",
-  "items": [
-    {
-      "title": "پرسش درباره اطلاق واژه مصحف بر مکتوبات و مصحف فاطمه",
-      "summary": "در این بخش کارشناس استدلال می‌کند که واژه مصحف به هر چیز مکتوب و دارای صفحه اطلاق می‌شود و اطلاق آن بر قرآن یا مصحف فاطمه از باب اشتراک لفظی است، و به احادیثی اشاره می‌کند که پیامبر نیز به آن پرداخته‌اند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42862856651-92",
-      "sequence": 92,
-      "updated_at": "2026-11-10T18:07:11.418460+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره آگاهی حضرت زهرا از آینده و مصحف فاطمه",
-      "summary": "در این بخش کارشناس استدلال می‌کند که فرشته بر حضرت زهرا نازل می‌شده و اخبار غیبی و آینده را به او می‌گفته است. به گفته وی، حضرت زهرا این مطالب را به حضرت علی (ع) املا کرده و این نوشته‌ها مصحف فاطمه شده است؛ بنابراین، از این طریق آینده را می‌دانسته است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42862856651-93",
-      "sequence": 93,
-      "updated_at": "2026-11-10T18:07:36.757927+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره خمس و زکات",
-      "summary": "در این بخش از برنامه، موضوع «خمس و زکات» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42862856651-94",
-      "sequence": 94,
-      "updated_at": "2026-11-10T18:07:55.501698+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی نقل حدیث ثقلین و من کنتم مولاه در صحیح مسلم",
-      "summary": "در این بخش کارشناس استدلال می‌کند که حدیث ثقلین و همچنین عبارت من کنتم مولى فهذا علی مولاه، در کتاب صحیح مسلم نقل شده است. به گفته کارشناس، مسلم بن حجاج نیشابوری این روایت را در کتاب خود آورده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "42862856651-95",
-      "sequence": 95,
-      "updated_at": "2026-11-10T18:08:27.793289+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "42862856651-98",
-      "sequence": 98,
-      "updated_at": "2026-11-10T18:09:34.002608+00:00",
-      "speaker": null
-    }
-  ],
+  "program_date": "2026-11-11",
+  "started_at": "2026-11-11T17:15:42.316732+00:00",
+  "updated_at": "2026-11-11T17:30:00.000288+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 162,
-    "editor_attempts": 147,
-    "editor_withheld": 134,
-    "topics_published": 20,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-10T18:39:54.325339+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
