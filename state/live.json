@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-11",
   "started_at": "2026-11-11T17:15:42.316732+00:00",
-  "updated_at": "2026-11-11T17:39:27.404049+00:00",
+  "updated_at": "2026-11-11T17:40:01.357490+00:00",
   "items": [
     {
       "title": "بررسی طنین انقلاب در غزه و لبنان در شعر خوانی کارشناس",
@@ -33,16 +33,28 @@
       "sequence": 7,
       "updated_at": "2026-11-11T17:33:05.234691+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره حضور و دفاع بانوی هجده‌ساله از امیرالمؤمنین",
+      "summary": "در این بخش، کارشناس درباره ورود یک بانوی هجده‌ساله به میدان برای دفاع از امرالمؤمنین استدلال می‌کند و به سخنان مطرح‌شده در صغریات درباره چرایی عدم قیام و حرکت اشاره می‌کند؛ این مباحث به عنوان اظهارات کارشناس بیان شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43066153553-24",
+      "sequence": 24,
+      "updated_at": "2026-11-11T17:40:01.357471+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 24,
-    "segments_transcribed": 21,
-    "editor_attempts": 18,
-    "editor_withheld": 17,
-    "topics_published": 2,
+    "segments_captured": 25,
+    "segments_transcribed": 22,
+    "editor_attempts": 19,
+    "editor_withheld": 18,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-11T17:39:24.748987+00:00"
+    "last_audio_at": "2026-11-11T17:39:49.075359+00:00"
   }
 }
