@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-11",
   "started_at": "2026-11-11T17:15:42.316732+00:00",
-  "updated_at": "2026-11-11T18:33:03.171642+00:00",
+  "updated_at": "2026-11-11T18:33:46.745624+00:00",
   "items": [
     {
       "title": "پرسش درباره حضور و دفاع بانوی هجده‌ساله از امیرالمؤمنین",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 158,
+    "segments_captured": 160,
     "segments_transcribed": 146,
     "editor_attempts": 133,
     "editor_withheld": 131,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-11T18:33:03.123052+00:00"
+    "last_audio_at": "2026-11-11T18:33:46.698045+00:00"
   }
 }
