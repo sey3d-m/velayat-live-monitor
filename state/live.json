@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-11",
   "started_at": "2026-11-11T17:15:42.316732+00:00",
-  "updated_at": "2026-11-11T18:04:13.315226+00:00",
+  "updated_at": "2026-11-11T18:04:42.415152+00:00",
   "items": [
     {
       "title": "بررسی طنین انقلاب در غزه و لبنان در شعر خوانی کارشناس",
@@ -57,16 +57,29 @@
       "sequence": 55,
       "updated_at": "2026-11-11T17:52:21.388043+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره احکام طهارت",
+      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43066153553-86",
+      "sequence": 86,
+      "updated_at": "2026-11-11T18:04:42.415129+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 86,
-    "segments_transcribed": 82,
-    "editor_attempts": 72,
-    "editor_withheld": 69,
-    "topics_published": 4,
+    "segments_captured": 87,
+    "segments_transcribed": 83,
+    "editor_attempts": 73,
+    "editor_withheld": 71,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-11T18:04:10.794299+00:00"
+    "last_audio_at": "2026-11-11T18:04:34.866083+00:00"
   }
 }
