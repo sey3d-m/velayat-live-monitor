@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "43066153553",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-11",
   "started_at": "2026-11-11T17:15:42.316732+00:00",
-  "updated_at": "2026-11-11T17:32:17.547203+00:00",
-  "items": [],
+  "updated_at": "2026-11-11T17:32:59.719988+00:00",
+  "items": [
+    {
+      "title": "بررسی طنین انقلاب در غزه و لبنان در شعر خوانی کارشناس",
+      "summary": "در این بخش کارشناس با اشاره به یاری حق، طنین انقلاب را صدای فرزندان فاطمه معرفی می‌کند و می‌افزاید که این صدا از غزه، لبنان و صنعا به گوش می‌رسد و راه قدس از خاک پاک می‌گذرد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "43066153553-6",
+      "sequence": 6,
+      "updated_at": "2026-11-11T17:32:59.719965+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 6,
-    "segments_transcribed": 4,
-    "editor_attempts": 2,
-    "editor_withheld": 2,
-    "topics_published": 0,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
-    "last_audio_at": "2026-11-11T17:32:13.599128+00:00"
+    "segments_captured": 7,
+    "segments_transcribed": 5,
+    "editor_attempts": 3,
+    "editor_withheld": 3,
+    "topics_published": 1,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
+    "last_audio_at": "2026-11-11T17:32:37.987505+00:00"
   }
 }
