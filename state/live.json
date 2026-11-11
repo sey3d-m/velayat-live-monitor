@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-11",
   "started_at": "2026-11-11T17:15:42.316732+00:00",
-  "updated_at": "2026-11-11T17:45:09.998519+00:00",
+  "updated_at": "2026-11-11T17:45:49.657476+00:00",
   "items": [
     {
       "title": "بررسی طنین انقلاب در غزه و لبنان در شعر خوانی کارشناس",
@@ -48,13 +48,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 38,
-    "segments_transcribed": 35,
-    "editor_attempts": 32,
-    "editor_withheld": 30,
+    "segments_captured": 40,
+    "segments_transcribed": 37,
+    "editor_attempts": 34,
+    "editor_withheld": 32,
     "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-11T17:45:03.631517+00:00"
+    "last_audio_at": "2026-11-11T17:45:47.136191+00:00"
   }
 }
