@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-11",
   "started_at": "2026-11-11T17:15:42.316732+00:00",
-  "updated_at": "2026-11-11T18:21:04.217203+00:00",
+  "updated_at": "2026-11-11T18:21:35.151557+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره امام حسین و عاشورا",
-      "summary": "در این بخش از برنامه، موضوع «امام حسین و عاشورا» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43066153553-7",
-      "sequence": 7,
-      "updated_at": "2026-11-11T17:33:05.234691+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره حضور و دفاع بانوی هجده‌ساله از امیرالمؤمنین",
       "summary": "در این بخش، کارشناس درباره ورود یک بانوی هجده‌ساله به میدان برای دفاع از امرالمؤمنین استدلال می‌کند و به سخنان مطرح‌شده در صغریات درباره چرایی عدم قیام و حرکت اشاره می‌کند؛ این مباحث به عنوان اظهارات کارشناس بیان شد.",
@@ -70,16 +57,29 @@
       "sequence": 96,
       "updated_at": "2026-11-11T18:08:39.516874+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره گفت‌وگوی مذاهب اسلامی",
+      "summary": "در این بخش از برنامه، موضوع «گفت‌وگوی مذاهب اسلامی» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43066153553-128",
+      "sequence": 128,
+      "updated_at": "2026-11-11T18:21:35.151537+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 128,
-    "segments_transcribed": 123,
-    "editor_attempts": 113,
-    "editor_withheld": 110,
-    "topics_published": 6,
+    "segments_captured": 129,
+    "segments_transcribed": 124,
+    "editor_attempts": 114,
+    "editor_withheld": 112,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-11T18:21:01.924497+00:00"
+    "last_audio_at": "2026-11-11T18:21:26.683145+00:00"
   }
 }
