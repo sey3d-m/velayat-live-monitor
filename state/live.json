@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-11",
   "started_at": "2026-11-11T17:15:42.316732+00:00",
-  "updated_at": "2026-11-11T17:33:03.940506+00:00",
+  "updated_at": "2026-11-11T17:33:05.234708+00:00",
   "items": [
     {
       "title": "بررسی طنین انقلاب در غزه و لبنان در شعر خوانی کارشناس",
@@ -20,14 +20,27 @@
       "sequence": 6,
       "updated_at": "2026-11-11T17:32:59.719965+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره امام حسین و عاشورا",
+      "summary": "در این بخش از برنامه، موضوع «امام حسین و عاشورا» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43066153553-7",
+      "sequence": 7,
+      "updated_at": "2026-11-11T17:33:05.234691+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 8,
     "segments_transcribed": 6,
     "editor_attempts": 4,
-    "editor_withheld": 3,
-    "topics_published": 1,
+    "editor_withheld": 4,
+    "topics_published": 2,
     "audio_ai_calls": 1,
     "audio_ai_success": 1,
     "last_audio_at": "2026-11-11T17:33:02.172289+00:00"
