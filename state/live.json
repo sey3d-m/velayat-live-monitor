@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-11",
   "started_at": "2026-11-11T17:15:42.316732+00:00",
-  "updated_at": "2026-11-11T18:08:14.381518+00:00",
+  "updated_at": "2026-11-11T18:08:39.516893+00:00",
   "items": [
-    {
-      "title": "بررسی طنین انقلاب در غزه و لبنان در شعر خوانی کارشناس",
-      "summary": "در این بخش کارشناس با اشاره به یاری حق، طنین انقلاب را صدای فرزندان فاطمه معرفی می‌کند و می‌افزاید که این صدا از غزه، لبنان و صنعا به گوش می‌رسد و راه قدس از خاک پاک می‌گذرد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "editor_mode": "audio_grounded_topic",
-      "id": "43066153553-6",
-      "sequence": 6,
-      "updated_at": "2026-11-11T17:32:59.719965+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره امام حسین و عاشورا",
       "summary": "در این بخش از برنامه، موضوع «امام حسین و عاشورا» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +57,29 @@
       "sequence": 86,
       "updated_at": "2026-11-11T18:04:42.415129+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره اعتقادات اسلامی",
+      "summary": "در این بخش از برنامه، موضوع «اعتقادات اسلامی» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43066153553-96",
+      "sequence": 96,
+      "updated_at": "2026-11-11T18:08:39.516874+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 96,
-    "segments_transcribed": 92,
-    "editor_attempts": 82,
-    "editor_withheld": 79,
-    "topics_published": 5,
+    "segments_captured": 97,
+    "segments_transcribed": 93,
+    "editor_attempts": 83,
+    "editor_withheld": 81,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-11T18:08:10.536448+00:00"
+    "last_audio_at": "2026-11-11T18:08:35.738862+00:00"
   }
 }
