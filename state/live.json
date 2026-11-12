@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T17:14:47.247409+00:00",
-  "updated_at": "2026-11-12T18:14:39.548462+00:00",
+  "updated_at": "2026-11-12T18:14:44.929137+00:00",
   "items": [
-    {
-      "title": "پرسش درباره استناد به سوره کوثر در فضائل زهرا مرضیه",
-      "summary": "در این بخش درباره پرسشی پیرامون احترام به زهرا مرضیه و نگاه قرآن مطرح شد. کارشناس استدلال می‌کند که سوره کوثر به عنوان سوره‌ای مرتبط با ایشان در قرآن وجود دارد و تعبیر «إنا أعطیناک الکوثر» و دستور «فصل لربک وانحر» را نشانه‌ای می‌داند که دشمنان را مأیوس می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "43267247024-23",
-      "sequence": 23,
-      "updated_at": "2026-11-12T17:39:40.250670+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره تربیت و اخلاق",
       "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -71,14 +59,27 @@
       "sequence": 82,
       "updated_at": "2026-11-12T18:03:12.895220+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره امام زمان",
+      "summary": "در این بخش از برنامه، موضوع «امام زمان» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43267247024-111",
+      "sequence": 111,
+      "updated_at": "2026-11-12T18:14:44.929107+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 112,
     "segments_transcribed": 103,
     "editor_attempts": 89,
-    "editor_withheld": 87,
-    "topics_published": 6,
+    "editor_withheld": 88,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
     "last_audio_at": "2026-11-12T18:14:36.302997+00:00"
