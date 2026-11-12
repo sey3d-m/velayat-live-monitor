@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T14:15:06.567051+00:00",
-  "updated_at": "2026-11-12T14:42:46.347629+00:00",
+  "updated_at": "2026-11-12T14:43:17.298279+00:00",
   "items": [
     {
       "title": "پرسش درباره ایستادگی در برابر ظلم و یاد شهدای فاطمیه",
@@ -20,16 +20,28 @@
       "sequence": 5,
       "updated_at": "2026-11-12T14:32:46.537036+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره اعتبار روایات کتب شیعه و استناد به سلیم بن قیس هلالی",
+      "summary": "در این بخش کارشناس ادعا می‌کند روایات صحیحی وجود ندارد و روایات موجود در کتب شیعه که به آن‌ها استناد می‌شود، زیر سوال هستند؛ وی استناد این آثار به سلیم بن قیس هلالی را مایه زیر سوال رفتن اعتبار آن‌ها می‌داند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43235077981-32",
+      "sequence": 32,
+      "updated_at": "2026-11-12T14:43:17.298257+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 32,
-    "segments_transcribed": 29,
-    "editor_attempts": 21,
-    "editor_withheld": 20,
-    "topics_published": 1,
+    "segments_captured": 33,
+    "segments_transcribed": 30,
+    "editor_attempts": 22,
+    "editor_withheld": 21,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-12T14:42:40.566106+00:00"
+    "last_audio_at": "2026-11-12T14:43:04.708269+00:00"
   }
 }
