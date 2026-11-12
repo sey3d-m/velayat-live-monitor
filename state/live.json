@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T15:44:58.331593+00:00",
-  "updated_at": "2026-11-12T16:20:42.633123+00:00",
+  "updated_at": "2026-11-12T16:21:36.600083+00:00",
   "items": [
     {
       "title": "پرسش درباره پیامد انتخاب الگو در تقلید و تبعیت",
@@ -46,13 +46,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 52,
-    "segments_transcribed": 51,
-    "editor_attempts": 37,
-    "editor_withheld": 33,
+    "segments_captured": 54,
+    "segments_transcribed": 53,
+    "editor_attempts": 38,
+    "editor_withheld": 34,
     "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-12T16:20:38.011957+00:00"
+    "last_audio_at": "2026-11-12T16:21:26.858703+00:00"
   }
 }
