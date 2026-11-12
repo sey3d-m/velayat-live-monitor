@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T17:14:47.247409+00:00",
-  "updated_at": "2026-11-12T18:24:19.768576+00:00",
+  "updated_at": "2026-11-12T18:25:03.673976+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره اعتقادات اسلامی",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 136,
-    "segments_transcribed": 126,
-    "editor_attempts": 111,
-    "editor_withheld": 108,
+    "segments_captured": 138,
+    "segments_transcribed": 128,
+    "editor_attempts": 113,
+    "editor_withheld": 110,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-12T18:24:16.306083+00:00"
+    "last_audio_at": "2026-11-12T18:25:00.383599+00:00"
   }
 }
