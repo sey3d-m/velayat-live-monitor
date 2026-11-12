@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T17:14:47.247409+00:00",
-  "updated_at": "2026-11-12T18:28:15.429135+00:00",
+  "updated_at": "2026-11-12T18:28:21.803605+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره اعتقادات اسلامی",
-      "summary": "در این بخش از برنامه، موضوع «اعتقادات اسلامی» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43267247024-66",
-      "sequence": 66,
-      "updated_at": "2026-11-12T17:57:06.912418+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
       "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -71,6 +58,18 @@
       "sequence": 126,
       "updated_at": "2026-11-12T18:20:48.069833+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره ذکر مصیبت و توسل در شب جمعه",
+      "summary": "در این بخش کارشناس به ذکر مصیبت و خواندن اشعاری در رثای حضرت زهرا سلام‌الله‌علیها و روضه روز عاشورا پرداخته و از مخاطبان می‌خواهد که در این شب جمعه هنگام ریختن اشک، دعا کنند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43267247024-145",
+      "sequence": 145,
+      "updated_at": "2026-11-12T18:28:21.803579+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -78,7 +77,7 @@
     "segments_transcribed": 136,
     "editor_attempts": 121,
     "editor_withheld": 118,
-    "topics_published": 9,
+    "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
     "last_audio_at": "2026-11-12T18:28:12.333566+00:00"
