@@ -1,84 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "43251011969",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "43267247024",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-12",
-  "started_at": "2026-11-12T15:44:58.331593+00:00",
-  "updated_at": "2026-11-12T17:10:09.105378+00:00",
-  "items": [
-    {
-      "title": "پرسش درباره تفاوت ترس انبیای الهی با ترس‌های عادی",
-      "summary": "در این بخش کارشناس استدلال می‌کند که ترس انبیا و اولیا از جنس ترس‌های عادی نیست، بلکه ترسی برخوردکننده با عدم انجام مسئولیت و وظیفه است؛ به گفته وی این ترس ناشی از مسئولیت‌پذیری است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43251011969-72",
-      "sequence": 72,
-      "updated_at": "2026-11-12T16:29:16.963596+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره احتمال خطای در مسیر و داستان حضرت یونس",
-      "summary": "در این بخش کارشناس استدلال می‌کند که اگر در مسیر تحقق اهداف موعود الهی استلاخ خطای کوچکی رخ دهد، گرفتاری ایجاد می‌شود. سپس با اشاره به کمبود وقت، مطرح می‌کند که داستان حضرت یونس در چند سوره از آیات قرآن کریم مطرح شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43251011969-84",
-      "sequence": 84,
-      "updated_at": "2026-11-12T16:34:11.750609+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره امام زمان",
-      "summary": "در این بخش از برنامه، موضوع «امام زمان» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43251011969-94",
-      "sequence": 94,
-      "updated_at": "2026-11-12T16:38:32.400273+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی فعالیت شبکه‌های ماهواره‌ای فارسی‌زبان از دیدگاه کارشناس",
-      "summary": "در این بخش کارشناس ادعا می‌کند شبکه‌های ماهواره‌ای فارسی‌زبان با دریافت پول هدفمندانه به طرح موضوعات بی‌پایه می‌پردازند. به گفته وی، این فعالیت‌ها شامل حوزه‌های مختلفی از جمله خبر، سریال، فیلم و انتقادات می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.82,
-      "id": "43251011969-136",
-      "sequence": 136,
-      "updated_at": "2026-11-12T16:54:56.294642+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره امام حسین و عاشورا",
-      "summary": "در این بخش از برنامه، موضوع «امام حسین و عاشورا» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43251011969-169",
-      "sequence": 169,
-      "updated_at": "2026-11-12T17:08:08.118706+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-12T17:14:47.247409+00:00",
+  "updated_at": "2026-11-12T17:30:00.000269+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 168,
-    "editor_attempts": 138,
-    "editor_withheld": 131,
-    "topics_published": 9,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 2,
-    "last_audio_at": "2026-11-12T17:09:50.424746+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
