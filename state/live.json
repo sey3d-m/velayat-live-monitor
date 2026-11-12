@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "ended",
   "network": "velayat_farsi",
   "session": "43235077981",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T14:15:06.567051+00:00",
-  "updated_at": "2026-11-12T15:39:27.647246+00:00",
+  "updated_at": "2026-11-12T15:40:05.911585+00:00",
   "items": [
     {
       "title": "پرسش درباره ایستادگی در برابر ظلم و یاد شهدای فاطمیه",
@@ -48,13 +48,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 174,
+    "segments_captured": 175,
     "segments_transcribed": 148,
     "editor_attempts": 121,
     "editor_withheld": 120,
     "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-12T15:39:24.105492+00:00"
+    "last_audio_at": "2026-11-12T15:39:47.745676+00:00"
   }
 }
