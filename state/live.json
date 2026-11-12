@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T17:14:47.247409+00:00",
-  "updated_at": "2026-11-12T18:19:29.593304+00:00",
+  "updated_at": "2026-11-12T18:19:55.713968+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره تربیت و اخلاق",
-      "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43267247024-36",
-      "sequence": 36,
-      "updated_at": "2026-11-12T17:44:46.033978+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره حدیث و روایت",
       "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -72,16 +59,29 @@
       "sequence": 111,
       "updated_at": "2026-11-12T18:14:44.929107+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خانواده و ازدواج",
+      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43267247024-124",
+      "sequence": 124,
+      "updated_at": "2026-11-12T18:19:55.713946+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 124,
-    "segments_transcribed": 114,
-    "editor_attempts": 99,
-    "editor_withheld": 97,
-    "topics_published": 7,
+    "segments_captured": 125,
+    "segments_transcribed": 115,
+    "editor_attempts": 100,
+    "editor_withheld": 99,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-12T18:19:26.623117+00:00"
+    "last_audio_at": "2026-11-12T18:19:50.890529+00:00"
   }
 }
