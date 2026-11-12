@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T15:44:58.331593+00:00",
-  "updated_at": "2026-11-12T16:37:30.261809+00:00",
+  "updated_at": "2026-11-12T16:38:20.147908+00:00",
   "items": [
     {
       "title": "بررسی نقش عوامل درونی و رفیق ناباب در انحراف",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 94,
-    "segments_transcribed": 93,
-    "editor_attempts": 70,
-    "editor_withheld": 64,
+    "segments_captured": 96,
+    "segments_transcribed": 95,
+    "editor_attempts": 71,
+    "editor_withheld": 65,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-12T16:37:24.983028+00:00"
+    "last_audio_at": "2026-11-12T16:38:14.972487+00:00"
   }
 }
