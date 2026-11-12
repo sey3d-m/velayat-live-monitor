@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "43267247024",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T17:14:47.247409+00:00",
-  "updated_at": "2026-11-12T17:35:27.518008+00:00",
-  "items": [],
+  "updated_at": "2026-11-12T17:36:05.780424+00:00",
+  "items": [
+    {
+      "title": "پرسش درباره نقش حضرت فاطمه در گذرنامه بهشت و شفاعت",
+      "summary": "در این بخش کارشناس استدلال می‌کند که حکم گذرنامه بهشت تنها به دست فاطمه امضا می‌شود و آتش دوزخ از نام پاک او کنار می‌کشد. به گفته کارشناس، این قبر گوهری است که تا قیام قیامت نهفته می‌ماند و آتش حریف دختر طاها نمی‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "43267247024-12",
+      "sequence": 12,
+      "updated_at": "2026-11-12T17:36:05.780398+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 14,
+    "segments_captured": 15,
     "segments_transcribed": 9,
     "editor_attempts": 5,
-    "editor_withheld": 4,
-    "topics_published": 0,
-    "audio_ai_calls": 2,
-    "audio_ai_success": 1,
-    "last_audio_at": "2026-11-12T17:35:25.417155+00:00"
+    "editor_withheld": 5,
+    "topics_published": 1,
+    "audio_ai_calls": 3,
+    "audio_ai_success": 2,
+    "last_audio_at": "2026-11-12T17:35:49.732908+00:00"
   }
 }
