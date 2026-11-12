@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T17:14:47.247409+00:00",
-  "updated_at": "2026-11-12T18:13:05.363904+00:00",
+  "updated_at": "2026-11-12T18:13:56.887386+00:00",
   "items": [
     {
       "title": "پرسش درباره استناد به سوره کوثر در فضائل زهرا مرضیه",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 108,
-    "segments_transcribed": 99,
-    "editor_attempts": 85,
-    "editor_withheld": 83,
+    "segments_captured": 110,
+    "segments_transcribed": 101,
+    "editor_attempts": 87,
+    "editor_withheld": 85,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-12T18:13:03.006418+00:00"
+    "last_audio_at": "2026-11-12T18:13:52.593848+00:00"
   }
 }
