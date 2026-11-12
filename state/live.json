@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T17:14:47.247409+00:00",
-  "updated_at": "2026-11-12T18:18:38.908532+00:00",
+  "updated_at": "2026-11-12T18:19:29.593304+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره تربیت و اخلاق",
@@ -75,13 +75,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 122,
-    "segments_transcribed": 112,
-    "editor_attempts": 97,
-    "editor_withheld": 96,
+    "segments_captured": 124,
+    "segments_transcribed": 114,
+    "editor_attempts": 99,
+    "editor_withheld": 97,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-12T18:18:37.598375+00:00"
+    "last_audio_at": "2026-11-12T18:19:26.623117+00:00"
   }
 }
