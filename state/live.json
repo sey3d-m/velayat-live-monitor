@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T15:44:58.331593+00:00",
-  "updated_at": "2026-11-12T16:16:45.845985+00:00",
+  "updated_at": "2026-11-12T16:17:13.573306+00:00",
   "items": [
     {
       "title": "پرسش درباره پیامد انتخاب الگو در تقلید و تبعیت",
@@ -31,16 +31,28 @@
       "sequence": 30,
       "updated_at": "2026-11-12T16:12:22.544390+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره نقش امام علی در جنگ‌های صدر اسلام",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که امیرالمؤمنین علی علیه السلام در جنگ‌های صدر اسلام از جمله بدر، احد، احزاب و خیبر نقش اختصاصی و اساسی داشته است. به گفته وی، در اغلب این نبردها حضور و عاملیت آن حضرت برجسته بوده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43251011969-41",
+      "sequence": 41,
+      "updated_at": "2026-11-12T16:17:13.573282+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 42,
-    "segments_transcribed": 41,
+    "segments_captured": 43,
+    "segments_transcribed": 42,
     "editor_attempts": 30,
     "editor_withheld": 27,
-    "topics_published": 2,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-12T16:16:40.494897+00:00"
+    "last_audio_at": "2026-11-12T16:17:04.056255+00:00"
   }
 }
