@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T15:44:58.331593+00:00",
-  "updated_at": "2026-11-12T16:44:57.513054+00:00",
+  "updated_at": "2026-11-12T16:45:33.652950+00:00",
   "items": [
     {
       "title": "پرسش درباره نقش امام علی در جنگ‌های صدر اسلام",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 112,
-    "segments_transcribed": 108,
-    "editor_attempts": 83,
-    "editor_withheld": 77,
+    "segments_captured": 114,
+    "segments_transcribed": 110,
+    "editor_attempts": 85,
+    "editor_withheld": 79,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-12T16:44:39.318539+00:00"
+    "last_audio_at": "2026-11-12T16:45:28.848541+00:00"
   }
 }
