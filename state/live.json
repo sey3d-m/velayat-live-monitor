@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T17:14:47.247409+00:00",
-  "updated_at": "2026-11-12T18:20:17.901845+00:00",
+  "updated_at": "2026-11-12T18:20:48.069862+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره حدیث و روایت",
-      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43267247024-57",
-      "sequence": 57,
-      "updated_at": "2026-11-12T17:53:15.697009+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره اعتقادات اسلامی",
       "summary": "در این بخش از برنامه، موضوع «اعتقادات اسلامی» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -72,16 +59,28 @@
       "sequence": 124,
       "updated_at": "2026-11-12T18:19:55.713946+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نگرانی کارشناس درباره انحراف امت از مسیر حق",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که برای امت خود از فقر اقتصادی نمی‌ترسد؛ زیرا جامعه تحمل فقر را دارد و فقر اقتصادی آن‌ها را از مسیر خارج نمی‌کند. به گفته وی، آنچه بیشتر مایه نگرانی است و خطر انحراف را به دنبال دارد، مسئله دیگری است که باید مورد توجه قرار گیرد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43267247024-126",
+      "sequence": 126,
+      "updated_at": "2026-11-12T18:20:48.069833+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 126,
-    "segments_transcribed": 116,
-    "editor_attempts": 101,
-    "editor_withheld": 99,
-    "topics_published": 8,
+    "segments_captured": 127,
+    "segments_transcribed": 117,
+    "editor_attempts": 102,
+    "editor_withheld": 100,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-12T18:20:15.088987+00:00"
+    "last_audio_at": "2026-11-12T18:20:40.199300+00:00"
   }
 }
