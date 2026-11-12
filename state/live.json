@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T17:14:47.247409+00:00",
-  "updated_at": "2026-11-12T17:57:05.664366+00:00",
+  "updated_at": "2026-11-12T17:57:06.912441+00:00",
   "items": [
     {
       "title": "پرسش درباره نقش حضرت فاطمه در گذرنامه بهشت و شفاعت",
@@ -58,14 +58,27 @@
       "sequence": 57,
       "updated_at": "2026-11-12T17:53:15.697009+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره اعتقادات اسلامی",
+      "summary": "در این بخش از برنامه، موضوع «اعتقادات اسلامی» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43267247024-66",
+      "sequence": 66,
+      "updated_at": "2026-11-12T17:57:06.912418+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 68,
     "segments_transcribed": 62,
     "editor_attempts": 53,
-    "editor_withheld": 51,
-    "topics_published": 4,
+    "editor_withheld": 52,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
     "last_audio_at": "2026-11-12T17:56:59.535325+00:00"
