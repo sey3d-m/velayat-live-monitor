@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T17:14:47.247409+00:00",
-  "updated_at": "2026-11-12T17:44:19.826441+00:00",
+  "updated_at": "2026-11-12T17:44:46.034003+00:00",
   "items": [
     {
       "title": "پرسش درباره نقش حضرت فاطمه در گذرنامه بهشت و شفاعت",
@@ -32,16 +32,29 @@
       "sequence": 23,
       "updated_at": "2026-11-12T17:39:40.250670+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره تربیت و اخلاق",
+      "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43267247024-36",
+      "sequence": 36,
+      "updated_at": "2026-11-12T17:44:46.033978+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 36,
-    "segments_transcribed": 30,
-    "editor_attempts": 24,
-    "editor_withheld": 22,
-    "topics_published": 2,
+    "segments_captured": 37,
+    "segments_transcribed": 31,
+    "editor_attempts": 25,
+    "editor_withheld": 24,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-12T17:44:17.185572+00:00"
+    "last_audio_at": "2026-11-12T17:44:41.103387+00:00"
   }
 }
