@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T14:15:06.567051+00:00",
-  "updated_at": "2026-11-12T14:47:29.275566+00:00",
+  "updated_at": "2026-11-12T14:48:20.466558+00:00",
   "items": [
     {
       "title": "پرسش درباره ایستادگی در برابر ظلم و یاد شهدای فاطمیه",
@@ -35,13 +35,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 44,
-    "segments_transcribed": 41,
-    "editor_attempts": 33,
-    "editor_withheld": 31,
+    "segments_captured": 46,
+    "segments_transcribed": 43,
+    "editor_attempts": 34,
+    "editor_withheld": 32,
     "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-12T14:47:23.790288+00:00"
+    "last_audio_at": "2026-11-12T14:48:14.830436+00:00"
   }
 }
