@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T15:44:58.331593+00:00",
-  "updated_at": "2026-11-12T17:08:42.100346+00:00",
+  "updated_at": "2026-11-12T17:09:31.292768+00:00",
   "items": [
     {
       "title": "پرسش درباره تفاوت ترس انبیای الهی با ترس‌های عادی",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 172,
-    "segments_transcribed": 165,
-    "editor_attempts": 135,
-    "editor_withheld": 128,
+    "segments_captured": 174,
+    "segments_transcribed": 167,
+    "editor_attempts": 137,
+    "editor_withheld": 130,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-12T17:08:36.530254+00:00"
+    "last_audio_at": "2026-11-12T17:09:25.638131+00:00"
   }
 }
