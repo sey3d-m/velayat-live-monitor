@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T15:44:58.331593+00:00",
-  "updated_at": "2026-11-12T17:07:58.991670+00:00",
+  "updated_at": "2026-11-12T17:08:08.118774+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43251011969-60",
-      "sequence": 60,
-      "updated_at": "2026-11-12T16:24:22.938099+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره تفاوت ترس انبیای الهی با ترس‌های عادی",
       "summary": "در این بخش کارشناس استدلال می‌کند که ترس انبیا و اولیا از جنس ترس‌های عادی نیست، بلکه ترسی برخوردکننده با عدم انجام مسئولیت و وظیفه است؛ به گفته وی این ترس ناشی از مسئولیت‌پذیری است.",
@@ -69,14 +56,27 @@
       "sequence": 136,
       "updated_at": "2026-11-12T16:54:56.294642+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره امام حسین و عاشورا",
+      "summary": "در این بخش از برنامه، موضوع «امام حسین و عاشورا» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43251011969-169",
+      "sequence": 169,
+      "updated_at": "2026-11-12T17:08:08.118706+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 170,
     "segments_transcribed": 163,
     "editor_attempts": 133,
-    "editor_withheld": 126,
-    "topics_published": 8,
+    "editor_withheld": 127,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
     "last_audio_at": "2026-11-12T17:07:53.692296+00:00"
