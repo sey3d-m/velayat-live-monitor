@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T17:14:47.247409+00:00",
-  "updated_at": "2026-11-12T17:39:29.496091+00:00",
+  "updated_at": "2026-11-12T17:39:40.250699+00:00",
   "items": [
     {
       "title": "پرسش درباره نقش حضرت فاطمه در گذرنامه بهشت و شفاعت",
@@ -20,6 +20,18 @@
       "sequence": 12,
       "updated_at": "2026-11-12T17:36:05.780398+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره استناد به سوره کوثر در فضائل زهرا مرضیه",
+      "summary": "در این بخش درباره پرسشی پیرامون احترام به زهرا مرضیه و نگاه قرآن مطرح شد. کارشناس استدلال می‌کند که سوره کوثر به عنوان سوره‌ای مرتبط با ایشان در قرآن وجود دارد و تعبیر «إنا أعطیناک الکوثر» و دستور «فصل لربک وانحر» را نشانه‌ای می‌داند که دشمنان را مأیوس می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.8,
+      "id": "43267247024-23",
+      "sequence": 23,
+      "updated_at": "2026-11-12T17:39:40.250670+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -27,7 +39,7 @@
     "segments_transcribed": 18,
     "editor_attempts": 12,
     "editor_withheld": 11,
-    "topics_published": 1,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
     "last_audio_at": "2026-11-12T17:39:26.764547+00:00"
