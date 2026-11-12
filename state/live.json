@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T15:44:58.331593+00:00",
-  "updated_at": "2026-11-12T16:23:56.193561+00:00",
+  "updated_at": "2026-11-12T16:24:22.938123+00:00",
   "items": [
     {
       "title": "پرسش درباره پیامد انتخاب الگو در تقلید و تبعیت",
@@ -43,16 +43,29 @@
       "sequence": 41,
       "updated_at": "2026-11-12T16:17:13.573282+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43251011969-60",
+      "sequence": 60,
+      "updated_at": "2026-11-12T16:24:22.938099+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 60,
-    "segments_transcribed": 59,
-    "editor_attempts": 42,
-    "editor_withheld": 39,
-    "topics_published": 3,
+    "segments_captured": 61,
+    "segments_transcribed": 60,
+    "editor_attempts": 43,
+    "editor_withheld": 40,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-12T16:23:52.159866+00:00"
+    "last_audio_at": "2026-11-12T16:24:17.368201+00:00"
   }
 }
