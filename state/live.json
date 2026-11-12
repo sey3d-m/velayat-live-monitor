@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T15:44:58.331593+00:00",
-  "updated_at": "2026-11-12T16:54:21.797533+00:00",
+  "updated_at": "2026-11-12T16:54:56.294667+00:00",
   "items": [
-    {
-      "title": "پرسش درباره نقش امام علی در جنگ‌های صدر اسلام",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که امیرالمؤمنین علی علیه السلام در جنگ‌های صدر اسلام از جمله بدر، احد، احزاب و خیبر نقش اختصاصی و اساسی داشته است. به گفته وی، در اغلب این نبردها حضور و عاملیت آن حضرت برجسته بوده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43251011969-41",
-      "sequence": 41,
-      "updated_at": "2026-11-12T16:17:13.573282+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
       "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +57,28 @@
       "sequence": 94,
       "updated_at": "2026-11-12T16:38:32.400273+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی فعالیت شبکه‌های ماهواره‌ای فارسی‌زبان از دیدگاه کارشناس",
+      "summary": "در این بخش کارشناس ادعا می‌کند شبکه‌های ماهواره‌ای فارسی‌زبان با دریافت پول هدفمندانه به طرح موضوعات بی‌پایه می‌پردازند. به گفته وی، این فعالیت‌ها شامل حوزه‌های مختلفی از جمله خبر، سریال، فیلم و انتقادات می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.82,
+      "id": "43251011969-136",
+      "sequence": 136,
+      "updated_at": "2026-11-12T16:54:56.294642+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 136,
-    "segments_transcribed": 132,
-    "editor_attempts": 107,
-    "editor_withheld": 101,
-    "topics_published": 7,
+    "segments_captured": 137,
+    "segments_transcribed": 133,
+    "editor_attempts": 108,
+    "editor_withheld": 102,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-12T16:54:16.156375+00:00"
+    "last_audio_at": "2026-11-12T16:54:40.131543+00:00"
   }
 }
