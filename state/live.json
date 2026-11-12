@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T17:14:47.247409+00:00",
-  "updated_at": "2026-11-12T17:47:29.711745+00:00",
+  "updated_at": "2026-11-12T17:48:18.545367+00:00",
   "items": [
     {
       "title": "پرسش درباره نقش حضرت فاطمه در گذرنامه بهشت و شفاعت",
@@ -48,13 +48,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 44,
-    "segments_transcribed": 38,
-    "editor_attempts": 32,
-    "editor_withheld": 30,
+    "segments_captured": 46,
+    "segments_transcribed": 40,
+    "editor_attempts": 34,
+    "editor_withheld": 32,
     "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-12T17:47:26.915631+00:00"
+    "last_audio_at": "2026-11-12T17:48:16.186073+00:00"
   }
 }
