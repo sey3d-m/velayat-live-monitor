@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "43235077981",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T14:15:06.567051+00:00",
-  "updated_at": "2026-11-12T14:32:22.951553+00:00",
-  "items": [],
+  "updated_at": "2026-11-12T14:32:46.537061+00:00",
+  "items": [
+    {
+      "title": "پرسش درباره ایستادگی در برابر ظلم و یاد شهدای فاطمیه",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که انسان باید در برابر ظلم و ستم محکم بایستد و از حق دفاع کند. وی در ادامه سخنان خود به یاد شهدای فاطمیه اشاره می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "43235077981-5",
+      "sequence": 5,
+      "updated_at": "2026-11-12T14:32:46.537036+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 6,
-    "segments_transcribed": 4,
+    "segments_captured": 7,
+    "segments_transcribed": 5,
     "editor_attempts": 3,
-    "editor_withheld": 2,
-    "topics_published": 0,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
-    "last_audio_at": "2026-11-12T14:32:17.890818+00:00"
+    "editor_withheld": 3,
+    "topics_published": 1,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
+    "last_audio_at": "2026-11-12T14:32:34.990273+00:00"
   }
 }
