@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-12",
   "started_at": "2026-11-12T15:44:58.331593+00:00",
-  "updated_at": "2026-11-12T16:33:52.999239+00:00",
+  "updated_at": "2026-11-12T16:34:11.750632+00:00",
   "items": [
-    {
-      "title": "پرسش درباره پیامد انتخاب الگو در تقلید و تبعیت",
-      "summary": "در این بخش کارشناس استدلال می‌کند که پیروی و تقلید انسان در صورت انتخاب الگوی نادرست به نتایج اشتباه می‌جامد و برعکس، اگر الگوی مورد نظر مناسب و کامل باشد، نتایج مناسبی به دست خواهد آمد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43251011969-27",
-      "sequence": 27,
-      "updated_at": "2026-11-12T16:11:11.788463+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی نقش عوامل درونی و رفیق ناباب در انحراف",
       "summary": "در این بخش کارشناس استدلال می‌کند که هرچند عوامل درونی نیز وجود دارند، اما آنچه فرد را به این میدان می‌کشد عامل بیرونی و به گفته او رفیق ناباب است که فرد با دیدن رفتار یا شنیدن سخن او تحت تأثیر قرار می‌گیرد.",
@@ -68,16 +56,28 @@
       "sequence": 72,
       "updated_at": "2026-11-12T16:29:16.963596+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره احتمال خطای در مسیر و داستان حضرت یونس",
+      "summary": "در این بخش کارشناس استدلال می‌کند که اگر در مسیر تحقق اهداف موعود الهی استلاخ خطای کوچکی رخ دهد، گرفتاری ایجاد می‌شود. سپس با اشاره به کمبود وقت، مطرح می‌کند که داستان حضرت یونس در چند سوره از آیات قرآن کریم مطرح شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43251011969-84",
+      "sequence": 84,
+      "updated_at": "2026-11-12T16:34:11.750609+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 84,
-    "segments_transcribed": 83,
-    "editor_attempts": 62,
-    "editor_withheld": 57,
-    "topics_published": 5,
+    "segments_captured": 85,
+    "segments_transcribed": 84,
+    "editor_attempts": 63,
+    "editor_withheld": 58,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-12T16:33:26.454900+00:00"
+    "last_audio_at": "2026-11-12T16:33:54.123213+00:00"
   }
 }
