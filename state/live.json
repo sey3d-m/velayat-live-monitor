@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:22:19.542392+00:00",
+  "updated_at": "2026-11-14T16:23:08.033870+00:00",
   "items": [
     {
       "title": "پرسش درباره آغازگر جنگ‌های مسلمانان با نهادهای سیاسی مسیحی",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 56,
-    "segments_transcribed": 52,
-    "editor_attempts": 51,
-    "editor_withheld": 42,
+    "segments_captured": 58,
+    "segments_transcribed": 54,
+    "editor_attempts": 53,
+    "editor_withheld": 43,
     "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T16:22:09.984717+00:00"
+    "last_audio_at": "2026-11-14T16:23:01.086711+00:00"
   }
 }
