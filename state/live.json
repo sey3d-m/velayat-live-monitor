@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T17:14:59.505034+00:00",
-  "updated_at": "2026-11-14T18:05:43.912110+00:00",
+  "updated_at": "2026-11-14T18:06:33.335965+00:00",
   "items": [
     {
       "title": "پرسش درباره حکم خطور افکار گناه‌آلود به ذهن",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 90,
-    "segments_transcribed": 79,
-    "editor_attempts": 78,
-    "editor_withheld": 72,
+    "segments_captured": 92,
+    "segments_transcribed": 81,
+    "editor_attempts": 80,
+    "editor_withheld": 74,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T18:05:40.678211+00:00"
+    "last_audio_at": "2026-11-14T18:06:30.239300+00:00"
   }
 }
