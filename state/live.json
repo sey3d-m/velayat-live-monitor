@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:25:35.061606+00:00",
+  "updated_at": "2026-11-14T16:25:58.241583+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43611762167-53",
-      "sequence": 53,
-      "updated_at": "2026-11-14T16:21:30.103771+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره اعتقادات اسلامی",
       "summary": "در این بخش از برنامه، موضوع «اعتقادات اسلامی» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +56,28 @@
       "sequence": 63,
       "updated_at": "2026-11-14T16:25:35.061581+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ادعای جنایات و قتل‌عام در اورشلیم و غزه",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که جریان خون در کوچه‌های اورشلیم و کشتار صغیر و کبیر و زنان و کودکان مسلمان، نمونه‌ای از عدم رحم و قتل‌عام است و مدعی می‌شود که مشابه این وضعیت را اکنون در غزه با آمار ادعایی مشاهده می‌کنیم.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43611762167-64",
+      "sequence": 64,
+      "updated_at": "2026-11-14T16:25:58.241558+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 64,
-    "segments_transcribed": 60,
-    "editor_attempts": 59,
+    "segments_captured": 65,
+    "segments_transcribed": 61,
+    "editor_attempts": 60,
     "editor_withheld": 47,
-    "topics_published": 18,
+    "topics_published": 19,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T16:25:25.275198+00:00"
+    "last_audio_at": "2026-11-14T16:25:50.699179+00:00"
   }
 }
