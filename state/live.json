@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T17:14:59.505034+00:00",
-  "updated_at": "2026-11-14T18:03:21.264011+00:00",
+  "updated_at": "2026-11-14T18:03:46.892573+00:00",
   "items": [
-    {
-      "title": "پرسش درباره معنای نعمت ظاهری و باطنی در سوره لقمان",
-      "summary": "در این بخش، کارشناس به پرسش بیننده‌ای درباره معنای عبارت «أَسْبَغَ عَلَیْکُمْ نِعَمَهُ ظَاهِرَةً وَبَاطِنَةً» در سوره لقمان پاسخ می‌دهد و پرسشگر جویای مصداق و تفسیر این نعمت‌های ظاهری و باطنی ذکرشده در آیه می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43619982838-16",
-      "sequence": 16,
-      "updated_at": "2026-11-14T17:36:35.830051+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره حکم خطور افکار گناه‌آلود به ذهن",
       "summary": "در این بخش درباره این پرسش گفت‌وگو شد که آیا خطور خودبه‌خودی افکار گناه‌آلود به ذهن امری عادی است یا نشانه اشکال در انسان وجود دارد و برای رفع آن چه باید کرد.",
@@ -68,16 +56,28 @@
       "sequence": 62,
       "updated_at": "2026-11-14T17:55:02.842393+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی مقدمات اراده انسان در گفتار کارشناس",
+      "summary": "در این بخش کارشناس استدلال می‌کند که اگر انسان از آثار و برکات یک کار آگاه شود، انگیزه‌اش بیشتر شده و حتماً آن را انجام می‌دهد؛ و در ادامه بیان می‌کند که برای اراده کردن انسان، مقدماتی وجود دارد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43619982838-84",
+      "sequence": 84,
+      "updated_at": "2026-11-14T18:03:46.892553+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 84,
-    "segments_transcribed": 73,
-    "editor_attempts": 72,
-    "editor_withheld": 67,
-    "topics_published": 9,
+    "segments_captured": 85,
+    "segments_transcribed": 74,
+    "editor_attempts": 73,
+    "editor_withheld": 68,
+    "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T18:03:18.000303+00:00"
+    "last_audio_at": "2026-11-14T18:03:43.479917+00:00"
   }
 }
