@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:23:50.038034+00:00",
+  "updated_at": "2026-11-14T16:24:40.659999+00:00",
   "items": [
     {
       "title": "بررسی ماهیت سیاسی جنگ‌ها در صدر اسلام و عدم جنگ با نهاد مذهبی مسیحیت",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 60,
-    "segments_transcribed": 56,
-    "editor_attempts": 55,
-    "editor_withheld": 44,
+    "segments_captured": 62,
+    "segments_transcribed": 58,
+    "editor_attempts": 57,
+    "editor_withheld": 46,
     "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T16:23:44.426740+00:00"
+    "last_audio_at": "2026-11-14T16:24:34.328057+00:00"
   }
 }
