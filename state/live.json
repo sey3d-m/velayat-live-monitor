@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:03:19.993262+00:00",
+  "updated_at": "2026-11-14T16:03:34.027140+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره معیارهای شناخت حقیقت در فصل گذشته برنامه آفتاب و سایه‌ها",
@@ -20,16 +20,29 @@
       "sequence": 7,
       "updated_at": "2026-11-14T16:03:19.993235+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره احکام طهارت",
+      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43611762167-8",
+      "sequence": 8,
+      "updated_at": "2026-11-14T16:03:34.027075+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 8,
-    "segments_transcribed": 4,
-    "editor_attempts": 3,
-    "editor_withheld": 3,
-    "topics_published": 1,
+    "segments_captured": 9,
+    "segments_transcribed": 5,
+    "editor_attempts": 4,
+    "editor_withheld": 4,
+    "topics_published": 2,
     "audio_ai_calls": 1,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-14T16:03:01.682543+00:00"
+    "last_audio_at": "2026-11-14T16:03:25.494718+00:00"
   }
 }
