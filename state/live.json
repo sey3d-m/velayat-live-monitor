@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T17:14:59.505034+00:00",
-  "updated_at": "2026-11-14T17:56:57.818090+00:00",
+  "updated_at": "2026-11-14T17:57:47.646435+00:00",
   "items": [
     {
       "title": "پرسش درباره معنای نعمت ظاهری و باطنی در سوره لقمان",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 68,
-    "segments_transcribed": 57,
-    "editor_attempts": 56,
-    "editor_withheld": 51,
+    "segments_captured": 70,
+    "segments_transcribed": 59,
+    "editor_attempts": 58,
+    "editor_withheld": 53,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T17:56:55.000519+00:00"
+    "last_audio_at": "2026-11-14T17:57:44.295950+00:00"
   }
 }
