@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T14:14:54.527353+00:00",
-  "updated_at": "2026-11-14T14:41:32.126792+00:00",
+  "updated_at": "2026-11-14T14:41:57.509543+00:00",
   "items": [
     {
       "title": "بررسی ضربه سنگین دشمنان داخلی و مسئولان بدعهد",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 29,
-    "segments_transcribed": 26,
-    "editor_attempts": 25,
+    "segments_captured": 30,
+    "segments_transcribed": 27,
+    "editor_attempts": 26,
     "editor_withheld": 23,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T14:41:23.854491+00:00"
+    "last_audio_at": "2026-11-14T14:41:48.162844+00:00"
   }
 }
