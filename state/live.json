@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:39:06.574948+00:00",
+  "updated_at": "2026-11-14T16:39:32.788998+00:00",
   "items": [
-    {
-      "title": "بررسی استناد کارشناس به تاریخ جنگ‌های صلیبی",
-      "summary": "در این بخش کارشناس درباره چرایی حضور اقلیت‌ها در پناه اسلام سخن گفت و برای تبیین رفتار لشکرکشی‌ها، به نوشته‌های ویل دورانت و گوستاو لوبان درباره شهر مقدس اورشلیم و لشکریان صلیبی استدلال کرد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43611762167-63",
-      "sequence": 63,
-      "updated_at": "2026-11-14T16:25:35.061581+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی ادعای جنایات و قتل‌عام در اورشلیم و غزه",
       "summary": "در این بخش، کارشناس استدلال می‌کند که جریان خون در کوچه‌های اورشلیم و کشتار صغیر و کبیر و زنان و کودکان مسلمان، نمونه‌ای از عدم رحم و قتل‌عام است و مدعی می‌شود که مشابه این وضعیت را اکنون در غزه با آمار ادعایی مشاهده می‌کنیم.",
@@ -67,16 +55,28 @@
       "sequence": 91,
       "updated_at": "2026-11-14T16:36:47.446823+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نقش مسیحیت صلیبی و یهودیت در شکل‌گیری صهیونیست",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که در کنار جریان یهودیت، حضور یک کشیش نشان می‌دهد که مسیحیت صلیبی و یهودیت با یکدیگر دست به یکی کرده‌اند. به گفته کارشناس، صهیونیست زائیده یک اتحاد شوم میان مسیحیت صلیبی و یهودیت صهیونی است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43611762167-98",
+      "sequence": 98,
+      "updated_at": "2026-11-14T16:39:32.788973+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 98,
-    "segments_transcribed": 93,
-    "editor_attempts": 90,
-    "editor_withheld": 73,
-    "topics_published": 22,
+    "segments_captured": 99,
+    "segments_transcribed": 94,
+    "editor_attempts": 91,
+    "editor_withheld": 74,
+    "topics_published": 23,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T16:39:01.415625+00:00"
+    "last_audio_at": "2026-11-14T16:39:26.110365+00:00"
   }
 }
