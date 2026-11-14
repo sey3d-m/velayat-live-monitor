@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T17:03:05.267600+00:00",
+  "updated_at": "2026-11-14T17:03:55.427667+00:00",
   "items": [
     {
       "title": "پرسش درباره انگیزه واقعی حضور نظامی و اقتصادی در منطقه",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 158,
-    "segments_transcribed": 149,
-    "editor_attempts": 138,
-    "editor_withheld": 108,
+    "segments_captured": 160,
+    "segments_transcribed": 151,
+    "editor_attempts": 139,
+    "editor_withheld": 110,
     "topics_published": 35,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T17:03:01.059754+00:00"
+    "last_audio_at": "2026-11-14T17:03:51.403962+00:00"
   }
 }
