@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "43619982838",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T17:14:59.505034+00:00",
-  "updated_at": "2026-11-14T17:32:09.144367+00:00",
-  "items": [],
+  "updated_at": "2026-11-14T17:32:38.798692+00:00",
+  "items": [
+    {
+      "title": "بررسی ثواب دفاع از اسلام در برنامه‌های شبانه",
+      "summary": "در این بخش کارشناس استدلال می‌کند که حضور در صحنه‌های دفاع از اسلام و مشارکت در برنامه‌های شبانه، مصداق عبادت و حتی از برترین عبادات محسوب می‌شود؛ وی در پایان ضمن شکرگزاری به درگاه خداوند، ابراز امیدواری می‌کند که این خدمات مورد قبول حق تعالی قرار گیرد و توفیق خدمت‌گزاری فراهم شده باشد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "43619982838-6",
+      "sequence": 6,
+      "updated_at": "2026-11-14T17:32:38.798664+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 6,
-    "segments_transcribed": 2,
-    "editor_attempts": 2,
-    "editor_withheld": 1,
-    "topics_published": 0,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
-    "last_audio_at": "2026-11-14T17:32:06.425813+00:00"
+    "segments_captured": 7,
+    "segments_transcribed": 3,
+    "editor_attempts": 3,
+    "editor_withheld": 3,
+    "topics_published": 1,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
+    "last_audio_at": "2026-11-14T17:32:31.207356+00:00"
   }
 }
