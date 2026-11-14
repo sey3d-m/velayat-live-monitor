@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:39:50.525704+00:00",
+  "updated_at": "2026-11-14T16:40:40.217704+00:00",
   "items": [
     {
       "title": "بررسی ادعای جنایات و قتل‌عام در اورشلیم و غزه",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 100,
-    "segments_transcribed": 95,
-    "editor_attempts": 92,
-    "editor_withheld": 74,
+    "segments_captured": 102,
+    "segments_transcribed": 97,
+    "editor_attempts": 94,
+    "editor_withheld": 76,
     "topics_published": 23,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T16:39:45.319076+00:00"
+    "last_audio_at": "2026-11-14T16:40:35.395172+00:00"
   }
 }
