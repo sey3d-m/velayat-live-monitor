@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:17:28.553837+00:00",
+  "updated_at": "2026-11-14T16:18:18.497994+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره لزوم اتحاد اجتماعی ادیان الهی در برابر دشمنان انسانیت",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 44,
-    "segments_transcribed": 40,
-    "editor_attempts": 39,
-    "editor_withheld": 33,
+    "segments_captured": 46,
+    "segments_transcribed": 42,
+    "editor_attempts": 41,
+    "editor_withheld": 35,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T16:17:22.336472+00:00"
+    "last_audio_at": "2026-11-14T16:18:12.002592+00:00"
   }
 }
