@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T14:14:54.527353+00:00",
-  "updated_at": "2026-11-14T14:54:55.943934+00:00",
+  "updated_at": "2026-11-14T14:55:07.984910+00:00",
   "items": [
-    {
-      "title": "پرسش درباره حد واجبات و کم بودن علم بشر در گفتار کارشناس",
-      "summary": "در این بخش کارشناس درباره انجام واجبات و ترک حرام سخن می‌گوید و پرسش می‌کند که واجبات انسان چیست. او به آیه‌ای از قرآن استناد می‌کند که بر اساس استدلال مطرح‌شده، علم بشر را اندک می‌شمارد و بیان می‌کند که ما بسیاری از امور را بلد نیستیم.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43603795932-19",
-      "sequence": 19,
-      "updated_at": "2026-11-14T14:37:56.064008+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره نماز جماعت",
       "summary": "در این بخش از برنامه، موضوع «نماز جماعت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +57,29 @@
       "sequence": 59,
       "updated_at": "2026-11-14T14:53:59.889279+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره روزه",
+      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43603795932-62",
+      "sequence": 62,
+      "updated_at": "2026-11-14T14:55:07.984895+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 62,
-    "segments_transcribed": 58,
-    "editor_attempts": 57,
-    "editor_withheld": 52,
-    "topics_published": 9,
+    "segments_captured": 63,
+    "segments_transcribed": 59,
+    "editor_attempts": 58,
+    "editor_withheld": 54,
+    "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T14:54:35.336791+00:00"
+    "last_audio_at": "2026-11-14T14:54:59.929426+00:00"
   }
 }
