@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:49:06.945961+00:00",
+  "updated_at": "2026-11-14T16:49:30.718939+00:00",
   "items": [
     {
       "title": "پرسش درباره ادعای ظلم به زنان و کودکان و پناهندگی تاریخی",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 123,
-    "segments_transcribed": 118,
-    "editor_attempts": 113,
+    "segments_captured": 124,
+    "segments_transcribed": 119,
+    "editor_attempts": 114,
     "editor_withheld": 90,
     "topics_published": 29,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T16:48:58.448507+00:00"
+    "last_audio_at": "2026-11-14T16:49:23.456749+00:00"
   }
 }
