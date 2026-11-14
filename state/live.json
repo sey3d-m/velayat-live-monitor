@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:43:04.928993+00:00",
+  "updated_at": "2026-11-14T16:43:55.320024+00:00",
   "items": [
     {
       "title": "پرسش درباره علل فاصله گرفتن مردم اروپا از کلیسا و رنسانس",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 108,
-    "segments_transcribed": 103,
-    "editor_attempts": 99,
-    "editor_withheld": 79,
+    "segments_captured": 110,
+    "segments_transcribed": 105,
+    "editor_attempts": 101,
+    "editor_withheld": 81,
     "topics_published": 25,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T16:43:00.291703+00:00"
+    "last_audio_at": "2026-11-14T16:43:50.606063+00:00"
   }
 }
