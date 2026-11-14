@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:36:47.446847+00:00",
+  "updated_at": "2026-11-14T16:37:26.096526+00:00",
   "items": [
     {
       "title": "بررسی استناد کارشناس به تاریخ جنگ‌های صلیبی",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 92,
-    "segments_transcribed": 87,
-    "editor_attempts": 84,
-    "editor_withheld": 68,
+    "segments_captured": 94,
+    "segments_transcribed": 89,
+    "editor_attempts": 86,
+    "editor_withheld": 69,
     "topics_published": 22,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T16:36:36.850059+00:00"
+    "last_audio_at": "2026-11-14T16:37:20.487516+00:00"
   }
 }
