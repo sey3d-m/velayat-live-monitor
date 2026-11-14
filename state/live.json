@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T14:14:54.527353+00:00",
-  "updated_at": "2026-11-14T14:37:53.037358+00:00",
+  "updated_at": "2026-11-14T14:37:56.064026+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره ولایت و غدیر",
@@ -58,6 +58,18 @@
       "sequence": 17,
       "updated_at": "2026-11-14T14:37:11.490979+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره حد واجبات و کم بودن علم بشر در گفتار کارشناس",
+      "summary": "در این بخش کارشناس درباره انجام واجبات و ترک حرام سخن می‌گوید و پرسش می‌کند که واجبات انسان چیست. او به آیه‌ای از قرآن استناد می‌کند که بر اساس استدلال مطرح‌شده، علم بشر را اندک می‌شمارد و بیان می‌کند که ما بسیاری از امور را بلد نیستیم.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43603795932-19",
+      "sequence": 19,
+      "updated_at": "2026-11-14T14:37:56.064008+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -65,7 +77,7 @@
     "segments_transcribed": 17,
     "editor_attempts": 16,
     "editor_withheld": 14,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-14T14:37:46.978345+00:00"
