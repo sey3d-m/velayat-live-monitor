@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:27:55.813283+00:00",
+  "updated_at": "2026-11-14T16:28:40.623174+00:00",
   "items": [
     {
       "title": "بررسی نوع تقابل‌های تاریخی مسلمانان با حاکمان مسیحی اروپا",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 70,
-    "segments_transcribed": 66,
-    "editor_attempts": 65,
-    "editor_withheld": 50,
+    "segments_captured": 72,
+    "segments_transcribed": 68,
+    "editor_attempts": 67,
+    "editor_withheld": 52,
     "topics_published": 20,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T16:27:49.887084+00:00"
+    "last_audio_at": "2026-11-14T16:28:33.381316+00:00"
   }
 }
