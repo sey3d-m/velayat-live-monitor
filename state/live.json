@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:10:14.455369+00:00",
+  "updated_at": "2026-11-14T16:10:41.131074+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره معیارهای شناخت حقیقت در فصل گذشته برنامه آفتاب و سایه‌ها",
@@ -59,16 +59,28 @@
       "sequence": 14,
       "updated_at": "2026-11-14T16:06:01.574816+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره لزوم اتحاد اجتماعی ادیان الهی در برابر دشمنان انسانیت",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که اتحاد پیروان ادیان الهی در برابر دشمنان انسانیت نظیر صهیونیسم، به معنای حق بودن تمام عقاید نیست؛ بلکه تشخیص عقیده حق بر عهده عقلانیت است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43611762167-26",
+      "sequence": 26,
+      "updated_at": "2026-11-14T16:10:41.131048+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 26,
-    "segments_transcribed": 22,
-    "editor_attempts": 21,
-    "editor_withheld": 20,
-    "topics_published": 4,
+    "segments_captured": 27,
+    "segments_transcribed": 23,
+    "editor_attempts": 22,
+    "editor_withheld": 21,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T16:10:08.805609+00:00"
+    "last_audio_at": "2026-11-14T16:10:34.035208+00:00"
   }
 }
