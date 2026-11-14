@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "43611762167",
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:03:12.906692+00:00",
-  "items": [],
+  "updated_at": "2026-11-14T16:03:19.993262+00:00",
+  "items": [
+    {
+      "title": "گفت‌وگو درباره معیارهای شناخت حقیقت در فصل گذشته برنامه آفتاب و سایه‌ها",
+      "summary": "در این بخش از برنامه، مجری به مرور مباحث گذشته می‌پردازد و عنوان می‌کند که در فصل پیشین، تلاش شده است تا معیارهای شناخت حقیقت بررسی شود و ردپای ارکان دین اسلام در ادیان مورد توجه قرار گیرد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.95,
+      "editor_mode": "audio_grounded_topic",
+      "id": "43611762167-7",
+      "sequence": 7,
+      "updated_at": "2026-11-14T16:03:19.993235+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
     "segments_captured": 8,
     "segments_transcribed": 4,
     "editor_attempts": 3,
-    "editor_withheld": 2,
-    "topics_published": 0,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
+    "editor_withheld": 3,
+    "topics_published": 1,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
     "last_audio_at": "2026-11-14T16:03:01.682543+00:00"
   }
 }
