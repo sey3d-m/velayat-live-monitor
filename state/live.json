@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T17:14:59.505034+00:00",
-  "updated_at": "2026-11-14T17:32:58.743088+00:00",
+  "updated_at": "2026-11-14T17:33:48.236752+00:00",
   "items": [
     {
       "title": "بررسی ثواب دفاع از اسلام در برنامه‌های شبانه",
@@ -23,13 +23,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 8,
-    "segments_transcribed": 4,
-    "editor_attempts": 4,
-    "editor_withheld": 3,
+    "segments_captured": 10,
+    "segments_transcribed": 6,
+    "editor_attempts": 6,
+    "editor_withheld": 5,
     "topics_published": 1,
     "audio_ai_calls": 1,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-14T17:32:55.849965+00:00"
+    "last_audio_at": "2026-11-14T17:33:45.362679+00:00"
   }
 }
