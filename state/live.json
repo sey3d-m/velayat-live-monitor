@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T17:04:38.710585+00:00",
+  "updated_at": "2026-11-14T17:05:29.826470+00:00",
   "items": [
     {
       "title": "بررسی ادعای لزوم تحقق هفت مقدمه برای ظهور عیسی مسیح",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 162,
-    "segments_transcribed": 153,
-    "editor_attempts": 140,
-    "editor_withheld": 110,
+    "segments_captured": 164,
+    "segments_transcribed": 155,
+    "editor_attempts": 142,
+    "editor_withheld": 111,
     "topics_published": 36,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T17:04:35.142003+00:00"
+    "last_audio_at": "2026-11-14T17:05:25.265985+00:00"
   }
 }
