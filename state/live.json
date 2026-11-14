@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T17:14:59.505034+00:00",
-  "updated_at": "2026-11-14T18:12:12.095580+00:00",
+  "updated_at": "2026-11-14T18:12:34.472528+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره نماز",
-      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43619982838-28",
-      "sequence": 28,
-      "updated_at": "2026-11-14T17:41:19.532913+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره سازگاری عذاب زن حبس‌کننده گربه با عدالت الهی",
       "summary": "در این بخش، کارشناس به پرسش درباره اینکه آیا عذاب شدن یک زن در آتش جهنم به‌خاطر حبس و آزار رساندن به یک گربه با عدالت الهی سازگار است یا خیر، می‌پردازد و ابعاد این مسئله را بررسی می‌کند.",
@@ -68,16 +55,29 @@
       "sequence": 92,
       "updated_at": "2026-11-14T18:06:59.048714+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43619982838-106",
+      "sequence": 106,
+      "updated_at": "2026-11-14T18:12:34.472500+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 106,
-    "segments_transcribed": 94,
-    "editor_attempts": 93,
-    "editor_withheld": 86,
-    "topics_published": 11,
+    "segments_captured": 107,
+    "segments_transcribed": 95,
+    "editor_attempts": 94,
+    "editor_withheld": 88,
+    "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T18:12:09.265946+00:00"
+    "last_audio_at": "2026-11-14T18:12:29.245059+00:00"
   }
 }
