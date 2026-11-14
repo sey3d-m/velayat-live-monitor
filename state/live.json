@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "43611762167",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "43619982838",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-14",
-  "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T17:10:06.718940+00:00",
-  "items": [
-    {
-      "title": "پرسش درباره دیدگاه کارشناس پیرامون جنگ‌های صلیبی و ظهور عیسی مسیح",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که مسیحیان صلیبی معتقد بودند برای آزادی سرزمین مقدس از دست مسلمانان و بازگشت عیسی مسیح از آسمان، باید دست به کشتار، خونریزی و قتل‌عام زد. بر اساس این گفتار، هدف آن‌ها فراهم کردن زمینه ظهور به هر قیمت بوده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43611762167-128",
-      "sequence": 128,
-      "updated_at": "2026-11-14T16:51:31.333666+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره مکان و پیشینه نام جبل صهیون",
-      "summary": "در این بخش کارشناس درباره مکان جبل صهیون پرسش مطرح می‌کند و توضیح می‌دهد که این کوه محل ساخت مکان‌های مقدسی مانند مسجدالاقصی بوده است. به گفته وی، نام این کوه مقدس است اما شیطان آن را مصادره کرده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43611762167-131",
-      "sequence": 131,
-      "updated_at": "2026-11-14T16:52:45.669094+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی کیفیت آفرینش موجودات به گفته کارشناس",
-      "summary": "در این بخش کارشناس استدلال می‌کند که خداوند همه چیز را آفریده است بدون اینکه از پیش ماده‌ای وجود داشته باشد یا نمونه و الگویی برای آفرینش آن‌ها در کار بوده باشد؛ به گونه‌ای که دیدگان از دیدار ذات او ناتوان و خردها از توصیفش عاجز هستند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43611762167-152",
-      "sequence": 152,
-      "updated_at": "2026-11-14T17:01:08.260317+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی عبارت تاریخی درباره وضعیت پیش از بعثت در گفتار کارشناس",
-      "summary": "در این بخش، کارشناس درباره وضعیت انسان‌ها پیش از بعثت و قرار داشتن در پرده‌های جهل و نزدیکی به نیستی مطالبی را مطرح می‌کند. به گفته وی، با اراده الهی و تقدیر حتمی، تغییراتی در این وضعیت ایجاد شد در حالی که مردم در آن زمان دچار اختلاف در دین‌ها و گرایش به آتش و بت‌پرستی بودند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43611762167-160",
-      "sequence": 160,
-      "updated_at": "2026-11-14T17:04:21.580001+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی چگونگی رحلت پیامبر در گفتار کارشناس",
-      "summary": "در این بخش کارشناس استدلال می‌کند که جان پیامبر با اختیار و اشتیاق گرفته شده و ایشان از رنج این سرا آسوده شده‌اند؛ همچنین به حضور فرشتگان نیکوکار پروردگار اشاره می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43611762167-169",
-      "sequence": 169,
-      "updated_at": "2026-11-14T17:07:56.300660+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-14T17:14:59.505034+00:00",
+  "updated_at": "2026-11-14T17:30:00.000295+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 164,
-    "editor_attempts": 149,
-    "editor_withheld": 118,
-    "topics_published": 37,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T17:09:49.069723+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
