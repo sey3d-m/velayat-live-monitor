@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T14:14:54.527353+00:00",
-  "updated_at": "2026-11-14T14:51:32.405973+00:00",
+  "updated_at": "2026-11-14T14:52:19.490639+00:00",
   "items": [
     {
       "title": "پرسش درباره حکم خواندن اشتباه قرآن و ترک آن",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 54,
-    "segments_transcribed": 50,
-    "editor_attempts": 49,
-    "editor_withheld": 45,
+    "segments_captured": 56,
+    "segments_transcribed": 52,
+    "editor_attempts": 51,
+    "editor_withheld": 47,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T14:51:23.041080+00:00"
+    "last_audio_at": "2026-11-14T14:52:13.000238+00:00"
   }
 }
