@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T17:14:59.505034+00:00",
-  "updated_at": "2026-11-14T17:37:43.537517+00:00",
+  "updated_at": "2026-11-14T17:38:07.938319+00:00",
   "items": [
-    {
-      "title": "بررسی ثواب دفاع از اسلام در برنامه‌های شبانه",
-      "summary": "در این بخش کارشناس استدلال می‌کند که حضور در صحنه‌های دفاع از اسلام و مشارکت در برنامه‌های شبانه، مصداق عبادت و حتی از برترین عبادات محسوب می‌شود؛ وی در پایان ضمن شکرگزاری به درگاه خداوند، ابراز امیدواری می‌کند که این خدمات مورد قبول حق تعالی قرار گیرد و توفیق خدمت‌گزاری فراهم شده باشد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "editor_mode": "audio_grounded_topic",
-      "id": "43619982838-6",
-      "sequence": 6,
-      "updated_at": "2026-11-14T17:32:38.798664+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره تربیت و اخلاق",
       "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -71,16 +58,28 @@
       "sequence": 16,
       "updated_at": "2026-11-14T17:36:35.830051+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره حکم خطور افکار گناه‌آلود به ذهن",
+      "summary": "در این بخش درباره این پرسش گفت‌وگو شد که آیا خطور خودبه‌خودی افکار گناه‌آلود به ذهن امری عادی است یا نشانه اشکال در انسان وجود دارد و برای رفع آن چه باید کرد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43619982838-20",
+      "sequence": 20,
+      "updated_at": "2026-11-14T17:38:07.938297+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 20,
-    "segments_transcribed": 16,
-    "editor_attempts": 16,
-    "editor_withheld": 14,
-    "topics_published": 5,
+    "segments_captured": 21,
+    "segments_transcribed": 17,
+    "editor_attempts": 17,
+    "editor_withheld": 15,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T17:37:41.131879+00:00"
+    "last_audio_at": "2026-11-14T17:38:04.581673+00:00"
   }
 }
