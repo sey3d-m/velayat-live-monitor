@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:07:48.569660+00:00",
+  "updated_at": "2026-11-14T16:08:39.420933+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره معیارهای شناخت حقیقت در فصل گذشته برنامه آفتاب و سایه‌ها",
@@ -62,13 +62,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 20,
-    "segments_transcribed": 16,
-    "editor_attempts": 15,
-    "editor_withheld": 14,
+    "segments_captured": 22,
+    "segments_transcribed": 18,
+    "editor_attempts": 17,
+    "editor_withheld": 16,
     "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T16:07:43.532292+00:00"
+    "last_audio_at": "2026-11-14T16:08:34.643036+00:00"
   }
 }
