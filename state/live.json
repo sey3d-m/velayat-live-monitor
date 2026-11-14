@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T17:14:59.505034+00:00",
-  "updated_at": "2026-11-14T18:25:46.950260+00:00",
+  "updated_at": "2026-11-14T18:26:30.297108+00:00",
   "items": [
     {
       "title": "بررسی مقدمات اراده انسان در گفتار کارشناس",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 140,
-    "segments_transcribed": 125,
-    "editor_attempts": 121,
-    "editor_withheld": 113,
+    "segments_captured": 142,
+    "segments_transcribed": 127,
+    "editor_attempts": 123,
+    "editor_withheld": 115,
     "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T18:25:44.704024+00:00"
+    "last_audio_at": "2026-11-14T18:26:27.917699+00:00"
   }
 }
