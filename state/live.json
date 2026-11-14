@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T17:14:59.505034+00:00",
-  "updated_at": "2026-11-14T18:24:08.960181+00:00",
+  "updated_at": "2026-11-14T18:24:57.276295+00:00",
   "items": [
     {
       "title": "پرسش درباره اعتبار توصیه‌های فرد دارای کرامت بدون اطلاع از زندگی اشخاص",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 136,
-    "segments_transcribed": 122,
-    "editor_attempts": 118,
-    "editor_withheld": 111,
+    "segments_captured": 138,
+    "segments_transcribed": 123,
+    "editor_attempts": 119,
+    "editor_withheld": 113,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T18:24:06.483305+00:00"
+    "last_audio_at": "2026-11-14T18:24:55.932371+00:00"
   }
 }
