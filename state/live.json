@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T17:14:59.505034+00:00",
-  "updated_at": "2026-11-14T17:41:43.709152+00:00",
+  "updated_at": "2026-11-14T17:42:33.508439+00:00",
   "items": [
     {
       "title": "بررسی تقسیم اعمال به توسلی و تعبدی به گفته کارشناس",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 30,
-    "segments_transcribed": 26,
-    "editor_attempts": 26,
-    "editor_withheld": 23,
+    "segments_captured": 32,
+    "segments_transcribed": 28,
+    "editor_attempts": 28,
+    "editor_withheld": 25,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T17:41:40.574591+00:00"
+    "last_audio_at": "2026-11-14T17:42:30.560095+00:00"
   }
 }
