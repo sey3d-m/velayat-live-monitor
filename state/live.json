@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T14:14:54.527353+00:00",
-  "updated_at": "2026-11-14T14:41:07.790262+00:00",
+  "updated_at": "2026-11-14T14:41:32.126792+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره ولایت و غدیر",
-      "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43603795932-2",
-      "sequence": 2,
-      "updated_at": "2026-11-14T14:31:16.831584+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی ضربه سنگین دشمنان داخلی و مسئولان بدعهد",
       "summary": "در این بخش کارشناس استدلال می‌کند که گاهی ضربه دشمنان داخلی و بدرفتاری یا بدعهدی برخی مسئولان در یک جایگاه، از دشمنان بیرونی سنگین‌تر است و باید برای حفظ نظام و انقلاب به این موضوع توجه کرد.",
@@ -70,16 +57,29 @@
       "sequence": 19,
       "updated_at": "2026-11-14T14:37:56.064008+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز جماعت",
+      "summary": "در این بخش از برنامه، موضوع «نماز جماعت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43603795932-28",
+      "sequence": 28,
+      "updated_at": "2026-11-14T14:41:32.126778+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 28,
-    "segments_transcribed": 25,
-    "editor_attempts": 24,
-    "editor_withheld": 21,
-    "topics_published": 5,
+    "segments_captured": 29,
+    "segments_transcribed": 26,
+    "editor_attempts": 25,
+    "editor_withheld": 23,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T14:40:58.832114+00:00"
+    "last_audio_at": "2026-11-14T14:41:23.854491+00:00"
   }
 }
