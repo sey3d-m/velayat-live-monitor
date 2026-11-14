@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T17:14:59.505034+00:00",
-  "updated_at": "2026-11-14T18:14:35.011828+00:00",
+  "updated_at": "2026-11-14T18:15:22.330995+00:00",
   "items": [
     {
       "title": "پرسش درباره سازگاری عذاب زن حبس‌کننده گربه با عدالت الهی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 112,
-    "segments_transcribed": 100,
-    "editor_attempts": 99,
-    "editor_withheld": 92,
+    "segments_captured": 114,
+    "segments_transcribed": 101,
+    "editor_attempts": 100,
+    "editor_withheld": 94,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T18:14:31.869535+00:00"
+    "last_audio_at": "2026-11-14T18:15:20.969780+00:00"
   }
 }
