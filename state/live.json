@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T14:14:54.527353+00:00",
-  "updated_at": "2026-11-14T15:36:14.839433+00:00",
+  "updated_at": "2026-11-14T15:37:12.658675+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره امام حسین و عاشورا",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 166,
-    "segments_transcribed": 145,
-    "editor_attempts": 131,
-    "editor_withheld": 122,
+    "segments_captured": 168,
+    "segments_transcribed": 146,
+    "editor_attempts": 132,
+    "editor_withheld": 123,
     "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T15:36:12.125924+00:00"
+    "last_audio_at": "2026-11-14T15:36:55.837747+00:00"
   }
 }
