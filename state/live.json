@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:48:47.990231+00:00",
+  "updated_at": "2026-11-14T16:49:06.945961+00:00",
   "items": [
-    {
-      "title": "پرسش درباره سابقه ظلم به یهودیان توسط حاکمان و مسلمانان",
-      "summary": "در این بخش کارشناس درباره این نکته پرسش می‌کند که چه کسانی در حق یهودیان مرتکب ظلم و جفا شده‌اند؛ آیا حاکمان مسیحی، علما، فراماسون‌ها، ایتالیا و اروپای قرون وسطی به یهودیان جفا کرده‌اند یا مسلمانان، و کدام طایفه در این زمینه مقصر بوده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43611762167-101",
-      "sequence": 101,
-      "updated_at": "2026-11-14T16:40:42.754758+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره ادعای ظلم به زنان و کودکان و پناهندگی تاریخی",
       "summary": "در این بخش کارشناس با اشاره به وقایع تاریخی، پرسش می‌کند که آیا کشتار زنان و کودکان مظلوم مسلمان با عدالت سازگار است، در حالی که به گفته وی مسلمانان در طول تاریخ پناه‌گاه بوده‌اند.",
@@ -67,16 +55,28 @@
       "sequence": 121,
       "updated_at": "2026-11-14T16:48:47.990204+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ادعای هدف پشت ظاهر مذهبی حکومت جهانی عیسی مسیح",
+      "summary": "در این بخش کارشناس استدلال می‌کند که ظاهر مذهبی و مقدس آماده‌سازی جهان برای حکومت یک‌پارچه عیسی مسیح، در حقیقت تلاشی برای سلطه واحد بر کل جهان است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43611762167-122",
+      "sequence": 122,
+      "updated_at": "2026-11-14T16:49:06.945937+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 122,
-    "segments_transcribed": 117,
-    "editor_attempts": 112,
+    "segments_captured": 123,
+    "segments_transcribed": 118,
+    "editor_attempts": 113,
     "editor_withheld": 90,
-    "topics_published": 28,
+    "topics_published": 29,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T16:48:39.453310+00:00"
+    "last_audio_at": "2026-11-14T16:48:58.448507+00:00"
   }
 }
