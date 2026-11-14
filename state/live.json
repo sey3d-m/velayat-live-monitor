@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T14:14:54.527353+00:00",
-  "updated_at": "2026-11-14T15:00:22.318147+00:00",
+  "updated_at": "2026-11-14T15:01:04.794888+00:00",
   "items": [
     {
       "title": "پرسش درباره حکم ترک نماز جماعت و انس با قرآن از منظر کارشناс",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 76,
-    "segments_transcribed": 72,
-    "editor_attempts": 70,
-    "editor_withheld": 65,
+    "segments_captured": 78,
+    "segments_transcribed": 74,
+    "editor_attempts": 72,
+    "editor_withheld": 66,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T15:00:14.918224+00:00"
+    "last_audio_at": "2026-11-14T15:00:58.799052+00:00"
   }
 }
