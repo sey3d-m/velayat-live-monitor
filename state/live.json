@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T14:14:54.527353+00:00",
-  "updated_at": "2026-11-14T14:41:57.509543+00:00",
+  "updated_at": "2026-11-14T14:42:23.749700+00:00",
   "items": [
-    {
-      "title": "بررسی ضربه سنگین دشمنان داخلی و مسئولان بدعهد",
-      "summary": "در این بخش کارشناس استدلال می‌کند که گاهی ضربه دشمنان داخلی و بدرفتاری یا بدعهدی برخی مسئولان در یک جایگاه، از دشمنان بیرونی سنگین‌تر است و باید برای حفظ نظام و انقلاب به این موضوع توجه کرد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "editor_mode": "audio_grounded_topic",
-      "id": "43603795932-8",
-      "sequence": 8,
-      "updated_at": "2026-11-14T14:33:39.935579+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
       "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +57,28 @@
       "sequence": 28,
       "updated_at": "2026-11-14T14:41:32.126778+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره حکم ترک نماز جماعت و انس با قرآن از منظر کارشناс",
+      "summary": "در این بخش، کارشناс درباره حکم ترک اعمالی مانند قرآن و نماز جماعت و بی‌رغبتی به آن‌ها به گفت‌وگو می‌پردازد و این پرسش را مطرح می‌کند که آیا نداشتن میل و علاقه و ترک این عبادات در صورت حضور در منزل گناه محسوب می‌شود یا خیر.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43603795932-30",
+      "sequence": 30,
+      "updated_at": "2026-11-14T14:42:23.749686+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 30,
-    "segments_transcribed": 27,
-    "editor_attempts": 26,
-    "editor_withheld": 23,
-    "topics_published": 6,
+    "segments_captured": 31,
+    "segments_transcribed": 28,
+    "editor_attempts": 27,
+    "editor_withheld": 24,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T14:41:48.162844+00:00"
+    "last_audio_at": "2026-11-14T14:42:12.679463+00:00"
   }
 }
