@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:33:30.305280+00:00",
+  "updated_at": "2026-11-14T16:34:16.498367+00:00",
   "items": [
     {
       "title": "بررسی ادعای مورخان مسیحی درباره فتح اورشلیم از نگاه کارشناس",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 84,
-    "segments_transcribed": 79,
-    "editor_attempts": 76,
-    "editor_withheld": 61,
+    "segments_captured": 86,
+    "segments_transcribed": 81,
+    "editor_attempts": 78,
+    "editor_withheld": 62,
     "topics_published": 21,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T16:33:22.328870+00:00"
+    "last_audio_at": "2026-11-14T16:34:12.084280+00:00"
   }
 }
