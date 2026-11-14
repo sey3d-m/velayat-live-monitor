@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:21:28.504906+00:00",
+  "updated_at": "2026-11-14T16:21:30.103789+00:00",
   "items": [
-    {
-      "title": "بررسی ادعای تلاش کلیسا برای فلسفه‌سازی تأخیر بازگشت مسیح",
-      "summary": "در این بخش کارشناس استدلال می‌کند که ارباب کلیسا برای توجیه تأخیر در بازگشت مسیح، به فلسفه‌سازی پرداختند و استدلال مردم‌پسندی را مطرح کردند؛ به گونه‌ای که علت این تأخیر را به تعویق افتادن آن نسبت دادند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43611762167-37",
-      "sequence": 37,
-      "updated_at": "2026-11-14T16:15:20.545818+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره تقسیم امپراتوری روم و امپراتور بیزانس",
       "summary": "در این بخش کارشناس استدلال می‌کند که امپراتوری روم به روم شرقی با پایتخت قسطنطنیه و روم غربی با پایتخت روم تقسیم شد. همچنین به گفته کارشناس، روم شرقی به نام امپراتوری بیزانس شناخته می‌شده و آلکسیوس سوم در این زمینه مطرح شده است.",
@@ -67,14 +55,27 @@
       "sequence": 52,
       "updated_at": "2026-11-14T16:21:07.264846+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43611762167-53",
+      "sequence": 53,
+      "updated_at": "2026-11-14T16:21:30.103771+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 54,
     "segments_transcribed": 50,
     "editor_attempts": 49,
-    "editor_withheld": 39,
-    "topics_published": 13,
+    "editor_withheld": 40,
+    "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-14T16:21:21.725836+00:00"
