@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T17:14:59.505034+00:00",
-  "updated_at": "2026-11-14T17:40:59.526945+00:00",
+  "updated_at": "2026-11-14T17:41:19.532938+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره تربیت و اخلاق",
-      "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43619982838-9",
-      "sequence": 9,
-      "updated_at": "2026-11-14T17:33:49.332890+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی تقسیم اعمال به توسلی و تعبدی به گفته کارشناس",
       "summary": "در این بخش کارشناس اعمال غیرعبادی را به دو بخش توسلیات و تعبدیات تقسیم می‌کند و استدلال می‌کند که در تعبدیات، شرط صحت و بالا رفتن عمل، مواردی همچون کلم الطیب و عمل صالح است.",
@@ -70,16 +57,29 @@
       "sequence": 20,
       "updated_at": "2026-11-14T17:38:07.938297+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز",
+      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43619982838-28",
+      "sequence": 28,
+      "updated_at": "2026-11-14T17:41:19.532913+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 28,
-    "segments_transcribed": 24,
-    "editor_attempts": 24,
-    "editor_withheld": 21,
-    "topics_published": 6,
+    "segments_captured": 29,
+    "segments_transcribed": 25,
+    "editor_attempts": 25,
+    "editor_withheld": 23,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T17:40:57.031811+00:00"
+    "last_audio_at": "2026-11-14T17:41:15.569576+00:00"
   }
 }
