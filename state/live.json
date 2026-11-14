@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T17:14:59.505034+00:00",
-  "updated_at": "2026-11-14T17:36:15.148055+00:00",
+  "updated_at": "2026-11-14T17:36:35.830079+00:00",
   "items": [
     {
       "title": "بررسی ثواب دفاع از اسلام در برنامه‌های شبانه",
@@ -59,16 +59,28 @@
       "sequence": 15,
       "updated_at": "2026-11-14T17:36:15.148025+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره معنای نعمت ظاهری و باطنی در سوره لقمان",
+      "summary": "در این بخش، کارشناس به پرسش بیننده‌ای درباره معنای عبارت «أَسْبَغَ عَلَیْکُمْ نِعَمَهُ ظَاهِرَةً وَبَاطِنَةً» در سوره لقمان پاسخ می‌دهد و پرسشگر جویای مصداق و تفسیر این نعمت‌های ظاهری و باطنی ذکرشده در آیه می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43619982838-16",
+      "sequence": 16,
+      "updated_at": "2026-11-14T17:36:35.830051+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 16,
-    "segments_transcribed": 12,
-    "editor_attempts": 12,
+    "segments_captured": 17,
+    "segments_transcribed": 13,
+    "editor_attempts": 13,
     "editor_withheld": 12,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T17:36:07.879402+00:00"
+    "last_audio_at": "2026-11-14T17:36:32.128177+00:00"
   }
 }
