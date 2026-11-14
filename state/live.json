@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:53:29.496489+00:00",
+  "updated_at": "2026-11-14T16:54:18.534766+00:00",
   "items": [
     {
       "title": "بررسی اهداف پشت پرده مسیحیت صهیونیستی و سلطه جهانی",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 134,
-    "segments_transcribed": 129,
-    "editor_attempts": 124,
-    "editor_withheld": 95,
+    "segments_captured": 136,
+    "segments_transcribed": 131,
+    "editor_attempts": 126,
+    "editor_withheld": 97,
     "topics_published": 34,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T16:53:23.449572+00:00"
+    "last_audio_at": "2026-11-14T16:54:12.647735+00:00"
   }
 }
