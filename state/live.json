@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T14:14:54.527353+00:00",
-  "updated_at": "2026-11-14T14:33:09.375743+00:00",
+  "updated_at": "2026-11-14T14:33:39.935597+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره ولایت و غدیر",
@@ -20,16 +20,29 @@
       "sequence": 2,
       "updated_at": "2026-11-14T14:31:16.831584+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ضربه سنگین دشمنان داخلی و مسئولان بدعهد",
+      "summary": "در این بخش کارشناس استدلال می‌کند که گاهی ضربه دشمنان داخلی و بدرفتاری یا بدعهدی برخی مسئولان در یک جایگاه، از دشمنان بیرونی سنگین‌تر است و باید برای حفظ نظام و انقلاب به این موضوع توجه کرد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "43603795932-8",
+      "sequence": 8,
+      "updated_at": "2026-11-14T14:33:39.935579+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 8,
-    "segments_transcribed": 5,
-    "editor_attempts": 5,
-    "editor_withheld": 4,
-    "topics_published": 1,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
-    "last_audio_at": "2026-11-14T14:33:03.559241+00:00"
+    "segments_captured": 9,
+    "segments_transcribed": 6,
+    "editor_attempts": 6,
+    "editor_withheld": 6,
+    "topics_published": 2,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
+    "last_audio_at": "2026-11-14T14:33:28.406723+00:00"
   }
 }
