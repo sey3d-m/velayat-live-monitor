@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T17:14:59.505034+00:00",
-  "updated_at": "2026-11-14T17:36:11.034889+00:00",
+  "updated_at": "2026-11-14T17:36:15.148055+00:00",
   "items": [
     {
       "title": "بررسی ثواب دفاع از اسلام در برنامه‌های شبانه",
@@ -46,16 +46,29 @@
       "sequence": 12,
       "updated_at": "2026-11-14T17:35:01.271908+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی روایت اخلاص چهل‌روزه و جاری شدن حکمت",
+      "summary": "در این بخش، کارشناس درباره شرط اخلاص چهل‌روزه برای انسان سخن می‌گوید. به گفته وی، بر اساس حدیثی از پیامبر، اگر کسی خود را مدت چهل روز برای خدا خالص کند، چشم‌های حکمت به‌تدریج از قلبش به زبانش جاری خواهد شد و این حالت در او پدید می‌آید.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "43619982838-15",
+      "sequence": 15,
+      "updated_at": "2026-11-14T17:36:15.148025+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 16,
     "segments_transcribed": 12,
     "editor_attempts": 12,
-    "editor_withheld": 11,
-    "topics_published": 3,
-    "audio_ai_calls": 2,
-    "audio_ai_success": 2,
+    "editor_withheld": 12,
+    "topics_published": 4,
+    "audio_ai_calls": 3,
+    "audio_ai_success": 3,
     "last_audio_at": "2026-11-14T17:36:07.879402+00:00"
   }
 }
