@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T17:14:59.505034+00:00",
-  "updated_at": "2026-11-14T18:29:50.990786+00:00",
+  "updated_at": "2026-11-14T18:30:30.893412+00:00",
   "items": [
     {
       "title": "بررسی ارزش کیفیت بر کمیت در مجالس اهل‌بیت",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 150,
-    "segments_transcribed": 132,
-    "editor_attempts": 127,
+    "segments_captured": 152,
+    "segments_transcribed": 133,
+    "editor_attempts": 128,
     "editor_withheld": 119,
     "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T18:29:46.411556+00:00"
+    "last_audio_at": "2026-11-14T18:30:29.405715+00:00"
   }
 }
