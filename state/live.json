@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T14:14:54.527353+00:00",
-  "updated_at": "2026-11-14T15:09:55.980691+00:00",
+  "updated_at": "2026-11-14T15:10:22.030416+00:00",
   "items": [
-    {
-      "title": "پرسش درباره حکم ترک نماز جماعت و انس با قرآن از منظر کارشناс",
-      "summary": "در این بخش، کارشناс درباره حکم ترک اعمالی مانند قرآن و نماز جماعت و بی‌رغبتی به آن‌ها به گفت‌وگو می‌پردازد و این پرسش را مطرح می‌کند که آیا نداشتن میل و علاقه و ترک این عبادات در صورت حضور در منزل گناه محسوب می‌شود یا خیر.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43603795932-30",
-      "sequence": 30,
-      "updated_at": "2026-11-14T14:42:23.749686+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره نماز",
       "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +57,29 @@
       "sequence": 75,
       "updated_at": "2026-11-14T15:00:22.318136+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره امام حسین و عاشورا",
+      "summary": "در این بخش از برنامه، موضوع «امام حسین و عاشورا» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43603795932-100",
+      "sequence": 100,
+      "updated_at": "2026-11-14T15:10:22.030397+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 100,
-    "segments_transcribed": 96,
-    "editor_attempts": 91,
-    "editor_withheld": 85,
-    "topics_published": 11,
+    "segments_captured": 101,
+    "segments_transcribed": 97,
+    "editor_attempts": 92,
+    "editor_withheld": 87,
+    "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T15:09:49.715717+00:00"
+    "last_audio_at": "2026-11-14T15:10:14.094608+00:00"
   }
 }
