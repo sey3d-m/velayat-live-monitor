@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:20:32.836153+00:00",
+  "updated_at": "2026-11-14T16:20:44.688302+00:00",
   "items": [
     {
       "title": "پرسش درباره انتظار مسیحیان کاتولیک برای بازگشت عیسی مسیح",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 51,
-    "segments_transcribed": 47,
-    "editor_attempts": 46,
+    "segments_captured": 52,
+    "segments_transcribed": 48,
+    "editor_attempts": 47,
     "editor_withheld": 39,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T16:20:11.459782+00:00"
+    "last_audio_at": "2026-11-14T16:20:36.350992+00:00"
   }
 }
