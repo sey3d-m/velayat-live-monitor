@@ -1,83 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "43603795932",
-  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "session": "43611762167",
+  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
-  "started_at": "2026-11-14T14:14:54.527353+00:00",
-  "updated_at": "2026-11-14T15:40:06.499677+00:00",
-  "items": [
-    {
-      "title": "گفت‌وگو درباره امام حسین و عاشورا",
-      "summary": "در این بخش از برنامه، موضوع «امام حسین و عاشورا» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43603795932-100",
-      "sequence": 100,
-      "updated_at": "2026-11-14T15:10:22.030397+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره تعلق نگرفتن زکات به دام‌های تغذیه‌شده با علوفه دستی",
-      "summary": "در این بخش، کارشناس درباره تعلق نگرفتن زکات به دام‌ها بر اساس فتوای مشهور فقها گفت‌وگو می‌کند. او استدلال می‌کند که چون شرط تعلق زکات، چرای دام در تمام سال در مراتع است و امروزه مراتع دولتی اجاره داده می‌شوند و دام‌ها علوفه دستی دریافت می‌کنند، شرایط زکات محقق نمی‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43603795932-128",
-      "sequence": 128,
-      "updated_at": "2026-11-14T15:21:34.044888+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی شرایط نصاب زکات گندم و جو و اموال",
-      "summary": "در این بخش کارشناس درباره شرایط نصاب زکات در اموالی مانند گندم و جو و تعداد گوسفندان توضیح می‌دهد و بیان می‌کند که این اقلام دارای شرایط و نصاب خاص خود هستند و در این زمینه احکامی وجود دارد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43603795932-129",
-      "sequence": 129,
-      "updated_at": "2026-11-14T15:21:54.649900+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره پرداخت زکات به همسر به عنوان واجب‌النفقه‌",
-      "summary": "در این بخش کارشناس درباره پرداخت زکات به همسر استدلال می‌کند که از آنجا که همسر واجب‌النفقه است، زکات به او تعلق نمی‌گیرد؛ مگر در مواردی که نیازی خارج از محدوده نفقه وجود داشته باشد. در پایان، گوینده برای توضیح بیشتر قصد طرح مثالی درباره گندم‌کار را دارد که سخن قطع می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43603795932-130",
-      "sequence": 130,
-      "updated_at": "2026-11-14T15:22:19.996846+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره صحت نماز و روزه استجاری و نحوه نیت آن",
-      "summary": "در این بخش درباره احکام نماز و روزه استجاری و شخصی که برای این کار اجیر شده است، پرسش و گفتگو شد. به گفته کارشناس، اگر فردی برای خواندن نماز به عنوان اجیر پول دریافت کند، هنگام انجام عمل باید نیت را متوجه همان میتی کند که برایش اجیر شده است و همین مقدار برای صحت کار کافی دانسته شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43603795932-133",
-      "sequence": 133,
-      "updated_at": "2026-11-14T15:23:33.262739+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-14T15:47:18.669897+00:00",
+  "updated_at": "2026-11-14T16:00:00.000332+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 150,
-    "editor_attempts": 134,
-    "editor_withheld": 125,
-    "topics_published": 16,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T15:39:49.555577+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
