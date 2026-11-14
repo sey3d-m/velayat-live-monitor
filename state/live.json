@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T17:14:59.505034+00:00",
-  "updated_at": "2026-11-14T17:53:45.549968+00:00",
+  "updated_at": "2026-11-14T17:54:35.923927+00:00",
   "items": [
     {
       "title": "بررسی روایت اخلاص چهل‌روزه و جاری شدن حکمت",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 60,
-    "segments_transcribed": 50,
-    "editor_attempts": 49,
+    "segments_captured": 62,
+    "segments_transcribed": 51,
+    "editor_attempts": 50,
     "editor_withheld": 46,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T17:53:44.240161+00:00"
+    "last_audio_at": "2026-11-14T17:54:32.716553+00:00"
   }
 }
