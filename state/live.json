@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T14:14:54.527353+00:00",
-  "updated_at": "2026-11-14T14:37:10.297359+00:00",
+  "updated_at": "2026-11-14T14:37:11.490994+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره ولایت و غدیر",
@@ -46,6 +46,18 @@
       "sequence": 16,
       "updated_at": "2026-11-14T14:36:50.216152+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره حکم خواندن اشتباه قرآن و ترک آن",
+      "summary": "در این بخش، پرسش‌کننده‌ای درباره حکم شرعی شخصی که قرآن را سهواً یا از روی ترس به صورت اشتباه می‌خواند یا آن را ترک می‌کند، سوال مطرح می‌کند و خواستار توضیح بیشتر درباره حکم این موارد می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43603795932-17",
+      "sequence": 17,
+      "updated_at": "2026-11-14T14:37:11.490979+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -53,7 +65,7 @@
     "segments_transcribed": 15,
     "editor_attempts": 14,
     "editor_withheld": 13,
-    "topics_published": 3,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-14T14:37:04.387019+00:00"
