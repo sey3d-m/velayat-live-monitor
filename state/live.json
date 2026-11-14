@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T15:47:18.669897+00:00",
-  "updated_at": "2026-11-14T16:25:07.759756+00:00",
+  "updated_at": "2026-11-14T16:25:32.600382+00:00",
   "items": [
     {
       "title": "بررسی استناد به قرآن درباره احترام به اماکن عبادت ادیان",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 63,
-    "segments_transcribed": 59,
-    "editor_attempts": 58,
+    "segments_captured": 64,
+    "segments_transcribed": 60,
+    "editor_attempts": 59,
     "editor_withheld": 47,
     "topics_published": 17,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T16:25:00.323083+00:00"
+    "last_audio_at": "2026-11-14T16:25:25.275198+00:00"
   }
 }
