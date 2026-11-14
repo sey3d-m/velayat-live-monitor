@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-14",
   "started_at": "2026-11-14T17:14:59.505034+00:00",
-  "updated_at": "2026-11-14T18:06:33.335965+00:00",
+  "updated_at": "2026-11-14T18:06:59.048737+00:00",
   "items": [
-    {
-      "title": "پرسش درباره حکم خطور افکار گناه‌آلود به ذهن",
-      "summary": "در این بخش درباره این پرسش گفت‌وگو شد که آیا خطور خودبه‌خودی افکار گناه‌آلود به ذهن امری عادی است یا نشانه اشکال در انسان وجود دارد و برای رفع آن چه باید کرد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43619982838-20",
-      "sequence": 20,
-      "updated_at": "2026-11-14T17:38:07.938297+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره نماز",
       "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -68,16 +56,28 @@
       "sequence": 84,
       "updated_at": "2026-11-14T18:03:46.892553+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ارزش کیفیت بر کمیت در مجالس اهل‌بیت",
+      "summary": "در این بخش کارشناس استدلال می‌کند که کیفیت مجالس اهل‌بیت بر کمیت آن برتری دارد؛ به گفته وی، برگزاری یک مجلس با حضور تعداد کمی از افراد با اخلاص، ارزش بیشتری از مجالس پرجمعیت بدون اخلاص دارد و خداوند نیز کیفیت را خریدار است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43619982838-92",
+      "sequence": 92,
+      "updated_at": "2026-11-14T18:06:59.048714+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 92,
-    "segments_transcribed": 81,
-    "editor_attempts": 80,
-    "editor_withheld": 74,
-    "topics_published": 10,
+    "segments_captured": 93,
+    "segments_transcribed": 82,
+    "editor_attempts": 81,
+    "editor_withheld": 75,
+    "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-14T18:06:30.239300+00:00"
+    "last_audio_at": "2026-11-14T18:06:54.372853+00:00"
   }
 }
