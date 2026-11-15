@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "43731524652",
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T15:45:15.703150+00:00",
-  "updated_at": "2026-11-15T16:02:17.562615+00:00",
-  "items": [],
+  "updated_at": "2026-11-15T16:02:48.700671+00:00",
+  "items": [
+    {
+      "title": "گفت‌وگو درباره نهج‌البلاغه در برنامه بیان امیر",
+      "summary": "در این بخش از برنامه بیان امیر، کارشناس به ذکر فضائل محبان امیرالمومنین علی بن ابیطالب (ع) پرداخته و اعلام کرد که در برنامه امشب، درباره نهج‌البلاغه سخن گفته خواهد شد. بر اساس رونوشت، به گفته کارشناس، مخاطبان در این برنامه از نهج‌البلاغه می‌گویند و می‌شنوند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "editor_mode": "audio_grounded_topic",
+      "id": "43731524652-6",
+      "sequence": 6,
+      "updated_at": "2026-11-15T16:02:48.700647+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 6,
-    "segments_transcribed": 5,
-    "editor_attempts": 4,
-    "editor_withheld": 3,
-    "topics_published": 0,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
-    "last_audio_at": "2026-11-15T16:02:14.720878+00:00"
+    "segments_captured": 7,
+    "segments_transcribed": 6,
+    "editor_attempts": 5,
+    "editor_withheld": 5,
+    "topics_published": 1,
+    "audio_ai_calls": 3,
+    "audio_ai_success": 3,
+    "last_audio_at": "2026-11-15T16:02:39.648541+00:00"
   }
 }
