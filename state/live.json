@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T15:45:15.703150+00:00",
-  "updated_at": "2026-11-15T16:10:20.836743+00:00",
+  "updated_at": "2026-11-15T16:10:46.730247+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره نهج‌البلاغه در برنامه بیان امیر",
@@ -56,16 +56,28 @@
       "sequence": 19,
       "updated_at": "2026-11-15T16:07:58.918005+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره نقش الفت در طاعت الهی بر اساس همسرداری",
+      "summary": "در این بخش کارشناس استدلال می‌کند که الفت همسران باید بر محور طاعت الهی باشد و بر اساس این ادعا مطرح شد که در رابطه با شهروندان دیگر نیز الفت شهری باید بر همین اساس شکل بگیرد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43731524652-26",
+      "sequence": 26,
+      "updated_at": "2026-11-15T16:10:46.730229+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 26,
-    "segments_transcribed": 25,
-    "editor_attempts": 23,
-    "editor_withheld": 19,
-    "topics_published": 4,
+    "segments_captured": 27,
+    "segments_transcribed": 26,
+    "editor_attempts": 24,
+    "editor_withheld": 20,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T16:10:17.100766+00:00"
+    "last_audio_at": "2026-11-15T16:10:41.987818+00:00"
   }
 }
