@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T15:45:15.703150+00:00",
-  "updated_at": "2026-11-15T16:57:24.827777+00:00",
+  "updated_at": "2026-11-15T16:58:13.942482+00:00",
   "items": [
     {
       "title": "پرسش درباره حکم سفر به سرزمین کفر و تبعات قیامت آن",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 144,
-    "segments_transcribed": 130,
-    "editor_attempts": 122,
-    "editor_withheld": 113,
+    "segments_captured": 146,
+    "segments_transcribed": 132,
+    "editor_attempts": 123,
+    "editor_withheld": 114,
     "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T16:57:22.294704+00:00"
+    "last_audio_at": "2026-11-15T16:58:11.218687+00:00"
   }
 }
