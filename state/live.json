@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T15:45:15.703150+00:00",
-  "updated_at": "2026-11-15T16:47:52.913683+00:00",
+  "updated_at": "2026-11-15T16:48:36.285975+00:00",
   "items": [
     {
       "title": "پرسش درباره شکرگزاری برای آشنایی با معارف نهج‌البلاغه",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 120,
-    "segments_transcribed": 110,
-    "editor_attempts": 105,
-    "editor_withheld": 98,
+    "segments_captured": 122,
+    "segments_transcribed": 112,
+    "editor_attempts": 107,
+    "editor_withheld": 99,
     "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T16:47:49.993514+00:00"
+    "last_audio_at": "2026-11-15T16:48:32.783210+00:00"
   }
 }
