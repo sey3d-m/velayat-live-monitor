@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T18:38:39.593831+00:00",
+  "updated_at": "2026-11-15T18:39:45.297987+00:00",
   "items": [
     {
       "title": "بررسی ویژگی اقلیمی و نحوه تابش آفتاب در مکان اصحاب کهف",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 172,
-    "segments_transcribed": 153,
-    "editor_attempts": 125,
-    "editor_withheld": 105,
+    "segments_captured": 174,
+    "segments_transcribed": 154,
+    "editor_attempts": 126,
+    "editor_withheld": 107,
     "topics_published": 25,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T18:38:34.819327+00:00"
+    "last_audio_at": "2026-11-15T18:39:24.327027+00:00"
   }
 }
