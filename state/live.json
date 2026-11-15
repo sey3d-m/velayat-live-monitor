@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T18:10:39.871040+00:00",
+  "updated_at": "2026-11-15T18:11:24.582725+00:00",
   "items": [
     {
       "title": "بررسی قرائت «والارحام» و اختلاف قرائت‌ها در بحث کارشناسی",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 102,
-    "segments_transcribed": 94,
-    "editor_attempts": 73,
-    "editor_withheld": 64,
+    "segments_captured": 104,
+    "segments_transcribed": 96,
+    "editor_attempts": 75,
+    "editor_withheld": 65,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T18:10:30.944867+00:00"
+    "last_audio_at": "2026-11-15T18:11:19.992287+00:00"
   }
 }
