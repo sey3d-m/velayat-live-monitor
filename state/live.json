@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T15:45:15.703150+00:00",
-  "updated_at": "2026-11-15T16:30:16.412276+00:00",
+  "updated_at": "2026-11-15T16:31:05.962501+00:00",
   "items": [
     {
       "title": "بررسی محوریت طاعت الهی در انس با مردم",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 76,
-    "segments_transcribed": 75,
-    "editor_attempts": 72,
-    "editor_withheld": 67,
+    "segments_captured": 78,
+    "segments_transcribed": 77,
+    "editor_attempts": 74,
+    "editor_withheld": 69,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T16:30:12.452768+00:00"
+    "last_audio_at": "2026-11-15T16:31:02.156526+00:00"
   }
 }
