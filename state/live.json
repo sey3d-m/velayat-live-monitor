@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T17:45:49.975284+00:00",
+  "updated_at": "2026-11-15T17:46:37.859091+00:00",
   "items": [
     {
       "title": "پرسش درباره ارائه ابیات ابتدایی برنامه در سوگ حضرت فاطمه زهرا (س)",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 40,
-    "segments_transcribed": 33,
-    "editor_attempts": 27,
-    "editor_withheld": 24,
+    "segments_captured": 42,
+    "segments_transcribed": 35,
+    "editor_attempts": 28,
+    "editor_withheld": 26,
     "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T17:45:45.284817+00:00"
+    "last_audio_at": "2026-11-15T17:46:34.294731+00:00"
   }
 }
