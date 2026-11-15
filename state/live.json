@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T17:44:12.098008+00:00",
+  "updated_at": "2026-11-15T17:44:38.251445+00:00",
   "items": [
     {
       "title": "پرسش درباره ارائه ابیات ابتدایی برنامه در سوگ حضرت فاطمه زهرا (س)",
@@ -58,16 +58,28 @@
       "sequence": 20,
       "updated_at": "2026-11-15T17:38:17.749018+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی آفرینش انسان از نفس واحده و دعوت به تقوا",
+      "summary": "در این بخش کارشناس استدلال می‌کند که مفهوم نفس واحده در آفرینش به معنای آفریده شدن همه انسان‌ها از نسل آدم است. بر همین اساس، در گفت‌وگو مطرح شد که این موضوع تأکید بر داشتن تقوای الهی و پرهیز از نافرمانی پروردگار دارد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "id": "43739947821-36",
+      "sequence": 36,
+      "updated_at": "2026-11-15T17:44:38.251424+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 36,
-    "segments_transcribed": 29,
-    "editor_attempts": 23,
-    "editor_withheld": 21,
-    "topics_published": 4,
+    "segments_captured": 37,
+    "segments_transcribed": 30,
+    "editor_attempts": 24,
+    "editor_withheld": 22,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T17:44:07.617988+00:00"
+    "last_audio_at": "2026-11-15T17:44:31.332363+00:00"
   }
 }
