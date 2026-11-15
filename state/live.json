@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T14:15:21.309795+00:00",
-  "updated_at": "2026-11-15T15:17:00.475087+00:00",
+  "updated_at": "2026-11-15T15:17:24.572090+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره روزه",
-      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "audio_grounded_topic",
-      "editor_confidence": 0.0,
-      "id": "43723237763-8",
-      "sequence": 8,
-      "updated_at": "2026-11-15T14:33:40.802217+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی ابعاد سه‌گانه جنگ اقتصادی، نظامی و رسانه‌ای",
       "summary": "در این بخش کارشناس استدلال می‌کند که جنگ در سه ضلع نظامی، اقتصادی و رسانه‌ای خلاصه می‌شود که این ابعاد یکدیگر را کامل می‌کنند. همچنین مطرح شد که در حوزه رفاه، ممکن است میان مفهوم رفاه و احساس رفاه تفاوت وجود داشته باشد.",
@@ -69,16 +56,28 @@
       "sequence": 117,
       "updated_at": "2026-11-15T15:17:00.475060+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نامه حاج قاسم به دخترش درباره شرایط سخت",
+      "summary": "در این بخش، کارشناس درباره شرایط سخت زندگی و زمانه سخن می‌گوید و برای تبیین آن، به نامه منتسب به حاج قاسم به دخترش فاطمه استناد می‌کند که در آن نوشته شده شب‌ها از شدت دغدغه و برای جلوگیری از غفلت، نمک در چشم می‌ریخته تا خوابش نبرد و بیدار بماند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.8,
+      "id": "43723237763-118",
+      "sequence": 118,
+      "updated_at": "2026-11-15T15:17:24.572064+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 118,
-    "segments_transcribed": 108,
-    "editor_attempts": 104,
+    "segments_captured": 119,
+    "segments_transcribed": 109,
+    "editor_attempts": 105,
     "editor_withheld": 101,
-    "topics_published": 5,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T15:16:56.045977+00:00"
+    "last_audio_at": "2026-11-15T15:17:19.648937+00:00"
   }
 }
