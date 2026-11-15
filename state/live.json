@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T14:15:21.309795+00:00",
-  "updated_at": "2026-11-15T15:17:24.572090+00:00",
+  "updated_at": "2026-11-15T15:17:48.239856+00:00",
   "items": [
     {
       "title": "بررسی ابعاد سه‌گانه جنگ اقتصادی، نظامی و رسانه‌ای",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 119,
-    "segments_transcribed": 109,
-    "editor_attempts": 105,
+    "segments_captured": 120,
+    "segments_transcribed": 110,
+    "editor_attempts": 106,
     "editor_withheld": 101,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T15:17:19.648937+00:00"
+    "last_audio_at": "2026-11-15T15:17:45.003470+00:00"
   }
 }
