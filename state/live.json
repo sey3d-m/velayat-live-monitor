@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T15:45:15.703150+00:00",
-  "updated_at": "2026-11-15T16:25:29.525186+00:00",
+  "updated_at": "2026-11-15T16:25:51.330168+00:00",
   "items": [
-    {
-      "title": "بررسی توصیه نهج‌البلاغه درباره انتخاب شهرهای بستر طاعت الهی",
-      "summary": "در این بخش کارشناس استدلال می‌کند که بر اساس مطلبی از نهج‌البلاغه، لازم است شهرهایی برای زندگی انتخاب شوند که انسان را در مسیر طاعت و بندگی خداوند یاری کنند و بستر مناسبی برای این هدف فراهم سازند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43731524652-12",
-      "sequence": 12,
-      "updated_at": "2026-11-15T16:05:11.634722+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی محوریت طاعت الهی در انس با مردم",
       "summary": "در این بخش کارشناس استدلال می‌کند خوشایند بودن انس افراد با یکدیگر زمانی ارزشمند است که بر پایه طاعت الهی شکل بگیرد. به گفته وی، محور اصلی در شکل‌گیری این ارتباطات و اجتماع باید اطاعت از خداوند متعال باشد.",
@@ -69,16 +57,29 @@
       "sequence": 53,
       "updated_at": "2026-11-15T16:21:28.038546+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره روزه",
+      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43731524652-64",
+      "sequence": 64,
+      "updated_at": "2026-11-15T16:25:51.330114+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 64,
-    "segments_transcribed": 63,
-    "editor_attempts": 61,
-    "editor_withheld": 56,
-    "topics_published": 7,
+    "segments_captured": 65,
+    "segments_transcribed": 64,
+    "editor_attempts": 62,
+    "editor_withheld": 58,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T16:25:25.562765+00:00"
+    "last_audio_at": "2026-11-15T16:25:45.554176+00:00"
   }
 }
