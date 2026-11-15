@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T18:09:05.029220+00:00",
+  "updated_at": "2026-11-15T18:09:47.537484+00:00",
   "items": [
     {
       "title": "بررسی ترکیب و معنای ارحام در عبارت تقوا",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 98,
-    "segments_transcribed": 90,
-    "editor_attempts": 69,
-    "editor_withheld": 62,
+    "segments_captured": 100,
+    "segments_transcribed": 92,
+    "editor_attempts": 71,
+    "editor_withheld": 63,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T18:08:58.721136+00:00"
+    "last_audio_at": "2026-11-15T18:09:42.682276+00:00"
   }
 }
