@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T15:45:15.703150+00:00",
-  "updated_at": "2026-11-15T16:37:25.791257+00:00",
+  "updated_at": "2026-11-15T16:37:52.285221+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره حدیث و روایت",
-      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43731524652-53",
-      "sequence": 53,
-      "updated_at": "2026-11-15T16:21:28.038546+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره روزه",
       "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +57,28 @@
       "sequence": 91,
       "updated_at": "2026-11-15T16:36:44.370661+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره حکم سفر به سرزمین کفر و تبعات قیامت آن",
+      "summary": "در این بخش، درباره سفر به سرزمین کفر و شرک و مشاوره‌های ارائه‌شده به فرد مسافر پرسش شد. کارشناس استدلال می‌کند که بر اساس مباحث مطرح‌شده، اگر کسی در چنین سرفرمی دچار مرگ شود، این نگرانی وجود دارد که در قیامت با اهالی کافر آنجا محشور شود؛ موضوعی که مسافر برای مشورت درباره آن نزد پیشوا آمده بود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43731524652-94",
+      "sequence": 94,
+      "updated_at": "2026-11-15T16:37:52.285195+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 94,
-    "segments_transcribed": 84,
-    "editor_attempts": 80,
-    "editor_withheld": 73,
-    "topics_published": 11,
+    "segments_captured": 95,
+    "segments_transcribed": 85,
+    "editor_attempts": 81,
+    "editor_withheld": 74,
+    "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T16:37:21.805053+00:00"
+    "last_audio_at": "2026-11-15T16:37:45.970577+00:00"
   }
 }
