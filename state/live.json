@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T18:16:13.808708+00:00",
+  "updated_at": "2026-11-15T18:17:03.268348+00:00",
   "items": [
     {
       "title": "پرسش درباره استناد به قسم به خدا در گفت‌وگوها",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 116,
-    "segments_transcribed": 104,
-    "editor_attempts": 81,
-    "editor_withheld": 71,
+    "segments_captured": 118,
+    "segments_transcribed": 106,
+    "editor_attempts": 83,
+    "editor_withheld": 73,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T18:16:08.710403+00:00"
+    "last_audio_at": "2026-11-15T18:16:57.429336+00:00"
   }
 }
