@@ -1,83 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "43723237763",
-  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "session": "43731524652",
+  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-15",
-  "started_at": "2026-11-15T14:15:21.309795+00:00",
-  "updated_at": "2026-11-15T15:40:02.206548+00:00",
-  "items": [
-    {
-      "title": "بررسی آسیب‌های جسمی و ظاهری ناشی از شیمی‌درمانی",
-      "summary": "در این بخش کارشناس استدلال می‌کند که اقدامات درمانی مانند شیمی‌درمانی به شدت به فیزیک و ظاهر جسمی فرد آسیب می‌زند؛ به گونه‌ای که بیمار پس از ضعیف شدن، با نگاه کردن به خود در آینه و مشاهده ریزش مو و آب شدن گوشت بدن دچار تغییرات می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43723237763-51",
-      "sequence": 51,
-      "updated_at": "2026-11-15T14:50:43.143988+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی تأثیر توئیت‌ها و اخبار مسئولان بر ذائقه مردم",
-      "summary": "در این بخش کارشناس استدلال می‌کند که با وجود تلاش‌های دولتمردان، انتشار برخی اخبار، توئیت‌ها یا سخنان افراد مسئول یا منتسب به دولت، گاهی موجب مکدر شدن خاطر مردم و تلخ شدن ذائقه آن‌ها می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43723237763-76",
-      "sequence": 76,
-      "updated_at": "2026-11-15T15:00:46.994155+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره احکام طهارت",
-      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43723237763-117",
-      "sequence": 117,
-      "updated_at": "2026-11-15T15:17:00.475060+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی نامه حاج قاسم به دخترش درباره شرایط سخت",
-      "summary": "در این بخش، کارشناس درباره شرایط سخت زندگی و زمانه سخن می‌گوید و برای تبیین آن، به نامه منتسب به حاج قاسم به دخترش فاطمه استناد می‌کند که در آن نوشته شده شب‌ها از شدت دغدغه و برای جلوگیری از غفلت، نمک در چشم می‌ریخته تا خوابش نبرد و بیدار بماند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "43723237763-118",
-      "sequence": 118,
-      "updated_at": "2026-11-15T15:17:24.572064+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره جایگاه و اوصاف اهل‌بیت در دعا",
-      "summary": "در این بخش، کارشناس به ذکر اوصاف و عناوین خاص برای اهل‌بیت می‌پردازد و به گفته وی، مقام آنان به هارون از موسی تشبیه شده است. همچنین با استناد به عبارات دعایی مطرح‌شده، بر ولایت و دوستی با دوستان آنان تأکید می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "43723237763-146",
-      "sequence": 146,
-      "updated_at": "2026-11-15T15:28:37.585531+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-15T15:45:15.703150+00:00",
+  "updated_at": "2026-11-15T16:00:00.000263+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 154,
-    "editor_attempts": 139,
-    "editor_withheld": 134,
-    "topics_published": 7,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T15:39:44.058630+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
