@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T15:45:15.703150+00:00",
-  "updated_at": "2026-11-15T16:12:44.303157+00:00",
+  "updated_at": "2026-11-15T16:12:46.434361+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره نهج‌البلاغه در برنامه بیان امیر",
-      "summary": "در این بخش از برنامه بیان امیر، کارشناس به ذکر فضائل محبان امیرالمومنین علی بن ابیطالب (ع) پرداخته و اعلام کرد که در برنامه امشب، درباره نهج‌البلاغه سخن گفته خواهد شد. بر اساس رونوشت، به گفته کارشناس، مخاطبان در این برنامه از نهج‌البلاغه می‌گویند و می‌شنوند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "editor_mode": "audio_grounded_topic",
-      "id": "43731524652-6",
-      "sequence": 6,
-      "updated_at": "2026-11-15T16:02:48.700647+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره حق و وظیفه ساخت دنیا برای زندگی متعالی",
       "summary": "در این بخش کارشناس استدلال می‌کند که انسان‌ها حق و وظیفه دارند دنیایی را بسازند که آن‌ها را به سمت یک زندگی متعالی، معنوی و ملکوتی سوق دهد و حق زیست متعالی در این دنیا برای انسان وجود دارد.",
@@ -68,14 +55,27 @@
       "sequence": 26,
       "updated_at": "2026-11-15T16:10:46.730229+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خمس و زکات",
+      "summary": "در این بخش از برنامه، موضوع «خمس و زکات» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43731524652-31",
+      "sequence": 31,
+      "updated_at": "2026-11-15T16:12:46.434335+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 32,
     "segments_transcribed": 31,
     "editor_attempts": 29,
-    "editor_withheld": 24,
-    "topics_published": 5,
+    "editor_withheld": 25,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-15T16:12:39.862453+00:00"
