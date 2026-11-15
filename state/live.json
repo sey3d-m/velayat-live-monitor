@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T17:56:16.335642+00:00",
+  "updated_at": "2026-11-15T17:57:02.313377+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره ادامه برنامه‌های شبکه با حضور استاد رأفت نائینی",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 66,
-    "segments_transcribed": 58,
-    "editor_attempts": 46,
-    "editor_withheld": 42,
+    "segments_captured": 68,
+    "segments_transcribed": 60,
+    "editor_attempts": 48,
+    "editor_withheld": 44,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T17:56:08.930297+00:00"
+    "last_audio_at": "2026-11-15T17:56:58.078234+00:00"
   }
 }
