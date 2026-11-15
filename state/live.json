@@ -1,84 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "43731524652",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "43739947821",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
-  "started_at": "2026-11-15T15:45:15.703150+00:00",
-  "updated_at": "2026-11-15T17:10:09.511568+00:00",
-  "items": [
-    {
-      "title": "پرسش درباره حکم سفر به سرزمین کفر و تبعات قیامت آن",
-      "summary": "در این بخش، درباره سفر به سرزمین کفر و شرک و مشاوره‌های ارائه‌شده به فرد مسافر پرسش شد. کارشناس استدلال می‌کند که بر اساس مباحث مطرح‌شده، اگر کسی در چنین سرفرمی دچار مرگ شود، این نگرانی وجود دارد که در قیامت با اهالی کافر آنجا محشور شود؛ موضوعی که مسافر برای مشورت درباره آن نزد پیشوا آمده بود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43731524652-94",
-      "sequence": 94,
-      "updated_at": "2026-11-15T16:37:52.285195+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره ولایت و غدیر",
-      "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43731524652-99",
-      "sequence": 99,
-      "updated_at": "2026-11-15T16:39:55.191428+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43731524652-117",
-      "sequence": 117,
-      "updated_at": "2026-11-15T16:47:04.067599+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره حد و اندازه بیان فضائل اهل‌بیت",
-      "summary": "در این بخش کارشناس استدلال می‌کند که در بیان فضائل امیرالمؤمنین گاهی ذکر یک فضیلت در حد مشخص کافی است، اما تأکید می‌کند که در این زمینه باید احتیاط، مراقبت و دقت لازم وجود داشته باشد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43731524652-122",
-      "sequence": 122,
-      "updated_at": "2026-11-15T16:49:03.516843+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی انواع تکالیف و حقوق در موهبت زیست مطلوب",
-      "summary": "در این بخش کارشناس اشاره می‌کند که به دلیل کمبود وقت، به نکته پایانی پرداخته نمی‌شود. سپس در این گفت‌وگو مطرح شد که نسبت به یک موهبت مناسب برای زیست مطلوب، سه عنوان شامل تکلیف و حق وجود دارد تا انسان از این موهبت برخوردار باشد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43731524652-129",
-      "sequence": 129,
-      "updated_at": "2026-11-15T16:51:52.462333+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-15T17:14:54.423550+00:00",
+  "updated_at": "2026-11-15T17:30:00.000314+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 159,
-    "editor_attempts": 137,
-    "editor_withheld": 127,
-    "topics_published": 16,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T17:09:50.389805+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
