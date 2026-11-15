@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T15:45:15.703150+00:00",
-  "updated_at": "2026-11-15T16:39:08.863691+00:00",
+  "updated_at": "2026-11-15T16:39:54.049631+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره روزه",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 98,
-    "segments_transcribed": 88,
-    "editor_attempts": 84,
-    "editor_withheld": 76,
+    "segments_captured": 100,
+    "segments_transcribed": 90,
+    "editor_attempts": 86,
+    "editor_withheld": 78,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T16:39:00.899973+00:00"
+    "last_audio_at": "2026-11-15T16:39:51.044606+00:00"
   }
 }
