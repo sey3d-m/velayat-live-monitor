@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T17:57:02.313377+00:00",
+  "updated_at": "2026-11-15T17:57:03.335790+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره ادامه برنامه‌های شبکه با حضور استاد رأفت نائینی",
-      "summary": "در این بخش، کارشناس به اعلام ادامه برنامه‌های شبانه شبکه با همان موضوع همیشگی پس از ایام خاص پرداخت و از حضور استاد رأفت نائینی در برنامه امشب خبر داد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "editor_mode": "audio_grounded_topic",
-      "id": "43739947821-15",
-      "sequence": 15,
-      "updated_at": "2026-11-15T17:36:17.095340+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره خانه‌نشینی و گریه امام علی و فرزندانش",
       "summary": "در این بخش کارشناس استدلال می‌کند که شیعیان امیرالمومنین چند روز شاهد بودند که امام علی علیه‌السلام دیگر به مسجد نمی‌آید و در گوشه خانه به همراه فرزندان خردسال خود مشغول گریه است.",
@@ -69,6 +56,18 @@
       "sequence": 45,
       "updated_at": "2026-11-15T17:48:11.716253+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی سبب تنزیل آیه و ارحام در گفتار کارشناس",
+      "summary": "در این بخش، کارشناس به بررسی سبب تنزیل آیات می‌پردازد و استدلال می‌کند که آیه مربوط به تقوا و ارحام در خصوص پیامبر و اهل‌بیت ایشان نازل شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43739947821-67",
+      "sequence": 67,
+      "updated_at": "2026-11-15T17:57:03.335770+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -76,7 +75,7 @@
     "segments_transcribed": 60,
     "editor_attempts": 48,
     "editor_withheld": 44,
-    "topics_published": 6,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-15T17:56:58.078234+00:00"
