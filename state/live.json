@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T18:25:51.273720+00:00",
+  "updated_at": "2026-11-15T18:26:39.475541+00:00",
   "items": [
     {
       "title": "پرسش درباره استناد کارشناس به آیه نهی از دوستی با یهود و نصارا",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 140,
-    "segments_transcribed": 128,
-    "editor_attempts": 101,
-    "editor_withheld": 87,
+    "segments_captured": 142,
+    "segments_transcribed": 130,
+    "editor_attempts": 103,
+    "editor_withheld": 89,
     "topics_published": 19,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T18:25:46.525281+00:00"
+    "last_audio_at": "2026-11-15T18:26:35.207222+00:00"
   }
 }
