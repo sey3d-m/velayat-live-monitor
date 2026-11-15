@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T14:15:21.309795+00:00",
-  "updated_at": "2026-11-15T15:00:16.587092+00:00",
+  "updated_at": "2026-11-15T15:00:46.994184+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره روزه",
@@ -44,16 +44,28 @@
       "sequence": 51,
       "updated_at": "2026-11-15T14:50:43.143988+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی تأثیر توئیت‌ها و اخبار مسئولان بر ذائقه مردم",
+      "summary": "در این بخش کارشناس استدلال می‌کند که با وجود تلاش‌های دولتمردان، انتشار برخی اخبار، توئیت‌ها یا سخنان افراد مسئول یا منتسب به دولت، گاهی موجب مکدر شدن خاطر مردم و تلخ شدن ذائقه آن‌ها می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43723237763-76",
+      "sequence": 76,
+      "updated_at": "2026-11-15T15:00:46.994155+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 76,
-    "segments_transcribed": 72,
-    "editor_attempts": 71,
-    "editor_withheld": 68,
-    "topics_published": 3,
+    "segments_captured": 77,
+    "segments_transcribed": 73,
+    "editor_attempts": 72,
+    "editor_withheld": 69,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T15:00:12.137838+00:00"
+    "last_audio_at": "2026-11-15T15:00:36.821083+00:00"
   }
 }
