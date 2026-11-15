@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T18:23:23.983116+00:00",
+  "updated_at": "2026-11-15T18:23:50.716680+00:00",
   "items": [
-    {
-      "title": "بررسی تفاوت حکم جاهل قاسر و مقصر در کلام کارشناس",
-      "summary": "در این بخش مطرح شد که جاهل قاسر و جاهل مقصر احکام و مجازات‌های متفاوتی دارند و بار مسئولیت جاهل مقصر سنگین‌تر است. کارشناس استدلال می‌کند که بسیاری از افراد در این موضوع دچار جههل، حسادت یا نفاق هستند و با وجود آگاهی، موضع‌گیری می‌کنند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43739947821-120",
-      "sequence": 120,
-      "updated_at": "2026-11-15T18:18:23.014203+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره استناد کارشناس به آیه نهی از دوستی با یهود و نصارا",
       "summary": "در این بخش، کارشناس استدلال می‌کند که مسلمانان طبق فرمان قرآن نباید با یهود و نصارا پیوند دوستی برقرار کنند و با مسلمانان بجنگند. او برای اثبات این ادعا به آیه «لا تتقیلیلو لیهود و نصاره آولیا» استناد می‌کند و نتیجه می‌گیرد که این امر بر اساس آگاه بودن مسلمانان از دستورات قرآنی است.",
@@ -68,16 +56,29 @@
       "sequence": 128,
       "updated_at": "2026-11-15T18:21:27.497738+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره حضرت عباس",
+      "summary": "در این بخش از برنامه، موضوع «حضرت عباس» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43739947821-134",
+      "sequence": 134,
+      "updated_at": "2026-11-15T18:23:50.716656+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 134,
-    "segments_transcribed": 122,
-    "editor_attempts": 95,
-    "editor_withheld": 81,
-    "topics_published": 18,
+    "segments_captured": 135,
+    "segments_transcribed": 123,
+    "editor_attempts": 96,
+    "editor_withheld": 83,
+    "topics_published": 19,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T18:23:19.168768+00:00"
+    "last_audio_at": "2026-11-15T18:23:43.324824+00:00"
   }
 }
