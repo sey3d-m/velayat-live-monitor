@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T15:45:15.703150+00:00",
-  "updated_at": "2026-11-15T16:47:03.027971+00:00",
+  "updated_at": "2026-11-15T16:47:04.067619+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره گفت‌وگوی مذاهب اسلامی",
-      "summary": "در این بخش از برنامه، موضوع «گفت‌وگوی مذاهب اسلامی» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43731524652-88",
-      "sequence": 88,
-      "updated_at": "2026-11-15T16:35:28.303791+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره شکرگزاری برای آشنایی با معارف نهج‌البلاغه",
       "summary": "در این بخش کارشناس استدلال می‌کند که شکرگزاری به درگاه خداوند برای دسترسی به کلام و معارف امیرالمؤمنین در نهج‌البلاغه و بهره‌مندی از آن، از اعتقادات مومنین است و باید به این نعمت امیدوار بود.",
@@ -69,14 +56,27 @@
       "sequence": 99,
       "updated_at": "2026-11-15T16:39:55.191428+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43731524652-117",
+      "sequence": 117,
+      "updated_at": "2026-11-15T16:47:04.067599+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 118,
     "segments_transcribed": 108,
     "editor_attempts": 104,
-    "editor_withheld": 96,
-    "topics_published": 13,
+    "editor_withheld": 97,
+    "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-15T16:46:59.595776+00:00"
