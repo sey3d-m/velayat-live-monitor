@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T15:45:15.703150+00:00",
-  "updated_at": "2026-11-15T16:10:46.730247+00:00",
+  "updated_at": "2026-11-15T16:11:11.150487+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره نهج‌البلاغه در برنامه بیان امیر",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 27,
-    "segments_transcribed": 26,
-    "editor_attempts": 24,
+    "segments_captured": 28,
+    "segments_transcribed": 27,
+    "editor_attempts": 25,
     "editor_withheld": 20,
     "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T16:10:41.987818+00:00"
+    "last_audio_at": "2026-11-15T16:11:06.937913+00:00"
   }
 }
