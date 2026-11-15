@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T18:32:14.848536+00:00",
+  "updated_at": "2026-11-15T18:32:39.397289+00:00",
   "items": [
-    {
-      "title": "پرسش درباره مصداق فساد در زمین در صورت دستیابی به حکومت",
-      "summary": "در این بخش، کارشناس درباره آیه شریفه و این پرسش مطرح می‌کند که آیا مقصود از رویگردانی و دستیابی به حکومت در زمین، ارتکاب فساد و قطع رحم است و در ادامه به بررسی مصداق بارز فساد در زمین می‌پردازد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43739947821-128",
-      "sequence": 128,
-      "updated_at": "2026-11-15T18:21:27.497738+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره حضرت عباس",
       "summary": "در این بخش از برنامه، موضوع «حضرت عباس» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -68,16 +56,28 @@
       "sequence": 155,
       "updated_at": "2026-11-15T18:32:14.848518+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره چرایی نحوه بیان عدد سال‌های خواب اصحاب کهف در قرآن",
+      "summary": "در این بخش، کارشناس درباره چرایی تفاوت بیان عدد سال‌های توقف اصحاب کهف در غار در آیه بیست و پنج سوره کهف پرسش مطرح می‌کند و می‌پرسد چرا قرآن به جای گفتن سیصد و نه سال، ابتدا سیصد سال و سپس نه سال را ذکر کرده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "id": "43739947821-156",
+      "sequence": 156,
+      "updated_at": "2026-11-15T18:32:39.397265+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 156,
-    "segments_transcribed": 143,
-    "editor_attempts": 115,
+    "segments_captured": 157,
+    "segments_transcribed": 144,
+    "editor_attempts": 116,
     "editor_withheld": 99,
-    "topics_published": 22,
+    "topics_published": 23,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T18:32:08.245698+00:00"
+    "last_audio_at": "2026-11-15T18:32:33.774676+00:00"
   }
 }
