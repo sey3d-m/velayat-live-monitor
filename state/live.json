@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T15:45:15.703150+00:00",
-  "updated_at": "2026-11-15T16:50:16.448643+00:00",
+  "updated_at": "2026-11-15T16:51:08.090809+00:00",
   "items": [
     {
       "title": "پرسش درباره شیوه ترویج نام اهل‌بیت و توحید در جوامع کم‌برخوردار از این معارف",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 126,
-    "segments_transcribed": 116,
-    "editor_attempts": 111,
-    "editor_withheld": 102,
+    "segments_captured": 128,
+    "segments_transcribed": 118,
+    "editor_attempts": 113,
+    "editor_withheld": 104,
     "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T16:50:12.415779+00:00"
+    "last_audio_at": "2026-11-15T16:51:03.543757+00:00"
   }
 }
