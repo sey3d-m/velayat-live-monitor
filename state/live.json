@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T14:15:21.309795+00:00",
-  "updated_at": "2026-11-15T14:50:41.065966+00:00",
+  "updated_at": "2026-11-15T14:50:43.144018+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره روزه",
@@ -32,6 +32,18 @@
       "sequence": 38,
       "updated_at": "2026-11-15T14:45:28.082559+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی آسیب‌های جسمی و ظاهری ناشی از شیمی‌درمانی",
+      "summary": "در این بخش کارشناس استدلال می‌کند که اقدامات درمانی مانند شیمی‌درمانی به شدت به فیزیک و ظاهر جسمی فرد آسیب می‌زند؛ به گونه‌ای که بیمار پس از ضعیف شدن، با نگاه کردن به خود در آینه و مشاهده ریزش مو و آب شدن گوشت بدن دچار تغییرات می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43723237763-51",
+      "sequence": 51,
+      "updated_at": "2026-11-15T14:50:43.143988+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -39,7 +51,7 @@
     "segments_transcribed": 48,
     "editor_attempts": 47,
     "editor_withheld": 45,
-    "topics_published": 2,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-15T14:50:35.783873+00:00"
