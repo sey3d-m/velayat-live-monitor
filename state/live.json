@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T14:15:21.309795+00:00",
-  "updated_at": "2026-11-15T14:45:03.972878+00:00",
+  "updated_at": "2026-11-15T14:45:28.082590+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره روزه",
@@ -20,16 +20,28 @@
       "sequence": 8,
       "updated_at": "2026-11-15T14:33:40.802217+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ابعاد سه‌گانه جنگ اقتصادی، نظامی و رسانه‌ای",
+      "summary": "در این بخش کارشناس استدلال می‌کند که جنگ در سه ضلع نظامی، اقتصادی و رسانه‌ای خلاصه می‌شود که این ابعاد یکدیگر را کامل می‌کنند. همچنین مطرح شد که در حوزه رفاه، ممکن است میان مفهوم رفاه و احساس رفاه تفاوت وجود داشته باشد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43723237763-38",
+      "sequence": 38,
+      "updated_at": "2026-11-15T14:45:28.082559+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 38,
-    "segments_transcribed": 34,
-    "editor_attempts": 34,
-    "editor_withheld": 33,
-    "topics_published": 1,
+    "segments_captured": 39,
+    "segments_transcribed": 35,
+    "editor_attempts": 35,
+    "editor_withheld": 34,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T14:45:01.369182+00:00"
+    "last_audio_at": "2026-11-15T14:45:23.059732+00:00"
   }
 }
