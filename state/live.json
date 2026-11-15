@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T18:19:51.553497+00:00",
+  "updated_at": "2026-11-15T18:20:12.859390+00:00",
   "items": [
     {
       "title": "بررسی تطبیق قطع رحم با دشمنی با اهل‌بیت در گفتار کارشناس",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 125,
-    "segments_transcribed": 113,
-    "editor_attempts": 89,
+    "segments_captured": 126,
+    "segments_transcribed": 114,
+    "editor_attempts": 90,
     "editor_withheld": 77,
     "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T18:19:43.865570+00:00"
+    "last_audio_at": "2026-11-15T18:20:07.751265+00:00"
   }
 }
