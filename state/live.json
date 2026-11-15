@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T15:45:15.703150+00:00",
-  "updated_at": "2026-11-15T16:48:36.285975+00:00",
+  "updated_at": "2026-11-15T16:49:03.516868+00:00",
   "items": [
-    {
-      "title": "پرسش درباره شکرگزاری برای آشنایی با معارف نهج‌البلاغه",
-      "summary": "در این بخش کارشناس استدلال می‌کند که شکرگزاری به درگاه خداوند برای دسترسی به کلام و معارف امیرالمؤمنین در نهج‌البلاغه و بهره‌مندی از آن، از اعتقادات مومنین است و باید به این نعمت امیدوار بود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "43731524652-89",
-      "sequence": 89,
-      "updated_at": "2026-11-15T16:35:55.038355+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره شیوه ترویج نام اهل‌بیت و توحید در جوامع کم‌برخوردار از این معارف",
       "summary": "در این بخش، کارشناس درباره نحوه مواجهه و وظیفه مؤمنان در جوامع، محلات یا کشورهایی که به گفته او نام اهل‌بیت و توحید کمتر در آن‌ها مطرح می‌شود، پرسشی را مطرح می‌کند و به دنبال یافتن راهکار برای فعالیت در این‌گونه مجامع است.",
@@ -69,16 +57,28 @@
       "sequence": 117,
       "updated_at": "2026-11-15T16:47:04.067599+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره حد و اندازه بیان فضائل اهل‌بیت",
+      "summary": "در این بخش کارشناس استدلال می‌کند که در بیان فضائل امیرالمؤمنین گاهی ذکر یک فضیلت در حد مشخص کافی است، اما تأکید می‌کند که در این زمینه باید احتیاط، مراقبت و دقت لازم وجود داشته باشد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43731524652-122",
+      "sequence": 122,
+      "updated_at": "2026-11-15T16:49:03.516843+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 122,
-    "segments_transcribed": 112,
-    "editor_attempts": 107,
-    "editor_withheld": 99,
-    "topics_published": 14,
+    "segments_captured": 123,
+    "segments_transcribed": 113,
+    "editor_attempts": 108,
+    "editor_withheld": 100,
+    "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T16:48:32.783210+00:00"
+    "last_audio_at": "2026-11-15T16:48:58.502779+00:00"
   }
 }
