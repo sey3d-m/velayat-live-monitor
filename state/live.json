@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T17:37:50.008248+00:00",
+  "updated_at": "2026-11-15T17:38:17.749039+00:00",
   "items": [
     {
       "title": "پرسش درباره ارائه ابیات ابتدایی برنامه در سوگ حضرت فاطمه زهرا (س)",
@@ -46,16 +46,28 @@
       "sequence": 18,
       "updated_at": "2026-11-15T17:37:29.207229+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره روایت ورود نماینده صحابه به خانه امیرالمؤمنین (ع)",
+      "summary": "در این بخش، کارشناس درباره ورود یکی از یاران و صحابه به عنوان نماینده دیگران به خانه امیرالمؤمنین (ع) سخن می‌گوید. به گفته کارشناس، هدف از این مراجعه تغییر فضای هواداران امیرالمؤمنین (ع) بوده است؛ اما پس از ورود به خانه، نماینده با صحنه‌ای روبه‌رو می‌شود که در آن حضرت در گوشه‌ای از خانه و امام حسن (ع) در سمتی دیگر مشغول گریستن بوده‌اند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43739947821-20",
+      "sequence": 20,
+      "updated_at": "2026-11-15T17:38:17.749018+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 20,
-    "segments_transcribed": 13,
-    "editor_attempts": 9,
+    "segments_captured": 21,
+    "segments_transcribed": 14,
+    "editor_attempts": 10,
     "editor_withheld": 9,
-    "topics_published": 3,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T17:37:46.260449+00:00"
+    "last_audio_at": "2026-11-15T17:38:11.030029+00:00"
   }
 }
