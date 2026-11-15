@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T17:37:00.670996+00:00",
+  "updated_at": "2026-11-15T17:37:29.207257+00:00",
   "items": [
     {
       "title": "پرسش درباره ارائه ابیات ابتدایی برنامه در سوگ حضرت فاطمه زهرا (س)",
@@ -33,16 +33,29 @@
       "sequence": 15,
       "updated_at": "2026-11-15T17:36:17.095340+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره خانه‌نشینی و گریه امام علی و فرزندانش",
+      "summary": "در این بخش کارشناس استدلال می‌کند که شیعیان امیرالمومنین چند روز شاهد بودند که امام علی علیه‌السلام دیگر به مسجد نمی‌آید و در گوشه خانه به همراه فرزندان خردسال خود مشغول گریه است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "43739947821-18",
+      "sequence": 18,
+      "updated_at": "2026-11-15T17:37:29.207229+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 18,
-    "segments_transcribed": 11,
-    "editor_attempts": 8,
-    "editor_withheld": 7,
-    "topics_published": 2,
-    "audio_ai_calls": 2,
-    "audio_ai_success": 2,
-    "last_audio_at": "2026-11-15T17:36:56.592677+00:00"
+    "segments_captured": 19,
+    "segments_transcribed": 12,
+    "editor_attempts": 9,
+    "editor_withheld": 9,
+    "topics_published": 3,
+    "audio_ai_calls": 3,
+    "audio_ai_success": 3,
+    "last_audio_at": "2026-11-15T17:37:21.739375+00:00"
   }
 }
