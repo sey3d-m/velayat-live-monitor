@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T18:07:25.477453+00:00",
+  "updated_at": "2026-11-15T18:08:13.133300+00:00",
   "items": [
     {
       "title": "بررسی آفرینش انسان از نفس واحده و دعوت به تقوا",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 94,
-    "segments_transcribed": 86,
-    "editor_attempts": 66,
-    "editor_withheld": 59,
+    "segments_captured": 96,
+    "segments_transcribed": 88,
+    "editor_attempts": 67,
+    "editor_withheld": 61,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T18:07:20.777147+00:00"
+    "last_audio_at": "2026-11-15T18:08:09.592456+00:00"
   }
 }
