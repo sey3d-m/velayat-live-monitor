@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T15:45:15.703150+00:00",
-  "updated_at": "2026-11-15T16:39:54.049631+00:00",
+  "updated_at": "2026-11-15T16:39:55.191448+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره روزه",
-      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43731524652-64",
-      "sequence": 64,
-      "updated_at": "2026-11-15T16:25:51.330114+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره گفت‌وگوی مذاهب اسلامی",
       "summary": "در این بخش از برنامه، موضوع «گفت‌وگوی مذاهب اسلامی» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,14 +56,27 @@
       "sequence": 94,
       "updated_at": "2026-11-15T16:37:52.285195+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره ولایت و غدیر",
+      "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43731524652-99",
+      "sequence": 99,
+      "updated_at": "2026-11-15T16:39:55.191428+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 100,
     "segments_transcribed": 90,
     "editor_attempts": 86,
-    "editor_withheld": 78,
-    "topics_published": 12,
+    "editor_withheld": 79,
+    "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-15T16:39:51.044606+00:00"
