@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T18:29:51.078137+00:00",
+  "updated_at": "2026-11-15T18:30:35.429841+00:00",
   "items": [
     {
       "title": "پرسش درباره درخواست حمله به شیعیان ایران و استناد به قرآن کریم",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 150,
-    "segments_transcribed": 137,
-    "editor_attempts": 109,
-    "editor_withheld": 94,
+    "segments_captured": 152,
+    "segments_transcribed": 139,
+    "editor_attempts": 111,
+    "editor_withheld": 96,
     "topics_published": 20,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T18:29:46.140170+00:00"
+    "last_audio_at": "2026-11-15T18:30:30.530013+00:00"
   }
 }
