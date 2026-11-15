@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T15:45:15.703150+00:00",
-  "updated_at": "2026-11-15T16:16:40.801190+00:00",
+  "updated_at": "2026-11-15T16:17:24.352942+00:00",
   "items": [
     {
       "title": "پرسش درباره حق و وظیفه ساخت دنیا برای زندگی متعالی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 42,
-    "segments_transcribed": 41,
-    "editor_attempts": 39,
-    "editor_withheld": 34,
+    "segments_captured": 44,
+    "segments_transcribed": 43,
+    "editor_attempts": 41,
+    "editor_withheld": 36,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T16:16:36.630507+00:00"
+    "last_audio_at": "2026-11-15T16:17:20.804793+00:00"
   }
 }
