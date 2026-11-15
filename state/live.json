@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "43739947821",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T17:33:52.370266+00:00",
-  "items": [],
+  "updated_at": "2026-11-15T17:33:55.412846+00:00",
+  "items": [
+    {
+      "title": "پرسش درباره ارائه ابیات ابتدایی برنامه در سوگ حضرت فاطمه زهرا (س)",
+      "summary": "در این بخش، کارشناس برنامه به ذکر ابیاتی در ابتدای برنامه برای حضرت صدیقه اطهر فاطمیه زهرا سلام‌الله‌علیها پرداخت. او در این بیت‌ها با اشاره به رخسار آفتاب و غبار ابر، از شکوه نام علی و غربت سخن گفت.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "43739947821-9",
+      "sequence": 9,
+      "updated_at": "2026-11-15T17:33:55.412827+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
     "segments_captured": 10,
     "segments_transcribed": 5,
     "editor_attempts": 3,
-    "editor_withheld": 2,
-    "topics_published": 0,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
+    "editor_withheld": 3,
+    "topics_published": 1,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
     "last_audio_at": "2026-11-15T17:33:45.480762+00:00"
   }
 }
