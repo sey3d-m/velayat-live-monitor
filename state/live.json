@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T14:15:21.309795+00:00",
-  "updated_at": "2026-11-15T15:30:34.268026+00:00",
+  "updated_at": "2026-11-15T15:31:23.849092+00:00",
   "items": [
     {
       "title": "بررسی آسیب‌های جسمی و ظاهری ناشی از شیمی‌درمانی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 152,
-    "segments_transcribed": 137,
-    "editor_attempts": 128,
+    "segments_captured": 154,
+    "segments_transcribed": 138,
+    "editor_attempts": 129,
     "editor_withheld": 123,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T15:30:32.423250+00:00"
+    "last_audio_at": "2026-11-15T15:31:21.676301+00:00"
   }
 }
