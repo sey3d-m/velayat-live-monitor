@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T15:45:15.703150+00:00",
-  "updated_at": "2026-11-15T16:22:16.821818+00:00",
+  "updated_at": "2026-11-15T16:23:00.004063+00:00",
   "items": [
     {
       "title": "بررسی توصیه نهج‌البلاغه درباره انتخاب شهرهای بستر طاعت الهی",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 56,
-    "segments_transcribed": 55,
-    "editor_attempts": 53,
-    "editor_withheld": 48,
+    "segments_captured": 58,
+    "segments_transcribed": 57,
+    "editor_attempts": 55,
+    "editor_withheld": 50,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T16:22:12.809054+00:00"
+    "last_audio_at": "2026-11-15T16:22:56.199218+00:00"
   }
 }
