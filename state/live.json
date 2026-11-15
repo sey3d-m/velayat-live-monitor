@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T17:36:14.016664+00:00",
+  "updated_at": "2026-11-15T17:36:17.095368+00:00",
   "items": [
     {
       "title": "پرسش درباره ارائه ابیات ابتدایی برنامه در سوگ حضرت فاطمه زهرا (س)",
@@ -20,16 +20,29 @@
       "sequence": 9,
       "updated_at": "2026-11-15T17:33:55.412827+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره ادامه برنامه‌های شبکه با حضور استاد رأفت نائینی",
+      "summary": "در این بخش، کارشناس به اعلام ادامه برنامه‌های شبانه شبکه با همان موضوع همیشگی پس از ایام خاص پرداخت و از حضور استاد رأفت نائینی در برنامه امشب خبر داد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "43739947821-15",
+      "sequence": 15,
+      "updated_at": "2026-11-15T17:36:17.095340+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 16,
     "segments_transcribed": 9,
     "editor_attempts": 6,
-    "editor_withheld": 5,
-    "topics_published": 1,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
+    "editor_withheld": 6,
+    "topics_published": 2,
+    "audio_ai_calls": 2,
+    "audio_ai_success": 2,
     "last_audio_at": "2026-11-15T17:36:07.388492+00:00"
   }
 }
