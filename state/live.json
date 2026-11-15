@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T18:33:05.491553+00:00",
+  "updated_at": "2026-11-15T18:33:51.887199+00:00",
   "items": [
     {
       "title": "بررسی دلیل پزشکی جابجایی بدن در خواب طولانی از منظر قرآن",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 158,
-    "segments_transcribed": 145,
-    "editor_attempts": 117,
-    "editor_withheld": 99,
+    "segments_captured": 160,
+    "segments_transcribed": 147,
+    "editor_attempts": 119,
+    "editor_withheld": 100,
     "topics_published": 24,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T18:32:58.422022+00:00"
+    "last_audio_at": "2026-11-15T18:33:47.510566+00:00"
   }
 }
