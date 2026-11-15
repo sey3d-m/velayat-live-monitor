@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T18:18:41.759649+00:00",
+  "updated_at": "2026-11-15T18:19:22.918877+00:00",
   "items": [
     {
       "title": "پرسش درباره پرداختن به مسائل فرعی در کنار شهادت محسن ابن علی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 122,
-    "segments_transcribed": 110,
-    "editor_attempts": 86,
-    "editor_withheld": 75,
+    "segments_captured": 124,
+    "segments_transcribed": 112,
+    "editor_attempts": 88,
+    "editor_withheld": 76,
     "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T18:18:36.107641+00:00"
+    "last_audio_at": "2026-11-15T18:19:18.423055+00:00"
   }
 }
