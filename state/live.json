@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-15",
   "started_at": "2026-11-15T15:45:15.703150+00:00",
-  "updated_at": "2026-11-15T16:21:26.831527+00:00",
+  "updated_at": "2026-11-15T16:21:28.038569+00:00",
   "items": [
-    {
-      "title": "پرسش درباره حق و وظیفه ساخت دنیا برای زندگی متعالی",
-      "summary": "در این بخش کارشناس استدلال می‌کند که انسان‌ها حق و وظیفه دارند دنیایی را بسازند که آن‌ها را به سمت یک زندگی متعالی، معنوی و ملکوتی سوق دهد و حق زیست متعالی در این دنیا برای انسان وجود دارد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43731524652-9",
-      "sequence": 9,
-      "updated_at": "2026-11-15T16:04:00.395894+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی توصیه نهج‌البلاغه درباره انتخاب شهرهای بستر طاعت الهی",
       "summary": "در این بخش کارشناس استدلال می‌کند که بر اساس مطلبی از نهج‌البلاغه، لازم است شهرهایی برای زندگی انتخاب شوند که انسان را در مسیر طاعت و بندگی خداوند یاری کنند و بستر مناسبی برای این هدف فراهم سازند.",
@@ -68,14 +56,27 @@
       "sequence": 31,
       "updated_at": "2026-11-15T16:12:46.434335+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره حدیث و روایت",
+      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43731524652-53",
+      "sequence": 53,
+      "updated_at": "2026-11-15T16:21:28.038546+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 54,
     "segments_transcribed": 53,
     "editor_attempts": 51,
-    "editor_withheld": 46,
-    "topics_published": 6,
+    "editor_withheld": 47,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-15T16:21:22.619205+00:00"
