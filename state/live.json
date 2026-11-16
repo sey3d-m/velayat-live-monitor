@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T15:45:18.159497+00:00",
-  "updated_at": "2026-11-16T16:38:09.931486+00:00",
+  "updated_at": "2026-11-16T16:39:03.473670+00:00",
   "items": [
     {
       "title": "پرسش درباره استمداد و درخواست حاجت از پیامبر در نگاه کارشناس",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 96,
-    "segments_transcribed": 95,
-    "editor_attempts": 92,
-    "editor_withheld": 86,
+    "segments_captured": 98,
+    "segments_transcribed": 97,
+    "editor_attempts": 94,
+    "editor_withheld": 88,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T16:38:06.777838+00:00"
+    "last_audio_at": "2026-11-16T16:39:01.150645+00:00"
   }
 }
