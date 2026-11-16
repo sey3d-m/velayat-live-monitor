@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T14:15:12.917605+00:00",
-  "updated_at": "2026-11-16T15:21:16.344704+00:00",
+  "updated_at": "2026-11-16T15:21:26.627139+00:00",
   "items": [
-    {
-      "title": "پرسش درباره تقدم روزه قضا بر روزه مستحبی در ماه رجب",
-      "summary": "در این بخش درباره حکم روزه مستحبی در ماه رجب و تقدم روزه قضا بر آن پرسش شد. به گفته کارشناس، اگر فرد روزه قضا بر عهده داشته باشد، ابتدا باید روزه قضا را به جای آورد و امکان گرفتن روزه مستحبی پیش از ادای قضای واجب وجود ندارد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43883617573-46",
-      "sequence": 46,
-      "updated_at": "2026-11-16T14:48:41.672448+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی حکم و محدوده تنبیه بدنی کودک در اظهارات کارشناس",
       "summary": "در این بخش درباره حدود تنبیه بدنی کودک گفتگو شد. کارشناس استدلال می‌کند که اگر تنبیه به سرخ شدن بدن منجر شود دیه دارد و حتی برای کودک کوچک نیز باید دیه پرداخت یا حلالیت طلبید. به گفته کارشناس، تنبیه بدنی به قصد تربیت و تأدیب که به کبودی یا سرخی بدن منجر شود، مجاز دانسته نمی‌شود.",
@@ -68,16 +56,29 @@
       "sequence": 112,
       "updated_at": "2026-11-16T15:15:03.320826+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43883617573-128",
+      "sequence": 128,
+      "updated_at": "2026-11-16T15:21:26.627113+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 128,
-    "segments_transcribed": 124,
-    "editor_attempts": 116,
-    "editor_withheld": 109,
-    "topics_published": 11,
+    "segments_captured": 129,
+    "segments_transcribed": 125,
+    "editor_attempts": 117,
+    "editor_withheld": 111,
+    "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T15:20:57.995040+00:00"
+    "last_audio_at": "2026-11-16T15:21:22.568796+00:00"
   }
 }
