@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T15:45:18.159497+00:00",
-  "updated_at": "2026-11-16T17:02:14.618761+00:00",
+  "updated_at": "2026-11-16T17:03:04.148229+00:00",
   "items": [
     {
       "title": "پرسش درباره حکم کمک خواستن از فرشتگان و ملائکه",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 156,
-    "segments_transcribed": 155,
-    "editor_attempts": 148,
-    "editor_withheld": 139,
+    "segments_captured": 158,
+    "segments_transcribed": 157,
+    "editor_attempts": 150,
+    "editor_withheld": 141,
     "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T17:02:11.429777+00:00"
+    "last_audio_at": "2026-11-16T17:03:00.804851+00:00"
   }
 }
