@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T14:15:12.917605+00:00",
-  "updated_at": "2026-11-16T15:16:13.706193+00:00",
+  "updated_at": "2026-11-16T15:17:04.964487+00:00",
   "items": [
     {
       "title": "پرسش درباره تقدم روزه قضا بر روزه مستحبی در ماه رجب",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 116,
-    "segments_transcribed": 113,
-    "editor_attempts": 105,
+    "segments_captured": 118,
+    "segments_transcribed": 114,
+    "editor_attempts": 106,
     "editor_withheld": 99,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T15:16:12.114147+00:00"
+    "last_audio_at": "2026-11-16T15:17:02.402543+00:00"
   }
 }
