@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T15:45:18.159497+00:00",
-  "updated_at": "2026-11-16T16:40:40.880011+00:00",
+  "updated_at": "2026-11-16T16:41:31.740404+00:00",
   "items": [
     {
       "title": "بررسی استمداد از پیامبر و استناد به روایات در دعا",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 102,
-    "segments_transcribed": 101,
-    "editor_attempts": 97,
-    "editor_withheld": 90,
+    "segments_captured": 104,
+    "segments_transcribed": 103,
+    "editor_attempts": 99,
+    "editor_withheld": 92,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T16:40:38.341265+00:00"
+    "last_audio_at": "2026-11-16T16:41:28.523205+00:00"
   }
 }
