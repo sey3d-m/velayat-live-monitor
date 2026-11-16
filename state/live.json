@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T15:45:18.159497+00:00",
-  "updated_at": "2026-11-16T17:06:15.477771+00:00",
+  "updated_at": "2026-11-16T17:06:57.999658+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره نماز جماعت",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 166,
-    "segments_transcribed": 164,
-    "editor_attempts": 157,
+    "segments_captured": 168,
+    "segments_transcribed": 165,
+    "editor_attempts": 158,
     "editor_withheld": 147,
     "topics_published": 18,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T17:06:14.298032+00:00"
+    "last_audio_at": "2026-11-16T17:06:55.354146+00:00"
   }
 }
