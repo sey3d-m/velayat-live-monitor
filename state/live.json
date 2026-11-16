@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T15:45:18.159497+00:00",
-  "updated_at": "2026-11-16T16:59:09.371386+00:00",
+  "updated_at": "2026-11-16T16:59:52.249740+00:00",
   "items": [
     {
       "title": "بررسی دیدگاه درباره هویت استغثه‌کنندگان در سخنان احمد بن حنبل و آلبانی",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 148,
-    "segments_transcribed": 147,
-    "editor_attempts": 140,
-    "editor_withheld": 132,
+    "segments_captured": 150,
+    "segments_transcribed": 149,
+    "editor_attempts": 142,
+    "editor_withheld": 134,
     "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T16:58:59.219812+00:00"
+    "last_audio_at": "2026-11-16T16:59:49.276335+00:00"
   }
 }
