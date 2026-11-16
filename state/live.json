@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T14:15:12.917605+00:00",
-  "updated_at": "2026-11-16T15:21:26.627139+00:00",
+  "updated_at": "2026-11-16T15:21:51.018878+00:00",
   "items": [
     {
       "title": "بررسی حکم و محدوده تنبیه بدنی کودک در اظهارات کارشناس",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 129,
-    "segments_transcribed": 125,
-    "editor_attempts": 117,
+    "segments_captured": 130,
+    "segments_transcribed": 126,
+    "editor_attempts": 118,
     "editor_withheld": 111,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T15:21:22.568796+00:00"
+    "last_audio_at": "2026-11-16T15:21:47.990582+00:00"
   }
 }
