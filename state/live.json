@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T17:15:11.815987+00:00",
-  "updated_at": "2026-11-16T17:37:54.116307+00:00",
+  "updated_at": "2026-11-16T17:38:19.954996+00:00",
   "items": [
     {
       "title": "پرسش درباره استدلال قرآنی پیرامون غلو نصارا",
@@ -43,16 +43,28 @@
       "sequence": 17,
       "updated_at": "2026-11-16T17:37:07.589900+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نقل‌قول طبرسی در کتاب الاحتجاج درباره غالیان",
+      "summary": "در این بخش، کارشناس درباره استناد به کتاب الاحتجاج اثر طبرسی و نقل عباراتی در رد گفته‌های غالیان سخن می‌گوید. به گفته کارشناس، در این کتاب مطالبی در رد دیدگاه‌های مختلف و آرای غالیان از سوی امامان علیهم‌السلام روایت شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43916244330-20",
+      "sequence": 20,
+      "updated_at": "2026-11-16T17:38:19.954979+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 20,
-    "segments_transcribed": 15,
-    "editor_attempts": 14,
-    "editor_withheld": 10,
-    "topics_published": 3,
+    "segments_captured": 21,
+    "segments_transcribed": 16,
+    "editor_attempts": 15,
+    "editor_withheld": 11,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T17:37:48.365426+00:00"
+    "last_audio_at": "2026-11-16T17:38:14.313264+00:00"
   }
 }
