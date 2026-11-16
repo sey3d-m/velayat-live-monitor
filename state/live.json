@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T14:15:12.917605+00:00",
-  "updated_at": "2026-11-16T14:41:03.230007+00:00",
+  "updated_at": "2026-11-16T14:41:31.079999+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره نماز",
@@ -45,16 +45,28 @@
       "sequence": 25,
       "updated_at": "2026-11-16T14:40:22.417355+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره تعلق خمس به خانه ارث‌برده از پدر",
+      "summary": "در این بخش درباره تعلق خمس به خانه ارث‌رسیده از پدر پرسش شد. کارشناس استدلال می‌کند که اگر یقین وجود داشته باشد که خمس بر عهده پدر واجب بوده و پرداخت نشده است، ابتدا باید بدهی‌ها و از جمله خمس قطعی از مال پرداخته شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43883617573-28",
+      "sequence": 28,
+      "updated_at": "2026-11-16T14:41:31.079976+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 28,
-    "segments_transcribed": 26,
-    "editor_attempts": 24,
-    "editor_withheld": 22,
-    "topics_published": 3,
+    "segments_captured": 29,
+    "segments_transcribed": 27,
+    "editor_attempts": 25,
+    "editor_withheld": 23,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T14:40:58.508161+00:00"
+    "last_audio_at": "2026-11-16T14:41:25.536229+00:00"
   }
 }
