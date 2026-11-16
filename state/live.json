@@ -1,84 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "43883617573",
-  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "session": "43899624186",
+  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-16",
-  "started_at": "2026-11-16T14:15:12.917605+00:00",
-  "updated_at": "2026-11-16T15:40:06.279970+00:00",
-  "items": [
-    {
-      "title": "گفت‌وگو درباره احکام طهارت",
-      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43883617573-82",
-      "sequence": 82,
-      "updated_at": "2026-11-16T15:03:07.841718+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره حکم شک در تعداد سجده‌ها پس از سلام نماز",
-      "summary": "در این بخش، کارشناس به پرسش درباره حکم شک در تعداد سجده‌های رکعت آخر نماز پاسخ می‌دهد؛ به گفته وی، اگر نمازگزار پس از سلام نماز شک کند که یک سجده انجام داده یا دو سجده، اعتنا نمی‌کند، اما اگر این شک پیش از سلام رخ دهد، باید سجده فراموش‌شده را به‌جا آورد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43883617573-101",
-      "sequence": 101,
-      "updated_at": "2026-11-16T15:10:41.519321+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره تعلق خمس به کفن تهیه شده از درآمد",
-      "summary": "در این بخش، کارشناس درباره تعلق خمس به کفن‌هایی که از محل درآمد شخص تهیه شده است، استدلال می‌کند و پاسخ می‌دهد که اگر کفن از درآمد تهیه شده باشد، پرداخت خمس آن لازم است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43883617573-112",
-      "sequence": 112,
-      "updated_at": "2026-11-16T15:15:03.320826+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43883617573-128",
-      "sequence": 128,
-      "updated_at": "2026-11-16T15:21:26.627113+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره حکم قضا روزه بیمار دچار سکته",
-      "summary": "در این بخش، بیننده‌ای به نام هدیه حسینی از افغانستان پرسشی مطرح کرد. به گفته این بیننده، مادر شوهرش حدود سی سال است که بر اثر سکته مریض بوده و در تمام این سال‌ها توانایی گرفتن روزه را نداشته و اکنون نیز همچنان بیمار است. کارشناس برنامه به این پرسش درباره وضعیت قضا روزه پاسخ می‌دهد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43883617573-130",
-      "sequence": 130,
-      "updated_at": "2026-11-16T15:22:10.989274+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-16T15:45:18.159497+00:00",
+  "updated_at": "2026-11-16T16:00:00.000290+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 150,
-    "editor_attempts": 134,
-    "editor_withheld": 127,
-    "topics_published": 13,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T15:39:42.609500+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
