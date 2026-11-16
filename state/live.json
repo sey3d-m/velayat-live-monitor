@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T14:15:12.917605+00:00",
-  "updated_at": "2026-11-16T14:45:50.393017+00:00",
+  "updated_at": "2026-11-16T14:46:33.354764+00:00",
   "items": [
     {
       "title": "پرسش درباره احکام نماز و نفاس جنین سقط‌شده",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 40,
-    "segments_transcribed": 38,
-    "editor_attempts": 36,
-    "editor_withheld": 33,
+    "segments_captured": 42,
+    "segments_transcribed": 40,
+    "editor_attempts": 38,
+    "editor_withheld": 35,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T14:45:47.176205+00:00"
+    "last_audio_at": "2026-11-16T14:46:30.288452+00:00"
   }
 }
