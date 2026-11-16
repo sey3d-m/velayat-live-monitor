@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T14:15:12.917605+00:00",
-  "updated_at": "2026-11-16T14:37:02.274674+00:00",
+  "updated_at": "2026-11-16T14:37:26.855101+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره نماز",
@@ -20,16 +20,28 @@
       "sequence": 12,
       "updated_at": "2026-11-16T14:35:20.684363+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره احکام نماز و نفاس جنین سقط‌شده",
+      "summary": "در این بخش، پرسش درباره احکام نماز زنی مطرح شد که جنین چهارماهه او سقط شده است. کارشناس بر اساس نظر مکارم شیرازی استدلال می‌کند که اگر خلقت بچه کامل بوده و به دنیا آمده باشد، خون دیده شده حکم نفاس را دارد و باید احکام مربوط به آن رعایت شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43883617573-18",
+      "sequence": 18,
+      "updated_at": "2026-11-16T14:37:26.855078+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 18,
-    "segments_transcribed": 16,
-    "editor_attempts": 14,
-    "editor_withheld": 13,
-    "topics_published": 1,
+    "segments_captured": 19,
+    "segments_transcribed": 17,
+    "editor_attempts": 15,
+    "editor_withheld": 14,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T14:36:59.450096+00:00"
+    "last_audio_at": "2026-11-16T14:37:22.457552+00:00"
   }
 }
