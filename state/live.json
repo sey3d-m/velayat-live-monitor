@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T15:45:18.159497+00:00",
-  "updated_at": "2026-11-16T16:45:27.176007+00:00",
+  "updated_at": "2026-11-16T16:46:19.996784+00:00",
   "items": [
     {
       "title": "پرسش درباره جواز شفاجویی و استناد کارشناس به منابع اهل سنت",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 114,
-    "segments_transcribed": 113,
-    "editor_attempts": 109,
-    "editor_withheld": 101,
+    "segments_captured": 116,
+    "segments_transcribed": 115,
+    "editor_attempts": 111,
+    "editor_withheld": 103,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T16:45:24.201967+00:00"
+    "last_audio_at": "2026-11-16T16:46:07.751185+00:00"
   }
 }
