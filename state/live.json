@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T14:15:12.917605+00:00",
-  "updated_at": "2026-11-16T14:51:23.718676+00:00",
+  "updated_at": "2026-11-16T14:51:49.871753+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره زیارت",
-      "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43883617573-25",
-      "sequence": 25,
-      "updated_at": "2026-11-16T14:40:22.417355+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره تعلق خمس به خانه ارث‌برده از پدر",
       "summary": "در این بخش درباره تعلق خمس به خانه ارث‌رسیده از پدر پرسش شد. کارشناس استدلال می‌کند که اگر یقین وجود داشته باشد که خمس بر عهده پدر واجب بوده و پرداخت نشده است، ابتدا باید بدهی‌ها و از جمله خمس قطعی از مال پرداخته شود.",
@@ -70,16 +57,28 @@
       "sequence": 46,
       "updated_at": "2026-11-16T14:48:41.672448+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی حکم و محدوده تنبیه بدنی کودک در اظهارات کارشناس",
+      "summary": "در این بخش درباره حدود تنبیه بدنی کودک گفتگو شد. کارشناس استدلال می‌کند که اگر تنبیه به سرخ شدن بدن منجر شود دیه دارد و حتی برای کودک کوچک نیز باید دیه پرداخت یا حلالیت طلبید. به گفته کارشناس، تنبیه بدنی به قصد تربیت و تأدیب که به کبودی یا سرخی بدن منجر شود، مجاز دانسته نمی‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43883617573-54",
+      "sequence": 54,
+      "updated_at": "2026-11-16T14:51:49.871729+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 54,
-    "segments_transcribed": 52,
-    "editor_attempts": 49,
-    "editor_withheld": 45,
-    "topics_published": 7,
+    "segments_captured": 55,
+    "segments_transcribed": 53,
+    "editor_attempts": 50,
+    "editor_withheld": 46,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T14:51:20.662734+00:00"
+    "last_audio_at": "2026-11-16T14:51:44.905839+00:00"
   }
 }
