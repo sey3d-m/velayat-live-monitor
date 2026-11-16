@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T17:15:11.815987+00:00",
-  "updated_at": "2026-11-16T17:42:39.408461+00:00",
+  "updated_at": "2026-11-16T17:43:15.645211+00:00",
   "items": [
-    {
-      "title": "بررسی استدلال درباره نفی نسبت فرزند به خدا و جایگاه عیسی",
-      "summary": "در این بخش کارشناس با استناد به آیه‌ای درباره پرهیز از نسبت ناروا به خدا، تأکید می‌کند که عیسی پسر خدا نیست بلکه مسیح و فرستاده اوست و نباید صفاتی چون فرزندی خدا را برای او مطرح کرد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43916244330-14",
-      "sequence": 14,
-      "updated_at": "2026-11-16T17:35:49.876033+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی ادعای یهود درباره عزیر در گفتار کارشناس",
       "summary": "در این بخش کارشناس استدلال می‌کند که گروهی از یهود قائل به فرزندی عزیر بودند و در این زمینه به آیات شریفه استناد کرده و عبارت منسوب به آنان را مطرح می‌کند.",
@@ -69,16 +57,29 @@
       "sequence": 26,
       "updated_at": "2026-11-16T17:40:50.209900+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره حدیث و روایت",
+      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43916244330-32",
+      "sequence": 32,
+      "updated_at": "2026-11-16T17:43:15.645190+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 32,
-    "segments_transcribed": 27,
-    "editor_attempts": 26,
-    "editor_withheld": 21,
-    "topics_published": 6,
+    "segments_captured": 33,
+    "segments_transcribed": 28,
+    "editor_attempts": 27,
+    "editor_withheld": 23,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T17:42:34.363907+00:00"
+    "last_audio_at": "2026-11-16T17:42:58.736709+00:00"
   }
 }
