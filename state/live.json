@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T15:45:18.159497+00:00",
-  "updated_at": "2026-11-16T16:52:39.462849+00:00",
+  "updated_at": "2026-11-16T16:53:23.306216+00:00",
   "items": [
     {
       "title": "پرسش درباره حکم شرعی تبرک جستن به آب جمکران برای شفا",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 132,
-    "segments_transcribed": 131,
-    "editor_attempts": 126,
-    "editor_withheld": 118,
+    "segments_captured": 134,
+    "segments_transcribed": 133,
+    "editor_attempts": 128,
+    "editor_withheld": 120,
     "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T16:52:36.531819+00:00"
+    "last_audio_at": "2026-11-16T16:53:19.927222+00:00"
   }
 }
