@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T17:15:11.815987+00:00",
-  "updated_at": "2026-11-16T17:43:29.356826+00:00",
+  "updated_at": "2026-11-16T17:43:38.716972+00:00",
   "items": [
-    {
-      "title": "بررسی ادعای یهود درباره عزیر در گفتار کارشناس",
-      "summary": "در این بخش کارشناس استدلال می‌کند که گروهی از یهود قائل به فرزندی عزیر بودند و در این زمینه به آیات شریفه استناد کرده و عبارت منسوب به آنان را مطرح می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43916244330-17",
-      "sequence": 17,
-      "updated_at": "2026-11-16T17:37:07.589900+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی نقل‌قول طبرسی در کتاب الاحتجاج درباره غالیان",
       "summary": "در این بخش، کارشناس درباره استناد به کتاب الاحتجاج اثر طبرسی و نقل عباراتی در رد گفته‌های غالیان سخن می‌گوید. به گفته کارشناس، در این کتاب مطالبی در رد دیدگاه‌های مختلف و آرای غالیان از سوی امامان علیهم‌السلام روایت شده است.",
@@ -70,14 +58,27 @@
       "sequence": 32,
       "updated_at": "2026-11-16T17:43:15.645190+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره زیارت",
+      "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43916244330-33",
+      "sequence": 33,
+      "updated_at": "2026-11-16T17:43:38.716951+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 34,
     "segments_transcribed": 29,
     "editor_attempts": 28,
-    "editor_withheld": 23,
-    "topics_published": 7,
+    "editor_withheld": 24,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-16T17:43:24.013784+00:00"
