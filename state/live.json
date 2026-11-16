@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T17:15:11.815987+00:00",
-  "updated_at": "2026-11-16T17:45:51.355445+00:00",
+  "updated_at": "2026-11-16T17:46:00.815512+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره گفت‌وگوی مذاهب اسلامی",
-      "summary": "در این بخش از برنامه، موضوع «گفت‌وگوی مذاهب اسلامی» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43916244330-24",
-      "sequence": 24,
-      "updated_at": "2026-11-16T17:39:56.469081+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره احکام طهارت",
       "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -71,6 +58,18 @@
       "sequence": 38,
       "updated_at": "2026-11-16T17:45:35.756550+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره نوع دعا برای حفظ حجت بن الحسن (عج)",
+      "summary": "در این بخش کارشناس به این پرسش می‌پردازد که آیا درباره امام زمان (عج) دعا می‌شود و خدا نگهبان اوست، و استدلال می‌کند که درخواست حفظ و نگهبانی برای حجت ابن الحسن (عج) در قالب دعا مطرح می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43916244330-39",
+      "sequence": 39,
+      "updated_at": "2026-11-16T17:46:00.815489+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -78,7 +77,7 @@
     "segments_transcribed": 35,
     "editor_attempts": 34,
     "editor_withheld": 28,
-    "topics_published": 9,
+    "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-16T17:45:46.210506+00:00"
