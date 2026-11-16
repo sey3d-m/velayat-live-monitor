@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T17:15:11.815987+00:00",
-  "updated_at": "2026-11-16T18:09:04.696059+00:00",
+  "updated_at": "2026-11-16T18:09:53.932631+00:00",
   "items": [
     {
       "title": "بررسی نسبت بیزاری متقابل در روایت درباره رافضی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 98,
-    "segments_transcribed": 90,
-    "editor_attempts": 86,
-    "editor_withheld": 74,
+    "segments_captured": 100,
+    "segments_transcribed": 92,
+    "editor_attempts": 88,
+    "editor_withheld": 76,
     "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T18:08:59.281816+00:00"
+    "last_audio_at": "2026-11-16T18:09:48.058224+00:00"
   }
 }
