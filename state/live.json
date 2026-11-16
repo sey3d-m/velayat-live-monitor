@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T14:15:12.917605+00:00",
-  "updated_at": "2026-11-16T14:56:55.926485+00:00",
+  "updated_at": "2026-11-16T14:57:47.029875+00:00",
   "items": [
     {
       "title": "پرسش درباره تعلق خمس به خانه ارث‌برده از پدر",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 68,
-    "segments_transcribed": 66,
-    "editor_attempts": 63,
-    "editor_withheld": 58,
+    "segments_captured": 70,
+    "segments_transcribed": 68,
+    "editor_attempts": 65,
+    "editor_withheld": 60,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T14:56:53.680562+00:00"
+    "last_audio_at": "2026-11-16T14:57:43.882048+00:00"
   }
 }
