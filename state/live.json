@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T17:15:11.815987+00:00",
-  "updated_at": "2026-11-16T18:36:16.236723+00:00",
+  "updated_at": "2026-11-16T18:37:12.411522+00:00",
   "items": [
     {
       "title": "بررسی آغاز توهین‌ها به روایت کارشناس",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 166,
-    "segments_transcribed": 145,
-    "editor_attempts": 136,
+    "segments_captured": 168,
+    "segments_transcribed": 147,
+    "editor_attempts": 137,
     "editor_withheld": 118,
     "topics_published": 23,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T18:36:12.566024+00:00"
+    "last_audio_at": "2026-11-16T18:37:02.990487+00:00"
   }
 }
