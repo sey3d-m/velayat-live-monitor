@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T17:15:11.815987+00:00",
-  "updated_at": "2026-11-16T17:58:49.740214+00:00",
+  "updated_at": "2026-11-16T17:58:50.966783+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره زیارت",
-      "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43916244330-33",
-      "sequence": 33,
-      "updated_at": "2026-11-16T17:43:38.716951+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره چرایی دعای سلامتی برای امام زمان با وجود مقام الهی",
       "summary": "در این بخش، کارشناس به این پرسش می‌پردازد که اگر اهل‌بیت و امام زمان مقام والای الهی دارند، چرا شیعیان برای سلامتی ایشان دعا می‌کنند. او برای این موضوع به دعای «اللهم کن لولیّک» به عنوان نمونه‌ای از دعا‌های فراوان شیعیان اشاره می‌کند و استدلال خود را در این زمینه مطرح می‌سازد.",
@@ -68,14 +55,27 @@
       "sequence": 60,
       "updated_at": "2026-11-16T17:54:19.687973+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43916244330-71",
+      "sequence": 71,
+      "updated_at": "2026-11-16T17:58:50.966767+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 72,
     "segments_transcribed": 67,
     "editor_attempts": 65,
-    "editor_withheld": 56,
-    "topics_published": 12,
+    "editor_withheld": 57,
+    "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-16T17:58:33.252763+00:00"
