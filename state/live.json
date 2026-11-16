@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T14:15:12.917605+00:00",
-  "updated_at": "2026-11-16T15:14:38.822993+00:00",
+  "updated_at": "2026-11-16T15:15:03.320846+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره روزه",
-      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43883617573-37",
-      "sequence": 37,
-      "updated_at": "2026-11-16T14:45:03.086407+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره تقدم روزه قضا بر روزه مستحبی در ماه رجب",
       "summary": "در این بخش درباره حکم روزه مستحبی در ماه رجب و تقدم روزه قضا بر آن پرسش شد. به گفته کارشناس، اگر فرد روزه قضا بر عهده داشته باشد، ابتدا باید روزه قضا را به جای آورد و امکان گرفتن روزه مستحبی پیش از ادای قضای واجب وجود ندارد.",
@@ -69,16 +56,28 @@
       "sequence": 101,
       "updated_at": "2026-11-16T15:10:41.519321+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره تعلق خمس به کفن تهیه شده از درآمد",
+      "summary": "در این بخش، کارشناس درباره تعلق خمس به کفن‌هایی که از محل درآمد شخص تهیه شده است، استدلال می‌کند و پاسخ می‌دهد که اگر کفن از درآمد تهیه شده باشد، پرداخت خمس آن لازم است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43883617573-112",
+      "sequence": 112,
+      "updated_at": "2026-11-16T15:15:03.320826+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 112,
-    "segments_transcribed": 109,
-    "editor_attempts": 102,
-    "editor_withheld": 96,
-    "topics_published": 10,
+    "segments_captured": 113,
+    "segments_transcribed": 110,
+    "editor_attempts": 103,
+    "editor_withheld": 97,
+    "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T15:14:34.221213+00:00"
+    "last_audio_at": "2026-11-16T15:14:57.904192+00:00"
   }
 }
