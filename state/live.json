@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T15:45:18.159497+00:00",
-  "updated_at": "2026-11-16T16:41:32.841653+00:00",
+  "updated_at": "2026-11-16T16:42:09.907323+00:00",
   "items": [
     {
       "title": "بررسی استعانت از پیامبر در روایتی از کارشناس شبکه ولایت",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 104,
-    "segments_transcribed": 103,
-    "editor_attempts": 99,
-    "editor_withheld": 92,
+    "segments_captured": 106,
+    "segments_transcribed": 105,
+    "editor_attempts": 101,
+    "editor_withheld": 93,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T16:41:28.523205+00:00"
+    "last_audio_at": "2026-11-16T16:42:06.725926+00:00"
   }
 }
