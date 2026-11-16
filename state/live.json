@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T15:45:18.159497+00:00",
-  "updated_at": "2026-11-16T17:04:39.507110+00:00",
+  "updated_at": "2026-11-16T17:04:40.899395+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره زیارت",
-      "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43899624186-112",
-      "sequence": 112,
-      "updated_at": "2026-11-16T16:45:04.080910+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره نماز جماعت",
       "summary": "در این بخش از برنامه، موضوع «نماز جماعت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,6 +57,18 @@
       "sequence": 159,
       "updated_at": "2026-11-16T17:03:51.776312+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی عدم تناقض شهادت ولی خدا با علم غیب اهل‌بیت",
+      "summary": "در این بخش کارشناس استدلال می‌کند که شهادت ولی خدا و دفع این خطر با اعتقاد به علم غیب اهل‌بیت منافاتی ندارد؛ زیرا به گفته کارشناس، خداوند بخشی از علم غیب را به اهل‌بیت عطا کرده و بخشی دیگر را مختص خود نگه داشته است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43899624186-161",
+      "sequence": 161,
+      "updated_at": "2026-11-16T17:04:40.899372+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -77,7 +76,7 @@
     "segments_transcribed": 161,
     "editor_attempts": 154,
     "editor_withheld": 144,
-    "topics_published": 17,
+    "topics_published": 18,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-16T17:04:36.443832+00:00"
