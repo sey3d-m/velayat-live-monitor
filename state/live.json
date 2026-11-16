@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T14:15:12.917605+00:00",
-  "updated_at": "2026-11-16T14:48:12.728411+00:00",
+  "updated_at": "2026-11-16T14:48:41.672471+00:00",
   "items": [
-    {
-      "title": "پرسش درباره احکام نماز و نفاس جنین سقط‌شده",
-      "summary": "در این بخش، پرسش درباره احکام نماز زنی مطرح شد که جنین چهارماهه او سقط شده است. کارشناس بر اساس نظر مکارم شیرازی استدلال می‌کند که اگر خلقت بچه کامل بوده و به دنیا آمده باشد، خون دیده شده حکم نفاس را دارد و باید احکام مربوط به آن رعایت شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43883617573-18",
-      "sequence": 18,
-      "updated_at": "2026-11-16T14:37:26.855078+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره زیارت",
       "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +58,28 @@
       "sequence": 37,
       "updated_at": "2026-11-16T14:45:03.086407+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره تقدم روزه قضا بر روزه مستحبی در ماه رجب",
+      "summary": "در این بخش درباره حکم روزه مستحبی در ماه رجب و تقدم روزه قضا بر آن پرسش شد. به گفته کارشناس، اگر فرد روزه قضا بر عهده داشته باشد، ابتدا باید روزه قضا را به جای آورد و امکان گرفتن روزه مستحبی پیش از ادای قضای واجب وجود ندارد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43883617573-46",
+      "sequence": 46,
+      "updated_at": "2026-11-16T14:48:41.672448+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 46,
-    "segments_transcribed": 44,
-    "editor_attempts": 42,
-    "editor_withheld": 39,
-    "topics_published": 6,
+    "segments_captured": 47,
+    "segments_transcribed": 45,
+    "editor_attempts": 43,
+    "editor_withheld": 40,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T14:48:09.636923+00:00"
+    "last_audio_at": "2026-11-16T14:48:33.871322+00:00"
   }
 }
