@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T17:15:11.815987+00:00",
-  "updated_at": "2026-11-16T17:37:04.152279+00:00",
+  "updated_at": "2026-11-16T17:37:07.589921+00:00",
   "items": [
     {
       "title": "پرسش درباره استدلال قرآنی پیرامون غلو نصارا",
@@ -31,6 +31,18 @@
       "sequence": 14,
       "updated_at": "2026-11-16T17:35:49.876033+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ادعای یهود درباره عزیر در گفتار کارشناس",
+      "summary": "در این بخش کارشناس استدلال می‌کند که گروهی از یهود قائل به فرزندی عزیر بودند و در این زمینه به آیات شریفه استناد کرده و عبارت منسوب به آنان را مطرح می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43916244330-17",
+      "sequence": 17,
+      "updated_at": "2026-11-16T17:37:07.589900+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -38,7 +50,7 @@
     "segments_transcribed": 13,
     "editor_attempts": 12,
     "editor_withheld": 9,
-    "topics_published": 2,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-16T17:36:58.773508+00:00"
