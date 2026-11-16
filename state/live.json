@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T15:45:18.159497+00:00",
-  "updated_at": "2026-11-16T16:25:25.816490+00:00",
+  "updated_at": "2026-11-16T16:25:53.307216+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره حدیث و روایت",
-      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43899624186-20",
-      "sequence": 20,
-      "updated_at": "2026-11-16T16:08:15.936817+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
       "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +57,28 @@
       "sequence": 42,
       "updated_at": "2026-11-16T16:17:00.146043+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی استعانت از پیامبر در روایتی از کارشناس شبکه ولایت",
+      "summary": "در این بخش کارشناس استدلال می‌کند که استعانت از پیامبر اسلام، چه در زمان حیات و چه پس از رحلت ایشان، در روایات مطرح شده و تا پیش از ظهور ابن تیمیه امری مستحب شناخته می‌شده است؛ این ادعا به عنوان یک گزارش از سخنان مطرح‌شده در برنامه بازگو می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43899624186-64",
+      "sequence": 64,
+      "updated_at": "2026-11-16T16:25:53.307192+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 64,
-    "segments_transcribed": 63,
-    "editor_attempts": 61,
-    "editor_withheld": 58,
-    "topics_published": 7,
+    "segments_captured": 65,
+    "segments_transcribed": 64,
+    "editor_attempts": 62,
+    "editor_withheld": 59,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T16:25:22.997664+00:00"
+    "last_audio_at": "2026-11-16T16:25:47.885136+00:00"
   }
 }
