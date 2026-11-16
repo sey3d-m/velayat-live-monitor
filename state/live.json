@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T15:45:18.159497+00:00",
-  "updated_at": "2026-11-16T16:12:33.740450+00:00",
+  "updated_at": "2026-11-16T16:12:35.113567+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره احکام طهارت",
@@ -46,14 +46,27 @@
       "sequence": 20,
       "updated_at": "2026-11-16T16:08:15.936817+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43899624186-31",
+      "sequence": 31,
+      "updated_at": "2026-11-16T16:12:35.113544+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 32,
     "segments_transcribed": 31,
     "editor_attempts": 30,
-    "editor_withheld": 29,
-    "topics_published": 3,
+    "editor_withheld": 30,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-16T16:12:30.704661+00:00"
