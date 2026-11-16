@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T15:45:18.159497+00:00",
-  "updated_at": "2026-11-16T16:07:49.721091+00:00",
+  "updated_at": "2026-11-16T16:08:15.936842+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره احکام طهارت",
@@ -33,16 +33,29 @@
       "sequence": 9,
       "updated_at": "2026-11-16T16:03:54.427777+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره حدیث و روایت",
+      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43899624186-20",
+      "sequence": 20,
+      "updated_at": "2026-11-16T16:08:15.936817+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 20,
-    "segments_transcribed": 19,
-    "editor_attempts": 18,
-    "editor_withheld": 17,
-    "topics_published": 2,
+    "segments_captured": 21,
+    "segments_transcribed": 20,
+    "editor_attempts": 19,
+    "editor_withheld": 19,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T16:07:47.065064+00:00"
+    "last_audio_at": "2026-11-16T16:08:11.936879+00:00"
   }
 }
