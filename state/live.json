@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T17:15:11.815987+00:00",
-  "updated_at": "2026-11-16T17:39:56.469102+00:00",
+  "updated_at": "2026-11-16T17:40:16.926865+00:00",
   "items": [
     {
       "title": "پرسش درباره استدلال قرآنی پیرامون غلو نصارا",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 25,
-    "segments_transcribed": 20,
-    "editor_attempts": 19,
+    "segments_captured": 26,
+    "segments_transcribed": 21,
+    "editor_attempts": 20,
     "editor_withheld": 15,
     "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T17:39:46.437437+00:00"
+    "last_audio_at": "2026-11-16T17:40:11.788230+00:00"
   }
 }
