@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "ended",
   "network": "velayat_farsi",
   "session": "43916244330",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T17:15:11.815987+00:00",
-  "updated_at": "2026-11-16T18:39:30.893979+00:00",
+  "updated_at": "2026-11-16T18:40:13.213636+00:00",
   "items": [
     {
       "title": "بررسی آغاز توهین‌ها به روایت کارشناس",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 174,
+    "segments_captured": 175,
     "segments_transcribed": 152,
     "editor_attempts": 142,
-    "editor_withheld": 123,
+    "editor_withheld": 124,
     "topics_published": 23,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T18:39:24.778810+00:00"
+    "last_audio_at": "2026-11-16T18:39:49.275951+00:00"
   }
 }
