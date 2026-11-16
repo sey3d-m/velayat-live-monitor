@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T15:45:18.159497+00:00",
-  "updated_at": "2026-11-16T16:35:03.670700+00:00",
+  "updated_at": "2026-11-16T16:35:28.110485+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره حضرت عباس",
-      "summary": "در این بخش از برنامه، موضوع «حضرت عباس» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43899624186-37",
-      "sequence": 37,
-      "updated_at": "2026-11-16T16:15:06.287026+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره استمداد و درخواست حاجت از پیامبر در نگاه کارشناس",
       "summary": "در این بخش کارشناس استدلال می‌کند که در صدر اسلام برای انجام کارها استغاثه و استعانت انجام می‌شده و حتی حاجات ظاهری نیز به گفته وی، از خود پیامبر درخواست می‌شده است؛ موضوعی که درباره حدود و کیفیت این درخواست‌ها در گفت‌وگو مطرح شد.",
@@ -68,16 +55,28 @@
       "sequence": 87,
       "updated_at": "2026-11-16T16:35:03.670680+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره حکم شرعی تبرک جستن به آب جمکران برای شفا",
+      "summary": "در این بخش، کارشناس به پرسش درباره حکم شرعی استفاده از آب جمکران برای شفا و این احتمال که آیا این عمل شرک محسوب می‌شود یا خیر، می‌پردازد و دیدگاه خود را پیرامون این موضوع مطرح می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43899624186-88",
+      "sequence": 88,
+      "updated_at": "2026-11-16T16:35:28.110462+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 88,
-    "segments_transcribed": 87,
-    "editor_attempts": 84,
+    "segments_captured": 89,
+    "segments_transcribed": 88,
+    "editor_attempts": 85,
     "editor_withheld": 80,
-    "topics_published": 9,
+    "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T16:34:59.517594+00:00"
+    "last_audio_at": "2026-11-16T16:35:22.819392+00:00"
   }
 }
