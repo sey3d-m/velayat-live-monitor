@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T15:45:18.159497+00:00",
-  "updated_at": "2026-11-16T16:16:35.362337+00:00",
+  "updated_at": "2026-11-16T16:17:00.146064+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره دیدگاه وهابیت درباره توسل به اهل‌بیت و صالحان",
-      "summary": "در این بخش از برنامه، کارشناس به موضوع توسل پرداخته و اشاره می‌کند که وهابیت عمل کسانی را که به اهل‌بیت، صالحان و بزرگان متوسل می‌شوند، شرک می‌دانند. در این گفت‌وگو به ادعای مخالفان توسل و برچسب شرک به این عمل اشاره شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "editor_mode": "audio_grounded_topic",
-      "id": "43899624186-9",
-      "sequence": 9,
-      "updated_at": "2026-11-16T16:03:54.427777+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره حدیث و روایت",
       "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -71,16 +58,28 @@
       "sequence": 41,
       "updated_at": "2026-11-16T16:16:35.362320+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی استمداد از پیامبر و استناد به روایات در دعا",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که در صدر اسلام از پیامبر (ص) استعانت گرفته می‌شده و ایشان مخاطب دعا قرار می‌گرفتند. به گفته وی، این موضوع در روایات زیادی ذکر شده و نمونه آن در روایتی مربوط به توسل به آغاز رسول الله در منابع مختلف آمده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43899624186-42",
+      "sequence": 42,
+      "updated_at": "2026-11-16T16:17:00.146043+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 42,
-    "segments_transcribed": 41,
-    "editor_attempts": 40,
+    "segments_captured": 43,
+    "segments_transcribed": 42,
+    "editor_attempts": 41,
     "editor_withheld": 39,
-    "topics_published": 6,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T16:16:31.564705+00:00"
+    "last_audio_at": "2026-11-16T16:16:56.445628+00:00"
   }
 }
