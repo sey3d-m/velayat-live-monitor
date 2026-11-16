@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T17:15:11.815987+00:00",
-  "updated_at": "2026-11-16T17:40:50.209921+00:00",
+  "updated_at": "2026-11-16T17:41:08.515089+00:00",
   "items": [
     {
       "title": "بررسی استدلال درباره نفی نسبت فرزند به خدا و جایگاه عیسی",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 27,
-    "segments_transcribed": 22,
-    "editor_attempts": 21,
+    "segments_captured": 28,
+    "segments_transcribed": 23,
+    "editor_attempts": 22,
     "editor_withheld": 17,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T17:40:36.204349+00:00"
+    "last_audio_at": "2026-11-16T17:41:01.514293+00:00"
   }
 }
