@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T17:15:11.815987+00:00",
-  "updated_at": "2026-11-16T18:16:18.125316+00:00",
+  "updated_at": "2026-11-16T18:16:43.409592+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43916244330-71",
-      "sequence": 71,
-      "updated_at": "2026-11-16T17:58:50.966767+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی استدلال درباره انحصار حق حکم به خدا و برداشت از عبارت حکمه اولی",
       "summary": "در این بخش کارشناس استدلال می‌کند که حق صدور حکم اولی تنها متعلق به خداوند است و امر و نهی به او اختصاص دارد. به گفته وی، از تعابیری مانند «حکمه اولی» تلاش شده است تا معنایی درباره ذات امیرالمؤمنین علیه‌السلام برداشت شود.",
@@ -68,16 +55,28 @@
       "sequence": 99,
       "updated_at": "2026-11-16T18:09:55.499023+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره واکنش به توهین و آغاز سب در منابر",
+      "summary": "در این بخش کارشناس استدلال می‌کند که اگر به مقدسات توهین شود، طبیعی است که طرف مقابل مقابله به مثل کند. به گفته کارشناس، آغازگر اصلی کسی است که شروع کرده و ادعا شده است که سب حضرت علی علیه‌السلام بالا برده شده و بالای منابر مطرح گشته است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43916244330-116",
+      "sequence": 116,
+      "updated_at": "2026-11-16T18:16:43.409573+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 116,
-    "segments_transcribed": 108,
-    "editor_attempts": 104,
-    "editor_withheld": 91,
-    "topics_published": 17,
+    "segments_captured": 117,
+    "segments_transcribed": 109,
+    "editor_attempts": 105,
+    "editor_withheld": 92,
+    "topics_published": 18,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T18:16:11.316156+00:00"
+    "last_audio_at": "2026-11-16T18:16:36.724447+00:00"
   }
 }
