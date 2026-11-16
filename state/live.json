@@ -1,84 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "43899624186",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "43916244330",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-16",
-  "started_at": "2026-11-16T15:45:18.159497+00:00",
-  "updated_at": "2026-11-16T17:10:05.896041+00:00",
-  "items": [
-    {
-      "title": "گفت‌وگو درباره نماز جماعت",
-      "summary": "در این بخش از برنامه، موضوع «نماز جماعت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43899624186-116",
-      "sequence": 116,
-      "updated_at": "2026-11-16T16:46:35.730900+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره گفت‌وگوی مذاهب اسلامی",
-      "summary": "در این بخش از برنامه، موضوع «گفت‌وگوی مذاهب اسلامی» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43899624186-143",
-      "sequence": 143,
-      "updated_at": "2026-11-16T16:57:25.128556+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره زیر سؤال رفتن قرآن و وحی در سخنان اخیر",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که برخی اظهارات درباره ازخودگذشتگی و جنگ‌گزشتگی، اصل قرآن، وحی و آیات الهی را زیر سؤال می‌برد. وی از اهل‌سنت درخواست می‌کند به میدان آمده و این سخنان را رد کنند؛ زیرا به گفته او این دیدگاه‌ها به پایگاه اعتقادی همه اهل‌سنت مربوط نیست و تنها برای دفاع مطرح شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "43899624186-150",
-      "sequence": 150,
-      "updated_at": "2026-11-16T17:00:12.763095+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره تفاوت فرار از جنگ و ایستادگی در جنگ اُحد",
-      "summary": "در این بخش کارشناس استدلال می‌کند که فرار برخی صحابه در جنگ احد با وجود احتمال خطا، فضیلت به شمار نمی‌رود و پایداری امیرالمومنین در میان معرکه فضیلتی متمایز است که با آن قابل مقایسه نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43899624186-159",
-      "sequence": 159,
-      "updated_at": "2026-11-16T17:03:51.776312+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی عدم تناقض شهادت ولی خدا با علم غیب اهل‌بیت",
-      "summary": "در این بخش کارشناس استدلال می‌کند که شهادت ولی خدا و دفع این خطر با اعتقاد به علم غیب اهل‌بیت منافاتی ندارد؛ زیرا به گفته کارشناس، خداوند بخشی از علم غیب را به اهل‌بیت عطا کرده و بخشی دیگر را مختص خود نگه داشته است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43899624186-161",
-      "sequence": 161,
-      "updated_at": "2026-11-16T17:04:40.899372+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-16T17:15:11.815987+00:00",
+  "updated_at": "2026-11-16T17:30:00.000332+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 169,
-    "editor_attempts": 160,
-    "editor_withheld": 150,
-    "topics_published": 18,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T17:09:48.398716+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
