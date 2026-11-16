@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T17:15:11.815987+00:00",
-  "updated_at": "2026-11-16T18:26:39.001610+00:00",
+  "updated_at": "2026-11-16T18:27:29.879882+00:00",
   "items": [
     {
       "title": "پرسش درباره واکنش به توهین و آغاز سب در منابر",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 142,
-    "segments_transcribed": 134,
-    "editor_attempts": 128,
-    "editor_withheld": 111,
+    "segments_captured": 144,
+    "segments_transcribed": 136,
+    "editor_attempts": 130,
+    "editor_withheld": 112,
     "topics_published": 22,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T18:26:35.008070+00:00"
+    "last_audio_at": "2026-11-16T18:27:24.685170+00:00"
   }
 }
