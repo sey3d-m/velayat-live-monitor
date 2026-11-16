@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T17:15:11.815987+00:00",
-  "updated_at": "2026-11-16T17:35:24.836046+00:00",
+  "updated_at": "2026-11-16T17:35:49.876056+00:00",
   "items": [
     {
       "title": "پرسش درباره استدلال قرآنی پیرامون غلو نصارا",
@@ -19,16 +19,28 @@
       "sequence": 12,
       "updated_at": "2026-11-16T17:35:07.978833+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی استدلال درباره نفی نسبت فرزند به خدا و جایگاه عیسی",
+      "summary": "در این بخش کارشناس با استناد به آیه‌ای درباره پرهیز از نسبت ناروا به خدا، تأکید می‌کند که عیسی پسر خدا نیست بلکه مسیح و فرستاده اوست و نباید صفاتی چون فرزندی خدا را برای او مطرح کرد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43916244330-14",
+      "sequence": 14,
+      "updated_at": "2026-11-16T17:35:49.876033+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 14,
-    "segments_transcribed": 9,
-    "editor_attempts": 8,
-    "editor_withheld": 6,
-    "topics_published": 1,
+    "segments_captured": 15,
+    "segments_transcribed": 10,
+    "editor_attempts": 9,
+    "editor_withheld": 7,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T17:35:20.287573+00:00"
+    "last_audio_at": "2026-11-16T17:35:44.289012+00:00"
   }
 }
