@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T17:15:11.815987+00:00",
-  "updated_at": "2026-11-16T17:53:54.482572+00:00",
+  "updated_at": "2026-11-16T17:54:19.687992+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره حدیث و روایت",
-      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "43916244330-32",
-      "sequence": 32,
-      "updated_at": "2026-11-16T17:43:15.645190+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره زیارت",
       "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +56,28 @@
       "sequence": 56,
       "updated_at": "2026-11-16T17:52:42.082797+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نسبت بیزاری متقابل در روایت درباره رافضی",
+      "summary": "در این بخش کارشناس درباره روایتی استدلال می‌کند که کسانی به او نسبت داده می‌شوند و به او توهین می‌کنند و لقب رافضی می‌گیرند. به گفته کارشناس، در این نقل بیان می‌شود که گوینده از آن‌ها بیزار است و آن‌ها نیز از او بیزارند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "43916244330-60",
+      "sequence": 60,
+      "updated_at": "2026-11-16T17:54:19.687973+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 60,
-    "segments_transcribed": 55,
-    "editor_attempts": 53,
-    "editor_withheld": 45,
-    "topics_published": 11,
+    "segments_captured": 61,
+    "segments_transcribed": 56,
+    "editor_attempts": 54,
+    "editor_withheld": 46,
+    "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T17:53:49.373576+00:00"
+    "last_audio_at": "2026-11-16T17:54:13.787411+00:00"
   }
 }
