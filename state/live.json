@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T14:15:12.917605+00:00",
-  "updated_at": "2026-11-16T15:02:36.891178+00:00",
+  "updated_at": "2026-11-16T15:03:07.841743+00:00",
   "items": [
-    {
-      "title": "پرسش درباره تعلق خمس به خانه ارث‌برده از پدر",
-      "summary": "در این بخش درباره تعلق خمس به خانه ارث‌رسیده از پدر پرسش شد. کارشناس استدلال می‌کند که اگر یقین وجود داشته باشد که خمس بر عهده پدر واجب بوده و پرداخت نشده است، ابتدا باید بدهی‌ها و از جمله خمس قطعی از مال پرداخته شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43883617573-28",
-      "sequence": 28,
-      "updated_at": "2026-11-16T14:41:31.079976+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره خمس و زکات",
       "summary": "در این بخش از برنامه، موضوع «خمس و زکات» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +57,29 @@
       "sequence": 54,
       "updated_at": "2026-11-16T14:51:49.871729+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره احکام طهارت",
+      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43883617573-82",
+      "sequence": 82,
+      "updated_at": "2026-11-16T15:03:07.841718+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 82,
-    "segments_transcribed": 80,
-    "editor_attempts": 74,
-    "editor_withheld": 69,
-    "topics_published": 8,
+    "segments_captured": 83,
+    "segments_transcribed": 81,
+    "editor_attempts": 75,
+    "editor_withheld": 71,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T15:02:33.782780+00:00"
+    "last_audio_at": "2026-11-16T15:02:58.104913+00:00"
   }
 }
