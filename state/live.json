@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T17:15:11.815987+00:00",
-  "updated_at": "2026-11-16T18:22:40.218502+00:00",
+  "updated_at": "2026-11-16T18:23:29.071148+00:00",
   "items": [
     {
       "title": "پرسش درباره آیه حکمیت خانواده و انتخاب حکم از دو طایفه",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 132,
-    "segments_transcribed": 124,
-    "editor_attempts": 120,
-    "editor_withheld": 105,
+    "segments_captured": 134,
+    "segments_transcribed": 126,
+    "editor_attempts": 122,
+    "editor_withheld": 107,
     "topics_published": 19,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T18:22:34.485887+00:00"
+    "last_audio_at": "2026-11-16T18:23:23.800620+00:00"
   }
 }
