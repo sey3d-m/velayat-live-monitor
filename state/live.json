@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-16",
   "started_at": "2026-11-16T15:45:18.159497+00:00",
-  "updated_at": "2026-11-16T16:46:19.996784+00:00",
+  "updated_at": "2026-11-16T16:46:35.730924+00:00",
   "items": [
-    {
-      "title": "پرسش درباره جواز شفاجویی و استناد کارشناس به منابع اهل سنت",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که شفاجویی از غیر خدا شرک است و از طرف مقابل پرسش می‌کند اگر شفاجویی از بال مگس باشد چه حکمی دارد. به گفته کارشناس، در صحیح بخاری آمده است که بال مگس شفا می‌دهد و در این زمینه از وهابیون برای پاسخ‌گویی دعوت می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43899624186-87",
-      "sequence": 87,
-      "updated_at": "2026-11-16T16:35:03.670680+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره حکم شرعی تبرک جستن به آب جمکران برای شفا",
       "summary": "در این بخش، کارشناس به پرسش درباره حکم شرعی استفاده از آب جمکران برای شفا و این احتمال که آیا این عمل شرک محسوب می‌شود یا خیر، می‌پردازد و دیدگاه خود را پیرامون این موضوع مطرح می‌کند.",
@@ -68,16 +56,29 @@
       "sequence": 112,
       "updated_at": "2026-11-16T16:45:04.080910+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز جماعت",
+      "summary": "در این بخش از برنامه، موضوع «نماز جماعت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "43899624186-116",
+      "sequence": 116,
+      "updated_at": "2026-11-16T16:46:35.730900+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 116,
-    "segments_transcribed": 115,
-    "editor_attempts": 111,
-    "editor_withheld": 103,
-    "topics_published": 13,
+    "segments_captured": 117,
+    "segments_transcribed": 116,
+    "editor_attempts": 112,
+    "editor_withheld": 105,
+    "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T16:46:07.751185+00:00"
+    "last_audio_at": "2026-11-16T16:46:32.197953+00:00"
   }
 }
