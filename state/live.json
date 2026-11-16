@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "43739947821",
-  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
-  "program_date": "2026-11-15",
-  "started_at": "2026-11-15T17:14:54.423550+00:00",
-  "updated_at": "2026-11-15T18:40:06.191845+00:00",
-  "items": [
-    {
-      "title": "بررسی ویژگی اقلیمی و نحوه تابش آفتاب در مکان اصحاب کهف",
-      "summary": "در این بخش کارشناس استدلال می‌کند که دهانه غار به گونه‌ای قرار داشت که نور مستقیم و سوزان آفتاب به بدن آن‌ها نمی‌خورد تا دچار گرمازدگی و خشکی نشوند. همچنین به گفته وی، قرار گرفتن در بخش پهناور و باز غار موجب جریان داشتن هوای تازه می‌شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43739947821-153",
-      "sequence": 153,
-      "updated_at": "2026-11-15T18:31:26.226910+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی حکمت و نظم در رویدادهای شگفت‌انگیز و معجزات",
-      "summary": "در این بخش کارشناس استدلال می‌کند که فراهم شدن شرایط اقلیمی و زاویه تابش خورشید نشان می‌دهد معجزات الهی نیز بر پایه حکمت، نظم و برنامه‌ریزی دقیق کیهانی پیش می‌روند و درباره حساب‌شده بودن این چیدمان پرسش مطرح می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43739947821-155",
-      "sequence": 155,
-      "updated_at": "2026-11-15T18:32:14.848518+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره چرایی نحوه بیان عدد سال‌های خواب اصحاب کهف در قرآن",
-      "summary": "در این بخش، کارشناس درباره چرایی تفاوت بیان عدد سال‌های توقف اصحاب کهف در غار در آیه بیست و پنج سوره کهف پرسش مطرح می‌کند و می‌پرسد چرا قرآن به جای گفتن سیصد و نه سال، ابتدا سیصد سال و سپس نه سال را ذکر کرده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "id": "43739947821-156",
-      "sequence": 156,
-      "updated_at": "2026-11-15T18:32:39.397265+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره تفاوت تقویم شمسی و قمری و اختلاف روزهای آن",
-      "summary": "در این بخش کارشناس درباره تفاوت شمارش زمان با تقویم‌های اصلی صحبت می‌کند. به گفته کارشناس، انسان‌ها از دو تقویم شمسی و کمری استفاده می‌کنند که یک سال شمسی حدود سیصد و شصت و پنج روز و سال کمری حدود سیصد و پنجاه و چهار روز است و بر همین اساس سال کمری تقریباً یازده روز کوتاه‌تر است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "id": "43739947821-157",
-      "sequence": 157,
-      "updated_at": "2026-11-15T18:33:05.491527+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره تطابق سال شمسی و قمری در کلام خدا",
-      "summary": "در این بخش کارشناس استدلال می‌کند که تطابق سیصد سال شمسی با سیصد و نه سال قمری، انسان را به تفکر در باب دقت و حکمت کلام خداوند وامی‌دارد؛ امری که به گفته وی نشانه‌ای از هماهنگی در این محاسبات است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43739947821-159",
-      "sequence": 159,
-      "updated_at": "2026-11-15T18:33:52.858988+00:00",
-      "speaker": null
-    }
-  ],
+  "session": "43883617573",
+  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "program_date": "2026-11-16",
+  "started_at": "2026-11-16T14:15:12.917605+00:00",
+  "updated_at": "2026-11-16T14:30:00.000334+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 154,
-    "editor_attempts": 126,
-    "editor_withheld": 107,
-    "topics_published": 25,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-15T18:39:46.281542+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
