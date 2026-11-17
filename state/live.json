@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T15:45:20.720821+00:00",
-  "updated_at": "2026-11-17T16:11:49.771792+00:00",
+  "updated_at": "2026-11-17T16:12:23.307744+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره زیارت",
@@ -45,16 +45,29 @@
       "sequence": 28,
       "updated_at": "2026-11-17T16:11:32.324119+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره روزه",
+      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44117729204-30",
+      "sequence": 30,
+      "updated_at": "2026-11-17T16:12:23.307718+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 30,
-    "segments_transcribed": 25,
-    "editor_attempts": 19,
-    "editor_withheld": 17,
-    "topics_published": 3,
+    "segments_captured": 31,
+    "segments_transcribed": 26,
+    "editor_attempts": 20,
+    "editor_withheld": 19,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-17T16:11:46.630851+00:00"
+    "last_audio_at": "2026-11-17T16:12:10.962230+00:00"
   }
 }
