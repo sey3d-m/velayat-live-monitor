@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T15:45:20.720821+00:00",
-  "updated_at": "2026-11-17T17:07:48.074260+00:00",
+  "updated_at": "2026-11-17T17:08:37.061210+00:00",
   "items": [
     {
       "title": "پرسش درباره توصیف امام علی از همسری حضرت زهرا",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 170,
-    "segments_transcribed": 158,
-    "editor_attempts": 134,
+    "segments_captured": 172,
+    "segments_transcribed": 160,
+    "editor_attempts": 135,
     "editor_withheld": 130,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-17T17:07:46.478745+00:00"
+    "last_audio_at": "2026-11-17T17:08:35.442233+00:00"
   }
 }
