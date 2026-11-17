@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T15:45:20.720821+00:00",
-  "updated_at": "2026-11-17T16:44:39.544624+00:00",
+  "updated_at": "2026-11-17T16:45:28.779559+00:00",
   "items": [
     {
       "title": "پرسش درباره کیفیت همسرداری امام علی از زبان فاطمه زهرا",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 112,
-    "segments_transcribed": 103,
-    "editor_attempts": 92,
-    "editor_withheld": 88,
+    "segments_captured": 114,
+    "segments_transcribed": 105,
+    "editor_attempts": 94,
+    "editor_withheld": 90,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-17T16:44:36.028058+00:00"
+    "last_audio_at": "2026-11-17T16:45:25.626055+00:00"
   }
 }
