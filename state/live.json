@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T17:15:04.384695+00:00",
-  "updated_at": "2026-11-17T17:53:52.055535+00:00",
+  "updated_at": "2026-11-17T17:54:20.109505+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره خبر ارتحال آیت‌الله العظمی وحید خراسانی",
-      "summary": "در این بخش، کارشناس به اعلام خبر ارتحال مرجع تقلید، حضرت آیت‌الله وحید خراسانی، اشاره کرده و از این واقعه ابراز تأسف نمود؛ همچنین بر لزوم پاسخگویی به شبهات با بهترین بیانات تأکید کرد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "44134720085-7",
-      "sequence": 7,
-      "updated_at": "2026-11-17T17:33:14.046453+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره قصه حضرت زکریا در ابتدای سوره مریم",
       "summary": "در این بخش، کارشناس به ذکر داستانی از ابتدای سوره مریم می‌پردازد و استدلال می‌کند که حضرت زکریا با وجود کهولت سن خود و عقیم بودن همسرش، از خداوند طلب فرزند کرد.",
@@ -69,16 +57,28 @@
       "sequence": 54,
       "updated_at": "2026-11-17T17:51:53.254258+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره تفاوت تعابیر نزول وحی در قرآن",
+      "summary": "در این بخش، کارشناس درباره نحوه نزول وحی و تفاوت میان تعابیر مختلف قرآنی استدلال می‌کند؛ از جمله اینکه در جایی نزول به فرشتگان مدبرات یا روح‌الامین و در جای دیگر نزول در شب مبارک مطرح شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44134720085-60",
+      "sequence": 60,
+      "updated_at": "2026-11-17T17:54:20.109481+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 60,
-    "segments_transcribed": 54,
-    "editor_attempts": 49,
-    "editor_withheld": 44,
-    "topics_published": 7,
+    "segments_captured": 61,
+    "segments_transcribed": 55,
+    "editor_attempts": 50,
+    "editor_withheld": 45,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-17T17:53:49.332000+00:00"
+    "last_audio_at": "2026-11-17T17:54:14.284453+00:00"
   }
 }
