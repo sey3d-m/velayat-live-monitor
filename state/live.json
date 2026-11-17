@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T17:15:04.384695+00:00",
-  "updated_at": "2026-11-17T18:17:52.286590+00:00",
+  "updated_at": "2026-11-17T18:18:41.356362+00:00",
   "items": [
     {
       "title": "بررسی نقش نادرشاه در فتوحات لشکرش",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 120,
-    "segments_transcribed": 113,
-    "editor_attempts": 104,
-    "editor_withheld": 94,
+    "segments_captured": 122,
+    "segments_transcribed": 115,
+    "editor_attempts": 106,
+    "editor_withheld": 96,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-17T18:17:49.619028+00:00"
+    "last_audio_at": "2026-11-17T18:18:38.318753+00:00"
   }
 }
