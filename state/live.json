@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T17:15:04.384695+00:00",
-  "updated_at": "2026-11-17T17:31:22.829886+00:00",
+  "updated_at": "2026-11-17T17:32:14.171521+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره توسل و انتظار لطف امام زمان",
@@ -22,13 +22,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 4,
-    "segments_transcribed": 3,
-    "editor_attempts": 2,
+    "segments_captured": 6,
+    "segments_transcribed": 4,
+    "editor_attempts": 3,
     "editor_withheld": 1,
     "topics_published": 1,
     "audio_ai_calls": 0,
     "audio_ai_success": 0,
-    "last_audio_at": "2026-11-17T17:31:22.778977+00:00"
+    "last_audio_at": "2026-11-17T17:32:12.426295+00:00"
   }
 }
