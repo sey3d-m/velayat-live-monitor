@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T14:14:53.048541+00:00",
-  "updated_at": "2026-11-17T14:37:13.450468+00:00",
+  "updated_at": "2026-11-17T14:37:55.928718+00:00",
   "items": [
     {
       "title": "پرسش درباره تسلیت ارتحال آیت‌الله وحید خراسانی",
@@ -49,13 +49,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 18,
-    "segments_transcribed": 14,
-    "editor_attempts": 11,
-    "editor_withheld": 10,
+    "segments_captured": 20,
+    "segments_transcribed": 16,
+    "editor_attempts": 13,
+    "editor_withheld": 12,
     "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-17T14:37:05.825996+00:00"
+    "last_audio_at": "2026-11-17T14:37:48.824733+00:00"
   }
 }
