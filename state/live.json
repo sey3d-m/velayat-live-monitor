@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T17:15:04.384695+00:00",
-  "updated_at": "2026-11-17T17:33:05.953022+00:00",
+  "updated_at": "2026-11-17T17:33:14.046480+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره توسل و انتظار لطف امام زمان",
@@ -32,6 +32,18 @@
       "sequence": 6,
       "updated_at": "2026-11-17T17:32:47.005882+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خبر ارتحال آیت‌الله العظمی وحید خراسانی",
+      "summary": "در این بخش، کارشناس به اعلام خبر ارتحال مرجع تقلید، حضرت آیت‌الله وحید خراسانی، اشاره کرده و از این واقعه ابراز تأسف نمود؛ همچنین بر لزوم پاسخگویی به شبهات با بهترین بیانات تأکید کرد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.8,
+      "id": "44134720085-7",
+      "sequence": 7,
+      "updated_at": "2026-11-17T17:33:14.046453+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -39,7 +51,7 @@
     "segments_transcribed": 6,
     "editor_attempts": 5,
     "editor_withheld": 3,
-    "topics_published": 2,
+    "topics_published": 3,
     "audio_ai_calls": 0,
     "audio_ai_success": 0,
     "last_audio_at": "2026-11-17T17:33:02.231845+00:00"
