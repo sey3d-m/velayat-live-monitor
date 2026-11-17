@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T15:45:20.720821+00:00",
-  "updated_at": "2026-11-17T16:26:24.783213+00:00",
+  "updated_at": "2026-11-17T16:27:05.719352+00:00",
   "items": [
     {
       "title": "بررسی وظایف متقابل همسران و اجتناب از روحیه طلبکاری در زندگی",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 66,
-    "segments_transcribed": 61,
-    "editor_attempts": 51,
-    "editor_withheld": 47,
+    "segments_captured": 68,
+    "segments_transcribed": 63,
+    "editor_attempts": 53,
+    "editor_withheld": 49,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-17T16:26:12.669583+00:00"
+    "last_audio_at": "2026-11-17T16:27:02.345038+00:00"
   }
 }
