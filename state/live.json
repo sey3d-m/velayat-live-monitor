@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T15:45:20.720821+00:00",
-  "updated_at": "2026-11-17T16:11:06.222825+00:00",
+  "updated_at": "2026-11-17T16:11:32.324145+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره زیارت",
@@ -33,16 +33,28 @@
       "sequence": 21,
       "updated_at": "2026-11-17T16:08:45.691761+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی وظایف متقابل همسران و اجتناب از روحیه طلبکاری در زندگی",
+      "summary": "در این بخش کارشناس استدلال می‌کند که همسران نباید یکدیگر را طلبکار بدانند، زیرا زندگی با روحیه طلبکاری و عیب‌جویی تلخ می‌شود. به گفته وی، باید بررسی شود که زن و شوهر در مقابل یکدیگر و فرزندان چه وظایفی بر عهده دارند و چگونه باید به آن‌ها عمل کنند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44117729204-28",
+      "sequence": 28,
+      "updated_at": "2026-11-17T16:11:32.324119+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 28,
-    "segments_transcribed": 23,
-    "editor_attempts": 17,
-    "editor_withheld": 16,
-    "topics_published": 2,
+    "segments_captured": 29,
+    "segments_transcribed": 24,
+    "editor_attempts": 18,
+    "editor_withheld": 17,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-17T16:11:03.242784+00:00"
+    "last_audio_at": "2026-11-17T16:11:21.515772+00:00"
   }
 }
