@@ -1,84 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "44100877950",
-  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "session": "44117729204",
+  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-17",
-  "started_at": "2026-11-17T14:14:53.048541+00:00",
-  "updated_at": "2026-11-17T15:40:06.242251+00:00",
-  "items": [
-    {
-      "title": "بررسی مهارت گوش دادن فعال و قدم‌های آن",
-      "summary": "در این بخش کارشناس استدلال می‌کند که گوش دادن فعال یک مهارت قابل یادگیری است و چهار قدم ساده دارد. به گفته وی، نخستین قدم این است که توجه خود را به فرد مقابل بدهیم و هنگام صحبت کردن، به او گوش کنیم.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44100877950-32",
-      "sequence": 32,
-      "updated_at": "2026-11-17T14:43:17.572859+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره امام حسین و عاشورا",
-      "summary": "در این بخش از برنامه، موضوع «امام حسین و عاشورا» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "44100877950-37",
-      "sequence": 37,
-      "updated_at": "2026-11-17T14:45:09.588925+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره حدیث و روایت",
-      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "44100877950-52",
-      "sequence": 52,
-      "updated_at": "2026-11-17T14:51:14.994873+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی مفهوم همدلی و تفکیک آن از موافقت در گفت‌وگو",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که همدلی به معنای موافقت با حرف‌های طرف مقابل یا تأیید سخنان او نیست؛ بلکه همدلی یعنی تلاش برای فهم تجربه دیگران. به گفته کارشناس، رعایت احترام متقابل، گوش دادن و صحبت کردن در گفتگو شرط است و راهنمایی‌هایی در این زمینه ارائه می‌دهد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44100877950-62",
-      "sequence": 62,
-      "updated_at": "2026-11-17T14:55:18.775436+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره احساس عدم درک‌شدن نوجوان توسط خانواده",
-      "summary": "در این بخش کارشناس به طرح این پرسش می‌پردازد که اگر نوجوانی در خانه بگوید هیچ‌کس او را درک نمی‌کند یا نخواهد به خانه برگردد، با این مسئله چگونه باید مواجه شد. به گفته کارشناس، این جمله که هیچ‌کدام از اعضای خانواده من را درک نمی‌کنند، مکرراً از زبان فرزندان شنیده می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44100877950-65",
-      "sequence": 65,
-      "updated_at": "2026-11-17T14:56:33.418160+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-17T15:45:20.720821+00:00",
+  "updated_at": "2026-11-17T16:00:00.000317+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 156,
-    "editor_attempts": 130,
-    "editor_withheld": 127,
-    "topics_published": 8,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-17T15:39:48.335173+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
