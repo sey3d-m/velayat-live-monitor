@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T15:45:20.720821+00:00",
-  "updated_at": "2026-11-17T16:20:42.289041+00:00",
+  "updated_at": "2026-11-17T16:20:46.458396+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره زیارت",
-      "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "44117729204-15",
-      "sequence": 15,
-      "updated_at": "2026-11-17T16:06:46.132897+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره احکام طهارت",
       "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,6 +57,18 @@
       "sequence": 50,
       "updated_at": "2026-11-17T16:20:21.859475+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره توصیف امام علی از همسری حضرت زهرا",
+      "summary": "در این بخش کارشناس به پرسش مطرح‌شده درباره توصیف امیرالمؤمنین از حضرت فاطمه به عنوان همسر پاسخ می‌دهد. به گفته کارشناس، امام در پاسخ فرموده‌اند که ایشان بهترین همراه و همکار در مسیر بندگی خدا و رسیدن به کمال الهی است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44117729204-51",
+      "sequence": 51,
+      "updated_at": "2026-11-17T16:20:46.458370+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -77,7 +76,7 @@
     "segments_transcribed": 47,
     "editor_attempts": 40,
     "editor_withheld": 37,
-    "topics_published": 5,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 1,
     "last_audio_at": "2026-11-17T16:20:39.188670+00:00"
