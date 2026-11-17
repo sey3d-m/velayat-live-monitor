@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T17:15:04.384695+00:00",
-  "updated_at": "2026-11-17T17:51:53.254284+00:00",
+  "updated_at": "2026-11-17T17:52:13.010604+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره خبر ارتحال آیت‌الله العظمی وحید خراسانی",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 55,
-    "segments_transcribed": 49,
-    "editor_attempts": 44,
+    "segments_captured": 56,
+    "segments_transcribed": 50,
+    "editor_attempts": 45,
     "editor_withheld": 40,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-17T17:51:48.373125+00:00"
+    "last_audio_at": "2026-11-17T17:52:10.484866+00:00"
   }
 }
