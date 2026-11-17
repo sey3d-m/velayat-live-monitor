@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T15:45:20.720821+00:00",
-  "updated_at": "2026-11-17T16:08:39.112409+00:00",
+  "updated_at": "2026-11-17T16:08:45.691790+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره زیارت",
@@ -20,14 +20,27 @@
       "sequence": 15,
       "updated_at": "2026-11-17T16:06:46.132897+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره احکام طهارت",
+      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44117729204-21",
+      "sequence": 21,
+      "updated_at": "2026-11-17T16:08:45.691761+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 22,
     "segments_transcribed": 17,
     "editor_attempts": 11,
-    "editor_withheld": 10,
-    "topics_published": 1,
+    "editor_withheld": 11,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 1,
     "last_audio_at": "2026-11-17T16:08:33.815506+00:00"
