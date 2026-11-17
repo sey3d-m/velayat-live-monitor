@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T17:15:04.384695+00:00",
-  "updated_at": "2026-11-17T17:58:44.875922+00:00",
+  "updated_at": "2026-11-17T17:59:24.928359+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره حدیث و روایت",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 72,
-    "segments_transcribed": 66,
-    "editor_attempts": 61,
-    "editor_withheld": 54,
+    "segments_captured": 74,
+    "segments_transcribed": 68,
+    "editor_attempts": 63,
+    "editor_withheld": 55,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-17T17:58:40.131685+00:00"
+    "last_audio_at": "2026-11-17T17:59:22.341390+00:00"
   }
 }
