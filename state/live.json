@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T17:15:04.384695+00:00",
-  "updated_at": "2026-11-17T17:54:41.985449+00:00",
+  "updated_at": "2026-11-17T17:55:08.423262+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قصه حضرت زکریا در ابتدای سوره مریم",
-      "summary": "در این بخش، کارشناس به ذکر داستانی از ابتدای سوره مریم می‌پردازد و استدلال می‌کند که حضرت زکریا با وجود کهولت سن خود و عقیم بودن همسرش، از خداوند طلب فرزند کرد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.95,
-      "editor_mode": "audio_grounded_topic",
-      "id": "44134720085-12",
-      "sequence": 12,
-      "updated_at": "2026-11-17T17:35:18.823353+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره نشانه تشخیص وحی از توهمات",
       "summary": "در این بخش کارشناس درباره راه تشخیص وحی راستین از القائات شیطانی و تخیلات پرسش مطرح می‌کند و ادعا می‌شود در این حالت زبان قفل می‌شود. این پرسش و ادعا به عنوان موضوع مورد بحث در گفت‌وگو مطرح شد.",
@@ -69,16 +56,28 @@
       "sequence": 60,
       "updated_at": "2026-11-17T17:54:20.109481+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نقش نادرشاه در فتوحات لشکرش",
+      "summary": "در این بخش کارشناس استدلال می‌کند که فتوحات منتسب به نادرشاه در یک کشور، شخصاً توسط خود او انجام نشده است؛ بلکه به گفته کارشناس، لشکر این کار را انجام داده و نادرشاه به عنوان فرمانده، تنها دستور داده و خرج و برج لشکر را تأمین کرده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "id": "44134720085-62",
+      "sequence": 62,
+      "updated_at": "2026-11-17T17:55:08.423236+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 62,
-    "segments_transcribed": 56,
-    "editor_attempts": 51,
-    "editor_withheld": 45,
-    "topics_published": 8,
+    "segments_captured": 63,
+    "segments_transcribed": 57,
+    "editor_attempts": 52,
+    "editor_withheld": 46,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-17T17:54:39.260175+00:00"
+    "last_audio_at": "2026-11-17T17:55:04.049501+00:00"
   }
 }
