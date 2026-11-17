@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T17:15:04.384695+00:00",
-  "updated_at": "2026-11-17T17:59:24.928359+00:00",
+  "updated_at": "2026-11-17T17:59:53.895676+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره حدیث و روایت",
-      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "44134720085-32",
-      "sequence": 32,
-      "updated_at": "2026-11-17T17:43:06.315401+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی مفهوم دو نسبتی‌ها در قرآن و نسبت‌دادن افعال",
       "summary": "در این بخش کارشناس استدلال می‌کند که قرآن کریم به موضوع دو نسبتی‌ها یا چند نسبتی‌ها می‌پردازد؛ به گفته وی، گاهی انجام کارها به انسان‌ها، طبیعت یا ملائکه نسبت داده می‌شود و در عین حال به خود خداوند نیز منسوب می‌گردد و نمونه‌هایی از این دست در قرآن کریم وجود دارد.",
@@ -68,16 +55,29 @@
       "sequence": 71,
       "updated_at": "2026-11-17T17:58:44.875897+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره ولایت و غدیر",
+      "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44134720085-74",
+      "sequence": 74,
+      "updated_at": "2026-11-17T17:59:53.895648+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 74,
-    "segments_transcribed": 68,
-    "editor_attempts": 63,
-    "editor_withheld": 55,
-    "topics_published": 10,
+    "segments_captured": 75,
+    "segments_transcribed": 69,
+    "editor_attempts": 64,
+    "editor_withheld": 57,
+    "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-17T17:59:22.341390+00:00"
+    "last_audio_at": "2026-11-17T17:59:46.961399+00:00"
   }
 }
