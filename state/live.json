@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T14:14:53.048541+00:00",
-  "updated_at": "2026-11-17T15:26:36.687453+00:00",
+  "updated_at": "2026-11-17T15:27:28.603264+00:00",
   "items": [
     {
       "title": "بررسی مهارت گوش دادن فعال و قدم‌های آن",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 142,
-    "segments_transcribed": 132,
-    "editor_attempts": 119,
+    "segments_captured": 144,
+    "segments_transcribed": 134,
+    "editor_attempts": 120,
     "editor_withheld": 116,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-17T15:26:33.681787+00:00"
+    "last_audio_at": "2026-11-17T15:27:23.111033+00:00"
   }
 }
