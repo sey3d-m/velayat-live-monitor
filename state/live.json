@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T14:14:53.048541+00:00",
-  "updated_at": "2026-11-17T14:42:44.857410+00:00",
+  "updated_at": "2026-11-17T14:43:17.572881+00:00",
   "items": [
     {
       "title": "پرسش درباره تسلیت ارتحال آیت‌الله وحید خراسانی",
@@ -46,16 +46,28 @@
       "sequence": 13,
       "updated_at": "2026-11-17T14:35:40.739761+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی مهارت گوش دادن فعال و قدم‌های آن",
+      "summary": "در این بخش کارشناس استدلال می‌کند که گوش دادن فعال یک مهارت قابل یادگیری است و چهار قدم ساده دارد. به گفته وی، نخستین قدم این است که توجه خود را به فرد مقابل بدهیم و هنگام صحبت کردن، به او گوش کنیم.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44100877950-32",
+      "sequence": 32,
+      "updated_at": "2026-11-17T14:43:17.572859+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 32,
-    "segments_transcribed": 28,
-    "editor_attempts": 25,
-    "editor_withheld": 24,
-    "topics_published": 3,
+    "segments_captured": 33,
+    "segments_transcribed": 29,
+    "editor_attempts": 26,
+    "editor_withheld": 25,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-17T14:42:39.236520+00:00"
+    "last_audio_at": "2026-11-17T14:43:03.984806+00:00"
   }
 }
