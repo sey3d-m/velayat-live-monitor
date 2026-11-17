@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T14:14:53.048541+00:00",
-  "updated_at": "2026-11-17T14:35:32.596076+00:00",
+  "updated_at": "2026-11-17T14:35:40.739783+00:00",
   "items": [
     {
       "title": "پرسش درباره تسلیت ارتحال آیت‌الله وحید خراسانی",
@@ -33,14 +33,27 @@
       "sequence": 12,
       "updated_at": "2026-11-17T14:35:17.778930+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خانواده و ازدواج",
+      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44100877950-13",
+      "sequence": 13,
+      "updated_at": "2026-11-17T14:35:40.739761+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 14,
     "segments_transcribed": 10,
     "editor_attempts": 7,
-    "editor_withheld": 6,
-    "topics_published": 2,
+    "editor_withheld": 7,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-17T14:35:26.524230+00:00"
