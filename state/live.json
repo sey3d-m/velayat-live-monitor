@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T15:45:20.720821+00:00",
-  "updated_at": "2026-11-17T16:27:49.403908+00:00",
+  "updated_at": "2026-11-17T16:28:04.783119+00:00",
   "items": [
-    {
-      "title": "بررسی وظایف متقابل همسران و اجتناب از روحیه طلبکاری در زندگی",
-      "summary": "در این بخش کارشناس استدلال می‌کند که همسران نباید یکدیگر را طلبکار بدانند، زیرا زندگی با روحیه طلبکاری و عیب‌جویی تلخ می‌شود. به گفته وی، باید بررسی شود که زن و شوهر در مقابل یکدیگر و فرزندان چه وظایفی بر عهده دارند و چگونه باید به آن‌ها عمل کنند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44117729204-28",
-      "sequence": 28,
-      "updated_at": "2026-11-17T16:11:32.324119+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره روزه",
       "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,14 +57,27 @@
       "sequence": 63,
       "updated_at": "2026-11-17T16:25:31.944761+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خانواده و ازدواج",
+      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44117729204-69",
+      "sequence": 69,
+      "updated_at": "2026-11-17T16:28:04.783092+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 70,
     "segments_transcribed": 65,
     "editor_attempts": 55,
-    "editor_withheld": 51,
-    "topics_published": 7,
+    "editor_withheld": 52,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 1,
     "last_audio_at": "2026-11-17T16:27:46.519648+00:00"
