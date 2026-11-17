@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T15:45:20.720821+00:00",
-  "updated_at": "2026-11-17T16:36:41.880706+00:00",
+  "updated_at": "2026-11-17T16:37:08.742458+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره روزه",
-      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "44117729204-30",
-      "sequence": 30,
-      "updated_at": "2026-11-17T16:12:23.307718+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره کیفیت همسرداری امام علی از زبان فاطمه زهرا",
       "summary": "در این بخش کارشناس به پرسش مطرح‌شده درباره ارزیابی زندگی مشترک اشاره می‌کند و توضیح می‌دهد که به گفته نقل ارائه‌شده، فاطمه زهرا در پاسخ به پرسش درباره چگونگی رفتار امام علی به عنوان همسر، ایشان را به عنوان همسری بسیار خوب توصیف کرده است.",
@@ -70,16 +57,29 @@
       "sequence": 69,
       "updated_at": "2026-11-17T16:28:04.783092+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44117729204-92",
+      "sequence": 92,
+      "updated_at": "2026-11-17T16:37:08.742430+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 92,
-    "segments_transcribed": 83,
-    "editor_attempts": 72,
-    "editor_withheld": 68,
-    "topics_published": 8,
+    "segments_captured": 93,
+    "segments_transcribed": 84,
+    "editor_attempts": 73,
+    "editor_withheld": 70,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-17T16:36:38.729052+00:00"
+    "last_audio_at": "2026-11-17T16:36:57.492018+00:00"
   }
 }
