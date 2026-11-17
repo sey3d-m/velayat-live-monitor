@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T17:15:04.384695+00:00",
-  "updated_at": "2026-11-17T17:35:27.608050+00:00",
+  "updated_at": "2026-11-17T17:35:59.274489+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره توسل و انتظار لطف امام زمان",
@@ -57,16 +57,28 @@
       "sequence": 12,
       "updated_at": "2026-11-17T17:35:18.823353+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره نشانه تشخیص وحی از توهمات",
+      "summary": "در این بخش کارشناس درباره راه تشخیص وحی راستین از القائات شیطانی و تخیلات پرسش مطرح می‌کند و ادعا می‌شود در این حالت زبان قفل می‌شود. این پرسش و ادعا به عنوان موضوع مورد بحث در گفت‌وگو مطرح شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44134720085-14",
+      "sequence": 14,
+      "updated_at": "2026-11-17T17:35:59.274465+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 14,
-    "segments_transcribed": 11,
-    "editor_attempts": 10,
-    "editor_withheld": 7,
-    "topics_published": 4,
+    "segments_captured": 15,
+    "segments_transcribed": 12,
+    "editor_attempts": 11,
+    "editor_withheld": 8,
+    "topics_published": 5,
     "audio_ai_calls": 2,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-17T17:35:24.051836+00:00"
+    "last_audio_at": "2026-11-17T17:35:48.782176+00:00"
   }
 }
