@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T17:15:04.384695+00:00",
-  "updated_at": "2026-11-17T17:57:53.299428+00:00",
+  "updated_at": "2026-11-17T17:58:42.688897+00:00",
   "items": [
     {
       "title": "پرسش درباره نشانه تشخیص وحی از توهمات",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 70,
-    "segments_transcribed": 64,
-    "editor_attempts": 59,
-    "editor_withheld": 52,
+    "segments_captured": 72,
+    "segments_transcribed": 66,
+    "editor_attempts": 61,
+    "editor_withheld": 54,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-17T17:57:50.287126+00:00"
+    "last_audio_at": "2026-11-17T17:58:40.131685+00:00"
   }
 }
