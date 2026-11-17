@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T17:15:04.384695+00:00",
-  "updated_at": "2026-11-17T17:42:39.397663+00:00",
+  "updated_at": "2026-11-17T17:43:06.315427+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره توسل و انتظار لطف امام زمان",
-      "summary": "در این بخش کارشناس بیان می‌کند که با توسل به حضرت معصومه و امید به پاسخ استغاثه، و با یاد امام زمان، دلش روشن شده و گریه و التماس کرده است؛ وی می‌افزاید که تنها مانده بوده و این بار حتی واسطه‌ای در کار نبوده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44134720085-0",
-      "sequence": 0,
-      "updated_at": "2026-11-17T17:30:21.209449+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
       "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +57,29 @@
       "sequence": 14,
       "updated_at": "2026-11-17T17:35:59.274465+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره حدیث و روایت",
+      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44134720085-32",
+      "sequence": 32,
+      "updated_at": "2026-11-17T17:43:06.315401+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 32,
-    "segments_transcribed": 29,
-    "editor_attempts": 28,
-    "editor_withheld": 24,
-    "topics_published": 5,
+    "segments_captured": 33,
+    "segments_transcribed": 30,
+    "editor_attempts": 29,
+    "editor_withheld": 26,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-17T17:42:36.279214+00:00"
+    "last_audio_at": "2026-11-17T17:43:00.486405+00:00"
   }
 }
