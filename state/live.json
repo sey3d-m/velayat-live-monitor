@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T15:45:20.720821+00:00",
-  "updated_at": "2026-11-17T16:19:59.601044+00:00",
+  "updated_at": "2026-11-17T16:20:21.859503+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره زیارت",
@@ -58,16 +58,28 @@
       "sequence": 30,
       "updated_at": "2026-11-17T16:12:23.307718+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره کیفیت همسرداری امام علی از زبان فاطمه زهرا",
+      "summary": "در این بخش کارشناس به پرسش مطرح‌شده درباره ارزیابی زندگی مشترک اشاره می‌کند و توضیح می‌دهد که به گفته نقل ارائه‌شده، فاطمه زهرا در پاسخ به پرسش درباره چگونگی رفتار امام علی به عنوان همسر، ایشان را به عنوان همسری بسیار خوب توصیف کرده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44117729204-50",
+      "sequence": 50,
+      "updated_at": "2026-11-17T16:20:21.859475+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 50,
-    "segments_transcribed": 45,
-    "editor_attempts": 38,
-    "editor_withheld": 36,
-    "topics_published": 4,
+    "segments_captured": 51,
+    "segments_transcribed": 46,
+    "editor_attempts": 39,
+    "editor_withheld": 37,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-17T16:19:48.859723+00:00"
+    "last_audio_at": "2026-11-17T16:20:14.103519+00:00"
   }
 }
