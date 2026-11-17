@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "43916244330",
-  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
-  "program_date": "2026-11-16",
-  "started_at": "2026-11-16T17:15:11.815987+00:00",
-  "updated_at": "2026-11-16T18:40:13.213636+00:00",
-  "items": [
-    {
-      "title": "بررسی آغاز توهین‌ها به روایت کارشناس",
-      "summary": "در این بخش کارشناس استدلال می‌کند که جریان توهین‌ها برخلاف تصور در زمان پیامبر یا خلفای نخست نبوده، بلکه به گفته وی از دوران معاویه آغاز شده است. وی در این زمینه به کتاب معجم البلدان اثر یاقوت حموی به عنوان شاهد اشاره می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43916244330-117",
-      "sequence": 117,
-      "updated_at": "2026-11-16T18:17:07.998729+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی استدلال درباره مقایسه‌ناپذیری اهل‌بیت با دیگران",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که هیچ‌کس از امت اسلامی قابل مقایسه با آل پیامبر (ص) نیست. به گفته وی، دلیل این امر در نهج‌البلاغه و همچنین آیاتی از قرآن کریم بیان شده است که برتری و جایگاه ویژه آل محمد (ص) را نشان می‌دهد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43916244330-134",
-      "sequence": 134,
-      "updated_at": "2026-11-16T18:23:54.857517+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی استناد به صحیح بخاری درباره ذکر آل در صلوات",
-      "summary": "در این بخش کارشناس استدلال می‌کند که بر اساس مطلبی منتسب به صحیح بخاری در تفسیر آیه مربوطه، هنگام صلوات بر پیامبر باید آل ایشان نیز ذکر شوند و تأکید می‌کند که تنها گروهی که حتماً باید پس از نام پیامبر نامشان بیاد، آل پیامبر هستند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43916244330-135",
-      "sequence": 135,
-      "updated_at": "2026-11-16T18:24:20.149575+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره مرز مقام اهل‌بیت و رد غالیان",
-      "summary": "در این بخش کارشناس استدلال می‌کند که اثبات مقام والای اهل‌بیت دلیل نمی‌شود کسی سخنی خلاف فرمایش خود ایشان بگوید. به گفته کارشناس، اهل‌بیت از غالیان بیزاری جسته‌اند و اینکه کسی غالیان را تأیید کند دروغ محض است، زیرا شیعیان حامی واقعی اهل‌بیت هستند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43916244330-136",
-      "sequence": 136,
-      "updated_at": "2026-11-16T18:24:44.074462+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره علت حجم بالای شکار غیرقانونی پرندگان مهاجر",
-      "summary": "در این بخش درباره چرایی وقوع حجم بالای شکار غیرقانونی پرندگان مهاجر در فصل زمستان و احتمال دست داشتن افراد خاصی در این اقدامات، پرسش و گفتگو شد. کارشناس این دغدغه مردم و دوستداران طبیعت را مطرح می‌کند که چرا این حجم از شکار اتفاق می‌افتد و چه کسانی پشت این کار هستند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "43916244330-164",
-      "sequence": 164,
-      "updated_at": "2026-11-16T18:35:56.138344+00:00",
-      "speaker": null
-    }
-  ],
+  "session": "44100877950",
+  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "program_date": "2026-11-17",
+  "started_at": "2026-11-17T14:14:53.048541+00:00",
+  "updated_at": "2026-11-17T14:30:00.000289+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 152,
-    "editor_attempts": 142,
-    "editor_withheld": 124,
-    "topics_published": 23,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-16T18:39:49.275951+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
