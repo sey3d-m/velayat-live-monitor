@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T14:14:53.048541+00:00",
-  "updated_at": "2026-11-17T14:50:48.552599+00:00",
+  "updated_at": "2026-11-17T14:51:14.994904+00:00",
   "items": [
-    {
-      "title": "پرسش درباره تسلیت ارتحال آیت‌الله وحید خراسانی",
-      "summary": "در این بخش کارشناس برنامه ارتحال آیت‌الله وحید خراسانی را به شیعیان و مسلمانان تسلیت گفته و ابراز امیدواری می‌کند که توفیق پاسداری از دین اسلام مانند ایشان فراهم شود. همچنین برای درگذشتگان، پدران، مادران و اساتید طلب آمرزش و فیض می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "editor_mode": "audio_grounded_topic",
-      "id": "44100877950-9",
-      "sequence": 9,
-      "updated_at": "2026-11-17T14:34:44.678907+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره احکام طهارت",
       "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -71,16 +58,29 @@
       "sequence": 37,
       "updated_at": "2026-11-17T14:45:09.588925+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره حدیث و روایت",
+      "summary": "در این بخش از برنامه، موضوع «حدیث و روایت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44100877950-52",
+      "sequence": 52,
+      "updated_at": "2026-11-17T14:51:14.994873+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 52,
-    "segments_transcribed": 48,
-    "editor_attempts": 43,
-    "editor_withheld": 41,
-    "topics_published": 5,
+    "segments_captured": 53,
+    "segments_transcribed": 49,
+    "editor_attempts": 44,
+    "editor_withheld": 43,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-17T14:50:37.006748+00:00"
+    "last_audio_at": "2026-11-17T14:51:01.729793+00:00"
   }
 }
