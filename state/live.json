@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-17",
   "started_at": "2026-11-17T17:15:04.384695+00:00",
-  "updated_at": "2026-11-17T18:04:15.675168+00:00",
+  "updated_at": "2026-11-17T18:05:06.776509+00:00",
   "items": [
     {
       "title": "بررسی مفهوم دو نسبتی‌ها در قرآن و نسبت‌دادن افعال",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 86,
-    "segments_transcribed": 80,
-    "editor_attempts": 72,
-    "editor_withheld": 64,
+    "segments_captured": 88,
+    "segments_transcribed": 82,
+    "editor_attempts": 74,
+    "editor_withheld": 66,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-17T18:04:12.920395+00:00"
+    "last_audio_at": "2026-11-17T18:05:04.222425+00:00"
   }
 }
