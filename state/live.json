@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T14:14:47.875280+00:00",
-  "updated_at": "2026-11-18T15:21:54.967959+00:00",
+  "updated_at": "2026-11-18T15:22:41.228245+00:00",
   "items": [
     {
       "title": "پرسش درباره مقدار پوشاندن زخم در وضو یا غسل با جبیره",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 130,
-    "segments_transcribed": 125,
-    "editor_attempts": 116,
-    "editor_withheld": 111,
+    "segments_captured": 132,
+    "segments_transcribed": 127,
+    "editor_attempts": 118,
+    "editor_withheld": 113,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T15:21:51.735726+00:00"
+    "last_audio_at": "2026-11-18T15:22:35.089694+00:00"
   }
 }
