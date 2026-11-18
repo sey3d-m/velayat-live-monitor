@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T17:14:44.645887+00:00",
-  "updated_at": "2026-11-18T17:44:22.046094+00:00",
+  "updated_at": "2026-11-18T17:45:11.237586+00:00",
   "items": [
     {
       "title": "پرسش درباره آغاز برنامه با ذکر صلوات و هدیه ثواب آن",
@@ -75,13 +75,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 36,
-    "segments_transcribed": 33,
-    "editor_attempts": 29,
-    "editor_withheld": 28,
+    "segments_captured": 38,
+    "segments_transcribed": 35,
+    "editor_attempts": 31,
+    "editor_withheld": 30,
     "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T17:44:16.638203+00:00"
+    "last_audio_at": "2026-11-18T17:45:05.238863+00:00"
   }
 }
