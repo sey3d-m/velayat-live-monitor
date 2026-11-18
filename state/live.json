@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T15:45:08.823523+00:00",
-  "updated_at": "2026-11-18T16:03:52.564461+00:00",
+  "updated_at": "2026-11-18T16:04:00.865024+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره ولایت و غدیر",
@@ -33,6 +33,18 @@
       "sequence": 7,
       "updated_at": "2026-11-18T16:03:40.503328+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره کارکردهای اجتماعی دین و ضرورت زندگی اجتماعی",
+      "summary": "در این بخش کارشناس پس از اشاره به نقش دین در رفع نقص‌های فردی و درونی، به بررسی کارکردهای اجتماعی دین می‌پردازد و استدلال می‌کند که زندگی اجتماعی انسان نیازمند اهداف و جهت‌گیری‌های مشترک است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44339052308-9",
+      "sequence": 9,
+      "updated_at": "2026-11-18T16:04:00.864998+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -40,7 +52,7 @@
     "segments_transcribed": 9,
     "editor_attempts": 7,
     "editor_withheld": 6,
-    "topics_published": 2,
+    "topics_published": 3,
     "audio_ai_calls": 2,
     "audio_ai_success": 2,
     "last_audio_at": "2026-11-18T16:03:47.677710+00:00"
