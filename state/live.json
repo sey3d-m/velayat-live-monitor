@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T17:14:44.645887+00:00",
-  "updated_at": "2026-11-18T17:49:09.597635+00:00",
+  "updated_at": "2026-11-18T17:49:15.951726+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره نماز",
-      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "44356370067-12",
-      "sequence": 12,
-      "updated_at": "2026-11-18T17:35:15.372601+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره شرایط مؤمنان مشمول رجعت در گفت‌وگو با بیننده",
       "summary": "در این بخش، بیننده‌ای به نام جناب صمدی از نیشابور درباره موضوع رجعت پرسش مطرح می‌کند و به نقل از کارشناس پیشین می‌گوید که تمام مؤمنان دارای مرگ غیرطبیعی یا شهادت مشمول رجعت می‌شوند.",
@@ -71,14 +58,27 @@
       "sequence": 45,
       "updated_at": "2026-11-18T17:48:23.774800+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره زیارت",
+      "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44356370067-47",
+      "sequence": 47,
+      "updated_at": "2026-11-18T17:49:15.951708+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 48,
     "segments_transcribed": 45,
     "editor_attempts": 41,
-    "editor_withheld": 39,
-    "topics_published": 7,
+    "editor_withheld": 40,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-18T17:49:04.345517+00:00"
