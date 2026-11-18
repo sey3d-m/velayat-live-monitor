@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T14:14:47.875280+00:00",
-  "updated_at": "2026-11-18T14:51:31.470373+00:00",
+  "updated_at": "2026-11-18T14:51:36.933098+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره احکام طهارت",
-      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "44322034620-21",
-      "sequence": 21,
-      "updated_at": "2026-11-18T14:38:54.084163+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره خانواده و ازدواج",
       "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,14 +57,27 @@
       "sequence": 47,
       "updated_at": "2026-11-18T14:49:13.156877+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره اذان و اقامه",
+      "summary": "در این بخش از برنامه، موضوع «اذان و اقامه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44322034620-53",
+      "sequence": 53,
+      "updated_at": "2026-11-18T14:51:36.933074+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 54,
     "segments_transcribed": 52,
     "editor_attempts": 48,
-    "editor_withheld": 44,
-    "topics_published": 7,
+    "editor_withheld": 45,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-18T14:51:24.052330+00:00"
