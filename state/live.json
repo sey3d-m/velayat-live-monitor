@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "ended",
   "network": "velayat_farsi",
   "session": "44339052308",
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T15:45:08.823523+00:00",
-  "updated_at": "2026-11-18T17:09:25.182736+00:00",
+  "updated_at": "2026-11-18T17:10:04.750175+00:00",
   "items": [
     {
       "title": "پرسش درباره کارکردهای اجتماعی دین و ضرورت زندگی اجتماعی",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 174,
-    "segments_transcribed": 162,
-    "editor_attempts": 131,
-    "editor_withheld": 126,
+    "segments_captured": 175,
+    "segments_transcribed": 163,
+    "editor_attempts": 132,
+    "editor_withheld": 127,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T17:09:22.080766+00:00"
+    "last_audio_at": "2026-11-18T17:09:47.395760+00:00"
   }
 }
