@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T17:14:44.645887+00:00",
-  "updated_at": "2026-11-18T18:31:25.743021+00:00",
+  "updated_at": "2026-11-18T18:32:13.708813+00:00",
   "items": [
     {
       "title": "بررسی ارتباط ولی‌فقیه با امام زمان و شرایط نیابت",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 154,
-    "segments_transcribed": 142,
-    "editor_attempts": 134,
-    "editor_withheld": 129,
+    "segments_captured": 156,
+    "segments_transcribed": 144,
+    "editor_attempts": 136,
+    "editor_withheld": 131,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T18:31:20.890561+00:00"
+    "last_audio_at": "2026-11-18T18:32:09.102935+00:00"
   }
 }
