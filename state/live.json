@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T14:14:47.875280+00:00",
-  "updated_at": "2026-11-18T15:04:14.735097+00:00",
+  "updated_at": "2026-11-18T15:05:02.941803+00:00",
   "items": [
     {
       "title": "پرسش درباره زمان خواندن نافله صبح نسبت به اذان",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 86,
-    "segments_transcribed": 82,
-    "editor_attempts": 76,
-    "editor_withheld": 71,
+    "segments_captured": 88,
+    "segments_transcribed": 84,
+    "editor_attempts": 77,
+    "editor_withheld": 73,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T15:04:11.040340+00:00"
+    "last_audio_at": "2026-11-18T15:05:00.702663+00:00"
   }
 }
