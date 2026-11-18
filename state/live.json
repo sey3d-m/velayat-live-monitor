@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T17:14:44.645887+00:00",
-  "updated_at": "2026-11-18T17:57:56.543402+00:00",
+  "updated_at": "2026-11-18T17:58:44.062599+00:00",
   "items": [
     {
       "title": "پرسش درباره شرایط مؤمنان مشمول رجعت در گفت‌وگو با بیننده",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 70,
+    "segments_captured": 72,
     "segments_transcribed": 67,
     "editor_attempts": 62,
     "editor_withheld": 61,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T17:57:52.707088+00:00"
+    "last_audio_at": "2026-11-18T17:58:41.314710+00:00"
   }
 }
