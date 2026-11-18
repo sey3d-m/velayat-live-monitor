@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T17:14:44.645887+00:00",
-  "updated_at": "2026-11-18T17:34:45.547360+00:00",
+  "updated_at": "2026-11-18T17:35:15.372624+00:00",
   "items": [
     {
       "title": "پرسش درباره آغاز برنامه با ذکر صلوات و هدیه ثواب آن",
@@ -33,16 +33,29 @@
       "sequence": 9,
       "updated_at": "2026-11-18T17:34:21.522901+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز",
+      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44356370067-12",
+      "sequence": 12,
+      "updated_at": "2026-11-18T17:35:15.372601+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 12,
-    "segments_transcribed": 9,
-    "editor_attempts": 7,
-    "editor_withheld": 6,
-    "topics_published": 2,
+    "segments_captured": 13,
+    "segments_transcribed": 10,
+    "editor_attempts": 8,
+    "editor_withheld": 8,
+    "topics_published": 3,
     "audio_ai_calls": 2,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-18T17:34:39.594963+00:00"
+    "last_audio_at": "2026-11-18T17:35:03.930292+00:00"
   }
 }
