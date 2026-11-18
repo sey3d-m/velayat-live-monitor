@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T14:14:47.875280+00:00",
-  "updated_at": "2026-11-18T14:45:54.829170+00:00",
+  "updated_at": "2026-11-18T14:46:48.136944+00:00",
   "items": [
     {
       "title": "بررسی پیام تسلیت و مراسم تشییع پیکر مطهر",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 40,
-    "segments_transcribed": 38,
-    "editor_attempts": 34,
-    "editor_withheld": 32,
+    "segments_captured": 42,
+    "segments_transcribed": 40,
+    "editor_attempts": 36,
+    "editor_withheld": 34,
     "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T14:45:51.208413+00:00"
+    "last_audio_at": "2026-11-18T14:46:34.862990+00:00"
   }
 }
