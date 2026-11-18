@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T14:14:47.875280+00:00",
-  "updated_at": "2026-11-18T15:08:19.022223+00:00",
+  "updated_at": "2026-11-18T15:08:45.675135+00:00",
   "items": [
-    {
-      "title": "پرسش درباره زمان خواندن نافله صبح نسبت به اذان",
-      "summary": "در این بخش درباره زمان خواندن نافله صبح پرسش شد؛ کارشناس استدلال می‌کند که پرسشگر درباره خواندن نافله صبح پیش از اذان یا هنگام اذان دچار ابهام شده است و در این زمینه راهنمایی می‌خواهد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44322034620-43",
-      "sequence": 43,
-      "updated_at": "2026-11-18T14:47:29.854897+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره مقدار پوشاندن زخم در وضو یا غسل با جبیره",
       "summary": "در این بخش، کارشناس درباره نحوه بستن جبیره بر روی زخم و میزان آن توضیح می‌دهد و بیان می‌کند که نباید بیشتر از اندازه نیاز روی زخم را ببندند، مگر در مواردی که به ناچار و به اندازه توصیه‌شده توسط پزشکان باشد.",
@@ -69,16 +57,29 @@
       "sequence": 82,
       "updated_at": "2026-11-18T15:03:17.348395+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره روزه",
+      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44322034620-96",
+      "sequence": 96,
+      "updated_at": "2026-11-18T15:08:45.675111+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 96,
-    "segments_transcribed": 92,
-    "editor_attempts": 84,
-    "editor_withheld": 79,
-    "topics_published": 10,
+    "segments_captured": 97,
+    "segments_transcribed": 93,
+    "editor_attempts": 85,
+    "editor_withheld": 81,
+    "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T15:08:15.210156+00:00"
+    "last_audio_at": "2026-11-18T15:08:40.254944+00:00"
   }
 }
