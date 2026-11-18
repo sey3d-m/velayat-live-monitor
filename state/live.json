@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T14:14:47.875280+00:00",
-  "updated_at": "2026-11-18T14:38:47.146339+00:00",
+  "updated_at": "2026-11-18T14:38:54.084188+00:00",
   "items": [
     {
       "title": "بررسی پیام تسلیت و مراسم تشییع پیکر مطهر",
@@ -32,14 +32,27 @@
       "sequence": 10,
       "updated_at": "2026-11-18T14:34:41.851489+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره احکام طهارت",
+      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44322034620-21",
+      "sequence": 21,
+      "updated_at": "2026-11-18T14:38:54.084163+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 22,
     "segments_transcribed": 20,
     "editor_attempts": 17,
-    "editor_withheld": 15,
-    "topics_published": 2,
+    "editor_withheld": 16,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-18T14:38:35.201974+00:00"
