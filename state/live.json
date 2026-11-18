@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T15:45:08.823523+00:00",
-  "updated_at": "2026-11-18T16:32:38.281132+00:00",
+  "updated_at": "2026-11-18T16:32:46.669065+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره ولایت و غدیر",
-      "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "audio_grounded_topic",
-      "editor_confidence": 0.0,
-      "id": "44339052308-2",
-      "sequence": 2,
-      "updated_at": "2026-11-18T16:01:26.814607+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره احکام طهارت",
       "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,6 +56,18 @@
       "sequence": 64,
       "updated_at": "2026-11-18T16:26:00.842759+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی هدف هدایت الهی و قرآن در کلام کارشناس",
+      "summary": "در این بخش کارشناس استدلال می‌کند که هدایت الهی و فرستادن قرآن نه برای کسب سود برای خداوند، بلکه صرفاً برای جود و بخشش بر بندگان است و خداوند از دستورات خود هیچ سود شخصی ندارد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44339052308-81",
+      "sequence": 81,
+      "updated_at": "2026-11-18T16:32:46.669043+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -76,7 +75,7 @@
     "segments_transcribed": 81,
     "editor_attempts": 69,
     "editor_withheld": 65,
-    "topics_published": 5,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-18T16:32:31.885116+00:00"
