@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "44356370067",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T17:14:44.645887+00:00",
-  "updated_at": "2026-11-18T17:32:22.664950+00:00",
-  "items": [],
+  "updated_at": "2026-11-18T17:32:34.020889+00:00",
+  "items": [
+    {
+      "title": "پرسش درباره آغاز برنامه با ذکر صلوات و هدیه ثواب آن",
+      "summary": "در این بخش، کارشناس برنامه ذکر و صلوات بر پیامبر اکرم و اهل‌بیت (ع) را مطرح می‌کند و استدلال می‌کند که این برنامه با ذکر صلوات آغاز می‌شود. به گفته کارشناس، ثواب این ذکر به روح آیت‌الله‌العظمی وحید خراسانی هدیه می‌شود و برای ایشان طلب عزت می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "44356370067-5",
+      "sequence": 5,
+      "updated_at": "2026-11-18T17:32:34.020868+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
     "segments_captured": 6,
     "segments_transcribed": 4,
     "editor_attempts": 3,
-    "editor_withheld": 2,
-    "topics_published": 0,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
+    "editor_withheld": 3,
+    "topics_published": 1,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
     "last_audio_at": "2026-11-18T17:32:17.876965+00:00"
   }
 }
