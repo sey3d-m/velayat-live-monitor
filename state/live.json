@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T17:14:44.645887+00:00",
-  "updated_at": "2026-11-18T18:36:58.382552+00:00",
+  "updated_at": "2026-11-18T18:37:52.230473+00:00",
   "items": [
     {
       "title": "پرسش درباره وضعیت صحابه و حضور منافقین در جنگ‌ها",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 168,
-    "segments_transcribed": 150,
-    "editor_attempts": 142,
+    "segments_captured": 170,
+    "segments_transcribed": 152,
+    "editor_attempts": 143,
     "editor_withheld": 136,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T18:36:58.323757+00:00"
+    "last_audio_at": "2026-11-18T18:37:47.308361+00:00"
   }
 }
