@@ -1,19 +1,32 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "44322034620",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T14:14:47.875280+00:00",
-  "updated_at": "2026-11-18T14:32:15.770201+00:00",
-  "items": [],
+  "updated_at": "2026-11-18T14:32:23.972541+00:00",
+  "items": [
+    {
+      "title": "بررسی پیام تسلیت و مراسم تشییع پیکر مطهر",
+      "summary": "در این بخش، کارشناس به مناسبت رحلت یکی از علما و تشییع پیکر مطهر ایشان در شهر مقدس قم، تسلیت و تعزیت خود را محضر پیشگاه امام زمان (عجل الله تعالی فرجه الشریف)، مراجع تقلید، حوزه‌های علمیه و ارادتمندان ابراز می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44322034620-5",
+      "sequence": 5,
+      "updated_at": "2026-11-18T14:32:23.972491+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
     "segments_captured": 6,
     "segments_transcribed": 4,
     "editor_attempts": 3,
     "editor_withheld": 2,
-    "topics_published": 0,
+    "topics_published": 1,
     "audio_ai_calls": 0,
     "audio_ai_success": 0,
     "last_audio_at": "2026-11-18T14:32:12.420829+00:00"
