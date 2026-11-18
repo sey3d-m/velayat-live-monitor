@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "44339052308",
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T15:45:08.823523+00:00",
-  "updated_at": "2026-11-18T16:01:24.471029+00:00",
-  "items": [],
+  "updated_at": "2026-11-18T16:01:26.814632+00:00",
+  "items": [
+    {
+      "title": "گفت‌وگو درباره ولایت و غدیر",
+      "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "audio_grounded_topic",
+      "editor_confidence": 0.0,
+      "id": "44339052308-2",
+      "sequence": 2,
+      "updated_at": "2026-11-18T16:01:26.814607+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
     "segments_captured": 4,
     "segments_transcribed": 3,
     "editor_attempts": 3,
-    "editor_withheld": 2,
-    "topics_published": 0,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
+    "editor_withheld": 3,
+    "topics_published": 1,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
     "last_audio_at": "2026-11-18T16:01:24.404064+00:00"
   }
 }
