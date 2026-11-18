@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T15:45:08.823523+00:00",
-  "updated_at": "2026-11-18T16:45:28.965911+00:00",
+  "updated_at": "2026-11-18T16:45:58.168946+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره احکام طهارت",
-      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "audio_grounded_topic",
-      "editor_confidence": 0.0,
-      "id": "44339052308-7",
-      "sequence": 7,
-      "updated_at": "2026-11-18T16:03:40.503328+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره کارکردهای اجتماعی دین و ضرورت زندگی اجتماعی",
       "summary": "در این بخش کارشناس پس از اشاره به نقش دین در رفع نقص‌های فردی و درونی، به بررسی کارکردهای اجتماعی دین می‌پردازد و استدلال می‌کند که زندگی اجتماعی انسان نیازمند اهداف و جهت‌گیری‌های مشترک است.",
@@ -68,16 +55,28 @@
       "sequence": 81,
       "updated_at": "2026-11-18T16:32:46.669043+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی برنامه‌ریزی‌ها برای عدم شکوفایی استعدادها",
+      "summary": "در این بخش کارشناس استدلال می‌کند که برنامه‌ریزی‌ها به‌گونه‌ای بوده است که افراد توانمندی‌های خود را نشناسند و استعدادهایشان شکوفا نشود تا متوقف بمانند؛ همچنین بیان می‌شود که با وجود عدالت، امکان پیشرفت فراهم می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44339052308-114",
+      "sequence": 114,
+      "updated_at": "2026-11-18T16:45:58.168922+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 114,
-    "segments_transcribed": 110,
-    "editor_attempts": 94,
-    "editor_withheld": 89,
-    "topics_published": 6,
+    "segments_captured": 115,
+    "segments_transcribed": 111,
+    "editor_attempts": 95,
+    "editor_withheld": 90,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T16:45:22.946596+00:00"
+    "last_audio_at": "2026-11-18T16:45:47.230061+00:00"
   }
 }
