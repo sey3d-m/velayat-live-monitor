@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T17:14:44.645887+00:00",
-  "updated_at": "2026-11-18T18:29:55.625256+00:00",
+  "updated_at": "2026-11-18T18:30:25.236190+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره امام زمان",
-      "summary": "در این بخش از برنامه، موضوع «امام زمان» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "44356370067-42",
-      "sequence": 42,
-      "updated_at": "2026-11-18T17:47:19.175525+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی ارتباط ولی‌فقیه با امام زمان و شرایط نیابت",
       "summary": "در این بخش کارشناس استدلال می‌کند که ارتباط ولی‌فقیه با امام زمان لزوماً وجود ندارد و چنین ارتباطی جزء شرایط نیابت محسوب نمی‌شود. به گفته وی، شرایط لازم برای این مقام شامل فقاهت، عدالت و کفایت است و اگر ارتباط با امام زمان وجود نداشته باشد، اصل صحت زیر سوال نمی‌رود.",
@@ -69,16 +56,28 @@
       "sequence": 143,
       "updated_at": "2026-11-18T18:27:33.258271+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی پیامدهای تغییر ناگهانی سرعت چرخش زمین",
+      "summary": "در این بخش کارشناس استدلال می‌کند که اگر سرعت چرخش زمین به طور ناگهانی تغییر کند یا متوقف شود، فاجعه‌ای عظیم رخ خواهد داد. به گفته وی، از جمله پیامدهای این تغییر، توفان‌های وحشتناک، امواج عظیم در اقیانوس‌ها و تغییرات شدید در جو و زمین است که زندگی را غیرممکن می‌سازد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44356370067-150",
+      "sequence": 150,
+      "updated_at": "2026-11-18T18:30:25.236135+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 150,
-    "segments_transcribed": 138,
-    "editor_attempts": 130,
-    "editor_withheld": 126,
-    "topics_published": 10,
+    "segments_captured": 151,
+    "segments_transcribed": 139,
+    "editor_attempts": 131,
+    "editor_withheld": 127,
+    "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T18:29:48.331520+00:00"
+    "last_audio_at": "2026-11-18T18:30:12.821183+00:00"
   }
 }
