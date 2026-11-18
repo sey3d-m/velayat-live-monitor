@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T14:14:47.875280+00:00",
-  "updated_at": "2026-11-18T15:02:45.257136+00:00",
+  "updated_at": "2026-11-18T15:03:17.348419+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره نماز",
-      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "44322034620-32",
-      "sequence": 32,
-      "updated_at": "2026-11-18T14:43:07.120732+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره زمان خواندن نافله صبح نسبت به اذان",
       "summary": "در این بخش درباره زمان خواندن نافله صبح پرسش شد؛ کارشناس استدلال می‌کند که پرسشگر درباره خواندن نافله صبح پیش از اذان یا هنگام اذان دچار ابهام شده است و در این زمینه راهنمایی می‌خواهد.",
@@ -70,16 +57,28 @@
       "sequence": 74,
       "updated_at": "2026-11-18T14:59:57.965479+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره مصادره اموال و کشاورزی در گفتار کارشناس",
+      "summary": "در این بخش کارشناس استدلال می‌کند که برخی افراد این امر را به زور در دست داشتند و با استناد به عبارت ارباب را آیاتی، بیان می‌کند که امام فرمودند کشاورزی توسط آن‌ها از بین رفته است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44322034620-82",
+      "sequence": 82,
+      "updated_at": "2026-11-18T15:03:17.348395+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 82,
-    "segments_transcribed": 78,
-    "editor_attempts": 72,
-    "editor_withheld": 68,
-    "topics_published": 9,
+    "segments_captured": 83,
+    "segments_transcribed": 79,
+    "editor_attempts": 73,
+    "editor_withheld": 69,
+    "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T15:02:39.275066+00:00"
+    "last_audio_at": "2026-11-18T15:03:03.713483+00:00"
   }
 }
