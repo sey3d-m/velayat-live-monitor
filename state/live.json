@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T15:45:08.823523+00:00",
-  "updated_at": "2026-11-18T16:35:06.064681+00:00",
+  "updated_at": "2026-11-18T16:35:50.052708+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره احکام طهارت",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 88,
-    "segments_transcribed": 87,
-    "editor_attempts": 74,
-    "editor_withheld": 69,
+    "segments_captured": 90,
+    "segments_transcribed": 89,
+    "editor_attempts": 76,
+    "editor_withheld": 71,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T16:35:01.401691+00:00"
+    "last_audio_at": "2026-11-18T16:35:45.158147+00:00"
   }
 }
