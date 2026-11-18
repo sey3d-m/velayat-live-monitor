@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T17:14:44.645887+00:00",
-  "updated_at": "2026-11-18T17:46:43.154115+00:00",
+  "updated_at": "2026-11-18T17:47:19.175546+00:00",
   "items": [
-    {
-      "title": "پرسش درباره آغاز برنامه با ذکر صلوات و هدیه ثواب آن",
-      "summary": "در این بخش، کارشناس برنامه ذکر و صلوات بر پیامبر اکرم و اهل‌بیت (ع) را مطرح می‌کند و استدلال می‌کند که این برنامه با ذکر صلوات آغاز می‌شود. به گفته کارشناس، ثواب این ذکر به روح آیت‌الله‌العظمی وحید خراسانی هدیه می‌شود و برای ایشان طلب عزت می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "editor_mode": "audio_grounded_topic",
-      "id": "44356370067-5",
-      "sequence": 5,
-      "updated_at": "2026-11-18T17:32:34.020868+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره هدف آفرینش بر اساس آیه شریفه",
       "summary": "در این بخش کارشناس درباره یکی از اهداف آفرینش سخن می‌گوید و استدلال می‌کند که شناخت مقصد و مبدأ و یافتن راه از این طریق حاصل می‌شود. وی در این زمینه به آیه شریفه «وما خلقت الجن والإنس إلا لیعبدون» استناد می‌کند و نتیجه می‌گیرد که این معارف به آگاهی از دین منجر می‌شود.",
@@ -72,16 +59,29 @@
       "sequence": 25,
       "updated_at": "2026-11-18T17:40:25.431858+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره امام زمان",
+      "summary": "در این بخش از برنامه، موضوع «امام زمان» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44356370067-42",
+      "sequence": 42,
+      "updated_at": "2026-11-18T17:47:19.175525+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 42,
-    "segments_transcribed": 39,
-    "editor_attempts": 35,
-    "editor_withheld": 34,
-    "topics_published": 5,
+    "segments_captured": 43,
+    "segments_transcribed": 40,
+    "editor_attempts": 36,
+    "editor_withheld": 36,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T17:46:38.014789+00:00"
+    "last_audio_at": "2026-11-18T17:47:02.544890+00:00"
   }
 }
