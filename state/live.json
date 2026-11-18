@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T14:14:47.875280+00:00",
-  "updated_at": "2026-11-18T15:23:29.979315+00:00",
+  "updated_at": "2026-11-18T15:24:02.693645+00:00",
   "items": [
-    {
-      "title": "پرسش درباره مقدار پوشاندن زخم در وضو یا غسل با جبیره",
-      "summary": "در این بخش، کارشناس درباره نحوه بستن جبیره بر روی زخم و میزان آن توضیح می‌دهد و بیان می‌کند که نباید بیشتر از اندازه نیاز روی زخم را ببندند، مگر در مواردی که به ناچار و به اندازه توصیه‌شده توسط پزشکان باشد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44322034620-47",
-      "sequence": 47,
-      "updated_at": "2026-11-18T14:49:13.156877+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره اذان و اقامه",
       "summary": "در این بخش از برنامه، موضوع «اذان و اقامه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +58,28 @@
       "sequence": 96,
       "updated_at": "2026-11-18T15:08:45.675111+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره خواندن معنای قرآن به جای متن آن",
+      "summary": "در این بخش، کارشناس به این موضوع می‌پردازد که برخی افراد به‌جای خواندن خود متن قرآن، به خواندن معنای آن می‌پردازند. وی ضمن اشاره به روایات درباره ثواب قرائت روزانه آیات، این پرسش و ابهام را مطرح می‌کند که آیا خواندن ترجمه و معنا جایگزین خواندن خود قرآن می‌شود یا خیر.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44322034620-134",
+      "sequence": 134,
+      "updated_at": "2026-11-18T15:24:02.693621+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 134,
-    "segments_transcribed": 129,
-    "editor_attempts": 120,
-    "editor_withheld": 115,
-    "topics_published": 11,
+    "segments_captured": 135,
+    "segments_transcribed": 130,
+    "editor_attempts": 121,
+    "editor_withheld": 116,
+    "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T15:23:24.458225+00:00"
+    "last_audio_at": "2026-11-18T15:23:49.224586+00:00"
   }
 }
