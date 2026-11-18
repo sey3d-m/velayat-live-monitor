@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T17:14:44.645887+00:00",
-  "updated_at": "2026-11-18T17:33:56.141795+00:00",
+  "updated_at": "2026-11-18T17:34:21.522918+00:00",
   "items": [
     {
       "title": "پرسش درباره آغاز برنامه با ذکر صلوات و هدیه ثواب آن",
@@ -20,16 +20,29 @@
       "sequence": 5,
       "updated_at": "2026-11-18T17:32:34.020868+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره هدف آفرینش بر اساس آیه شریفه",
+      "summary": "در این بخش کارشناس درباره یکی از اهداف آفرینش سخن می‌گوید و استدلال می‌کند که شناخت مقصد و مبدأ و یافتن راه از این طریق حاصل می‌شود. وی در این زمینه به آیه شریفه «وما خلقت الجن والإنس إلا لیعبدون» استناد می‌کند و نتیجه می‌گیرد که این معارف به آگاهی از دین منجر می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "editor_mode": "audio_grounded_topic",
+      "id": "44356370067-9",
+      "sequence": 9,
+      "updated_at": "2026-11-18T17:34:21.522901+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 10,
-    "segments_transcribed": 7,
+    "segments_captured": 11,
+    "segments_transcribed": 8,
     "editor_attempts": 6,
-    "editor_withheld": 5,
-    "topics_published": 1,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
-    "last_audio_at": "2026-11-18T17:33:50.643392+00:00"
+    "editor_withheld": 6,
+    "topics_published": 2,
+    "audio_ai_calls": 2,
+    "audio_ai_success": 2,
+    "last_audio_at": "2026-11-18T17:34:14.482302+00:00"
   }
 }
