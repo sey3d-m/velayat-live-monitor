@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T15:45:08.823523+00:00",
-  "updated_at": "2026-11-18T16:59:05.304330+00:00",
+  "updated_at": "2026-11-18T16:59:48.644870+00:00",
   "items": [
     {
       "title": "پرسش درباره کارکردهای اجتماعی دین و ضرورت زندگی اجتماعی",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 148,
-    "segments_transcribed": 141,
-    "editor_attempts": 121,
-    "editor_withheld": 115,
+    "segments_captured": 150,
+    "segments_transcribed": 143,
+    "editor_attempts": 122,
+    "editor_withheld": 116,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T16:59:01.899781+00:00"
+    "last_audio_at": "2026-11-18T16:59:45.078947+00:00"
   }
 }
