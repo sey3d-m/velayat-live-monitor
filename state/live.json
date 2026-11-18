@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "44339052308",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "44356370067",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-18",
-  "started_at": "2026-11-18T15:45:08.823523+00:00",
-  "updated_at": "2026-11-18T17:10:04.750175+00:00",
-  "items": [
-    {
-      "title": "پرسش درباره کارکردهای اجتماعی دین و ضرورت زندگی اجتماعی",
-      "summary": "در این بخش کارشناس پس از اشاره به نقش دین در رفع نقص‌های فردی و درونی، به بررسی کارکردهای اجتماعی دین می‌پردازد و استدلال می‌کند که زندگی اجتماعی انسان نیازمند اهداف و جهت‌گیری‌های مشترک است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44339052308-9",
-      "sequence": 9,
-      "updated_at": "2026-11-18T16:04:00.864998+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی ضرورت التزام درونی در کنار الزام بیرونی",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که علاوه بر الزام بیرونی، وجود التزام درونی نیز برای تحقق امور لازم است؛ به گفته او، هرچند الزام بیرونی ضرورت دارد اما به تنهایی کافی نیست و هر یک از این دو مورد دارای درجاتی هستند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44339052308-47",
-      "sequence": 47,
-      "updated_at": "2026-11-18T16:19:04.100941+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی جهان‌بینی حاکم بر نظام هستی و نظارت الهی",
-      "summary": "در این بخش کارشناس استدلال می‌کند که حاکم مطلق بر نظام هستی از تمام ریز و درشت اعمال آگاه است و ذهن انسان را می‌خواند. بر اساس این توصیف، کارشناس بیان می‌کند که این نظام هستی چنان طراحی شده است که تمام موجودات و هستی بر انسان ناظر هستند و این موضوع یک جهان‌بینی خاص به انسان می‌دهد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44339052308-64",
-      "sequence": 64,
-      "updated_at": "2026-11-18T16:26:00.842759+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی هدف هدایت الهی و قرآن در کلام کارشناس",
-      "summary": "در این بخش کارشناس استدلال می‌کند که هدایت الهی و فرستادن قرآن نه برای کسب سود برای خداوند، بلکه صرفاً برای جود و بخشش بر بندگان است و خداوند از دستورات خود هیچ سود شخصی ندارد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44339052308-81",
-      "sequence": 81,
-      "updated_at": "2026-11-18T16:32:46.669043+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی برنامه‌ریزی‌ها برای عدم شکوفایی استعدادها",
-      "summary": "در این بخش کارشناس استدلال می‌کند که برنامه‌ریزی‌ها به‌گونه‌ای بوده است که افراد توانمندی‌های خود را نشناسند و استعدادهایشان شکوفا نشود تا متوقف بمانند؛ همچنین بیان می‌شود که با وجود عدالت، امکان پیشرفت فراهم می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44339052308-114",
-      "sequence": 114,
-      "updated_at": "2026-11-18T16:45:58.168922+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-18T17:14:44.645887+00:00",
+  "updated_at": "2026-11-18T17:30:00.000289+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 163,
-    "editor_attempts": 132,
-    "editor_withheld": 127,
-    "topics_published": 7,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T17:09:47.395760+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
