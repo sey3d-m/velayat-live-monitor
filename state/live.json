@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T15:45:08.823523+00:00",
-  "updated_at": "2026-11-18T16:25:27.348960+00:00",
+  "updated_at": "2026-11-18T16:26:00.842785+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره ولایت و غدیر",
@@ -57,16 +57,28 @@
       "sequence": 47,
       "updated_at": "2026-11-18T16:19:04.100941+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی جهان‌بینی حاکم بر نظام هستی و نظارت الهی",
+      "summary": "در این بخش کارشناس استدلال می‌کند که حاکم مطلق بر نظام هستی از تمام ریز و درشت اعمال آگاه است و ذهن انسان را می‌خواند. بر اساس این توصیف، کارشناس بیان می‌کند که این نظام هستی چنان طراحی شده است که تمام موجودات و هستی بر انسان ناظر هستند و این موضوع یک جهان‌بینی خاص به انسان می‌دهد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44339052308-64",
+      "sequence": 64,
+      "updated_at": "2026-11-18T16:26:00.842759+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 64,
-    "segments_transcribed": 63,
-    "editor_attempts": 54,
+    "segments_captured": 65,
+    "segments_transcribed": 64,
+    "editor_attempts": 55,
     "editor_withheld": 52,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T16:25:22.902283+00:00"
+    "last_audio_at": "2026-11-18T16:25:47.696501+00:00"
   }
 }
