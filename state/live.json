@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "ended",
   "network": "velayat_farsi",
   "session": "44356370067",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-18",
   "started_at": "2026-11-18T17:14:44.645887+00:00",
-  "updated_at": "2026-11-18T18:39:28.357834+00:00",
+  "updated_at": "2026-11-18T18:40:07.811916+00:00",
   "items": [
     {
       "title": "پرسش درباره وضعیت صحابه و حضور منافقین در جنگ‌ها",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 174,
+    "segments_captured": 175,
     "segments_transcribed": 156,
     "editor_attempts": 145,
-    "editor_withheld": 138,
+    "editor_withheld": 139,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T18:39:25.383907+00:00"
+    "last_audio_at": "2026-11-18T18:39:50.478006+00:00"
   }
 }
