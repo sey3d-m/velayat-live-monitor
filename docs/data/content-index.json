@@ -1,12 +1,12 @@
 {
   "schema_version": 4,
-  "updated_at": "2026-11-19T17:10:58+00:00",
+  "updated_at": "2026-11-19T18:35:15+00:00",
   "years": [
     {
       "year": "2026",
       "path": "content-2026.json",
-      "count": 499
+      "count": 505
     }
   ],
-  "total_items": 499
+  "total_items": 505
 }
