@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-19",
   "started_at": "2026-11-19T15:44:52.548338+00:00",
-  "updated_at": "2026-11-19T16:50:47.150489+00:00",
+  "updated_at": "2026-11-19T16:51:01.494789+00:00",
   "items": [
     {
       "title": "بررسی ادعای مربوط به چاه امام زمان و مغالطه‌های پیرامون آن",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 127,
-    "segments_transcribed": 119,
-    "editor_attempts": 87,
+    "segments_captured": 128,
+    "segments_transcribed": 120,
+    "editor_attempts": 88,
     "editor_withheld": 83,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-19T16:50:33.335252+00:00"
+    "last_audio_at": "2026-11-19T16:50:57.433452+00:00"
   }
 }
