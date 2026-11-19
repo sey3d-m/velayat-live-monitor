@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-19",
   "started_at": "2026-11-19T14:14:55.349978+00:00",
-  "updated_at": "2026-11-19T15:08:17.602747+00:00",
+  "updated_at": "2026-11-19T15:08:54.552891+00:00",
   "items": [
     {
       "title": "پرسش درباره وجود اختلافات کلامی در سقیفه بنی‌ساعده",
@@ -19,16 +19,29 @@
       "sequence": 37,
       "updated_at": "2026-11-19T14:45:14.505452+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره امام حسین و عاشورا",
+      "summary": "در این بخش از برنامه، موضوع «امام حسین و عاشورا» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44541541136-95",
+      "sequence": 95,
+      "updated_at": "2026-11-19T15:08:54.552865+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 96,
+    "segments_captured": 97,
     "segments_transcribed": 86,
     "editor_attempts": 70,
-    "editor_withheld": 68,
-    "topics_published": 1,
+    "editor_withheld": 69,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-19T15:08:13.761749+00:00"
+    "last_audio_at": "2026-11-19T15:08:38.996128+00:00"
   }
 }
