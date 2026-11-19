@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-19",
   "started_at": "2026-11-19T15:44:52.548338+00:00",
-  "updated_at": "2026-11-19T16:34:57.290366+00:00",
+  "updated_at": "2026-11-19T16:35:41.504789+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره امام زمان",
@@ -45,16 +45,28 @@
       "sequence": 62,
       "updated_at": "2026-11-19T16:25:32.248601+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره چرایی غیبت امام دوازدهم و رهبری امت اسلامی",
+      "summary": "در این بخش، کارشناس درباره ضرورت حضور رهبر برای امت اسلامی استدلال می‌کند و این پرسش مطرح می‌شود که پس از غیبت امام دوازدهم، رهبر امت چه کسی خواهد بود و چرا امت اسلامی بدون رهبر رها شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44558155546-88",
+      "sequence": 88,
+      "updated_at": "2026-11-19T16:35:41.504767+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 88,
-    "segments_transcribed": 81,
-    "editor_attempts": 54,
+    "segments_captured": 89,
+    "segments_transcribed": 82,
+    "editor_attempts": 55,
     "editor_withheld": 53,
-    "topics_published": 3,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-19T16:34:54.567334+00:00"
+    "last_audio_at": "2026-11-19T16:35:19.610465+00:00"
   }
 }
