@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-19",
   "started_at": "2026-11-19T14:14:55.349978+00:00",
-  "updated_at": "2026-11-19T15:37:52.003296+00:00",
+  "updated_at": "2026-11-19T15:38:55.074051+00:00",
   "items": [
     {
       "title": "پرسش درباره وجود اختلافات کلامی در سقیفه بنی‌ساعده",
@@ -35,13 +35,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 170,
-    "segments_transcribed": 139,
+    "segments_captured": 172,
+    "segments_transcribed": 140,
     "editor_attempts": 108,
     "editor_withheld": 107,
     "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-19T15:37:49.837609+00:00"
+    "last_audio_at": "2026-11-19T15:38:38.753075+00:00"
   }
 }
