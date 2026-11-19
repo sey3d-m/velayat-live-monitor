@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "44574985122",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-19",
   "started_at": "2026-11-19T17:15:01.311988+00:00",
-  "updated_at": "2026-11-19T17:34:01.267012+00:00",
-  "items": [],
+  "updated_at": "2026-11-19T17:34:02.551620+00:00",
+  "items": [
+    {
+      "title": "بررسی شعر خوانده شده از سعدی در برنامه",
+      "summary": "در این بخش از برنامه حیات قرآنی، کارشناس اشاره کرد که شعر خوانده‌شده بخشی از یک غزل ملمع اثر سعدی بوده است که آن را تقدیم ساحت حضرت محبوب کرده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "editor_mode": "audio_grounded_topic",
+      "id": "44574985122-8",
+      "sequence": 8,
+      "updated_at": "2026-11-19T17:34:02.551597+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
     "segments_captured": 10,
     "segments_transcribed": 8,
     "editor_attempts": 4,
-    "editor_withheld": 3,
-    "topics_published": 0,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
+    "editor_withheld": 4,
+    "topics_published": 1,
+    "audio_ai_calls": 2,
+    "audio_ai_success": 2,
     "last_audio_at": "2026-11-19T17:33:57.491001+00:00"
   }
 }
