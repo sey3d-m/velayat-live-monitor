@@ -1,83 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "44558155546",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "44574985122",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-19",
-  "started_at": "2026-11-19T15:44:52.548338+00:00",
-  "updated_at": "2026-11-19T17:10:06.256057+00:00",
-  "items": [
-    {
-      "title": "بررسی ادعای مربوط به چاه امام زمان و مغالطه‌های پیرامون آن",
-      "summary": "در این بخش، کارشناس درباره اعتقاد برخی افراد به چاه امام زمان صحبت می‌کند و آن را ناشی از مغلطه می‌داند. به گفته وی، در گذشته چاهی وجود داشته و برخی افراد مطالبی را مطرح کرده‌اند، اما این موضوع نیاز به توضیح دارد تا شنوندگان در جریان واقعیت قرار گیرند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44558155546-53",
-      "sequence": 53,
-      "updated_at": "2026-11-19T16:21:30.614059+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "44558155546-62",
-      "sequence": 62,
-      "updated_at": "2026-11-19T16:25:32.248601+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره چرایی غیبت امام دوازدهم و رهبری امت اسلامی",
-      "summary": "در این بخش، کارشناس درباره ضرورت حضور رهبر برای امت اسلامی استدلال می‌کند و این پرسش مطرح می‌شود که پس از غیبت امام دوازدهم، رهبر امت چه کسی خواهد بود و چرا امت اسلامی بدون رهبر رها شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44558155546-88",
-      "sequence": 88,
-      "updated_at": "2026-11-19T16:35:41.504767+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره بیداری در مراکز قدرت و محکومیت نظام سلطه",
-      "summary": "در این بخش کارشناس استدلال می‌کند که در مراکز اصلی قدرت، بیداری‌هایی پدیدار شده است و عده‌ای صهیونیسم و نظام جفاکار جهانی را به دلیل کشتار بچه‌ها و جنایات انجام‌شده محکوم می‌کنند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44558155546-119",
-      "sequence": 119,
-      "updated_at": "2026-11-19T16:47:58.041121+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی شرایط ظهور و نفی تعیین وقت دقیق",
-      "summary": "در این بخش کارشناس استدلال می‌کند که با وجود قدرت و محتوای لازم، این عوامل برای تحقق ظهور کفایت نمی‌کنند بلکه ظهور نیازمند شرایط و بسترهای خاصی است. به گفته وی، با توجه به این قیاسات، زمان ظهور را جز خداوند کسی نمی‌داند و همواره باید به این موضوع توجه داشت.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44558155546-126",
-      "sequence": 126,
-      "updated_at": "2026-11-19T16:50:47.150471+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-19T17:15:01.311988+00:00",
+  "updated_at": "2026-11-19T17:30:00.000319+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 163,
-    "editor_attempts": 119,
-    "editor_withheld": 114,
-    "topics_published": 6,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 2,
-    "last_audio_at": "2026-11-19T17:09:48.913589+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
