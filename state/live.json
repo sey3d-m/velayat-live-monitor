@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-19",
   "started_at": "2026-11-19T17:15:01.311988+00:00",
-  "updated_at": "2026-11-19T18:27:31.569623+00:00",
+  "updated_at": "2026-11-19T18:27:54.299618+00:00",
   "items": [
-    {
-      "title": "پرسش درباره نقش تفکرات حق و باطل در مدیریت رسانه‌ها",
-      "summary": "در این بخش کارشناس استدلال می‌کند که وجود جوامع دارای رسانه‌های متعدد، بر پایه تفکرات گوناگون اعم از حق و باطل مدیریت می‌شود که پشت هر رسانه قرار دارند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "editor_mode": "audio_grounded_topic",
-      "id": "44574985122-15",
-      "sequence": 15,
-      "updated_at": "2026-11-19T17:37:21.186991+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی تأثیر تربیت قرآنی بر جلوگیری از نفوذ تفکر شیطانی",
       "summary": "در این بخش کارشناس استدلال می‌کند که انسان وقتی تحت تربیت قرآن قرار می‌گیرد، به رشدی می‌رسد که اجازه نمی‌دهد تفکر شیطانی یا الهادی در او نفوذ کند. به گفته کارشناس، با جلوگیری از این نفوذ، انسان دیگر از هویت شیطانی پیروی نکرده و از هویت الهی خود تبعیت می‌کند.",
@@ -70,16 +57,28 @@
       "sequence": 142,
       "updated_at": "2026-11-19T18:27:08.851811+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی عملکرد استخوانچه‌های گوش در تقویت صدا",
+      "summary": "در این بخش کارشناس استدلال می‌کند که استخوانچه‌های چکوشی، سندانی و رکابی در گوش به عنوان کوچک‌ترین استخوان‌های بدن، مانند جک هیدرولیک صدا را دقیقا بیست برابر قوی‌تر می‌کنند و این پرسش را مطرح می‌کند که چرا این میزان دقیقا بیست برابر است و کمتر یا بیشتر نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44574985122-144",
+      "sequence": 144,
+      "updated_at": "2026-11-19T18:27:54.299594+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 144,
-    "segments_transcribed": 140,
-    "editor_attempts": 126,
-    "editor_withheld": 123,
-    "topics_published": 7,
+    "segments_captured": 145,
+    "segments_transcribed": 141,
+    "editor_attempts": 127,
+    "editor_withheld": 124,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-19T18:27:24.211534+00:00"
+    "last_audio_at": "2026-11-19T18:27:48.965164+00:00"
   }
 }
