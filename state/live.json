@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-19",
   "started_at": "2026-11-19T17:15:01.311988+00:00",
-  "updated_at": "2026-11-19T18:27:08.851836+00:00",
+  "updated_at": "2026-11-19T18:27:31.569623+00:00",
   "items": [
     {
       "title": "پرسش درباره نقش تفکرات حق و باطل در مدیریت رسانه‌ها",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 143,
-    "segments_transcribed": 139,
-    "editor_attempts": 125,
+    "segments_captured": 144,
+    "segments_transcribed": 140,
+    "editor_attempts": 126,
     "editor_withheld": 123,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-19T18:27:01.243447+00:00"
+    "last_audio_at": "2026-11-19T18:27:24.211534+00:00"
   }
 }
