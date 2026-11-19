@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-19",
   "started_at": "2026-11-19T17:15:01.311988+00:00",
-  "updated_at": "2026-11-19T17:48:15.705786+00:00",
+  "updated_at": "2026-11-19T17:49:05.025733+00:00",
   "items": [
     {
       "title": "بررسی شعر خوانده شده از سعدی در برنامه",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 46,
-    "segments_transcribed": 44,
-    "editor_attempts": 35,
-    "editor_withheld": 33,
+    "segments_captured": 48,
+    "segments_transcribed": 46,
+    "editor_attempts": 37,
+    "editor_withheld": 35,
     "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-19T17:48:12.502470+00:00"
+    "last_audio_at": "2026-11-19T17:49:01.811662+00:00"
   }
 }
