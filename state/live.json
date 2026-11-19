@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-19",
   "started_at": "2026-11-19T17:15:01.311988+00:00",
-  "updated_at": "2026-11-19T18:26:45.031620+00:00",
+  "updated_at": "2026-11-19T18:27:08.851836+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "44574985122-12",
-      "sequence": 12,
-      "updated_at": "2026-11-19T17:35:15.550840+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره نقش تفکرات حق و باطل در مدیریت رسانه‌ها",
       "summary": "در این بخش کارشناس استدلال می‌کند که وجود جوامع دارای رسانه‌های متعدد، بر پایه تفکرات گوناگون اعم از حق و باطل مدیریت می‌شود که پشت هر رسانه قرار دارند.",
@@ -71,16 +58,28 @@
       "sequence": 73,
       "updated_at": "2026-11-19T17:59:29.864225+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نقش لاله گوش در تشخیص جهت صدا",
+      "summary": "در این بخش کارشناس استدلال می‌کند که لاله گوش صرفاً برای زیبایی نیست؛ بلکه پیچ‌وخم‌های خاص آن امواج صوتی را دستکاری می‌کند تا مغز بتواند جهت و موقعیت منبع صوت را محاسبه کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44574985122-142",
+      "sequence": 142,
+      "updated_at": "2026-11-19T18:27:08.851811+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 142,
-    "segments_transcribed": 138,
-    "editor_attempts": 124,
-    "editor_withheld": 122,
-    "topics_published": 6,
+    "segments_captured": 143,
+    "segments_transcribed": 139,
+    "editor_attempts": 125,
+    "editor_withheld": 123,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-19T18:26:41.973242+00:00"
+    "last_audio_at": "2026-11-19T18:27:01.243447+00:00"
   }
 }
