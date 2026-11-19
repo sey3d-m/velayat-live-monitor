@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-19",
   "started_at": "2026-11-19T17:15:01.311988+00:00",
-  "updated_at": "2026-11-19T17:41:53.150713+00:00",
+  "updated_at": "2026-11-19T17:41:57.337809+00:00",
   "items": [
     {
       "title": "بررسی شعر خوانده شده از سعدی در برنامه",
@@ -46,6 +46,18 @@
       "sequence": 15,
       "updated_at": "2026-11-19T17:37:21.186991+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی تأثیر تربیت قرآنی بر جلوگیری از نفوذ تفکر شیطانی",
+      "summary": "در این بخش کارشناس استدلال می‌کند که انسان وقتی تحت تربیت قرآن قرار می‌گیرد، به رشدی می‌رسد که اجازه نمی‌دهد تفکر شیطانی یا الهادی در او نفوذ کند. به گفته کارشناس، با جلوگیری از این نفوذ، انسان دیگر از هویت شیطانی پیروی نکرده و از هویت الهی خود تبعیت می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44574985122-28",
+      "sequence": 28,
+      "updated_at": "2026-11-19T17:41:57.337784+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -53,7 +65,7 @@
     "segments_transcribed": 28,
     "editor_attempts": 20,
     "editor_withheld": 19,
-    "topics_published": 3,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-19T17:41:50.111170+00:00"
