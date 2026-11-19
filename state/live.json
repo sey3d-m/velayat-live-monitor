@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-19",
   "started_at": "2026-11-19T17:15:01.311988+00:00",
-  "updated_at": "2026-11-19T17:37:08.797602+00:00",
+  "updated_at": "2026-11-19T17:37:21.187015+00:00",
   "items": [
     {
       "title": "بررسی شعر خوانده شده از سعدی در برنامه",
@@ -33,16 +33,29 @@
       "sequence": 12,
       "updated_at": "2026-11-19T17:35:15.550840+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره نقش تفکرات حق و باطل در مدیریت رسانه‌ها",
+      "summary": "در این بخش کارشناس استدلال می‌کند که وجود جوامع دارای رسانه‌های متعدد، بر پایه تفکرات گوناگون اعم از حق و باطل مدیریت می‌شود که پشت هر رسانه قرار دارند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "44574985122-15",
+      "sequence": 15,
+      "updated_at": "2026-11-19T17:37:21.186991+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 18,
     "segments_transcribed": 16,
     "editor_attempts": 9,
-    "editor_withheld": 8,
-    "topics_published": 2,
-    "audio_ai_calls": 2,
-    "audio_ai_success": 2,
+    "editor_withheld": 9,
+    "topics_published": 3,
+    "audio_ai_calls": 3,
+    "audio_ai_success": 3,
     "last_audio_at": "2026-11-19T17:37:05.976169+00:00"
   }
 }
