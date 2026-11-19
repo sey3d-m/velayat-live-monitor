@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-19",
   "started_at": "2026-11-19T15:44:52.548338+00:00",
-  "updated_at": "2026-11-19T16:21:20.145587+00:00",
+  "updated_at": "2026-11-19T16:21:30.614082+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره امام زمان",
@@ -20,6 +20,18 @@
       "sequence": 51,
       "updated_at": "2026-11-19T16:21:14.018922+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ادعای مربوط به چاه امام زمان و مغالطه‌های پیرامون آن",
+      "summary": "در این بخش، کارشناس درباره اعتقاد برخی افراد به چاه امام زمان صحبت می‌کند و آن را ناشی از مغلطه می‌داند. به گفته وی، در گذشته چاهی وجود داشته و برخی افراد مطالبی را مطرح کرده‌اند، اما این موضوع نیاز به توضیح دارد تا شنوندگان در جریان واقعیت قرار گیرند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44558155546-53",
+      "sequence": 53,
+      "updated_at": "2026-11-19T16:21:30.614059+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -27,7 +39,7 @@
     "segments_transcribed": 53,
     "editor_attempts": 34,
     "editor_withheld": 33,
-    "topics_published": 1,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
     "last_audio_at": "2026-11-19T16:21:16.395736+00:00"
