@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "44356370067",
-  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
-  "program_date": "2026-11-18",
-  "started_at": "2026-11-18T17:14:44.645887+00:00",
-  "updated_at": "2026-11-18T18:40:07.811916+00:00",
-  "items": [
-    {
-      "title": "پرسش درباره وضعیت صحابه و حضور منافقین در جنگ‌ها",
-      "summary": "در این بخش کارشناس به طرح پرسشی درباره جنگ‌هایی می‌پردازد که به گفته وی هزاران مسلمان در آن کشته شدند و هر دو طرف ماجرا صحابه بودند. پرسش مطرح‌شده این است که آیا در میان صحابه منافقین وجود نداشته‌اند و وضعیت کسانی که شبانه‌روز با پیامبر بوده‌اند و در جنگ‌ها غنیمت می‌گرفتند چگونه بوده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44356370067-95",
-      "sequence": 95,
-      "updated_at": "2026-11-18T18:08:20.702491+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی نظم شگفت‌انگیز خورشید به عنوان معجزه‌ای تکرارشونده",
-      "summary": "در این بخش کارشناس استدلال می‌کند که نظم خورشید و طلوع و غروب مرتب آن در طول میلیون‌ها سال، نوعی معجزه تکرارشونده است. به گفته گوینده، هیچ روزی نبوده است که آفتاب بالا آمدن را فراموش کند و این نظم خیره‌کننده، تکراری‌ترین پدیده موجود است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44356370067-143",
-      "sequence": 143,
-      "updated_at": "2026-11-18T18:27:33.258271+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی پیامدهای تغییر ناگهانی سرعت چرخش زمین",
-      "summary": "در این بخش کارشناس استدلال می‌کند که اگر سرعت چرخش زمین به طور ناگهانی تغییر کند یا متوقف شود، فاجعه‌ای عظیم رخ خواهد داد. به گفته وی، از جمله پیامدهای این تغییر، توفان‌های وحشتناک، امواج عظیم در اقیانوس‌ها و تغییرات شدید در جو و زمین است که زندگی را غیرممکن می‌سازد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44356370067-150",
-      "sequence": 150,
-      "updated_at": "2026-11-18T18:30:25.236135+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی توصیف تدریجی شب و روز در قرآن",
-      "summary": "در این بخش کارشناس استدلال می‌کند که قرآن کریم هزار و چهارصد سال پیش موضوع پیچیدشدن تدریجی شب و روز بر یکدیگر را توصیف کرده است و بر اساس آن، نازل شدن دفعی روشنایی یا تاریکی را مایه آسیب و شوک به چشم انسان و موجودات زنده می‌داند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "44356370067-155",
-      "sequence": 155,
-      "updated_at": "2026-11-18T18:32:21.372996+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره استدلال آیه تکویر بر تدبیر الهی",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که تعبیر به کار رفته در آیه درباره چرخش شب و روز، نشان‌دهنده تدبیر و مهربانی بی‌نهایت پروردگار در تغییر زمان است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44356370067-156",
-      "sequence": 156,
-      "updated_at": "2026-11-18T18:32:40.116425+00:00",
-      "speaker": null
-    }
-  ],
+  "session": "44541541136",
+  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "program_date": "2026-11-19",
+  "started_at": "2026-11-19T14:14:55.349978+00:00",
+  "updated_at": "2026-11-19T14:30:00.000247+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 156,
-    "editor_attempts": 145,
-    "editor_withheld": 139,
-    "topics_published": 13,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-18T18:39:50.478006+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
