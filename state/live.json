@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-19",
   "started_at": "2026-11-19T17:15:01.311988+00:00",
-  "updated_at": "2026-11-19T17:45:53.889355+00:00",
+  "updated_at": "2026-11-19T17:46:27.813398+00:00",
   "items": [
     {
       "title": "بررسی شعر خوانده شده از سعدی در برنامه",
@@ -58,16 +58,29 @@
       "sequence": 28,
       "updated_at": "2026-11-19T17:41:57.337784+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خانواده و ازدواج",
+      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44574985122-40",
+      "sequence": 40,
+      "updated_at": "2026-11-19T17:46:27.813374+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 40,
-    "segments_transcribed": 38,
-    "editor_attempts": 29,
-    "editor_withheld": 27,
-    "topics_published": 4,
+    "segments_captured": 41,
+    "segments_transcribed": 39,
+    "editor_attempts": 30,
+    "editor_withheld": 29,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-19T17:45:50.913431+00:00"
+    "last_audio_at": "2026-11-19T17:46:16.079165+00:00"
   }
 }
