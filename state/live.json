@@ -1,47 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "44541541136",
-  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "session": "44558155546",
+  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-19",
-  "started_at": "2026-11-19T14:14:55.349978+00:00",
-  "updated_at": "2026-11-19T15:40:04.052600+00:00",
-  "items": [
-    {
-      "title": "پرسش درباره وجود اختلافات کلامی در سقیفه بنی‌ساعده",
-      "summary": "در این بخش کارشناس درباره وجود اختلاف نظر و نزاع‌های کلامی بر سر تعیین جانشین پیامبر اسلام صلی‌الله‌علیه‌و‌آله در سقیفه بنی‌ساعده هم‌زمان با وفات ایشان مطالبی را مطرح می‌کند و به بررسی این مسئله می‌پردازد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44541541136-37",
-      "sequence": 37,
-      "updated_at": "2026-11-19T14:45:14.505452+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره امام حسین و عاشورا",
-      "summary": "در این بخش از برنامه، موضوع «امام حسین و عاشورا» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "44541541136-95",
-      "sequence": 95,
-      "updated_at": "2026-11-19T15:08:54.552865+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-19T15:44:52.548338+00:00",
+  "updated_at": "2026-11-19T16:00:00.000270+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 140,
-    "editor_attempts": 108,
-    "editor_withheld": 107,
-    "topics_published": 2,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 2,
-    "last_audio_at": "2026-11-19T15:39:46.527374+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
