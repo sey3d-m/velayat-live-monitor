@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-19",
   "started_at": "2026-11-19T17:15:01.311988+00:00",
-  "updated_at": "2026-11-19T17:59:27.553441+00:00",
+  "updated_at": "2026-11-19T17:59:29.864250+00:00",
   "items": [
-    {
-      "title": "بررسی شعر خوانده شده از سعدی در برنامه",
-      "summary": "در این بخش از برنامه حیات قرآنی، کارشناس اشاره کرد که شعر خوانده‌شده بخشی از یک غزل ملمع اثر سعدی بوده است که آن را تقدیم ساحت حضرت محبوب کرده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "editor_mode": "audio_grounded_topic",
-      "id": "44574985122-8",
-      "sequence": 8,
-      "updated_at": "2026-11-19T17:34:02.551597+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
       "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -71,14 +58,27 @@
       "sequence": 40,
       "updated_at": "2026-11-19T17:46:27.813374+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره تربیت و اخلاق",
+      "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44574985122-73",
+      "sequence": 73,
+      "updated_at": "2026-11-19T17:59:29.864225+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 74,
     "segments_transcribed": 72,
     "editor_attempts": 63,
-    "editor_withheld": 61,
-    "topics_published": 5,
+    "editor_withheld": 62,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-19T17:59:24.576797+00:00"
