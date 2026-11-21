@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T14:14:41.126199+00:00",
-  "updated_at": "2026-11-21T15:33:57.404907+00:00",
+  "updated_at": "2026-11-21T15:33:58.371835+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره خانواده و ازدواج",
-      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "44912875604-102",
-      "sequence": 102,
-      "updated_at": "2026-11-21T15:11:06.518487+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره حکم خمس بر سود سرمایه بانکی",
       "summary": "در این بخش، کارشناس درباره تعلق خمس به سود حاصل از سپرده‌گذاری و سرمایه‌گذاری بانکی سخن می‌گوید و استدلال می‌کند که اگر سود سرمایه پس از گذشت سال خمسی دریافت شود، به آن خمس تعلق می‌گیرد.",
@@ -69,14 +56,27 @@
       "sequence": 147,
       "updated_at": "2026-11-21T15:29:07.352605+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره زیارت",
+      "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44912875604-159",
+      "sequence": 159,
+      "updated_at": "2026-11-21T15:33:58.371821+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 160,
     "segments_transcribed": 149,
     "editor_attempts": 138,
-    "editor_withheld": 130,
-    "topics_published": 13,
+    "editor_withheld": 131,
+    "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-21T15:33:51.931446+00:00"
