@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T17:14:45.934881+00:00",
-  "updated_at": "2026-11-21T17:46:39.101620+00:00",
+  "updated_at": "2026-11-21T17:46:40.306859+00:00",
   "items": [
     {
       "title": "پرسش درباره هدف آفرینش و کسب علم و معرفت",
@@ -43,14 +43,27 @@
       "sequence": 31,
       "updated_at": "2026-11-21T17:42:40.921715+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خمس و زکات",
+      "summary": "در این بخش از برنامه، موضوع «خمس و زکات» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44928918186-41",
+      "sequence": 41,
+      "updated_at": "2026-11-21T17:46:40.306843+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 42,
     "segments_transcribed": 39,
     "editor_attempts": 39,
-    "editor_withheld": 35,
-    "topics_published": 3,
+    "editor_withheld": 36,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-21T17:46:36.437944+00:00"
