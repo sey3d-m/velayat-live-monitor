@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T17:14:45.934881+00:00",
-  "updated_at": "2026-11-21T18:04:19.290936+00:00",
+  "updated_at": "2026-11-21T18:04:43.945252+00:00",
   "items": [
     {
       "title": "پرسش درباره هدف آفرینش و کسب علم و معرفت",
@@ -56,16 +56,29 @@
       "sequence": 41,
       "updated_at": "2026-11-21T17:46:40.306843+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره تربیت و اخلاق",
+      "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44928918186-86",
+      "sequence": 86,
+      "updated_at": "2026-11-21T18:04:43.945227+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 86,
-    "segments_transcribed": 80,
-    "editor_attempts": 78,
-    "editor_withheld": 74,
-    "topics_published": 4,
+    "segments_captured": 87,
+    "segments_transcribed": 81,
+    "editor_attempts": 79,
+    "editor_withheld": 76,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-21T18:04:16.354331+00:00"
+    "last_audio_at": "2026-11-21T18:04:40.699417+00:00"
   }
 }
