@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T14:14:41.126199+00:00",
-  "updated_at": "2026-11-21T15:15:34.983204+00:00",
+  "updated_at": "2026-11-21T15:15:58.319184+00:00",
   "items": [
-    {
-      "title": "بررسی شرعی نذر شکر و نذر مجازات در گفتار کارشناس",
-      "summary": "در این بخش درباره انواع نذر، کارشناس به طرح موضوع نذر شکر در صورت شفای فرزند و همچنین نذر مجازات می‌پردازد. به گفته کارشناس، در نذر مجازات فرد تصمیم می‌گیرد در صورت ارتکاب گناهی مانند غیبت، روزه بگیرد تا به این وسیله خود را تنبیه کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44912875604-43",
-      "sequence": 43,
-      "updated_at": "2026-11-21T14:47:31.620748+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره خمس و زکات",
       "summary": "در این بخش از برنامه، موضوع «خمس و زکات» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +57,29 @@
       "sequence": 111,
       "updated_at": "2026-11-21T15:14:46.022261+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز جماعت",
+      "summary": "در این بخش از برنامه، موضوع «نماز جماعت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44912875604-114",
+      "sequence": 114,
+      "updated_at": "2026-11-21T15:15:58.319162+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 114,
-    "segments_transcribed": 104,
-    "editor_attempts": 102,
-    "editor_withheld": 96,
-    "topics_published": 10,
+    "segments_captured": 115,
+    "segments_transcribed": 105,
+    "editor_attempts": 103,
+    "editor_withheld": 98,
+    "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-21T15:15:28.367656+00:00"
+    "last_audio_at": "2026-11-21T15:15:52.875245+00:00"
   }
 }
