@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T14:14:41.126199+00:00",
-  "updated_at": "2026-11-21T14:47:30.661040+00:00",
+  "updated_at": "2026-11-21T14:47:31.620773+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره ولایت و غدیر",
-      "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "audio_grounded_topic",
-      "editor_confidence": 0.0,
-      "id": "44912875604-13",
-      "sequence": 13,
-      "updated_at": "2026-11-21T14:35:45.722374+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره روزه",
       "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,6 +57,18 @@
       "sequence": 20,
       "updated_at": "2026-11-21T14:38:19.627903+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی شرعی نذر شکر و نذر مجازات در گفتار کارشناس",
+      "summary": "در این بخش درباره انواع نذر، کارشناس به طرح موضوع نذر شکر در صورت شفای فرزند و همچنین نذر مجازات می‌پردازد. به گفته کارشناس، در نذر مجازات فرد تصمیم می‌گیرد در صورت ارتکاب گناهی مانند غیبت، روزه بگیرد تا به این وسیله خود را تنبیه کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44912875604-43",
+      "sequence": 43,
+      "updated_at": "2026-11-21T14:47:31.620748+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -77,7 +76,7 @@
     "segments_transcribed": 35,
     "editor_attempts": 34,
     "editor_withheld": 31,
-    "topics_published": 5,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-21T14:47:24.749853+00:00"
