@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T17:14:45.934881+00:00",
-  "updated_at": "2026-11-21T18:18:41.880341+00:00",
+  "updated_at": "2026-11-21T18:19:31.302839+00:00",
   "items": [
     {
       "title": "پرسش درباره تعداد حیات و مراتب زندگی انسان در گفتار کارشناس",
@@ -74,13 +74,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 122,
-    "segments_transcribed": 116,
-    "editor_attempts": 113,
-    "editor_withheld": 109,
+    "segments_captured": 124,
+    "segments_transcribed": 118,
+    "editor_attempts": 115,
+    "editor_withheld": 111,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-21T18:18:39.646475+00:00"
+    "last_audio_at": "2026-11-21T18:19:28.965816+00:00"
   }
 }
