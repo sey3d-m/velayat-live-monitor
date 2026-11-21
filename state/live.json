@@ -1,19 +1,32 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "44928918186",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T17:14:45.934881+00:00",
-  "updated_at": "2026-11-21T17:34:43.334588+00:00",
-  "items": [],
+  "updated_at": "2026-11-21T17:34:44.713130+00:00",
+  "items": [
+    {
+      "title": "پرسش درباره هدف آفرینش و کسب علم و معرفت",
+      "summary": "در این بخش کارشناس استدلال می‌کند که تعلیم و تعلم و کسب علم و معرفت، از دلایل آفرینش در نظام آفرینش است و در ادامه برای تبیین این موضوع به آیه شریفه «وما خلقنا الجن والانس الا لیعبدون» اشاره می‌کند و نتیجه می‌گیرد معرفت هدف آفرینش است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44928918186-11",
+      "sequence": 11,
+      "updated_at": "2026-11-21T17:34:44.713114+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
     "segments_captured": 12,
     "segments_transcribed": 9,
     "editor_attempts": 9,
     "editor_withheld": 8,
-    "topics_published": 0,
+    "topics_published": 1,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-21T17:34:41.472699+00:00"
