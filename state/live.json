@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T14:14:41.126199+00:00",
-  "updated_at": "2026-11-21T15:01:07.805924+00:00",
+  "updated_at": "2026-11-21T15:01:54.338331+00:00",
   "items": [
     {
       "title": "بررسی ادعای قدرت اول جهان بودن ایران با تکیه بر مدد الهی",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 78,
-    "segments_transcribed": 69,
-    "editor_attempts": 68,
-    "editor_withheld": 63,
+    "segments_captured": 80,
+    "segments_transcribed": 71,
+    "editor_attempts": 70,
+    "editor_withheld": 65,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-21T15:00:58.747183+00:00"
+    "last_audio_at": "2026-11-21T15:01:48.247105+00:00"
   }
 }
