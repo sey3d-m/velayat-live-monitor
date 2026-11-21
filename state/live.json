@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T14:14:41.126199+00:00",
-  "updated_at": "2026-11-21T14:37:53.461989+00:00",
+  "updated_at": "2026-11-21T14:38:19.627920+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره ولایت و غدیر",
@@ -57,16 +57,29 @@
       "sequence": 17,
       "updated_at": "2026-11-21T14:37:06.769618+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز شب",
+      "summary": "در این بخش از برنامه، موضوع «نماز شب» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44912875604-20",
+      "sequence": 20,
+      "updated_at": "2026-11-21T14:38:19.627903+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 20,
-    "segments_transcribed": 11,
-    "editor_attempts": 10,
-    "editor_withheld": 7,
-    "topics_published": 4,
+    "segments_captured": 21,
+    "segments_transcribed": 12,
+    "editor_attempts": 11,
+    "editor_withheld": 9,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-21T14:37:48.639201+00:00"
+    "last_audio_at": "2026-11-21T14:38:12.715901+00:00"
   }
 }
