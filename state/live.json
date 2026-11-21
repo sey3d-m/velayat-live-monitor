@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T14:14:41.126199+00:00",
-  "updated_at": "2026-11-21T15:13:55.567251+00:00",
+  "updated_at": "2026-11-21T15:14:45.015053+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره نماز شب",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 110,
-    "segments_transcribed": 100,
-    "editor_attempts": 98,
-    "editor_withheld": 93,
+    "segments_captured": 112,
+    "segments_transcribed": 102,
+    "editor_attempts": 100,
+    "editor_withheld": 95,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-21T15:13:49.921355+00:00"
+    "last_audio_at": "2026-11-21T15:14:38.906124+00:00"
   }
 }
