@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T17:14:45.934881+00:00",
-  "updated_at": "2026-11-21T18:08:19.071835+00:00",
+  "updated_at": "2026-11-21T18:09:03.474574+00:00",
   "items": [
     {
       "title": "پرسش درباره تفاوت بدن خاکی با بدن‌های دیگر",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 96,
-    "segments_transcribed": 90,
-    "editor_attempts": 88,
-    "editor_withheld": 84,
+    "segments_captured": 98,
+    "segments_transcribed": 92,
+    "editor_attempts": 90,
+    "editor_withheld": 86,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-21T18:08:16.349914+00:00"
+    "last_audio_at": "2026-11-21T18:09:01.223740+00:00"
   }
 }
