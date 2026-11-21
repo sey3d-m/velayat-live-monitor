@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T14:14:41.126199+00:00",
-  "updated_at": "2026-11-21T14:37:05.742271+00:00",
+  "updated_at": "2026-11-21T14:37:06.769639+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره ولایت و غدیر",
@@ -45,6 +45,18 @@
       "sequence": 16,
       "updated_at": "2026-11-21T14:36:46.305861+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ادعای قدرت اول جهان بودن ایران با تکیه بر مدد الهی",
+      "summary": "در این بخش کارشناس استدلال می‌کند که به گفته رهبری و با اتکا به عنایات و مدد الهی، ایران قدرت اول جهان است و خواهد بود. وی در ادامه از بینندگان خواست برای این موضوع به صورت ویژه دعا کنند و برنامه را با حضور یکی از بزرگان ادامه دادند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44912875604-17",
+      "sequence": 17,
+      "updated_at": "2026-11-21T14:37:06.769618+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -52,7 +64,7 @@
     "segments_transcribed": 9,
     "editor_attempts": 8,
     "editor_withheld": 6,
-    "topics_published": 3,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-21T14:36:59.503992+00:00"
