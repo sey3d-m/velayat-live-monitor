@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T14:14:41.126199+00:00",
-  "updated_at": "2026-11-21T15:25:09.875552+00:00",
+  "updated_at": "2026-11-21T15:25:35.443939+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره خمس و زکات",
-      "summary": "در این بخش از برنامه، موضوع «خمس و زکات» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "44912875604-75",
-      "sequence": 75,
-      "updated_at": "2026-11-21T15:00:27.615431+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره محاسبه خمس و رد مظالم در وصیت‌نامه",
       "summary": "در این بخش، کارشناس استدلال می‌کند که در هنگام بررسی وصیت‌نامه متوفی، باید مشخص شود آیا مواردی همچون خمس، حق‌الناس و رد مظالم در وصیت ذکر شده است یا خیر و آیا از اموال او باید پرداخت شود یا نه.",
@@ -70,16 +57,28 @@
       "sequence": 114,
       "updated_at": "2026-11-21T15:15:58.319162+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره رفتار خشن و شکنجه در رونوشت برنامه",
+      "summary": "در این بخش، کارشناس به بیان خاطره‌ای با ادعای برخورد خشن و شکنجه در روزهای برفی پرداخته و مدعی است که افراد را پابرهنه به حیاط برده و مورد آزار قرار داده‌اند. این ادعا تنها به نقل از گوینده مطرح شده و صحت تاریخی آن بررسی نشده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44912875604-138",
+      "sequence": 138,
+      "updated_at": "2026-11-21T15:25:35.443920+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 138,
-    "segments_transcribed": 128,
-    "editor_attempts": 125,
-    "editor_withheld": 119,
-    "topics_published": 11,
+    "segments_captured": 139,
+    "segments_transcribed": 129,
+    "editor_attempts": 126,
+    "editor_withheld": 120,
+    "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-21T15:25:03.600113+00:00"
+    "last_audio_at": "2026-11-21T15:25:27.921006+00:00"
   }
 }
