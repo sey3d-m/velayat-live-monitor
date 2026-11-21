@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T17:14:45.934881+00:00",
-  "updated_at": "2026-11-21T18:23:31.230573+00:00",
+  "updated_at": "2026-11-21T18:23:57.919127+00:00",
   "items": [
-    {
-      "title": "پرسش درباره تعداد حیات و مراتب زندگی انسان در گفتار کارشناس",
-      "summary": "در این بخش، کارشناس درباره تعداد حیات و مراتب زندگی انسان سخن می‌گوید و استدلال می‌کند که انسان دارای چند حیات مختلف از جمله حیات دنیا و برزخ است و در نهایت بیان می‌کند که انسان سه حیات و دو مرگ دارد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44928918186-31",
-      "sequence": 31,
-      "updated_at": "2026-11-21T17:42:40.921715+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره خمس و زکات",
       "summary": "در این بخش از برنامه، موضوع «خمس و زکات» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -71,16 +59,28 @@
       "sequence": 115,
       "updated_at": "2026-11-21T18:16:21.057301+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی مفهوم استدراج درباره کسب‌ درآمدها و جایزه‌های مشکوک",
+      "summary": "در این بخش کارشناس استدلال می‌کند که موفقیت‌های ظاهری و برنده شدن در قرعه‌کشی‌ها برای فردی که به مال مردم‌خوری متهم است، نشانه خوش‌اقبالی نبوده بلکه مصداق استدراج و حرکتی در مسیر دوزخی‌تر شدن او است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44928918186-134",
+      "sequence": 134,
+      "updated_at": "2026-11-21T18:23:57.919104+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 134,
-    "segments_transcribed": 126,
-    "editor_attempts": 123,
-    "editor_withheld": 119,
-    "topics_published": 7,
+    "segments_captured": 135,
+    "segments_transcribed": 127,
+    "editor_attempts": 124,
+    "editor_withheld": 120,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-21T18:23:28.478199+00:00"
+    "last_audio_at": "2026-11-21T18:23:53.497979+00:00"
   }
 }
