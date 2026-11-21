@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T17:14:45.934881+00:00",
-  "updated_at": "2026-11-21T18:16:19.807266+00:00",
+  "updated_at": "2026-11-21T18:16:21.057316+00:00",
   "items": [
-    {
-      "title": "پرسش درباره تفاوت بدن خاکی با بدن‌های دیگر",
-      "summary": "در این بخش، کارشناس به این پرسش می‌پردازد که بدن خاکی و انسانی چه تفاوتی با بدن‌های دیگر دارد و وجوه مشترک و افتراق آن‌ها چیست، و ابزارهای دنیوی را در خدمت نفس توصیف می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44928918186-20",
-      "sequence": 20,
-      "updated_at": "2026-11-21T17:38:24.218834+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره تعداد حیات و مراتب زندگی انسان در گفتار کارشناس",
       "summary": "در این بخش، کارشناس درباره تعداد حیات و مراتب زندگی انسان سخن می‌گوید و استدلال می‌کند که انسان دارای چند حیات مختلف از جمله حیات دنیا و برزخ است و در نهایت بیان می‌کند که انسان سه حیات و دو مرگ دارد.",
@@ -70,14 +58,27 @@
       "sequence": 88,
       "updated_at": "2026-11-21T18:05:29.156728+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره زیارت",
+      "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44928918186-115",
+      "sequence": 115,
+      "updated_at": "2026-11-21T18:16:21.057301+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 116,
     "segments_transcribed": 110,
     "editor_attempts": 107,
-    "editor_withheld": 103,
-    "topics_published": 6,
+    "editor_withheld": 104,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-21T18:16:17.413296+00:00"
