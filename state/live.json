@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T14:14:41.126199+00:00",
-  "updated_at": "2026-11-21T15:35:27.584204+00:00",
+  "updated_at": "2026-11-21T15:35:56.076712+00:00",
   "items": [
-    {
-      "title": "پرسش درباره حکم خمس بر سود سرمایه بانکی",
-      "summary": "در این بخش، کارشناس درباره تعلق خمس به سود حاصل از سپرده‌گذاری و سرمایه‌گذاری بانکی سخن می‌گوید و استدلال می‌کند که اگر سود سرمایه پس از گذشت سال خمسی دریافت شود، به آن خمس تعلق می‌گیرد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "44912875604-111",
-      "sequence": 111,
-      "updated_at": "2026-11-21T15:14:46.022261+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره نماز جماعت",
       "summary": "در این بخش از برنامه، موضوع «نماز جماعت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +57,29 @@
       "sequence": 159,
       "updated_at": "2026-11-21T15:33:58.371821+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره ولایت و غدیر",
+      "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "44912875604-164",
+      "sequence": 164,
+      "updated_at": "2026-11-21T15:35:56.076690+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 164,
-    "segments_transcribed": 152,
-    "editor_attempts": 140,
-    "editor_withheld": 133,
-    "topics_published": 14,
+    "segments_captured": 165,
+    "segments_transcribed": 153,
+    "editor_attempts": 141,
+    "editor_withheld": 134,
+    "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-21T15:35:23.541077+00:00"
+    "last_audio_at": "2026-11-21T15:35:47.759152+00:00"
   }
 }
