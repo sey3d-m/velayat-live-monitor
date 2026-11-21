@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T14:14:41.126199+00:00",
-  "updated_at": "2026-11-21T15:34:39.034888+00:00",
+  "updated_at": "2026-11-21T15:35:27.584204+00:00",
   "items": [
     {
       "title": "پرسش درباره حکم خمس بر سود سرمایه بانکی",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 162,
-    "segments_transcribed": 151,
+    "segments_captured": 164,
+    "segments_transcribed": 152,
     "editor_attempts": 140,
-    "editor_withheld": 132,
+    "editor_withheld": 133,
     "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-21T15:34:34.675480+00:00"
+    "last_audio_at": "2026-11-21T15:35:23.541077+00:00"
   }
 }
