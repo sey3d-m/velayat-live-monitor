@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T17:14:45.934881+00:00",
-  "updated_at": "2026-11-21T17:57:49.957120+00:00",
+  "updated_at": "2026-11-21T17:58:39.337890+00:00",
   "items": [
     {
       "title": "پرسش درباره هدف آفرینش و کسب علم و معرفت",
@@ -59,13 +59,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 70,
-    "segments_transcribed": 65,
-    "editor_attempts": 64,
+    "segments_captured": 72,
+    "segments_transcribed": 66,
+    "editor_attempts": 65,
     "editor_withheld": 61,
     "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-21T17:57:48.767892+00:00"
+    "last_audio_at": "2026-11-21T17:58:37.420827+00:00"
   }
 }
