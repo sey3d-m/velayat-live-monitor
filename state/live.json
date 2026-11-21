@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T14:14:41.126199+00:00",
-  "updated_at": "2026-11-21T15:27:26.562453+00:00",
+  "updated_at": "2026-11-21T15:28:16.615394+00:00",
   "items": [
     {
       "title": "پرسش درباره محاسبه خمس و رد مظالم در وصیت‌نامه",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 144,
-    "segments_transcribed": 133,
-    "editor_attempts": 129,
+    "segments_captured": 146,
+    "segments_transcribed": 135,
+    "editor_attempts": 130,
     "editor_withheld": 123,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-21T15:27:24.014365+00:00"
+    "last_audio_at": "2026-11-21T15:28:13.393655+00:00"
   }
 }
