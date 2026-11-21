@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T14:14:41.126199+00:00",
-  "updated_at": "2026-11-21T14:36:18.578261+00:00",
+  "updated_at": "2026-11-21T14:36:46.305881+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره ولایت و غدیر",
@@ -33,16 +33,28 @@
       "sequence": 14,
       "updated_at": "2026-11-21T14:36:18.578240+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره واکنش نظامی به تهدید احتمالی کشتی‌های نفت‌کش",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که با حرکت کشتی‌های نفت‌کش به سمت چین و هشدار به ارتش آمریکا درباره هرگونه شلیک به این کشتی‌ها، در صورت بروز حمله، منافع و پایگاه‌های اقتصادی و ایالات مرتبط با آمریکا در منطقه، از جمله در بحرین، امارات، قطر و عربستان سعودی، مورد حمله موشکی قرار خواهند گرفت.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44912875604-16",
+      "sequence": 16,
+      "updated_at": "2026-11-21T14:36:46.305861+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 16,
-    "segments_transcribed": 7,
-    "editor_attempts": 6,
+    "segments_captured": 17,
+    "segments_transcribed": 8,
+    "editor_attempts": 7,
     "editor_withheld": 6,
-    "topics_published": 2,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-21T14:36:11.794906+00:00"
+    "last_audio_at": "2026-11-21T14:36:34.631989+00:00"
   }
 }
