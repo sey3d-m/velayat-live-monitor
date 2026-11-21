@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-21",
   "started_at": "2026-11-21T17:14:45.934881+00:00",
-  "updated_at": "2026-11-21T17:37:54.553726+00:00",
+  "updated_at": "2026-11-21T17:38:24.218858+00:00",
   "items": [
     {
       "title": "پرسش درباره هدف آفرینش و کسب علم و معرفت",
@@ -19,16 +19,28 @@
       "sequence": 11,
       "updated_at": "2026-11-21T17:34:44.713114+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره تفاوت بدن خاکی با بدن‌های دیگر",
+      "summary": "در این بخش، کارشناس به این پرسش می‌پردازد که بدن خاکی و انسانی چه تفاوتی با بدن‌های دیگر دارد و وجوه مشترک و افتراق آن‌ها چیست، و ابزارهای دنیوی را در خدمت نفس توصیف می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "44928918186-20",
+      "sequence": 20,
+      "updated_at": "2026-11-21T17:38:24.218834+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 20,
-    "segments_transcribed": 17,
-    "editor_attempts": 17,
-    "editor_withheld": 15,
-    "topics_published": 1,
+    "segments_captured": 21,
+    "segments_transcribed": 18,
+    "editor_attempts": 18,
+    "editor_withheld": 16,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-21T17:37:51.939624+00:00"
+    "last_audio_at": "2026-11-21T17:38:16.945552+00:00"
   }
 }
