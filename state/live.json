@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "44920758883",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "44928918186",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-21",
-  "started_at": "2026-11-21T15:44:52.362591+00:00",
-  "updated_at": "2026-11-21T16:01:26.106213+00:00",
+  "started_at": "2026-11-21T17:14:45.934881+00:00",
+  "updated_at": "2026-11-21T17:30:00.000423+00:00",
   "items": [],
   "progress": {
     "segments_captured": 0,
