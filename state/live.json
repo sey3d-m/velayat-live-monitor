@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T17:15:10.724009+00:00",
-  "updated_at": "2026-11-22T18:10:38.400388+00:00",
+  "updated_at": "2026-11-22T18:11:03.797849+00:00",
   "items": [
-    {
-      "title": "پرسش درباره اطلاق آیه اطاعت در احکام و مدیریت جامعه",
-      "summary": "در این بخش کارشناس استدلال می‌کند که اطلاق آیه اطاعت هم شامل اطاعت در احکام و سنت پیامبر می‌شود و هم فرمان‌برداری، هدایت و مدیریت جامعه را در حوزه‌های نظامی، اجتماعی، اجرایی و حکومتی در بر می‌گیرد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45048294347-68",
-      "sequence": 68,
-      "updated_at": "2026-11-22T17:57:29.447829+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی تفاوت فرمان‌های حکومتی رسول خدا و احکام الهی",
       "summary": "در این بخش کارشناس استدلال می‌کند که فرمان‌های حکومتی صادرشده توسط رسول خدا با احکام دین و شریعت مانند نماز، روزه و حرام بودن دروغ و غیبت که مستقیماً به «أطیعوا الله» مربوط می‌شوند، تفاوت دارد و رسول خدا دو نوع فرمان و دستور مختلف دارد.",
@@ -67,16 +55,28 @@
       "sequence": 97,
       "updated_at": "2026-11-22T18:09:06.772646+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره استدلال آیه اولی‌الامر بر عصمت",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که بر اساس آیه پنجاه و نهم سوره نساء، اطاعت از اولی‌الامر هم‌ردیف اطاعت از رسول قرار گرفته و به همین دلیل، اولی‌الامر نیز باید مصون از خطا و معصوم باشند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45048294347-102",
+      "sequence": 102,
+      "updated_at": "2026-11-22T18:11:03.797824+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 102,
-    "segments_transcribed": 96,
-    "editor_attempts": 70,
-    "editor_withheld": 60,
-    "topics_published": 12,
+    "segments_captured": 103,
+    "segments_transcribed": 97,
+    "editor_attempts": 71,
+    "editor_withheld": 61,
+    "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T18:10:36.052080+00:00"
+    "last_audio_at": "2026-11-22T18:11:00.378995+00:00"
   }
 }
