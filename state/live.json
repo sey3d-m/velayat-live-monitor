@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T15:44:40.325449+00:00",
-  "updated_at": "2026-11-22T16:39:55.838713+00:00",
+  "updated_at": "2026-11-22T16:40:14.585102+00:00",
   "items": [
     {
       "title": "پرسش درباره توسل به ام‌البنین در شب وفات",
@@ -59,16 +59,28 @@
       "sequence": 31,
       "updated_at": "2026-11-22T16:12:44.204245+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی شیوه خطاب‌کردن امام علی توسط حضرت زهرا",
+      "summary": "در این بخش کارشناس استدلال می‌کند که حضرت زهرا (س) همواره به فرزندان خود سفارش می‌کردند تا امام علی (ع) را با عناوین محترمانه‌ای همچون سیدی و مولای خطاب کنند و از به کار بردن الفاظ دیگر پرهیز نمایند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45039936539-100",
+      "sequence": 100,
+      "updated_at": "2026-11-22T16:40:14.585074+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 100,
-    "segments_transcribed": 84,
-    "editor_attempts": 69,
-    "editor_withheld": 68,
-    "topics_published": 4,
+    "segments_captured": 101,
+    "segments_transcribed": 85,
+    "editor_attempts": 70,
+    "editor_withheld": 69,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T16:39:45.368041+00:00"
+    "last_audio_at": "2026-11-22T16:40:10.038645+00:00"
   }
 }
