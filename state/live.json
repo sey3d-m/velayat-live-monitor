@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T17:15:10.724009+00:00",
-  "updated_at": "2026-11-22T18:11:03.797849+00:00",
+  "updated_at": "2026-11-22T18:11:26.861164+00:00",
   "items": [
     {
       "title": "بررسی تفاوت فرمان‌های حکومتی رسول خدا و احکام الهی",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 103,
-    "segments_transcribed": 97,
+    "segments_captured": 104,
+    "segments_transcribed": 98,
     "editor_attempts": 71,
     "editor_withheld": 61,
     "topics_published": 13,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T18:11:00.378995+00:00"
+    "last_audio_at": "2026-11-22T18:11:24.760515+00:00"
   }
 }
