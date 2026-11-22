@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T17:15:10.724009+00:00",
-  "updated_at": "2026-11-22T18:23:30.323673+00:00",
+  "updated_at": "2026-11-22T18:24:23.803501+00:00",
   "items": [
     {
       "title": "پرسش درباره دلالت آیه اولوالامر بر رجوع به پیامبر و خدا هنگام اختلاف",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 134,
-    "segments_transcribed": 127,
-    "editor_attempts": 96,
-    "editor_withheld": 84,
+    "segments_captured": 136,
+    "segments_transcribed": 129,
+    "editor_attempts": 98,
+    "editor_withheld": 85,
     "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T18:23:25.257290+00:00"
+    "last_audio_at": "2026-11-22T18:24:14.227984+00:00"
   }
 }
