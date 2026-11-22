@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T17:15:10.724009+00:00",
-  "updated_at": "2026-11-22T18:04:13.600025+00:00",
+  "updated_at": "2026-11-22T18:05:00.602133+00:00",
   "items": [
     {
       "title": "پرسش درباره نکات و معنای آیه اطاعت در گفتار کارشناس",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 86,
-    "segments_transcribed": 80,
-    "editor_attempts": 58,
+    "segments_captured": 88,
+    "segments_transcribed": 82,
+    "editor_attempts": 59,
     "editor_withheld": 51,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T18:04:09.865252+00:00"
+    "last_audio_at": "2026-11-22T18:04:58.604374+00:00"
   }
 }
