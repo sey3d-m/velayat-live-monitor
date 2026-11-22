@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T17:15:10.724009+00:00",
-  "updated_at": "2026-11-22T18:06:40.580564+00:00",
+  "updated_at": "2026-11-22T18:07:27.916199+00:00",
   "items": [
     {
       "title": "بررسی استناد به آیه اولی بالمؤمنین در اثبات ولایت",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 92,
-    "segments_transcribed": 86,
-    "editor_attempts": 63,
-    "editor_withheld": 55,
+    "segments_captured": 94,
+    "segments_transcribed": 88,
+    "editor_attempts": 64,
+    "editor_withheld": 56,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T18:06:36.310347+00:00"
+    "last_audio_at": "2026-11-22T18:07:25.964423+00:00"
   }
 }
