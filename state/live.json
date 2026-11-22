@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T15:44:40.325449+00:00",
-  "updated_at": "2026-11-22T16:54:15.675980+00:00",
+  "updated_at": "2026-11-22T16:54:32.803678+00:00",
   "items": [
-    {
-      "title": "بررسی نقش انتخاب مادر در تربیت فرزندان فضیلت‌مند",
-      "summary": "در این بخش کارشناس استدلال می‌کند که برای تربیت فرزندانی صاحب فضیلت، باید در انتخاب همسر دقت بسیار زیادی کرد؛ به گفته وی، توجه به صفت مادری که برای فرزندان انتخاب می‌شود در این زمینه تأثیرگذار است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45039936539-104",
-      "sequence": 104,
-      "updated_at": "2026-11-22T16:41:47.613204+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره خانواده و ازدواج",
       "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -71,16 +59,28 @@
       "sequence": 135,
       "updated_at": "2026-11-22T16:54:15.675960+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نکته ادب در محضر الهی و کربلا",
+      "summary": "در این بخش کارشناס درباره رعایت ادب در محضر الهی به نقل از نحوه پوشش در خانه سخن می‌گوید و استدلال می‌کند که نمونه بارز ادب در کربلا، رضایت اباعبدالله الحسین و یارانش به قضا و قدر الهی بوده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45039936539-136",
+      "sequence": 136,
+      "updated_at": "2026-11-22T16:54:32.803659+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 136,
-    "segments_transcribed": 118,
-    "editor_attempts": 100,
+    "segments_captured": 137,
+    "segments_transcribed": 119,
+    "editor_attempts": 101,
     "editor_withheld": 98,
-    "topics_published": 10,
+    "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T16:54:10.968920+00:00"
+    "last_audio_at": "2026-11-22T16:54:28.869623+00:00"
   }
 }
