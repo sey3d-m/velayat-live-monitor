@@ -1,84 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "45031709739",
-  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "session": "45039936539",
+  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-22",
-  "started_at": "2026-11-22T14:14:55.900861+00:00",
-  "updated_at": "2026-11-22T15:40:05.755193+00:00",
-  "items": [
-    {
-      "title": "پرسش درباره مقایسه رفتار فرعون‌ها و چهره‌های سیاسی با تحقیر خلقتی",
-      "summary": "در این بخش کارشناس استدلال می‌کند که برخی افراد در پاسخ به نقد درست دیگران، به جای پذیرش آن، به تحقیر ویژگی‌های خلقتی افراد روی می‌آورند. به گفته کارشناس، قرآن کریم این روش را به عنوان شیوه مستکبران در طول تاریخ، از جمله فرعون‌ها، مطرح کرده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45031709739-39",
-      "sequence": 39,
-      "updated_at": "2026-11-22T14:45:56.348412+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45031709739-63",
-      "sequence": 63,
-      "updated_at": "2026-11-22T14:55:26.942389+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره روزه",
-      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45031709739-85",
-      "sequence": 85,
-      "updated_at": "2026-11-22T15:04:21.547563+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره پیوند اعتراضات اقتصادی با حوادث و تخریب‌ها",
-      "summary": "در این بخش کارشناس استدلال می‌کند که در جریان حوادث گذشته علاوه بر آسیب به مساجد و قرآن، به خانه‌ها و مغازه‌های مردم نیز یورش برده شده است. وی در این گفت‌وگو طرح این پرسش را مطرح می‌کند که چه کسی عامل این اقدامات بوده و در ادامه بیان می‌کند که اگر کسی به مسائل اقتصادی و گرانی اعتراض دارد، اعتراض او باید در مسیر مشخص و خیابان باشد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45031709739-130",
-      "sequence": 130,
-      "updated_at": "2026-11-22T15:22:13.210657+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره فرازهای زیارت و دعا برای آرامش و عاقبت‌به‌خیری",
-      "summary": "در این بخش کارشناس به قرائت و بررسی بخشی از فرازهای دعا می‌پردازد و به گفته وی، درخواست‌هایی مانند قرار گرفتن منزل و زندگی در کنار اهل‌بیت، پذیرش زیارت، پاکی حیات و ملحق شدن به زائران گرامی مطرح می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45031709739-151",
-      "sequence": 151,
-      "updated_at": "2026-11-22T15:30:40.651440+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-22T15:44:40.325449+00:00",
+  "updated_at": "2026-11-22T16:00:00.000264+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 158,
-    "editor_attempts": 143,
-    "editor_withheld": 140,
-    "topics_published": 6,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T15:39:47.470571+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
