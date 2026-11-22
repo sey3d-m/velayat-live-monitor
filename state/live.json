@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T14:14:55.900861+00:00",
-  "updated_at": "2026-11-22T15:08:17.167472+00:00",
+  "updated_at": "2026-11-22T15:09:00.360943+00:00",
   "items": [
     {
       "title": "پرسش درباره جایگاه و توسل به بانوی بزرگ اسلام برای برآورده شدن حاجات",
@@ -61,13 +61,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 96,
-    "segments_transcribed": 88,
-    "editor_attempts": 84,
-    "editor_withheld": 82,
+    "segments_captured": 98,
+    "segments_transcribed": 90,
+    "editor_attempts": 86,
+    "editor_withheld": 84,
     "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T15:08:06.058436+00:00"
+    "last_audio_at": "2026-11-22T15:08:55.797644+00:00"
   }
 }
