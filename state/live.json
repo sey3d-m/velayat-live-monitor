@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T17:15:10.724009+00:00",
-  "updated_at": "2026-11-22T18:27:27.925319+00:00",
+  "updated_at": "2026-11-22T18:28:14.845762+00:00",
   "items": [
     {
       "title": "بررسی استناد کارشناس به آیات مائده درباره حکم الهی",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 144,
-    "segments_transcribed": 137,
-    "editor_attempts": 105,
-    "editor_withheld": 92,
+    "segments_captured": 146,
+    "segments_transcribed": 138,
+    "editor_attempts": 106,
+    "editor_withheld": 94,
     "topics_published": 16,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T18:27:24.270874+00:00"
+    "last_audio_at": "2026-11-22T18:28:13.348598+00:00"
   }
 }
