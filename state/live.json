@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "45048294347",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T17:15:10.724009+00:00",
-  "updated_at": "2026-11-22T17:33:03.711236+00:00",
-  "items": [],
+  "updated_at": "2026-11-22T17:33:35.666413+00:00",
+  "items": [
+    {
+      "title": "گفت‌وگو درباره تمجید ام‌البنین از امیرالمؤمنین",
+      "summary": "در این بخش کارشناس استدلال می‌کند که ام‌البنین به سائل یادآوری کرده است که نان سفره‌اش از سوی امیرالمؤمنین بوده و بیان می‌کند که او اگر هزار فرزند عباس هم داشت تقدیم علی می‌کرد و به همین دلیل ام‌البنین خوانده نشده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "45048294347-8",
+      "sequence": 8,
+      "updated_at": "2026-11-22T17:33:35.666391+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 8,
-    "segments_transcribed": 4,
-    "editor_attempts": 2,
-    "editor_withheld": 2,
-    "topics_published": 0,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
-    "last_audio_at": "2026-11-22T17:32:59.670428+00:00"
+    "segments_captured": 9,
+    "segments_transcribed": 5,
+    "editor_attempts": 3,
+    "editor_withheld": 3,
+    "topics_published": 1,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
+    "last_audio_at": "2026-11-22T17:33:23.634758+00:00"
   }
 }
