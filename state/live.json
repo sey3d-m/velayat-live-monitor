@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "ended",
   "network": "velayat_farsi",
   "session": "45048294347",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T17:15:10.724009+00:00",
-  "updated_at": "2026-11-22T18:39:24.629170+00:00",
+  "updated_at": "2026-11-22T18:40:05.174104+00:00",
   "items": [
     {
       "title": "پرسش درباره استدلال آیه اولی‌الامر بر عصمت",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 174,
-    "segments_transcribed": 158,
-    "editor_attempts": 124,
-    "editor_withheld": 111,
+    "segments_captured": 175,
+    "segments_transcribed": 159,
+    "editor_attempts": 125,
+    "editor_withheld": 112,
     "topics_published": 17,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T18:39:23.516674+00:00"
+    "last_audio_at": "2026-11-22T18:39:47.678940+00:00"
   }
 }
