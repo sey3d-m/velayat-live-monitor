@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T17:15:10.724009+00:00",
-  "updated_at": "2026-11-22T18:12:16.150110+00:00",
+  "updated_at": "2026-11-22T18:13:04.724459+00:00",
   "items": [
     {
       "title": "پرسش درباره عدم خطای پیامبر و صدور فرمان حکومتی",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 106,
-    "segments_transcribed": 100,
-    "editor_attempts": 73,
-    "editor_withheld": 61,
+    "segments_captured": 108,
+    "segments_transcribed": 102,
+    "editor_attempts": 75,
+    "editor_withheld": 63,
     "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T18:12:13.342390+00:00"
+    "last_audio_at": "2026-11-22T18:13:02.420873+00:00"
   }
 }
