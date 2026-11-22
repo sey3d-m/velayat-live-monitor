@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T17:15:10.724009+00:00",
-  "updated_at": "2026-11-22T17:39:27.374210+00:00",
+  "updated_at": "2026-11-22T17:39:29.328831+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره تمجید ام‌البنین از امیرالمؤمنین",
@@ -58,6 +58,18 @@
       "sequence": 21,
       "updated_at": "2026-11-22T17:38:39.556129+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی تعداد دفعات خطاب برادر توسط حضرت عباس",
+      "summary": "در این بخش کارشناس استدلال می‌کند که در تاریخ ثبت نشده است که حضرت عباس فرزند ام‌البنین از دوران کودکی تا شهادت، امام حسین (ع) را با عنوان برادر خطاب کرده باشد. به گفته کارشناس، در مقاتل تنها یک بار و آن هم در لحظه شهادت و درخواست بالین، این خطاب ذکر شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45048294347-23",
+      "sequence": 23,
+      "updated_at": "2026-11-22T17:39:29.328806+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -65,7 +77,7 @@
     "segments_transcribed": 19,
     "editor_attempts": 12,
     "editor_withheld": 10,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 2,
     "audio_ai_success": 2,
     "last_audio_at": "2026-11-22T17:39:25.419218+00:00"
