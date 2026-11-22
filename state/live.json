@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T15:44:40.325449+00:00",
-  "updated_at": "2026-11-22T16:41:20.589598+00:00",
+  "updated_at": "2026-11-22T16:41:47.613221+00:00",
   "items": [
-    {
-      "title": "پرسش درباره توسل به ام‌البنین در شب وفات",
-      "summary": "در این بخش درباره توسل به ام‌البنین در شب وفات ایشان و قسم دادن حضرت ابوالفضل به مادرش صحبت شد. کارشناس استدلال می‌کند که این توسل ردخور ندارد و شک نکنید.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "editor_mode": "audio_grounded_topic",
-      "id": "45039936539-4",
-      "sequence": 4,
-      "updated_at": "2026-11-22T16:02:03.222819+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره زیارت",
       "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -71,16 +58,28 @@
       "sequence": 100,
       "updated_at": "2026-11-22T16:40:14.585074+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نقش انتخاب مادر در تربیت فرزندان فضیلت‌مند",
+      "summary": "در این بخش کارشناس استدلال می‌کند که برای تربیت فرزندانی صاحب فضیلت، باید در انتخاب همسر دقت بسیار زیادی کرد؛ به گفته وی، توجه به صفت مادری که برای فرزندان انتخاب می‌شود در این زمینه تأثیرگذار است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45039936539-104",
+      "sequence": 104,
+      "updated_at": "2026-11-22T16:41:47.613204+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 104,
-    "segments_transcribed": 88,
-    "editor_attempts": 73,
-    "editor_withheld": 71,
-    "topics_published": 5,
+    "segments_captured": 105,
+    "segments_transcribed": 89,
+    "editor_attempts": 74,
+    "editor_withheld": 72,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T16:41:17.630819+00:00"
+    "last_audio_at": "2026-11-22T16:41:42.761104+00:00"
   }
 }
