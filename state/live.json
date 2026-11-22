@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T17:15:10.724009+00:00",
-  "updated_at": "2026-11-22T18:00:40.194589+00:00",
+  "updated_at": "2026-11-22T18:01:03.263492+00:00",
   "items": [
     {
       "title": "بررسی تعداد دفعات خطاب برادر توسط حضرت عباس",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 77,
-    "segments_transcribed": 71,
+    "segments_captured": 78,
+    "segments_transcribed": 72,
     "editor_attempts": 52,
     "editor_withheld": 46,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T18:00:36.587651+00:00"
+    "last_audio_at": "2026-11-22T18:01:01.139920+00:00"
   }
 }
