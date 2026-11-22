@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T17:15:10.724009+00:00",
-  "updated_at": "2026-11-22T17:35:29.069265+00:00",
+  "updated_at": "2026-11-22T17:35:31.008711+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره تمجید ام‌البنین از امیرالمؤمنین",
@@ -20,14 +20,27 @@
       "sequence": 8,
       "updated_at": "2026-11-22T17:33:35.666391+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره امام حسین و عاشورا",
+      "summary": "در این بخش از برنامه، موضوع «امام حسین و عاشورا» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "45048294347-13",
+      "sequence": 13,
+      "updated_at": "2026-11-22T17:35:31.008660+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 14,
     "segments_transcribed": 9,
     "editor_attempts": 6,
-    "editor_withheld": 5,
-    "topics_published": 1,
+    "editor_withheld": 6,
+    "topics_published": 2,
     "audio_ai_calls": 1,
     "audio_ai_success": 1,
     "last_audio_at": "2026-11-22T17:35:26.432175+00:00"
