@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T15:44:40.325449+00:00",
-  "updated_at": "2026-11-22T16:54:14.579297+00:00",
+  "updated_at": "2026-11-22T16:54:15.675980+00:00",
   "items": [
-    {
-      "title": "بررسی شیوه خطاب‌کردن امام علی توسط حضرت زهرا",
-      "summary": "در این بخش کارشناس استدلال می‌کند که حضرت زهرا (س) همواره به فرزندان خود سفارش می‌کردند تا امام علی (ع) را با عناوین محترمانه‌ای همچون سیدی و مولای خطاب کنند و از به کار بردن الفاظ دیگر پرهیز نمایند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45039936539-100",
-      "sequence": 100,
-      "updated_at": "2026-11-22T16:40:14.585074+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی نقش انتخاب مادر در تربیت فرزندان فضیلت‌مند",
       "summary": "در این بخش کارشناس استدلال می‌کند که برای تربیت فرزندانی صاحب فضیلت، باید در انتخاب همسر دقت بسیار زیادی کرد؛ به گفته وی، توجه به صفت مادری که برای فرزندان انتخاب می‌شود در این زمینه تأثیرگذار است.",
@@ -70,14 +58,27 @@
       "sequence": 132,
       "updated_at": "2026-11-22T16:53:04.978066+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز",
+      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "45039936539-135",
+      "sequence": 135,
+      "updated_at": "2026-11-22T16:54:15.675960+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 136,
     "segments_transcribed": 118,
     "editor_attempts": 100,
-    "editor_withheld": 97,
-    "topics_published": 9,
+    "editor_withheld": 98,
+    "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-22T16:54:10.968920+00:00"
