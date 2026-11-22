@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T14:14:55.900861+00:00",
-  "updated_at": "2026-11-22T15:33:14.667734+00:00",
+  "updated_at": "2026-11-22T15:33:51.154845+00:00",
   "items": [
     {
       "title": "پرسش درباره مقایسه رفتار فرعون‌ها و چهره‌های سیاسی با تحقیر خلقتی",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 158,
-    "segments_transcribed": 144,
-    "editor_attempts": 135,
-    "editor_withheld": 132,
+    "segments_captured": 160,
+    "segments_transcribed": 146,
+    "editor_attempts": 136,
+    "editor_withheld": 133,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T15:32:58.758625+00:00"
+    "last_audio_at": "2026-11-22T15:33:48.626373+00:00"
   }
 }
