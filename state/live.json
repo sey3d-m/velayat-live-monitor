@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T17:15:10.724009+00:00",
-  "updated_at": "2026-11-22T17:58:40.128366+00:00",
+  "updated_at": "2026-11-22T17:59:25.207788+00:00",
   "items": [
     {
       "title": "بررسی روش تربیتی ام‌البنین در برخورد فرزندان با امام حسین",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 72,
-    "segments_transcribed": 66,
-    "editor_attempts": 48,
-    "editor_withheld": 42,
+    "segments_captured": 74,
+    "segments_transcribed": 68,
+    "editor_attempts": 50,
+    "editor_withheld": 44,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T17:58:34.230079+00:00"
+    "last_audio_at": "2026-11-22T17:59:23.198318+00:00"
   }
 }
