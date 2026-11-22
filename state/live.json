@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T14:14:55.900861+00:00",
-  "updated_at": "2026-11-22T15:04:14.387857+00:00",
+  "updated_at": "2026-11-22T15:04:21.547585+00:00",
   "items": [
     {
       "title": "پرسش درباره جایگاه و توسل به بانوی بزرگ اسلام برای برآورده شدن حاجات",
@@ -45,14 +45,27 @@
       "sequence": 63,
       "updated_at": "2026-11-22T14:55:26.942389+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره روزه",
+      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "45031709739-85",
+      "sequence": 85,
+      "updated_at": "2026-11-22T15:04:21.547563+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 86,
     "segments_transcribed": 78,
     "editor_attempts": 74,
-    "editor_withheld": 72,
-    "topics_published": 3,
+    "editor_withheld": 73,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-22T15:04:10.412891+00:00"
