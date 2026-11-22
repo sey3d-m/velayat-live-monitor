@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T17:15:10.724009+00:00",
-  "updated_at": "2026-11-22T17:33:35.666413+00:00",
+  "updated_at": "2026-11-22T17:33:50.798453+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره تمجید ام‌البنین از امیرالمؤمنین",
@@ -23,13 +23,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 9,
-    "segments_transcribed": 5,
+    "segments_captured": 10,
+    "segments_transcribed": 6,
     "editor_attempts": 3,
     "editor_withheld": 3,
     "topics_published": 1,
     "audio_ai_calls": 1,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-22T17:33:23.634758+00:00"
+    "last_audio_at": "2026-11-22T17:33:48.707804+00:00"
   }
 }
