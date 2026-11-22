@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T14:14:55.900861+00:00",
-  "updated_at": "2026-11-22T15:21:47.663937+00:00",
+  "updated_at": "2026-11-22T15:22:13.210678+00:00",
   "items": [
     {
       "title": "پرسش درباره جایگاه و توسل به بانوی بزرگ اسلام برای برآورده شدن حاجات",
@@ -58,16 +58,28 @@
       "sequence": 85,
       "updated_at": "2026-11-22T15:04:21.547563+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره پیوند اعتراضات اقتصادی با حوادث و تخریب‌ها",
+      "summary": "در این بخش کارشناس استدلال می‌کند که در جریان حوادث گذشته علاوه بر آسیب به مساجد و قرآن، به خانه‌ها و مغازه‌های مردم نیز یورش برده شده است. وی در این گفت‌وگو طرح این پرسش را مطرح می‌کند که چه کسی عامل این اقدامات بوده و در ادامه بیان می‌کند که اگر کسی به مسائل اقتصادی و گرانی اعتراض دارد، اعتراض او باید در مسیر مشخص و خیابان باشد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45031709739-130",
+      "sequence": 130,
+      "updated_at": "2026-11-22T15:22:13.210657+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 130,
-    "segments_transcribed": 122,
-    "editor_attempts": 118,
-    "editor_withheld": 116,
-    "topics_published": 4,
+    "segments_captured": 131,
+    "segments_transcribed": 123,
+    "editor_attempts": 119,
+    "editor_withheld": 117,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T15:21:43.093621+00:00"
+    "last_audio_at": "2026-11-22T15:22:06.783584+00:00"
   }
 }
