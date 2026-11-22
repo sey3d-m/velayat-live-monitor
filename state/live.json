@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T17:15:10.724009+00:00",
-  "updated_at": "2026-11-22T17:56:14.772168+00:00",
+  "updated_at": "2026-11-22T17:56:40.623328+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره امام حسین و عاشورا",
-      "summary": "در این بخش از برنامه، موضوع «امام حسین و عاشورا» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45048294347-13",
-      "sequence": 13,
-      "updated_at": "2026-11-22T17:35:31.008660+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره خانواده و ازدواج",
       "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +56,28 @@
       "sequence": 57,
       "updated_at": "2026-11-22T17:53:05.634031+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی استناد به آیه اولی بالمؤمنین در اثبات ولایت",
+      "summary": "در این بخش کارشناس استدلال می‌کند که ولایت مؤمنیان از سوی خداوند به پیامبر (ص) واگذار شده است و برای اثبات این موضوع به آیه مربوط به اولی بودن پیامبر نسبت به مؤمنان استناد می‌کند؛ وی همچنین دستورات پیامبر را در این زمینه به عنوان دستورات حکومتی مطرح می‌نماید.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45048294347-66",
+      "sequence": 66,
+      "updated_at": "2026-11-22T17:56:40.623304+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 66,
-    "segments_transcribed": 60,
-    "editor_attempts": 43,
+    "segments_captured": 67,
+    "segments_transcribed": 61,
+    "editor_attempts": 44,
     "editor_withheld": 40,
-    "topics_published": 6,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T17:56:12.882367+00:00"
+    "last_audio_at": "2026-11-22T17:56:37.772857+00:00"
   }
 }
