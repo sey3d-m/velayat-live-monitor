@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T15:44:40.325449+00:00",
-  "updated_at": "2026-11-22T16:07:53.863748+00:00",
+  "updated_at": "2026-11-22T16:08:36.583436+00:00",
   "items": [
     {
       "title": "پرسش درباره توسل به ام‌البنین در شب وفات",
@@ -49,13 +49,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 20,
-    "segments_transcribed": 18,
-    "editor_attempts": 16,
-    "editor_withheld": 15,
+    "segments_captured": 22,
+    "segments_transcribed": 20,
+    "editor_attempts": 18,
+    "editor_withheld": 17,
     "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T16:07:51.593984+00:00"
+    "last_audio_at": "2026-11-22T16:08:33.669992+00:00"
   }
 }
