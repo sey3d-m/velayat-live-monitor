@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "ended",
   "network": "velayat_farsi",
   "session": "45031709739",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T14:14:55.900861+00:00",
-  "updated_at": "2026-11-22T15:39:27.267369+00:00",
+  "updated_at": "2026-11-22T15:40:05.755193+00:00",
   "items": [
     {
       "title": "پرسش درباره مقایسه رفتار فرعون‌ها و چهره‌های سیاسی با تحقیر خلقتی",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 174,
-    "segments_transcribed": 157,
-    "editor_attempts": 142,
-    "editor_withheld": 138,
+    "segments_captured": 175,
+    "segments_transcribed": 158,
+    "editor_attempts": 143,
+    "editor_withheld": 140,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T15:39:22.909908+00:00"
+    "last_audio_at": "2026-11-22T15:39:47.470571+00:00"
   }
 }
