@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "45031709739",
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T14:14:55.900861+00:00",
-  "updated_at": "2026-11-22T14:32:17.558544+00:00",
-  "items": [],
+  "updated_at": "2026-11-22T14:32:30.851686+00:00",
+  "items": [
+    {
+      "title": "پرسش درباره جایگاه و توسل به بانوی بزرگ اسلام برای برآورده شدن حاجات",
+      "summary": "در این بخش کارشناس درباره جایگاه این بانوی بزرگ اسلام صحبت کرده و استدلال می‌کند که ارادتمندان این آستان با توسل به ایشان حاجات خود را می‌طلبند و حاجت‌روا می‌شوند؛ او نتیجه می‌گیرد که در رأس همه حاجات باید ظهور و فرج امام زمان (عج) را درخواست کرد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "45031709739-5",
+      "sequence": 5,
+      "updated_at": "2026-11-22T14:32:30.851665+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
     "segments_captured": 6,
     "segments_transcribed": 3,
     "editor_attempts": 3,
-    "editor_withheld": 2,
-    "topics_published": 0,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
+    "editor_withheld": 3,
+    "topics_published": 1,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
     "last_audio_at": "2026-11-22T14:32:13.608474+00:00"
   }
 }
