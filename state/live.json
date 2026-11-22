@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T15:44:40.325449+00:00",
-  "updated_at": "2026-11-22T16:12:42.884421+00:00",
+  "updated_at": "2026-11-22T16:12:44.204264+00:00",
   "items": [
     {
       "title": "پرسش درباره توسل به ام‌البنین در شب وفات",
@@ -46,14 +46,27 @@
       "sequence": 13,
       "updated_at": "2026-11-22T16:05:30.221838+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره تربیت و اخلاق",
+      "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "45039936539-31",
+      "sequence": 31,
+      "updated_at": "2026-11-22T16:12:44.204245+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 32,
     "segments_transcribed": 30,
     "editor_attempts": 25,
-    "editor_withheld": 24,
-    "topics_published": 3,
+    "editor_withheld": 25,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-22T16:12:39.961773+00:00"
