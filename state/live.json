@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T17:15:10.724009+00:00",
-  "updated_at": "2026-11-22T18:09:48.661338+00:00",
+  "updated_at": "2026-11-22T18:10:38.400388+00:00",
   "items": [
     {
       "title": "پرسش درباره اطلاق آیه اطاعت در احکام و مدیریت جامعه",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 100,
-    "segments_transcribed": 94,
-    "editor_attempts": 68,
-    "editor_withheld": 59,
+    "segments_captured": 102,
+    "segments_transcribed": 96,
+    "editor_attempts": 70,
+    "editor_withheld": 60,
     "topics_published": 12,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T18:09:46.535855+00:00"
+    "last_audio_at": "2026-11-22T18:10:36.052080+00:00"
   }
 }
