@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-22",
   "started_at": "2026-11-22T15:44:40.325449+00:00",
-  "updated_at": "2026-11-22T16:53:04.978093+00:00",
+  "updated_at": "2026-11-22T16:53:25.313282+00:00",
   "items": [
     {
       "title": "بررسی شیوه خطاب‌کردن امام علی توسط حضرت زهرا",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 133,
-    "segments_transcribed": 115,
-    "editor_attempts": 97,
+    "segments_captured": 134,
+    "segments_transcribed": 116,
+    "editor_attempts": 98,
     "editor_withheld": 95,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T16:52:56.915967+00:00"
+    "last_audio_at": "2026-11-22T16:53:21.626537+00:00"
   }
 }
