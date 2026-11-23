@@ -1,83 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "45048294347",
-  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
-  "program_date": "2026-11-22",
-  "started_at": "2026-11-22T17:15:10.724009+00:00",
-  "updated_at": "2026-11-22T18:40:05.174104+00:00",
-  "items": [
-    {
-      "title": "پرسش درباره استدلال آیه اولی‌الامر بر عصمت",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که بر اساس آیه پنجاه و نهم سوره نساء، اطاعت از اولی‌الامر هم‌ردیف اطاعت از رسول قرار گرفته و به همین دلیل، اولی‌الامر نیز باید مصون از خطا و معصوم باشند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45048294347-102",
-      "sequence": 102,
-      "updated_at": "2026-11-22T18:11:03.797824+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی تطبیق اولوالامر با امام معصوم در دیدگاه امامیه",
-      "summary": "در این بخش کارشناس استدلال می‌کند که ویژگی اولوالامر بودن در آیات قرآن با امام معصوم تطبیق دارد و آن را از امتیازات و دلایل حقانیت مذهب امامیه می‌داند؛ به گفته وی اولوالامر کسی است که ویژگی‌های مشخصی دارد و از اطاعت رسول تخطی نمی‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45048294347-104",
-      "sequence": 104,
-      "updated_at": "2026-11-22T18:11:52.306965+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره اثبات حقانیت مذهب امامیه با آیه و عصمت جانشین",
-      "summary": "در این بخش، کارشناس این پرسش را مطرح می‌کند که آیا جانشینان انتخابی مردم مأذون بوده‌اند، و استدلال می‌کند که حقانیت مذهب امامیه و شیعه با یک آیه اثبات می‌شود. به گفته وی، از ویژگی‌های این مذهب آن است که جانشین پیامبر باید در تراز ایشان و معصوم باشد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45048294347-133",
-      "sequence": 133,
-      "updated_at": "2026-11-22T18:23:30.323648+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره خانواده و ازدواج",
-      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45048294347-135",
-      "sequence": 135,
-      "updated_at": "2026-11-22T18:24:24.782542+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره مرثیه ام‌البنین و یادکرد علقمه",
-      "summary": "در این بخش، کارشناس به ذکر مرثیه ام‌البنین در سوگ فرزندانش می‌پردازد و استدلال می‌کند که تنها دلخوشی او در این مصیبت، رسیدن ماه بنی‌هاشم به فرات و ننوشیدن آب بوده است؛ موضوعی که در قالب روضه‌خوانی و توصیف میدان جنگ بیان شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45048294347-155",
-      "sequence": 155,
-      "updated_at": "2026-11-22T18:32:11.445297+00:00",
-      "speaker": null
-    }
-  ],
+  "session": "45192006332",
+  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "program_date": "2026-11-23",
+  "started_at": "2026-11-23T14:15:14.359466+00:00",
+  "updated_at": "2026-11-23T14:30:00.000334+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 159,
-    "editor_attempts": 125,
-    "editor_withheld": 112,
-    "topics_published": 17,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-22T18:39:47.678940+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
