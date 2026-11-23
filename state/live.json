@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-23",
   "started_at": "2026-11-23T15:45:40.760642+00:00",
-  "updated_at": "2026-11-23T16:43:00.456359+00:00",
+  "updated_at": "2026-11-23T16:43:26.413234+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره حدیث و روایت",
@@ -46,16 +46,29 @@
       "sequence": 83,
       "updated_at": "2026-11-23T16:33:24.893775+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره حضرت عباس",
+      "summary": "در این بخش از برنامه، موضوع «حضرت عباس» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "45208544895-108",
+      "sequence": 108,
+      "updated_at": "2026-11-23T16:43:26.413206+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 108,
-    "segments_transcribed": 79,
-    "editor_attempts": 58,
-    "editor_withheld": 57,
-    "topics_published": 3,
+    "segments_captured": 109,
+    "segments_transcribed": 80,
+    "editor_attempts": 59,
+    "editor_withheld": 59,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-23T16:42:58.085280+00:00"
+    "last_audio_at": "2026-11-23T16:43:22.972555+00:00"
   }
 }
