@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-23",
   "started_at": "2026-11-23T17:14:43.786462+00:00",
-  "updated_at": "2026-11-23T18:28:30.240080+00:00",
+  "updated_at": "2026-11-23T18:29:00.502616+00:00",
   "items": [
     {
       "title": "بررسی روش دستیابی به سنت پیامبر از طریق احادیث اهل‌بیت",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 146,
-    "segments_transcribed": 140,
-    "editor_attempts": 122,
-    "editor_withheld": 116,
+    "segments_captured": 148,
+    "segments_transcribed": 142,
+    "editor_attempts": 124,
+    "editor_withheld": 117,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-23T18:28:13.528054+00:00"
+    "last_audio_at": "2026-11-23T18:28:56.954120+00:00"
   }
 }
