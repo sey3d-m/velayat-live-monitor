@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-23",
   "started_at": "2026-11-23T14:15:14.359466+00:00",
-  "updated_at": "2026-11-23T15:06:42.863624+00:00",
+  "updated_at": "2026-11-23T15:07:33.361082+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره نماز",
@@ -61,13 +61,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 92,
-    "segments_transcribed": 85,
-    "editor_attempts": 77,
-    "editor_withheld": 75,
+    "segments_captured": 94,
+    "segments_transcribed": 87,
+    "editor_attempts": 78,
+    "editor_withheld": 76,
     "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-23T15:06:39.485270+00:00"
+    "last_audio_at": "2026-11-23T15:07:28.731712+00:00"
   }
 }
