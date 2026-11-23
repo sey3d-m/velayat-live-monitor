@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-23",
   "started_at": "2026-11-23T17:14:43.786462+00:00",
-  "updated_at": "2026-11-23T17:34:46.975565+00:00",
+  "updated_at": "2026-11-23T17:35:11.036999+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره گفت‌وگوی مذاهب اسلامی",
@@ -20,16 +20,28 @@
       "sequence": 7,
       "updated_at": "2026-11-23T17:33:10.260263+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی مناسبت روز ولادت حضرت زهرا و نام‌گذاری روز زن",
+      "summary": "در این بخش کارشناس استدلال می‌کند که با توجه به اینکه در ایام متعلق به حضرت زهرا سلام‌الله‌علیها هستیم، نام‌گذاری روز ولادت آن حضرت با عنوان روز زن، نام‌گذاری بسیار مناسب و درستی است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45225430204-12",
+      "sequence": 12,
+      "updated_at": "2026-11-23T17:35:11.036977+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 12,
-    "segments_transcribed": 9,
-    "editor_attempts": 8,
-    "editor_withheld": 7,
-    "topics_published": 1,
+    "segments_captured": 13,
+    "segments_transcribed": 10,
+    "editor_attempts": 9,
+    "editor_withheld": 8,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-23T17:34:41.975940+00:00"
+    "last_audio_at": "2026-11-23T17:35:06.151198+00:00"
   }
 }
