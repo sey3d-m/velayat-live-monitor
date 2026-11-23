@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-23",
   "started_at": "2026-11-23T17:14:43.786462+00:00",
-  "updated_at": "2026-11-23T17:54:03.530309+00:00",
+  "updated_at": "2026-11-23T17:54:46.112243+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره گفت‌وگوی مذاهب اسلامی",
@@ -48,13 +48,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 60,
-    "segments_transcribed": 55,
-    "editor_attempts": 53,
-    "editor_withheld": 51,
+    "segments_captured": 62,
+    "segments_transcribed": 57,
+    "editor_attempts": 54,
+    "editor_withheld": 52,
     "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-23T17:53:52.157726+00:00"
+    "last_audio_at": "2026-11-23T17:54:41.735534+00:00"
   }
 }
