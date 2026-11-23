@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-23",
   "started_at": "2026-11-23T17:14:43.786462+00:00",
-  "updated_at": "2026-11-23T18:09:06.271286+00:00",
+  "updated_at": "2026-11-23T18:09:31.618734+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره احکام طهارت",
-      "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45225430204-78",
-      "sequence": 78,
-      "updated_at": "2026-11-23T18:01:40.600686+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره حضرت عباس",
       "summary": "در این بخش از برنامه، موضوع «حضرت عباس» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +56,28 @@
       "sequence": 96,
       "updated_at": "2026-11-23T18:08:49.827253+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی استناد به آیه بیعت تحت شجره و دلالت آن بر مؤمنین",
+      "summary": "در این بخش کارشناس استدلال می‌کند که آیه رضایت خداوند از مؤمنین هنگام بیعت زیر درخت، از واژه «مؤمنین» استفاده کرده و شامل همه افراد نمیشود؛ به گفته وی قرآن نفرموده است که خداوند از همه آنان راضی شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45225430204-98",
+      "sequence": 98,
+      "updated_at": "2026-11-23T18:09:31.618712+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 98,
-    "segments_transcribed": 93,
-    "editor_attempts": 84,
-    "editor_withheld": 79,
-    "topics_published": 8,
+    "segments_captured": 99,
+    "segments_transcribed": 94,
+    "editor_attempts": 85,
+    "editor_withheld": 80,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-23T18:09:02.237373+00:00"
+    "last_audio_at": "2026-11-23T18:09:27.380532+00:00"
   }
 }
