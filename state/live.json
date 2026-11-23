@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-23",
   "started_at": "2026-11-23T17:14:43.786462+00:00",
-  "updated_at": "2026-11-23T18:08:25.684728+00:00",
+  "updated_at": "2026-11-23T18:08:49.827274+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45225430204-43",
-      "sequence": 43,
-      "updated_at": "2026-11-23T17:47:39.896181+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره احکام طهارت",
       "summary": "در این بخش از برنامه، موضوع «احکام طهارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +57,28 @@
       "sequence": 84,
       "updated_at": "2026-11-23T18:03:57.865325+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره دلالت آیه بیعت رضوان و پاسخ کارشناس",
+      "summary": "در این بخش، کارشناس به پرسش چند بیننده درباره دلالت آیه مرتبط با بیعت رضوان پاسخ می‌دهد؛ پرسشگر ادعا کرده بود معرفی حاضران به عنوان مؤمن با منافق بودن احتمالی بعدی آن‌ها در تناقض است. کارشناس در ابتدا اشاره می‌کند که واژه فصاحت در این پرسش به کار رفته است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.92,
+      "id": "45225430204-96",
+      "sequence": 96,
+      "updated_at": "2026-11-23T18:08:49.827253+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 96,
-    "segments_transcribed": 91,
-    "editor_attempts": 82,
-    "editor_withheld": 78,
-    "topics_published": 7,
+    "segments_captured": 97,
+    "segments_transcribed": 92,
+    "editor_attempts": 83,
+    "editor_withheld": 79,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-23T18:08:18.911594+00:00"
+    "last_audio_at": "2026-11-23T18:08:43.862531+00:00"
   }
 }
