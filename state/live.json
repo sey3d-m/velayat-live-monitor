@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-23",
   "started_at": "2026-11-23T15:45:40.760642+00:00",
-  "updated_at": "2026-11-23T17:03:53.506278+00:00",
+  "updated_at": "2026-11-23T17:03:55.513165+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره حدیث و روایت",
@@ -59,6 +59,18 @@
       "sequence": 108,
       "updated_at": "2026-11-23T16:43:26.413206+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره پرهیز از اعمال ناپسند مانند دروغ و غیبت",
+      "summary": "در این بخش کارشناس استدلال می‌کند که اگر انسان از کارهای ناپسند و عمله منزجر است، نباید خودش مرتکب آن‌ها شود؛ از جمله اینکه اگر از دروغ و غیبت بدش می‌آید، نباید دروغ بگوید و غیبت کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45208544895-159",
+      "sequence": 159,
+      "updated_at": "2026-11-23T17:03:55.513149+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -66,7 +78,7 @@
     "segments_transcribed": 130,
     "editor_attempts": 100,
     "editor_withheld": 99,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 1,
     "last_audio_at": "2026-11-23T17:03:50.042250+00:00"
