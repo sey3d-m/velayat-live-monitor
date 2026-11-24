@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T15:44:48.505886+00:00",
-  "updated_at": "2026-11-24T16:45:25.929003+00:00",
+  "updated_at": "2026-11-24T16:45:53.736911+00:00",
   "items": [
-    {
-      "title": "پرسش درباره معیارهای انتخاب همسر و دقت در ازدواج",
-      "summary": "در این بخش کارشناس تأکید می‌کند که در انتخاب همسر باید دقت فراوانی شود، زیرا فرد منتخب مادر یا پدر فرزندان آینده و شریک زندگی تا پایان عمر خواهد بود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45428939702-32",
-      "sequence": 32,
-      "updated_at": "2026-11-24T16:13:11.278321+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی چرایی سفارش ولیمه در اسلام و هزینه تشریفات",
       "summary": "در این بخش کارشناس استدلال می‌کند که هزینه‌های بالای تالار و تشریفات باعث دوری جوانان از ازدواج شده و برای همه مقدور نیست؛ با این حال، در این گفت‌وگو بیان شد که اصل ولیمه در اسلام سفارش شده است.",
@@ -67,16 +55,28 @@
       "sequence": 80,
       "updated_at": "2026-11-24T16:32:15.750210+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره اعتراض اولیای دانش‌آموزان به وقت نماز مدرسه",
+      "summary": "در این بخش کارشناس به طرح موضوعی درباره گلایه برخی والدین از اختصاص زمان مدرسه به نماز می‌پردازد. به گفته کارشناس، در مراجعه به یک مدرسه، پدر یکی از دانش‌آموزان نسبت به قرار دادن وقت نماز و تأثیر آن بر زمان تحصیل فرزندشان اعتراض کرده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45428939702-114",
+      "sequence": 114,
+      "updated_at": "2026-11-24T16:45:53.736888+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 114,
-    "segments_transcribed": 100,
-    "editor_attempts": 87,
-    "editor_withheld": 81,
-    "topics_published": 5,
+    "segments_captured": 115,
+    "segments_transcribed": 101,
+    "editor_attempts": 88,
+    "editor_withheld": 82,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-24T16:45:23.198907+00:00"
+    "last_audio_at": "2026-11-24T16:45:48.501206+00:00"
   }
 }
