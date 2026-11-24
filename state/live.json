@@ -1,21 +1,34 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "45428939702",
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T15:44:48.505886+00:00",
-  "updated_at": "2026-11-24T16:12:42.768820+00:00",
-  "items": [],
+  "updated_at": "2026-11-24T16:13:11.278366+00:00",
+  "items": [
+    {
+      "title": "پرسش درباره معیارهای انتخاب همسر و دقت در ازدواج",
+      "summary": "در این بخش کارشناس تأکید می‌کند که در انتخاب همسر باید دقت فراوانی شود، زیرا فرد منتخب مادر یا پدر فرزندان آینده و شریک زندگی تا پایان عمر خواهد بود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45428939702-32",
+      "sequence": 32,
+      "updated_at": "2026-11-24T16:13:11.278321+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
-    "segments_captured": 32,
-    "segments_transcribed": 29,
-    "editor_attempts": 20,
-    "editor_withheld": 19,
-    "topics_published": 0,
+    "segments_captured": 33,
+    "segments_transcribed": 30,
+    "editor_attempts": 21,
+    "editor_withheld": 20,
+    "topics_published": 1,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-24T16:12:39.419431+00:00"
+    "last_audio_at": "2026-11-24T16:13:04.175606+00:00"
   }
 }
