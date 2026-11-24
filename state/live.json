@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T17:14:53.424661+00:00",
-  "updated_at": "2026-11-24T18:15:29.723549+00:00",
+  "updated_at": "2026-11-24T18:16:19.647879+00:00",
   "items": [
     {
       "title": "بررسی تفاوت‌های جسمانی و وجه روحانی معصوم",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 114,
-    "segments_transcribed": 109,
-    "editor_attempts": 103,
-    "editor_withheld": 96,
+    "segments_captured": 116,
+    "segments_transcribed": 111,
+    "editor_attempts": 105,
+    "editor_withheld": 98,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 0,
-    "last_audio_at": "2026-11-24T18:15:23.674607+00:00"
+    "last_audio_at": "2026-11-24T18:16:13.193049+00:00"
   }
 }
