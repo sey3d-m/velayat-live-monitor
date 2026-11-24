@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T17:14:53.424661+00:00",
-  "updated_at": "2026-11-24T17:37:03.665461+00:00",
+  "updated_at": "2026-11-24T17:37:05.852678+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
@@ -20,6 +20,18 @@
       "sequence": 6,
       "updated_at": "2026-11-24T17:32:42.853809+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره معنای بشریت و ویژگی وحی در گفتار کارشناس",
+      "summary": "در این بخش، کارشناس درباره معنای بشریت و تفاوت آن با دیگران استدلال می‌کند که افزون بر ویژگی بشری، مسئله «یوحی الیه» و نزول وحی نیز مطرح است. به گفته وی، اگر سنخیت و مثل بودن را به این معنا در نظر بگیریم، ابعاد دیگری به همراه خواهد داشت.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45446292957-17",
+      "sequence": 17,
+      "updated_at": "2026-11-24T17:37:05.852657+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -27,7 +39,7 @@
     "segments_transcribed": 15,
     "editor_attempts": 13,
     "editor_withheld": 12,
-    "topics_published": 1,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 0,
     "last_audio_at": "2026-11-24T17:36:59.189682+00:00"
