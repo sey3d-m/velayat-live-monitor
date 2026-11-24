@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T15:44:48.505886+00:00",
-  "updated_at": "2026-11-24T16:50:14.406025+00:00",
+  "updated_at": "2026-11-24T16:51:05.076388+00:00",
   "items": [
     {
       "title": "بررسی مدیریت تهیه لوازم عروسی و تقسیم کار در صدر اسلام",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 126,
-    "segments_transcribed": 112,
-    "editor_attempts": 98,
-    "editor_withheld": 90,
+    "segments_captured": 128,
+    "segments_transcribed": 114,
+    "editor_attempts": 99,
+    "editor_withheld": 91,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-24T16:50:12.060833+00:00"
+    "last_audio_at": "2026-11-24T16:51:01.923655+00:00"
   }
 }
