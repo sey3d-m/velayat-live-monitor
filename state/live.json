@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T15:44:48.505886+00:00",
-  "updated_at": "2026-11-24T16:31:49.694166+00:00",
+  "updated_at": "2026-11-24T16:32:15.750239+00:00",
   "items": [
     {
       "title": "پرسش درباره معیارهای انتخاب همسر و دقت در ازدواج",
@@ -55,16 +55,28 @@
       "sequence": 64,
       "updated_at": "2026-11-24T16:26:01.243386+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره نقش فاطمه بنت اسد در امور منزل امیرالمؤمنین",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که در موارد ضرورت و کارهای سخت جهادی یا سفرهای امیرالمؤمنین (ع)، تا زمانی که فاطمه بنت اسد در قید حیات بود، با توجه به کهولت سن مادر امیرالمؤمنین (ع)، امور بیرون منزل را فاطمه بنت اسد بر عهده داشت.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45428939702-80",
+      "sequence": 80,
+      "updated_at": "2026-11-24T16:32:15.750210+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 80,
-    "segments_transcribed": 77,
-    "editor_attempts": 65,
-    "editor_withheld": 60,
-    "topics_published": 4,
+    "segments_captured": 81,
+    "segments_transcribed": 78,
+    "editor_attempts": 66,
+    "editor_withheld": 61,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-24T16:31:46.821004+00:00"
+    "last_audio_at": "2026-11-24T16:32:11.016398+00:00"
   }
 }
