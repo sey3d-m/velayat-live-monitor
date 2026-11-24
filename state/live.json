@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T17:14:53.424661+00:00",
-  "updated_at": "2026-11-24T18:12:43.527000+00:00",
+  "updated_at": "2026-11-24T18:13:06.430090+00:00",
   "items": [
     {
       "title": "بررسی ادعای نادیده گرفتن ثقل کلام آیه در گفتار کارشناس",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 107,
-    "segments_transcribed": 102,
-    "editor_attempts": 96,
+    "segments_captured": 108,
+    "segments_transcribed": 103,
+    "editor_attempts": 97,
     "editor_withheld": 90,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 0,
-    "last_audio_at": "2026-11-24T18:12:36.766340+00:00"
+    "last_audio_at": "2026-11-24T18:13:01.742102+00:00"
   }
 }
