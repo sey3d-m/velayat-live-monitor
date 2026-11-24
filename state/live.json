@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T17:14:53.424661+00:00",
-  "updated_at": "2026-11-24T18:17:28.481393+00:00",
+  "updated_at": "2026-11-24T18:17:50.149574+00:00",
   "items": [
     {
       "title": "پرسش درباره رویکرد و استدلال مطرح‌شده در ماجرای سقیفه",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 119,
-    "segments_transcribed": 114,
-    "editor_attempts": 108,
+    "segments_captured": 120,
+    "segments_transcribed": 115,
+    "editor_attempts": 109,
     "editor_withheld": 101,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 0,
-    "last_audio_at": "2026-11-24T18:17:21.226046+00:00"
+    "last_audio_at": "2026-11-24T18:17:45.709354+00:00"
   }
 }
