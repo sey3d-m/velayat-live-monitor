@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "45225430204",
-  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
-  "program_date": "2026-11-23",
-  "started_at": "2026-11-23T17:14:43.786462+00:00",
-  "updated_at": "2026-11-23T18:40:06.084964+00:00",
-  "items": [
-    {
-      "title": "بررسی روش دستیابی به سنت پیامبر از طریق احادیث اهل‌بیت",
-      "summary": "در این بخش کارشناس استدلال می‌کند که برای به‌دست‌آوردن سنت پیامبر (ص)، بیشترین روایات در کتب شیعه از طریق اهل‌بیت (ع) نقل شده و پیامبر نیز سفارش آن را کرده‌اند؛ با این حال، نقل روایات منسوب به پیامبر یا ائمه باید بررسی شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45225430204-82",
-      "sequence": 82,
-      "updated_at": "2026-11-23T18:03:33.031367+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره اعتبار روایات ابن‌عباس و صحابه مکثر در منابع اهل سنت",
-      "summary": "در این بخش، کارشناس درباره پذیرش روایات منسوب به ابن‌عباس از پیامبر یا حضرت علی در منابع اهل سنت استدلال می‌کند و به موضوع صحابه مکثر و مقلین در نقل روایات اشاره می‌کند؛ به گفته کارشناس، روایات ابن‌عباس و دیگر صحابه مکثر که نقل روایت فراوانی داشته‌اند، در جوامع روایی مطرح است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "45225430204-84",
-      "sequence": 84,
-      "updated_at": "2026-11-23T18:03:57.865325+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره دلالت آیه بیعت رضوان و پاسخ کارشناس",
-      "summary": "در این بخش، کارشناس به پرسش چند بیننده درباره دلالت آیه مرتبط با بیعت رضوان پاسخ می‌دهد؛ پرسشگر ادعا کرده بود معرفی حاضران به عنوان مؤمن با منافق بودن احتمالی بعدی آن‌ها در تناقض است. کارشناس در ابتدا اشاره می‌کند که واژه فصاحت در این پرسش به کار رفته است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.92,
-      "id": "45225430204-96",
-      "sequence": 96,
-      "updated_at": "2026-11-23T18:08:49.827253+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی استناد به آیه بیعت تحت شجره و دلالت آن بر مؤمنین",
-      "summary": "در این بخش کارشناس استدلال می‌کند که آیه رضایت خداوند از مؤمنین هنگام بیعت زیر درخت، از واژه «مؤمنین» استفاده کرده و شامل همه افراد نمیشود؛ به گفته وی قرآن نفرموده است که خداوند از همه آنان راضی شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45225430204-98",
-      "sequence": 98,
-      "updated_at": "2026-11-23T18:09:31.618712+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی استناد به آیه قرآن درباره اهمیت گوش دادن به حقیقت",
-      "summary": "در این بخش کارشناس استدلال می‌کند که بی‌توجهی به حقیقت و گوش ندادن به سخنان حق، سرانجامی همچون جهنم دارد. به گفته کارشناس، در سوره مبارکه ملک جهنمیان اقرار می‌کنند که اگر گوش می‌دادند یا تعقل می‌کردند، در میان اصحاب سعیر نبودند؛ وی این موضوع را با شایعات و اختلاف‌افکنی‌های کنونی مقایسه می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45225430204-139",
-      "sequence": 139,
-      "updated_at": "2026-11-23T18:25:50.815231+00:00",
-      "speaker": null
-    }
-  ],
+  "session": "45411825594",
+  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "program_date": "2026-11-24",
+  "started_at": "2026-11-24T14:14:44.635305+00:00",
+  "updated_at": "2026-11-24T14:30:00.000246+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 159,
-    "editor_attempts": 137,
-    "editor_withheld": 130,
-    "topics_published": 10,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-23T18:39:48.645665+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
