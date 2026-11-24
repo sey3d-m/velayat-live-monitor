@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T15:44:48.505886+00:00",
-  "updated_at": "2026-11-24T16:47:05.294056+00:00",
+  "updated_at": "2026-11-24T16:47:54.079632+00:00",
   "items": [
     {
       "title": "بررسی چرایی سفارش ولیمه در اسلام و هزینه تشریفات",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 118,
-    "segments_transcribed": 104,
-    "editor_attempts": 91,
-    "editor_withheld": 84,
+    "segments_captured": 120,
+    "segments_transcribed": 106,
+    "editor_attempts": 93,
+    "editor_withheld": 86,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-24T16:47:02.050698+00:00"
+    "last_audio_at": "2026-11-24T16:47:51.106123+00:00"
   }
 }
