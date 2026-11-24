@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T15:44:48.505886+00:00",
-  "updated_at": "2026-11-24T16:16:41.008486+00:00",
+  "updated_at": "2026-11-24T16:17:07.741972+00:00",
   "items": [
     {
       "title": "پرسش درباره معیارهای انتخاب همسر و دقت در ازدواج",
@@ -31,16 +31,28 @@
       "sequence": 36,
       "updated_at": "2026-11-24T16:14:40.182098+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی مدیریت تهیه لوازم عروسی و تقسیم کار در صدر اسلام",
+      "summary": "در این بخش کارشناس استدلال می‌کند که پیامبر لوازم اولیه زندگی مانند کاسه و زیرانداز را با پول امیرالمؤمنین تهیه کرد. به گفته وی، جناب بلال مسئول تهیه و مدیریت ولیمه عروسی بود و در این زمینه تقسیم کار میان اصحاب صورت گرفت.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45428939702-42",
+      "sequence": 42,
+      "updated_at": "2026-11-24T16:17:07.741947+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 42,
-    "segments_transcribed": 39,
-    "editor_attempts": 30,
-    "editor_withheld": 27,
-    "topics_published": 2,
+    "segments_captured": 43,
+    "segments_transcribed": 40,
+    "editor_attempts": 31,
+    "editor_withheld": 28,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-24T16:16:37.849616+00:00"
+    "last_audio_at": "2026-11-24T16:17:02.345743+00:00"
   }
 }
