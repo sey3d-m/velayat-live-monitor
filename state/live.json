@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T15:44:48.505886+00:00",
-  "updated_at": "2026-11-24T16:14:14.884710+00:00",
+  "updated_at": "2026-11-24T16:14:40.182127+00:00",
   "items": [
     {
       "title": "پرسش درباره معیارهای انتخاب همسر و دقت در ازدواج",
@@ -19,16 +19,28 @@
       "sequence": 32,
       "updated_at": "2026-11-24T16:13:11.278321+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی چرایی سفارش ولیمه در اسلام و هزینه تشریفات",
+      "summary": "در این بخش کارشناس استدلال می‌کند که هزینه‌های بالای تالار و تشریفات باعث دوری جوانان از ازدواج شده و برای همه مقدور نیست؛ با این حال، در این گفت‌وگو بیان شد که اصل ولیمه در اسلام سفارش شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45428939702-36",
+      "sequence": 36,
+      "updated_at": "2026-11-24T16:14:40.182098+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 36,
-    "segments_transcribed": 33,
-    "editor_attempts": 24,
-    "editor_withheld": 22,
-    "topics_published": 1,
+    "segments_captured": 37,
+    "segments_transcribed": 34,
+    "editor_attempts": 25,
+    "editor_withheld": 23,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-24T16:14:11.364221+00:00"
+    "last_audio_at": "2026-11-24T16:14:35.245502+00:00"
   }
 }
