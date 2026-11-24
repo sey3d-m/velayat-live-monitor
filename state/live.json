@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T17:14:53.424661+00:00",
-  "updated_at": "2026-11-24T18:12:17.574526+00:00",
+  "updated_at": "2026-11-24T18:12:43.527000+00:00",
   "items": [
-    {
-      "title": "پرسش درباره معنای بشریت و ویژگی وحی در گفتار کارشناس",
-      "summary": "در این بخش، کارشناس درباره معنای بشریت و تفاوت آن با دیگران استدلال می‌کند که افزون بر ویژگی بشری، مسئله «یوحی الیه» و نزول وحی نیز مطرح است. به گفته وی، اگر سنخیت و مثل بودن را به این معنا در نظر بگیریم، ابعاد دیگری به همراه خواهد داشت.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45446292957-17",
-      "sequence": 17,
-      "updated_at": "2026-11-24T17:37:05.852657+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی ادعای نادیده گرفتن ثقل کلام آیه در گفتار کارشناس",
       "summary": "در این بخش، کارشناس استدلال می‌کند که اگر فردی با وجود نداشتن تخصص، ثقل کلام در آیه مورد بحث را نادیده بگیرد، به گونه‌ای که از روی عدم تخصص باشد، مخاطبان و بینندگان خود را فریب داده است؛ این موضوع به عنوان ادعایی درباره کیفیت مواجهه با آیات مطرح شد.",
@@ -67,16 +55,28 @@
       "sequence": 99,
       "updated_at": "2026-11-24T18:09:51.056765+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره دلالت آیه قرآن بر حکومت و قضاوت پیامبر",
+      "summary": "در این بخش کارشناس استدلال می‌کند که پیامبر با استناد به عبارت قرآنی، مأمور به داوری، قضاوت و حکومت در میان مردم بوده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.82,
+      "id": "45446292957-106",
+      "sequence": 106,
+      "updated_at": "2026-11-24T18:12:43.526980+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 106,
-    "segments_transcribed": 101,
-    "editor_attempts": 95,
-    "editor_withheld": 89,
-    "topics_published": 6,
+    "segments_captured": 107,
+    "segments_transcribed": 102,
+    "editor_attempts": 96,
+    "editor_withheld": 90,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 0,
-    "last_audio_at": "2026-11-24T18:12:11.773171+00:00"
+    "last_audio_at": "2026-11-24T18:12:36.766340+00:00"
   }
 }
