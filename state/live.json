@@ -1,83 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "45428939702",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "45446292957",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-24",
-  "started_at": "2026-11-24T15:44:48.505886+00:00",
-  "updated_at": "2026-11-24T17:10:08.021006+00:00",
-  "items": [
-    {
-      "title": "پرسش درباره نقش فاطمه بنت اسد در امور منزل امیرالمؤمنین",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که در موارد ضرورت و کارهای سخت جهادی یا سفرهای امیرالمؤمنین (ع)، تا زمانی که فاطمه بنت اسد در قید حیات بود، با توجه به کهولت سن مادر امیرالمؤمنین (ع)، امور بیرون منزل را فاطمه بنت اسد بر عهده داشت.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45428939702-80",
-      "sequence": 80,
-      "updated_at": "2026-11-24T16:32:15.750210+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره اعتراض اولیای دانش‌آموزان به وقت نماز مدرسه",
-      "summary": "در این بخش کارشناس به طرح موضوعی درباره گلایه برخی والدین از اختصاص زمان مدرسه به نماز می‌پردازد. به گفته کارشناس، در مراجعه به یک مدرسه، پدر یکی از دانش‌آموزان نسبت به قرار دادن وقت نماز و تأثیر آن بر زمان تحصیل فرزندشان اعتراض کرده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45428939702-114",
-      "sequence": 114,
-      "updated_at": "2026-11-24T16:45:53.736888+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی آموزش ظلم‌ستیزی به کودکان در سیره حضرت زهرا",
-      "summary": "در این بخش کارشناس استدلال می‌کند که یکی از نکات مورد اهتمام حضرت زهرا سلام‌الله‌علیها، آموزش ظلم‌ستیزی به بچه‌ها بوده است. به گفته وی، توجه به مسائل معنوی فرزندان علاوه بر اینکه قطعاً در دنیای آن‌ها مفید است، برای آخرتشان نیز تأثیرگذار خواهد بود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45428939702-124",
-      "sequence": 124,
-      "updated_at": "2026-11-24T16:49:53.804446+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی اشعار توحیدی و ظلم‌ستیز در گفتار کارشناس",
-      "summary": "در این بخش کارشناس اشاره می‌کند که اشعاری با مضمون توحیدی و ظلم‌ستیز تکرار می‌شده است؛ از جمله عباراتی که در آن‌ها درخواست رهایی ریسمان اسارت از گردن حق و پرستش خداوند صاحب نعمت مطرح شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "45428939702-131",
-      "sequence": 131,
-      "updated_at": "2026-11-24T16:52:44.062510+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره خانواده و ازدواج",
-      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45428939702-135",
-      "sequence": 135,
-      "updated_at": "2026-11-24T16:54:17.000312+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-24T17:14:53.424661+00:00",
+  "updated_at": "2026-11-24T17:30:00.000321+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 150,
-    "editor_attempts": 122,
-    "editor_withheld": 114,
-    "topics_published": 9,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-24T17:09:44.458701+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
