@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T17:14:53.424661+00:00",
-  "updated_at": "2026-11-24T17:41:54.011544+00:00",
+  "updated_at": "2026-11-24T17:41:55.653281+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
@@ -44,6 +44,18 @@
       "sequence": 20,
       "updated_at": "2026-11-24T17:38:21.207830+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی تفاوت‌های جسمانی و وجه روحانی معصوم",
+      "summary": "در این بخش کارشناس استدلال می‌کند که از نظر جسمانی و آسیب‌پذیری در برابر شمشیر یا سم، تفاوتی میان او و دیگران وجود ندارد؛ اما به گفته کارشناس، تفاوت اساسی در داشتن وجه روحانی و وحی الهی است که دیگران از آن بی‌بهره‌اند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45446292957-29",
+      "sequence": 29,
+      "updated_at": "2026-11-24T17:41:55.653264+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -51,7 +63,7 @@
     "segments_transcribed": 27,
     "editor_attempts": 25,
     "editor_withheld": 22,
-    "topics_published": 3,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 0,
     "last_audio_at": "2026-11-24T17:41:48.688369+00:00"
