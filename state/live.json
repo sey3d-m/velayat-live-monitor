@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T17:14:53.424661+00:00",
-  "updated_at": "2026-11-24T18:19:30.968399+00:00",
+  "updated_at": "2026-11-24T18:19:56.759927+00:00",
   "items": [
-    {
-      "title": "پرسش درباره رویکرد و استدلال مطرح‌شده در ماجرای سقیفه",
-      "summary": "در این بخش، کارشناس پیشنهاد می‌کند که ماجرای سقیفه از منابع خودی بررسی شود و این پرسش مطرح می‌گردد که در آنجا چه گفته شده است؛ به گفته وی، با وجود اینکه پیامبر (ص) جانشینی تعیین نکد، این ایده مطرح شد که امکان داشتن حکومت و حاکمیت وجود دارد چون پیامبر حکم...",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45446292957-97",
-      "sequence": 97,
-      "updated_at": "2026-11-24T18:09:08.944519+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی استدلال لزوم تعیین حاکم در کلام کارشناس",
       "summary": "در این بخش کارشناس درباره ضرورت داشتن امیر و حاکم سخن می‌گوید و استدلال می‌کند که برای جلوگیری از نزاع و درگیری، جامعه ناچار به داشتن حاکم است و در این زمینه به عبارت لابد لنا من امیرین استناد می‌کند.",
@@ -68,16 +56,28 @@
       "sequence": 118,
       "updated_at": "2026-11-24T18:17:28.481372+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره تداوم وصایت و نیاز بشر به متولی امر",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که پس از اتمام ابلاغ مبین، وظایف پیامبر و نیاز بشر به متولی امر باقی است و به گفته وی، پیامبر شخصاً متولی امر را تعیین کرده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45446292957-124",
+      "sequence": 124,
+      "updated_at": "2026-11-24T18:19:56.759905+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 124,
-    "segments_transcribed": 119,
-    "editor_attempts": 113,
-    "editor_withheld": 105,
-    "topics_published": 9,
+    "segments_captured": 125,
+    "segments_transcribed": 120,
+    "editor_attempts": 114,
+    "editor_withheld": 106,
+    "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 0,
-    "last_audio_at": "2026-11-24T18:19:24.611975+00:00"
+    "last_audio_at": "2026-11-24T18:19:50.139673+00:00"
   }
 }
