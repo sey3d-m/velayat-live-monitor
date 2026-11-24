@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T15:44:48.505886+00:00",
-  "updated_at": "2026-11-24T16:28:40.127749+00:00",
+  "updated_at": "2026-11-24T16:29:30.319173+00:00",
   "items": [
     {
       "title": "پرسش درباره معیارهای انتخاب همسر و دقت در ازدواج",
@@ -58,13 +58,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 72,
-    "segments_transcribed": 69,
-    "editor_attempts": 58,
-    "editor_withheld": 53,
+    "segments_captured": 74,
+    "segments_transcribed": 71,
+    "editor_attempts": 60,
+    "editor_withheld": 55,
     "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-24T16:28:36.338118+00:00"
+    "last_audio_at": "2026-11-24T16:29:25.710416+00:00"
   }
 }
