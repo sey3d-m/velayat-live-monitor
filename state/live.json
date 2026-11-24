@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T17:14:53.424661+00:00",
-  "updated_at": "2026-11-24T18:32:15.038753+00:00",
+  "updated_at": "2026-11-24T18:33:02.342914+00:00",
   "items": [
     {
       "title": "بررسی استدلال لزوم تعیین حاکم در کلام کارشناس",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 156,
-    "segments_transcribed": 141,
+    "segments_captured": 158,
+    "segments_transcribed": 142,
     "editor_attempts": 134,
-    "editor_withheld": 125,
+    "editor_withheld": 126,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 0,
-    "last_audio_at": "2026-11-24T18:32:10.283159+00:00"
+    "last_audio_at": "2026-11-24T18:32:59.349089+00:00"
   }
 }
