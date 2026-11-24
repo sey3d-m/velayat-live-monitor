@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T15:44:48.505886+00:00",
-  "updated_at": "2026-11-24T17:08:38.384258+00:00",
+  "updated_at": "2026-11-24T17:09:22.205095+00:00",
   "items": [
     {
       "title": "پرسش درباره نقش فاطمه بنت اسد در امور منزل امیرالمؤمنین",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 172,
-    "segments_transcribed": 147,
-    "editor_attempts": 120,
-    "editor_withheld": 111,
+    "segments_captured": 174,
+    "segments_transcribed": 149,
+    "editor_attempts": 121,
+    "editor_withheld": 112,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-24T17:08:36.606720+00:00"
+    "last_audio_at": "2026-11-24T17:09:19.891438+00:00"
   }
 }
