@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T15:44:48.505886+00:00",
-  "updated_at": "2026-11-24T16:53:25.243414+00:00",
+  "updated_at": "2026-11-24T16:54:14.762547+00:00",
   "items": [
     {
       "title": "پرسش درباره معنای واژه قوام در آیه قرآن و نقد زورگویی به زنان",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 134,
-    "segments_transcribed": 120,
-    "editor_attempts": 105,
-    "editor_withheld": 96,
+    "segments_captured": 136,
+    "segments_transcribed": 122,
+    "editor_attempts": 107,
+    "editor_withheld": 98,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-24T16:53:22.104412+00:00"
+    "last_audio_at": "2026-11-24T16:54:11.786239+00:00"
   }
 }
