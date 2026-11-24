@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T17:14:53.424661+00:00",
-  "updated_at": "2026-11-24T18:09:06.749397+00:00",
+  "updated_at": "2026-11-24T18:09:08.944541+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
@@ -56,6 +56,18 @@
       "sequence": 29,
       "updated_at": "2026-11-24T17:41:55.653264+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره رویکرد و استدلال مطرح‌شده در ماجرای سقیفه",
+      "summary": "در این بخش، کارشناس پیشنهاد می‌کند که ماجرای سقیفه از منابع خودی بررسی شود و این پرسش مطرح می‌گردد که در آنجا چه گفته شده است؛ به گفته وی، با وجود اینکه پیامبر (ص) جانشینی تعیین نکد، این ایده مطرح شد که امکان داشتن حکومت و حاکمیت وجود دارد چون پیامبر حکم...",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45446292957-97",
+      "sequence": 97,
+      "updated_at": "2026-11-24T18:09:08.944519+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -63,7 +75,7 @@
     "segments_transcribed": 93,
     "editor_attempts": 88,
     "editor_withheld": 84,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 0,
     "last_audio_at": "2026-11-24T18:09:00.051283+00:00"
