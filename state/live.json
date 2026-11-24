@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-24",
   "started_at": "2026-11-24T17:14:53.424661+00:00",
-  "updated_at": "2026-11-24T18:13:06.430090+00:00",
+  "updated_at": "2026-11-24T18:13:07.672812+00:00",
   "items": [
-    {
-      "title": "بررسی ادعای نادیده گرفتن ثقل کلام آیه در گفتار کارشناس",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که اگر فردی با وجود نداشتن تخصص، ثقل کلام در آیه مورد بحث را نادیده بگیرد، به گونه‌ای که از روی عدم تخصص باشد، مخاطبان و بینندگان خود را فریب داده است؛ این موضوع به عنوان ادعایی درباره کیفیت مواجهه با آیات مطرح شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45446292957-20",
-      "sequence": 20,
-      "updated_at": "2026-11-24T17:38:21.207830+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی تفاوت‌های جسمانی و وجه روحانی معصوم",
       "summary": "در این بخش کارشناس استدلال می‌کند که از نظر جسمانی و آسیب‌پذیری در برابر شمشیر یا سم، تفاوتی میان او و دیگران وجود ندارد؛ اما به گفته کارشناس، تفاوت اساسی در داشتن وجه روحانی و وحی الهی است که دیگران از آن بی‌بهره‌اند.",
@@ -67,14 +55,27 @@
       "sequence": 106,
       "updated_at": "2026-11-24T18:12:43.526980+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره اعتقادات اسلامی",
+      "summary": "در این بخش از برنامه، موضوع «اعتقادات اسلامی» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "45446292957-107",
+      "sequence": 107,
+      "updated_at": "2026-11-24T18:13:07.672795+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 108,
     "segments_transcribed": 103,
     "editor_attempts": 97,
-    "editor_withheld": 90,
-    "topics_published": 7,
+    "editor_withheld": 91,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 0,
     "last_audio_at": "2026-11-24T18:13:01.742102+00:00"
