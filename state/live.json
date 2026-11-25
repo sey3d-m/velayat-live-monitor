@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-25",
   "started_at": "2026-11-25T17:14:58.715429+00:00",
-  "updated_at": "2026-11-25T18:34:43.966583+00:00",
+  "updated_at": "2026-11-25T18:35:41.097939+00:00",
   "items": [
     {
       "title": "بررسی نظریه تعادل پوسته‌ای و ریشه کوه‌ها از دیدگاه جورج ایری",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 162,
-    "segments_transcribed": 158,
-    "editor_attempts": 150,
-    "editor_withheld": 143,
+    "segments_captured": 164,
+    "segments_transcribed": 160,
+    "editor_attempts": 152,
+    "editor_withheld": 144,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-25T18:34:40.291346+00:00"
+    "last_audio_at": "2026-11-25T18:35:23.798211+00:00"
   }
 }
