@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-25",
   "started_at": "2026-11-25T14:14:49.602095+00:00",
-  "updated_at": "2026-11-25T15:28:59.884522+00:00",
+  "updated_at": "2026-11-25T15:29:48.505740+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره اذان و اقامه",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 148,
-    "segments_transcribed": 134,
+    "segments_captured": 150,
+    "segments_transcribed": 135,
     "editor_attempts": 122,
-    "editor_withheld": 119,
+    "editor_withheld": 120,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-25T15:28:57.754821+00:00"
+    "last_audio_at": "2026-11-25T15:29:46.714177+00:00"
   }
 }
