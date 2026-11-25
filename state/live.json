@@ -1,21 +1,35 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "45662584114",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-25",
   "started_at": "2026-11-25T17:14:58.715429+00:00",
-  "updated_at": "2026-11-25T17:33:01.435075+00:00",
-  "items": [],
+  "updated_at": "2026-11-25T17:33:15.803598+00:00",
+  "items": [
+    {
+      "title": "بررسی سخن امام جواد (ع) در آغاز برنامه توسط کارشناس",
+      "summary": "در این بخش از برنامه، کارشناس با اشاره به توفیق حضور در برنامه، به نقل روایتی از امام جواد علیه‌السلام پرداخت و ابراز امیدواری کرد آنچه به صلاح دین و دنیا و آخرت است بر زبان‌ها جاری شود. او در این زمینه به فرازی از کلام آن حضرت استناد کرد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "editor_mode": "audio_grounded_topic",
+      "id": "45662584114-7",
+      "sequence": 7,
+      "updated_at": "2026-11-25T17:33:15.803573+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
     "segments_captured": 8,
     "segments_transcribed": 5,
     "editor_attempts": 4,
-    "editor_withheld": 3,
-    "topics_published": 0,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
+    "editor_withheld": 4,
+    "topics_published": 1,
+    "audio_ai_calls": 2,
+    "audio_ai_success": 2,
     "last_audio_at": "2026-11-25T17:32:57.742027+00:00"
   }
 }
