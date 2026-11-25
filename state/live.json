@@ -1,84 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "45651400562",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "45662584114",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-25",
-  "started_at": "2026-11-25T16:09:45.406945+00:00",
-  "updated_at": "2026-11-25T17:19:55.475358+00:00",
-  "items": [
-    {
-      "title": "بررسی نقش دین در زیست اخلاقی انسان",
-      "summary": "در این بخش کارشناس استدلال می‌کند که پیشوایان دینی عموماً آموزگاران اخلاق بشر هستند و دین نقش بسیار مهمی در سلوک و زیست اخلاقی انسان ایفا می‌کند؛ بازگشت به زیست اخلاقی نیز به گسترش بیداری کمک می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45651400562-69",
-      "sequence": 69,
-      "updated_at": "2026-11-25T16:37:45.016459+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی ابعاد اخلاقی در تعالیم پیامبر اسلام هنگام جنگ",
-      "summary": "در این بخش کارشناس استدلال می‌کند که اهمیت اخلاقیات در تمام ارکان دین و زندگی جریان دارد. وی اظهار می‌کند که این موضوع حتی به حوزه جنگ و حضور در میدان نبرد نیز تسری پیدا می‌کند و بخشی از تعالیم پیامبر اسلام را تشکیل می‌دهد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45651400562-103",
-      "sequence": 103,
-      "updated_at": "2026-11-25T16:51:19.392452+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره دعا و پناه بردن به غیر خدا در رونوشت برنامه",
-      "summary": "در این بخش، کارشناس عباراتی درباره تضرع و درخواست از غیر خدا مطرح می‌کند و استدلال می‌کند که انسان نباید در هنگام سختی و اضطرار به دیگران پناه ببرد. در این گفت‌وگو به پیامدهای این‌گونه درخواست‌ها و استمداد از غیر اشاره می‌شود و در پایان، رحمت خداوند به عنوان پناهگاه نهایی یاد می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45651400562-143",
-      "sequence": 143,
-      "updated_at": "2026-11-25T17:07:18.249780+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره ولایت و غدیر",
-      "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45651400562-168",
-      "sequence": 168,
-      "updated_at": "2026-11-25T17:17:19.237469+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45651400562-172",
-      "sequence": 172,
-      "updated_at": "2026-11-25T17:18:59.773430+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-25T17:14:58.715429+00:00",
+  "updated_at": "2026-11-25T17:30:00.000248+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 167,
-    "editor_attempts": 131,
-    "editor_withheld": 126,
-    "topics_published": 9,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 2,
-    "last_audio_at": "2026-11-25T17:19:37.581844+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
