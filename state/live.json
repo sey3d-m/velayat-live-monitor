@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-25",
   "started_at": "2026-11-25T16:09:45.406945+00:00",
-  "updated_at": "2026-11-25T16:34:32.466297+00:00",
+  "updated_at": "2026-11-25T16:34:58.150317+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره خانواده و ازدواج",
@@ -45,16 +45,28 @@
       "sequence": 60,
       "updated_at": "2026-11-25T16:34:18.715967+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نقش تعالیم اخلاقی انبیا در تمدن بشر",
+      "summary": "در این بخش کارشناس استدلال می‌کند که اگر تعالیم اخلاقی انبیا وجود نداشت، تمدن بشر رنگ دیگری می‌داشت و در حال حاضر نیز در جوامع و تمدن‌های بشری بد اخلاقی‌ها و خشونت‌هایی وجود دارد که گوینده به آن اشاره می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45651400562-62",
+      "sequence": 62,
+      "updated_at": "2026-11-25T16:34:58.150291+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 62,
-    "segments_transcribed": 61,
-    "editor_attempts": 51,
-    "editor_withheld": 49,
-    "topics_published": 3,
+    "segments_captured": 63,
+    "segments_transcribed": 62,
+    "editor_attempts": 52,
+    "editor_withheld": 50,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-25T16:34:30.146821+00:00"
+    "last_audio_at": "2026-11-25T16:34:54.004434+00:00"
   }
 }
