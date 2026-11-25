@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-25",
   "started_at": "2026-11-25T16:09:45.406945+00:00",
-  "updated_at": "2026-11-25T16:32:53.645391+00:00",
+  "updated_at": "2026-11-25T16:32:55.101152+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره خانواده و ازدواج",
@@ -20,14 +20,27 @@
       "sequence": 10,
       "updated_at": "2026-11-25T16:14:08.656877+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره تربیت و اخلاق",
+      "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "45651400562-57",
+      "sequence": 57,
+      "updated_at": "2026-11-25T16:32:55.101131+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 58,
     "segments_transcribed": 57,
     "editor_attempts": 48,
-    "editor_withheld": 47,
-    "topics_published": 1,
+    "editor_withheld": 48,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
     "last_audio_at": "2026-11-25T16:32:51.499864+00:00"
