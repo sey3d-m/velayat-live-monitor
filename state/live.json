@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-25",
   "started_at": "2026-11-25T17:14:58.715429+00:00",
-  "updated_at": "2026-11-25T18:26:41.020005+00:00",
+  "updated_at": "2026-11-25T18:27:01.968206+00:00",
   "items": [
     {
       "title": "بررسی سخن امام جواد (ع) در آغاز برنامه توسط کارشناس",
@@ -45,16 +45,28 @@
       "sequence": 105,
       "updated_at": "2026-11-25T18:12:18.863861+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نقش کوه‌ها به عنوان لنگرهای امنیتی زمین از منظر علم زمین‌شناسی",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که کوه‌ها برخلاف تصور رایج به عنوان مشتی سنگ و خاک بی‌جان، در واقع لنگرهای امنیتی زمین هستند که از تبدیل شدن زمین به بیابان‌های توفانی و زلزله‌های ویرانگر جلوگیری می‌کنند؛ این مطلب به گفته کارشناس از سوی علم زمین‌شناسی فاش شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45662584114-142",
+      "sequence": 142,
+      "updated_at": "2026-11-25T18:27:01.968183+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 142,
-    "segments_transcribed": 138,
-    "editor_attempts": 130,
-    "editor_withheld": 128,
-    "topics_published": 3,
+    "segments_captured": 143,
+    "segments_transcribed": 139,
+    "editor_attempts": 131,
+    "editor_withheld": 129,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-25T18:26:38.249496+00:00"
+    "last_audio_at": "2026-11-25T18:26:57.314498+00:00"
   }
 }
