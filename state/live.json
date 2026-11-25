@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-25",
   "started_at": "2026-11-25T17:14:58.715429+00:00",
-  "updated_at": "2026-11-25T18:30:41.965514+00:00",
+  "updated_at": "2026-11-25T18:31:08.763332+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45662584114-105",
-      "sequence": 105,
-      "updated_at": "2026-11-25T18:12:18.863861+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی نقش کوه‌ها به عنوان لنگرهای امنیتی زمین از منظر علم زمین‌شناسی",
       "summary": "در این بخش، کارشناس استدلال می‌کند که کوه‌ها برخلاف تصور رایج به عنوان مشتی سنگ و خاک بی‌جان، در واقع لنگرهای امنیتی زمین هستند که از تبدیل شدن زمین به بیابان‌های توفانی و زلزله‌های ویرانگر جلوگیری می‌کنند؛ این مطلب به گفته کارشناس از سوی علم زمین‌شناسی فاش شده است.",
@@ -68,16 +55,28 @@
       "sequence": 150,
       "updated_at": "2026-11-25T18:30:20.096562+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی فلسفه آفرینش کوه‌ها و دره‌ها در سخنان کارشناس",
+      "summary": "در این بخش، کارشناس درباره فلسفه آفرینش کوه‌ها، دره‌ها و شکاف‌ها توسط خداوند استدلال می‌کند. به گفته وی، کوه‌ها مانند مخزن‌هایی بزرگ هستند که از بروز سیلاب‌های ویرانگر جلوگیری کرده و کمبود آب تابستان را جبران می‌کنند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45662584114-152",
+      "sequence": 152,
+      "updated_at": "2026-11-25T18:31:08.763303+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 152,
-    "segments_transcribed": 148,
-    "editor_attempts": 140,
-    "editor_withheld": 134,
-    "topics_published": 7,
+    "segments_captured": 153,
+    "segments_transcribed": 149,
+    "editor_attempts": 141,
+    "editor_withheld": 135,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-25T18:30:39.357236+00:00"
+    "last_audio_at": "2026-11-25T18:31:03.238807+00:00"
   }
 }
