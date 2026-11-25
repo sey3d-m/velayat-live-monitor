@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-25",
   "started_at": "2026-11-25T14:14:49.602095+00:00",
-  "updated_at": "2026-11-25T14:59:24.514625+00:00",
+  "updated_at": "2026-11-25T14:59:51.119695+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره ولایت و غدیر",
-      "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45631853701-0",
-      "sequence": 0,
-      "updated_at": "2026-11-25T14:30:19.438494+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره نماز",
       "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -72,16 +59,28 @@
       "sequence": 30,
       "updated_at": "2026-11-25T14:42:24.753376+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی شرط رضایت مشارکت‌کنندگان در مصرف اموال",
+      "summary": "در این بخش، کارشناس درباره مصرف اموال جمع‌آوری‌شده برای مناسبت‌هایی مانند ولادت یا امور دیگر استدلال می‌کند که رضایت همه افرادی که مشارکت کرده‌اند شرط است و این موضوع همواره اعلام شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45631853701-74",
+      "sequence": 74,
+      "updated_at": "2026-11-25T14:59:51.119672+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 74,
-    "segments_transcribed": 65,
-    "editor_attempts": 62,
-    "editor_withheld": 61,
-    "topics_published": 5,
+    "segments_captured": 75,
+    "segments_transcribed": 66,
+    "editor_attempts": 63,
+    "editor_withheld": 62,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-25T14:59:21.123272+00:00"
+    "last_audio_at": "2026-11-25T14:59:46.225212+00:00"
   }
 }
