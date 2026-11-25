@@ -1,83 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "45446292957",
-  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
-  "program_date": "2026-11-24",
-  "started_at": "2026-11-24T17:14:53.424661+00:00",
-  "updated_at": "2026-11-24T18:40:32.625802+00:00",
-  "items": [
-    {
-      "title": "بررسی استدلال لزوم تعیین حاکم در کلام کارشناس",
-      "summary": "در این بخش کارشناس درباره ضرورت داشتن امیر و حاکم سخن می‌گوید و استدلال می‌کند که برای جلوگیری از نزاع و درگیری، جامعه ناچار به داشتن حاکم است و در این زمینه به عبارت لابد لنا من امیرین استناد می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45446292957-99",
-      "sequence": 99,
-      "updated_at": "2026-11-24T18:09:51.056765+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره دلالت آیه قرآن بر حکومت و قضاوت پیامبر",
-      "summary": "در این بخش کارشناس استدلال می‌کند که پیامبر با استناد به عبارت قرآنی، مأمور به داوری، قضاوت و حکومت در میان مردم بوده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.82,
-      "id": "45446292957-106",
-      "sequence": 106,
-      "updated_at": "2026-11-24T18:12:43.526980+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره اعتقادات اسلامی",
-      "summary": "در این بخش از برنامه، موضوع «اعتقادات اسلامی» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45446292957-107",
-      "sequence": 107,
-      "updated_at": "2026-11-24T18:13:07.672795+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی استناد به آیه درباره پیامبران اولواالعزم و اقامه دین",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که نام پیامبران اولواالعزم یعنی نوح، ابراهیم، موسی و عیسی در این آیه ذکر شده و مخاطب، پیامبر اسلام است. وی درباره عبارت «شرع لکوم ان اقیم و دین» نتیجه می‌گیرد که منظور از آن، اقامه کردن دین است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45446292957-118",
-      "sequence": 118,
-      "updated_at": "2026-11-24T18:17:28.481372+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره تداوم وصایت و نیاز بشر به متولی امر",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که پس از اتمام ابلاغ مبین، وظایف پیامبر و نیاز بشر به متولی امر باقی است و به گفته وی، پیامبر شخصاً متولی امر را تعیین کرده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45446292957-124",
-      "sequence": 124,
-      "updated_at": "2026-11-24T18:19:56.759905+00:00",
-      "speaker": null
-    }
-  ],
+  "session": "45631853701",
+  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "program_date": "2026-11-25",
+  "started_at": "2026-11-25T14:14:49.602095+00:00",
+  "updated_at": "2026-11-25T14:30:00.000267+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 157,
-    "editor_attempts": 146,
-    "editor_withheld": 137,
-    "topics_published": 10,
-    "audio_ai_calls": 3,
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
     "audio_ai_success": 0,
-    "last_audio_at": "2026-11-24T18:39:49.067542+00:00"
+    "last_audio_at": null
   }
 }
