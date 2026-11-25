@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-25",
   "started_at": "2026-11-25T16:09:45.406945+00:00",
-  "updated_at": "2026-11-25T17:16:51.894339+00:00",
+  "updated_at": "2026-11-25T17:17:19.237497+00:00",
   "items": [
-    {
-      "title": "بررسی جایگاه اخلاق در دین و دیدگاه کارشناس",
-      "summary": "در این بخش درباره جایگاه اخلاق در دین گفتگو شد. به گفته کارشناس، برخی اخلاق را گوهر دین دانسته‌اند، اما این دیدگاه توسط گوینده پذیرفته نشده و درباره میزان و نوع آموزه‌های اخلاقی در دین نکاتی مطرح شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45651400562-60",
-      "sequence": 60,
-      "updated_at": "2026-11-25T16:34:18.715967+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره نقش تعالیم اخلاقی انبیا در تمدن بشر",
       "summary": "در این بخش کارشناس استدلال می‌کند که اگر تعالیم اخلاقی انبیا وجود نداشت، تمدن بشر رنگ دیگری می‌داشت و در حال حاضر نیز در جوامع و تمدن‌های بشری بد اخلاقی‌ها و خشونت‌هایی وجود دارد که گوینده به آن اشاره می‌کند.",
@@ -67,16 +55,29 @@
       "sequence": 143,
       "updated_at": "2026-11-25T17:07:18.249780+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره ولایت و غدیر",
+      "summary": "در این بخش از برنامه، موضوع «ولایت و غدیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "45651400562-168",
+      "sequence": 168,
+      "updated_at": "2026-11-25T17:17:19.237469+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 168,
-    "segments_transcribed": 161,
-    "editor_attempts": 126,
-    "editor_withheld": 121,
-    "topics_published": 7,
+    "segments_captured": 169,
+    "segments_transcribed": 162,
+    "editor_attempts": 127,
+    "editor_withheld": 122,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-25T17:16:50.499001+00:00"
+    "last_audio_at": "2026-11-25T17:17:15.182674+00:00"
   }
 }
