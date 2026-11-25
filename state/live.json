@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-25",
   "started_at": "2026-11-25T17:14:58.715429+00:00",
-  "updated_at": "2026-11-25T17:46:47.548574+00:00",
+  "updated_at": "2026-11-25T17:47:25.402952+00:00",
   "items": [
     {
       "title": "بررسی سخن امام جواد (ع) در آغاز برنامه توسط کارشناس",
@@ -23,13 +23,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 42,
-    "segments_transcribed": 39,
-    "editor_attempts": 36,
-    "editor_withheld": 35,
+    "segments_captured": 44,
+    "segments_transcribed": 41,
+    "editor_attempts": 38,
+    "editor_withheld": 37,
     "topics_published": 1,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-25T17:46:37.911529+00:00"
+    "last_audio_at": "2026-11-25T17:47:21.064301+00:00"
   }
 }
