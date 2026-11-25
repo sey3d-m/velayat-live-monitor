@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-25",
   "started_at": "2026-11-25T16:09:45.406945+00:00",
-  "updated_at": "2026-11-25T16:51:18.171475+00:00",
+  "updated_at": "2026-11-25T16:51:19.392471+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره خانواده و ازدواج",
-      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45651400562-10",
-      "sequence": 10,
-      "updated_at": "2026-11-25T16:14:08.656877+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره تربیت و اخلاق",
       "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,6 +56,18 @@
       "sequence": 69,
       "updated_at": "2026-11-25T16:37:45.016459+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ابعاد اخلاقی در تعالیم پیامبر اسلام هنگام جنگ",
+      "summary": "در این بخش کارشناس استدلال می‌کند که اهمیت اخلاقیات در تمام ارکان دین و زندگی جریان دارد. وی اظهار می‌کند که این موضوع حتی به حوزه جنگ و حضور در میدان نبرد نیز تسری پیدا می‌کند و بخشی از تعالیم پیامبر اسلام را تشکیل می‌دهد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45651400562-103",
+      "sequence": 103,
+      "updated_at": "2026-11-25T16:51:19.392452+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -76,7 +75,7 @@
     "segments_transcribed": 102,
     "editor_attempts": 89,
     "editor_withheld": 85,
-    "topics_published": 5,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
     "last_audio_at": "2026-11-25T16:51:15.780509+00:00"
