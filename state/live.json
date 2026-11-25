@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-25",
   "started_at": "2026-11-25T16:09:45.406945+00:00",
-  "updated_at": "2026-11-25T17:15:21.101063+00:00",
+  "updated_at": "2026-11-25T17:16:09.306946+00:00",
   "items": [
     {
       "title": "بررسی جایگاه اخلاق در دین و دیدگاه کارشناس",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 164,
-    "segments_transcribed": 158,
-    "editor_attempts": 124,
-    "editor_withheld": 119,
+    "segments_captured": 166,
+    "segments_transcribed": 160,
+    "editor_attempts": 125,
+    "editor_withheld": 120,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-25T17:15:18.232016+00:00"
+    "last_audio_at": "2026-11-25T17:16:07.495781+00:00"
   }
 }
