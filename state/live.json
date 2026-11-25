@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-25",
   "started_at": "2026-11-25T17:14:58.715429+00:00",
-  "updated_at": "2026-11-25T18:29:12.368753+00:00",
+  "updated_at": "2026-11-25T18:29:51.021716+00:00",
   "items": [
     {
       "title": "پرسش درباره نسبت قدرت شیطان و بندگان مؤمن",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 148,
-    "segments_transcribed": 144,
-    "editor_attempts": 136,
-    "editor_withheld": 132,
+    "segments_captured": 150,
+    "segments_transcribed": 146,
+    "editor_attempts": 138,
+    "editor_withheld": 133,
     "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-25T18:28:59.393951+00:00"
+    "last_audio_at": "2026-11-25T18:29:48.421273+00:00"
   }
 }
