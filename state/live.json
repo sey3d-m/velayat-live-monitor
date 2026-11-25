@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-25",
   "started_at": "2026-11-25T17:14:58.715429+00:00",
-  "updated_at": "2026-11-25T18:29:51.021716+00:00",
+  "updated_at": "2026-11-25T18:30:20.096591+00:00",
   "items": [
-    {
-      "title": "پرسش درباره نسبت قدرت شیطان و بندگان مؤمن",
-      "summary": "در این بخش کارشناس استدلال می‌کند که قدرت در دست شیاطین و آمریکا نیست، بلکه منشأ و سرچشمه قدرت واقعی متعلق به بندگان صالح و مؤمن خدا است. این ادعا درباره تغییر موازنه قدرت میان جبهه کفر و ایمان مطرح شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.82,
-      "id": "45662584114-67",
-      "sequence": 67,
-      "updated_at": "2026-11-25T17:57:04.328575+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
       "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -68,16 +56,28 @@
       "sequence": 147,
       "updated_at": "2026-11-25T18:29:12.368731+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نقش کوه‌ها به عنوان مهارکننده زلزله و برج‌های آب زمین",
+      "summary": "در این بخش کارشناس استدلال می‌کند که کوه‌ها باعث کاهش لرزش و ناپایداری زمین می‌شوند و به گفته وی، سازمان ملل متحد و دانشمندان جهان کوه‌ها را برج‌های آب زمین می‌نامند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45662584114-150",
+      "sequence": 150,
+      "updated_at": "2026-11-25T18:30:20.096562+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 150,
-    "segments_transcribed": 146,
-    "editor_attempts": 138,
-    "editor_withheld": 133,
-    "topics_published": 6,
+    "segments_captured": 151,
+    "segments_transcribed": 147,
+    "editor_attempts": 139,
+    "editor_withheld": 134,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-25T18:29:48.421273+00:00"
+    "last_audio_at": "2026-11-25T18:30:13.417981+00:00"
   }
 }
