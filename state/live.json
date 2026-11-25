@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-25",
   "started_at": "2026-11-25T17:14:58.715429+00:00",
-  "updated_at": "2026-11-25T18:31:31.109936+00:00",
+  "updated_at": "2026-11-25T18:32:14.588665+00:00",
   "items": [
     {
       "title": "بررسی نقش کوه‌ها به عنوان لنگرهای امنیتی زمین از منظر علم زمین‌شناسی",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 154,
-    "segments_transcribed": 150,
-    "editor_attempts": 142,
-    "editor_withheld": 135,
+    "segments_captured": 156,
+    "segments_transcribed": 152,
+    "editor_attempts": 144,
+    "editor_withheld": 137,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-25T18:31:28.294556+00:00"
+    "last_audio_at": "2026-11-25T18:32:12.064691+00:00"
   }
 }
