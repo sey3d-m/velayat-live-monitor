@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-25",
   "started_at": "2026-11-25T17:14:58.715429+00:00",
-  "updated_at": "2026-11-25T17:57:03.046372+00:00",
+  "updated_at": "2026-11-25T17:57:04.328598+00:00",
   "items": [
     {
       "title": "بررسی سخن امام جواد (ع) در آغاز برنامه توسط کارشناس",
@@ -20,6 +20,18 @@
       "sequence": 7,
       "updated_at": "2026-11-25T17:33:15.803573+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره نسبت قدرت شیطان و بندگان مؤمن",
+      "summary": "در این بخش کارشناس استدلال می‌کند که قدرت در دست شیاطین و آمریکا نیست، بلکه منشأ و سرچشمه قدرت واقعی متعلق به بندگان صالح و مؤمن خدا است. این ادعا درباره تغییر موازنه قدرت میان جبهه کفر و ایمان مطرح شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.82,
+      "id": "45662584114-67",
+      "sequence": 67,
+      "updated_at": "2026-11-25T17:57:04.328575+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -27,7 +39,7 @@
     "segments_transcribed": 64,
     "editor_attempts": 61,
     "editor_withheld": 60,
-    "topics_published": 1,
+    "topics_published": 2,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-25T17:57:00.238165+00:00"
