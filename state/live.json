@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-25",
   "started_at": "2026-11-25T16:09:45.406945+00:00",
-  "updated_at": "2026-11-25T16:37:42.696758+00:00",
+  "updated_at": "2026-11-25T16:37:45.016487+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره خانواده و ازدواج",
@@ -57,6 +57,18 @@
       "sequence": 62,
       "updated_at": "2026-11-25T16:34:58.150291+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نقش دین در زیست اخلاقی انسان",
+      "summary": "در این بخش کارشناس استدلال می‌کند که پیشوایان دینی عموماً آموزگاران اخلاق بشر هستند و دین نقش بسیار مهمی در سلوک و زیست اخلاقی انسان ایفا می‌کند؛ بازگشت به زیست اخلاقی نیز به گسترش بیداری کمک می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45651400562-69",
+      "sequence": 69,
+      "updated_at": "2026-11-25T16:37:45.016459+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -64,7 +76,7 @@
     "segments_transcribed": 69,
     "editor_attempts": 59,
     "editor_withheld": 56,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
     "last_audio_at": "2026-11-25T16:37:40.023423+00:00"
