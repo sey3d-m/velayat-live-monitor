@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-25",
   "started_at": "2026-11-25T16:09:45.406945+00:00",
-  "updated_at": "2026-11-25T16:33:42.566448+00:00",
+  "updated_at": "2026-11-25T16:34:18.715992+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره خانواده و ازدواج",
@@ -33,16 +33,28 @@
       "sequence": 57,
       "updated_at": "2026-11-25T16:32:55.101131+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی جایگاه اخلاق در دین و دیدگاه کارشناس",
+      "summary": "در این بخش درباره جایگاه اخلاق در دین گفتگو شد. به گفته کارشناس، برخی اخلاق را گوهر دین دانسته‌اند، اما این دیدگاه توسط گوینده پذیرفته نشده و درباره میزان و نوع آموزه‌های اخلاقی در دین نکاتی مطرح شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45651400562-60",
+      "sequence": 60,
+      "updated_at": "2026-11-25T16:34:18.715967+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 60,
-    "segments_transcribed": 59,
-    "editor_attempts": 49,
-    "editor_withheld": 48,
-    "topics_published": 2,
+    "segments_captured": 61,
+    "segments_transcribed": 60,
+    "editor_attempts": 50,
+    "editor_withheld": 49,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-25T16:33:40.608856+00:00"
+    "last_audio_at": "2026-11-25T16:34:04.784295+00:00"
   }
 }
