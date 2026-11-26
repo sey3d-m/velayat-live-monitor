@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T17:14:52.449854+00:00",
-  "updated_at": "2026-11-26T18:12:58.890657+00:00",
+  "updated_at": "2026-11-26T18:13:24.167268+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره خانواده و ازدواج",
-      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45865975978-18",
-      "sequence": 18,
-      "updated_at": "2026-11-26T17:37:26.993520+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره قرآن و تفسیر",
       "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +57,28 @@
       "sequence": 65,
       "updated_at": "2026-11-26T17:56:12.314687+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نهی قرآن از دوستی با دشمنان",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که خداوند به مؤمنان درباره ابراز دوستی نسبت به دشمنان هشدار داده و آن را نشانه جاهلیت و ظلم می‌داند؛ به گفته کارشناس، خداوند ستمگران را هدایت نمی‌کند و این موضوع به عنوان یک تحذیر جدی در قرآن مطرح شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45865975978-108",
+      "sequence": 108,
+      "updated_at": "2026-11-26T18:13:24.167240+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 108,
-    "segments_transcribed": 104,
-    "editor_attempts": 100,
-    "editor_withheld": 96,
-    "topics_published": 6,
+    "segments_captured": 109,
+    "segments_transcribed": 105,
+    "editor_attempts": 101,
+    "editor_withheld": 97,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T18:12:55.982308+00:00"
+    "last_audio_at": "2026-11-26T18:13:19.277180+00:00"
   }
 }
