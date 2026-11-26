@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T15:44:52.113694+00:00",
-  "updated_at": "2026-11-26T16:16:16.578065+00:00",
+  "updated_at": "2026-11-26T16:16:39.360790+00:00",
   "items": [
     {
       "title": "پرسش درباره روایت قرب الهی بنده مؤمن",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 41,
-    "segments_transcribed": 40,
+    "segments_captured": 42,
+    "segments_transcribed": 41,
     "editor_attempts": 30,
     "editor_withheld": 26,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T16:16:12.346649+00:00"
+    "last_audio_at": "2026-11-26T16:16:36.805912+00:00"
   }
 }
