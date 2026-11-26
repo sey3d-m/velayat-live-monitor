@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T15:44:52.113694+00:00",
-  "updated_at": "2026-11-26T16:08:47.347655+00:00",
+  "updated_at": "2026-11-26T16:09:49.919289+00:00",
   "items": [
     {
       "title": "پرسش درباره استدلال کارشناس درباره آیه اراده و حکومت مستضعفان",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 22,
-    "segments_transcribed": 21,
-    "editor_attempts": 15,
-    "editor_withheld": 11,
+    "segments_captured": 24,
+    "segments_transcribed": 23,
+    "editor_attempts": 17,
+    "editor_withheld": 13,
     "topics_published": 6,
     "audio_ai_calls": 2,
     "audio_ai_success": 2,
-    "last_audio_at": "2026-11-26T16:08:44.325592+00:00"
+    "last_audio_at": "2026-11-26T16:09:27.249327+00:00"
   }
 }
