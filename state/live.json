@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T14:14:50.273704+00:00",
-  "updated_at": "2026-11-26T14:45:04.291150+00:00",
+  "updated_at": "2026-11-26T14:45:09.660276+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره استمرار مهربانی و شرافت با وجود چالش‌ها",
@@ -45,6 +45,18 @@
       "sequence": 32,
       "updated_at": "2026-11-26T14:43:02.712046+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی ادعای مطرح‌شده درباره جنگ و مواضع ام‌المؤمنین عایشه",
+      "summary": "در این بخش کارشناس استدلال می‌کند که در جنگ‌ها حق با کسی است که بر حق باشد و در این زمینه نه امام علی (ع) و نه ام‌المؤمنین عایشه قصوری نداشتند و عایشه برای اصلاح امور آمده بود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45836944928-37",
+      "sequence": 37,
+      "updated_at": "2026-11-26T14:45:09.660252+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -52,7 +64,7 @@
     "segments_transcribed": 36,
     "editor_attempts": 33,
     "editor_withheld": 31,
-    "topics_published": 3,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-26T14:45:01.491239+00:00"
