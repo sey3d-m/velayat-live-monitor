@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T15:44:52.113694+00:00",
-  "updated_at": "2026-11-26T16:11:57.964874+00:00",
+  "updated_at": "2026-11-26T16:12:45.837917+00:00",
   "items": [
     {
       "title": "بررسی عدم تبعیت اراده الهی از اراده مخلوقات بر اساس ادله عقلی و نقلی",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 30,
-    "segments_transcribed": 29,
-    "editor_attempts": 21,
-    "editor_withheld": 16,
+    "segments_captured": 32,
+    "segments_transcribed": 31,
+    "editor_attempts": 22,
+    "editor_withheld": 18,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T16:11:54.654967+00:00"
+    "last_audio_at": "2026-11-26T16:12:43.464896+00:00"
   }
 }
