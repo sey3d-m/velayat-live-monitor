@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T14:14:50.273704+00:00",
-  "updated_at": "2026-11-26T15:21:01.539011+00:00",
+  "updated_at": "2026-11-26T15:21:03.935718+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره روزه",
-      "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45836944928-32",
-      "sequence": 32,
-      "updated_at": "2026-11-26T14:43:02.712046+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی ادعای مطرح‌شده درباره جنگ و مواضع ام‌المؤمنین عایشه",
       "summary": "در این بخش کارشناس استدلال می‌کند که در جنگ‌ها حق با کسی است که بر حق باشد و در این زمینه نه امام علی (ع) و نه ام‌المؤمنین عایشه قصوری نداشتند و عایشه برای اصلاح امور آمده بود.",
@@ -69,14 +56,27 @@
       "sequence": 99,
       "updated_at": "2026-11-26T15:09:50.610761+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "45836944928-127",
+      "sequence": 127,
+      "updated_at": "2026-11-26T15:21:03.935693+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 128,
     "segments_transcribed": 125,
     "editor_attempts": 120,
-    "editor_withheld": 115,
-    "topics_published": 7,
+    "editor_withheld": 116,
+    "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-26T15:20:58.354066+00:00"
