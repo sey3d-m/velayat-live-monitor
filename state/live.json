@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T17:14:52.449854+00:00",
-  "updated_at": "2026-11-26T18:37:49.447478+00:00",
+  "updated_at": "2026-11-26T18:38:40.319584+00:00",
   "items": [
     {
       "title": "بررسی استناد به حکم الهی در گفتار کارشناس",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 170,
-    "segments_transcribed": 163,
-    "editor_attempts": 155,
+    "segments_captured": 172,
+    "segments_transcribed": 164,
+    "editor_attempts": 156,
     "editor_withheld": 149,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T18:37:48.204985+00:00"
+    "last_audio_at": "2026-11-26T18:38:36.842572+00:00"
   }
 }
