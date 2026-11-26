@@ -1,84 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "45836944928",
-  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "session": "45852040380",
+  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-26",
-  "started_at": "2026-11-26T14:14:50.273704+00:00",
-  "updated_at": "2026-11-26T15:40:04.307646+00:00",
-  "items": [
-    {
-      "title": "بررسی ادعای مطرح‌شده درباره جنگ و مواضع ام‌المؤمنین عایشه",
-      "summary": "در این بخش کارشناس استدلال می‌کند که در جنگ‌ها حق با کسی است که بر حق باشد و در این زمینه نه امام علی (ع) و نه ام‌المؤمنین عایشه قصوری نداشتند و عایشه برای اصلاح امور آمده بود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45836944928-37",
-      "sequence": 37,
-      "updated_at": "2026-11-26T14:45:09.660252+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی استناد کارشناس به خطبه شقشقیه در کیفیت بیعت مردم",
-      "summary": "در این بخش کارشناس با استناد به عبارت «فما رعنی الا و النازد کعور» در نهج‌البلاغه، چگونگی هجوم مردم برای بیعت در روز نخست را تبیین کرده و استدلال می‌کند که این اجتماع پرشور موجب نابودی موانع و شکل‌گیری بیعت شده است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45836944928-69",
-      "sequence": 69,
-      "updated_at": "2026-11-26T14:57:54.518136+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره زیارت",
-      "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45836944928-82",
-      "sequence": 82,
-      "updated_at": "2026-11-26T15:03:05.668363+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی گزارش تاریخی درباره ام‌المؤمنین و قصد سفر عمره",
-      "summary": "در این بخش کارشناس استدلال می‌کند که ام‌المؤمنین متوجه شد قصد سفر عمره وجود ندارد و هدف دیگری مطرح است. به گفته کارشناس، در ادامه اشاره شد که پس از سوگند یاد کردن مبنی بر عدم ایجاد فتنه، حرکت به سمت مقصد انجام گرفت.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.8,
-      "id": "45836944928-99",
-      "sequence": 99,
-      "updated_at": "2026-11-26T15:09:50.610761+00:00",
-      "speaker": null
-    },
-    {
-      "title": "گفت‌وگو درباره قرآن و تفسیر",
-      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45836944928-127",
-      "sequence": 127,
-      "updated_at": "2026-11-26T15:21:03.935693+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-26T15:44:52.113694+00:00",
+  "updated_at": "2026-11-26T16:00:00.000269+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 151,
-    "editor_attempts": 138,
-    "editor_withheld": 134,
-    "topics_published": 8,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T15:39:46.743318+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
