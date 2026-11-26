@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T17:14:52.449854+00:00",
-  "updated_at": "2026-11-26T17:38:32.538971+00:00",
+  "updated_at": "2026-11-26T17:38:37.982927+00:00",
   "items": [
     {
       "title": "بررسی نقش نظم در خانواده و جایگاه اعضا",
@@ -32,14 +32,27 @@
       "sequence": 18,
       "updated_at": "2026-11-26T17:37:26.993520+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "45865975978-21",
+      "sequence": 21,
+      "updated_at": "2026-11-26T17:38:37.982899+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 22,
     "segments_transcribed": 20,
     "editor_attempts": 20,
-    "editor_withheld": 18,
-    "topics_published": 2,
+    "editor_withheld": 19,
+    "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-26T17:38:29.648689+00:00"
