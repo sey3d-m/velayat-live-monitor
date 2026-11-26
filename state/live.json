@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T15:44:52.113694+00:00",
-  "updated_at": "2026-11-26T16:06:21.066843+00:00",
+  "updated_at": "2026-11-26T16:06:25.508095+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره امام زمان",
@@ -57,6 +57,18 @@
       "sequence": 10,
       "updated_at": "2026-11-26T16:04:28.395936+00:00",
       "speaker": null
+    },
+    {
+      "title": "پرسش درباره روایت قرب الهی بنده مؤمن",
+      "summary": "در این بخش، کارشناس به طرح حدیثی درباره تقرب بنده مؤمن به خداوند اشاره می‌کند و استدلال می‌کند که بنده با انجام امور الهی به مقام قرب می‌رسد تا جایی که خداوند یار و همراه او می‌شود. این ادعا در قالب نقل حدیث طرح شد و بررسی ابعاد آن نیازمند دقت در منابع روایی است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45852040380-15",
+      "sequence": 15,
+      "updated_at": "2026-11-26T16:06:25.508078+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -64,7 +76,7 @@
     "segments_transcribed": 16,
     "editor_attempts": 11,
     "editor_withheld": 8,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 1,
     "audio_ai_success": 1,
     "last_audio_at": "2026-11-26T16:06:17.186077+00:00"
