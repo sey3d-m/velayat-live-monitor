@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T14:14:50.273704+00:00",
-  "updated_at": "2026-11-26T14:54:05.657016+00:00",
+  "updated_at": "2026-11-26T14:54:39.733611+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره استمرار مهربانی و شرافت با وجود چالش‌ها",
@@ -60,13 +60,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 60,
-    "segments_transcribed": 58,
-    "editor_attempts": 55,
-    "editor_withheld": 52,
+    "segments_captured": 62,
+    "segments_transcribed": 60,
+    "editor_attempts": 57,
+    "editor_withheld": 54,
     "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T14:53:47.607455+00:00"
+    "last_audio_at": "2026-11-26T14:54:36.793034+00:00"
   }
 }
