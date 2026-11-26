@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T17:14:52.449854+00:00",
-  "updated_at": "2026-11-26T17:42:33.260852+00:00",
+  "updated_at": "2026-11-26T17:43:23.467011+00:00",
   "items": [
     {
       "title": "بررسی نقش نظم در خانواده و جایگاه اعضا",
@@ -48,13 +48,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 32,
-    "segments_transcribed": 30,
-    "editor_attempts": 30,
-    "editor_withheld": 28,
+    "segments_captured": 34,
+    "segments_transcribed": 32,
+    "editor_attempts": 32,
+    "editor_withheld": 30,
     "topics_published": 3,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T17:42:30.220439+00:00"
+    "last_audio_at": "2026-11-26T17:43:20.570449+00:00"
   }
 }
