@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T14:14:50.273704+00:00",
-  "updated_at": "2026-11-26T15:37:02.003106+00:00",
+  "updated_at": "2026-11-26T15:37:51.800830+00:00",
   "items": [
     {
       "title": "بررسی ادعای مطرح‌شده درباره جنگ و مواضع ام‌المؤمنین عایشه",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 168,
-    "segments_transcribed": 148,
-    "editor_attempts": 136,
-    "editor_withheld": 132,
+    "segments_captured": 170,
+    "segments_transcribed": 150,
+    "editor_attempts": 137,
+    "editor_withheld": 133,
     "topics_published": 8,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T15:37:00.073007+00:00"
+    "last_audio_at": "2026-11-26T15:37:49.433374+00:00"
   }
 }
