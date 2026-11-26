@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T15:44:52.113694+00:00",
-  "updated_at": "2026-11-26T16:53:30.485228+00:00",
+  "updated_at": "2026-11-26T16:54:13.513338+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره خانواده و ازدواج",
@@ -72,13 +72,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 134,
-    "segments_transcribed": 127,
-    "editor_attempts": 110,
-    "editor_withheld": 103,
+    "segments_captured": 136,
+    "segments_transcribed": 129,
+    "editor_attempts": 112,
+    "editor_withheld": 105,
     "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T16:53:27.166897+00:00"
+    "last_audio_at": "2026-11-26T16:54:10.008607+00:00"
   }
 }
