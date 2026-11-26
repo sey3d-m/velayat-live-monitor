@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T14:14:50.273704+00:00",
-  "updated_at": "2026-11-26T15:02:38.897564+00:00",
+  "updated_at": "2026-11-26T15:03:05.668388+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره استمرار مهربانی و شرافت با وجود چالش‌ها",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که انسان باید با وجود مواجهه با اتهامات و تلاش دیگران برای فریب دادن، همچنان مهربان، شریف و درست‌کار باقی بماند. به گفته کارشناس، نباید اجازه داد که نیکی‌های امروز به فراموشی سپرده شوند و بر اساس این دیدگاه، تأکید بر حفظ صفات نیکو در برابر رفتارهای دشوار اطرافیان مطرح شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45836944928-5",
-      "sequence": 5,
-      "updated_at": "2026-11-26T14:32:14.828580+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره تربیت و اخلاق",
       "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -69,16 +57,29 @@
       "sequence": 69,
       "updated_at": "2026-11-26T14:57:54.518136+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره زیارت",
+      "summary": "در این بخش از برنامه، موضوع «زیارت» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "45836944928-82",
+      "sequence": 82,
+      "updated_at": "2026-11-26T15:03:05.668363+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 82,
-    "segments_transcribed": 79,
-    "editor_attempts": 75,
-    "editor_withheld": 71,
-    "topics_published": 5,
+    "segments_captured": 83,
+    "segments_transcribed": 80,
+    "editor_attempts": 76,
+    "editor_withheld": 73,
+    "topics_published": 6,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T15:02:34.926301+00:00"
+    "last_audio_at": "2026-11-26T15:02:59.526365+00:00"
   }
 }
