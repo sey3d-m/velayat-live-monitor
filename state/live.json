@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T15:44:52.113694+00:00",
-  "updated_at": "2026-11-26T16:51:11.033668+00:00",
+  "updated_at": "2026-11-26T16:51:30.254892+00:00",
   "items": [
-    {
-      "title": "بررسی استناد به حدیث رضایت فاطمه در مجامع روایی",
-      "summary": "در این بخش، کارشناس درباره حدیث منسوب به پیامبر اسلام استدلال می‌کند که شیعه و سنی آن را نقل کرده‌اند. به گفته کارشناس، بر اساس عبارت «ان الله یرضا لرضا فاطمه»، هر جا که رضایت فاطمه وجود داشته باشد، رضایت الهی نیز حاصل است؛ این مطلب به عنوان ادعایی کلامی در گفت‌وگو مطرح شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "editor_mode": "audio_grounded_topic",
-      "id": "45852040380-20",
-      "sequence": 20,
-      "updated_at": "2026-11-26T16:08:30.250203+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره خانواده و ازدواج",
       "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,16 +57,28 @@
       "sequence": 52,
       "updated_at": "2026-11-26T16:21:04.845865+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی استدلال درباره دعای سلامتی امام زمان",
+      "summary": "در این بخش کارشناس استدلال می‌کند که دلیلی بر استثنا بودن حضرت از مسائل و بیماری‌ها وجود ندارد و به همین دلیل دعای مشهور سلامتی برای ایشان خوانده می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45852040380-128",
+      "sequence": 128,
+      "updated_at": "2026-11-26T16:51:30.254867+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 128,
-    "segments_transcribed": 121,
-    "editor_attempts": 104,
-    "editor_withheld": 98,
-    "topics_published": 10,
+    "segments_captured": 129,
+    "segments_transcribed": 122,
+    "editor_attempts": 105,
+    "editor_withheld": 99,
+    "topics_published": 11,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T16:50:58.985783+00:00"
+    "last_audio_at": "2026-11-26T16:51:23.141013+00:00"
   }
 }
