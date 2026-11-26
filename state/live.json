@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T15:44:52.113694+00:00",
-  "updated_at": "2026-11-26T16:07:58.670034+00:00",
+  "updated_at": "2026-11-26T16:08:30.250226+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره امام زمان",
-      "summary": "در این بخش از برنامه، موضوع «امام زمان» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45852040380-0",
-      "sequence": 0,
-      "updated_at": "2026-11-26T16:00:24.039426+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره استدلال کارشناس درباره آیه اراده و حکومت مستضعفان",
       "summary": "در این بخش کارشناس درباره آیه شریفه مربوط به اراده الهی برای قرار دادن مستضعفان به عنوان پیشوایان و وارثان زمین سخن می‌گوید و استدلال می‌کند که حکومت آنان در زمین پا برجا خواهد شد. این مبحث به بررسی این نکته قرآنی اختصاص دارد.",
@@ -69,16 +56,29 @@
       "sequence": 15,
       "updated_at": "2026-11-26T16:06:25.508078+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی استناد به حدیث رضایت فاطمه در مجامع روایی",
+      "summary": "در این بخش، کارشناس درباره حدیث منسوب به پیامبر اسلام استدلال می‌کند که شیعه و سنی آن را نقل کرده‌اند. به گفته کارشناس، بر اساس عبارت «ان الله یرضا لرضا فاطمه»، هر جا که رضایت فاطمه وجود داشته باشد، رضایت الهی نیز حاصل است؛ این مطلب به عنوان ادعایی کلامی در گفت‌وگو مطرح شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "editor_mode": "audio_grounded_topic",
+      "id": "45852040380-20",
+      "sequence": 20,
+      "updated_at": "2026-11-26T16:08:30.250203+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 20,
-    "segments_transcribed": 19,
-    "editor_attempts": 13,
-    "editor_withheld": 9,
-    "topics_published": 5,
-    "audio_ai_calls": 1,
-    "audio_ai_success": 1,
-    "last_audio_at": "2026-11-26T16:07:55.440736+00:00"
+    "segments_captured": 21,
+    "segments_transcribed": 20,
+    "editor_attempts": 14,
+    "editor_withheld": 11,
+    "topics_published": 6,
+    "audio_ai_calls": 2,
+    "audio_ai_success": 2,
+    "last_audio_at": "2026-11-26T16:08:19.938710+00:00"
   }
 }
