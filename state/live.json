@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T15:44:52.113694+00:00",
-  "updated_at": "2026-11-26T16:09:49.919289+00:00",
+  "updated_at": "2026-11-26T16:10:04.500624+00:00",
   "items": [
-    {
-      "title": "پرسش درباره استدلال کارشناس درباره آیه اراده و حکومت مستضعفان",
-      "summary": "در این بخش کارشناس درباره آیه شریفه مربوط به اراده الهی برای قرار دادن مستضعفان به عنوان پیشوایان و وارثان زمین سخن می‌گوید و استدلال می‌کند که حکومت آنان در زمین پا برجا خواهد شد. این مبحث به بررسی این نکته قرآنی اختصاص دارد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45852040380-1",
-      "sequence": 1,
-      "updated_at": "2026-11-26T16:00:46.405667+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی تبریک ولادت حضرت زهرا و روز زن با کارشناس برنامه",
       "summary": "در این بخش، مجری ضمن تبریک ولادت حضرت زهرا سلام‌الله علیها و روز زن به مادران و زنان ایران‌زمین، از حضور استاد کرباسی کارشناس محترم برنامه از نجف‌آباد خبر می‌دهد و به او خوش‌آمد می‌گوید.",
@@ -69,16 +57,29 @@
       "sequence": 20,
       "updated_at": "2026-11-26T16:08:30.250203+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره خانواده و ازدواج",
+      "summary": "در این بخش از برنامه، موضوع «خانواده و ازدواج» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "audio_grounded_topic",
+      "editor_confidence": 0.0,
+      "id": "45852040380-23",
+      "sequence": 23,
+      "updated_at": "2026-11-26T16:10:04.500600+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 24,
-    "segments_transcribed": 23,
+    "segments_captured": 25,
+    "segments_transcribed": 24,
     "editor_attempts": 17,
-    "editor_withheld": 13,
-    "topics_published": 6,
-    "audio_ai_calls": 2,
-    "audio_ai_success": 2,
-    "last_audio_at": "2026-11-26T16:09:27.249327+00:00"
+    "editor_withheld": 14,
+    "topics_published": 7,
+    "audio_ai_calls": 3,
+    "audio_ai_success": 3,
+    "last_audio_at": "2026-11-26T16:09:52.061211+00:00"
   }
 }
