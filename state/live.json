@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T15:44:52.113694+00:00",
-  "updated_at": "2026-11-26T17:03:05.123906+00:00",
+  "updated_at": "2026-11-26T17:03:54.349892+00:00",
   "items": [
     {
       "title": "بررسی دلیل ذکر حکایات انبیاء و اولیاء در قرآن مجید",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 158,
-    "segments_transcribed": 149,
-    "editor_attempts": 124,
-    "editor_withheld": 114,
+    "segments_captured": 160,
+    "segments_transcribed": 151,
+    "editor_attempts": 125,
+    "editor_withheld": 115,
     "topics_published": 14,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T17:03:02.576916+00:00"
+    "last_audio_at": "2026-11-26T17:03:52.100779+00:00"
   }
 }
