@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T17:14:52.449854+00:00",
-  "updated_at": "2026-11-26T17:44:13.448771+00:00",
+  "updated_at": "2026-11-26T17:44:50.989542+00:00",
   "items": [
     {
       "title": "بررسی نقش نظم در خانواده و جایگاه اعضا",
@@ -45,16 +45,29 @@
       "sequence": 21,
       "updated_at": "2026-11-26T17:38:37.982899+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره نماز",
+      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "45865975978-36",
+      "sequence": 36,
+      "updated_at": "2026-11-26T17:44:50.989514+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 36,
-    "segments_transcribed": 34,
-    "editor_attempts": 34,
-    "editor_withheld": 32,
-    "topics_published": 3,
+    "segments_captured": 37,
+    "segments_transcribed": 35,
+    "editor_attempts": 35,
+    "editor_withheld": 34,
+    "topics_published": 4,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T17:44:10.132114+00:00"
+    "last_audio_at": "2026-11-26T17:44:34.711885+00:00"
   }
 }
