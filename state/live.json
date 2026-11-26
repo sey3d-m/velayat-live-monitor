@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T14:14:50.273704+00:00",
-  "updated_at": "2026-11-26T14:57:50.226912+00:00",
+  "updated_at": "2026-11-26T14:57:54.518161+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره استمرار مهربانی و شرافت با وجود چالش‌ها",
@@ -57,6 +57,18 @@
       "sequence": 37,
       "updated_at": "2026-11-26T14:45:09.660252+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی استناد کارشناس به خطبه شقشقیه در کیفیت بیعت مردم",
+      "summary": "در این بخش کارشناس با استناد به عبارت «فما رعنی الا و النازد کعور» در نهج‌البلاغه، چگونگی هجوم مردم برای بیعت در روز نخست را تبیین کرده و استدلال می‌کند که این اجتماع پرشور موجب نابودی موانع و شکل‌گیری بیعت شده است.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45836944928-69",
+      "sequence": 69,
+      "updated_at": "2026-11-26T14:57:54.518136+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -64,7 +76,7 @@
     "segments_transcribed": 68,
     "editor_attempts": 65,
     "editor_withheld": 62,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-26T14:57:47.044243+00:00"
