@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T17:14:52.449854+00:00",
-  "updated_at": "2026-11-26T18:29:48.031177+00:00",
+  "updated_at": "2026-11-26T18:30:39.221587+00:00",
   "items": [
     {
       "title": "بررسی نسبت میان مقابله با حکم خدا و تفکر جاهلی در گفتار کارشناس",
@@ -71,13 +71,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 150,
-    "segments_transcribed": 146,
-    "editor_attempts": 140,
-    "editor_withheld": 134,
+    "segments_captured": 152,
+    "segments_transcribed": 148,
+    "editor_attempts": 142,
+    "editor_withheld": 136,
     "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T18:29:45.193158+00:00"
+    "last_audio_at": "2026-11-26T18:30:36.175591+00:00"
   }
 }
