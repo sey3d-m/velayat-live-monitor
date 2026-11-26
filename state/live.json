@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "45662584114",
-  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
-  "program_date": "2026-11-25",
-  "started_at": "2026-11-25T17:14:58.715429+00:00",
-  "updated_at": "2026-11-25T18:40:05.932865+00:00",
-  "items": [
-    {
-      "title": "بررسی نظریه تعادل پوسته‌ای و ریشه کوه‌ها از دیدگاه جورج ایری",
-      "summary": "در این بخش درباره نظریه ریشه کوه‌ها یا تعادل پوسته‌ای ایزوستازی گفتگو شد. به گفته کارشناس، دانشمندی به نام جورج ایری این نظریه را مطرح کرد و استدلال نمود که هر کوهی چندین برابر ارتفاع خود، ریشه عمیقی در دل پوسته و گوشته زمین دارد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45662584114-145",
-      "sequence": 145,
-      "updated_at": "2026-11-25T18:28:14.277621+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی استدلال قرآنی کارشناس درباره کوه‌های استوار",
-      "summary": "در این بخش، کارشناس دقت آیات قرآن کریم را از مصادیق اعجاز و پیوند با وحی الهی می‌داند. وی برای اثبات این مدعا به سوره‌های لقمان و نحل استناد می‌کند و بیان می‌کند که خداوند در زمین کوه‌های استوار افکنده تا از لرزش و تزلزل زمین جلوگیری کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45662584114-147",
-      "sequence": 147,
-      "updated_at": "2026-11-25T18:29:12.368731+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی نقش کوه‌ها به عنوان مهارکننده زلزله و برج‌های آب زمین",
-      "summary": "در این بخش کارشناس استدلال می‌کند که کوه‌ها باعث کاهش لرزش و ناپایداری زمین می‌شوند و به گفته وی، سازمان ملل متحد و دانشمندان جهان کوه‌ها را برج‌های آب زمین می‌نامند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45662584114-150",
-      "sequence": 150,
-      "updated_at": "2026-11-25T18:30:20.096562+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی فلسفه آفرینش کوه‌ها و دره‌ها در سخنان کارشناس",
-      "summary": "در این بخش، کارشناس درباره فلسفه آفرینش کوه‌ها، دره‌ها و شکاف‌ها توسط خداوند استدلال می‌کند. به گفته وی، کوه‌ها مانند مخزن‌هایی بزرگ هستند که از بروز سیلاب‌های ویرانگر جلوگیری کرده و کمبود آب تابستان را جبران می‌کنند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45662584114-152",
-      "sequence": 152,
-      "updated_at": "2026-11-25T18:31:08.763303+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره هدفمندی آفرینش کوه‌ها در گفتار کارشناس",
-      "summary": "در این بخش کارشناس استدلال می‌کند که خداوند انسان را به تفکر درباره چگونگی برپایی، ریشه‌ها، مهار لرزش‌ها، آب‌های گوارا و هدف پشت کوه‌ها دعوت می‌کند. به گفته کارشناس، با توجه به این نشانه‌ها در طبیعت، جهان کارگاه تصادف محسوب نمی‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.9,
-      "id": "45662584114-161",
-      "sequence": 161,
-      "updated_at": "2026-11-25T18:34:43.966563+00:00",
-      "speaker": null
-    }
-  ],
+  "session": "45836944928",
+  "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
+  "program_date": "2026-11-26",
+  "started_at": "2026-11-26T14:14:50.273704+00:00",
+  "updated_at": "2026-11-26T14:30:00.000280+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 163,
-    "editor_attempts": 154,
-    "editor_withheld": 147,
-    "topics_published": 9,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-25T18:39:47.961245+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
