@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T15:44:52.113694+00:00",
-  "updated_at": "2026-11-26T17:06:16.859363+00:00",
+  "updated_at": "2026-11-26T17:07:05.499086+00:00",
   "items": [
     {
       "title": "بررسی استدلال درباره دعای سلامتی امام زمان",
@@ -70,13 +70,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 166,
-    "segments_transcribed": 157,
-    "editor_attempts": 128,
-    "editor_withheld": 117,
+    "segments_captured": 168,
+    "segments_transcribed": 159,
+    "editor_attempts": 129,
+    "editor_withheld": 118,
     "topics_published": 15,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T17:06:12.888272+00:00"
+    "last_audio_at": "2026-11-26T17:07:02.811469+00:00"
   }
 }
