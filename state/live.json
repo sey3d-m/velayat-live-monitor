@@ -6,20 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T15:44:52.113694+00:00",
-  "updated_at": "2026-11-26T16:15:51.112878+00:00",
+  "updated_at": "2026-11-26T16:16:16.578065+00:00",
   "items": [
-    {
-      "title": "بررسی عدم تبعیت اراده الهی از اراده مخلوقات بر اساس ادله عقلی و نقلی",
-      "summary": "در این بخش، کارشناس استدلال می‌کند که اراده الهی تابع هیچ موجودی نمی‌شود و حاکم و قاهر است. به گفته وی، بر اساس دلایل عقلی، قرآنی و حدیثی، خداوند حی و قیوم است و اراده‌اش تابع هیچ‌کس و هیچ‌چیز نخواهد شد.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45852040380-10",
-      "sequence": 10,
-      "updated_at": "2026-11-26T16:04:28.395936+00:00",
-      "speaker": null
-    },
     {
       "title": "پرسش درباره روایت قرب الهی بنده مؤمن",
       "summary": "در این بخش، کارشناس به طرح حدیثی درباره تقرب بنده مؤمن به خداوند اشاره می‌کند و استدلال می‌کند که بنده با انجام امور الهی به مقام قرب می‌رسد تا جایی که خداوند یار و همراه او می‌شود. این ادعا در قالب نقل حدیث طرح شد و بررسی ابعاد آن نیازمند دقت در منابع روایی است.",
@@ -69,16 +57,29 @@
       "sequence": 27,
       "updated_at": "2026-11-26T16:11:11.624717+00:00",
       "speaker": null
+    },
+    {
+      "title": "گفت‌وگو درباره قرآن و تفسیر",
+      "summary": "در این بخش از برنامه، موضوع «قرآن و تفسیر» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_mode": "grounded_topic_fallback",
+      "editor_confidence": 0.0,
+      "id": "45852040380-40",
+      "sequence": 40,
+      "updated_at": "2026-11-26T16:16:16.578041+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 40,
-    "segments_transcribed": 39,
-    "editor_attempts": 29,
-    "editor_withheld": 24,
-    "topics_published": 8,
+    "segments_captured": 41,
+    "segments_transcribed": 40,
+    "editor_attempts": 30,
+    "editor_withheld": 26,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T16:15:47.624546+00:00"
+    "last_audio_at": "2026-11-26T16:16:12.346649+00:00"
   }
 }
