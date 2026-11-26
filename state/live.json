@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T17:14:52.449854+00:00",
-  "updated_at": "2026-11-26T17:53:46.584364+00:00",
+  "updated_at": "2026-11-26T17:53:47.925037+00:00",
   "items": [
     {
       "title": "بررسی نقش نظم در خانواده و جایگاه اعضا",
@@ -58,6 +58,18 @@
       "sequence": 36,
       "updated_at": "2026-11-26T17:44:50.989514+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی نسبت میان مقابله با حکم خدا و تفکر جاهلی در گفتار کارشناس",
+      "summary": "در این بخش کارشناس استدلال می‌کند که ایستادن در برابر حکم خدا و تلاش برای توویل و چرخش آن به نفع خود، نشانگر پیروی از تفکر جاهلی است و هر آنچه غیر از دستور خداوند باشد جهالت محسوب می‌شود.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45865975978-59",
+      "sequence": 59,
+      "updated_at": "2026-11-26T17:53:47.924995+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -65,7 +77,7 @@
     "segments_transcribed": 57,
     "editor_attempts": 56,
     "editor_withheld": 54,
-    "topics_published": 4,
+    "topics_published": 5,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-26T17:53:43.637584+00:00"
