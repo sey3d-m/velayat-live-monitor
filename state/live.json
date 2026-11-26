@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T15:44:52.113694+00:00",
-  "updated_at": "2026-11-26T16:03:58.431424+00:00",
+  "updated_at": "2026-11-26T16:04:28.395958+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره امام زمان",
@@ -45,16 +45,28 @@
       "sequence": 4,
       "updated_at": "2026-11-26T16:02:32.404951+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی عدم تبعیت اراده الهی از اراده مخلوقات بر اساس ادله عقلی و نقلی",
+      "summary": "در این بخش، کارشناس استدلال می‌کند که اراده الهی تابع هیچ موجودی نمی‌شود و حاکم و قاهر است. به گفته وی، بر اساس دلایل عقلی، قرآنی و حدیثی، خداوند حی و قیوم است و اراده‌اش تابع هیچ‌کس و هیچ‌چیز نخواهد شد.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45852040380-10",
+      "sequence": 10,
+      "updated_at": "2026-11-26T16:04:28.395936+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 10,
-    "segments_transcribed": 10,
-    "editor_attempts": 7,
+    "segments_captured": 11,
+    "segments_transcribed": 11,
+    "editor_attempts": 8,
     "editor_withheld": 6,
-    "topics_published": 3,
+    "topics_published": 4,
     "audio_ai_calls": 1,
     "audio_ai_success": 1,
-    "last_audio_at": "2026-11-26T16:03:55.727977+00:00"
+    "last_audio_at": "2026-11-26T16:04:20.512198+00:00"
   }
 }
