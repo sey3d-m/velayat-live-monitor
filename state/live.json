@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T15:44:52.113694+00:00",
-  "updated_at": "2026-11-26T16:02:24.039417+00:00",
+  "updated_at": "2026-11-26T16:02:32.404975+00:00",
   "items": [
     {
       "title": "گفت‌وگو درباره امام زمان",
@@ -32,16 +32,29 @@
       "sequence": 1,
       "updated_at": "2026-11-26T16:00:46.405667+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی تبریک ولادت حضرت زهرا و روز زن با کارشناس برنامه",
+      "summary": "در این بخش، مجری ضمن تبریک ولادت حضرت زهرا سلام‌الله علیها و روز زن به مادران و زنان ایران‌زمین، از حضور استاد کرباسی کارشناس محترم برنامه از نجف‌آباد خبر می‌دهد و به او خوش‌آمد می‌گوید.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.9,
+      "editor_mode": "audio_grounded_topic",
+      "id": "45852040380-4",
+      "sequence": 4,
+      "updated_at": "2026-11-26T16:02:32.404951+00:00",
+      "speaker": null
     }
   ],
   "progress": {
     "segments_captured": 6,
     "segments_transcribed": 6,
     "editor_attempts": 5,
-    "editor_withheld": 3,
-    "topics_published": 2,
-    "audio_ai_calls": 0,
-    "audio_ai_success": 0,
+    "editor_withheld": 4,
+    "topics_published": 3,
+    "audio_ai_calls": 1,
+    "audio_ai_success": 1,
     "last_audio_at": "2026-11-26T16:02:19.359986+00:00"
   }
 }
