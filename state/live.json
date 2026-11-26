@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 18:00 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T14:14:50.273704+00:00",
-  "updated_at": "2026-11-26T15:09:47.200670+00:00",
+  "updated_at": "2026-11-26T15:09:50.610786+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره تربیت و اخلاق",
-      "summary": "در این بخش از برنامه، موضوع «تربیت و اخلاق» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45836944928-21",
-      "sequence": 21,
-      "updated_at": "2026-11-26T14:38:41.305149+00:00",
-      "speaker": null
-    },
     {
       "title": "گفت‌وگو درباره روزه",
       "summary": "در این بخش از برنامه، موضوع «روزه» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
@@ -70,6 +57,18 @@
       "sequence": 82,
       "updated_at": "2026-11-26T15:03:05.668363+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی گزارش تاریخی درباره ام‌المؤمنین و قصد سفر عمره",
+      "summary": "در این بخش کارشناس استدلال می‌کند که ام‌المؤمنین متوجه شد قصد سفر عمره وجود ندارد و هدف دیگری مطرح است. به گفته کارشناس، در ادامه اشاره شد که پس از سوگند یاد کردن مبنی بر عدم ایجاد فتنه، حرکت به سمت مقصد انجام گرفت.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.8,
+      "id": "45836944928-99",
+      "sequence": 99,
+      "updated_at": "2026-11-26T15:09:50.610761+00:00",
+      "speaker": null
     }
   ],
   "progress": {
@@ -77,7 +76,7 @@
     "segments_transcribed": 97,
     "editor_attempts": 92,
     "editor_withheld": 88,
-    "topics_published": 6,
+    "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-26T15:09:43.641922+00:00"
