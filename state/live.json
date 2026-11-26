@@ -1,19 +1,32 @@
 {
   "version": 1,
-  "status": "reviewing",
+  "status": "live",
   "network": "velayat_farsi",
   "session": "45865975978",
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T17:14:52.449854+00:00",
-  "updated_at": "2026-11-26T17:36:11.521817+00:00",
-  "items": [],
+  "updated_at": "2026-11-26T17:36:13.015498+00:00",
+  "items": [
+    {
+      "title": "بررسی نقش نظم در خانواده و جایگاه اعضا",
+      "summary": "در این بخش کارشناس استدلال می‌کند که اگر در یک خانواده هر یک از اعضا از جمله فرزند، پدر و مادر در جایگاه واقعی خود قرار گیرند و وظایف خود را بشناسند، زندگی لذت‌بخش شده و از آشفتگی و به هم ریختگی نجات پیدا می‌کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45865975978-15",
+      "sequence": 15,
+      "updated_at": "2026-11-26T17:36:13.015476+00:00",
+      "speaker": null
+    }
+  ],
   "progress": {
     "segments_captured": 16,
     "segments_transcribed": 14,
     "editor_attempts": 14,
     "editor_withheld": 13,
-    "topics_published": 0,
+    "topics_published": 1,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
     "last_audio_at": "2026-11-26T17:36:08.366375+00:00"
