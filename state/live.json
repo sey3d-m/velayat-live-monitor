@@ -6,21 +6,8 @@
   "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T17:14:52.449854+00:00",
-  "updated_at": "2026-11-26T18:27:25.326283+00:00",
+  "updated_at": "2026-11-26T18:27:52.595279+00:00",
   "items": [
-    {
-      "title": "گفت‌وگو درباره نماز",
-      "summary": "در این بخش از برنامه، موضوع «نماز» در گفت‌وگو مطرح شده است. عنوان بر اساس واژه‌های تشخیص‌داده‌شده از صوت تهیه شده و به معنای تأیید جزئیات مطالب یا اعلام حکم شرعی نیست.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_mode": "grounded_topic_fallback",
-      "editor_confidence": 0.0,
-      "id": "45865975978-36",
-      "sequence": 36,
-      "updated_at": "2026-11-26T17:44:50.989514+00:00",
-      "speaker": null
-    },
     {
       "title": "بررسی نسبت میان مقابله با حکم خدا و تفکر جاهلی در گفتار کارشناس",
       "summary": "در این بخش کارشناس استدلال می‌کند که ایستادن در برابر حکم خدا و تلاش برای توویل و چرخش آن به نفع خود، نشانگر پیروی از تفکر جاهلی است و هر آنچه غیر از دستور خداوند باشد جهالت محسوب می‌شود.",
@@ -69,16 +56,28 @@
       "sequence": 110,
       "updated_at": "2026-11-26T18:14:13.903142+00:00",
       "speaker": null
+    },
+    {
+      "title": "بررسی شگفتی‌های اقیانوس‌شناسی در قرآن کریم",
+      "summary": "در این بخش کارشناس استدلال می‌کند که قرآن کریم با جزئیات حیرت‌انگیزی به حقایق اقیانوس‌شناسی پرداخته است؛ حقایقی که به گفته وی، بشر تنها با زیردریایی‌های پیشرفته توانسته است آن‌ها را کشف کند.",
+      "kind": "edited_transcript",
+      "scope": "topic_only",
+      "verification_status": "machine_edited_unverified",
+      "editor_confidence": 0.85,
+      "id": "45865975978-144",
+      "sequence": 144,
+      "updated_at": "2026-11-26T18:27:52.595250+00:00",
+      "speaker": null
     }
   ],
   "progress": {
-    "segments_captured": 144,
-    "segments_transcribed": 140,
-    "editor_attempts": 134,
-    "editor_withheld": 129,
-    "topics_published": 8,
+    "segments_captured": 145,
+    "segments_transcribed": 141,
+    "editor_attempts": 135,
+    "editor_withheld": 130,
+    "topics_published": 9,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T18:27:22.683184+00:00"
+    "last_audio_at": "2026-11-26T18:27:47.631168+00:00"
   }
 }
