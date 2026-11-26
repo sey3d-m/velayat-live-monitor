@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T15:44:52.113694+00:00",
-  "updated_at": "2026-11-26T16:35:01.954402+00:00",
+  "updated_at": "2026-11-26T16:35:51.606046+00:00",
   "items": [
     {
       "title": "بررسی استناد به حدیث رضایت فاطمه در مجامع روایی",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 88,
-    "segments_transcribed": 81,
-    "editor_attempts": 69,
-    "editor_withheld": 63,
+    "segments_captured": 90,
+    "segments_transcribed": 83,
+    "editor_attempts": 71,
+    "editor_withheld": 65,
     "topics_published": 10,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T16:34:58.879489+00:00"
+    "last_audio_at": "2026-11-26T16:35:47.425306+00:00"
   }
 }
