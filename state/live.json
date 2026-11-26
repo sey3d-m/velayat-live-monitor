@@ -1,82 +1,21 @@
 {
   "version": 1,
-  "status": "ended",
+  "status": "starting",
   "network": "velayat_farsi",
-  "session": "45852040380",
-  "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
+  "session": "45865975978",
+  "program": "برنامه شبکه ولایت فارسی | 21:00 (تهران)",
   "program_date": "2026-11-26",
-  "started_at": "2026-11-26T15:44:52.113694+00:00",
-  "updated_at": "2026-11-26T17:10:06.359138+00:00",
-  "items": [
-    {
-      "title": "بررسی استدلال درباره دعای سلامتی امام زمان",
-      "summary": "در این بخش کارشناس استدلال می‌کند که دلیلی بر استثنا بودن حضرت از مسائل و بیماری‌ها وجود ندارد و به همین دلیل دعای مشهور سلامتی برای ایشان خوانده می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45852040380-128",
-      "sequence": 128,
-      "updated_at": "2026-11-26T16:51:30.254867+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره فرازهای دعای مکارم الاخلاق و درخواست‌های آن",
-      "summary": "در این بخش، کارشناس به خوانش و بررسی فرازهایی از یک دعا می‌پردازد و عباراتی درباره درخواست توفیق در عبادت دور از عجب، خیررسانی به مردم و درخواست معالی اخلاق را مطرح می‌کند.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45852040380-147",
-      "sequence": 147,
-      "updated_at": "2026-11-26T16:59:08.207537+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره فرازهای دعای مکارم الاخلاق و درخواست عمر در طاعت",
-      "summary": "در این بخش، کارشناس به خوانش و بررسی فرازهایی از یک دعا می‌پردازد. به گفته وی، درخواست توفیق در مسیر حق، استقامت در هدایت و همچنین تقاضای قبض روح پیش از آنکه عمر در مسیر شیطان صرف شود، از جمله نکات مطرح‌شده در این قطعه است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45852040380-149",
-      "sequence": 149,
-      "updated_at": "2026-11-26T16:59:51.407083+00:00",
-      "speaker": null
-    },
-    {
-      "title": "پرسش درباره عبارت‌های دعای اهل‌بیت و مفاهیم اخلاقی آن",
-      "summary": "در این بخش، کارشناس به خوانش عباراتی از دعا می‌پردازد و به گفته او، مفاهیمی همچون حسد اهل بغی، ضنة اهل صلاح، و عداوة الادنین مطرح می‌شود. کارشناس استدلال می‌کند که این تعابیر ابعاد خاصی از روابط و اخلاقیات را بیان می‌کنند و در پایان، صلوات بر پیامبر و آل او ذکر می‌شود.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45852040380-153",
-      "sequence": 153,
-      "updated_at": "2026-11-26T17:01:32.579504+00:00",
-      "speaker": null
-    },
-    {
-      "title": "بررسی واژگان و عبارات در متن روایات اخلاقی",
-      "summary": "در این بخش، کارشناس به ذکر عبارات و واژگانی پیرامون فضایل اخلاقی و صفات متقین می‌پردازد. به گفته کارشناس، در این متن به موضوعاتی چون گسترش عدالت، فرو خوردن خشم، خاموش کردن آتش فتنه و اصلاح میان مردم اشاره شده است که بازگوکننده فضایل و حسن سیرت است.",
-      "kind": "edited_transcript",
-      "scope": "topic_only",
-      "verification_status": "machine_edited_unverified",
-      "editor_confidence": 0.85,
-      "id": "45852040380-159",
-      "sequence": 159,
-      "updated_at": "2026-11-26T17:03:55.959739+00:00",
-      "speaker": null
-    }
-  ],
+  "started_at": "2026-11-26T17:14:52.449854+00:00",
+  "updated_at": "2026-11-26T17:30:00.000340+00:00",
+  "items": [],
   "progress": {
-    "segments_captured": 175,
-    "segments_transcribed": 166,
-    "editor_attempts": 132,
-    "editor_withheld": 122,
-    "topics_published": 15,
-    "audio_ai_calls": 3,
-    "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T17:09:48.365098+00:00"
+    "segments_captured": 0,
+    "segments_transcribed": 0,
+    "editor_attempts": 0,
+    "editor_withheld": 0,
+    "topics_published": 0,
+    "audio_ai_calls": 0,
+    "audio_ai_success": 0,
+    "last_audio_at": null
   }
 }
