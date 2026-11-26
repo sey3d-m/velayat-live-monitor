@@ -6,7 +6,7 @@
   "program": "برنامه شبکه ولایت فارسی | 19:30 (تهران)",
   "program_date": "2026-11-26",
   "started_at": "2026-11-26T15:44:52.113694+00:00",
-  "updated_at": "2026-11-26T16:10:19.016535+00:00",
+  "updated_at": "2026-11-26T16:11:08.566828+00:00",
   "items": [
     {
       "title": "بررسی تبریک ولادت حضرت زهرا و روز زن با کارشناس برنامه",
@@ -73,13 +73,13 @@
     }
   ],
   "progress": {
-    "segments_captured": 26,
-    "segments_transcribed": 25,
-    "editor_attempts": 18,
-    "editor_withheld": 14,
+    "segments_captured": 28,
+    "segments_transcribed": 27,
+    "editor_attempts": 19,
+    "editor_withheld": 15,
     "topics_published": 7,
     "audio_ai_calls": 3,
     "audio_ai_success": 3,
-    "last_audio_at": "2026-11-26T16:10:16.691590+00:00"
+    "last_audio_at": "2026-11-26T16:11:05.717614+00:00"
   }
 }
